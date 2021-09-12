@@ -1,6 +1,7 @@
 title: About
 components:
   - type: work-header
+    title:
     subtitle: |
       I am an experienced graphic designer and developer. The combination of high fluency in both fields enables me to conceive, prototype and develop digital products, tools and services.
 
