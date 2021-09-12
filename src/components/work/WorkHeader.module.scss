@@ -2,7 +2,8 @@
 
 .title {
   composes: global(h2);
-  composes: global(m-0);
+  composes: global(mb-2);
+  composes: global(mb-sm-0);
   font-weight: bold;
 }
 
