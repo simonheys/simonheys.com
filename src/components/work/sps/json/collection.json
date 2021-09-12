@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Formulating your advice on the use of medicines in pregnancy",
+    "summary": "Providing advice on medicines in pregnancy is complex. Preparing, structuring and phrasing information can improve communication and understanding.",
+    "category": "Safety in Pregnancy",
+    "date": "29 July 2021"
+  },
+  {
+    "id": 2,
+    "title": "The principles of prescribing in pregnancy",
+    "summary": "There are some important principles that should be applied when providing advice on the use of medicines in pregnancy.",
+    "category": "Safety in Pregnancy",
+    "date": "29 July 2021"
+  },
+  {
+    "id": 3,
+    "title": "Assessing risk and informing the risk versus benefit decision for medicines in pregnancy",
+    "summary": "There are key factors to be considered in making a risk assessment and a risk versus benefit decision about use of medicines in pregnancy.",
+    "category": "Safety in Pregnancy",
+    "date": "29 July 2021"
+  },
+  {
+    "id": 4,
+    "title": "Information resources that give advice about medicines in pregnancy",
+    "summary": "SPS and other information resources can help pharmacy and other healthcare professionals provide advice on medicines in pregnancy.",
+    "category": "Safety in Pregnancy",
+    "date": "29 July 2021"
+  },
+  {
+    "id": 5,
+    "title": "Comparative table of low molecular weight heparins and fondaparinux",
+    "summary": "This table has been compiled to aid product selection in the event of a shortage of a low molecular weight heparin.",
+    "category": "Tinzaparin",
+    "date": "29 July 2021"
+  },
+  {
+    "id": 6,
+    "title": "Medication Restrictions for Patients Having CAR-T Cell Therapy V3",
+    "summary": "CAR-T Therapy requires some medicines to be restricted, this guidance provides details and recommended wash-out periods for restricted medicines.",
+    "category": "Advanced therapy medicinal products",
+    "date": "21 July 2021"
+  },
+  {
+    "id": 7,
+    "title": "Switching between liquid and tablet/capsule formulations – Which medicines require extra care?",
+    "summary": "For a small number of medicines, there are differences in equivalent doses of oral formulations of the same medicine. This needs to be considered when…",
+    "category": "Vardenafil",
+    "date": "19 July 2021"
+  },
+  {
+    "id": 8,
+    "title": "National Homecare Medicines Committee (NHMC) Prescription Management Process",
+    "summary": "Prescription Management Process within Clinical Homecare Services",
+    "category": "Transfer of care",
+    "date": "16 July 2021"
+  },
+  {
+    "id": 9,
+    "title": "Choosing a calcium and vitamin D preparation for vegetarians or vegans",
+    "summary": "This article explains how the source of vitamin D, or the inactive ingredients (excipients), may make preparations unsuitable for vegetarians or vegans.",
+    "category": "Formulation",
+    "date": "6 July 2021"
+  },
+  {
+    "id": 10,
+    "title": "Equivalent doses of oral benzodiazepines",
+    "summary": "Benzodiazepines are the most commonly used anxiolytics and hypnotics. There are major differences in potency between different benzodiazepines and this difference in potency is important…",
+    "category": "Temazepam",
+    "date": "6 July 2021"
+  },
+  {
+    "id": 11,
+    "title": "Defining and identifying thickness of fluids and food for patients with swallowing difficulties",
+    "summary": "How fluid thickness and food texture are defined for patients with swallowing difficulties, and how to find the recommended level for a patient.",
+    "category": "Swallowing difficulties",
+    "date": "2 July 2021"
+  },
+  {
+    "id": 12,
+    "title": "Choosing a suitable antidepressant for people with coronary heart disease (CHD)",
+    "summary": "Prescribers may need to choose a safe antidepressant in people with CHD. We guide on available options. We do not cover management of complex depression.",
+    "category": "Agomelatine",
+    "date": "2 July 2021"
+  }
+]

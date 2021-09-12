@@ -1,0 +1,5 @@
+@import "~/src/styles/use-bootstrap";
+
+.row {
+  composes: global(row);
+}

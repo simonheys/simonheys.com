@@ -1,0 +1,82 @@
+@use 'sass:math';
+@import "~/src/styles/use-bootstrap";
+
+.container {
+  composes: global(container-fluid);
+  composes: global(pb-md-5);
+  composes: global(pb-3);
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+
+.containerSizer {
+  composes: global(d-flex);
+  composes: global(h-100);
+  position: relative;
+}
+
+.wordClockContainer {
+  font-feature-settings: "liga" 1, "kern" 1;
+  background-color: var(--body-bg);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  :global(.word) {
+    color: var(--gray-400);
+    letter-spacing: -0.0125em;
+    margin-right: 0.2em;
+    @media (prefers-color-scheme: dark) {
+      color: var(--gray-200);
+    }
+  }
+  :global(.word-highlighted) {
+    color: var(--primary);
+  }
+  user-select: none;
+}
+
+.wordClockContainerFullscreen {
+  composes: wordClockContainer;
+  padding: 12px;
+}
+
+.controlsContainer {
+  composes: global(d-none);
+  composes: global(d-md-flex);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  :global(::-webkit-scrollbar-track) {
+    background-color: transparent;
+  }
+  :global(::-webkit-scrollbar) {
+    width: 6px;
+    background-color: transparent;
+  }
+  :global(::-webkit-scrollbar-thumb) {
+    background-color: var(--gray-300);
+    border-radius: 3px;
+  }
+}
+
+.wordsPickerControlsContainer {
+  composes: global(mx-5);
+  composes: global(mt-4);
+  composes: global(mb-2);
+  display: flex;
+  flex-grow: 1;
+}
+
+.defaultControlsContainer {
+  composes: global(mb-4);
+  display: flex;
+  flex-shrink: 0;
+  margin-top: auto;
+}

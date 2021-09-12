@@ -1,0 +1,24 @@
+meta:
+  titles:
+    - Simon Heys
+    - Designer and Developer, London UK
+  work:
+    pages:
+      - path: "/work/hark"
+      - path: "/work/mykrobe"
+      - path: "/work/sps"
+      - path: "/work/fathm"
+      - path: "/work/theguardian"
+      - path: "/work/visioncoach"
+      - path: "/work/minimalfolio"
+      - path: "/work/wordclock"
+all:
+  header:
+    type: header
+    links:
+      - "/work"
+      - "/about"
+  before: []
+  after:
+    - type: footer
+      text: Copyright © Studio Heys Limited · Registered in England №07360731

@@ -1,0 +1,42 @@
+@import "~/src/styles/use-bootstrap";
+
+.sizeContainer {
+}
+
+.navigationContainer {
+}
+
+.spaceContainer {
+  margin-bottom: $spacer * 2;
+}
+
+.navigationContainerFixed {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: var(--background-panel-color);
+  backdrop-filter: blur(5px);
+  transition: top 0.15s ease-out;
+}
+
+.title {
+  composes: global(h2);
+  composes: global(m-0);
+}
+
+.link {
+  composes: global(h2);
+  composes: global(me-2);
+  composes: global(me-sm-3);
+  color: var(--gray-500);
+  @media (prefers-color-scheme: dark) {
+    color: var(--gray-400);
+  }
+}
+
+.linkActive {
+  composes: link;
+  color: var(--primary);
+}
