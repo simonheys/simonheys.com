@@ -6461,9 +6461,9 @@ word-wrap@^1.2.3:
   resolved "https://registry.yarnpkg.com/word-wrap/-/word-wrap-1.2.3.tgz#610636f6b1f703891bd34771ccb17fb93b47079c"
   integrity sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==
 
-"wordclock@git+ssh://git@github.com:simonheys/wordclock.git#feature/react-version":
+"wordclock@https://github.com/simonheys/wordclock.git":
   version "1.0.0"
-  resolved "git+ssh://git@github.com:simonheys/wordclock.git#50e012082f13e05995b323a6e32efdca755ef6da"
+  resolved "https://github.com/simonheys/wordclock.git#ce0635c63b4258a1fb0e45016771b349c55a9243"
   dependencies:
     node-sass "^6.0.1"
 
