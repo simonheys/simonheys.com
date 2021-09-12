@@ -1,0 +1,1108 @@
+{
+  "meta": {
+    "titles": [
+      "Simon Heys",
+      "Designer and Developer, London UK"
+    ],
+    "work": {
+      "pages": [
+        {
+          "path": "/work/hark"
+        },
+        {
+          "path": "/work/mykrobe"
+        },
+        {
+          "path": "/work/sps"
+        },
+        {
+          "path": "/work/fathm"
+        },
+        {
+          "path": "/work/theguardian"
+        },
+        {
+          "path": "/work/visioncoach"
+        },
+        {
+          "path": "/work/minimalfolio"
+        },
+        {
+          "path": "/work/wordclock"
+        }
+      ]
+    }
+  },
+  "all": {
+    "header": {
+      "type": "header",
+      "links": [
+        "/work",
+        "/about"
+      ]
+    },
+    "before": [],
+    "after": [
+      {
+        "type": "footer",
+        "text": "Copyright © Studio Heys Limited · Registered in England №07360731"
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "/about",
+      "title": "About",
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I am an experienced graphic designer and developer. The combination of high fluency in both fields enables me to conceive, prototype and develop digital products, tools and services.\n\nMost recently I was Creative Director and Co-Founder of digital agency Make+Ship. Prior to that I was in-house designer and developer at The Guardian, UBS and The Times.\n\nIt is in my nature to make and craft things with attention to quality and detail. I always enjoy the journey starting from nothing to creating something useful, enjoyable or inspiring to others. \n\nAvailable for new projects from January 2022. \n",
+          "links": [
+            {
+              "text": "si@simonheys.com",
+              "url": "mailto:si@simonheys.com"
+            },
+            {
+              "text": "LinkedIn",
+              "url": "https://linkedin.com/in/simonheys"
+            },
+            {
+              "text": "Twitter",
+              "url": "https://twitter.com/simonheys"
+            },
+            {
+              "text": "GitHub",
+              "url": "https://linkedin.com/in/simonheys"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/",
+      "title": null,
+      "fill": {
+        "type": "word-clock-editable"
+      },
+      "components": [
+        {
+          "type": "work-grid"
+        }
+      ]
+    },
+    {
+      "path": "/work/fathm",
+      "title": "Fathm",
+      "subtitle": "Time tracking app",
+      "thumbnails": [
+        {
+          "src": "work/fathm/fathm-thumbnail-donut.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I collaborated with a network of creative users to design and develop a visually-led time tracking app with playful features that evolved through iterative design and prototyping."
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 589196732,
+              "color": "#404040"
+            },
+            {
+              "col": 6,
+              "vimeoId": 587071119,
+              "color": "#404040"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/fathm/fathm-col-6-exploded-1.png"
+            },
+            {
+              "src": "work/fathm/fathm-col-6-exploded-2.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Segments of time are tracked by quickly tapping customisable coloured categories. Colours are mixed together as categories are added."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "src": "work/fathm/fathm-col-6-fragmented.jpg"
+            },
+            {
+              "col": 6,
+              "vimeoId": 589206157,
+              "color": "#404040"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Users can quickly switch tasks from a list of recents or favourites."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "src": "work/fathm/fathm-col-6-icons.png"
+            },
+            {
+              "col": 6,
+              "src": "work/fathm/fathm-icon-construction.svg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The app provides a variety of interactive visualisations to help gain insight into how you spend time, and lets you set time budgets for activities."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 589201736,
+              "color": "#404040"
+            },
+            {
+              "col": 6,
+              "vimeoId": 589207049
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The popular Daily Donut visualisation can be shared directly from within the app."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/fathm/fathm-col-6-share-2.png"
+            },
+            {
+              "src": "work/fathm/fathm-col-6-share-1.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Fathm was featured in App Store Essentials alongside Clear, Evernote and Things on the front page of the App Store."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/hark",
+      "title": "Hark",
+      "subtitle": "Clinical task management platform",
+      "thumbnails": [
+        {
+          "src": "work/hark/hark-thumbnail-logo.jpg"
+        },
+        {
+          "src": "work/hark/hark-thumbnail-tasks.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover."
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 583718922,
+          "color": "#0072c6"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 581240797,
+              "color": "#4baff9"
+            },
+            {
+              "col": 6,
+              "vimeoId": 581266972,
+              "color": "#0072c6"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/hark/hark-col-6-tasks.jpg"
+            },
+            {
+              "src": "work/hark/hark-col-6-task-entry.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Hark is a clinical task management platform which prioritises who needs to do what, where and when. This frees up nurses and doctors to focus on their job instead of waiting by a phone."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/hark/hark-dashboard-cropped-2.jpg"
+        },
+        {
+          "type": "work-row",
+          "src": "work/hark/hark-screens.png"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Iterative design and prototyping produced a library of controls which minimise the taps needed to capture and share tasks. Studies show that these enable users to send details to the most appropriate clinician in under 20 seconds."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/hark/hark-col-6-logo.jpg"
+            },
+            {
+              "src": "work/hark/hark-col-6-ipad.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/hark/hark-logo-construction.svg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I designed and coded the native apps for iPhone or iPad, with a browser-based dashboard for desktop and full-screen monitoring. A clean and simple identity system allows important information and alerts to be most prominent."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 583890897,
+              "color": "#0072c6"
+            },
+            {
+              "col": 6,
+              "vimeoId": 583890934,
+              "color": "#4baff9"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Hark was acquired by Google DeepMind."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work",
+      "title": "Work",
+      "components": [
+        {
+          "type": "work-grid"
+        }
+      ]
+    },
+    {
+      "path": "/work/minimalfolio",
+      "title": "Minimal Folio",
+      "subtitle": "Personal portfolio app",
+      "thumbnails": [
+        {
+          "src": "work/minimalfolio/minimalfolio-thumbnail-logo.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I designed and developed Minimal Folio to solve my own need for a portfolio app."
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 600167329,
+          "color": "#363636"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I wanted the ability to adjust the breadth and depth of my portfolio in response to the flow of conversation while presenting."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/minimalfolio/minimalfolio-thumbnails.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The solution I created was non-linear navigation. Swipe vertically to increase detail, or horizontally to change project."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 601029020,
+          "color": "#363636"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Non-linear navigation is made possible by a simple portfolio arrangement with columns of increasingly detailed slides."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/minimalfolio/minimalfolio-col-6-ipad.jpg"
+            },
+            {
+              "src": "work/minimalfolio/minimalfolio-col-6-ipad-selection.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The app is unbranded and obsessively minimal. I designed and developed a completely custom dark interface which lets the content be the hero."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/minimalfolio/minimalfolio-col-6-tutorial.jpg"
+            },
+            {
+              "src": "work/minimalfolio/minimalfolio-col-6-exploded.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The app has been used for global agency portfolios at DDB and Interbrand, and for exhibiting content at the legendary Xerox PARC in Palo Alto, California. Minimal Folio was also installed by Apple as an iPad demo app in high street Apple Stores."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/mykrobe",
+      "title": "Mykrobe",
+      "subtitle": "TB resistance and outbreak platform",
+      "thumbnails": [
+        {
+          "src": "work/mykrobe/mykrobe-thumbnail-logo.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform."
+        },
+        {
+          "type": "mykrobe-animation"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 585698728,
+          "color": "#f6a229"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The platform has web and desktop apps which must meet the needs of non-specialist end-users analysing TB resistance in challenging environments."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/mykrobe/mykrobe-comparison.jpg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "We learned about our users from real world on-site observation including a field trip to TB-prevalent areas of Mumbai, India."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
+              "src": "work/mykrobe/mykrobe-front.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
+              "src": "work/mykrobe/mykrobe-patient-results.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I collaborated closely with users to prototype and develop an easily readable diagnostics interface including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "mykrobe-cluster",
+              "col": 6,
+              "src": "work/mykrobe/mykrobe-mst-1.json"
+            },
+            {
+              "type": "mykrobe-cluster",
+              "col": 6,
+              "src": "work/mykrobe/mykrobe-mst-2.json"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "For the web and app interface I designed and developed a common system of interactive components which are available to the team in an interactive web-based catalogue."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 584226493,
+          "color": "#f7f6f1"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "To make non-expert users feel comfortable and confident using the product I designed a user-friendly identity inspired by the shapes, colours and transparency seen in traditional TB stain tests."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/mykrobe/mykrobe-logo-construction.svg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/mykrobe/mykrobe-6-col-icon-construction.svg"
+            },
+            {
+              "src": "work/mykrobe/mykrobe-6-col-icon.svg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/mykrobe/mykrobe-cropped.jpg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The platform is being expanded to become part of global COVID-19 surveillance."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/sps",
+      "title": "NHS England",
+      "subtitle": "Specialist Pharmacy Service",
+      "thumbnails": [
+        {
+          "src": "work/sps/sps-thumbnail-logo.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians."
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 581720984,
+          "color": "#009639"
+        },
+        {
+          "type": "scrolling-browser",
+          "maskSrc": "work/sps/browser-mask.svg",
+          "src": "work/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The service was actively developed with a regular cycle of interactive prototyping and observed user testing to validate problems and solutions. We modernised the publishing workflow and developed a range of self-service tools."
+            }
+          ]
+        },
+        {
+          "type": "sps-collection"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/sps/sps-col-6-system.jpg"
+            },
+            {
+              "src": "work/sps/sps-col-6-screens.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "system": [
+                "work/sps/sps-design-system-whole_01.png",
+                "work/sps/sps-design-system-whole_02.png",
+                "work/sps/sps-design-system-whole_03.png",
+                "work/sps/sps-design-system-whole_04.png"
+              ]
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "system": [
+                "work/sps/sps-design-system-whole_05.png",
+                "work/sps/sps-design-system-whole_06.png",
+                "work/sps/sps-design-system-whole_02.png"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/sps/sps-col-6-icon-construction.svg"
+            },
+            {
+              "src": "work/sps/sps-col-6-icons.svg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/sps/sps-col-6-leaflet-1.png"
+            },
+            {
+              "src": "work/sps/sps-col-6-leaflet-2.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/sps/sps-logo-construction.svg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The service is increasingly popular with more than half a million monthly active users in England."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/theguardian",
+      "title": "The Guardian",
+      "subtitle": "Next gen app prototypes",
+      "thumbnails": [
+        {
+          "src": "work/theguardian/theguardian-thumbnail-gp1.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I worked in an in-house product team to design and develop a series of exploratory prototypes as inspiration for the next generation of news apps."
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 590221904,
+              "color": "#edede7"
+            },
+            {
+              "col": 6,
+              "vimeoId": 590223472,
+              "color": "#edede7"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6-phone",
+              "maskSrc": "work/theguardian/theguardian-col-6-phone-mask.png",
+              "src": "work/theguardian/timeline.png"
+            },
+            {
+              "col": 6,
+              "vimeoId": 590277543,
+              "color": "#edede7"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I rapidly developed a set of native apps with enough fidelity to enable thorough user testing with iterations of refinement and reinvention in between."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/theguardian/theguardian-col-6-exploded-1.png"
+            },
+            {
+              "src": "work/theguardian/theguardian-col-6-exploded-2.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The prototypes explored various playful methods of interaction as well as varying the density and depth of articles. Through testing we learned from users how these affected their overall experience."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/theguardian/theguardian-col-6-elements.jpg"
+            },
+            {
+              "col": 6,
+              "vimeoId": 590283638,
+              "color": "#edede7"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 590226135,
+              "color": "#edede7"
+            },
+            {
+              "col": 6,
+              "vimeoId": 590288898,
+              "color": "#edede7"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Using prototypes and user testing as a foundation gave the design team confidence to take a specific direction with the subsequent full redesign project."
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/visioncoach",
+      "title": "Vision Coach",
+      "subtitle": "Eye care platform",
+      "thumbnails": [
+        {
+          "src": "work/visioncoach/vision-coach-thumbnail-logo.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "I was lead product designer of a team creating an innovative global app platform to help manage and prevent deteriorating eye health."
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 591542408,
+          "color": "#d9eef6"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/visioncoach/vision-coach-col-6-splash.jpg"
+            },
+            {
+              "src": "work/visioncoach/vision-coach-col-6-dash.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "An educational website provides bite-sized easy to read material to help patients explore and understand their condition and available treatments."
+            }
+          ]
+        },
+        {
+          "type": "scrolling-browser",
+          "maskSrc": "work/visioncoach/browser-mask.svg",
+          "src": "work/visioncoach/LMR-6_Page_01.png"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
+              "src": "work/visioncoach/LMR-6_Page_10.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
+              "src": "work/visioncoach/LMR-6_Page_11.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
+              "src": "work/visioncoach/vision-coach-clinician-dashboard.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
+              "src": "work/visioncoach/vision-coach-clinician-detail.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "work/visioncoach/vision-coach-patient-screens.png"
+        },
+        {
+          "type": "work-row",
+          "src": "work/visioncoach/vision-coach-logo-construction.svg"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/visioncoach/vision-coach-col-6-icons.svg"
+            },
+            {
+              "src": "work/visioncoach/vision-coach-col-6-icon-construction.svg"
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    },
+    {
+      "path": "/work/wordclock",
+      "title": "Word Clock",
+      "subtitle": "Open source digital art work",
+      "thumbnails": [
+        {
+          "src": "work/wordclock/wordclock-thumbnail.jpg"
+        }
+      ],
+      "components": [
+        {
+          "type": "work-header",
+          "subtitle": "Word Clock is an original digital art work for macOS, iOS and web. The current time is highlighted within a set of words that can tell any possible time.",
+          "links": [
+            {
+              "text": "Download",
+              "url": "https://github.com/simonheys/wordclock/releases"
+            },
+            {
+              "text": "Source",
+              "url": "https://github.com/simonheys/wordclock"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 594477120,
+          "color": "#000000"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "word-clock-cell"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "The open source code repository has an archive of versions I created for several different platforms and programming languages since 2003."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/wordclock/wordclock-col-6-preferences.png"
+            },
+            {
+              "src": "work/wordclock/wordclock-col-6-preferences-exploded.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I collaborated with many kind supporters from around the world to translate Word Clock into over 30 languages. This required writing a small domain-specific language to express unusual time logic in different regions."
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "word-clock-cell",
+              "col": 6,
+              "file": "English_simple_fragmented.json"
+            },
+            {
+              "type": "word-clock-cell",
+              "col": 6,
+              "file": "Japanese.json"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "work/wordclock/wordclock-col-6-book-1.jpg"
+            },
+            {
+              "src": "work/wordclock/wordclock-col-6-book-2.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "Word Clock features in Numbers in Graphic Design and has been exhibited at the Science Museum in London. It is open source and free to download.",
+              "links": [
+                {
+                  "text": "Download",
+                  "url": "https://github.com/simonheys/wordclock/releases"
+                },
+                {
+                  "text": "Source",
+                  "url": "https://github.com/simonheys/wordclock"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "work-next"
+        }
+      ]
+    }
+  ]
+}

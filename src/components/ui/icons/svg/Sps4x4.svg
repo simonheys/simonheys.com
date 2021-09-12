@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="20px" viewBox="0 0 30 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Sps4x4</title>
+    <g id="Sps4x4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle-Copy-24" fill="#000000" x="0" y="11" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-25" fill="#000000" x="8" y="11" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-26" fill="#000000" x="0" y="3" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-30" fill="#000000" x="16" y="3" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-27" fill="#000000" x="8" y="3" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-31" fill="#000000" x="24" y="3" width="6" height="6" rx="1"></rect>
+        <rect id="Rectangle-Copy-49" fill="#000000" x="24" y="15" width="6" height="2" rx="1"></rect>
+        <rect id="Rectangle-Copy-48" fill="#000000" x="16" y="15" width="6" height="2" rx="1"></rect>
+        <rect id="Rectangle-Copy-47" fill="#000000" x="16" y="11" width="6" height="2" rx="1"></rect>
+        <rect id="Rectangle-Copy-46" fill="#000000" x="24" y="11" width="6" height="2" rx="1"></rect>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+@use 'sass:math';
+@import "~/src/styles/use-bootstrap";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  composes: global(mb-4);
+}
+
+.inner {
+  background-color: var(--gray-100);
+  width: 100%;
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.textContainer {
+  composes: global(my-4);
+}
+.text {
+  composes: global(h2);
+  margin-bottom: -1rem;
+}
+
+.links {
+  composes: global(h3);
+  composes: global(mb-0);
+  margin-top: 2rem;
+}

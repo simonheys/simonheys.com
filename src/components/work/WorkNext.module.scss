@@ -1,0 +1,7 @@
+@import "~/src/styles/use-bootstrap";
+
+.title {
+  composes: global(h2);
+  composes: global(m-sm-0);
+  font-weight: bold;
+}

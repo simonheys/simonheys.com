@@ -1,0 +1,59 @@
+@import "~/src/styles/use-bootstrap";
+
+.container {
+  composes: panel from "~/src/styles/ui.scss";
+  composes: global(m-0);
+  composes: global(p-0);
+  display: inline-flex;
+  list-style: none;
+}
+
+.item {
+  composes: global(mb-0);
+  position: relative;
+  line-height: 1;
+}
+
+.button {
+  composes: global(m-0);
+  composes: global(p-2);
+  composes: global(p-sm-3);
+  position: relative;
+  line-height: 1;
+  cursor: pointer;
+  &:hover {
+    color: var(--link-hover-color);
+  }
+  transition: color 0.1s ease-in;
+}
+
+.buttonActive {
+  composes: button;
+  color: var(--primary);
+}
+
+.label {
+  position: relative;
+  z-index: 2;
+  font-size: $font-size-sm;
+  white-space: nowrap;
+}
+
+@include media-breakpoint-up(sm) {
+  .label {
+    font-size: $h5-font-size;
+    // font-size: 36px;
+  }
+}
+
+.active {
+  composes: panelBorderRadius from "~/src/styles/ui.scss";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: var(--panel-hover-color);
+  content: "";
+}

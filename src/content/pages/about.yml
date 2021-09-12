@@ -1,0 +1,20 @@
+title: About
+components:
+  - type: work-header
+    subtitle: |
+      I am an experienced graphic designer and developer. The combination of high fluency in both fields enables me to conceive, prototype and develop digital products, tools and services.
+
+      Most recently I was Creative Director and Co-Founder of digital agency Make+Ship. Prior to that I was in-house designer and developer at The Guardian, UBS and The Times.
+
+      It is in my nature to make and craft things with attention to quality and detail. I always enjoy the journey starting from nothing to creating something useful, enjoyable or inspiring to others. 
+    
+      Available for new projects from January 2022. 
+    links:
+      - text: si@simonheys.com
+        url: mailto:si@simonheys.com
+      - text: LinkedIn
+        url: https://linkedin.com/in/simonheys
+      - text: Twitter
+        url: https://twitter.com/simonheys
+      - text: GitHub
+        url: https://linkedin.com/in/simonheys

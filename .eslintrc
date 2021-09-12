@@ -1,0 +1,3 @@
+{
+  "extends": ["next", "next/core-web-vitals", "react-app", "react-app/jest"]
+}
