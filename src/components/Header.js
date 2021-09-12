@@ -84,12 +84,12 @@ const Header = ({ links }) => {
       >
         <div ref={ref} className={"container-fluid"}>
           <div className={"row py-2 pb-md-3"}>
-            <div className={"col-sm-6"}>
+            <div className={"col-6"}>
               <h1 className={styles.title}>
                 <LinkA href="/">Simon Heys</LinkA>
               </h1>
             </div>
-            <div className={"col-sm-6"}>
+            <div className={"col-6"}>
               {links.map((path, index) => {
                 const page = contentModule.getPageForPath(path);
                 const { title } = page;

@@ -8,7 +8,9 @@
 }
 
 .link {
-  composes: global(me-3);
+  composes: global(me-sm-3);
+  composes: global(mb-sm-0);
+  composes: global(mb-2);
   display: flex;
   .linkIcon {
     margin-left: 0.25em;
@@ -19,5 +21,8 @@
     .linkIcon {
       transform: translate(0.1em, 0);
     }
+  }
+  &:last-child {
+    margin-bottom: 0 !important;
   }
 }
