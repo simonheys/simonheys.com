@@ -26,7 +26,6 @@ const handler = (req, res) => {
   const { method } = req;
   switch (method) {
     case "GET":
-      // Get data from your database
       res.status(200).json(wordsOrdered);
       break;
     default:
