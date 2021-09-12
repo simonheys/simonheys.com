@@ -8,16 +8,17 @@ import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkHeader.module.scss";
 
-const WorkHeader = ({ subtitle, links, services, components }) => {
+const WorkHeader = ({ title, subtitle, links }) => {
   const router = useRouter();
   const page = contentModule.getPageForPath(router.asPath);
-  const { title } = page;
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
         <div className={"row mb-5"}>
           <div className={"col-md-6"}>
-            <h1 className={styles.title}>{title}</h1>
+            <h1 className={styles.title}>
+              {title !== undefined ? title : page.title}
+            </h1>
           </div>
           <div className={"col-md-6"}>
             <div className={styles.subtitle}>
@@ -27,9 +28,6 @@ const WorkHeader = ({ subtitle, links, services, components }) => {
               <div className={styles.links}>
                 <TextLinks links={links} />
               </div>
-            )}
-            {services && (
-              <div className={styles.services}>{services.join(", ")}</div>
             )}
           </div>
         </div>
