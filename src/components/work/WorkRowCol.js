@@ -31,12 +31,12 @@ const WorkRowCol = ({ type, col, ...rest }) => {
           <div className={styles.textContainer}>
             <div className={styles.text}>
               <ReactMarkdown>{text}</ReactMarkdown>
-              {links && (
-                <div className={styles.links}>
-                  <TextLinks links={links} />
-                </div>
-              )}
             </div>
+            {links && (
+              <div className={styles.links}>
+                <TextLinks links={links} />
+              </div>
+            )}
           </div>
         </div>
       </React.Fragment>

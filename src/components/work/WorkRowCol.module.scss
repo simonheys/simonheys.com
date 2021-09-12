@@ -17,6 +17,7 @@
 .textContainer {
   composes: global(my-4);
 }
+
 .text {
   composes: global(h2);
   margin-bottom: -1rem;

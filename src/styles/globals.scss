@@ -87,6 +87,15 @@ a {
   }
 }
 
+// @include media-breakpoint-down(sm) {
+//   html {
+//     font-size: 12px;
+//   }
+//   body {
+//     line-height: 1.2;
+//   }
+// }
+
 @include media-breakpoint-up(md) {
   .container-fluid {
     padding-left: 2rem;
