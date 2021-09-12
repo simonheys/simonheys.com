@@ -1,0 +1,18 @@
+@import "~/src/styles/use-bootstrap";
+
+.title {
+  composes: global(h2);
+  composes: global(m-0);
+  font-weight: bold;
+}
+
+.subtitle {
+  composes: global(h2);
+  margin-bottom: -1rem;
+}
+
+.links {
+  composes: global(h3);
+  composes: global(mb-0);
+  margin-top: 2rem;
+}

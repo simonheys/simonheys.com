@@ -1,0 +1,8 @@
+@import "~/src/styles/use-bootstrap";
+
+.container {
+  margin-bottom: $spacer * 2;
+  composes: global(mb-md-0);
+  display: flex;
+  flex-direction: column;
+}

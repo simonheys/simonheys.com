@@ -1,0 +1,5 @@
+title: 
+fill:
+  type: word-clock-editable
+components:
+  - type: work-grid
