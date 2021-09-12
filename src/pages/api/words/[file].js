@@ -1,3 +1,11 @@
+const manifest = require(`wordclock/packages/wordclock-words/json/Manifest.json`);
+const fileToJson = {};
+
+manifest.files.forEach((file) => {
+  const json = require(`wordclock/packages/wordclock-words/json/${file}`);
+  fileToJson[file] = json;
+});
+
 const handler = (req, res) => {
   const {
     query: { file },
@@ -5,12 +13,13 @@ const handler = (req, res) => {
   } = req;
   switch (method) {
     case "GET": {
-      try {
-        const json = require(`wordclock/packages/wordclock-words/json/${file}`);
+      if (typeof file === "string") {
+        const json = fileToJson[file];
         if (json) {
           res.status(200).json(json);
+          break;
         }
-      } catch (e) {}
+      }
       res.status(404).end("Not Found");
       break;
     }
