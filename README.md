@@ -1,3 +1,5 @@
+![simonheys-com-recording](https://user-images.githubusercontent.com/175607/133434380-80ee4a97-912f-4f5e-a706-512cbca47b72.gif)
+
 # simonheys.com
 
 Source for my personal portfolio site [simonheys.com](https://www.simonheys.com/)
