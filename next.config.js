@@ -8,8 +8,23 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/minimalfolio",
+        source: "/portfolio/wordclock",
+        destination: "/work/wordclock",
+        permanent: true,
+      },
+      {
+        source: "/minimalfolio/:slug*",
         destination: "/work/minimalfolio",
+        permanent: true,
+      },
+      {
+        source: "/portfolio",
+        destination: "/work",
+        permanent: true,
+      },
+      {
+        source: "/contact",
+        destination: "/about",
         permanent: true,
       },
     ];
