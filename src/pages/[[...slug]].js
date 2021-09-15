@@ -9,7 +9,7 @@ import Fill from "../components/ui/Fill";
 const meta = contentModule.getMeta();
 
 const Page = ({ page }) => {
-  const { path, title, subtitle, header, fill, components } = page;
+  const { path, title, description, subtitle, header, fill, components } = page;
   const pageTitle = [title, subtitle, ...meta.titles]
     .filter(Boolean)
     .join(" – ");
@@ -20,9 +20,13 @@ const Page = ({ page }) => {
         <title>{pageTitle}</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="description" content={subtitle}></meta>
+        <meta name="description" content={description || subtitle}></meta>
         <meta property="og:title" content={pageTitle} key="ogtitle" />
-        <meta property="og:description" content={subtitle} key="ogdesc" />
+        <meta
+          property="og:description"
+          content={description || subtitle}
+          key="ogdesc"
+        />
         <link rel="preconnect" href="https://player.vimeo.com"></link>
         <link
           rel="preconnect"
