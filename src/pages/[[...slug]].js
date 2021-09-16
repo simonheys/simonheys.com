@@ -28,7 +28,10 @@ const Page = ({ page }) => {
           property="og:description"
           content={description || subtitle}
         ></meta>
-        <meta property="og:image" content="/og/image.png" />
+        <meta
+          property="og:image"
+          content={`${process.env.NEXT_PUBLIC_BASE_URL}/og/image.png`}
+        />
         <link rel="preconnect" href="https://player.vimeo.com"></link>
         <link
           rel="preconnect"
