@@ -21,12 +21,14 @@ const Page = ({ page }) => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="description" content={description || subtitle}></meta>
-        <meta property="og:title" content={pageTitle} key="ogtitle" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@simonheys" />
+        <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"
           content={description || subtitle}
-          key="ogdesc"
-        />
+        ></meta>
+        <meta property="og:image" content="/og/image.png" />
         <link rel="preconnect" href="https://player.vimeo.com"></link>
         <link
           rel="preconnect"
