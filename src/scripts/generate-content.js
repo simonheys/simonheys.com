@@ -32,6 +32,7 @@ const filePathToPagePath = (filePath) => {
 const generateContent = async () => {
   const content = getYml(path.join(contentSystemPath, "index.yml"));
   const pages = [];
+  const sitemap = [];
 
   for (const filePath of filePaths) {
     const ext = path.extname(filePath);
@@ -46,6 +47,7 @@ const generateContent = async () => {
       ...doc,
     };
     pages.push(page);
+    sitemap.push(pagePath);
   }
 
   content.pages = pages;
