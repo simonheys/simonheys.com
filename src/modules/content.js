@@ -3,7 +3,7 @@ export const content = require("../../content/content.json");
 
 export const getMeta = () => content.meta;
 
-export const getPagePaths = () => content.pages.map((page) => page.path);
+export const getPagePaths = () => content.pages.map((page) => page.path).sort();
 
 export const getPageForPath = (path) =>
   content.pages.find((page) => page.path === path);
