@@ -12,8 +12,9 @@ const contentJsonSystemPath = path.join(
   __dirname,
   "../../content/content.json"
 );
+const publicSitemapPath = path.join(__dirname, "../../public/sitemap.txt");
 
-const filePaths = getFiles("/", pagesSystemPath);
+const filePaths = getFiles("/", pagesSystemPath).sort();
 
 const getYml = (filePath) => {
   const doc = yaml.load(fs.readFileSync(filePath, "utf8"));
@@ -32,6 +33,7 @@ const filePathToPagePath = (filePath) => {
 const generateContent = async () => {
   const content = getYml(path.join(contentSystemPath, "index.yml"));
   const pages = [];
+  const sitemap = [];
 
   for (const filePath of filePaths) {
     const ext = path.extname(filePath);
@@ -46,6 +48,7 @@ const generateContent = async () => {
       ...doc,
     };
     pages.push(page);
+    sitemap.push(pagePath);
   }
 
   content.pages = pages;
@@ -56,6 +59,15 @@ const generateContent = async () => {
     fs.mkdirSync(dirname);
   }
   fs.writeFileSync(contentJsonSystemPath, fileContents, "utf8");
+
+  fs.writeFileSync(
+    publicSitemapPath,
+    sitemap
+      .sort()
+      .map((path) => `${process.env.NEXT_PUBLIC_BASE_URL || ""}${path}`)
+      .join("\r\n"),
+    "utf8"
+  );
 };
 
 (async () => {
