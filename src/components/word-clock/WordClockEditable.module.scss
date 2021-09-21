@@ -1,14 +1,6 @@
 @use 'sass:math';
 @import "~/src/styles/use-bootstrap";
 
-.container {
-  composes: global(container-fluid);
-  composes: global(pb-md-5);
-  composes: global(pb-3);
-  overflow: hidden;
-  flex: 1 0 auto;
-}
-
 .containerSizer {
   composes: global(d-flex);
   composes: global(h-100);

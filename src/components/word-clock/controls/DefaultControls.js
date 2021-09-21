@@ -5,12 +5,19 @@ import DefaultControlsItem from "./DefaultControlsItem";
 
 import styles from "./DefaultControls.module.scss";
 
-const DefaultControls = ({ wordsOpen, onToggleWordsOpen, onFullscreen }) => {
+const DefaultControls = ({
+  title,
+  wordsOpen,
+  onToggleWordsOpen,
+  onFullscreen,
+}) => {
   return (
     <div className={styles.container}>
-      <DefaultControlsItem disabled>
-        <div className={styles.title}>Word Clock</div>
-      </DefaultControlsItem>
+      {title && (
+        <DefaultControlsItem disabled>
+          <div className={styles.title}>Word Clock</div>
+        </DefaultControlsItem>
+      )}
       <DefaultControlsItem onClick={onToggleWordsOpen} active={wordsOpen}>
         Words <ChevronDown />
       </DefaultControlsItem>
