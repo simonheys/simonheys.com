@@ -19,6 +19,8 @@ const WordClockEditable = ({
   file: fileProp = "English_simple_fragmented.json",
   editable = true,
   title = false,
+  download = true,
+  source = true,
 }) => {
   const [file, setFile] = React.useState(fileProp);
   const [wordsPickerControlsVisible, setWordsPickerControlsVisible] =
@@ -122,7 +124,7 @@ const WordClockEditable = ({
       return null;
     }
     return {
-      width: boundingClientRect.width,
+      width: boundingClientRect.width >= 320 ? boundingClientRect.width : "95%",
     };
   }, [boundingClientRect.width]);
 
@@ -181,6 +183,8 @@ const WordClockEditable = ({
               >
                 <DefaultControls
                   title={title}
+                  download={download}
+                  source={source}
                   onFullscreen={requestFullscreen}
                   onToggleWordsOpen={onToggleWordsOpen}
                   wordsOpen={wordsPickerControlsVisible}

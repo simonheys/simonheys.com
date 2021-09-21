@@ -975,10 +975,10 @@
     "@typescript-eslint/types" "4.28.4"
     eslint-visitor-keys "^2.0.0"
 
-"@vimeo/player@^2.16.0":
-  version "2.16.0"
-  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.16.0.tgz#30f0d307c5acc2790d6ba0da335670334a643e76"
-  integrity sha512-LjswQcTFkeceRZouK0ipWqZiCCTyuzMEhnB0K9DaNYIrfuZ+VTyJv6cHS60/P4Pw8D0a9PGQYekb2P0ZwbBsrA==
+"@vimeo/player@^2.16.1":
+  version "2.16.1"
+  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.16.1.tgz#ed2237b8224dd764419b16ec4e6c3ede5bb2224e"
+  integrity sha512-47pUwVFAYBKbmOpxF6CzQc0VwbVi7LCv8i1H44XgRRoMoI7jwAOSi4CDGinjEMoKOKxsn5/p8ze50XZYwgTVWA==
   dependencies:
     native-promise-only "0.8.1"
     weakmap-polyfill "2.0.1"
