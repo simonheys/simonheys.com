@@ -1,19 +1,14 @@
 import * as React from "react";
-import useSWR from "swr";
 
-import { WordClock } from "wordclock/packages/wordclock-js/dist";
+import WordClockEditable from "./WordClockEditable";
 
 import styles from "./WordClockCell.module.scss";
 
-const WordClockCell = ({
-  col = "default",
-  file = "English_simple_fragmented.json",
-}) => {
-  const { data: words } = useSWR(`/api/words/${file}`);
+const WordClockCell = ({ col = "default", ...rest }) => {
   return (
     <div className={styles[`containerSizer__col-${col}`]}>
       <div className={styles.container}>
-        <WordClock words={words} />
+        <WordClockEditable {...rest} />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 title: 
-description: Designer and developer in London, UK. Digital products, tools and services for iOS, macOS and the web
+description: Designer and developer based in London, UK. Digital products, tools and services for iOS, macOS and the web. Available for new projects.
 fill:
-  type: word-clock-editable
+  type: word-clock-fill
+  title: true
 components:
   - type: work-grid

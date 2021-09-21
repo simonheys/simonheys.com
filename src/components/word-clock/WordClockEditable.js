@@ -15,8 +15,14 @@ import fetcher from "./utils/fetcher";
 
 import styles from "./WordClockEditable.module.scss";
 
-const WordClockEditable = () => {
-  const [file, setFile] = React.useState("English_simple_fragmented.json");
+const WordClockEditable = ({
+  file: fileProp = "English_simple_fragmented.json",
+  editable = true,
+  title = false,
+  download = true,
+  source = true,
+}) => {
+  const [file, setFile] = React.useState(fileProp);
   const [wordsPickerControlsVisible, setWordsPickerControlsVisible] =
     React.useState(false);
   const [controlsVisible, setControlsVisible] = React.useState(false);
@@ -118,67 +124,74 @@ const WordClockEditable = () => {
       return null;
     }
     return {
-      width: boundingClientRect.width,
+      width: boundingClientRect.width >= 320 ? boundingClientRect.width : "95%",
     };
   }, [boundingClientRect.width]);
 
+  if (!editable) {
+    return (
+      <div className={styles.containerSizer}>
+        <div className={styles.wordClockContainer}>
+          <WordClock words={words} />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className={styles.container}>
-      <div className={"row h-100 mb-md-5"}>
-        <div ref={clickRef} className={"col h-100"}>
-          <div className={styles.containerSizer}>
-            <div
-              ref={fullscreenRef}
-              className={
-                isFullscreen
-                  ? styles.wordClockContainerFullscreen
-                  : styles.wordClockContainer
-              }
-              onClick={onClick}
-              onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave}
-            >
-              <WordClock words={words} />
-              <div className={styles.controlsContainer}>
-                <AnimatePresence>
-                  {wordsPickerControlsVisible && (
-                    <motion.div
-                      key={`wordsPickerControlsContainer`}
-                      className={styles.wordsPickerControlsContainer}
-                      exit={{ opacity: 0, y: 20, scale: 0.975 }}
-                      initial={{ opacity: 0, y: 20, scale: 0.975 }}
-                      animate={{ opacity: 1, y: 0, scale: 1 }}
-                      transition={{ duration: 0.3, type: "spring" }}
-                      style={style}
-                    >
-                      <WordsPickerControls
-                        wordsCollection={wordsCollection}
-                        file={file}
-                        setFile={setFile}
-                      />
-                    </motion.div>
-                  )}
-                  {controlsVisible && (
-                    <motion.div
-                      key={`defaultControlsContainer`}
-                      className={styles.defaultControlsContainer}
-                      exit={{ opacity: 0 }}
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      transition={{ duration: 0.2 }}
-                      ref={boundingClientRectRef}
-                    >
-                      <DefaultControls
-                        onFullscreen={requestFullscreen}
-                        onToggleWordsOpen={onToggleWordsOpen}
-                        wordsOpen={wordsPickerControlsVisible}
-                      />
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            </div>
-          </div>
+    <div ref={clickRef} className={styles.containerSizer}>
+      <div
+        ref={fullscreenRef}
+        className={
+          isFullscreen
+            ? styles.wordClockContainerFullscreen
+            : styles.wordClockContainer
+        }
+        onClick={onClick}
+        onMouseEnter={onMouseEnter}
+        onMouseLeave={onMouseLeave}
+      >
+        <WordClock words={words} />
+        <div className={styles.controlsContainer}>
+          <AnimatePresence>
+            {wordsPickerControlsVisible && (
+              <motion.div
+                key={`wordsPickerControlsContainer`}
+                className={styles.wordsPickerControlsContainer}
+                exit={{ opacity: 0, y: 20, scale: 0.975 }}
+                initial={{ opacity: 0, y: 20, scale: 0.975 }}
+                animate={{ opacity: 1, y: 0, scale: 1 }}
+                transition={{ duration: 0.3, type: "spring" }}
+                style={style}
+              >
+                <WordsPickerControls
+                  wordsCollection={wordsCollection}
+                  file={file}
+                  setFile={setFile}
+                />
+              </motion.div>
+            )}
+            {controlsVisible && (
+              <motion.div
+                key={`defaultControlsContainer`}
+                className={styles.defaultControlsContainer}
+                exit={{ opacity: 0 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.2 }}
+                ref={boundingClientRectRef}
+              >
+                <DefaultControls
+                  title={title}
+                  download={download}
+                  source={source}
+                  onFullscreen={requestFullscreen}
+                  onToggleWordsOpen={onToggleWordsOpen}
+                  wordsOpen={wordsPickerControlsVisible}
+                />
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </div>
     </div>

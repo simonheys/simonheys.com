@@ -18,23 +18,9 @@
 }
 
 .container {
-  font-feature-settings: "liga" 1, "kern" 1;
-  background-color: var(--body-bg);
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
-  :global(.word) {
-    color: var(--gray-400);
-    letter-spacing: -0.0125em;
-    margin-right: 0.2em;
-    @media (prefers-color-scheme: dark) {
-      color: var(--gray-200);
-    }
-  }
-  :global(.word-highlighted) {
-    color: var(--primary);
-  }
-  user-select: none;
 }

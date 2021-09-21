@@ -22,6 +22,7 @@ const WordClockEditable = dynamic(() =>
   import("./word-clock/WordClockEditable")
 );
 const WordClockCell = dynamic(() => import("./word-clock/WordClockCell"));
+const WordClockFill = dynamic(() => import("./word-clock/WordClockFill"));
 
 const MapTypeToComponent = {
   "mykrobe-animation": MykrobeAnimation,
@@ -30,6 +31,7 @@ const MapTypeToComponent = {
   "scrolling-browser": ScrollingBrowser,
   "sps-collection": SPSCollection,
   "word-clock-editable": WordClockEditable,
+  "word-clock-fill": WordClockFill,
   "word-clock-cell": WordClockCell,
   "work-grid": WorkGrid,
   "work-header": WorkHeader,

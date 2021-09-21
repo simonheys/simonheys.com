@@ -31,9 +31,13 @@ components:
       - type: word-clock-cell
         col: 6
         file: English_simple_fragmented.json
+        source: false
+        download: false
       - type: word-clock-cell
         col: 6
         file: Japanese.json
+        source: false
+        download: false
   - type: work-row
     columns:
       - src: work/wordclock/wordclock-col-6-book-1.jpg
