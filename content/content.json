@@ -45,6 +45,23 @@
     "before": [],
     "after": [
       {
+        "exclude": [
+          {
+            "path": "/about"
+          }
+        ],
+        "type": "work-header",
+        "title": "About",
+        "ruled": true,
+        "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, enjoyable or inspiring to others.\n",
+        "links": [
+          {
+            "text": "Read more",
+            "url": "/about"
+          }
+        ]
+      },
+      {
         "type": "footer",
         "text": "Copyright © Studio Heys Limited · Registered in England №07360731"
       }
@@ -58,7 +75,7 @@
         {
           "type": "work-header",
           "title": null,
-          "subtitle": "I am an experienced graphic designer and developer based in London, UK. The combination of high fluency in both fields enables me to invent, prototype and develop digital products, tools and services for iOS, macOS and the web.\n\nMost recently I was Creative Director and Co-Founder of digital agency Make+Ship. Prior to that I was in-house designer and developer at The Guardian, UBS and The Times.\n\nIt is in my nature to make and craft things with attention to quality and detail. I always enjoy the journey starting from nothing to creating something useful, enjoyable or inspiring to others. \n\nAvailable for new projects from January 2022. \n",
+          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, enjoyable or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS and more.\n\nI am available to design and code apps or websites and always interested in talking about new projects or roles - please get in touch.\n",
           "links": [
             {
               "text": "si@simonheys.com",
@@ -83,7 +100,7 @@
     {
       "path": "/",
       "title": null,
-      "description": "Designer and developer based in London, UK. Digital products, tools and services for iOS, macOS and the web. Available for new projects.",
+      "description": "Freelance designer and developer based in London, UK. Available to design and code apps or websites - please get in touch.",
       "fill": {
         "type": "word-clock-fill",
         "title": true
