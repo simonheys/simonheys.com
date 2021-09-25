@@ -8,12 +8,17 @@ import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkHeader.module.scss";
 
-const WorkHeader = ({ title, subtitle, links }) => {
+const WorkHeader = ({ title, subtitle, links, ruled }) => {
   const router = useRouter();
   const page = contentModule.getPageForPath(router.asPath);
   return (
     <AppearWhenInView>
-      <div className={"container-fluid"}>
+      {ruled && (
+        <div className={"container-fluid"}>
+          <div className={"row gx-0 border-top"}></div>
+        </div>
+      )}
+      <div className={ruled ? "container-fluid pt-2 mb-5" : "container-fluid"}>
         <div className={"row mb-5"}>
           <div className={"col-md-6"}>
             <h1 className={styles.title}>

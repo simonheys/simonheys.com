@@ -38,6 +38,7 @@ export const getPropertiesForImage = (src) => {
 
 export const getComponentsForSlug = (slug) => {
   const page = getPageForSlug(slug);
+  const path = "/" + slug.join("/");
   const pageComponents = page.components;
   let components = [];
   const onlyIndex = pageComponents.findIndex((page) => page.only);
@@ -48,5 +49,15 @@ export const getComponentsForSlug = (slug) => {
     // omit components with 'exclude' set to true
     components = pageComponents.filter((page) => page.exclude !== true);
   }
-  return [...content.all.before, ...components, ...content.all.after];
+  const after = content.all.after.filter((pageComponent) => {
+    if (pageComponent.exclude) {
+      console.log({ path, exclude: pageComponent.exclude });
+      if (pageComponent.exclude.includes(path)) {
+        console.log("Excluding");
+        return false;
+      }
+    }
+    return true;
+  });
+  return [...content.all.before, ...components, ...after];
 };

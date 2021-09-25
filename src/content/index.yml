@@ -21,5 +21,14 @@ all:
       - "/about"
   before: []
   after:
+    - exclude: ["/about"]
+      type: work-header
+      title: About
+      ruled: true
+      subtitle: |
+        I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, enjoyable or inspiring to others.
+      links:
+      - text: Read more
+        url: /about
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731
