@@ -46,9 +46,7 @@
     "after": [
       {
         "exclude": [
-          {
-            "path": "/about"
-          }
+          "/about"
         ],
         "type": "work-header",
         "title": "About",

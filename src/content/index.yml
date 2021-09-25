@@ -21,8 +21,7 @@ all:
       - "/about"
   before: []
   after:
-    - exclude:
-        - path: "/about"
+    - exclude: ["/about"]
       type: work-header
       title: About
       ruled: true
