@@ -3,7 +3,7 @@
 .container {
   composes: global(d-flex);
   composes: global(flex-column);
-  composes: global(flex-sm-row);
+  composes: global(flex-lg-row);
   flex-wrap: wrap;
 }
 

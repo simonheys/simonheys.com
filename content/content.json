@@ -51,7 +51,7 @@
         "type": "work-header",
         "title": "About",
         "ruled": true,
-        "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, enjoyable or inspiring to others.\n",
+        "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
         "links": [
           {
             "text": "Read more",
@@ -73,10 +73,10 @@
         {
           "type": "work-header",
           "title": null,
-          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, enjoyable or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n\nI am available to design and code apps or websites and always interested in talking about new projects or roles - please get in touch.\n",
+          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n\nI am available to design and develop apps or websites and always interested in talking about new projects or roles — please get in touch.\n",
           "links": [
             {
-              "text": "si@simonheys.com",
+              "text": "Email",
               "url": "mailto:si@simonheys.com"
             },
             {
@@ -98,7 +98,7 @@
     {
       "path": "/",
       "title": null,
-      "description": "Freelance designer and developer based in London, UK. Available to design and code apps or websites - please get in touch.",
+      "description": "Freelance designer and developer based in London, UK. Available to design and develop apps or websites.",
       "fill": {
         "type": "word-clock-fill",
         "title": true

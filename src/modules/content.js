@@ -5,8 +5,13 @@ export const getMeta = () => content.meta;
 
 export const getPagePaths = () => content.pages.map((page) => page.path).sort();
 
-export const getPageForPath = (path) =>
-  content.pages.find((page) => page.path === path);
+export const getPageForPath = (path) => {
+  const queryIndex = path.indexOf("?");
+  if (queryIndex !== -1) {
+    path = path.substr(0, queryIndex);
+  }
+  return content.pages.find((page) => page.path === path);
+};
 
 export const getPageIndexForPath = (path) =>
   content.pages.findIndex((page) => page.path === path);
