@@ -12,7 +12,7 @@ import ScrollingBrowser from "./ui/ScrollingBrowser";
 import ScrollingBrowserCell from "./ui/ScrollingBrowserCell";
 import WorkNext from "./work/WorkNext";
 
-// unique components are dynamic
+// // unique components are dynamic
 const MykrobeAnimation = dynamic(() =>
   import("./work/mykrobe/MykrobeAnimation")
 );
