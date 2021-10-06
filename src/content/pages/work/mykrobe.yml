@@ -34,10 +34,10 @@ components:
     columns:
       - type: mykrobe-cluster
         col: 6
-        src: work/mykrobe/mykrobe-mst-1.json
+        src: mst-1
       - type: mykrobe-cluster
         col: 6
-        src: work/mykrobe/mykrobe-mst-2.json
+        src: mst-2
   - type: work-row
     columns:
       - text: For the web and app interface I designed and developed a common system of interactive components which are available to the team in an interactive web-based catalogue.

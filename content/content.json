@@ -566,12 +566,12 @@
             {
               "type": "mykrobe-cluster",
               "col": 6,
-              "src": "work/mykrobe/mykrobe-mst-1.json"
+              "src": "mst-1"
             },
             {
               "type": "mykrobe-cluster",
               "col": 6,
-              "src": "work/mykrobe/mykrobe-mst-2.json"
+              "src": "mst-2"
             }
           ]
         },

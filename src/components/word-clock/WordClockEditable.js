@@ -15,8 +15,11 @@ import fetcher from "./utils/fetcher";
 
 import styles from "./WordClockEditable.module.scss";
 
+const fileDefault = "English_simple_fragmented.json";
+const wordsDefault = require(`wordclock/packages/wordclock-words/json/${fileDefault}`);
+
 const WordClockEditable = ({
-  file: fileProp = "English_simple_fragmented.json",
+  file: fileProp = fileDefault,
   editable = true,
   title = false,
   download = true,
@@ -85,7 +88,9 @@ const WordClockEditable = ({
   const { ref: clickRef } = useClickOutside(onClickOutside);
 
   const { data: wordsCollection } = useSWR("/api/words", fetcher);
-  const { data: words } = useSWR(`/api/words/${file}`);
+  const { data: words } = useSWR(`/api/words/${file}`, {
+    fallbackData: wordsDefault,
+  });
 
   const onToggleWordsOpen = React.useCallback(
     (e) => {

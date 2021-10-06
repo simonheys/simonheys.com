@@ -1,3 +1,30 @@
+@font-face {
+  font-family: "Modern Era TRIAL";
+  src: url("/fonts/ModernEraTRIAL-Medium.woff2") format("woff2"),
+    url("/fonts/ModernEraTRIAL-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Modern Era TRIAL";
+  src: url("/fonts/ModernEraTRIAL-Regular.woff2") format("woff2"),
+    url("/fonts/ModernEraTRIAL-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Modern Era TRIAL";
+  src: url("/fonts/ModernEraTRIAL-Bold.woff2") format("woff2"),
+    url("/fonts/ModernEraTRIAL-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import "./use-bootstrap.scss";
 
 @import "~bootstrap/scss/root";

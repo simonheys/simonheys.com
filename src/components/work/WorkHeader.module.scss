@@ -8,12 +8,12 @@
 }
 
 .subtitle {
-  composes: global(h2);
-  margin-bottom: -1rem;
+  composes: global(h3);
+  margin-bottom: -$paragraph-margin-bottom;
 }
 
 .links {
   composes: global(h3);
   composes: global(mb-0);
-  margin-top: 2rem;
+  margin-top: 1.5 * $paragraph-margin-bottom;
 }
