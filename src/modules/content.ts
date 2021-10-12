@@ -1,11 +1,11 @@
 import imageProperties from "../../content/image-properties.json";
 
-type Link = {
+export type Link = {
   text: string;
   url: string;
 };
 
-type Component = {
+export type Component = {
   type: string;
   title?: any;
   subtitle?: string;
@@ -13,22 +13,26 @@ type Component = {
   exclude?: string[];
 };
 
-type Page = {
+export type Thumbnail = {
+  src: string;
+};
+
+export type Page = {
   path: string;
   title?: string;
   subtitle?: string;
   description?: string;
   fill?: any;
-  thumbnails?: any[];
+  thumbnails?: Thumbnail[];
   components?: Component[];
 };
 
-type ImageProperties = {
+export type ImageProperties = {
   width: number;
   height: number;
 };
 
-type Meta = {
+export type Meta = {
   titles: string[];
   work: {
     pages: {
@@ -37,7 +41,7 @@ type Meta = {
   };
 };
 
-type Content = {
+export type Content = {
   meta: Meta;
   pages: Page[];
   all: {
@@ -96,9 +100,7 @@ export const getComponentsForSlug = (slug: string[]): Component[] => {
   // TODO: apply filtering to all
   const after = content.all.after.filter((pageComponent) => {
     if (pageComponent.exclude) {
-      console.log({ path, exclude: pageComponent.exclude });
       if (pageComponent.exclude.includes(path)) {
-        console.log("Excluding");
         return false;
       }
     }
