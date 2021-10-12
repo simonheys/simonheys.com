@@ -1,8 +1,10 @@
+import { GetServerSideProps } from "next";
+
 import * as contentModule from "../modules/content";
 
 const Sitemap = () => null;
 
-export const getServerSideProps = async ({ res }) => {
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     const pages = contentModule.getPagePaths();
     const sitemapContent = pages

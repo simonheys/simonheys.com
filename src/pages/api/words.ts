@@ -1,4 +1,7 @@
-const manifest = require(`wordclock/packages/wordclock-words/json/Manifest.json`);
+import type { NextApiRequest, NextApiResponse } from "next";
+
+import manifest from "wordclock/packages/wordclock-words/json/Manifest.json";
+
 const words = {};
 
 manifest.files.forEach((file) => {
@@ -22,7 +25,7 @@ const wordsOrdered = Object.keys(words)
     return obj;
   }, {});
 
-const handler = (req, res) => {
+const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
   const { method } = req;
   switch (method) {
     case "GET":

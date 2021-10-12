@@ -1,6 +1,8 @@
+import { GetServerSideProps } from "next";
+
 const Robots = () => null;
 
-export const getServerSideProps = async ({ res }) => {
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     const policy = process.env.NEXT_PUBLIC_ALLOW_INDEX ? "Allow" : "Disallow";
     res.setHeader("Content-Type", "text/plain");

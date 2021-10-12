@@ -1,3 +1,5 @@
+import type { AppProps /*, AppContext */ } from "next/app";
+
 import * as React from "react";
 import Script from "next/script";
 import { useRouter } from "next/router";
@@ -6,11 +8,11 @@ import * as gtag from "../modules/gtag";
 
 import "../styles/globals.scss";
 
-const App = ({ Component, pageProps }) => {
+const App = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   React.useEffect(() => {
-    const handleRouteChange = (url) => {
+    const handleRouteChange = (url: string) => {
       gtag.pageview(url);
     };
     router.events.on("routeChangeComplete", handleRouteChange);

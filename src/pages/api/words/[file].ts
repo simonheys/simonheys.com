@@ -1,12 +1,19 @@
-const manifest = require(`wordclock/packages/wordclock-words/json/Manifest.json`);
-const fileToJson = {};
+import type { NextApiRequest, NextApiResponse } from "next";
 
-manifest.files.forEach((file) => {
+import manifest from "wordclock/packages/wordclock-words/json/Manifest.json";
+
+type FileToJson = {
+  [key: string]: any;
+};
+
+const fileToJson: FileToJson = {};
+
+manifest.files.forEach((file: string) => {
   const json = require(`wordclock/packages/wordclock-words/json/${file}`);
   fileToJson[file] = json;
 });
 
-const handler = (req, res) => {
+const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
   const {
     query: { file },
     method,
