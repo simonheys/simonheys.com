@@ -140,6 +140,7 @@ export async function getStaticProps({ params }) {
   const { slug = [] } = params;
   const page = contentModule.getPageForSlug(slug);
   const components = contentModule.getComponentsForSlug(slug);
+  console.log(JSON.stringify({ page, components }, null, 2));
   return {
     props: {
       params,
