@@ -30,6 +30,9 @@ export type Page = {
 export type ImageProperties = {
   width: number;
   height: number;
+  hash: string;
+  color: string;
+  type: string;
 };
 
 export type Meta = {

@@ -3,13 +3,20 @@ import clsx from "clsx";
 
 import styles from "./DefaultControlsItem.module.scss";
 
+export type DefaultControlsItemProps = {
+  className?: string;
+  tag: React.ComponentType | string;
+  active: boolean;
+  disabled: boolean;
+};
+
 const DefaultControlsItem = ({
   className,
   tag: Tag = "div",
   active = false,
   disabled = false,
   ...rest
-}) => {
+}: DefaultControlsItemProps) => {
   return (
     <Tag
       className={clsx(

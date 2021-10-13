@@ -50,12 +50,19 @@ const MASK_ATTRIBUTES = {
   },
 };
 
+export type ScrollingBrowserCellProps = {
+  src?: string;
+  system?: string[];
+  mask?: string;
+  maskSrc?: string;
+};
+
 const ScrollingBrowserCell = ({
   src,
   system,
   mask: maskKey = "default",
   maskSrc,
-}) => {
+}: ScrollingBrowserCellProps) => {
   const { svg, mask } = MASK_ATTRIBUTES[maskKey];
 
   const {

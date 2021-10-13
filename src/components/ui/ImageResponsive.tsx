@@ -1,11 +1,11 @@
 import * as React from "react";
 import Image from "next/image";
 
-import * as contentModule from "../../modules/content";
+import { getPropertiesForImage } from "../../modules/content";
 
-const ImageResponsive = ({ src, alt, ...rest }) => {
+const ImageResponsive = ({ src, alt = "", ...rest }) => {
   const { width, height } = React.useMemo(() => {
-    const properties = contentModule.getPropertiesForImage(src);
+    const properties = getPropertiesForImage(src);
     return properties;
   }, [src]);
 
@@ -23,7 +23,7 @@ const ImageResponsive = ({ src, alt, ...rest }) => {
 
 export const ImageResponsiveColored = ({ src, ...rest }) => {
   const { color } = React.useMemo(() => {
-    return contentModule.getPropertiesForImage(src);
+    return getPropertiesForImage(src);
   }, [src]);
 
   return (
