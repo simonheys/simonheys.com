@@ -9,7 +9,6 @@ const WordsPickerControls = ({
   wordsCollection = [],
   file: selectedFile,
   setFile,
-  onChangeWordsClose,
 }) => {
   const selectedRef = React.useRef(null);
 

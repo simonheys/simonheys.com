@@ -1,10 +1,14 @@
 import * as React from "react";
 
-import WordClockEditable from "./WordClockEditable";
+import WordClockEditable, { WordClockEditableProps } from "./WordClockEditable";
 
 import styles from "./WordClockCell.module.scss";
 
-const WordClockCell = ({ col = "default", ...rest }) => {
+export type WordClockCellProps = WordClockEditableProps & {
+  col: string | number;
+};
+
+const WordClockCell = ({ col = "default", ...rest }: WordClockCellProps) => {
   return (
     <div className={styles[`containerSizer__col-${col}`]}>
       <div className={styles.container}>
