@@ -54,6 +54,7 @@ export class CanvasLozenge {
       x,
       y,
       rotation,
+      opacity,
     };
     newState.x += vx * 2;
     newState.rotation += (vr * 0.5 * 3.14) / 180.0;
@@ -70,7 +71,7 @@ export class CanvasLozenge {
     };
   };
 
-  renderInContext = (context) => {
+  renderInContext = (context: CanvasRenderingContext2D) => {
     const { color, containerScale } = this.props;
     const { x, y, rotation, scale, opacity } = this.state;
     const width = scale * LozengeDimensions.width;
