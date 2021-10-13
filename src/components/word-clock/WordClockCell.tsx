@@ -6,6 +6,8 @@ import styles from "./WordClockCell.module.scss";
 
 export type WordClockCellProps = WordClockEditableProps & {
   col: string | number;
+  // ...rest
+  [x: string]: any;
 };
 
 const WordClockCell = ({ col = "default", ...rest }: WordClockCellProps) => {

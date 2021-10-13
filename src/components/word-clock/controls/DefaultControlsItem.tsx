@@ -5,18 +5,20 @@ import styles from "./DefaultControlsItem.module.scss";
 
 export type DefaultControlsItemProps = {
   className?: string;
-  tag: React.ComponentType | string;
-  active: boolean;
-  disabled: boolean;
+  Tag?: any;
+  active?: boolean;
+  disabled?: boolean;
+  // ...rest
+  [x: string]: any;
 };
 
 const DefaultControlsItem = ({
   className,
-  tag: Tag = "div",
+  Tag = "div",
   active = false,
   disabled = false,
   ...rest
-}: DefaultControlsItemProps) => {
+}: React.PropsWithChildren<DefaultControlsItemProps>) => {
   return (
     <Tag
       className={clsx(

@@ -17,7 +17,7 @@ const DefaultControls = ({
   return (
     <div className={styles.container}>
       {title && (
-        <DefaultControlsItem tag={LinkA} href="/wordclock">
+        <DefaultControlsItem Tag={LinkA} href="/wordclock">
           Word Clock
         </DefaultControlsItem>
       )}
@@ -26,7 +26,7 @@ const DefaultControls = ({
       </DefaultControlsItem>
       {download && (
         <DefaultControlsItem
-          tag={"a"}
+          Tag={"a"}
           href="https://github.com/simonheys/wordclock/releases"
           target="_blank"
           rel="noreferrer"
@@ -36,7 +36,7 @@ const DefaultControls = ({
       )}
       {source && (
         <DefaultControlsItem
-          tag={"a"}
+          Tag={"a"}
           href="https://github.com/simonheys/wordclock"
           target="_blank"
           rel="noreferrer"
