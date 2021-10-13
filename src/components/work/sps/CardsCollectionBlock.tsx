@@ -15,7 +15,7 @@ export const mapLayoutPropToLayout = {
     ],
   },
   "2over4": {
-    title: <Sps2x4></Sps2x4>,
+    title: <Sps2x4 />,
     layout: [
       [1, 1],
       [1, 1, 3, 3],
@@ -48,7 +48,7 @@ const CardsCollectionBlock = ({
   return (
     <AnimateSharedLayout type="crossfade">
       <div className={"container-fluid"}>
-        {layout.map((row, rowIndex) => {
+        {layout.map((row: number[], rowIndex: number) => {
           const cardsInRow = row.reduce((a, b) => a + b, 0);
           return (
             <div key={`row-${rowIndex}`} className={styles.row}>
@@ -76,7 +76,7 @@ const CardsCollectionBlock = ({
                       key={`col-${colIndex}`}
                       className={"col d-flex flex-column gx-1 gx-sm-2"}
                     >
-                      {cardPosts.map((post, index) => (
+                      {cardPosts.map((post) => (
                         <CardItem
                           key={`card-${post.id}`}
                           post={post}
