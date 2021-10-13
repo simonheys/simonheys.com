@@ -14,7 +14,12 @@
     "generate:icon-components": "node ./src/scripts/generate-icon-components",
     "generate:image-properties": "node ./src/scripts/generate-image-properties",
     "generate:watch": "concurrently -k -r \"yarn generate:content --watch\" \"yarn generate:icon-components --watch\" \"yarn generate:image-properties --watch\"",
-    "prettier": "prettier --write \"./**/*.{js,json,css,scss}\""
+    "prettier": "prettier --write \"./**/*.{js,json,css,scss}\"",
+    "test": "start-server-and-test dev http://localhost:3000 cypress",
+    "cypress": "cypress open",
+    "cypress:headless": "cypress run",
+    "e2e": "start-server-and-test start http://localhost:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
   },
   "dependencies": {
     "@vimeo/player": "^2.16.1",
@@ -52,9 +57,11 @@
     "chokidar": "^3.5.2",
     "cli-progress": "^3.9.0",
     "concurrently": "^6.2.1",
+    "cypress": "^8.6.0",
     "eslint": "^7.5.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.4.0",
@@ -69,6 +76,7 @@
     "prettier": "^2.3.2",
     "rimraf": "^3.0.2",
     "sharp": "^0.28.3",
+    "start-server-and-test": "^1.14.0",
     "typescript": "^4.4.3"
   }
 }
