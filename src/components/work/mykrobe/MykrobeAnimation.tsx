@@ -15,6 +15,7 @@ const MykrobeAnimation = () => {
           <div className={styles.overlayContainer}>
             <ImageResponsive
               src={`work/mykrobe/mykrobe-animation-overlay.svg`}
+              alt="Mykrobe animation"
             />
           </div>
         </div>

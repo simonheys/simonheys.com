@@ -22,14 +22,32 @@ const Colors = {
 
 const FontFamily = `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`;
 
+export interface MaybeRenderAttributes {
+  scaleGraphToCanvas?: number;
+  canvasWidth?: number;
+  canvasHeight?: number;
+  graphCenterX?: number;
+  graphCenterY?: number;
+}
+
+export interface MaybeDragging {
+  node?: {
+    id: number;
+    experiments: number;
+  };
+  vx?: number;
+  vy?: number;
+}
+
 const ExperimentCluster = ({ experimentCluster }) => {
   // refs
-  const canvasRef = React.useRef();
-  const graphRef = React.useRef();
+  const canvasRef = React.useRef(null);
+  const graphRef = React.useRef(null);
 
   // states
-  const [renderAttributes, setRenderAttributes] = React.useState();
-  const [dragging, setDragging] = React.useState();
+  const [renderAttributes, setRenderAttributes] =
+    React.useState<MaybeRenderAttributes>();
+  const [dragging, setDragging] = React.useState<MaybeDragging>();
 
   // hooks
   const { ref, boundingClientRect, inView } = useBoundingClientRectInView();

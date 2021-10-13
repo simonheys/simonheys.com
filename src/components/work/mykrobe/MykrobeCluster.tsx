@@ -10,7 +10,7 @@ const mst = {
   "mst-3": require(`./json/mst-3.json`),
 };
 
-const MykrobeCluster = ({ src }) => {
+const MykrobeCluster = ({ src = "mst-1" }: { src: string }) => {
   const experimentCluster = mst[src] || {};
 
   return (

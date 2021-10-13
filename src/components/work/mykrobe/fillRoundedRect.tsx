@@ -1,4 +1,11 @@
-const fillRoundedRect = (context, x, y, w, h, r) => {
+const fillRoundedRect = (
+  context: CanvasRenderingContext2D,
+  x: number,
+  y: number,
+  w: number,
+  h: number,
+  r: number
+) => {
   r = Math.min(r, w / 2, h / 2);
   context.beginPath();
   context.moveTo(x + r, y);
