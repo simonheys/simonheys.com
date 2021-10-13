@@ -1,9 +1,9 @@
 import * as React from "react";
 
-const useClickOutside = (onClickOutside) => {
+const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
   const ref = React.useRef(null);
   const onMouseUp = React.useCallback(
-    (event) => {
+    (event: MouseEvent) => {
       if (!ref.current?.contains(event.target)) {
         onClickOutside && onClickOutside(event);
       }

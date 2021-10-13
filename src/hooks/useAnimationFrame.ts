@@ -4,7 +4,7 @@ const useAnimationFrame = () => {
   const [elapsed, setTime] = React.useState(0);
 
   React.useEffect(() => {
-    let animationFrame, start;
+    let animationFrame: number, start: number;
 
     // Function to be executed on each animation frame
     const onFrame = () => {

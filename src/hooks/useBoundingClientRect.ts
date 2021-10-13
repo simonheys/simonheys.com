@@ -1,10 +1,22 @@
 import * as React from "react";
 import ResizeObserver from "resize-observer-polyfill";
 
+export interface MaybeBoundingClientRect {
+  left?: number;
+  top?: number;
+  right?: number;
+  bottom?: number;
+  x?: number;
+  y?: number;
+  width?: number;
+  height?: number;
+}
+
 const useBoundingClientRect = () => {
   const ref = React.useRef(null);
   const resizeObserver = React.useRef(null);
-  const [boundingClientRect, setBoundingClientRect] = React.useState({});
+  const [boundingClientRect, setBoundingClientRect] =
+    React.useState<MaybeBoundingClientRect>({});
 
   const updateBoundingClientRect = React.useCallback(() => {
     if (ref?.current) {

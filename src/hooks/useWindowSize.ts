@@ -1,6 +1,15 @@
 import * as React from "react";
 
-const getWindowSize = () => {
+export interface MaybeWindowSize {
+  innerWidth?: number;
+  innerHeight?: number;
+  outerWidth?: number;
+  outerHeight?: number;
+  clientWidth?: number;
+  clientHeight?: number;
+}
+
+const getWindowSize = (): MaybeWindowSize => {
   if (typeof window === "undefined") {
     return {};
   }
@@ -17,7 +26,9 @@ const getWindowSize = () => {
 };
 
 const useWindowSize = () => {
-  const [windowSize, setWindowSize] = React.useState(getWindowSize());
+  const [windowSize, setWindowSize] = React.useState<MaybeWindowSize>(
+    getWindowSize()
+  );
 
   const updateWindowSize = React.useCallback(() => {
     setWindowSize(getWindowSize());

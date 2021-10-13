@@ -7,8 +7,8 @@ const useFullscreen = () => {
   const onFullscreenChange = React.useCallback(() => {
     if (
       document.fullscreenElement ||
-      document.mozFullScreenElement ||
-      document.webkitFullscreenElement
+      document["mozFullScreenElement"] ||
+      document["webkitFullscreenElement"]
     ) {
       setIsFullscreen(true);
     } else {
