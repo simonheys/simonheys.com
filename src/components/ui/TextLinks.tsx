@@ -4,7 +4,14 @@ import { ChevronRight } from "./icons";
 
 import styles from "./TextLinks.module.scss";
 
-const TextLinks = ({ links }) => {
+export type TextLinksProps = {
+  links: {
+    text: string,
+    url: string,
+  }[],
+};
+
+const TextLinks = ({ links }: TextLinksProps) => {
   if (!links || !links.length) {
     return null;
   }

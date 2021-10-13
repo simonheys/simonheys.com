@@ -2,15 +2,25 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 
-import * as contentModule from "../../modules/content";
+import { getPageForPath } from "../../modules/content";
 import AppearWhenInView from "../ui/AppearWhenInView";
 import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkHeader.module.scss";
 
-const WorkHeader = ({ title, subtitle, links, ruled }) => {
+export type WorkHeaderProps = {
+  title?: string;
+  subtitle?: string;
+  links?: {
+    text: string;
+    url: string;
+  }[];
+  ruled?: boolean;
+};
+
+const WorkHeader = ({ title, subtitle, links, ruled }: WorkHeaderProps) => {
   const router = useRouter();
-  const page = contentModule.getPageForPath(router.asPath);
+  const page = getPageForPath(router.asPath);
   return (
     <AppearWhenInView>
       {ruled && (

@@ -8,7 +8,19 @@ import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkRowCol.module.scss";
 
-const WorkRowCol = ({ type, col, ...rest }) => {
+export type WorkRowColProps = {
+  type?: string;
+  col?: number | string;
+  text?: string;
+  links?: { text: string; url: string }[];
+  src?: string;
+  youTubeId?: string;
+  vimeoId?: string;
+  color?: string;
+  title?: string;
+};
+
+const WorkRowCol = ({ type, col, ...rest }: WorkRowColProps) => {
   const className = col
     ? `${styles.container} col-sm-${col}`
     : `${styles.container} col-sm`;

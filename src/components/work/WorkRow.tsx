@@ -9,7 +9,7 @@ const WorkRow = ({ columns, ...rest }) => {
       <div className={"container-fluid"}>
         <div className={"row"}>
           {columns ? (
-            columns.map((column, index) => {
+            columns.map((column, index: number) => {
               return <WorkRowCol key={index} {...column} />;
             })
           ) : (

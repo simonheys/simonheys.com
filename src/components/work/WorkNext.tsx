@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 
-import * as contentModule from "../../modules/content";
+import { getNextWorkPageForPath } from "../../modules/content";
 import AppearWhenInView from "../ui/AppearWhenInView";
 import WorkGridCell from "./grid/WorkGridCell";
 
@@ -9,7 +9,7 @@ import styles from "./WorkNext.module.scss";
 
 const WorkNext = () => {
   const router = useRouter();
-  const nextPage = contentModule.getNextWorkPageForPath(router.asPath);
+  const nextPage = getNextWorkPageForPath(router.asPath);
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
