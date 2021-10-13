@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 
-import * as contentModule from "../modules/content";
+import { getPageForPath } from "../modules/content";
 import useWindowScrollVelocity from "../hooks/useWindowScrollVelocity";
 import useBoundingClientRect from "../hooks/useBoundingClientRect";
 import LinkA from "./ui/LinkA";
 
 import styles from "./Header.module.scss";
 
-const Header = ({ links }) => {
+const Header = ({ links }: { links: string[] }) => {
   const router = useRouter();
   const windowScroll = useWindowScrollVelocity();
   const { ref, boundingClientRect } = useBoundingClientRect();
@@ -91,7 +91,7 @@ const Header = ({ links }) => {
             </div>
             <div className={"col-6"}>
               {links.map((path, index) => {
-                const page = contentModule.getPageForPath(path);
+                const page = getPageForPath(path);
                 const { title } = page;
                 const active =
                   router.asPath === path ||

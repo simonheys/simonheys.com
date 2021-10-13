@@ -11,15 +11,16 @@ import WorkRow from "./work/WorkRow";
 import ScrollingBrowser from "./ui/ScrollingBrowser";
 import ScrollingBrowserCell from "./ui/ScrollingBrowserCell";
 import WorkNext from "./work/WorkNext";
+import { Component } from "../modules/content";
 
 // // unique components are dynamic
-const MykrobeAnimation = dynamic(() =>
-  import("./work/mykrobe/MykrobeAnimation")
+const MykrobeAnimation = dynamic(
+  () => import("./work/mykrobe/MykrobeAnimation")
 );
 const MykrobeCluster = dynamic(() => import("./work/mykrobe/MykrobeCluster"));
 const SPSCollection = dynamic(() => import("./work/sps/SPSCollection"));
-const WordClockEditable = dynamic(() =>
-  import("./word-clock/WordClockEditable")
+const WordClockEditable = dynamic(
+  () => import("./word-clock/WordClockEditable")
 );
 const WordClockCell = dynamic(() => import("./word-clock/WordClockCell"));
 const WordClockFill = dynamic(() => import("./word-clock/WordClockFill"));
@@ -49,7 +50,7 @@ export const MappedComponent = ({ type, ...rest }) => {
   return null;
 };
 
-const Components = ({ components }) => {
+const Components = ({ components }: { components: Component[] }) => {
   return components.map((props, index) => {
     return <MappedComponent key={index} {...props} />;
   });

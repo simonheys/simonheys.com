@@ -4,7 +4,7 @@ import AppearWhenInView from "./ui/AppearWhenInView";
 
 import styles from "./Footer.module.scss";
 
-const Footer = ({ text, links }) => {
+const Footer = ({ text }: { text: string }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
