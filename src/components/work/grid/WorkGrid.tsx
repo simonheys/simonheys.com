@@ -1,18 +1,19 @@
 import * as React from "react";
 
-import * as contentModule from "../../../modules/content";
+import { getMeta, getPageForPath } from "../../../modules/content";
+
 import AppearWhenInView from "../../ui/AppearWhenInView";
 
-import { WorkGridCell } from "./WorkGridCell";
+import WorkGridCell from "./WorkGridCell";
 
 const WorkGrid = () => {
-  const pages = contentModule.getMeta().work.pages;
+  const pages = getMeta().work.pages;
   return (
     <div className={"container-fluid mb-3 mb-md-4"}>
       <div className={"row"}>
-        {pages.map((entry: contentModule.Page, index) => {
+        {pages.map((entry, index) => {
           const { path } = entry;
-          const page = contentModule.getPageForPath(path);
+          const page = getPageForPath(path);
           if (!page) {
             return null;
           }

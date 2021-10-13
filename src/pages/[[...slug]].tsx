@@ -1,14 +1,27 @@
 import * as React from "react";
 import Head from "next/head";
+import { GetStaticPaths, GetStaticProps } from "next";
 
-import * as contentModule from "../modules/content";
+import {
+  Component,
+  getMeta,
+  Page as PageType,
+  getPagePaths,
+  getPageForSlug,
+  getComponentsForSlug,
+  content,
+} from "../modules/content";
 
 import Components, { MappedComponent } from "../components/Components";
 import Fill from "../components/ui/Fill";
 
-const meta = contentModule.getMeta();
+const meta = getMeta();
 
-const Page = ({ page }) => {
+export type PageProp = PageType & {
+  header: Component;
+};
+
+const Page = ({ page }: { page: PageProp }) => {
   const { path, title, description, subtitle, header, fill, components } = page;
   const pageTitle = [title, subtitle, ...meta.titles]
     .filter(Boolean)
@@ -128,26 +141,26 @@ const Page = ({ page }) => {
 
 export default Page;
 
-export async function getStaticPaths() {
-  const paths = contentModule.getPagePaths();
+export const getStaticPaths: GetStaticPaths = async () => {
+  const paths = getPagePaths();
   return {
     paths,
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params }) {
+export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug = [] } = params;
-  const page = contentModule.getPageForSlug(slug);
-  const components = contentModule.getComponentsForSlug(slug);
+  const page = getPageForSlug(slug);
+  const components = getComponentsForSlug(slug);
   return {
     props: {
       params,
       page: {
         ...page,
-        header: contentModule.content.all.header,
+        header: content.all.header,
         components,
       },
     },
   };
-}
+};

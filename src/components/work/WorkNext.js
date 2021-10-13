@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 
 import * as contentModule from "../../modules/content";
 import AppearWhenInView from "../ui/AppearWhenInView";
-import { WorkGridCell } from "./grid/WorkGrid";
+import WorkGridCell from "./grid/WorkGridCell";
 
 import styles from "./WorkNext.module.scss";
 

@@ -80,8 +80,8 @@ export const getNextWorkPageForPath = (path: string): Page => {
   return getPageForPath(nextPath);
 };
 
-export const getPageForSlug = (slug: string[]): Page => {
-  const path = "/" + slug.join("/");
+export const getPageForSlug = (slug: string | string[]): Page => {
+  const path = pathFromSlug(slug);
   return getPageForPath(path);
 };
 
@@ -94,9 +94,9 @@ export const getPropertiesForImage = (src: string): ImageProperties => {
   return properties;
 };
 
-export const getComponentsForSlug = (slug: string[]): Component[] => {
+export const getComponentsForSlug = (slug: string | string[]): Component[] => {
   const page = getPageForSlug(slug);
-  const path = "/" + slug.join("/");
+  const path = pathFromSlug(slug);
   // TODO: apply filtering to all
   const after = content.all.after.filter((pageComponent) => {
     if (pageComponent.exclude) {
@@ -107,4 +107,12 @@ export const getComponentsForSlug = (slug: string[]): Component[] => {
     return true;
   });
   return [...content.all.before, ...page.components, ...after];
+};
+
+export const pathFromSlug = (slug: string | string[]): string => {
+  if (Array.isArray(slug)) {
+    const path = "/" + slug.join("/");
+    return path;
+  }
+  return slug;
 };

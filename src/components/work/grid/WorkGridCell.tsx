@@ -7,7 +7,7 @@ import ImageFadeIn from "../../ui/ImageFadeIn";
 
 import styles from "./WorkGridCell.module.scss";
 
-export const WorkGridCell = ({ page }: { page: contentModule.Page }) => {
+const WorkGridCell = ({ page }: { page: contentModule.Page }) => {
   const { path, title, subtitle, thumbnails } = page;
   if (!thumbnails) {
     return null;
@@ -35,3 +35,5 @@ export const WorkGridCell = ({ page }: { page: contentModule.Page }) => {
     </LinkA>
   );
 };
+
+export default WorkGridCell;
