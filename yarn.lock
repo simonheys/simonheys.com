@@ -3106,6 +3106,11 @@ graphology-layout-forceatlas2@^0.6.1:
   dependencies:
     graphology-utils "^2.1.0"
 
+graphology-types@^0.19.5:
+  version "0.19.5"
+  resolved "https://registry.yarnpkg.com/graphology-types/-/graphology-types-0.19.5.tgz#1b7e7d32a6ce7387c7771a02db7fc356058e416d"
+  integrity sha512-zXJEDILlJ2JI+oUVjHkXZIRRZfWuwBEhOJagOARnt4eWuErBJZUJmiEOJjLDA0s0DQNFxIHD4+NRwsU4B0VxWw==
+
 graphology-utils@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/graphology-utils/-/graphology-utils-2.1.1.tgz#bebe050a1290c67133a45c9de2d2a36ad2d25f8c"
