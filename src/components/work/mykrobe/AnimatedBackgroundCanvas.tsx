@@ -7,8 +7,8 @@ import useBoundingClientRectInView from "../../../hooks/useBoundingClientRectInV
 
 import styles from "./AnimatedBackgroundCanvas.module.scss";
 
-const AnimatedBackgroundCanvas = () => {
-  const lozenges = React.useRef(null);
+const AnimatedBackgroundCanvas: React.FC = () => {
+  const lozenges = React.useRef<CanvasLozenge[]>(null);
   const canvasRef = React.useRef(null);
   const { ref, boundingClientRect, inView } = useBoundingClientRectInView();
   const elapsedMilliseconds = useAnimationFrame();

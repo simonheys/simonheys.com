@@ -6,7 +6,16 @@ import LinkA from "../../ui/LinkA";
 
 import styles from "./DefaultControls.module.scss";
 
-const DefaultControls = ({
+export interface DefaultControlsProps {
+  title: boolean;
+  source: boolean;
+  download: boolean;
+  wordsOpen: boolean;
+  onToggleWordsOpen: (event: MouseEvent) => void;
+  onFullscreen: (event: MouseEvent) => void;
+}
+
+const DefaultControls: React.FC<DefaultControlsProps> = ({
   title,
   source,
   download,

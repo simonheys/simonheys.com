@@ -7,4 +7,30 @@
   composes: global(pb-3);
   overflow: hidden;
   flex: 1 0 auto;
+  position: relative;
+}
+
+.chevronContainer {
+  composes: global(h1);
+  composes: global(mb-0);
+  composes: global(d-none);
+  composes: global(d-sm-block);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: var(--gray-500);
+  @media (prefers-color-scheme: dark) {
+    color: var(--gray-400);
+  }
+}
+
+.chevron {
+  display: inline-block;
+  cursor: pointer;
+  &:hover {
+    color: var(--link-hover-color);
+  }
+  transition: color 0.1s;
 }

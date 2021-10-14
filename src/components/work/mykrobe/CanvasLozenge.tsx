@@ -1,26 +1,34 @@
 import { LozengeDimensions } from "./constants";
 import fillRoundedRect from "./fillRoundedRect";
 
+export type CanvasLozengeState = {
+  initialised: boolean;
+  x: number;
+  y: number;
+  scale: number;
+  rotation: number;
+  vx: number;
+  vr: number;
+  opacity: number;
+};
+
+export type CanvasLozengeProps = {
+  containerWidth?: number;
+  containerHeight?: number;
+  containerScale?: number;
+  color?: string;
+};
+
 export class CanvasLozenge {
-  state: {
-    initialised: boolean;
-    x: number;
-    y: number;
-    scale: number;
-    rotation: number;
-    vx: number;
-    vr: number;
-    opacity: number;
-  };
+  state: CanvasLozengeState;
+  props: CanvasLozengeProps;
 
-  props: {
-    containerWidth: number;
-    containerHeight: number;
-    containerScale: number;
-    color: string;
-  };
-
-  constructor({ containerWidth, containerHeight, containerScale, color }) {
+  constructor({
+    containerWidth,
+    containerHeight,
+    containerScale,
+    color,
+  }: CanvasLozengeProps) {
     this.state = {
       initialised: true,
       x: (-0.2 + 1.2 * Math.random()) * containerWidth,
@@ -39,7 +47,7 @@ export class CanvasLozenge {
     };
   }
 
-  setProps = (props) => {
+  setProps = (props: CanvasLozengeProps) => {
     this.props = {
       ...this.props,
       ...props,

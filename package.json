@@ -46,6 +46,7 @@
     "@types/gtag.js": "^0.0.7",
     "@types/react": "^17.0.28",
     "@types/resize-observer-browser": "^0.1.6",
+    "@types/vimeo__player": "^2.10.1",
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "babel-eslint": "^10.0.0",

@@ -4,13 +4,16 @@ import WordClockEditable, { WordClockEditableProps } from "./WordClockEditable";
 
 import styles from "./WordClockCell.module.scss";
 
-export type WordClockCellProps = WordClockEditableProps & {
+export interface WordClockCellProps extends WordClockEditableProps {
   col: string | number;
   // ...rest
   [x: string]: any;
-};
+}
 
-const WordClockCell = ({ col = "default", ...rest }: WordClockCellProps) => {
+const WordClockCell: React.FC<WordClockCellProps> = ({
+  col = "default",
+  ...rest
+}) => {
   return (
     <div className={styles[`containerSizer__col-${col}`]}>
       <div className={styles.container}>

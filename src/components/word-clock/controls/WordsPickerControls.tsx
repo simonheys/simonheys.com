@@ -5,7 +5,18 @@ import { Circle } from "../../ui/icons";
 
 import styles from "./WordsPickerControls.module.scss";
 
-const WordsPickerControls = ({
+export interface WordsPickerControlsProps {
+  wordsCollection: {
+    [x: string]: {
+      file: string;
+      title: string;
+    }[];
+  };
+  file: string;
+  setFile: (file: string) => void;
+}
+
+const WordsPickerControls: React.FC<WordsPickerControlsProps> = ({
   wordsCollection = [],
   file: selectedFile,
   setFile,
@@ -21,7 +32,7 @@ const WordsPickerControls = ({
     });
   }, []);
 
-  const setSeletedRef = React.useCallback(
+  const setSelectedRef = React.useCallback(
     (ref) => {
       selectedRef.current = ref;
       scrollIntoView();
@@ -50,7 +61,7 @@ const WordsPickerControls = ({
               <React.Fragment key={index}>
                 <div className={styles.wordsCollectionLanguage}>{language}</div>
                 <div className={styles.wordsCollectionFileGroup}>
-                  {entries.map(({ file, title }, index) => {
+                  {entries.map(({ file, title }, index: number) => {
                     const selected = file === selectedFile;
                     return (
                       <div
@@ -64,7 +75,7 @@ const WordsPickerControls = ({
                               : styles.wordsCollectionFile
                           }
                           onClick={() => setFile(file)}
-                          ref={selected ? setSeletedRef : null}
+                          ref={selected ? setSelectedRef : null}
                         >
                           <div className={styles.wordsCollectionFileIcon}>
                             <Circle />

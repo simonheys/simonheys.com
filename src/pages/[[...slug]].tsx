@@ -21,7 +21,11 @@ export type PageProp = PageType & {
   header: Component;
 };
 
-const Page = ({ page }: { page: PageProp }) => {
+export interface PageProps {
+  page: PageProp;
+}
+
+const Page: React.FC<PageProps> = ({ page }) => {
   const { path, title, description, subtitle, header, fill, components } = page;
   const pageTitle = [title, subtitle, ...meta.titles]
     .filter(Boolean)

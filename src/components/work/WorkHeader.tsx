@@ -8,7 +8,7 @@ import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkHeader.module.scss";
 
-export type WorkHeaderProps = {
+export interface WorkHeaderProps {
   title?: string;
   subtitle?: string;
   links?: {
@@ -16,9 +16,14 @@ export type WorkHeaderProps = {
     url: string;
   }[];
   ruled?: boolean;
-};
+}
 
-const WorkHeader = ({ title, subtitle, links, ruled }: WorkHeaderProps) => {
+const WorkHeader: React.FC<WorkHeaderProps> = ({
+  title,
+  subtitle,
+  links,
+  ruled,
+}) => {
   const router = useRouter();
   const page = getPageForPath(router.asPath);
   return (

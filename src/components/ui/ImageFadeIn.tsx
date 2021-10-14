@@ -4,7 +4,12 @@ import { motion, useAnimation } from "framer-motion";
 
 import * as contentModule from "../../modules/content";
 
-const ImageFadeIn = ({ src, alt, ...rest }) => {
+interface ImageFadeInProps {
+  src: string;
+  alt: string;
+}
+
+const ImageFadeIn: React.FC<ImageFadeInProps> = ({ src, alt, ...rest }) => {
   const controls = useAnimation();
   const onLoadingComplete = React.useCallback(() => {
     controls.start("visible");

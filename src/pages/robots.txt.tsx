@@ -1,6 +1,6 @@
 import { GetServerSideProps } from "next";
 
-const Robots = () => null;
+const Robots: React.FC = () => null;
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {

@@ -3,20 +3,20 @@ import { motion, AnimateSharedLayout } from "framer-motion";
 
 import styles from "./SegmentedControl.module.scss";
 
-export type SegmentedControlProps = {
+export interface SegmentedControlProps {
   options: {
     title: string;
     value: string | number;
   }[];
   value: string | number;
   onChange: (value: string | number) => void;
-};
+}
 
-const SegmentedControl = ({
+const SegmentedControl: React.FC<SegmentedControlProps> = ({
   options,
   value,
   onChange,
-}: SegmentedControlProps) => {
+}) => {
   const selectedIndex = options.findIndex((item) => item.value === value);
   return (
     <AnimateSharedLayout>

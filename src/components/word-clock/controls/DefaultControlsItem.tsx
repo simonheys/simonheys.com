@@ -3,22 +3,22 @@ import clsx from "clsx";
 
 import styles from "./DefaultControlsItem.module.scss";
 
-export type DefaultControlsItemProps = {
+export interface DefaultControlsItemProps {
   className?: string;
   Tag?: any;
   active?: boolean;
   disabled?: boolean;
   // ...rest
   [x: string]: any;
-};
+}
 
-const DefaultControlsItem = ({
+const DefaultControlsItem: React.FC<DefaultControlsItemProps> = ({
   className,
   Tag = "div",
   active = false,
   disabled = false,
   ...rest
-}: React.PropsWithChildren<DefaultControlsItemProps>) => {
+}) => {
   return (
     <Tag
       className={clsx(

@@ -935,6 +935,11 @@
   resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
+"@types/vimeo__player@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.10.1.tgz#53d5ccffb757b49e3ff3f059803275832e54f1fe"
+  integrity sha512-PgmJmOFlkr1r/1bomlTAEY7yuJNM447DqBem1CLNmSefs8ILE/e3e0Ey07GcZK0NujWW/m3kyv1kIhtLh/iu/A==
+
 "@typescript-eslint/eslint-plugin@^4.0.0":
   version "4.28.4"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-4.28.4.tgz#e73c8cabbf3f08dee0e1bda65ed4e622ae8f8921"

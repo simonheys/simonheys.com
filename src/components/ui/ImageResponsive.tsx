@@ -1,9 +1,17 @@
 import * as React from "react";
-import Image from "next/image";
+import Image, { ImageProps } from "next/image";
 
 import { getPropertiesForImage } from "../../modules/content";
 
-const ImageResponsive = ({ src, alt = "", ...rest }) => {
+interface ImageResponsiveProps extends ImageProps {
+  src: string;
+}
+
+const ImageResponsive: React.FC<ImageResponsiveProps> = ({
+  src,
+  alt = "",
+  ...rest
+}) => {
   const { width, height } = React.useMemo(() => {
     const properties = getPropertiesForImage(src);
     return properties;
@@ -21,7 +29,10 @@ const ImageResponsive = ({ src, alt = "", ...rest }) => {
   );
 };
 
-export const ImageResponsiveColored = ({ src, ...rest }) => {
+export const ImageResponsiveColored: React.FC<ImageResponsiveProps> = ({
+  src,
+  ...rest
+}) => {
   const { color } = React.useMemo(() => {
     return getPropertiesForImage(src);
   }, [src]);

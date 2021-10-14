@@ -1,9 +1,13 @@
 import * as React from "react";
 import AppearWhenInView from "../ui/AppearWhenInView";
 
-import WorkRowCol from "./WorkRowCol";
+import WorkRowCol, { WorkRowColProps } from "./WorkRowCol";
 
-const WorkRow = ({ columns, ...rest }) => {
+export interface WorkRowProps {
+  columns: WorkRowColProps[];
+}
+
+const WorkRow: React.FC<WorkRowProps> = ({ columns, ...rest }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
