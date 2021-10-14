@@ -32,5 +32,10 @@
   &:hover {
     color: var(--link-hover-color);
   }
-  transition: color 0.1s;
+  transition: color 0.1s, opacity 0.1s;
+}
+
+.chevronHidden {
+  composes: chevron;
+  opacity: 0;
 }
