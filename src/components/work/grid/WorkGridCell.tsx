@@ -1,13 +1,17 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-import * as contentModule from "../../../modules/content";
+import { Page } from "../../../modules/content";
 import LinkA from "../../ui/LinkA";
 import ImageFadeIn from "../../ui/ImageFadeIn";
 
 import styles from "./WorkGridCell.module.scss";
 
-const WorkGridCell = ({ page }: { page: contentModule.Page }) => {
+export interface WorkGridCellProps {
+  page: Page;
+}
+
+const WorkGridCell: React.FC<WorkGridCellProps> = ({ page }) => {
   const { path, title, subtitle, thumbnails } = page;
   if (!thumbnails) {
     return null;

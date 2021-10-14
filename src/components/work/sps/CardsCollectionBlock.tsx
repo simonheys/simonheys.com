@@ -1,7 +1,7 @@
 import * as React from "react";
 import { AnimateSharedLayout } from "framer-motion";
 
-import CardItem from "./CardItem";
+import CardItem, { CardItemPostType } from "./CardItem";
 import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from "../../ui/icons";
 
 import styles from "./CardsCollectionBlock.module.scss";
@@ -38,7 +38,13 @@ export const mapLayoutPropToLayout = {
   },
 };
 
-const CardsCollectionBlock = ({
+export interface CardsCollectionBlockProps {
+  posts: CardItemPostType[];
+  layout: string;
+  animated: boolean;
+}
+
+const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
   posts,
   layout: layoutProp = "3over4",
   animated = false,
@@ -63,7 +69,7 @@ const CardsCollectionBlock = ({
                       size = "lg";
                     }
                   }
-                  const cardPosts = [];
+                  const cardPosts: CardItemPostType[] = [];
                   for (let i = 0; i < cardsInCell; i++) {
                     if (currentPostIndex < posts.length) {
                       const post = posts[currentPostIndex];

@@ -8,7 +8,11 @@ import LinkA from "./ui/LinkA";
 
 import styles from "./Header.module.scss";
 
-const Header = ({ links }: { links: string[] }) => {
+export interface HeaderProps {
+  links: string[];
+}
+
+const Header: React.FC<HeaderProps> = ({ links }) => {
   const router = useRouter();
   const windowScroll = useWindowScrollVelocity();
   const { ref, boundingClientRect } = useBoundingClientRect();

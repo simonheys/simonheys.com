@@ -8,7 +8,7 @@ import * as gtag from "../modules/gtag";
 
 import "../styles/globals.scss";
 
-const App = ({ Component, pageProps }: AppProps) => {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter();
 
   React.useEffect(() => {

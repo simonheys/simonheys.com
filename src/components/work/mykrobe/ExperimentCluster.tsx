@@ -39,7 +39,25 @@ export interface MaybeDragging {
   vy?: number;
 }
 
-const ExperimentCluster = ({ experimentCluster }) => {
+export type ExperimentClusterType = {
+  nodes: {
+    id: number;
+    experiments: number;
+  }[];
+  distance: {
+    start: number;
+    end: number;
+    distance: number;
+  }[];
+};
+
+export interface ExperimentClusterProps {
+  experimentCluster: ExperimentClusterType;
+}
+
+const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
+  experimentCluster,
+}) => {
   // refs
   const canvasRef = React.useRef(null);
   const graphRef = React.useRef(null);

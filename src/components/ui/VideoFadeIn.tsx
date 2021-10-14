@@ -5,7 +5,21 @@ import VimeoPlayer from "@vimeo/player";
 import styles from "./VideoFadeIn.module.scss";
 import isTouchDevice from "../../utils/isTouchDevice";
 
-const VideoFadeIn = ({ vimeoId, youTubeId, col, color, title, ...rest }) => {
+export interface VideoFadeInProps {
+  vimeoId: string;
+  youTubeId: string;
+  col: string | number;
+  color: string;
+  title: string;
+}
+
+const VideoFadeIn: React.FC<VideoFadeInProps> = ({
+  vimeoId,
+  youTubeId,
+  col,
+  color,
+  title,
+}) => {
   const ref = React.useRef(null);
   const controls = useAnimation();
   const vimeoPlayer = React.useRef(null);

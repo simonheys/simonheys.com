@@ -7,7 +7,7 @@ import WorkGridCell from "./grid/WorkGridCell";
 
 import styles from "./WorkNext.module.scss";
 
-const WorkNext = () => {
+const WorkNext: React.FC = () => {
   const router = useRouter();
   const nextPage = getNextWorkPageForPath(router.asPath);
   return (

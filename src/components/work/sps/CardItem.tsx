@@ -3,7 +3,25 @@ import { motion } from "framer-motion";
 
 import styles from "./CardItem.module.scss";
 
-const CardItem = ({ post, size = "base", animated = false }) => {
+export type CardItemPostType = {
+  title: string;
+  summary: string;
+  category: string;
+  date: string;
+  id: string;
+};
+
+export interface CardItemProps {
+  post: CardItemPostType;
+  size: string;
+  animated: boolean;
+}
+
+const CardItem: React.FC<CardItemProps> = ({
+  post,
+  size = "base",
+  animated = false,
+}) => {
   const { title, summary, category, date, id } = post;
   const inner = (
     <React.Fragment>

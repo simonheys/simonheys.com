@@ -8,7 +8,7 @@ import TextLinks from "../ui/TextLinks";
 
 import styles from "./WorkRowCol.module.scss";
 
-export type WorkRowColProps = {
+export interface WorkRowColProps {
   type?: string;
   col?: number | string;
   text?: string;
@@ -18,9 +18,9 @@ export type WorkRowColProps = {
   vimeoId?: string;
   color?: string;
   title?: string;
-};
+}
 
-const WorkRowCol = ({ type, col, ...rest }: WorkRowColProps) => {
+const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
   const className = col
     ? `${styles.container} col-sm-${col}`
     : `${styles.container} col-sm`;

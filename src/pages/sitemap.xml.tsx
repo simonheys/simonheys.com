@@ -2,7 +2,7 @@ import { GetServerSideProps } from "next";
 
 import * as contentModule from "../modules/content";
 
-const Sitemap = () => null;
+const Sitemap: React.FC = () => null;
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
