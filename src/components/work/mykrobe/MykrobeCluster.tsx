@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import ExperimentCluster from "./ExperimentCluster";
+import ExperimentCluster, { ExperimentClusterType } from "./ExperimentCluster";
 
 import styles from "./MykrobeCluster.module.scss";
 
@@ -10,8 +10,12 @@ const mst = {
   "mst-3": require(`./json/mst-3.json`),
 };
 
-const MykrobeCluster = ({ src = "mst-1" }: { src: string }) => {
-  const experimentCluster = mst[src] || {};
+export interface MykrobeClusterProps {
+  src: string;
+}
+
+const MykrobeCluster: React.FC<MykrobeClusterProps> = ({ src = "mst-1" }) => {
+  const experimentCluster: ExperimentClusterType = mst[src] || {};
 
   return (
     <div className={styles.containerSizer}>

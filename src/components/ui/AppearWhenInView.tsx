@@ -2,7 +2,11 @@ import * as React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-const AppearWhenInView: React.FC = (props) => {
+export interface AppearWhenInViewProps {
+  className?: string;
+}
+
+const AppearWhenInView: React.FC<AppearWhenInViewProps> = (props) => {
   const timeoutId = React.useRef(null);
   const controls = useAnimation();
   const [ref, inView] = useInView();
