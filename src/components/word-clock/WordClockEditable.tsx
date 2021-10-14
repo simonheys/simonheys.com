@@ -17,21 +17,21 @@ import styles from "./WordClockEditable.module.scss";
 
 const fileDefault = "English_simple_fragmented.json";
 
-export type WordClockEditableProps = {
+export interface WordClockEditableProps {
   file: string;
   editable: boolean;
   title: boolean;
   download: boolean;
   source: boolean;
-};
+}
 
-const WordClockEditable = ({
+const WordClockEditable: React.FC<WordClockEditableProps> = ({
   file: fileProp = fileDefault,
   editable = true,
   title = false,
   download = true,
   source = true,
-}: WordClockEditableProps) => {
+}) => {
   const [file, setFile] = React.useState(fileProp);
   const [wordsPickerControlsVisible, setWordsPickerControlsVisible] =
     React.useState(false);

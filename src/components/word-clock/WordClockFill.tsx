@@ -1,9 +1,10 @@
 import * as React from "react";
+
 import WordClockEditable, { WordClockEditableProps } from "./WordClockEditable";
 
 import styles from "./WordClockFill.module.scss";
 
-const WordClockFill = (props: WordClockEditableProps) => {
+const WordClockFill: React.FC<WordClockEditableProps> = (props) => {
   return (
     <div className={styles.container}>
       <div className={"row h-100 mb-md-5"}>
