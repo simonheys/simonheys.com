@@ -16,6 +16,7 @@ import fetcher from "./utils/fetcher";
 import styles from "./WordClockEditable.module.scss";
 
 const fileDefault = "English_simple_fragmented.json";
+const wordsDefault = require(`wordclock/packages/wordclock-words/json/${fileDefault}`);
 
 export interface WordClockEditableProps {
   file: string;
@@ -142,7 +143,7 @@ const WordClockEditable: React.FC<WordClockEditableProps> = ({
     return (
       <div className={styles.containerSizer}>
         <div className={styles.wordClockContainer}>
-          <WordClock words={words} />
+          <WordClock words={words || wordsDefault} />
         </div>
       </div>
     );
