@@ -9,9 +9,11 @@ import CardsCollectionBlock, {
   mapLayoutPropToLayout,
 } from "./CardsCollectionBlock";
 
+import { CardItemPostType } from "./CardItem";
+
 import styles from "./SPSCollection.module.scss";
 
-const collection = require("./json/collection.json");
+const collection: CardItemPostType[] = require("./json/collection.json");
 
 const orderedValues = ["4of2", "4", "4over4", "3over4", "2over4"];
 
@@ -22,7 +24,7 @@ const options = orderedValues.map((value) => {
   };
 });
 
-const SPSCollection = () => {
+const SPSCollection: React.FC = () => {
   const [layout, setLayout] = React.useState(orderedValues[0]);
   const [autoAnimate, setAutoAnimate] = React.useState(true);
   const { ref, inView } = useInView();

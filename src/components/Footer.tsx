@@ -4,7 +4,11 @@ import AppearWhenInView from "./ui/AppearWhenInView";
 
 import styles from "./Footer.module.scss";
 
-const Footer = ({ text }: { text: string }) => {
+export interface FooterProps {
+  text: string;
+}
+
+const Footer: React.FC<FooterProps> = ({ text }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
