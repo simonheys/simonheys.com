@@ -44,6 +44,8 @@
   @include media-breakpoint-up(md) {
     grid-row: span 2;
     grid-column: span 2;
+  }
+  @include media-breakpoint-up(lg) {
     padding-bottom: calc(100% * 9 / 16 + var(--spacing) * 7 / 16);
   }
 }
