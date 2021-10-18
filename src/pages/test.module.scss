@@ -2,7 +2,6 @@
 
 .wrapper {
   --spacing: 1rem;
-  background-color: grey;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: var(--spacing);
@@ -28,16 +27,10 @@
 
 .module {
   position: relative;
-}
-
-.moduleInner {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
   border-radius: 0.2rem;
-  background-color: cyan;
+  background-color: lightgrey;
+  font-size: 2rem;
+  padding-left: 0.5rem;
 }
 
 .module-1w-1h {
@@ -48,7 +41,7 @@
 
 .module-2w-2h {
   composes: module-1w-1h;
-  @include media-breakpoint-up(lg) {
+  @include media-breakpoint-up(md) {
     grid-row: span 2;
     grid-column: span 2;
     padding-bottom: calc(100% * 9 / 16 + var(--spacing) * 7 / 16);
@@ -84,5 +77,17 @@
 }
 
 .six {
+  composes: module-1w-2h;
+}
+
+.seven {
+  composes: module-1w-2h;
+}
+
+.eight {
+  composes: module-1w-1h;
+}
+
+.nine {
   composes: module-1w-1h;
 }

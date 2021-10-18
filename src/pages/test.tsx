@@ -5,27 +5,20 @@ import styles from "./test.module.scss";
 const Test: React.FC = () => {
   return (
     <div>
-      <div className={"container"}>
-        <h1>Grid exploration</h1>
+      <div className={"container pb-5"}>
+        <div className={"py-3"}>
+          <h1>Grid exploration</h1>
+        </div>
         <div className={styles.wrapper}>
-          <div className={styles.one}>
-            <div className={styles.moduleInner}>One</div>
-          </div>
-          <div className={styles.two}>
-            <div className={styles.moduleInner}>Two</div>
-          </div>
-          <div className={styles.three}>
-            <div className={styles.moduleInner}>Three</div>
-          </div>
-          <div className={styles.four}>
-            <div className={styles.moduleInner}>Four</div>
-          </div>
-          <div className={styles.five}>
-            <div className={styles.moduleInner}>Five</div>
-          </div>
-          <div className={styles.six}>
-            <div className={styles.moduleInner}>Six</div>
-          </div>
+          <div className={styles.one}>One</div>
+          <div className={styles.two}>Two</div>
+          <div className={styles.three}>Three</div>
+          <div className={styles.four}>Four</div>
+          <div className={styles.five}>Five</div>
+          <div className={styles.six}>Six</div>
+          <div className={styles.seven}>Seven</div>
+          <div className={styles.eight}>Eight</div>
+          <div className={styles.nine}>Nine</div>
         </div>
       </div>
     </div>
