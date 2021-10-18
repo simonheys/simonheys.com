@@ -1,0 +1,99 @@
+@import "~/src/styles/use-bootstrap";
+
+.wrapper {
+  --spacing: 1rem;
+  background-color: grey;
+  margin-right: calc(var(--spacing) * -1);
+}
+
+.moduleSpacing {
+  position: absolute;
+  left: 0;
+  right: var(--spacing);
+  top: 0;
+  bottom: var(--spacing);
+  border-radius: 0.2rem;
+}
+
+@include media-breakpoint-up(sm) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .wrapper {
+    --spacing: 1.25rem;
+  }
+}
+
+.module {
+  background-color: yellow;
+  position: relative;
+}
+
+.moduleAspect {
+  composes: module;
+  height: 0;
+  padding-bottom: calc(100% * 9 / 16);
+}
+
+.moduleInner {
+  composes: moduleSpacing;
+  background-color: cyan;
+}
+
+.one {
+  composes: moduleAspect;
+}
+
+@include media-breakpoint-up(lg) {
+  .one {
+    grid-row: 1/3;
+    grid-column: 1/3;
+  }
+}
+
+.two {
+  composes: module;
+}
+
+@include media-breakpoint-up(lg) {
+  .two {
+    grid-column: 3/3;
+    grid-row: 1/3;
+  }
+}
+
+.three {
+  composes: moduleAspect;
+}
+
+.four {
+  composes: moduleAspect;
+}
+
+.five {
+  composes: moduleAspect;
+}
+
+.six {
+  composes: moduleAspect;
+}
+
+@include media-breakpoint-up(lg) {
+  .six {
+    grid-column: 2/4;
+    grid-row: 3/5;
+  }
+}
