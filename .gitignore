@@ -33,5 +33,3 @@ yarn-error.log*
 # vercel
 .vercel
 
-# generated at build time
-public/sitemap.txt
