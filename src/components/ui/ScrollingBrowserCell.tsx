@@ -1,5 +1,5 @@
 import * as React from "react";
-import { interpolate, easeInOut, easeOut } from "popmotion";
+import { interpolate, easeInOut, animate, PlaybackControls } from "popmotion";
 
 import useBoundingClientRectInView from "../../hooks/useBoundingClientRectInView";
 import useWindowSize from "../../hooks/useWindowSize";
@@ -55,6 +55,7 @@ export interface ScrollingBrowserCellProps {
   system?: string[];
   mask?: string;
   maskSrc?: string;
+  drivenByScroll?: boolean;
 }
 
 const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
@@ -62,6 +63,7 @@ const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
   system,
   mask: maskKey = "default",
   maskSrc,
+  drivenByScroll = false,
 }) => {
   const { svg, mask } = MASK_ATTRIBUTES[maskKey];
 
@@ -71,6 +73,7 @@ const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
     inView,
   } = useBoundingClientRectInView();
   const windowSize = useWindowSize();
+  const animateRef = React.useRef<PlaybackControls>(null);
 
   const [interpolationValue, setInterpolationValue] = React.useState(0);
   const [containerScale, setContainerScale] = React.useState(1);
@@ -88,26 +91,62 @@ const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
   }, [src]);
 
   React.useEffect(() => {
-    if (!containerBoundingClientRect || !inView) {
-      return;
+    if (drivenByScroll) {
+      if (!containerBoundingClientRect || !inView) {
+        return;
+      }
+      const startFraction = system ? 0.1 : 0.9;
+      const stopFraction = system ? 0.4 : 0.7;
+
+      const startsTop =
+        windowSize.clientHeight -
+        containerBoundingClientRect.height * startFraction;
+      const stopsTop = -containerBoundingClientRect.height * stopFraction;
+
+      const mapper = interpolate([startsTop, stopsTop], [0, 1], {
+        ease: easeInOut,
+      });
+      const value = mapper(containerBoundingClientRect.top);
+      setInterpolationValue(value);
+    } else {
+      if (!containerBoundingClientRect) {
+        return;
+      }
+      const startFraction = system ? 0.9 : 0.5;
+      const delayMilliseconds = system ? 0 : 500;
+      if (
+        inView &&
+        !animateRef.current &&
+        containerBoundingClientRect.top <=
+          windowSize.clientHeight * startFraction
+      ) {
+        // start
+        animateRef.current = animate({
+          from: 0,
+          to: 1,
+          ease: easeInOut,
+          elapsed: -delayMilliseconds,
+          duration: 3000,
+          onUpdate: setInterpolationValue,
+        });
+      }
+      if (!inView && animateRef.current) {
+        //stop and reset
+        animateRef.current.stop();
+        animateRef.current = null;
+        setInterpolationValue(0);
+      }
     }
-    const startFraction = system ? 0.1 : 0.9;
-    const stopFraction = system ? 0.4 : 0.7;
-
-    const startsTop =
-      windowSize.clientHeight -
-      containerBoundingClientRect.height * startFraction;
-    const stopsTop = -containerBoundingClientRect.height * stopFraction;
-
-    const mapper = interpolate([startsTop, stopsTop], [0, 1], {
-      ease: easeInOut,
-    });
-    const value = mapper(containerBoundingClientRect.top);
-    setInterpolationValue(value);
-  }, [containerBoundingClientRect, inView, system, windowSize.clientHeight]);
+  }, [
+    containerBoundingClientRect,
+    drivenByScroll,
+    inView,
+    system,
+    windowSize.clientHeight,
+  ]);
 
   const style = React.useMemo(() => {
-    if (!inView) {
+    if (!inView || !containerScale) {
       return {};
     }
 
@@ -152,14 +191,14 @@ const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
         [i / numberOfImages, (i + 1) / numberOfImages],
         [1, 0],
         {
-          ease: easeOut,
+          ease: easeInOut,
         }
       );
       const value = mapper(interpolationValue);
-      // const ty = containerScale * 100 * value;
-      // const s = 1 + 0.2 * value;
       const ty = containerScale * 50 * value;
-      const s = 1 - 0.1 * value;
+      const s = 1 + 0.1 * value;
+      // const ty = containerScale * 50 * value;
+      // const s = 1 - 0.1 * value;
       systemStyles[i] = {
         transform: `translate(0, ${ty}px) scale(${s}, ${s})`,
         opacity: 1 - value,
