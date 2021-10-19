@@ -61,20 +61,31 @@ export const getMeta = (): Meta => content.meta;
 export const getPagePaths = (): string[] =>
   content.pages.map((page) => page.path).sort();
 
-export const getPageForPath = (path: string): Page => {
+export const normalisePath = (path: string): string => {
   const queryIndex = path.indexOf("?");
   if (queryIndex !== -1) {
-    path = path.substr(0, queryIndex);
+    return path.substr(0, queryIndex);
   }
-  return content.pages.find((page) => page.path === path);
+  return path;
 };
 
-export const getPageIndexForPath = (path: string): number =>
-  content.pages.findIndex((page) => page.path === path);
+export const getPageForPath = (path: string): Page => {
+  const normalisedPath = normalisePath(path);
+  const page = content.pages.find((page) => page.path === normalisedPath);
+  return page;
+};
+
+export const getPageIndexForPath = (path: string): number => {
+  const normalisedPath = normalisePath(path);
+  return content.pages.findIndex((page) => page.path === normalisedPath);
+};
 
 export const getNextWorkPageForPath = (path: string): Page => {
+  const normalisedPath = normalisePath(path);
   const workPages = content.meta.work.pages;
-  const currentIndex = workPages.findIndex((page) => page.path === path);
+  const currentIndex = workPages.findIndex(
+    (page) => page.path === normalisedPath
+  );
   if (currentIndex === -1) {
     return null;
   }
