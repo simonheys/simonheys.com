@@ -62,10 +62,18 @@ export const getPagePaths = (): string[] =>
   content.pages.map((page) => page.path).sort();
 
 export const normalisePath = (path: string): string => {
+  if (typeof path !== "string") {
+    return "/";
+  }
+  // omit query
   const queryIndex = path.indexOf("?");
   if (queryIndex !== -1) {
-    return path.substr(0, queryIndex);
+    path = path.substr(0, queryIndex);
   }
+  // convert multiple /// into single /, omit leading and trailing
+  path = path.split("/").filter(Boolean).join("/");
+  // re-add leading /
+  path = `/${path}`;
   return path;
 };
 
