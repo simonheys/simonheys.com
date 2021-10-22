@@ -65,7 +65,11 @@ export const getWorkPagePaths = (): string[] => {
   return content.meta.work.pages.map((page) => page.path);
 };
 
-export const normalisePath = (path: string): string => {
+export const normalisePath = (path: string | string[]): string => {
+  // allow array
+  if (Array.isArray(path)) {
+    path = path.join("/");
+  }
   if (typeof path !== "string") {
     return "/";
   }
@@ -99,9 +103,19 @@ export const getNextWorkPageForPath = (path: string): Page => {
   return getPageForPath(nextPath);
 };
 
-export const getPageForSlug = (slug: string | string[]): Page => {
-  const path = pathFromSlug(slug);
-  return getPageForPath(path);
+export const getComponentsForPath = (path: string | string[]): Component[] => {
+  const normalisedPath = normalisePath(path);
+  const page = getPageForPath(normalisedPath);
+  // TODO: apply filtering to all
+  const after = content.all.after.filter((pageComponent) => {
+    if (pageComponent.exclude) {
+      if (pageComponent.exclude.includes(normalisedPath)) {
+        return false;
+      }
+    }
+    return true;
+  });
+  return [...content.all.before, ...page.components, ...after];
 };
 
 export const getPropertiesForImage = (src: string): ImageProperties => {
@@ -111,27 +125,4 @@ export const getPropertiesForImage = (src: string): ImageProperties => {
     return { width: 42, height: 42 };
   }
   return properties;
-};
-
-export const getComponentsForSlug = (slug: string | string[]): Component[] => {
-  const page = getPageForSlug(slug);
-  const path = pathFromSlug(slug);
-  // TODO: apply filtering to all
-  const after = content.all.after.filter((pageComponent) => {
-    if (pageComponent.exclude) {
-      if (pageComponent.exclude.includes(path)) {
-        return false;
-      }
-    }
-    return true;
-  });
-  return [...content.all.before, ...page.components, ...after];
-};
-
-export const pathFromSlug = (slug: string | string[]): string => {
-  if (Array.isArray(slug)) {
-    const path = "/" + slug.join("/");
-    return path;
-  }
-  return slug;
 };

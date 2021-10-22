@@ -15,12 +15,23 @@ import {
 describe("Unit test content functions", () => {
   describe("normalisePath", () => {
     describe("when valid", () => {
-      it("should normalise path as expected", () => {
-        expect(normalisePath("/foo/bar")).equals("/foo/bar");
-        expect(normalisePath("/foo/bar/")).equals("/foo/bar");
-        expect(normalisePath("////foo////bar////")).equals("/foo/bar");
-        expect(normalisePath("/foo/bar/?foo=bar")).equals("/foo/bar");
-        expect(normalisePath("/foo/bar?foo=bar")).equals("/foo/bar");
+      describe("when given a string", () => {
+        it("should normalise path as expected", () => {
+          expect(normalisePath("/foo/bar")).equals("/foo/bar");
+          expect(normalisePath("/foo/bar/")).equals("/foo/bar");
+          expect(normalisePath("////foo////bar////")).equals("/foo/bar");
+          expect(normalisePath("/foo/bar/?foo=bar")).equals("/foo/bar");
+          expect(normalisePath("/foo/bar?foo=bar")).equals("/foo/bar");
+        });
+      });
+      describe("when given an array", () => {
+        it("should normalise path as expected", () => {
+          expect(normalisePath(["foo", "bar"])).equals("/foo/bar");
+          expect(normalisePath(["/foo", "/bar"])).equals("/foo/bar");
+          expect(normalisePath(["/foo/", "/bar/"])).equals("/foo/bar");
+          expect(normalisePath(["foo/", "bar/"])).equals("/foo/bar");
+          expect(normalisePath(["foo", "bar", "?foo=bar"])).equals("/foo/bar");
+        });
       });
     });
     describe("when invalid", () => {
