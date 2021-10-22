@@ -54,14 +54,18 @@ export type Content = {
   };
 };
 
-export const content: Content = require("../../content/content.json");
+const defaultContent: Content = require("../../content/content.json");
+export { defaultContent as content };
 
-export const getMeta = (): Meta => content.meta;
+export const getMeta = (content: Content = defaultContent): Meta =>
+  content.meta;
 
-export const getPagePaths = (): string[] =>
+export const getPagePaths = (content: Content = defaultContent): string[] =>
   content.pages.map((page) => page.path).sort();
 
-export const getWorkPagePaths = (): string[] => {
+export const getWorkPagePaths = (
+  content: Content = defaultContent
+): string[] => {
   return content.meta.work.pages.map((page) => page.path);
 };
 
@@ -85,27 +89,36 @@ export const normalisePath = (path: string | string[]): string => {
   return path;
 };
 
-export const getPageForPath = (path: string): Page => {
+export const getPageForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Page => {
   const normalisedPath = normalisePath(path);
   const page = content.pages.find((page) => page.path === normalisedPath);
   return page;
 };
 
-export const getNextWorkPageForPath = (path: string): Page => {
+export const getNextWorkPageForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Page => {
   const normalisedPath = normalisePath(path);
-  const workPagePaths = getWorkPagePaths();
+  const workPagePaths = getWorkPagePaths(content);
   const currentIndex = workPagePaths.indexOf(normalisedPath);
   if (currentIndex === -1) {
     return;
   }
   const nextIndex = (currentIndex + 1) % workPagePaths.length;
   const nextPath = workPagePaths[nextIndex];
-  return getPageForPath(nextPath);
+  return getPageForPath(nextPath, content);
 };
 
-export const getComponentsForPath = (path: string | string[]): Component[] => {
+export const getComponentsForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Component[] => {
   const normalisedPath = normalisePath(path);
-  const page = getPageForPath(normalisedPath);
+  const page = getPageForPath(normalisedPath, content);
   // TODO: apply filtering to all
   const after = content.all.after.filter((pageComponent) => {
     if (pageComponent.exclude) {
