@@ -61,6 +61,10 @@ export const getMeta = (): Meta => content.meta;
 export const getPagePaths = (): string[] =>
   content.pages.map((page) => page.path).sort();
 
+export const getWorkPagePaths = (): string[] => {
+  return content.meta.work.pages.map((page) => page.path);
+};
+
 export const normalisePath = (path: string): string => {
   if (typeof path !== "string") {
     return "/";
@@ -83,22 +87,15 @@ export const getPageForPath = (path: string): Page => {
   return page;
 };
 
-export const getPageIndexForPath = (path: string): number => {
-  const normalisedPath = normalisePath(path);
-  return content.pages.findIndex((page) => page.path === normalisedPath);
-};
-
 export const getNextWorkPageForPath = (path: string): Page => {
   const normalisedPath = normalisePath(path);
-  const workPages = content.meta.work.pages;
-  const currentIndex = workPages.findIndex(
-    (page) => page.path === normalisedPath
-  );
+  const workPagePaths = getWorkPagePaths();
+  const currentIndex = workPagePaths.indexOf(normalisedPath);
   if (currentIndex === -1) {
-    return null;
+    return;
   }
-  const nextIndex = (currentIndex + 1) % workPages.length;
-  const nextPath = workPages[nextIndex].path;
+  const nextIndex = (currentIndex + 1) % workPagePaths.length;
+  const nextPath = workPagePaths[nextIndex];
   return getPageForPath(nextPath);
 };
 

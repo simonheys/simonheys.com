@@ -5,9 +5,11 @@
 
 import {
   getMeta,
+  getWorkPagePaths,
   getPagePaths,
   normalisePath,
   getPageForPath,
+  getNextWorkPageForPath,
 } from "../../src/modules/content";
 
 describe("Unit test content functions", () => {
@@ -61,6 +63,36 @@ describe("Unit test content functions", () => {
     describe("when invalid", () => {
       it("should return undefined", () => {
         const page = getPageForPath("/foo/bar/123");
+        expect(page).to.be.undefined;
+      });
+    });
+  });
+
+  describe("getNextWorkPageForPath", () => {
+    describe("when valid", () => {
+      const workPagePaths = getWorkPagePaths();
+      describe("when given the first work page", () => {
+        it("should return the next work page", () => {
+          const nextWorkPageForPath = getNextWorkPageForPath(workPagePaths[0]);
+          expect(nextWorkPageForPath)
+            .to.have.property("path")
+            .that.equals(workPagePaths[1]);
+        });
+      });
+      describe("when given the last work page", () => {
+        it("should return the first work page", () => {
+          const nextWorkPageForPath = getNextWorkPageForPath(
+            workPagePaths[workPagePaths.length - 1]
+          );
+          expect(nextWorkPageForPath)
+            .to.have.property("path")
+            .that.equals(workPagePaths[0]);
+        });
+      });
+    });
+    describe("when invalid", () => {
+      it("should return undefined", () => {
+        const page = getNextWorkPageForPath("/foo/bar/123");
         expect(page).to.be.undefined;
       });
     });
