@@ -76,16 +76,18 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
 
   if (isTouchDevice()) {
     return (
-      <div className={styles.container} style={containerStyle}>
-        <iframe
-          title={title}
-          width="100%"
-          height="100%"
-          src={uri}
-          frameBorder="0"
-          allow="autoplay"
-          allowFullScreen
-        />
+      <div ref={inViewRef} className={styles.container} style={containerStyle}>
+        {visible && (
+          <iframe
+            title={title}
+            width="100%"
+            height="100%"
+            src={uri}
+            frameBorder="0"
+            allow="autoplay"
+            allowFullScreen
+          />
+        )}
       </div>
     );
   }
