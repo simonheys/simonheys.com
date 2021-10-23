@@ -54,49 +54,90 @@ export type Content = {
   };
 };
 
-export const content: Content = require("../../content/content.json");
+const defaultContent: Content = require("../../content/content.json");
+export { defaultContent as content };
 
-export const getMeta = (): Meta => content.meta;
+export const getMeta = (content: Content = defaultContent): Meta =>
+  content.meta;
 
-export const getPagePaths = (): string[] =>
+export const getPagePaths = (content: Content = defaultContent): string[] =>
   content.pages.map((page) => page.path).sort();
 
-export const normalisePath = (path: string): string => {
+export const getWorkPagePaths = (
+  content: Content = defaultContent
+): string[] => {
+  return content.meta.work.pages.map((page) => page.path);
+};
+
+export const normalisePath = (path: string | string[]): string => {
+  // allow array
+  if (Array.isArray(path)) {
+    path = path.join("/");
+  }
+  if (typeof path !== "string") {
+    return "/";
+  }
+  // omit query
   const queryIndex = path.indexOf("?");
   if (queryIndex !== -1) {
-    return path.substr(0, queryIndex);
+    path = path.substr(0, queryIndex);
   }
+  // convert multiple /// into single /, omit leading and trailing
+  path = path.split("/").filter(Boolean).join("/");
+  // re-add leading /
+  path = `/${path}`;
   return path;
 };
 
-export const getPageForPath = (path: string): Page => {
+export const getPageForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Page => {
   const normalisedPath = normalisePath(path);
   const page = content.pages.find((page) => page.path === normalisedPath);
   return page;
 };
 
-export const getPageIndexForPath = (path: string): number => {
+export const getNextWorkPageForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Page => {
   const normalisedPath = normalisePath(path);
-  return content.pages.findIndex((page) => page.path === normalisedPath);
-};
-
-export const getNextWorkPageForPath = (path: string): Page => {
-  const normalisedPath = normalisePath(path);
-  const workPages = content.meta.work.pages;
-  const currentIndex = workPages.findIndex(
-    (page) => page.path === normalisedPath
-  );
+  const workPagePaths = getWorkPagePaths(content);
+  const currentIndex = workPagePaths.indexOf(normalisedPath);
   if (currentIndex === -1) {
-    return null;
+    return;
   }
-  const nextIndex = (currentIndex + 1) % workPages.length;
-  const nextPath = workPages[nextIndex].path;
-  return getPageForPath(nextPath);
+  const nextIndex = (currentIndex + 1) % workPagePaths.length;
+  const nextPath = workPagePaths[nextIndex];
+  return getPageForPath(nextPath, content);
 };
 
-export const getPageForSlug = (slug: string | string[]): Page => {
-  const path = pathFromSlug(slug);
-  return getPageForPath(path);
+export const getComponentsForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Component[] => {
+  const normalisedPath = normalisePath(path);
+  const page = getPageForPath(normalisedPath, content);
+  const pageComponents = page ? page.components : [];
+  const components = [
+    ...content.all.before,
+    ...pageComponents,
+    ...content.all.after,
+  ];
+  const filteredComponents = components.filter((pageComponent) => {
+    if (pageComponent.exclude) {
+      const exclude =
+        typeof pageComponent.exclude === "string"
+          ? [pageComponent.exclude]
+          : pageComponent.exclude;
+      if (exclude.includes(normalisedPath)) {
+        return false;
+      }
+    }
+    return true;
+  });
+  return filteredComponents;
 };
 
 export const getPropertiesForImage = (src: string): ImageProperties => {
@@ -106,27 +147,4 @@ export const getPropertiesForImage = (src: string): ImageProperties => {
     return { width: 42, height: 42 };
   }
   return properties;
-};
-
-export const getComponentsForSlug = (slug: string | string[]): Component[] => {
-  const page = getPageForSlug(slug);
-  const path = pathFromSlug(slug);
-  // TODO: apply filtering to all
-  const after = content.all.after.filter((pageComponent) => {
-    if (pageComponent.exclude) {
-      if (pageComponent.exclude.includes(path)) {
-        return false;
-      }
-    }
-    return true;
-  });
-  return [...content.all.before, ...page.components, ...after];
-};
-
-export const pathFromSlug = (slug: string | string[]): string => {
-  if (Array.isArray(slug)) {
-    const path = "/" + slug.join("/");
-    return path;
-  }
-  return slug;
 };

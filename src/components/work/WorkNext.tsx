@@ -10,6 +10,9 @@ import styles from "./WorkNext.module.scss";
 const WorkNext: React.FC = () => {
   const router = useRouter();
   const nextPage = getNextWorkPageForPath(router.asPath);
+  if (!nextPage) {
+    return null;
+  }
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
