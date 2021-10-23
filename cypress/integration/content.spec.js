@@ -10,7 +10,10 @@ import {
   normalisePath,
   getPageForPath,
   getNextWorkPageForPath,
+  getComponentsForPath,
 } from "../../src/modules/content";
+
+import contentFixture from "../fixtures/content/content.json";
 
 describe("Unit test content functions", () => {
   describe("normalisePath", () => {
@@ -105,6 +108,51 @@ describe("Unit test content functions", () => {
       it("should return undefined", () => {
         const page = getNextWorkPageForPath("/foo/bar/123");
         expect(page).to.be.undefined;
+      });
+    });
+  });
+
+  describe("getComponentsForPath", () => {
+    describe("when valid", () => {
+      it("should return the page components with before and after", () => {
+        const components = getComponentsForPath("/", contentFixture);
+        expect(components.map((component) => component.type)).to.eql([
+          "before-fixture",
+          "first-root-fixture",
+          "second-root-fixture",
+          "after-fixture",
+        ]);
+      });
+      it("should exclude before components with matching path", () => {
+        const components = getComponentsForPath(
+          "/before-exclude",
+          contentFixture
+        );
+        expect(components.map((component) => component.type)).to.eql([
+          "first-before-exclude-fixture",
+          "second-before-exclude-fixture",
+          "after-fixture",
+        ]);
+      });
+      it("should exclude after components with matching path", () => {
+        const components = getComponentsForPath(
+          "/after-exclude",
+          contentFixture
+        );
+        expect(components.map((component) => component.type)).to.eql([
+          "before-fixture",
+          "first-after-exclude-fixture",
+          "second-after-exclude-fixture",
+        ]);
+      });
+    });
+    describe("when invalid", () => {
+      it("should return before and after", () => {
+        const components = getComponentsForPath("/foo/bar/123", contentFixture);
+        expect(components.map((component) => component.type)).to.eql([
+          "before-fixture",
+          "after-fixture",
+        ]);
       });
     });
   });

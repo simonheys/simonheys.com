@@ -119,16 +119,25 @@ export const getComponentsForPath = (
 ): Component[] => {
   const normalisedPath = normalisePath(path);
   const page = getPageForPath(normalisedPath, content);
-  // TODO: apply filtering to all
-  const after = content.all.after.filter((pageComponent) => {
+  const pageComponents = page ? page.components : [];
+  const components = [
+    ...content.all.before,
+    ...pageComponents,
+    ...content.all.after,
+  ];
+  const filteredComponents = components.filter((pageComponent) => {
     if (pageComponent.exclude) {
-      if (pageComponent.exclude.includes(normalisedPath)) {
+      const exclude =
+        typeof pageComponent.exclude === "string"
+          ? [pageComponent.exclude]
+          : pageComponent.exclude;
+      if (exclude.includes(normalisedPath)) {
         return false;
       }
     }
     return true;
   });
-  return [...content.all.before, ...page.components, ...after];
+  return filteredComponents;
 };
 
 export const getPropertiesForImage = (src: string): ImageProperties => {
