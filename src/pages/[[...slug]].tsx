@@ -7,8 +7,8 @@ import {
   getMeta,
   Page as PageType,
   getPagePaths,
-  getPageForSlug,
-  getComponentsForSlug,
+  getPageForPath,
+  getComponentsForPath,
   content,
 } from "../modules/content";
 
@@ -155,8 +155,8 @@ export const getStaticPaths: GetStaticPaths = async () => {
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { slug = [] } = params;
-  const page = getPageForSlug(slug);
-  const components = getComponentsForSlug(slug);
+  const page = getPageForPath(slug);
+  const components = getComponentsForPath(slug);
   return {
     props: {
       params,

@@ -1,0 +1,51 @@
+{
+  "all": {
+    "before": [
+      {
+        "type": "before-fixture",
+        "exclude": "/before-exclude"
+      }
+    ],
+    "after": [
+      {
+        "type": "after-fixture",
+        "exclude": ["/after-exclude"]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "path": "/",
+      "components": [
+        {
+          "type": "first-root-fixture"
+        },
+        {
+          "type": "second-root-fixture"
+        }
+      ]
+    },
+    {
+      "path": "/before-exclude",
+      "components": [
+        {
+          "type": "first-before-exclude-fixture"
+        },
+        {
+          "type": "second-before-exclude-fixture"
+        }
+      ]
+    },
+    {
+      "path": "/after-exclude",
+      "components": [
+        {
+          "type": "first-after-exclude-fixture"
+        },
+        {
+          "type": "second-after-exclude-fixture"
+        }
+      ]
+    }
+  ]
+}
