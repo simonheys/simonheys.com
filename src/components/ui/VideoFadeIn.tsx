@@ -4,6 +4,7 @@ import VimeoPlayer from "@vimeo/player";
 
 import styles from "./VideoFadeIn.module.scss";
 import isTouchDevice from "../../utils/isTouchDevice";
+import useBoundingClientRectInView from "../../hooks/useBoundingClientRectInView";
 
 export interface VideoFadeInProps {
   vimeoId: string;
@@ -23,6 +24,11 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
   const ref = React.useRef(null);
   const controls = useAnimation();
   const vimeoPlayer = React.useRef(null);
+  const { ref: inViewRef, inView } = useBoundingClientRectInView();
+
+  // flag to control video visibility until it is 'in view'
+  // fires once only for compatibility with Vimeo player
+  const [visible, setVisible] = React.useState(false);
 
   const uri = vimeoId
     ? `https://player.vimeo.com/video/${vimeoId}?background=1&player_id=${vimeoId}`
@@ -62,45 +68,57 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
     return style;
   }, [color]);
 
+  React.useEffect(() => {
+    if (!visible && inView) {
+      setVisible(true);
+    }
+  }, [inView, visible]);
+
   if (isTouchDevice()) {
     return (
-      <div className={styles.container} style={containerStyle}>
-        <iframe
-          title={title}
-          width="100%"
-          height="100%"
-          src={uri}
-          frameBorder="0"
-          allow="autoplay"
-          allowFullScreen
-        />
+      <div ref={inViewRef} className={styles.container} style={containerStyle}>
+        {visible && (
+          <iframe
+            title={title}
+            width="100%"
+            height="100%"
+            src={uri}
+            frameBorder="0"
+            allow="autoplay"
+            allowFullScreen
+          />
+        )}
       </div>
     );
   }
 
   return (
-    <div className={styles.container} style={containerStyle}>
-      <iframe
-        ref={setRef}
-        title={title}
-        width="100%"
-        height="100%"
-        src={uri}
-        frameBorder="0"
-        allow="autoplay"
-        allowFullScreen
-      />
-      <motion.div
-        animate={controls}
-        initial="hidden"
-        transition={{ duration: 0.3 }}
-        variants={{
-          visible: { opacity: 0 },
-          hidden: { opacity: 1 },
-        }}
-      >
-        <div className={styles.overlay} style={overlayStyle}></div>
-      </motion.div>
+    <div ref={inViewRef} className={styles.container} style={containerStyle}>
+      {visible && (
+        <React.Fragment>
+          <iframe
+            ref={setRef}
+            title={title}
+            width="100%"
+            height="100%"
+            src={uri}
+            frameBorder="0"
+            allow="autoplay"
+            allowFullScreen
+          />
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            transition={{ duration: 0.3 }}
+            variants={{
+              visible: { opacity: 0 },
+              hidden: { opacity: 1 },
+            }}
+          >
+            <div className={styles.overlay} style={overlayStyle}></div>
+          </motion.div>
+        </React.Fragment>
+      )}
     </div>
   );
 };
