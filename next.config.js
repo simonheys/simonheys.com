@@ -1,5 +1,6 @@
 module.exports = {
   reactStrictMode: true,
+  swcMinify: true,
   redirects: async () => {
     return [
       {
