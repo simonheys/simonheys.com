@@ -1,6 +1,7 @@
 import * as React from "react";
 
 import { ChevronRight } from "./icons";
+import LinkA from "./LinkA";
 
 import styles from "./TextLinks.module.scss";
 
@@ -20,7 +21,7 @@ const TextLinks: React.FC<TextLinksProps> = ({ links }) => {
       {links.map(({ text, url }, index) => {
         const isInternal = url.startsWith("/");
         return (
-          <a
+          <LinkA
             key={index}
             className={styles.link}
             href={url}
@@ -31,7 +32,7 @@ const TextLinks: React.FC<TextLinksProps> = ({ links }) => {
             <span className={styles.linkIcon}>
               <ChevronRight />
             </span>
-          </a>
+          </LinkA>
         );
       })}
     </div>

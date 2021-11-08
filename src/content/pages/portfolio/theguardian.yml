@@ -1,7 +1,7 @@
 title: The Guardian
 subtitle: Next gen app prototypes
 thumbnails:
-  - src: work/theguardian/theguardian-thumbnail-gp1.jpg
+  - src: portfolio/theguardian/theguardian-thumbnail-gp1.jpg
 components:
   - type: work-header
     subtitle: I worked in an in-house product team to design and develop a series of exploratory prototypes as inspiration for the next generation of news apps.
@@ -20,8 +20,8 @@ components:
     columns:
       - type: scrolling-browser-cell
         mask: col-6-phone
-        maskSrc: work/theguardian/theguardian-col-6-phone-mask.png
-        src: work/theguardian/timeline.png
+        maskSrc: portfolio/theguardian/theguardian-col-6-phone-mask.png
+        src: portfolio/theguardian/timeline.png
       - col: 6
         vimeoId: 590277543
         color: "#edede7"
@@ -30,14 +30,14 @@ components:
       - text: I rapidly developed a set of native apps with enough fidelity to enable thorough user testing with iterations of refinement and reinvention in between.
   - type: work-row
     columns:
-      - src: work/theguardian/theguardian-col-6-exploded-1.png
-      - src: work/theguardian/theguardian-col-6-exploded-2.png
+      - src: portfolio/theguardian/theguardian-col-6-exploded-1.png
+      - src: portfolio/theguardian/theguardian-col-6-exploded-2.png
   - type: work-row
     columns:
       - text: The prototypes explored various playful methods of interaction as well as varying the density and depth of articles. Through testing we learned from users how these affected their overall experience.
   - type: work-row
     columns:
-      - src: work/theguardian/theguardian-col-6-elements.jpg
+      - src: portfolio/theguardian/theguardian-col-6-elements.jpg
       - col: 6
         vimeoId: 590283638
         color: "#edede7"

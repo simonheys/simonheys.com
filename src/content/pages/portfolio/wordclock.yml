@@ -1,7 +1,7 @@
 title: Word Clock
 subtitle: Open source digital art work
 thumbnails:
-  - src: work/wordclock/wordclock-thumbnail.jpg
+  - src: portfolio/wordclock/wordclock-thumbnail.jpg
 components:
   - type: work-header
     subtitle: Word Clock is an original digital art work for macOS, iOS and web. The current time is highlighted within a set of words that can tell any possible time.
@@ -21,8 +21,8 @@ components:
       - text: The open source code repository has an archive of versions I created for several different platforms and programming languages since 2003.
   - type: work-row
     columns:
-      - src: work/wordclock/wordclock-col-6-preferences.png
-      - src: work/wordclock/wordclock-col-6-preferences-exploded.png
+      - src: portfolio/wordclock/wordclock-col-6-preferences.png
+      - src: portfolio/wordclock/wordclock-col-6-preferences-exploded.png
   - type: work-row
     columns:
       - text: I collaborated with many kind supporters from around the world to translate Word Clock into over 30 languages. This required writing a small domain-specific language to express unusual time logic in different regions.
@@ -40,8 +40,8 @@ components:
         download: false
   - type: work-row
     columns:
-      - src: work/wordclock/wordclock-col-6-book-1.jpg
-      - src: work/wordclock/wordclock-col-6-book-2.jpg
+      - src: portfolio/wordclock/wordclock-col-6-book-1.jpg
+      - src: portfolio/wordclock/wordclock-col-6-book-2.jpg
   - type: work-row
     columns:
       - text: Word Clock features in Numbers in Graphic Design and has been exhibited at the Science Museum in London. It is open source and free to download.

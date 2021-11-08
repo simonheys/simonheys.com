@@ -40,7 +40,7 @@ const generateImageProperties = async () => {
   const currentImageProperties = await getCurrentImageProperties();
   const imageProperties = {};
 
-  const filePaths = getFiles("./work", publicSystemPath);
+  const filePaths = getFiles("./", publicSystemPath);
 
   const progressBar = new cliProgress.SingleBar(
     {

@@ -22,14 +22,30 @@
 }
 
 .title {
-  composes: global(h2);
-  composes: global(m-0);
+  font-size: $h5-font-size;
+  margin-bottom: 0;
+  @include media-breakpoint-up(sm) {
+    font-size: $h2-font-size;
+  }
+}
+
+.linksContainer {
+  composes: global(d-flex);
+  composes: global(flex-column);
+  composes: global(flex-lg-row);
+  flex-wrap: wrap;
 }
 
 .link {
-  composes: global(h2);
+  composes: global(h3);
+  composes: global(mb-0);
   composes: global(me-2);
   composes: global(me-sm-3);
+  font-size: $h5-font-size;
+  @include media-breakpoint-up(sm) {
+    font-size: $h2-font-size;
+  }
+  display: flex;
   color: var(--gray-500);
   @media (prefers-color-scheme: dark) {
     color: var(--gray-400);

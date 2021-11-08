@@ -8,28 +8,28 @@
     "work": {
       "pages": [
         {
-          "path": "/work/hark"
+          "path": "/portfolio/hark"
         },
         {
-          "path": "/work/mykrobe"
+          "path": "/portfolio/mykrobe"
         },
         {
-          "path": "/work/sps"
+          "path": "/portfolio/sps"
         },
         {
-          "path": "/work/fathm"
+          "path": "/portfolio/fathm"
         },
         {
-          "path": "/work/theguardian"
+          "path": "/portfolio/theguardian"
         },
         {
-          "path": "/work/visioncoach"
+          "path": "/portfolio/visioncoach"
         },
         {
-          "path": "/work/minimalfolio"
+          "path": "/portfolio/minimalfolio"
         },
         {
-          "path": "/work/wordclock"
+          "path": "/portfolio/wordclock"
         }
       ]
     }
@@ -38,15 +38,18 @@
     "header": {
       "type": "header",
       "links": [
-        "/work",
-        "/about"
+        "/portfolio",
+        "/case-studies",
+        "/about",
+        "/contact"
       ]
     },
     "before": [],
     "after": [
       {
         "exclude": [
-          "/about"
+          "/about",
+          "/contact"
         ],
         "type": "work-header",
         "title": "About",
@@ -54,8 +57,12 @@
         "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
         "links": [
           {
-            "text": "Read more",
+            "text": "About",
             "url": "/about"
+          },
+          {
+            "text": "Contact",
+            "url": "/contact"
           }
         ]
       },
@@ -73,7 +80,46 @@
         {
           "type": "work-header",
           "title": null,
-          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n\nI am available to design and develop apps or websites and always interested in talking about new projects or roles — please get in touch.\n",
+          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n",
+          "links": [
+            {
+              "text": "Contact",
+              "url": "/contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/case-studies",
+      "title": "Case Studies",
+      "components": [
+        {
+          "type": "work-header",
+          "title": null,
+          "subtitle": "# Mykrobe · Tuberculosis resistance and outbreak platform\nPart of a team of scientists and medics who designed and developed a user-friendly interface for a complex Tuberculosis (TB) analysis platform.\n"
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/mykrobe",
+      "title": "Case Studies",
+      "components": [
+        {
+          "type": "work-header",
+          "title": null,
+          "subtitle": "# Mykrobe · Tuberculosis resistance and outbreak platform\nPart of a team of scientists and medics who designed and developed a user-friendly interface for a complex Tuberculosis (TB) analysis platform.\n"
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "title": "Contact",
+      "components": [
+        {
+          "type": "work-header",
+          "title": null,
+          "subtitle": "I am always interested in talking about new projects or roles — please get in touch.\n",
           "links": [
             {
               "text": "Email",
@@ -110,12 +156,12 @@
       ]
     },
     {
-      "path": "/work/fathm",
+      "path": "/portfolio/fathm",
       "title": "Fathm",
       "subtitle": "Time tracking app",
       "thumbnails": [
         {
-          "src": "work/fathm/fathm-thumbnail-donut.jpg"
+          "src": "portfolio/fathm/fathm-thumbnail-donut.jpg"
         }
       ],
       "components": [
@@ -150,10 +196,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/fathm/fathm-col-6-exploded-1.png"
+              "src": "portfolio/fathm/fathm-col-6-exploded-1.png"
             },
             {
-              "src": "work/fathm/fathm-col-6-exploded-2.png"
+              "src": "portfolio/fathm/fathm-col-6-exploded-2.png"
             }
           ]
         },
@@ -170,7 +216,7 @@
           "columns": [
             {
               "col": 6,
-              "src": "work/fathm/fathm-col-6-fragmented.jpg"
+              "src": "portfolio/fathm/fathm-col-6-fragmented.jpg"
             },
             {
               "col": 6,
@@ -192,11 +238,11 @@
           "columns": [
             {
               "col": 6,
-              "src": "work/fathm/fathm-col-6-icons.png"
+              "src": "portfolio/fathm/fathm-col-6-icons.png"
             },
             {
               "col": 6,
-              "src": "work/fathm/fathm-icon-construction.svg"
+              "src": "portfolio/fathm/fathm-icon-construction.svg"
             }
           ]
         },
@@ -234,10 +280,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/fathm/fathm-col-6-share-2.png"
+              "src": "portfolio/fathm/fathm-col-6-share-2.png"
             },
             {
-              "src": "work/fathm/fathm-col-6-share-1.png"
+              "src": "portfolio/fathm/fathm-col-6-share-1.png"
             }
           ]
         },
@@ -255,15 +301,15 @@
       ]
     },
     {
-      "path": "/work/hark",
+      "path": "/portfolio/hark",
       "title": "Hark",
       "subtitle": "Clinical task management platform",
       "thumbnails": [
         {
-          "src": "work/hark/hark-thumbnail-logo.jpg"
+          "src": "portfolio/hark/hark-thumbnail-logo.jpg"
         },
         {
-          "src": "work/hark/hark-thumbnail-tasks.jpg"
+          "src": "portfolio/hark/hark-thumbnail-tasks.jpg"
         }
       ],
       "components": [
@@ -303,10 +349,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/hark/hark-col-6-tasks.jpg"
+              "src": "portfolio/hark/hark-col-6-tasks.jpg"
             },
             {
-              "src": "work/hark/hark-col-6-task-entry.jpg"
+              "src": "portfolio/hark/hark-col-6-task-entry.jpg"
             }
           ]
         },
@@ -320,11 +366,11 @@
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-dashboard-cropped-2.jpg"
+          "src": "portfolio/hark/hark-dashboard-cropped-2.jpg"
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-screens.png"
+          "src": "portfolio/hark/hark-screens.png"
         },
         {
           "type": "work-row",
@@ -338,16 +384,16 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/hark/hark-col-6-logo.jpg"
+              "src": "portfolio/hark/hark-col-6-logo.jpg"
             },
             {
-              "src": "work/hark/hark-col-6-ipad.jpg"
+              "src": "portfolio/hark/hark-col-6-ipad.jpg"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-logo-construction.svg"
+          "src": "portfolio/hark/hark-logo-construction.svg"
         },
         {
           "type": "work-row",
@@ -386,8 +432,8 @@
       ]
     },
     {
-      "path": "/work",
-      "title": "Work",
+      "path": "/portfolio",
+      "title": "Portfolio",
       "components": [
         {
           "type": "work-grid"
@@ -395,12 +441,12 @@
       ]
     },
     {
-      "path": "/work/minimalfolio",
+      "path": "/portfolio/minimalfolio",
       "title": "Minimal Folio",
       "subtitle": "Personal portfolio app",
       "thumbnails": [
         {
-          "src": "work/minimalfolio/minimalfolio-thumbnail-logo.jpg"
+          "src": "portfolio/minimalfolio/minimalfolio-thumbnail-logo.jpg"
         }
       ],
       "components": [
@@ -431,7 +477,7 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-thumbnails.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-thumbnails.jpg"
             }
           ]
         },
@@ -460,10 +506,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-ipad.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-ipad.jpg"
             },
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-ipad-selection.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-ipad-selection.jpg"
             }
           ]
         },
@@ -479,10 +525,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-tutorial.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-tutorial.jpg"
             },
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-exploded.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-exploded.jpg"
             }
           ]
         },
@@ -506,18 +552,24 @@
       ]
     },
     {
-      "path": "/work/mykrobe",
+      "path": "/portfolio/mykrobe",
       "title": "Mykrobe",
       "subtitle": "TB resistance and outbreak platform",
       "thumbnails": [
         {
-          "src": "work/mykrobe/mykrobe-thumbnail-logo.jpg"
+          "src": "portfolio/mykrobe/mykrobe-thumbnail-logo.jpg"
         }
       ],
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform."
+          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.",
+          "links": [
+            {
+              "text": "Full case study",
+              "url": "/case-studies/mykrobe"
+            }
+          ]
         },
         {
           "type": "mykrobe-animation"
@@ -537,7 +589,7 @@
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-comparison.jpg"
+          "src": "portfolio/mykrobe/mykrobe-comparison.jpg"
         },
         {
           "type": "work-row",
@@ -553,14 +605,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
-              "src": "work/mykrobe/mykrobe-front.png"
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-front.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
-              "src": "work/mykrobe/mykrobe-patient-results.png"
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-patient-results.png"
             }
           ]
         },
@@ -610,28 +662,34 @@
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-logo-construction.svg"
+          "src": "portfolio/mykrobe/mykrobe-logo-construction.svg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "src": "work/mykrobe/mykrobe-6-col-icon-construction.svg"
+              "src": "portfolio/mykrobe/mykrobe-6-col-icon-construction.svg"
             },
             {
-              "src": "work/mykrobe/mykrobe-6-col-icon.svg"
+              "src": "portfolio/mykrobe/mykrobe-6-col-icon.svg"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-cropped.jpg"
+          "src": "portfolio/mykrobe/mykrobe-cropped.jpg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "text": "The platform is being expanded to become part of global COVID-19 surveillance."
+              "text": "The platform is being expanded to become part of global COVID-19 surveillance.",
+              "links": [
+                {
+                  "text": "Full case study",
+                  "url": "/case-studies/mykrobe"
+                }
+              ]
             }
           ]
         },
@@ -641,12 +699,12 @@
       ]
     },
     {
-      "path": "/work/sps",
+      "path": "/portfolio/sps",
       "title": "NHS England",
       "subtitle": "Specialist Pharmacy Service",
       "thumbnails": [
         {
-          "src": "work/sps/sps-thumbnail-logo.jpg"
+          "src": "portfolio/sps/sps-thumbnail-logo.jpg"
         }
       ],
       "components": [
@@ -661,8 +719,8 @@
         },
         {
           "type": "scrolling-browser",
-          "maskSrc": "work/sps/browser-mask.svg",
-          "src": "work/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+          "maskSrc": "portfolio/sps/browser-mask.svg",
+          "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
         },
         {
           "type": "work-row",
@@ -670,14 +728,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
-              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
-              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
             }
           ]
         },
@@ -704,10 +762,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-system.jpg"
+              "src": "portfolio/sps/sps-col-6-system.jpg"
             },
             {
-              "src": "work/sps/sps-col-6-screens.jpg"
+              "src": "portfolio/sps/sps-col-6-screens.jpg"
             }
           ]
         },
@@ -717,22 +775,22 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
               "system": [
-                "work/sps/sps-design-system-whole_01.png",
-                "work/sps/sps-design-system-whole_02.png",
-                "work/sps/sps-design-system-whole_03.png",
-                "work/sps/sps-design-system-whole_04.png"
+                "portfolio/sps/sps-design-system-whole_01.png",
+                "portfolio/sps/sps-design-system-whole_02.png",
+                "portfolio/sps/sps-design-system-whole_03.png",
+                "portfolio/sps/sps-design-system-whole_04.png"
               ]
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
               "system": [
-                "work/sps/sps-design-system-whole_05.png",
-                "work/sps/sps-design-system-whole_06.png",
-                "work/sps/sps-design-system-whole_02.png"
+                "portfolio/sps/sps-design-system-whole_05.png",
+                "portfolio/sps/sps-design-system-whole_06.png",
+                "portfolio/sps/sps-design-system-whole_02.png"
               ]
             }
           ]
@@ -741,10 +799,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-icon-construction.svg"
+              "src": "portfolio/sps/sps-col-6-icon-construction.svg"
             },
             {
-              "src": "work/sps/sps-col-6-icons.svg"
+              "src": "portfolio/sps/sps-col-6-icons.svg"
             }
           ]
         },
@@ -752,16 +810,16 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-leaflet-1.png"
+              "src": "portfolio/sps/sps-col-6-leaflet-1.png"
             },
             {
-              "src": "work/sps/sps-col-6-leaflet-2.png"
+              "src": "portfolio/sps/sps-col-6-leaflet-2.png"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/sps/sps-logo-construction.svg"
+          "src": "portfolio/sps/sps-logo-construction.svg"
         },
         {
           "type": "work-row",
@@ -777,12 +835,12 @@
       ]
     },
     {
-      "path": "/work/theguardian",
+      "path": "/portfolio/theguardian",
       "title": "The Guardian",
       "subtitle": "Next gen app prototypes",
       "thumbnails": [
         {
-          "src": "work/theguardian/theguardian-thumbnail-gp1.jpg"
+          "src": "portfolio/theguardian/theguardian-thumbnail-gp1.jpg"
         }
       ],
       "components": [
@@ -819,8 +877,8 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6-phone",
-              "maskSrc": "work/theguardian/theguardian-col-6-phone-mask.png",
-              "src": "work/theguardian/timeline.png"
+              "maskSrc": "portfolio/theguardian/theguardian-col-6-phone-mask.png",
+              "src": "portfolio/theguardian/timeline.png"
             },
             {
               "col": 6,
@@ -841,10 +899,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/theguardian/theguardian-col-6-exploded-1.png"
+              "src": "portfolio/theguardian/theguardian-col-6-exploded-1.png"
             },
             {
-              "src": "work/theguardian/theguardian-col-6-exploded-2.png"
+              "src": "portfolio/theguardian/theguardian-col-6-exploded-2.png"
             }
           ]
         },
@@ -860,7 +918,7 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/theguardian/theguardian-col-6-elements.jpg"
+              "src": "portfolio/theguardian/theguardian-col-6-elements.jpg"
             },
             {
               "col": 6,
@@ -898,12 +956,12 @@
       ]
     },
     {
-      "path": "/work/visioncoach",
+      "path": "/portfolio/visioncoach",
       "title": "Vision Coach",
       "subtitle": "Eye care platform",
       "thumbnails": [
         {
-          "src": "work/visioncoach/vision-coach-thumbnail-logo.jpg"
+          "src": "portfolio/visioncoach/vision-coach-thumbnail-logo.jpg"
         }
       ],
       "components": [
@@ -928,10 +986,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/visioncoach/vision-coach-col-6-splash.jpg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-splash.jpg"
             },
             {
-              "src": "work/visioncoach/vision-coach-col-6-dash.jpg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-dash.jpg"
             }
           ]
         },
@@ -945,8 +1003,8 @@
         },
         {
           "type": "scrolling-browser",
-          "maskSrc": "work/visioncoach/browser-mask.svg",
-          "src": "work/visioncoach/LMR-6_Page_01.png"
+          "maskSrc": "portfolio/visioncoach/browser-mask.svg",
+          "src": "portfolio/visioncoach/LMR-6_Page_01.png"
         },
         {
           "type": "work-row",
@@ -954,14 +1012,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/LMR-6_Page_10.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/LMR-6_Page_10.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/LMR-6_Page_11.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/LMR-6_Page_11.png"
             }
           ]
         },
@@ -979,14 +1037,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/vision-coach-clinician-dashboard.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/vision-coach-clinician-dashboard.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/vision-coach-clinician-detail.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/vision-coach-clinician-detail.png"
             }
           ]
         },
@@ -1000,20 +1058,20 @@
         },
         {
           "type": "work-row",
-          "src": "work/visioncoach/vision-coach-patient-screens.png"
+          "src": "portfolio/visioncoach/vision-coach-patient-screens.png"
         },
         {
           "type": "work-row",
-          "src": "work/visioncoach/vision-coach-logo-construction.svg"
+          "src": "portfolio/visioncoach/vision-coach-logo-construction.svg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "src": "work/visioncoach/vision-coach-col-6-icons.svg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-icons.svg"
             },
             {
-              "src": "work/visioncoach/vision-coach-col-6-icon-construction.svg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-icon-construction.svg"
             }
           ]
         },
@@ -1023,12 +1081,12 @@
       ]
     },
     {
-      "path": "/work/wordclock",
+      "path": "/portfolio/wordclock",
       "title": "Word Clock",
       "subtitle": "Open source digital art work",
       "thumbnails": [
         {
-          "src": "work/wordclock/wordclock-thumbnail.jpg"
+          "src": "portfolio/wordclock/wordclock-thumbnail.jpg"
         }
       ],
       "components": [
@@ -1071,10 +1129,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/wordclock/wordclock-col-6-preferences.png"
+              "src": "portfolio/wordclock/wordclock-col-6-preferences.png"
             },
             {
-              "src": "work/wordclock/wordclock-col-6-preferences-exploded.png"
+              "src": "portfolio/wordclock/wordclock-col-6-preferences-exploded.png"
             }
           ]
         },
@@ -1109,10 +1167,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/wordclock/wordclock-col-6-book-1.jpg"
+              "src": "portfolio/wordclock/wordclock-col-6-book-1.jpg"
             },
             {
-              "src": "work/wordclock/wordclock-col-6-book-2.jpg"
+              "src": "portfolio/wordclock/wordclock-col-6-book-2.jpg"
             }
           ]
         },

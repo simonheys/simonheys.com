@@ -1,10 +1,13 @@
 title: Mykrobe
 subtitle: TB resistance and outbreak platform
 thumbnails:
-  - src: work/mykrobe/mykrobe-thumbnail-logo.jpg
+  - src: portfolio/mykrobe/mykrobe-thumbnail-logo.jpg
 components:
   - type: work-header
     subtitle: I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.
+    links:
+      - text: Full case study
+        url: /case-studies/mykrobe
   - type: mykrobe-animation
   - type: work-row
     vimeoId: 585698728
@@ -13,7 +16,7 @@ components:
     columns:
       - text: The platform has web and desktop apps which must meet the needs of non-specialist end-users analysing TB resistance in challenging environments.
   - type: work-row
-    src: work/mykrobe/mykrobe-comparison.jpg
+    src: portfolio/mykrobe/mykrobe-comparison.jpg
   - type: work-row
     columns:
       - text: We learned about our users from real world on-site observation including a field trip to TB-prevalent areas of Mumbai, India.
@@ -21,12 +24,12 @@ components:
     columns:
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/mykrobe/col-6-browser-mask.svg
-        src: work/mykrobe/mykrobe-front.png
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-front.png
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/mykrobe/col-6-browser-mask.svg
-        src: work/mykrobe/mykrobe-patient-results.png
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-patient-results.png
   - type: work-row
     columns:
       - text: I collaborated closely with users to prototype and develop an easily readable diagnostics interface including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness.
@@ -48,14 +51,17 @@ components:
     columns:
       - text: To make non-expert users feel comfortable and confident using the product I designed a user-friendly identity inspired by the shapes, colours and transparency seen in traditional TB stain tests.
   - type: work-row
-    src: work/mykrobe/mykrobe-logo-construction.svg
+    src: portfolio/mykrobe/mykrobe-logo-construction.svg
   - type: work-row
     columns:
-      - src: work/mykrobe/mykrobe-6-col-icon-construction.svg
-      - src: work/mykrobe/mykrobe-6-col-icon.svg
+      - src: portfolio/mykrobe/mykrobe-6-col-icon-construction.svg
+      - src: portfolio/mykrobe/mykrobe-6-col-icon.svg
   - type: work-row
-    src: work/mykrobe/mykrobe-cropped.jpg
+    src: portfolio/mykrobe/mykrobe-cropped.jpg
   - type: work-row
     columns:
       - text: The platform is being expanded to become part of global COVID-19 surveillance.
+        links:
+          - text: Full case study
+            url: /case-studies/mykrobe
   - type: work-next

@@ -1,7 +1,7 @@
 title: Fathm
 subtitle: Time tracking app
 thumbnails:
-  - src: work/fathm/fathm-thumbnail-donut.jpg
+  - src: portfolio/fathm/fathm-thumbnail-donut.jpg
 components:
   - type: work-header
     subtitle: I collaborated with a network of creative users to design and develop a visually-led time tracking app with playful features that evolved through iterative design and prototyping.
@@ -18,15 +18,15 @@ components:
       - text: Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping.
   - type: work-row
     columns:
-      - src: work/fathm/fathm-col-6-exploded-1.png
-      - src: work/fathm/fathm-col-6-exploded-2.png
+      - src: portfolio/fathm/fathm-col-6-exploded-1.png
+      - src: portfolio/fathm/fathm-col-6-exploded-2.png
   - type: work-row
     columns:
       - text: Segments of time are tracked by quickly tapping customisable coloured categories. Colours are mixed together as categories are added.
   - type: work-row
     columns:
       - col: 6
-        src: work/fathm/fathm-col-6-fragmented.jpg
+        src: portfolio/fathm/fathm-col-6-fragmented.jpg
       - col: 6
         vimeoId: 589206157
         color: "#404040"
@@ -36,9 +36,9 @@ components:
   - type: work-row
     columns:
       - col: 6
-        src: work/fathm/fathm-col-6-icons.png
+        src: portfolio/fathm/fathm-col-6-icons.png
       - col: 6
-        src: work/fathm/fathm-icon-construction.svg
+        src: portfolio/fathm/fathm-icon-construction.svg
   - type: work-row
     columns:
       - text: The app provides a variety of interactive visualisations to help gain insight into how you spend time, and lets you set time budgets for activities.
@@ -54,8 +54,8 @@ components:
       - text: The popular Daily Donut visualisation can be shared directly from within the app.
   - type: work-row
     columns:
-      - src: work/fathm/fathm-col-6-share-2.png
-      - src: work/fathm/fathm-col-6-share-1.png
+      - src: portfolio/fathm/fathm-col-6-share-2.png
+      - src: portfolio/fathm/fathm-col-6-share-1.png
   - type: work-row
     columns:
       - text: Fathm was featured in App Store Essentials alongside Clear, Evernote and Things on the front page of the App Store. 

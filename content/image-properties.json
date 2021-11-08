@@ -1,632 +1,828 @@
 {
-  "work/fathm/fathm-col-6-exploded-1.png": {
+  "favicon/android-chrome-144x144.png": {
+    "hash": "b39dbbbfad0ec3f518d6992f164df3b4",
+    "height": 144,
+    "width": 144,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-192x192.png": {
+    "hash": "85a0a6aaaf693430760b0f3e46ae4907",
+    "height": 192,
+    "width": 192,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-256x256.png": {
+    "hash": "0fb55c088e5afb83300b11f1aee98a3a",
+    "height": 256,
+    "width": 256,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-36x36.png": {
+    "hash": "124642b2f75270d8969ee662fd4135fc",
+    "height": 36,
+    "width": 36,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-384x384.png": {
+    "hash": "7c923f1b9b7a54b74f83bf7565692694",
+    "height": 384,
+    "width": 384,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-48x48.png": {
+    "hash": "7267b69073a700f151efc73536c3957c",
+    "height": 48,
+    "width": 48,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-512x512.png": {
+    "hash": "b389e470674a802d351e65f62d9b0155",
+    "height": 512,
+    "width": 512,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-72x72.png": {
+    "hash": "c3378e7693b742bad3ed560e98ba6bc9",
+    "height": 72,
+    "width": 72,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/android-chrome-96x96.png": {
+    "hash": "e43912904ba154c326a5a34e42294f5f",
+    "height": 96,
+    "width": 96,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/apple-touch-icon-1024x1024.png": {
+    "hash": "a40acf85040173427fc15f1d7e16d508",
+    "height": 1024,
+    "width": 1024,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-114x114.png": {
+    "hash": "d7c3bcd7fcde8cf84a27e9b7238f4baf",
+    "height": 114,
+    "width": 114,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-120x120.png": {
+    "hash": "7c4238c9ffe17dbe60caa1e17654253f",
+    "height": 120,
+    "width": 120,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-144x144.png": {
+    "hash": "6a58fb401406c36b8e89bf983658bc2a",
+    "height": 144,
+    "width": 144,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-152x152.png": {
+    "hash": "e46a4b5e5ea77bcf4fb146c749dc6940",
+    "height": 152,
+    "width": 152,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-167x167.png": {
+    "hash": "fdb722351a2b53c7999f84f343c7255b",
+    "height": 167,
+    "width": 167,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-180x180.png": {
+    "hash": "a88809ec53c2e61075f7e1d3c994b2a0",
+    "height": 180,
+    "width": 180,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-57x57.png": {
+    "hash": "c6fdf5eb2387f80bb6a6a9e745591928",
+    "height": 57,
+    "width": 57,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-60x60.png": {
+    "hash": "af166a651a7a1c123f6f582c8602c4dd",
+    "height": 60,
+    "width": 60,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-72x72.png": {
+    "hash": "c5cb24a94a8934b9fb057546992e51f5",
+    "height": 72,
+    "width": 72,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-76x76.png": {
+    "hash": "4eb095641357e53d1793a8a20e510e4c",
+    "height": 76,
+    "width": 76,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon-precomposed.png": {
+    "hash": "a88809ec53c2e61075f7e1d3c994b2a0",
+    "height": 180,
+    "width": 180,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/apple-touch-icon.png": {
+    "hash": "a88809ec53c2e61075f7e1d3c994b2a0",
+    "height": 180,
+    "width": 180,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "favicon/favicon-16x16.png": {
+    "hash": "265abbfdf5ffc22dd2af0623f8772587",
+    "height": 16,
+    "width": 16,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/favicon-32x32.png": {
+    "hash": "e1fc3068db336618872ac88f64995940",
+    "height": 32,
+    "width": 32,
+    "type": "png",
+    "color": "#000000"
+  },
+  "favicon/favicon-48x48.png": {
+    "hash": "7267b69073a700f151efc73536c3957c",
+    "height": 48,
+    "width": 48,
+    "type": "png",
+    "color": "#000000"
+  },
+  "og/image.png": {
+    "hash": "45529890ad96d6bab9478593fa06be0a",
+    "height": 600,
+    "width": 600,
+    "type": "png",
+    "color": "#ff0000"
+  },
+  "portfolio/fathm/fathm-col-6-exploded-1.png": {
     "hash": "01d30dde08850f5f990d494d85b2b8ba",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/fathm/fathm-col-6-exploded-2.png": {
+  "portfolio/fathm/fathm-col-6-exploded-2.png": {
     "hash": "7f315567b6846ad33290b676d0a561fc",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/fathm/fathm-col-6-fragmented.jpg": {
+  "portfolio/fathm/fathm-col-6-fragmented.jpg": {
     "hash": "0a2da05d9427b7c92f7bb00dc9431564",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#404040"
   },
-  "work/fathm/fathm-col-6-icons.png": {
+  "portfolio/fathm/fathm-col-6-icons.png": {
     "hash": "758f0a25eeb93106b185d2935d3caf45",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/fathm/fathm-col-6-share-1.png": {
+  "portfolio/fathm/fathm-col-6-share-1.png": {
     "hash": "99434cc96c7ead3d39eb7c84353d0c18",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/fathm/fathm-col-6-share-2.png": {
+  "portfolio/fathm/fathm-col-6-share-2.png": {
     "hash": "668fa5212f3cce8d6422ff185572c2cc",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/fathm/fathm-icon-construction.svg": {
+  "portfolio/fathm/fathm-icon-construction.svg": {
     "hash": "511d2f48643bd9ba122f1a28546f00cc",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#404040"
   },
-  "work/fathm/fathm-thumbnail-donut.jpg": {
+  "portfolio/fathm/fathm-thumbnail-donut.jpg": {
     "hash": "38bab950c8bb207a91e2c24cc6461b9f",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#fc78ab"
   },
-  "work/hark/hark-col-6-ipad.jpg": {
+  "portfolio/hark/hark-col-6-ipad.jpg": {
     "hash": "ebe1d421e11fd76fb8dfc47dfad69a6f",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/hark/hark-col-6-logo.jpg": {
+  "portfolio/hark/hark-col-6-logo.jpg": {
     "hash": "71403f8e4b461fe28e2f1279d1477632",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#0072c6"
   },
-  "work/hark/hark-col-6-patient.jpg": {
+  "portfolio/hark/hark-col-6-patient.jpg": {
     "hash": "63a8c8ab7f311c768186812865696c8d",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/hark/hark-col-6-patients.jpg": {
+  "portfolio/hark/hark-col-6-patients.jpg": {
     "hash": "79607cec97decfc91c04528ffc5a4302",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#0072c6"
   },
-  "work/hark/hark-col-6-task-entry.jpg": {
+  "portfolio/hark/hark-col-6-task-entry.jpg": {
     "hash": "2edf42531cfddd320ef5ed030edf2c38",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/hark/hark-col-6-tasks.jpg": {
+  "portfolio/hark/hark-col-6-tasks.jpg": {
     "hash": "6380f0cba12833de92585d19bf88925f",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#0072c6"
   },
-  "work/hark/hark-dashboard-cropped-1.jpg": {
+  "portfolio/hark/hark-dashboard-cropped-1.jpg": {
     "hash": "e9b71d71f19561976d7bea330122f042",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/hark/hark-dashboard-cropped-2.jpg": {
+  "portfolio/hark/hark-dashboard-cropped-2.jpg": {
     "hash": "b1f1e4fc6f1746242d86ccc3331cc21c",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/hark/hark-logo-construction.svg": {
+  "portfolio/hark/hark-logo-construction.svg": {
     "hash": "fad3a5ad5cee238bff93b2d9136023c5",
     "height": 1080,
     "width": 1920,
     "type": "svg",
     "color": "#0072c6"
   },
-  "work/hark/hark-screens.png": {
+  "portfolio/hark/hark-screens.png": {
     "hash": "9bfc1a9f4343120458484a6c2584397c",
     "height": 1080,
     "width": 1920,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/hark/hark-thumbnail-logo.jpg": {
+  "portfolio/hark/hark-thumbnail-logo.jpg": {
     "hash": "22d5ec1bf73eff5b27fe69916cf6f90c",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#00b2ff"
   },
-  "work/hark/hark-thumbnail-tasks.jpg": {
+  "portfolio/hark/hark-thumbnail-tasks.jpg": {
     "hash": "2b73033ec904c7630ec28122f18d251e",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#4baff9"
   },
-  "work/minimalfolio/minimalfolio-col-6-exploded.jpg": {
+  "portfolio/minimalfolio/minimalfolio-col-6-exploded.jpg": {
     "hash": "b084191c7bbff36ae8b0b6df1c81101a",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#404040"
   },
-  "work/minimalfolio/minimalfolio-col-6-ipad-selection.jpg": {
+  "portfolio/minimalfolio/minimalfolio-col-6-ipad-selection.jpg": {
     "hash": "50894f4efccb26695fe98b6505510c1a",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#404040"
   },
-  "work/minimalfolio/minimalfolio-col-6-ipad.jpg": {
+  "portfolio/minimalfolio/minimalfolio-col-6-ipad.jpg": {
     "hash": "5ac41c11c041911a59fd64ad82bb41ec",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#404040"
   },
-  "work/minimalfolio/minimalfolio-col-6-tutorial.jpg": {
+  "portfolio/minimalfolio/minimalfolio-col-6-tutorial.jpg": {
     "hash": "5a97dd509b362a79ca547313431a310d",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#404040"
   },
-  "work/minimalfolio/minimalfolio-thumbnail-logo.jpg": {
+  "portfolio/minimalfolio/minimalfolio-thumbnail-logo.jpg": {
     "hash": "06f5f58a17e2bcc26f507994de4d4618",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#363636"
   },
-  "work/minimalfolio/minimalfolio-thumbnails.jpg": {
+  "portfolio/minimalfolio/minimalfolio-thumbnails.jpg": {
     "hash": "990fbbe97bde6b00c45293839351e415",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#363636"
   },
-  "work/mykrobe/browser-mask.svg": {
+  "portfolio/mykrobe/browser-mask.svg": {
     "hash": "a71184547ce2de3d6428af775efa5c57",
     "height": 900,
     "width": 1600,
     "type": "svg",
     "color": "#f6a229"
   },
-  "work/mykrobe/col-6-browser-mask.svg": {
+  "portfolio/mykrobe/col-6-browser-mask.svg": {
     "hash": "e298a21f64efafc878a19368aac1ad82",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f6a229"
   },
-  "work/mykrobe/mykrobe-6-col-icon-construction.svg": {
+  "portfolio/mykrobe/mykrobe-6-col-icon-construction.svg": {
     "hash": "426e8bcf1869339ede099aa94807b7fe",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-6-col-icon.svg": {
+  "portfolio/mykrobe/mykrobe-6-col-icon.svg": {
     "hash": "7ec93cd0e3122a7083f059b7cb4f6f21",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-animation-overlay.svg": {
+  "portfolio/mykrobe/mykrobe-animation-overlay.svg": {
     "hash": "63f9549ea9ceaddb737283fce801d815",
     "height": 1080,
     "width": 1920,
     "type": "svg",
     "color": "#000000"
   },
-  "work/mykrobe/mykrobe-comparison.jpg": {
+  "portfolio/mykrobe/mykrobe-comparison.jpg": {
     "hash": "2ba5bdc340fdb00c5dd1befa8c02c4a8",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#f6a229"
   },
-  "work/mykrobe/mykrobe-cropped.jpg": {
+  "portfolio/mykrobe/mykrobe-cropped.jpg": {
     "hash": "844acf0e4aee3f201a49e94d24ad35cb",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#f6a229"
   },
-  "work/mykrobe/mykrobe-front.png": {
+  "portfolio/mykrobe/mykrobe-front.png": {
     "hash": "0936bf2d37df858b5d293938b21a238a",
     "height": 3380,
     "width": 1020,
     "type": "png",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-library.png": {
+  "portfolio/mykrobe/mykrobe-library.png": {
     "hash": "bf66ff95d6a2a8d168d9a9dc039657b6",
     "height": 1201,
     "width": 1020,
     "type": "png",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-logo-construction.svg": {
+  "portfolio/mykrobe/mykrobe-logo-construction.svg": {
     "hash": "a13945d2bd220938c2774abfebea95ae",
     "height": 1080,
     "width": 1920,
     "type": "svg",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-patient-results.png": {
+  "portfolio/mykrobe/mykrobe-patient-results.png": {
     "hash": "578776f52c4a4833da4c313cac04fcd8",
     "height": 1654,
     "width": 1020,
     "type": "png",
     "color": "#f7f6f1"
   },
-  "work/mykrobe/mykrobe-thumbnail-logo.jpg": {
+  "portfolio/mykrobe/mykrobe-thumbnail-logo.jpg": {
     "hash": "169fc36649e386a94ee6a29ad2c50742",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#f6a229"
   },
-  "work/sps/blocks-test-js-blocks-when-logged-out-article-collections-when-article-id-is-a-substring-match-of-a-parent-id-renders-article-with-id-8833-without-matching-it-to-parent-id-58833-1-snap.png": {
+  "portfolio/sps/blocks-test-js-blocks-when-logged-out-article-collections-when-article-id-is-a-substring-match-of-a-parent-id-renders-article-with-id-8833-without-matching-it-to-parent-id-58833-1-snap.png": {
     "hash": "93ca47ee4c849299f0a1233f76449b35",
     "height": 2207,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png": {
+  "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png": {
     "hash": "d2e5200d2ebf32a3bd3f9e4dfbc3f400",
     "height": 4567,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png": {
+  "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png": {
     "hash": "7b40b8e53c9aadebc947a3f4b7c9fc7d",
     "height": 2215,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png": {
+  "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png": {
     "hash": "8c20bcc50a88b6a4904c83d6e3fab3ba",
     "height": 2311,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/browser-mask.svg": {
+  "portfolio/sps/browser-mask.svg": {
     "hash": "de07865996fb4cfdcdeaf372809fda0c",
     "height": 900,
     "width": 1600,
     "type": "svg",
     "color": "#009639"
   },
-  "work/sps/col-6-browser-mask.svg": {
+  "portfolio/sps/col-6-browser-mask.svg": {
     "hash": "916431e8aecf9c059a20264d473aac3e",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#009639"
   },
-  "work/sps/sps-col-6-icon-construction.svg": {
+  "portfolio/sps/sps-col-6-icon-construction.svg": {
     "hash": "dbc21272671ee481c192b34d12cbde91",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f4f4f4"
   },
-  "work/sps/sps-col-6-icons.svg": {
+  "portfolio/sps/sps-col-6-icons.svg": {
     "hash": "a0db746fc80032c8b2d769f6cf3b2e9f",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f4f4f4"
   },
-  "work/sps/sps-col-6-leaflet-1.png": {
+  "portfolio/sps/sps-col-6-leaflet-1.png": {
     "hash": "e71171f1a79fc2c306fd75d23d2358eb",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#009639"
   },
-  "work/sps/sps-col-6-leaflet-2.png": {
+  "portfolio/sps/sps-col-6-leaflet-2.png": {
     "hash": "a029087338a00745c57fbf880dd5d8fb",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#009639"
   },
-  "work/sps/sps-col-6-logo-construction.svg": {
+  "portfolio/sps/sps-col-6-logo-construction.svg": {
     "hash": "d68c82d49ef7d80ffaee8bc120487e63",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#f4f4f4"
   },
-  "work/sps/sps-col-6-screens.jpg": {
+  "portfolio/sps/sps-col-6-screens.jpg": {
     "hash": "65af8fd866eea6add034dc257a1f704a",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#019639"
   },
-  "work/sps/sps-col-6-system.jpg": {
+  "portfolio/sps/sps-col-6-system.jpg": {
     "hash": "68c3da5fb0ce1f657c39317d51f0023f",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_01.png": {
+  "portfolio/sps/sps-design-system-whole_01.png": {
     "hash": "334d4f5d9a1f62a6db6c364b45b325e5",
     "height": 200,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_02.png": {
+  "portfolio/sps/sps-design-system-whole_02.png": {
     "hash": "b24f696b238e247e42ef0ffb4c385a16",
     "height": 332,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_03.png": {
+  "portfolio/sps/sps-design-system-whole_03.png": {
     "hash": "bd4f98da5e5dde4241622f5445a82038",
     "height": 373,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_04.png": {
+  "portfolio/sps/sps-design-system-whole_04.png": {
     "hash": "2e4d5aad6d39bda61de1d76b0b26985c",
     "height": 454,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_05.png": {
+  "portfolio/sps/sps-design-system-whole_05.png": {
     "hash": "d2de9ae43e177916b7417f50884fd242",
     "height": 469,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_06.png": {
+  "portfolio/sps/sps-design-system-whole_06.png": {
     "hash": "11b9a74dc3746ef38476c19b6cbfd418",
     "height": 378,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-design-system-whole_07.png": {
+  "portfolio/sps/sps-design-system-whole_07.png": {
     "hash": "444db564faf625d3dadb78bab6845736",
     "height": 105,
     "width": 1024,
     "type": "png",
     "color": "#ffffff"
   },
-  "work/sps/sps-logo-construction.svg": {
+  "portfolio/sps/sps-logo-construction.svg": {
     "hash": "6b7071f96a07604cf8e3c8879fb62fb9",
     "height": 1080,
     "width": 1920,
     "type": "svg",
     "color": "#f4f4f4"
   },
-  "work/sps/sps-thumbnail-logo.jpg": {
+  "portfolio/sps/sps-thumbnail-logo.jpg": {
     "hash": "0df820a8a2c0495d4471122e30b6e9cf",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#5ec000"
   },
-  "work/theguardian/briefing-lower.png": {
+  "portfolio/theguardian/briefing-lower.png": {
     "hash": "92e029cc80e15bceeb76f833f1bf2902",
     "height": 4368,
     "width": 640,
     "type": "png",
     "color": "#edede7"
   },
-  "work/theguardian/theguardian-col-6-elements.jpg": {
+  "portfolio/theguardian/theguardian-col-6-elements.jpg": {
     "hash": "26aa8f4263ca355442f6c9841fe2986f",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#ecede6"
   },
-  "work/theguardian/theguardian-col-6-exploded-1.png": {
+  "portfolio/theguardian/theguardian-col-6-exploded-1.png": {
     "hash": "8e321023e5d05c18d1b39bb3e1618c9d",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#edede7"
   },
-  "work/theguardian/theguardian-col-6-exploded-2.png": {
+  "portfolio/theguardian/theguardian-col-6-exploded-2.png": {
     "hash": "efe1ac5c6c8df48a42a0275e6482ad19",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#edede7"
   },
-  "work/theguardian/theguardian-col-6-masthead.jpg": {
+  "portfolio/theguardian/theguardian-col-6-masthead.jpg": {
     "hash": "5617b2c0b01c76291e7f1238d63a6439",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#ecede6"
   },
-  "work/theguardian/theguardian-col-6-phone-mask.png": {
+  "portfolio/theguardian/theguardian-col-6-phone-mask.png": {
     "hash": "0ee8f654dfc274b8517ba35984d1bbd1",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#edede7"
   },
-  "work/theguardian/theguardian-thumbnail-gp1.jpg": {
+  "portfolio/theguardian/theguardian-thumbnail-gp1.jpg": {
     "hash": "16629aae32693df25b2a6dad2141bb5b",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#661182"
   },
-  "work/theguardian/timeline.png": {
+  "portfolio/theguardian/timeline.png": {
     "hash": "803043c521444e6e4cba8e5481674dc9",
     "height": 3490,
     "width": 640,
     "type": "png",
     "color": "#000000"
   },
-  "work/visioncoach/LMR-6_Page_01.png": {
+  "portfolio/visioncoach/LMR-6_Page_01.png": {
     "hash": "5a27aac5baf330d34bbb6daf8e76332a",
     "height": 2921,
     "width": 1280,
     "type": "png",
     "color": "#1e90c6"
   },
-  "work/visioncoach/LMR-6_Page_10.png": {
+  "portfolio/visioncoach/LMR-6_Page_10.png": {
     "hash": "28d751ef87ad98e9a63103c0db7ff742",
     "height": 2815,
     "width": 1280,
     "type": "png",
     "color": "#1e90c6"
   },
-  "work/visioncoach/LMR-6_Page_11.png": {
+  "portfolio/visioncoach/LMR-6_Page_11.png": {
     "hash": "4b10fea053984b4c7ae346968f4d02a0",
     "height": 5552,
     "width": 1280,
     "type": "png",
     "color": "#1e90c6"
   },
-  "work/visioncoach/browser-mask.png": {
+  "portfolio/visioncoach/browser-mask.png": {
     "hash": "bf90b5e3f12187bd4047e265c3cec998",
     "height": 900,
     "width": 1600,
     "type": "png",
     "color": "#005698"
   },
-  "work/visioncoach/browser-mask.svg": {
+  "portfolio/visioncoach/browser-mask.svg": {
     "hash": "966dfc843b7ca2a2b779eb9e03ba8f47",
     "height": 900,
     "width": 1600,
     "type": "svg",
     "color": "#005698"
   },
-  "work/visioncoach/col-6-browser-mask.png": {
+  "portfolio/visioncoach/col-6-browser-mask.png": {
     "hash": "e58f68b354394031170afd5d7d5c2ee9",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#005698"
   },
-  "work/visioncoach/col-6-browser-mask.svg": {
+  "portfolio/visioncoach/col-6-browser-mask.svg": {
     "hash": "1f2b296af2c162c8b22ae2b1ad89238a",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#005698"
   },
-  "work/visioncoach/vision-coach-clinician-dashboard.png": {
+  "portfolio/visioncoach/vision-coach-clinician-dashboard.png": {
     "hash": "5bac9f5e880a4a0f68edb5f9dee3e080",
     "height": 1196,
     "width": 1024,
     "type": "png",
     "color": "#0090c5"
   },
-  "work/visioncoach/vision-coach-clinician-detail.png": {
+  "portfolio/visioncoach/vision-coach-clinician-detail.png": {
     "hash": "e62d3c39594708407a4a00848e161282",
     "height": 1071,
     "width": 1024,
     "type": "png",
     "color": "#0090c5"
   },
-  "work/visioncoach/vision-coach-col-6-dash.jpg": {
+  "portfolio/visioncoach/vision-coach-col-6-dash.jpg": {
     "hash": "9a75304c33fba0ad7d79c6b4ab2134fc",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#008fc5"
   },
-  "work/visioncoach/vision-coach-col-6-icon-construction.svg": {
+  "portfolio/visioncoach/vision-coach-col-6-icon-construction.svg": {
     "hash": "67b0468403406efe5b840c266d45a45f",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#d9eef6"
   },
-  "work/visioncoach/vision-coach-col-6-icons.svg": {
+  "portfolio/visioncoach/vision-coach-col-6-icons.svg": {
     "hash": "95af4a11dfbfb8eb9fc3eeb73c97220d",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#71c1df"
   },
-  "work/visioncoach/vision-coach-col-6-splash.jpg": {
+  "portfolio/visioncoach/vision-coach-col-6-splash.jpg": {
     "hash": "40e445ed6d953881ddc1c491a489f65b",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#008fc5"
   },
-  "work/visioncoach/vision-coach-icon-construction.svg": {
+  "portfolio/visioncoach/vision-coach-icon-construction.svg": {
     "hash": "67b0468403406efe5b840c266d45a45f",
     "height": 1080,
     "width": 942,
     "type": "svg",
     "color": "#d9eef6"
   },
-  "work/visioncoach/vision-coach-logo-construction.svg": {
+  "portfolio/visioncoach/vision-coach-logo-construction.svg": {
     "hash": "1415b17ed25d3cde3f32b4d19461be60",
     "height": 1080,
     "width": 1920,
     "type": "svg",
     "color": "#d9eef6"
   },
-  "work/visioncoach/vision-coach-patient-screens.png": {
+  "portfolio/visioncoach/vision-coach-patient-screens.png": {
     "hash": "b31eed35f2144750bd9543defa485d7d",
     "height": 1080,
     "width": 1920,
     "type": "png",
     "color": "#199bcb"
   },
-  "work/visioncoach/vision-coach-thumbnail-logo.jpg": {
+  "portfolio/visioncoach/vision-coach-thumbnail-logo.jpg": {
     "hash": "7b64de92f673690d6ffed6c5711d7cf1",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#007eb7"
   },
-  "work/wordclock/wordclock-col-6-book-1.jpg": {
+  "portfolio/wordclock/wordclock-col-6-book-1.jpg": {
     "hash": "463908b0b2c48e72eae603718913cd36",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#2f2f2f"
   },
-  "work/wordclock/wordclock-col-6-book-2.jpg": {
+  "portfolio/wordclock/wordclock-col-6-book-2.jpg": {
     "hash": "53142f6f4eccefc8bb6cb3f351e6940e",
     "height": 1080,
     "width": 942,
     "type": "jpg",
     "color": "#f6f6f6"
   },
-  "work/wordclock/wordclock-col-6-preferences-exploded.png": {
+  "portfolio/wordclock/wordclock-col-6-preferences-exploded.png": {
     "hash": "3ba1686dee3bce16cc3d6bda039ade54",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/wordclock/wordclock-col-6-preferences.png": {
+  "portfolio/wordclock/wordclock-col-6-preferences.png": {
     "hash": "db840c9ffd0a0f9d5175104a4cb2fe79",
     "height": 1080,
     "width": 942,
     "type": "png",
     "color": "#404040"
   },
-  "work/wordclock/wordclock-thumbnail.jpg": {
+  "portfolio/wordclock/wordclock-thumbnail.jpg": {
     "hash": "732929bc10f69669e2a17231e77b7152",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#fe0000"
+  },
+  "ui/browser-mask.svg": {
+    "hash": "2583f93d27b9801e5efaee43d2dc6b26",
+    "height": 900,
+    "width": 1600,
+    "type": "svg",
+    "color": "#f4f4f4"
+  },
+  "ui/col-6-browser-mask.svg": {
+    "hash": "b46c143f9d4df8c930ced047a37cdf15",
+    "height": 1080,
+    "width": 942,
+    "type": "svg",
+    "color": "#f4f4f4"
   }
 }

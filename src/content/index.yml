@@ -5,30 +5,34 @@ meta:
     - London, UK
   work:
     pages:
-      - path: "/work/hark"
-      - path: "/work/mykrobe"
-      - path: "/work/sps"
-      - path: "/work/fathm"
-      - path: "/work/theguardian"
-      - path: "/work/visioncoach"
-      - path: "/work/minimalfolio"
-      - path: "/work/wordclock"
+      - path: "/portfolio/hark"
+      - path: "/portfolio/mykrobe"
+      - path: "/portfolio/sps"
+      - path: "/portfolio/fathm"
+      - path: "/portfolio/theguardian"
+      - path: "/portfolio/visioncoach"
+      - path: "/portfolio/minimalfolio"
+      - path: "/portfolio/wordclock"
 all:
   header:
     type: header
     links:
-      - "/work"
+      - "/portfolio"
+      - "/case-studies"
       - "/about"
+      - "/contact"
   before: []
   after:
-    - exclude: ["/about"]
+    - exclude: ["/about", "/contact"]
       type: work-header
       title: About
       ruled: true
       subtitle: |
         I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-      - text: Read more
+      - text: About
         url: /about
+      - text: Contact
+        url: /contact
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

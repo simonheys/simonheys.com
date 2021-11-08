@@ -9,22 +9,17 @@ module.exports = {
     return [
       {
         source: "/wordclock",
-        destination: "/work/wordclock",
+        destination: "/portfolio/wordclock",
         permanent: true,
       },
       {
         source: "/portfolio/wordclock",
-        destination: "/work/wordclock",
+        destination: "/portfolio/wordclock",
         permanent: true,
       },
       {
         source: "/minimalfolio/:slug*",
-        destination: "/work/minimalfolio",
-        permanent: true,
-      },
-      {
-        source: "/portfolio",
-        destination: "/work",
+        destination: "/portfolio/minimalfolio",
         permanent: true,
       },
       {

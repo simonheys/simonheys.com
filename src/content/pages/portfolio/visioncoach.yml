@@ -1,7 +1,7 @@
 title: Vision Coach
 subtitle: Eye care platform
 thumbnails:
-  - src: work/visioncoach/vision-coach-thumbnail-logo.jpg
+  - src: portfolio/visioncoach/vision-coach-thumbnail-logo.jpg
 components:
   - type: work-header
     subtitle: I was lead product designer of a team creating an innovative global app platform to help manage and prevent deteriorating eye health.
@@ -13,24 +13,24 @@ components:
       - text: Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition.
   - type: work-row
     columns:
-      - src: work/visioncoach/vision-coach-col-6-splash.jpg
-      - src: work/visioncoach/vision-coach-col-6-dash.jpg
+      - src: portfolio/visioncoach/vision-coach-col-6-splash.jpg
+      - src: portfolio/visioncoach/vision-coach-col-6-dash.jpg
   - type: work-row
     columns:
       - text: An educational website provides bite-sized easy to read material to help patients explore and understand their condition and available treatments.
   - type: scrolling-browser
-    maskSrc: work/visioncoach/browser-mask.svg
-    src: work/visioncoach/LMR-6_Page_01.png
+    maskSrc: portfolio/visioncoach/browser-mask.svg
+    src: portfolio/visioncoach/LMR-6_Page_01.png
   - type: work-row
     columns:
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/visioncoach/col-6-browser-mask.svg
-        src: work/visioncoach/LMR-6_Page_10.png
+        maskSrc: portfolio/visioncoach/col-6-browser-mask.svg
+        src: portfolio/visioncoach/LMR-6_Page_10.png
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/visioncoach/col-6-browser-mask.svg
-        src: work/visioncoach/LMR-6_Page_11.png
+        maskSrc: portfolio/visioncoach/col-6-browser-mask.svg
+        src: portfolio/visioncoach/LMR-6_Page_11.png
   - type: work-row
     columns:
       - text: Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient.
@@ -38,21 +38,21 @@ components:
     columns:
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/visioncoach/col-6-browser-mask.svg
-        src: work/visioncoach/vision-coach-clinician-dashboard.png
+        maskSrc: portfolio/visioncoach/col-6-browser-mask.svg
+        src: portfolio/visioncoach/vision-coach-clinician-dashboard.png
       - type: scrolling-browser-cell
         mask: col-6
-        maskSrc: work/visioncoach/col-6-browser-mask.svg
-        src: work/visioncoach/vision-coach-clinician-detail.png
+        maskSrc: portfolio/visioncoach/col-6-browser-mask.svg
+        src: portfolio/visioncoach/vision-coach-clinician-detail.png
   - type: work-row
     columns:
       - text: The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook.
   - type: work-row
-    src: work/visioncoach/vision-coach-patient-screens.png
+    src: portfolio/visioncoach/vision-coach-patient-screens.png
   - type: work-row
-    src: work/visioncoach/vision-coach-logo-construction.svg
+    src: portfolio/visioncoach/vision-coach-logo-construction.svg
   - type: work-row
     columns:
-      - src: work/visioncoach/vision-coach-col-6-icons.svg
-      - src: work/visioncoach/vision-coach-col-6-icon-construction.svg
+      - src: portfolio/visioncoach/vision-coach-col-6-icons.svg
+      - src: portfolio/visioncoach/vision-coach-col-6-icon-construction.svg
   - type: work-next

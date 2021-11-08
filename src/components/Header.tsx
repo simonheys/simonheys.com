@@ -94,22 +94,24 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
               </h1>
             </div>
             <div className={"col-6"} data-tid={"navigation"}>
-              {links.map((path, index) => {
-                const page = getPageForPath(path);
-                const { title } = page;
-                const active =
-                  router.asPath === path ||
-                  router.asPath.startsWith(`${path}/`);
-                return (
-                  <LinkA
-                    key={index}
-                    href={path}
-                    className={active ? styles.linkActive : styles.link}
-                  >
-                    {title}
-                  </LinkA>
-                );
-              })}
+              <div className={styles.linksContainer}>
+                {links.map((path, index) => {
+                  const page = getPageForPath(path);
+                  const { title } = page;
+                  const active =
+                    router.asPath === path ||
+                    router.asPath.startsWith(`${path}/`);
+                  return (
+                    <LinkA
+                      key={index}
+                      href={path}
+                      className={active ? styles.linkActive : styles.link}
+                    >
+                      {title}
+                    </LinkA>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
