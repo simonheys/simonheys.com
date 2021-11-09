@@ -1,8 +1,8 @@
 title: Contact
 components:
-  - type: work-header
-    title:
-    subtitle: |
+  - type: prose
+    title: Contact
+    text: |
       I am always interested in talking about new projects or roles — please get in touch.
     links:
       - text: Email

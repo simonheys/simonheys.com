@@ -7,8 +7,8 @@
   font-weight: bold;
 }
 
-.subtitle {
-  composes: global(h4);
+.text {
+  composes: global(h5);
   margin-bottom: -$paragraph-margin-bottom;
   h1,
   h2,
@@ -20,7 +20,7 @@
 }
 
 .links {
-  composes: global(h4);
+  composes: global(h5);
   composes: global(mb-0);
   margin-top: 1.5 * $paragraph-margin-bottom;
 }

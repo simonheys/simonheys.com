@@ -11,6 +11,7 @@ import WorkRow from "./work/WorkRow";
 import ScrollingBrowser from "./ui/ScrollingBrowser";
 import ScrollingBrowserCell from "./ui/ScrollingBrowserCell";
 import WorkNext from "./work/WorkNext";
+import Prose from "./ui/Prose";
 
 // // unique components are dynamic
 const MykrobeAnimation = dynamic(
@@ -39,6 +40,7 @@ const MapTypeToComponent = {
   "work-row": WorkRow,
   footer: Footer,
   header: Header,
+  prose: Prose,
 };
 
 export const MappedComponent = ({ type, ...rest }) => {

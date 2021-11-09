@@ -22,10 +22,10 @@
 }
 
 .title {
-  font-size: $h5-font-size;
+  composes: global(h5);
   margin-bottom: 0;
-  @include media-breakpoint-up(sm) {
-    font-size: $h2-font-size;
+  @include media-breakpoint-up(md) {
+    font-size: $h4-font-size;
   }
 }
 
@@ -37,13 +37,12 @@
 }
 
 .link {
-  composes: global(h3);
+  composes: global(h5);
   composes: global(mb-0);
   composes: global(me-2);
   composes: global(me-sm-3);
-  font-size: $h5-font-size;
-  @include media-breakpoint-up(sm) {
-    font-size: $h2-font-size;
+  @include media-breakpoint-up(md) {
+    font-size: $h4-font-size;
   }
   display: flex;
   color: var(--gray-500);
