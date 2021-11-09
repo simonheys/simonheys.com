@@ -6,6 +6,7 @@ import TextLinks from "./TextLinks";
 import LinkA from "./LinkA";
 
 import styles from "./Prose.module.scss";
+import ImageResponsive from "./ImageResponsive";
 
 export interface ProseProps {
   title?: string;
@@ -21,8 +22,13 @@ const LinkComponent = ({ href, ...rest }: any) => {
   return <LinkA href={href} {...rest} />;
 };
 
+const ImageComponent = ({ node, ...rest }: any) => {
+  return <ImageResponsive {...rest} />;
+};
+
 const components = {
   a: LinkComponent,
+  img: ImageComponent,
 };
 
 const Prose: React.FC<ProseProps> = ({ title, text, links, ruled }) => {
