@@ -128,6 +128,9 @@ const ScrollingBrowserCell: React.FC<ScrollingBrowserCellProps> = ({
           elapsed: -delayMilliseconds,
           duration: 3000,
           onUpdate: setInterpolationValue,
+          repeat: Infinity,
+          repeatDelay: 1000,
+          repeatType: "reverse",
         });
       }
       if (!inView && animateRef.current) {

@@ -1,8 +1,10 @@
 title: Case Studies
 components:
   - type: prose
-    title: Mykrobe · Antimicrobial resistance and outbreak information within minutes
-    text: I was Lead Product Designer and UX Engineer in a cross-disciplinary team of 16 on a project spanning 7 years. I partnered most frequently with the Technical Lead, two server-side engineers and one other UX Engineer, helping to drive and influence product decisions and strategy.
+    title: Mykrobe
+    text: |
+      # Antimicrobial resistance and outbreak information within minutes
+      I was Lead Product Designer and UX Engineer in a cross-disciplinary team of 16 on a project spanning 7 years, helping to drive and influence product decisions and strategy.
     links:
       - text: Visit mykrobe.com
         url: https://www.mykrobe.com/
@@ -51,7 +53,7 @@ components:
     title: Research
     text: |
       ##### UK-based users…
-      I and other members of the team undertook user interviews and research initially in the UK, speaking to experts at Oxford University, Genomics England and The European Bioinformatics Institute. This was useful in informing what types of diagnostic information would be most suitable.
+      I and other members of the team undertook user interviews and research initially in the UK, speaking to experts at [Oxford University](https://www.well.ox.ac.uk/), [Genomics England](https://www.genomicsengland.co.uk/) and [The European Bioinformatics Institute](https://www.ebi.ac.uk/). This was useful in informing what types of diagnostic information would be most suitable.
 
       ##### …are not representative of all users
       However it became clear that these UK-based users were only representative of a particularly expert subset of the target user base. The project started to generate interest in India and I was part of a sub-team that undertook a field trip to TB-prevalent areas of Mumbai. I am pictured above wearing a mandatory N95 mask while observing in a mobile TB lab. 
@@ -62,14 +64,13 @@ components:
 
       ##### Adapting the product to fit
       We were able to observe and capture existing workflows to help understand where we could adapt our product to fit seamlessly into day-to-day operations.
-  - type: work-row
-    src: case-studies/mykrobe/mykrobe-logo-sketches.jpg
-  - type: mykrobe-animation
   - type: prose
     title: Solution
     text: |
       ##### Start at the beginning
       I started with a lightweight identity design exercise where we arrived at a solution that satisfied the requirements for charm and animation by using simple forms in a bold and colourful way. The visual language was derived from images of lab samples. 
+
+      ![](case-studies/mykrobe/mykrobe-logo-sketches.jpg)
 
       ##### Planning the initial solution
       The next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set. 
@@ -142,17 +143,13 @@ components:
     text: |
       We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.
   - type: work-row
-    src: portfolio/mykrobe/mykrobe-comparison.jpg
-  - type: work-row
     columns:
-      - type: scrolling-browser-cell
-        mask: col-6
-        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
-        src: portfolio/mykrobe/mykrobe-front.png
-      - type: scrolling-browser-cell
-        mask: col-6
-        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
-        src: portfolio/mykrobe/mykrobe-patient-results.png
+      - type: mykrobe-cluster
+        col: 6
+        src: mst-1
+      - type: mykrobe-cluster
+        col: 6
+        src: mst-2
   - type: prose
     text: |
       ##### Complex visualisations
@@ -167,20 +164,46 @@ components:
     text: |
       ##### Web and desktop platform
       The final design works across both the offline desktop app and the web-based platform.
-
+  - type: mykrobe-animation
+  - type: work-row
+    src: portfolio/mykrobe/mykrobe-comparison.jpg
+  - type: work-row
+    columns:
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-front.png
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-patient-results.png
+  - type: prose
+    text: |
       ##### Design system
       I worked with other front-end engineers to build the user interface using React and Redux with the component design system documented live in Storybooks. I re-worked the Electron app to use the same components, giving a consistent appearance and reducing the effort required for ongoing maintenance. 
       
       ##### Front to back
-      We worked closely with the back-end developers against an OpenAPI spec, with some realtime events using SSE.
+      We worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
+  - type: work-row
+    vimeoId: 584226493
+    color: "#f7f6f1"
   - type: prose
     title: Summary
     text: |
       ##### TB, meet COVID-19
-      While we were focused on preparing the platform for its first real-world pilot in Argentina, something called COVID-19 stole the news agenda. Many TB labs were forced to change their focus to analysing COVID-19 during the pandemic, making the planned pilot impossible. The platform has since seen renewed interest from a very large global technology firm, and will be migrated onto their platform where it can be scaled to be used for COVID-19 surveillance alongside TB.
+      While we were focused on preparing the platform for its first real-world pilot in Argentina, something called COVID-19 stole the news agenda. Many TB labs were forced to change their focus to analysing COVID-19 during the pandemic. This made it impossible to undertake the final pilot and user testing that we had planned.
+
+      One other problem was unique to this particular project - the technology is so advanced that none of our users were able to easily grasp what it could do or specifically they might use it for. This meant we had to push the fidelity of our testable prototypes further than expected so that users would be able to engage with them in a useful way.
 
       ##### Reflection
-      What started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world. 
+      What started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world.
       
       It is still hard to believe that you can put a swab sample in a fancy USB stick then see a complete DNA analysis on your laptop screen within a couple of minutes. It was an honour and privilege to work with people who make such breakthroughs possible.
 
+      ##### Results
+      Post-pandemic, the platform has seen renewed interest and investment from a very large global technology firm. It will be migrated onto their platform where it can be scaled to be used for COVID-19 surveillance alongside TB.
+    links:
+      - text: Visit mykrobe.com
+        url: https://www.mykrobe.com/
+      - text: Download
+        url: https://github.com/Mykrobe-tools/mykrobe/releases
