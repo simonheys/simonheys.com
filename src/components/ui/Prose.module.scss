@@ -17,6 +17,18 @@
   h5 {
     font-weight: bold;
   }
+  pre {
+    padding: 0.8rem;
+    background-color: var(--gray-150);
+    border-radius: 0.2rem;
+  }
+  code {
+    font-size: $font-size-sm;
+    color: var(--gray-700);
+    background-color: var(--gray-150);
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+  }
 }
 
 .links {
