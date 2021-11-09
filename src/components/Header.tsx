@@ -77,6 +77,16 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
     return { top: visibleWhileScrolled ? 0 : -boundingClientRect?.height };
   }, [boundingClientRect.height, fixed, visibleWhileScrolled]);
 
+  const activePath = React.useMemo(() => {
+    for (const path of links) {
+      const active =
+        router.asPath === path || router.asPath.startsWith(`${path}/`);
+      if (active) {
+        return path;
+      }
+    }
+  }, [links, router.asPath]);
+
   return (
     <React.Fragment>
       <div className={styles.sizeContainer} style={style}></div>
@@ -99,8 +109,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
                   const page = getPageForPath(path);
                   const { title } = page;
                   const active =
-                    router.asPath === path ||
-                    router.asPath.startsWith(`${path}/`);
+                    activePath === undefined || activePath === path;
                   return (
                     <LinkA
                       key={index}

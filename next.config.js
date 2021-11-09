@@ -13,11 +13,6 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/portfolio/wordclock",
-        destination: "/portfolio/wordclock",
-        permanent: true,
-      },
-      {
         source: "/minimalfolio/:slug*",
         destination: "/portfolio/minimalfolio",
         permanent: true,
