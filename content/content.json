@@ -2,7 +2,7 @@
   "meta": {
     "titles": [
       "Simon Heys",
-      "Freelance Designer and Developer",
+      "Freelance Product Designer and Software Engineer",
       "London, UK"
     ],
     "work": {
@@ -54,7 +54,7 @@
         "type": "work-header",
         "title": "About",
         "ruled": true,
-        "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
+        "subtitle": "I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
         "links": [
           {
             "text": "About",
@@ -80,7 +80,7 @@
         {
           "type": "prose",
           "title": "About",
-          "text": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n",
+          "text": "I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nMost recently I was co-founder of a digital agency and was part of many cross-disciplinary teams that designed and developed a range of apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by Google DeepMind. \n\nPrior to that I worked in-house as a Product Designer at The Guardian, The Times, and UBS Investment Bank.\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n",
           "links": [
             {
               "text": "Contact",
@@ -356,7 +356,7 @@
         {
           "type": "prose",
           "title": "Contact",
-          "text": "I am always interested in talking about new projects or roles — please get in touch.\n",
+          "text": "I am based in London, UK. Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. \n",
           "links": [
             {
               "text": "Email",
@@ -381,7 +381,7 @@
     {
       "path": "/",
       "title": null,
-      "description": "Freelance designer and developer based in London, UK. Available to design and develop apps or websites.",
+      "description": "Freelance Product Designer based in London, UK. Available to design and develop apps or websites.",
       "fill": {
         "type": "word-clock-fill",
         "title": true

@@ -1,7 +1,7 @@
 meta:
   titles:
     - Simon Heys
-    - Freelance Designer and Developer
+    - Freelance Product Designer and Software Engineer
     - London, UK
   work:
     pages:
@@ -28,7 +28,7 @@ all:
       title: About
       ruled: true
       subtitle: |
-        I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
+        I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
       - text: About
         url: /about
