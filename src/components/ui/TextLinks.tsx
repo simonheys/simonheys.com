@@ -19,15 +19,8 @@ const TextLinks: React.FC<TextLinksProps> = ({ links }) => {
   return (
     <div className={styles.container}>
       {links.map(({ text, url }, index) => {
-        const isInternal = url.startsWith("/");
         return (
-          <LinkA
-            key={index}
-            className={styles.link}
-            href={url}
-            target={isInternal ? null : "_blank"}
-            rel={isInternal ? null : "noreferrer"}
-          >
+          <LinkA key={index} className={styles.link} href={url}>
             {text}
             <span className={styles.linkIcon}>
               <ChevronRight />

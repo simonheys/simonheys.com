@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown";
 
 import AppearWhenInView from "./AppearWhenInView";
 import TextLinks from "./TextLinks";
+import LinkA from "./LinkA";
 
 import styles from "./Prose.module.scss";
 
@@ -15,6 +16,14 @@ export interface ProseProps {
   }[];
   ruled?: boolean;
 }
+
+const LinkComponent = ({ href, ...rest }: any) => {
+  return <LinkA href={href} {...rest} />;
+};
+
+const components = {
+  a: LinkComponent,
+};
 
 const Prose: React.FC<ProseProps> = ({ title, text, links, ruled }) => {
   return (
@@ -32,7 +41,7 @@ const Prose: React.FC<ProseProps> = ({ title, text, links, ruled }) => {
           <div className={"col-md-6"}>
             {text && (
               <div className={styles.text}>
-                <ReactMarkdown>{text}</ReactMarkdown>
+                <ReactMarkdown components={components}>{text}</ReactMarkdown>
               </div>
             )}
             {links && (

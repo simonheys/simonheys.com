@@ -3,13 +3,18 @@ components:
   - type: prose
     title: Mykrobe
     text: I was Lead Product Designer and UX Engineer on a team which peaked at 16 members. I worked most frequently with the Technical Lead, two server-side engineers and one other front-end engineer.
+    links:
+      - text: Visit mykrobe.com
+        url: https://www.mykrobe.com/
+      - text: Download
+        url: https://github.com/Mykrobe-tools/mykrobe/releases
   - type: prose
     title: Overview
     text: |
       ##### A product with charm
       I was initially approached to create an identity and user interface for a family of digital diagnostic tools which are able to identify Tuberculosis (TB) species and antibiotic resistance. 
       
-      The goal was to make the existing command-line products usable and appealing to non-specialist users. I was asked to create a product with charm.
+      The goal was to make the [existing command-line products](https://github.com/Mykrobe-tools/mykrobe) usable and appealing to non-specialist users. I was asked to create a product with charm.
   - type: prose
     title: Challenge
     text: |
