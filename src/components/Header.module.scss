@@ -27,6 +27,9 @@
   @include media-breakpoint-up(md) {
     font-size: $h4-font-size;
   }
+  @include media-breakpoint-up(xl) {
+    font-size: $h3-font-size;
+  }
 }
 
 .linksContainer {
@@ -43,6 +46,9 @@
   composes: global(me-sm-3);
   @include media-breakpoint-up(md) {
     font-size: $h4-font-size;
+  }
+  @include media-breakpoint-up(xl) {
+    font-size: $h3-font-size;
   }
   display: flex;
   color: var(--gray-500);
