@@ -1,4 +1,39 @@
 {
+  "case-studies/mykrobe/mykrobe-app-1.jpg": {
+    "hash": "71529edd6d7fc258fab0f59a4958908d",
+    "height": 1008,
+    "width": 1008,
+    "type": "jpg",
+    "color": "#f7f6f0"
+  },
+  "case-studies/mykrobe/mykrobe-app-2.jpg": {
+    "hash": "5075fa1cfe63a253f4631e53abdaca6f",
+    "height": 1008,
+    "width": 1008,
+    "type": "jpg",
+    "color": "#f7f6f0"
+  },
+  "case-studies/mykrobe/mykrobe-app-3.jpg": {
+    "hash": "6a2d3d85ce8e58c6fb9ba5241bb18851",
+    "height": 1008,
+    "width": 1008,
+    "type": "jpg",
+    "color": "#f7f6f0"
+  },
+  "case-studies/mykrobe/mykrobe-app-4.jpg": {
+    "hash": "03a25122ece59df642811d35c6c78a4a",
+    "height": 1008,
+    "width": 1008,
+    "type": "jpg",
+    "color": "#f7f6f0"
+  },
+  "case-studies/mykrobe/mykrobe-demo-1.jpg": {
+    "hash": "ba761e671a9cde3f1bbcb0d0b556e8db",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#a68d85"
+  },
   "case-studies/mykrobe/mykrobe-lab.jpg": {
     "hash": "23e7dc49da685c75801d0fb7225c9ec4",
     "height": 1080,
@@ -6,12 +41,124 @@
     "type": "jpg",
     "color": "#d0beac"
   },
+  "case-studies/mykrobe/mykrobe-logo-sketches.jpg": {
+    "hash": "788abc10b5ac10dd1908b1f7301bbdaa",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f9f9f9"
+  },
   "case-studies/mykrobe/mykrobe-mumbai-n95.jpg": {
     "hash": "2fdf6d4f5a77fe22ee891f3e88e5157e",
     "height": 1920,
     "width": 1080,
     "type": "jpg",
     "color": "#b21115"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-1.png": {
+    "hash": "25e8d321523dbe0f09cb82aed1075b8e",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-2.png": {
+    "hash": "5c7c6455345ae3b47d0a77f8e55b5eab",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-3.png": {
+    "hash": "c13ef228816a5551634a05cefd25d317",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-4.png": {
+    "hash": "6f9dc531092b987d655433baa7f21aa8",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-5.png": {
+    "hash": "d807a632820d61b03b3c7d5044e70064",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f4f4f4"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-6.png": {
+    "hash": "25cbab952c8a2896d82df66e3fb9f5d9",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f4f4f4"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-7.png": {
+    "hash": "145604bde38982d3de6fb226d7a4b75f",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f4f4f4"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes-8.png": {
+    "hash": "17372da62caa17a079f920ff3cd76fff",
+    "height": 1389,
+    "width": 1920,
+    "type": "png",
+    "color": "#f4f4f4"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-2.jpg": {
+    "hash": "e8004bbbe767ab624b6c2b0eea6647c8",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-3.jpg": {
+    "hash": "d5adad0feb1f3b66e98792791d512519",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-4.jpg": {
+    "hash": "708ab798fac70c9d2e7c1d532b3e1a00",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-5.jpg": {
+    "hash": "da837518be900aef5299de662207e592",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-6.jpg": {
+    "hash": "88783c4e4a9c051900477d2bba30c34d",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-7.jpg": {
+    "hash": "df4e5b140fb032d0bf07803e352a73e7",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
+  },
+  "case-studies/mykrobe/mykrobe-wireframes2-8.jpg": {
+    "hash": "67bd29a0ecc63e938778b94db3980aac",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f1f1f1"
   },
   "favicon/android-chrome-144x144.png": {
     "hash": "b39dbbbfad0ec3f518d6992f164df3b4",

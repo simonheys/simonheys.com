@@ -62,6 +62,9 @@ components:
 
       ##### Adapting the product to fit
       We were able to observe and capture existing workflows to help understand where we could adapt our product to fit seamlessly into day-to-day operations.
+  - type: work-row
+    src: case-studies/mykrobe/mykrobe-logo-sketches.jpg
+  - type: mykrobe-animation
   - type: prose
     title: Solution
     text: |
@@ -70,12 +73,34 @@ components:
 
       ##### Planning the initial solution
       The next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set. 
-
+  - type: work-row
+    columns:
+      - src: case-studies/mykrobe/mykrobe-wireframes-1.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-2.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-3.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-4.png
+  - type: work-row
+    columns:
+      - src: case-studies/mykrobe/mykrobe-wireframes-5.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-6.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-7.png
+      - src: case-studies/mykrobe/mykrobe-wireframes-8.png
+  - type: prose
+    text: |
       ##### Extending the visual language
-      The identity and visual language could then be applied to the wireframes. We reached agreement on a solution which was visually clean and easy to read, while incorporating charm via touches of animation and iconography.
-
+      The identity and visual language could then be applied to the wireframes. The team reached agreement on a solution which was visually clean and easy to read, while incorporating charm via touches of animation and iconography.
+  - type: work-row
+    columns:
+      - src: case-studies/mykrobe/mykrobe-app-1.jpg
+      - src: case-studies/mykrobe/mykrobe-app-2.jpg
+      - src: case-studies/mykrobe/mykrobe-app-3.jpg
+      - src: case-studies/mykrobe/mykrobe-app-4.jpg
+  - type: prose
+    text: |
       ##### Finding the technology
-      The requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using QT, both of which would carry a large initial cost plus ongoing maintenance burden. Since the interface is largely text-based I suggested it might be a good candidate for a relatively new technology called Electron, which provides a way to develop an application with a browser-based user interface which also works offline.
+      The requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. 
+      
+      Since the interface is largely text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop an application with a browser-based user interface which also works offline.
 
       ##### Proving the technology
       I created an initial prototype with the goal of having the minimum set of features required to prove Electron as a solution. The developer of the tool worked with me to adjust the input and output of the tool. Passing `--format json` causes standard output to be in JSON which is more easily consumed by software. 
@@ -93,17 +118,47 @@ components:
       ##### Building the first product
       The visual designs were next implemented in the prototype, with added animations added to the splash screen and simple transitions between screens adding to the charm. We added drag-and-drop support which means that with the final production app users can simply drag a DNA sequence file into the app and then view the results within a couple of minutes. 
 
-      The team lead gave a real-time demo of this in Mumbai which received many gasps and a round of applause.
-
+      The product owner gave a memorable real-time demo of this in Mumbai which received many gasps with the audience wondering how this was possible.
+  - type: work-row
+    columns:
+      - vimeoId: 643953988
+        color: "#6b6a6c"
+      - src: case-studies/mykrobe/mykrobe-demo-1.jpg
+  - type: prose
+    text: |
       ##### Turning a product into a platform
       The initial app was well received by end users and this played a small part in the overall project securing further funding. The vision was extended to create not just a standalone app, but a whole online platform that would allow users to create their own secure online library of sequence data, with potential to collaborate anonymously with others to identify similar samples and potential outbreaks.
-
+  - type: work-row
+    columns:
+      - src: case-studies/mykrobe/mykrobe-wireframes2-2.jpg
+      - src: case-studies/mykrobe/mykrobe-wireframes2-3.jpg
+      - src: case-studies/mykrobe/mykrobe-wireframes2-5.jpg
+  - type: work-row
+    columns:
+      - src: case-studies/mykrobe/mykrobe-wireframes2-6.jpg
+      - src: case-studies/mykrobe/mykrobe-wireframes2-7.jpg
+      - src: case-studies/mykrobe/mykrobe-wireframes2-8.jpg
+  - type: prose
+    text: |
       We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.
-
+  - type: work-row
+    src: portfolio/mykrobe/mykrobe-comparison.jpg
+  - type: work-row
+    columns:
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-front.png
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
+        src: portfolio/mykrobe/mykrobe-patient-results.png
+  - type: prose
+    text: |
       ##### Complex visualisations
-      One of the most challenging parts of the platform from a product design perspective is visualising the relatedness of different samples. This was initially achieved using a phylogenetic tree.
+      One of the most challenging parts of the platform from a product design perspective is visualising the relatedness of different samples. This was initially achieved using a [phylogenetic tree](https://phylocanvas.org/).
 
-      One of the more scientific team members came up with a better solution using a kind of hand-drawn node graph which has a significantly lower density of data making it easier to read. To realise this idea, I created a series of prototypes using static data in various types of force-directed graph visualisations and with different layout strategies. Following a cycle of team reviews and prototype refinements we eventually landed on a satisfying visualisation generated in the browser.
+      One of the scientific team members invented a better solution using a hand-drawn node graph which has a significantly lower density of data making it easier to read. To realise this idea, I created a series of prototypes using static data in various types of force-directed graph visualisations and with different layout strategies. Following a cycle of team reviews and prototype refinements we eventually landed on a satisfying visualisation generated in the browser.
 
       ##### Tree data structure
       I was then able to work with one of the back-end developers to arrive on a JSON data structure which could be generated dynamically via Neo4J. The resulting visualisation replaced the phylogenetic tree.
@@ -118,7 +173,6 @@ components:
       
       ##### Front to back
       We worked closely with the back-end developers against an OpenAPI spec, with some realtime events using SSE.
-
   - type: prose
     title: Summary
     text: |
