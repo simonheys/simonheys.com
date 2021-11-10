@@ -1,0 +1,69 @@
+title: Case Studies
+components:
+  - type: prose
+    title: Hark
+    text: |
+      # Transformative clinical task management
+      I was Lead Product Designer in a cross-disciplinary team on a project spanning almost 3 years. The resulting product was successfully acquired by a global AI technology firm.
+  - type: prose
+    title: Overview
+    ruled: true
+    text: |
+      ##### Improve handover, reduce potential harm
+      I was initially approached by an Academic Surgeon at Imperial College London to become part of a project looking to use digital technology to improve Clinical Handover between hospital shifts, typically at 8am and 8pm each day.
+      
+      The goal was to measurably improve the effectiveness of Clinical Handover, thereby reducing potential harm to patients.
+  - type: prose
+    title: Challenge
+    ruled: true
+    text: |
+      ##### Paper, handwriting and car parks
+      Information about patients on a ward is printed and then kept up to date with hand-written notes over the course of a shift. This can result in incomplete information handover and a loss of accountability. Examples of these confidential records are often found littered accidentally on the ground of the hospital car park.
+
+      ##### Bleeps and landlines
+      The existing system for managing and delegating tasks was via pagers (‘bleeps’) and landline phones. Receiving a bleep and then following up only later by landline is incredibly inefficient and leads to tasks not being actioned in a timely manner. There is no way to prioritise or delegate tasks and this could potentially lead to a dangerous situation.
+
+      ##### Zero to one MVP in 6 months
+      The practical challenge at the outset was to start from zero and deliver a testable MVP iPhone app within 6 months. Success in addressing the above would potentially unlock further funding to continue and extend the project further.
+  - type: prose
+    title: Research
+    ruled: true
+    text: |
+      ##### Walking the walk
+      Teaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.
+
+      ##### A complex ecosystem
+      The direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment. 
+  - type: prose
+    title: Solution
+    ruled: true
+    text: |
+      ##### Target process and features for MVP
+      The outputs of the research were captured as a series of current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution. We identified the opportunity to extend the scope of the app, adding task management and integrating it into the current vision of Clinical Handover.
+
+      The team refined the target state into a set of core features for MVP that could be feasibly built and tested within our time window.
+
+      ##### Building the first product
+      I worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. 
+      
+      ##### Custom controls and libraries for better UX
+      Throughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.
+
+      The back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so we wrote a library which complies to the official specification and validates against the test suite in WebKit.
+
+      The app has 
+  - type: prose
+    title: Final Design
+    ruled: true
+    text: |
+      Awaiting copy
+  - type: prose
+    title: Summary
+    ruled: true
+    text: |
+      Awaiting copy
+  - type: prose
+    title: Outcome
+    ruled: true
+    text: |
+      Awaiting copy

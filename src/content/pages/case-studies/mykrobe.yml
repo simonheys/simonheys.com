@@ -103,7 +103,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-app-2.jpg
       - src: case-studies/mykrobe/mykrobe-app-3.jpg
       - src: case-studies/mykrobe/mykrobe-app-4.jpg
-    caption: Identity and visual language applied to create the first screens ready for testing
+    caption: Identity and visual language applied to create the first MVP prototype ready for testing
   - type: prose
     text: |
       ##### Identifying the right technology
@@ -133,7 +133,7 @@ components:
       - vimeoId: 643953988
         color: "#6b6a6c"
       - src: case-studies/mykrobe/mykrobe-demo-1.jpg
-    caption: The product owner giving a memorable real-time demo of in Mumbai which received many gasps with the audience wondering how this was possible
+    caption: The product owner giving a memorable real-time demo in Mumbai which received many gasps with the audience wondering how this was possible
   - type: prose
     text: |
       ##### Turning a product into a platform
