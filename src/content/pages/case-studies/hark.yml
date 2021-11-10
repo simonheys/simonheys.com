@@ -72,9 +72,14 @@ components:
     title: Summary
     ruled: true
     text: |
-      Awaiting copy
+      ##### Reflection
+      What started out as a relatively small project eventually scaled into a multi-year multi-platform product. The product was received with genuine interest and enthusiasm wherever it was shown. 
+      
+      This was a result of embedding user research and testing into the product, and having a brilliant Academic Surgeon and Product Owner on the team with a deep understanding and first-hand experience of the pain points we were solving.
+
+      Alongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unforseen events (see Outcome below) we never had the satisfaction of seeing the pilot happen. 
   - type: prose
     title: Outcome
     ruled: true
     text: |
-      Awaiting copy
+      The product was successfully acquired by Google DeepMind.
