@@ -106,10 +106,10 @@ components:
     caption: Identity and visual language applied to create the first screens ready for testing
   - type: prose
     text: |
-      ##### Finding the technology
+      ##### Identifying the right technology
       The requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. 
       
-      Since the interface is largely text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop an application with a browser-based user interface which also works offline.
+      Since the interface was predominantly text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop a cross-platform application with web technologies (HTML/CSS/JS) which also works offline.
 
       ##### Proving the technology
       I created an initial prototype with the goal of having the minimum set of features required to prove Electron as a solution. The developer of the tool worked with me to adjust the input and output of the tool. Passing `--format json` causes standard output to be in JSON which is more easily consumed by software. 
