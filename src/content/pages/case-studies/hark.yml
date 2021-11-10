@@ -52,7 +52,7 @@ components:
       The back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so we wrote a library which complies to the official specification and validates against the test suite in WebKit.
 
       ##### Early Warning
-      Our users make use of an Early Warning Score (MEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected MEWS which we used to create a provably correct algorithm in the app. The MEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.      
+      Our users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.      
 
       ##### Next!
       The app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. 

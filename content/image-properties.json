@@ -1,4 +1,81 @@
 {
+  "case-studies/hark/hark-dashboard-wireframe-1.jpg": {
+    "hash": "40414998100c609fb61e3ccefdb315c9",
+    "height": 1081,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-head.jpg": {
+    "hash": "9101f68c0df194addaeee17e21750fc2",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#4b4948"
+  },
+  "case-studies/hark/hark-patient-fake.jpg": {
+    "hash": "d164a1a1213e2c4db46d4afa65d20d93",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#135d8e"
+  },
+  "case-studies/hark/hark-photo-1.jpg": {
+    "hash": "69b8eb272d4cd1f840627c2cca15f300",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#ceb882"
+  },
+  "case-studies/hark/hark-photo-2.jpg": {
+    "hash": "58022e15b332696e776429487055ad0e",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#4a494b"
+  },
+  "case-studies/hark/hark-sketch-1.jpg": {
+    "hash": "bcea1996b00571c0873f9cbb612f032c",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#887f6a"
+  },
+  "case-studies/hark/hark-sketch-2.jpg": {
+    "hash": "3f5cb7cda72eb54104438a32b2cc7c3c",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#76756d"
+  },
+  "case-studies/hark/hark-sketch-3.jpg": {
+    "hash": "e8ad3f222934518d35ddbaaadfa86889",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#b5b3a6"
+  },
+  "case-studies/hark/hark-sketch-4.jpg": {
+    "hash": "f7e8a4889f19ed1d976f0ca670058a98",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#b2b0ad"
+  },
+  "case-studies/hark/hark-testing-1.jpg": {
+    "hash": "7f4260d59a926ef7f724f4f7ecbf9a65",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#c1985f"
+  },
+  "case-studies/hark/hark-testing-2.jpg": {
+    "hash": "6db62e9da57a0c0b983b2711febe4edf",
+    "height": 1088,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#7c6c4f"
+  },
   "case-studies/mykrobe/mykrobe-app-1.jpg": {
     "hash": "71529edd6d7fc258fab0f59a4958908d",
     "height": 1008,
