@@ -13,11 +13,13 @@ components:
   - type: work-row
     vimeoId: 585698728
     color: "#f6a229"
+    caption: Product overview showing a user browsing their sample library and viewing related samples to investigate a potential outbreak
   - type: prose
     title: Overview
+    ruled: true
     text: |
       ##### A product with charm
-      I was initially approached to create an identity and user interface for a family of digital diagnostic tools which are able to identify Tuberculosis (TB) species and antibiotic resistance. 
+      I was initially approached by a Computational Biologist at Oxford University to create an identity and user interface for a family of digital diagnostic tools which are able to identify Tuberculosis (TB) species and antibiotic resistance. 
       
       The goal was to take the [existing command-line products](https://github.com/Mykrobe-tools/mykrobe)…
 
@@ -49,15 +51,17 @@ components:
         aspect: 1.7777
       - vimeoId: 643919488
         aspect: 1.7777
-      - src: case-studies/mykrobe/mykrobe-mumbai-n95.jpg      
+      - src: case-studies/mykrobe/mykrobe-mumbai-n95.jpg    
+    caption: Footage from our research trip to Mumbai – I am pictured pre-pandemic wearing a mandatory N95 mask while observing users in a mobile TB lab 
   - type: prose
     title: Research
+    ruled: true
     text: |
       ##### UK-based users…
       I and other members of the team undertook user interviews and research initially in the UK, speaking to experts at [Oxford University](https://www.well.ox.ac.uk/), [Genomics England](https://www.genomicsengland.co.uk/) and [The European Bioinformatics Institute](https://www.ebi.ac.uk/). This was useful in informing what types of diagnostic information would be most suitable.
 
       ##### …are not representative of all users
-      However it became clear that these UK-based users were only representative of a particularly expert subset of the target user base. The project started to generate interest in India and I was part of a sub-team that undertook a field trip to TB-prevalent areas of Mumbai. I am pictured above wearing a mandatory N95 mask while observing in a mobile TB lab. 
+      However it became clear that these UK-based users were only representative of a particularly expert subset of the target user base. The project started to generate interest in India and I was part of a sub-team that undertook a field trip to TB-prevalent areas of Mumbai.
       
       ![](case-studies/mykrobe/mykrobe-lab.jpg)
 
@@ -88,6 +92,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-wireframes-6.png
       - src: case-studies/mykrobe/mykrobe-wireframes-7.png
       - src: case-studies/mykrobe/mykrobe-wireframes-8.png
+    caption: Initial low-fidelity wireframes capture the functionality and information derived from the command-line tool which dictated the feature-set
   - type: prose
     text: |
       ##### Extending the visual language
@@ -98,6 +103,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-app-2.jpg
       - src: case-studies/mykrobe/mykrobe-app-3.jpg
       - src: case-studies/mykrobe/mykrobe-app-4.jpg
+    caption: Identity and visual language applied to create the first screens ready for testing
   - type: prose
     text: |
       ##### Finding the technology
@@ -127,6 +133,7 @@ components:
       - vimeoId: 643953988
         color: "#6b6a6c"
       - src: case-studies/mykrobe/mykrobe-demo-1.jpg
+    caption: The product owner giving a memorable real-time demo of in Mumbai which received many gasps with the audience wondering how this was possible
   - type: prose
     text: |
       ##### Turning a product into a platform
@@ -141,6 +148,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-wireframes2-6.jpg
       - src: case-studies/mykrobe/mykrobe-wireframes2-7.jpg
       - src: case-studies/mykrobe/mykrobe-wireframes2-8.jpg
+    caption: Small snapshot of what we learned in terms of pains, workflows, users and use cases
   - type: prose
     text: |
       We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.
@@ -152,6 +160,7 @@ components:
       - type: mykrobe-cluster
         col: 6
         src: mst-2
+    caption: Minimum-spanning tree visualisation of sample relatedness using a force-directed graph running live in React and HTML Canvas - click and drag!
   - type: prose
     text: |
       ##### Complex visualisations
@@ -168,8 +177,10 @@ components:
       ##### Web and desktop platform
       The final design works across both the offline desktop app and the web-based platform.
   - type: mykrobe-animation
+    caption: The real-time animation (HTML Canvas for Multiply composition) while the app is running analysis, contributing to the perceived charm of the product
   - type: work-row
     src: portfolio/mykrobe/mykrobe-comparison.jpg
+    caption: Detail showing a user comparing the similarity of samples simultaneously on a geographic map, phylogenetic tree and over time
   - type: work-row
     columns:
       - type: scrolling-browser-cell
@@ -180,30 +191,38 @@ components:
         mask: col-6
         maskSrc: portfolio/mykrobe/col-6-browser-mask.svg
         src: portfolio/mykrobe/mykrobe-patient-results.png
+    caption: Landing page showing marketing features on the left, detail view of a fictional patient on the right
   - type: prose
     text: |
-      ##### Design system
-      I worked with other front-end engineers to build the user interface using React and Redux with the component design system documented live in Storybooks. I re-worked the Electron app to use the same components, giving a consistent appearance and reducing the effort required for ongoing maintenance. 
+      ##### Component library leads the way for design system
+      I worked with other front-end engineers to build the user interface using [React](https://reactjs.org/), [Redux](https://redux.js.org/) and [Redux Saga](https://redux-saga.js.org/) with the component library documented live in [Storybook](https://storybook.js.org/). This is fully tokenised and will form a solid starting point for a full design system when the appropriate time arises in future. 
       
-      ##### Front to back
-      We worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
+      I refactored the Electron app to use the component library, giving a consistent appearance and reducing the effort required for ongoing maintenance. 
+      
+      ##### Babel plugin allows shared code base
+      I wrote a simple [Babel](https://babeljs.io/) plugin which automatically modifies `import` and `require` to resolve sources with a with an `.electron` suffix when bundling for Electron, e.g. `index.electron.js` or `styles.electron.scss`. This allows the Electron and web-based apps to share the same code base, diverging when needed for specific functionality.
+      
+      ##### Bridging the gap
+      I worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
   - type: work-row
     vimeoId: 584226493
     color: "#f7f6f1"
+    caption: Component library captured as React components in Storybook, a solid starting point for a full design system in future
   - type: prose
     title: Summary
+    ruled: true
     text: |
       ##### TB, meet COVID-19
       While we were focused on preparing the platform for its first real-world pilot in Argentina, something called COVID-19 stole the news agenda. Many TB labs were forced to change their focus to analysing COVID-19 during the pandemic. This made it impossible to undertake the final pilot and user testing that we had planned.
 
-      One other problem was unique to this particular project - the technology is so advanced that none of our users were able to easily grasp what it could do or specifically they might use it for. This meant we had to push the fidelity of our testable prototypes further than expected so that users would be able to engage with them in a useful way.
+      One other problem was unique to this particular project - the technology is so advanced that none of our users were able to easily grasp what it could do or specifically what they might use it for. This meant we had to push the fidelity of our testable prototypes further than expected so that users would be able to engage with them in a useful way unlocking the necessary insight.
 
       ##### Reflection
-      What started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world.
+      What started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world. I was named author on my first published research paper as an acknowledgment of my overall contribution.
       
       It is still hard to believe that you can put a swab sample in a fancy USB stick then see a complete DNA analysis on your laptop screen within a couple of minutes. It was an honour and privilege to work with people who make such breakthroughs possible.
   - type: prose
-    title: Results
+    title: Outcome
     ruled: true
     text: |
       Post-pandemic, the platform has seen renewed interest and investment from a large global technology firm. It will be migrated onto their platform where it can be scaled to be used for COVID-19 surveillance alongside TB.

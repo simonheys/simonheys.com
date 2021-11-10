@@ -3,11 +3,14 @@ import AppearWhenInView from "../ui/AppearWhenInView";
 
 import WorkRowCol, { WorkRowColProps } from "./WorkRowCol";
 
+import Caption from "../ui/Caption";
+
 export interface WorkRowProps {
   columns: WorkRowColProps[];
+  caption?: string;
 }
 
-const WorkRow: React.FC<WorkRowProps> = ({ columns, ...rest }) => {
+const WorkRow: React.FC<WorkRowProps> = ({ columns, caption, ...rest }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
@@ -20,6 +23,7 @@ const WorkRow: React.FC<WorkRowProps> = ({ columns, ...rest }) => {
             <WorkRowCol {...rest} />
           )}
         </div>
+        {caption && <Caption caption={caption} />}
       </div>
     </AppearWhenInView>
   );
