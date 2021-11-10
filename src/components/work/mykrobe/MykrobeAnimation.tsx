@@ -7,7 +7,11 @@ import AnimatedBackgroundCanvas from "./AnimatedBackgroundCanvas";
 
 import styles from "./MykrobeAnimation.module.scss";
 
-const MykrobeAnimation: React.FC = ({ caption }) => {
+export interface MykrobeAnimationProps {
+  caption?: string;
+}
+
+const MykrobeAnimation: React.FC<MykrobeAnimationProps> = ({ caption }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid mb-3 mb-md-4"}>
