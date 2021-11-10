@@ -1,11 +1,11 @@
 title: About
 components:
-  - type: prose
+  - type: work-row
     title: About
     text: |
       I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. 
 
-      Most recently I was co-founder of a digital agency and was part of many cross-disciplinary teams that designed and developed a range of apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by Google DeepMind. 
+      Most recently I was co-founder of a digital agency and was part of many cross-disciplinary teams that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by Google DeepMind. 
       
       Prior to that I worked in-house as a Product Designer at The Guardian, The Times, and UBS Investment Bank.
 

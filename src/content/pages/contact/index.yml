@@ -1,9 +1,9 @@
 title: Contact
 components:
-  - type: prose
+  - type: work-row
     title: Contact
     text: |
-      I am based in London, UK. Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. 
+      Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK. 
     links:
       - text: Email
         url: mailto:si@simonheys.com

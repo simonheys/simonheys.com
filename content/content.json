@@ -78,9 +78,9 @@
       "title": "About",
       "components": [
         {
-          "type": "prose",
+          "type": "work-row",
           "title": "About",
-          "text": "I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nMost recently I was co-founder of a digital agency and was part of many cross-disciplinary teams that designed and developed a range of apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by Google DeepMind. \n\nPrior to that I worked in-house as a Product Designer at The Guardian, The Times, and UBS Investment Bank.\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n",
+          "text": "I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nMost recently I was co-founder of a digital agency and was part of many cross-disciplinary teams that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by Google DeepMind. \n\nPrior to that I worked in-house as a Product Designer at The Guardian, The Times, and UBS Investment Bank.\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n",
           "links": [
             {
               "text": "Contact",
@@ -427,9 +427,9 @@
       "title": "Contact",
       "components": [
         {
-          "type": "prose",
+          "type": "work-row",
           "title": "Contact",
-          "text": "I am based in London, UK. Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. \n",
+          "text": "Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK. \n",
           "links": [
             {
               "text": "Email",
