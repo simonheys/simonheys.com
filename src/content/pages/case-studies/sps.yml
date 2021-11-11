@@ -1,0 +1,78 @@
+title: Case Studies
+components:
+  - type: prose
+    title: NHS England
+    text: |
+      # Creating a public sector service that draws together professional advice for pharmacists, GPs and clinicians
+      I was Lead Product Designer in a cross-disciplinary team on a project spanning 7 years, helping to drive and influence product decisions and strategy while thinking like a tax payer.
+    links:
+      - text: Visit www.sps.nhs.uk
+        url: https://www.sps.nhs.uk/
+  - type: work-row
+    columns:
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        src: portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        src: portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png
+    caption: Product overview showing a topic page with a proper editorial hierarchy, and a complex article collection with automatic subheading navigation
+  - type: prose
+    title: Overview
+    ruled: true
+    text: |
+      ##### This service does not (yet) exist
+      Following a successful procurement I was part of a the team tasked with transforming four distinct services into a new single entity, delivering a single digital platform for communication speaking as part of NHS England.
+  - type: prose
+    title: Challenge
+    ruled: true
+    text: |
+      ##### Where is our stuff?
+      The four distinct services had an existing repository of high quality content, unfortunately dispersed throughout 17 different protected systems. 
+
+      ##### Evolving structures and hierarchies
+      The first practical challenge would be to gather the existing material together into one place, then make sure it is easily findable with some structure and hierarchy that would be able to evolve over time as the service evolves.
+
+      ##### Don’t make it look expensive
+      During some of our early conversations and workshops it became clear that we must be respectful to the taxpayer, everything should be frugal and deliver maximum value. In terms of aesthetics this ruled out the use of any imagery, instead the challenge was to focus only on competent use of typography, space and hierarchy.
+  - type: prose
+    title: Research
+    ruled: true
+    text: |
+      ##### Who are we?
+      As a brand new service bringing together different stakeholders for the first time, it was important to establish a shared vision. We ran a lightweight vision and values workshop during which  the team established their purpose, vision, tone of voice and strap-line. We identified a range of potential users.
+
+      ##### Zero to one
+      For the very first version of the site we commissioned an approved UX agency to undertake the extremely time consuming task of interviewing a range of stakeholders and potential users. This gave an initial site map and structure which we used for launch.
+
+      ##### Where is your stuff?
+      After allowing the initial site to grow its audience we began to establish a regular working pattern of user testing to understand pain points and validate solutions. One key insight was that the first version of the site did not match some users mental model of the service.
+
+      ##### Who are we now?
+      A second workshop was used as an opportunity to bring a range of people from all levels of the service together to share experiences and understand whether their aspirations for the service had changed since launch. We conducted a range of exercises, the outputs of which were combined with the results of our recent user research to form a short-medium and long-term roadmap for the service.
+  - type: prose
+    title: Solution
+    ruled: true
+    text: |
+      Awaiting copy
+  - type: prose
+    title: Final Design
+    ruled: true
+    text: |
+      Awaiting copy
+  - type: prose
+    title: Summary
+    ruled: true
+    text: |
+      Awaiting copy
+  - type: prose
+    title: Outcome
+    ruled: true
+    text: |
+      Awaiting copy
+    links:
+      - text: Visit www.sps.nhs.uk
+        url: https://www.sps.nhs.uk/
+
