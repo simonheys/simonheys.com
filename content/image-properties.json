@@ -1,7 +1,56 @@
 {
+  "case-studies/hark/hark-app-mews-1.jpg": {
+    "hash": "efb70672fc38b36ffe8e159f1dcc0330",
+    "height": 568,
+    "width": 320,
+    "type": "jpg",
+    "color": "#ca0200"
+  },
+  "case-studies/hark/hark-app-mews-2.jpg": {
+    "hash": "066690fe81d7eb9d3b819e6c3f2f6893",
+    "height": 568,
+    "width": 320,
+    "type": "jpg",
+    "color": "#ca0200"
+  },
+  "case-studies/hark/hark-app-mews-3.jpg": {
+    "hash": "b3f464223e43cec64b8d5197f74b5b0a",
+    "height": 568,
+    "width": 320,
+    "type": "jpg",
+    "color": "#fafafa"
+  },
+  "case-studies/hark/hark-app-mews-4.jpg": {
+    "hash": "cf19e4befcc3181521a826e56082af6c",
+    "height": 568,
+    "width": 320,
+    "type": "jpg",
+    "color": "#ca0200"
+  },
+  "case-studies/hark/hark-app-mews-5.jpg": {
+    "hash": "eaddf53707c40a859dc38272f4451f8d",
+    "height": 568,
+    "width": 320,
+    "type": "jpg",
+    "color": "#ca0200"
+  },
+  "case-studies/hark/hark-computer.jpg": {
+    "hash": "b1f41fe805581d134dc230dacfe8590d",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#dfb988"
+  },
   "case-studies/hark/hark-dashboard-wireframe-1.jpg": {
     "hash": "40414998100c609fb61e3ccefdb315c9",
     "height": 1081,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-devices.jpg": {
+    "hash": "2ffb84f34e582790f61016469419b54c",
+    "height": 1080,
     "width": 1920,
     "type": "jpg",
     "color": "#f4f4f4"
@@ -12,6 +61,13 @@
     "width": 1920,
     "type": "jpg",
     "color": "#4b4948"
+  },
+  "case-studies/hark/hark-news.jpg": {
+    "hash": "2532c2f461d03fd5c8d5856d7d9e15a8",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
   },
   "case-studies/hark/hark-patient-fake.jpg": {
     "hash": "d164a1a1213e2c4db46d4afa65d20d93",
@@ -33,6 +89,104 @@
     "width": 1920,
     "type": "jpg",
     "color": "#4a494b"
+  },
+  "case-studies/hark/hark-photo-3.jpg": {
+    "hash": "9499ea95cafa2a701d37c8a3628d99a4",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#dfb988"
+  },
+  "case-studies/hark/hark-process-maps-01.jpg": {
+    "hash": "455c6f3869c326c53fbbe4416f76e803",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-02.jpg": {
+    "hash": "a951d4d8ed07ff1096fd03a54db4fe59",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-03.jpg": {
+    "hash": "05a9d18f588ca4052f09e8b954687e6a",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-04.jpg": {
+    "hash": "800135468a722aaba0dfdf39ac6f2819",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-05.jpg": {
+    "hash": "5625ecddb749f38afc0ef4d419b27fd2",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-06.jpg": {
+    "hash": "475f7c808f14d0b2c6b621a401ff029d",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-07.jpg": {
+    "hash": "ec15d2582341d90c18c68fbffae7469e",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-08.jpg": {
+    "hash": "f0edff39d0ae24c027c5aaa4d75c51e9",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-09.jpg": {
+    "hash": "5b2d7bbf991547b9484d4e718ee66f20",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-10.jpg": {
+    "hash": "68fe6b77e3add32f543c4bccbdbb0908",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-11.jpg": {
+    "hash": "bbddcb31554b7d2f4faf8ef35a222818",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-12.jpg": {
+    "hash": "a3c2b2f0e28ab8c401416b283247109d",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-process-maps-13.jpg": {
+    "hash": "00c4823723f9cfac0d29e7fbd148cb6d",
+    "height": 1358,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
   },
   "case-studies/hark/hark-sketch-1.jpg": {
     "hash": "bcea1996b00571c0873f9cbb612f032c",
@@ -62,6 +216,13 @@
     "type": "jpg",
     "color": "#b2b0ad"
   },
+  "case-studies/hark/hark-sketch-5.jpg": {
+    "hash": "67ddf73fabdcc511e4e82f2412d5feed",
+    "height": 1440,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#887f6a"
+  },
   "case-studies/hark/hark-testing-1.jpg": {
     "hash": "7f4260d59a926ef7f724f4f7ecbf9a65",
     "height": 1080,
@@ -75,6 +236,104 @@
     "width": 1920,
     "type": "jpg",
     "color": "#7c6c4f"
+  },
+  "case-studies/hark/hark-wireframes-01.jpg": {
+    "hash": "03341be18f4d11fc299a97e86aab0c64",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-02.jpg": {
+    "hash": "1a0adb5baf428b7530ba4886cf81f0ea",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-03.jpg": {
+    "hash": "44fbf09fa70fa447c6efcffe3f14cd37",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-04.jpg": {
+    "hash": "601fe89117e7a9b6fbab43ca74fec499",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-05.jpg": {
+    "hash": "3b8d5be3adcca0728a15bcd6a273c88c",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-06.jpg": {
+    "hash": "409f09475ae15df41b19a8af90440bb9",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-07.jpg": {
+    "hash": "c033feed5d11386f758ae4231efe0846",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-08.jpg": {
+    "hash": "61cf63cb3aba379632d4997d07ea3868",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-09.jpg": {
+    "hash": "82ee0c6ac1c948c413925f82f64c6ea7",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-10.jpg": {
+    "hash": "f5a4fb61da19bad387d4a44300572074",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-11.jpg": {
+    "hash": "43efc0dbdd95a1957be7c4ed61e50ba6",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-12.jpg": {
+    "hash": "d9a86a095785e48e4c30196e5876b207",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-13.jpg": {
+    "hash": "95bc3f9dc6c2f2431bdbe97ed452367c",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/hark/hark-wireframes-14.jpg": {
+    "hash": "0f9d617f84255849fde55dbb11e9cd0a",
+    "height": 1360,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#f4f4f4"
   },
   "case-studies/mykrobe/mykrobe-app-1.jpg": {
     "hash": "71529edd6d7fc258fab0f59a4958908d",

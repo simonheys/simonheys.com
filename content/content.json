@@ -100,6 +100,10 @@
           "text": "# Transformative clinical task management\nI was Lead Product Designer in a cross-disciplinary team on a project spanning almost 3 years. The resulting product was successfully acquired by a global AI technology firm.\n"
         },
         {
+          "type": "work-row",
+          "src": "case-studies/hark/hark-devices.jpg"
+        },
+        {
           "type": "prose",
           "title": "Overview",
           "ruled": true,
@@ -112,22 +116,232 @@
           "text": "##### Paper, handwriting and car parks\nInformation about patients on a ward is printed and then kept up to date with hand-written notes over the course of a shift. This can result in incomplete information handover and a loss of accountability. Examples of these confidential records are often found littered accidentally on the ground of the hospital car park.\n\n##### Bleeps and landlines\nThe existing system for managing and delegating tasks was via pagers (‘bleeps’) and landline phones. Receiving a bleep and then following up only later by landline is incredibly inefficient and leads to tasks not being actioned in a timely manner. There is no way to prioritise or delegate tasks and this could potentially lead to a dangerous situation.\n\n##### Zero to one MVP in 6 months\nThe practical challenge at the outset was to start from zero and deliver a testable MVP iPhone app within 6 months. Success in addressing the above would potentially unlock further funding to continue and extend the project further.\n"
         },
         {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-photo-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-photo-2.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-photo-3.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-patient-fake.jpg"
+            }
+          ],
+          "caption": "Six direct research sessions including 30 minutes before and after Clinical Handover, morning and evening. No, that’s not a real patient - it’s a dummy used for training"
+        },
+        {
           "type": "prose",
           "title": "Research",
           "ruled": true,
           "text": "##### Walking the walk\nTeaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.\n\n##### A complex ecosystem\nThe direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment. \n"
         },
         {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-process-maps-01.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-02.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-03.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-04.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-process-maps-06.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-07.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-08.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-09.jpg"
+            }
+          ],
+          "caption": "Current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution"
+        },
+        {
           "type": "prose",
           "title": "Solution",
           "ruled": true,
-          "text": "##### Target process and features for MVP\nThe outputs of the research were captured as a series of current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution. We identified the opportunity to extend the scope of the app, adding task management and integrating it into the current vision of Clinical Handover.\n\nThe team refined the target state into a set of core features for MVP that could be feasibly built and tested within our time window.\n\n##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. \n\n##### Custom controls and libraries for better UX\nThroughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.\n\nThe back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so we wrote a library which complies to the official specification and validates against the test suite in WebKit.\n\n##### Early Warning\nOur users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.      \n\n##### Next!\nThe app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. \n\nThis was a subtle challenge and eventually required creating a few custom keyboard inputs, including a custom and more legible 2D 'Select' input which was found to be a great improvement over the default 3D ‘spinner’. The resulting forms can be read and filled in as quickly and efficiently as we thought possible.\n\n##### Simulation test\nThe initial MVP was a huge success. The Academic Surgeon and their team and undertook a series of simulation tests which proved significant gains in accuracy and time savings over pen, paper and bleeps. \n\nAs a result the team was successful in securing further funding and continued to improve and test features in a series of isolated sprints.\n\n##### From product to platform\nWe eventually reached far enough along our roadmap to have a universal iPhone and iPad client with realtime communication working against a secure container-based backend system.\n"
+          "text": "##### Target process and features for MVP\nThe outputs of the research were captured as a series of current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution. We identified the opportunity to extend the scope of the app, adding task management and integrating it into the current vision of Clinical Handover.\n\nThe team refined the target state into a set of core features for MVP that could be feasibly built and tested within our time window.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-wireframes-01.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-02.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-03.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-04.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-wireframes-05.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-06.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-07.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-08.jpg"
+            }
+          ],
+          "caption": "The target state was refined into a set of core features for MVP that could be feasibly built and tested within our time window, here captured in wireframes for early validation"
+        },
+        {
+          "type": "prose",
+          "text": "##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. \n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/hark/hark-col-6-task-entry.jpg"
+            },
+            {
+              "col": 6,
+              "vimeoId": 581240797,
+              "color": "#4baff9"
+            }
+          ],
+          "caption": "Left - custom 2D ‘Select’ input was found to be a great improvement over the default 3D ‘spinner’. Right - thanks to custom controls the user is able to fill the form purely with the keyboard"
+        },
+        {
+          "type": "prose",
+          "text": "##### Custom controls and libraries for better UX\nThroughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.\n\nThe back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so I wrote [an Objective-C implementation of Server-Sent Events](https://github.com/makeandship/MSServerSentEvents) which complies to the official specification and validates against the test suite in WebKit.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-app-mews-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-2.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-4.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-5.jpg"
+            }
+          ],
+          "caption": "Working visualisations of NEWS score over time using a mixture of fake data, either random noise or sine waves to test the extremities"
+        },
+        {
+          "type": "prose",
+          "text": "##### Early Warning\nOur users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.\n\n![](case-studies/hark/hark-news.jpg)  \n\n##### Next!\nThe app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. \n\nThis was a subtle challenge and eventually required creating a few custom keyboard inputs, including a custom and more legible 2D ‘Select’ input which was found to be a great improvement over the default 3D ‘spinner’. The resulting forms can be read and filled in as quickly and efficiently as we thought possible.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-testing-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-testing-2.jpg"
+            }
+          ],
+          "caption": "Testing the universal app running on several iPhones with an iPad coordinating the tasks"
+        },
+        {
+          "type": "prose",
+          "text": "##### Simulation test\nThe initial MVP was a huge success. The Academic Surgeon and their team and undertook a series of simulation tests which proved significant gains in accuracy and time savings over pen, paper and bleeps. \n\nAs a result the team was successful in securing further funding and continued to improve and test features in a series of isolated sprints.\n\n##### From product to platform\nWe eventually reached far enough along our roadmap to have a universal iPhone and iPad client with realtime communication working against a secure container-based backend system.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-sketch-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-sketch-2.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-dashboard-wireframe-1.jpg"
+            },
+            {
+              "src": "portfolio/hark/hark-dashboard-cropped-2.jpg"
+            }
+          ],
+          "caption": "Insights dashboard from rough paper sketches through wireframe to visual design"
         },
         {
           "type": "prose",
           "title": "Final Design",
           "ruled": true,
-          "text": "##### Simple identity\nI created a simple identity for the app, an icon using hands to signify handover and teamwork  and forming the letter H for Hark. The app makes use of red-amber-green for status which made blue the natural choice as a primary colour.\n\n##### Native interface gives confidence\nThe app interface is deliberately faithful to the native look of iOS, using native navigation and controls where possible. This makes the app instantly familiar to users and makes them confident that they already know how to use it.\n\n##### Turning insight into action\nWe created examples of several different real-time dashboards to show the potential power from aggregating data to give actionable insight across a ward or whole hospital.\n"
+          "text": "##### Simple identity\nI created a simple identity for the app, an icon using hands to signify handover and teamwork and forming the letter H for Hark. The app makes use of red-amber-green for status which made blue the natural choice as a primary colour.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/hark/hark-col-6-logo.jpg"
+            },
+            {
+              "src": "portfolio/hark/hark-col-6-tasks.jpg"
+            }
+          ],
+          "caption": "Left - icon using hands to signify handover and teamwork. Right - the final design realised in a fully functional native app"
+        },
+        {
+          "type": "work-row",
+          "src": "portfolio/hark/hark-screens.png",
+          "caption": "Screen captures of the final app using fake data"
+        },
+        {
+          "type": "prose",
+          "text": "##### Native interface gives confidence\nThe app interface is deliberately faithful to the native look of iOS, using native navigation and controls where possible. This makes the app instantly familiar to users and makes them confident that they already know how to use it.\n\n##### Turning insight into action\nWe created examples of several different real-time dashboards to show the potential power from aggregating data to give actionable insight across a ward or whole hospital.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 583890897,
+              "color": "#0072c6"
+            },
+            {
+              "src": "portfolio/hark/hark-col-6-ipad.jpg"
+            }
+          ]
         },
         {
           "type": "prose",
