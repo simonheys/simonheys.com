@@ -47,17 +47,21 @@ components:
       ##### Zero to one
       For the very first version of the site we commissioned an approved gov.uk UX agency to undertake the extremely time consuming task of interviewing a range of stakeholders and potential users. This gave an initial site map and structure which we used for launch.
 
-      ##### Where is your stuff?
+      ##### Regular user research
       After allowing the initial site to grow its audience we began to establish a regular working pattern of user testing to understand pain points and validate solutions. This was conducted both in-person and remotely via screen sharing. 
       
+      ##### Where is your stuff?
       One key insight was that the first version of the site did not match many expert users mental model of the service. This group still thought of SPS as a document filing repository (one user even referred to navigation as ‘subfolders’). 
       
       Users from a wider group such as GPs and dentists had a pre-existing idea of what content was on the site and thought it would not meet their needs, in spite of it actually having a lot of relevant expert advice specifically tailored for them. 
       
       Following this research we were able to compile evidence, recommendations and planning for solutions across four key areas: Navigating, Finding, Discovering and Content.
 
-      ##### Who are we now?
-      A second workshop was used as an opportunity to bring a range of people from all levels of the service together to share experiences and understand whether their aspirations for the service had changed since launch. We conducted a range of exercises, the outputs of which were combined with the results of our recent user research to form a short-medium and long-term roadmap for the service.
+      ##### Where are we going?
+      A second workshop was provided an opportunity to bring a range of people from all levels of the service together to share experiences and understand whether their aspirations for the service had changed since launch. We conducted a range of exercises to find out.       
+      
+      ##### How will we get there?
+      The outputs of the workshops were combined with the results of the most recent user research to form a short, medium and long-term roadmap for the service.
   - type: prose
     title: Solution
     ruled: true
