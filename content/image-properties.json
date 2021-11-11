@@ -34,13 +34,6 @@
     "type": "jpg",
     "color": "#ca0200"
   },
-  "case-studies/hark/hark-computer.jpg": {
-    "hash": "b1f41fe805581d134dc230dacfe8590d",
-    "height": 1080,
-    "width": 1920,
-    "type": "jpg",
-    "color": "#dfb988"
-  },
   "case-studies/hark/hark-dashboard-wireframe-1.jpg": {
     "hash": "40414998100c609fb61e3ccefdb315c9",
     "height": 1081,
@@ -55,13 +48,6 @@
     "type": "jpg",
     "color": "#f4f4f4"
   },
-  "case-studies/hark/hark-head.jpg": {
-    "hash": "9101f68c0df194addaeee17e21750fc2",
-    "height": 1080,
-    "width": 1920,
-    "type": "jpg",
-    "color": "#4b4948"
-  },
   "case-studies/hark/hark-news.jpg": {
     "hash": "2532c2f461d03fd5c8d5856d7d9e15a8",
     "height": 1080,
@@ -70,32 +56,32 @@
     "color": "#f4f4f4"
   },
   "case-studies/hark/hark-patient-fake.jpg": {
-    "hash": "d164a1a1213e2c4db46d4afa65d20d93",
+    "hash": "32fd097841b05d3e59705aea801fc1be",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#135d8e"
+    "color": "#474747"
   },
   "case-studies/hark/hark-photo-1.jpg": {
-    "hash": "69b8eb272d4cd1f840627c2cca15f300",
+    "hash": "0924b5e5a2988e758274e49b25cbf223",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#ceb882"
+    "color": "#b0b0b0"
   },
   "case-studies/hark/hark-photo-2.jpg": {
-    "hash": "58022e15b332696e776429487055ad0e",
+    "hash": "87d05bdc3bd3ce42dc25069173f10202",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#4a494b"
+    "color": "#4e4e4e"
   },
   "case-studies/hark/hark-photo-3.jpg": {
-    "hash": "9499ea95cafa2a701d37c8a3628d99a4",
+    "hash": "ac58a970c74f554149f6f822a0eef861",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#dfb988"
+    "color": "#b6b6b6"
   },
   "case-studies/hark/hark-process-maps-01.jpg": {
     "hash": "455c6f3869c326c53fbbe4416f76e803",
@@ -189,53 +175,32 @@
     "color": "#f4f4f4"
   },
   "case-studies/hark/hark-sketch-1.jpg": {
-    "hash": "bcea1996b00571c0873f9cbb612f032c",
+    "hash": "32844c25cb615f7c050774afbdc6a736",
     "height": 1440,
     "width": 1920,
     "type": "jpg",
-    "color": "#887f6a"
+    "color": "#7a7a7a"
   },
   "case-studies/hark/hark-sketch-2.jpg": {
-    "hash": "3f5cb7cda72eb54104438a32b2cc7c3c",
+    "hash": "a756922b48a8e1767ace7fc245639e85",
     "height": 1440,
     "width": 1920,
     "type": "jpg",
-    "color": "#76756d"
-  },
-  "case-studies/hark/hark-sketch-3.jpg": {
-    "hash": "e8ad3f222934518d35ddbaaadfa86889",
-    "height": 1440,
-    "width": 1920,
-    "type": "jpg",
-    "color": "#b5b3a6"
-  },
-  "case-studies/hark/hark-sketch-4.jpg": {
-    "hash": "f7e8a4889f19ed1d976f0ca670058a98",
-    "height": 1440,
-    "width": 1920,
-    "type": "jpg",
-    "color": "#b2b0ad"
-  },
-  "case-studies/hark/hark-sketch-5.jpg": {
-    "hash": "67ddf73fabdcc511e4e82f2412d5feed",
-    "height": 1440,
-    "width": 1920,
-    "type": "jpg",
-    "color": "#887f6a"
+    "color": "#707070"
   },
   "case-studies/hark/hark-testing-1.jpg": {
-    "hash": "7f4260d59a926ef7f724f4f7ecbf9a65",
+    "hash": "867533932f873c88390d217bdad91454",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#c1985f"
+    "color": "#949494"
   },
   "case-studies/hark/hark-testing-2.jpg": {
-    "hash": "6db62e9da57a0c0b983b2711febe4edf",
+    "hash": "079e4e3e80af9f4d11d6132cb7d6ce75",
     "height": 1088,
     "width": 1920,
     "type": "jpg",
-    "color": "#7c6c4f"
+    "color": "#696969"
   },
   "case-studies/hark/hark-wireframes-01.jpg": {
     "hash": "03341be18f4d11fc299a97e86aab0c64",
