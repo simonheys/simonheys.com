@@ -461,6 +461,97 @@
     "type": "jpg",
     "color": "#f1f1f1"
   },
+  "case-studies/sps/sps-site-map-04.jpg": {
+    "hash": "1d666c70288557e6c8fa0bfd048e89c3",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-05.jpg": {
+    "hash": "192e95738f4f182bc470063f61ea5a8a",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-06.jpg": {
+    "hash": "1ed4229dfc5857c66c3870865f80c655",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-07.jpg": {
+    "hash": "35274bde84171a6433cdcaaf9263c7d2",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-08.jpg": {
+    "hash": "711f3af6601f4237cc959d14aa2f8d2f",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-09.jpg": {
+    "hash": "e0fa2c8f49e2267e5f4900055308ad58",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-site-map-10.jpg": {
+    "hash": "8af5828a221ba374b033bb42beb98314",
+    "height": 1080,
+    "width": 764,
+    "type": "jpg",
+    "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-user-testing-1.jpg": {
+    "hash": "e6aa550d0db5f5eb17ca88a17396045c",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
+  "case-studies/sps/sps-user-testing-2.jpg": {
+    "hash": "328ec8b0c9d7b9f2a016f3b2c42e7a5d",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
+  "case-studies/sps/sps-user-testing-3.jpg": {
+    "hash": "619f2186b12917665468f3e8dcbb2e15",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
+  "case-studies/sps/sps-user-testing-4.jpg": {
+    "hash": "179d730608c2576d5207b11fdf1a2328",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
+  "case-studies/sps/sps-user-testing-5.jpg": {
+    "hash": "d03eeeed0c924dcd97c20503600da3eb",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
+  "case-studies/sps/sps-user-testing-6.jpg": {
+    "hash": "ba0ee37ed4a02f495b09b69ee88558b9",
+    "height": 1080,
+    "width": 1920,
+    "type": "jpg",
+    "color": "#000000"
+  },
   "favicon/android-chrome-144x144.png": {
     "hash": "b39dbbbfad0ec3f518d6992f164df3b4",
     "height": 144,

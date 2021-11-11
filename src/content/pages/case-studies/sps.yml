@@ -42,11 +42,31 @@ components:
     ruled: true
     text: |
       ##### Who are we?
-      As a brand new service bringing together different stakeholders for the first time, it was important to join the dots and establish a shared vision. We ran a lightweight vision and values workshop during which  the team established their purpose, vision, tone of voice and strap-line. We identified a range of potential users that would provide insight to shape the first version of the service.
-
+      As a brand new service bringing together different stakeholders for the first time, it was important to join the dots and establish a shared vision. We ran a lightweight vision and values workshop during which the team established their purpose, vision, tone of voice and strap-line. We identified a range of potential users that would provide insight to shape the first version of the service.
+  - type: work-row
+    columns:
+      - src: case-studies/sps/sps-site-map-04.jpg
+      - src: case-studies/sps/sps-site-map-05.jpg
+      - src: case-studies/sps/sps-site-map-06.jpg
+      - src: case-studies/sps/sps-site-map-07.jpg
+    caption: An initial site map and structure which we used for launch based on research interviewing a range of stakeholders and potential users
+  - type: prose
+    text: |
       ##### Zero to one
       For the very first version of the site we commissioned an approved gov.uk UX agency to undertake the extremely time consuming task of interviewing a range of stakeholders and potential users. This gave an initial site map and structure which we used for launch.
-
+  - type: work-row
+    columns:
+      - src: case-studies/sps/sps-user-testing-1.jpg
+      - src: case-studies/sps/sps-user-testing-2.jpg
+      - src: case-studies/sps/sps-user-testing-3.jpg
+  - type: work-row
+    columns:
+      - src: case-studies/sps/sps-user-testing-4.jpg
+      - src: case-studies/sps/sps-user-testing-5.jpg
+      - src: case-studies/sps/sps-user-testing-6.jpg
+    caption: We began to establish a regular working pattern of user testing to understand pain points and validate solutions
+  - type: prose
+    text: |
       ##### Regular user research
       After allowing the initial site to grow its audience we began to establish a regular working pattern of user testing to understand pain points and validate solutions. This was conducted both in-person and remotely via screen sharing. 
       
