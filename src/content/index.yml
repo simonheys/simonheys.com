@@ -5,14 +5,14 @@ meta:
     - London, UK
   work:
     pages:
-      - path: "/portfolio/hark"
       - path: "/portfolio/mykrobe"
-      - path: "/portfolio/sps"
-      - path: "/portfolio/fathm"
       - path: "/portfolio/theguardian"
+      - path: "/portfolio/wordclock"
+      - path: "/portfolio/hark"
+      - path: "/portfolio/fathm"
+      - path: "/portfolio/sps"
       - path: "/portfolio/visioncoach"
       - path: "/portfolio/minimalfolio"
-      - path: "/portfolio/wordclock"
 all:
   header:
     type: header

@@ -8,28 +8,28 @@
     "work": {
       "pages": [
         {
-          "path": "/portfolio/hark"
-        },
-        {
           "path": "/portfolio/mykrobe"
         },
         {
-          "path": "/portfolio/sps"
+          "path": "/portfolio/theguardian"
+        },
+        {
+          "path": "/portfolio/wordclock"
+        },
+        {
+          "path": "/portfolio/hark"
         },
         {
           "path": "/portfolio/fathm"
         },
         {
-          "path": "/portfolio/theguardian"
+          "path": "/portfolio/sps"
         },
         {
           "path": "/portfolio/visioncoach"
         },
         {
           "path": "/portfolio/minimalfolio"
-        },
-        {
-          "path": "/portfolio/wordclock"
         }
       ]
     }
@@ -106,7 +106,6 @@
         {
           "type": "prose",
           "title": "Overview",
-          "ruled": true,
           "text": "##### Improve handover, reduce potential harm\nI was initially approached by an Academic Surgeon at Imperial College London to become part of a project looking to use digital technology to improve Clinical Handover between hospital shifts, typically at 8am and 8pm each day.\n\nThe goal was to measurably improve the effectiveness of Clinical Handover, thereby reducing potential harm to patients.\n\nNote that all screenshots contain only fake data and all photos are heavily obfuscated where necessary.\n"
         },
         {
@@ -222,6 +221,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. \n"
         },
         {
@@ -240,6 +240,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Custom controls and libraries for better UX\nThroughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.\n\nThe back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so I wrote [an Objective-C implementation of Server-Sent Events](https://github.com/makeandship/MSServerSentEvents) which complies to the official specification and validates against the test suite in WebKit.\n"
         },
         {
@@ -262,6 +263,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Early Warning\nOur users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.\n\n![](case-studies/hark/hark-news.jpg)  \n\n##### Next!\nThe app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. \n\nThis was a subtle challenge and eventually required creating a few custom keyboard inputs, including a custom and more legible 2D ‘Select’ input which was found to be a great improvement over the default 3D ‘spinner’. The resulting forms can be read and filled in as quickly and efficiently as we thought possible.\n"
         },
         {
@@ -278,6 +280,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Simulation test\nThe initial MVP was a huge success. The Academic Surgeon and their team and undertook a series of simulation tests which proved significant gains in accuracy and time savings over pen, paper and bleeps. \n\nAs a result the team was successful in securing further funding and continued to improve and test features in a series of isolated sprints.\n\n##### From product to platform\nWe eventually reached far enough along our roadmap to have a universal iPhone and iPad client with realtime communication working against a secure container-based backend system.\n"
         },
         {
@@ -328,6 +331,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Native interface gives confidence\nThe app interface is deliberately faithful to the native look of iOS, using native navigation and controls where possible. This makes the app instantly familiar to users and makes them confident that they already know how to use it.\n\n##### Turning insight into action\nWe created examples of several different real-time dashboards to show the potential power from aggregating data to give actionable insight across a ward or whole hospital.\n"
         },
         {
@@ -339,9 +343,15 @@
               "color": "#0072c6"
             },
             {
-              "src": "portfolio/hark/hark-col-6-ipad.jpg"
+              "col": 6,
+              "vimeoId": 583890934,
+              "color": "#4baff9"
             }
           ]
+        },
+        {
+          "type": "work-row",
+          "src": "case-studies/hark/hark-devices.jpg"
         },
         {
           "type": "prose",
@@ -475,6 +485,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Extending the visual language\nThe identity and visual language could then be applied to the wireframes. The team reached agreement on a solution which was visually clean and easy to read, while incorporating charm via touches of animation and iconography.\n"
         },
         {
@@ -497,6 +508,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Identifying the right technology\nThe requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. \n\nSince the interface was predominantly text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop a cross-platform application with web technologies (HTML/CSS/JS) which also works offline.\n\n##### Proving the technology\nI created an initial prototype with the goal of having the minimum set of features required to prove Electron as a solution. The developer of the tool worked with me to adjust the input and output of the tool. Passing `--format json` causes standard output to be in JSON which is more easily consumed by software. \n\n```\n$ mykrobe_atlas predict\\\n    --sample MDR_1\\\n    --species tb\\\n    --seq /MDR_1.fastq.gz\\ \n    --format json\n```\n\nThe final prototype took the form of a fully signed app containing the command-line tool, proving that the front-end was able to communicate with the tool to analyse a sequence and then display the results to the end user. We were also able to build and run the same app on Linux and Windows, making it more attractive in terms of effort to build and maintain over the long term.\n\n##### Building the first product\nThe visual designs were next implemented in the prototype, with added animations added to the splash screen and simple transitions between screens adding to the charm. We added drag-and-drop support which means that with the final production app users can simply drag a DNA sequence file into the app and then view the results within a couple of minutes. \n\nThe product owner gave a memorable real-time demo of this in Mumbai which received many gasps with the audience wondering how this was possible.\n"
         },
         {
@@ -514,6 +526,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Turning a product into a platform\nThe initial app was well received by end users and this played a small part in the overall project securing further funding. The vision was extended to create not just a standalone app, but a whole online platform that would allow users to create their own secure online library of sequence data, with potential to collaborate anonymously with others to identify similar samples and potential outbreaks.\n"
         },
         {
@@ -547,6 +560,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.\n"
         },
         {
@@ -567,6 +581,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Complex visualisations\nOne of the most challenging parts of the platform from a product design perspective is visualising the relatedness of different samples. This was initially achieved using a [phylogenetic tree](https://phylocanvas.org/).\n\nOne of the scientific team members invented a better solution using a hand-drawn node graph which has a significantly lower density of data making it easier to read. To realise this idea, I created a series of prototypes using static data in various types of force-directed graph visualisations and with different layout strategies. Following a cycle of team reviews and prototype refinements we eventually landed on a satisfying visualisation generated in the browser.\n\n##### Tree data structure\nI was then able to work with one of the back-end developers to arrive on a JSON data structure which could be generated dynamically via Neo4J. The resulting visualisation replaced the phylogenetic tree.\n"
         },
         {
@@ -604,6 +619,7 @@
         },
         {
           "type": "prose",
+          "ruled": true,
           "text": "##### Component library leads the way for design system\nI worked with other front-end engineers to build the user interface using [React](https://reactjs.org/), [Redux](https://redux.js.org/) and [Redux Saga](https://redux-saga.js.org/) with the component library documented live in [Storybook](https://storybook.js.org/). This is fully tokenised and will form a solid starting point for a full design system when the appropriate time arises in future. \n\nI refactored the Electron app to use the component library, giving a consistent appearance and reducing the effort required for ongoing maintenance. \n\n##### Babel plugin allows shared code base\nI wrote a simple [Babel](https://babeljs.io/) plugin which automatically modifies `import` and `require` to resolve sources with a with an `.electron` suffix when bundling for Electron, e.g. `index.electron.js` or `styles.electron.scss`. This allows the Electron and web-based apps to share the same code base, diverging when needed for specific functionality.\n\n##### Bridging the gap\nI worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).\n"
         },
         {
@@ -611,6 +627,11 @@
           "vimeoId": 584226493,
           "color": "#f7f6f1",
           "caption": "Component library captured as React components in Storybook, a solid starting point for a full design system in future"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 585698728,
+          "color": "#f6a229"
         },
         {
           "type": "prose",
@@ -981,8 +1002,7 @@
         },
         {
           "type": "work-row",
-          "vimeoId": 583718922,
-          "color": "#0072c6"
+          "src": "case-studies/hark/hark-devices.jpg"
         },
         {
           "type": "work-row",

@@ -94,6 +94,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-wireframes-8.png
     caption: Initial low-fidelity wireframes capture the functionality and information derived from the command-line tool which dictated the feature-set
   - type: prose
+    ruled: true
     text: |
       ##### Extending the visual language
       The identity and visual language could then be applied to the wireframes. The team reached agreement on a solution which was visually clean and easy to read, while incorporating charm via touches of animation and iconography.
@@ -105,6 +106,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-app-4.jpg
     caption: Identity and visual language applied to create the first MVP prototype ready for testing
   - type: prose
+    ruled: true
     text: |
       ##### Identifying the right technology
       The requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. 
@@ -135,6 +137,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-demo-1.jpg
     caption: The product owner giving a memorable real-time demo in Mumbai which received many gasps with the audience wondering how this was possible
   - type: prose
+    ruled: true
     text: |
       ##### Turning a product into a platform
       The initial app was well received by end users and this played a small part in the overall project securing further funding. The vision was extended to create not just a standalone app, but a whole online platform that would allow users to create their own secure online library of sequence data, with potential to collaborate anonymously with others to identify similar samples and potential outbreaks.
@@ -150,6 +153,7 @@ components:
       - src: case-studies/mykrobe/mykrobe-wireframes2-8.jpg
     caption: Small snapshot of what we learned in terms of pains, workflows, users and use cases
   - type: prose
+    ruled: true
     text: |
       We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.
   - type: work-row
@@ -162,6 +166,7 @@ components:
         src: mst-2
     caption: Minimum-spanning tree visualisation of sample relatedness using a force-directed graph running live in React and HTML Canvas - click and drag!
   - type: prose
+    ruled: true
     text: |
       ##### Complex visualisations
       One of the most challenging parts of the platform from a product design perspective is visualising the relatedness of different samples. This was initially achieved using a [phylogenetic tree](https://phylocanvas.org/).
@@ -193,6 +198,7 @@ components:
         src: portfolio/mykrobe/mykrobe-patient-results.png
     caption: Landing page showing marketing features on the left, detail view of a fictional patient on the right
   - type: prose
+    ruled: true
     text: |
       ##### Component library leads the way for design system
       I worked with other front-end engineers to build the user interface using [React](https://reactjs.org/), [Redux](https://redux.js.org/) and [Redux Saga](https://redux-saga.js.org/) with the component library documented live in [Storybook](https://storybook.js.org/). This is fully tokenised and will form a solid starting point for a full design system when the appropriate time arises in future. 
@@ -208,6 +214,9 @@ components:
     vimeoId: 584226493
     color: "#f7f6f1"
     caption: Component library captured as React components in Storybook, a solid starting point for a full design system in future
+  - type: work-row
+    vimeoId: 585698728
+    color: "#f6a229"
   - type: prose
     title: Summary
     ruled: true

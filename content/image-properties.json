@@ -42,11 +42,11 @@
     "color": "#f4f4f4"
   },
   "case-studies/hark/hark-devices.jpg": {
-    "hash": "2ffb84f34e582790f61016469419b54c",
+    "hash": "bac436330df5a0cc5819a3778b716e86",
     "height": 1080,
     "width": 1920,
     "type": "jpg",
-    "color": "#f4f4f4"
+    "color": "#4cb0fa"
   },
   "case-studies/hark/hark-news.jpg": {
     "hash": "2532c2f461d03fd5c8d5856d7d9e15a8",
@@ -770,11 +770,11 @@
     "color": "#fc78ab"
   },
   "portfolio/hark/hark-col-6-ipad.jpg": {
-    "hash": "ebe1d421e11fd76fb8dfc47dfad69a6f",
+    "hash": "76182c7f3a517fd5cfef0eaeef9522a1",
     "height": 1080,
     "width": 942,
     "type": "jpg",
-    "color": "#4baff9"
+    "color": "#4baff7"
   },
   "portfolio/hark/hark-col-6-logo.jpg": {
     "hash": "71403f8e4b461fe28e2f1279d1477632",

@@ -7,8 +7,7 @@ components:
   - type: work-header
     subtitle: I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover.
   - type: work-row
-    vimeoId: 583718922
-    color: "#0072c6"
+    src: case-studies/hark/hark-devices.jpg
   - type: work-row
     columns:
       - text: Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss.
