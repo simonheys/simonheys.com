@@ -37,7 +37,12 @@ export type ImageProperties = {
 
 export type Meta = {
   titles: string[];
-  work: {
+  portfolio: {
+    pages: {
+      path: string;
+    }[];
+  };
+  "case-studies": {
     pages: {
       path: string;
     }[];
@@ -63,10 +68,16 @@ export const getMeta = (content: Content = defaultContent): Meta =>
 export const getPagePaths = (content: Content = defaultContent): string[] =>
   content.pages.map((page) => page.path).sort();
 
-export const getWorkPagePaths = (
+export const getPortfolioPagePaths = (
   content: Content = defaultContent
 ): string[] => {
-  return content.meta.work.pages.map((page) => page.path);
+  return content.meta.portfolio.pages.map((page) => page.path);
+};
+
+export const getCaseStudiesPagePaths = (
+  content: Content = defaultContent
+): string[] => {
+  return content.meta["case-studies"].pages.map((page) => page.path);
 };
 
 export const normalisePath = (path: string | string[]): string => {
@@ -98,18 +109,18 @@ export const getPageForPath = (
   return page;
 };
 
-export const getNextWorkPageForPath = (
+export const getNextPortfolioPageForPath = (
   path: string | string[],
   content: Content = defaultContent
 ): Page => {
   const normalisedPath = normalisePath(path);
-  const workPagePaths = getWorkPagePaths(content);
-  const currentIndex = workPagePaths.indexOf(normalisedPath);
+  const portfolioPagePaths = getPortfolioPagePaths(content);
+  const currentIndex = portfolioPagePaths.indexOf(normalisedPath);
   if (currentIndex === -1) {
     return;
   }
-  const nextIndex = (currentIndex + 1) % workPagePaths.length;
-  const nextPath = workPagePaths[nextIndex];
+  const nextIndex = (currentIndex + 1) % portfolioPagePaths.length;
+  const nextPath = portfolioPagePaths[nextIndex];
   return getPageForPath(nextPath, content);
 };
 

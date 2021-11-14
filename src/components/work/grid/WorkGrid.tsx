@@ -7,7 +7,7 @@ import AppearWhenInView from "../../ui/AppearWhenInView";
 import WorkGridCell from "./WorkGridCell";
 
 const WorkGrid: React.FC = () => {
-  const pages = getMeta().work.pages;
+  const pages = getMeta().portfolio.pages;
   return (
     <div className={"container-fluid mb-3 mb-md-4"}>
       <div className={"row"}>

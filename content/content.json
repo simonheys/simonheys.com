@@ -5,7 +5,7 @@
       "Freelance Product Designer and Software Engineer",
       "London, UK"
     ],
-    "work": {
+    "portfolio": {
       "pages": [
         {
           "path": "/portfolio/mykrobe"
@@ -30,6 +30,19 @@
         },
         {
           "path": "/portfolio/minimalfolio"
+        }
+      ]
+    },
+    "case-studies": {
+      "pages": [
+        {
+          "path": "/case-studies/mykrobe"
+        },
+        {
+          "path": "/case-studies/sps"
+        },
+        {
+          "path": "/case-studies/hark"
         }
       ]
     }

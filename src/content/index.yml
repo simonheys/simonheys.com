@@ -3,7 +3,7 @@ meta:
     - Simon Heys
     - Freelance Product Designer and Software Engineer
     - London, UK
-  work:
+  portfolio:
     pages:
       - path: "/portfolio/mykrobe"
       - path: "/portfolio/theguardian"
@@ -13,6 +13,11 @@ meta:
       - path: "/portfolio/sps"
       - path: "/portfolio/visioncoach"
       - path: "/portfolio/minimalfolio"
+  case-studies:
+    pages:
+      - path: "/case-studies/mykrobe"
+      - path: "/case-studies/sps"
+      - path: "/case-studies/hark"
 all:
   header:
     type: header
