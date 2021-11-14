@@ -92,7 +92,7 @@
     },
     {
       "path": "/case-studies/hark",
-      "title": "Case Studies",
+      "title": "Hark Case Study",
       "components": [
         {
           "type": "prose",
@@ -380,11 +380,17 @@
     },
     {
       "path": "/case-studies/mykrobe",
-      "title": "Case Studies",
+      "title": "Mykrobe Case Study",
       "components": [
         {
           "type": "prose",
           "title": "Mykrobe",
+          "services": [
+            "Product Design",
+            "Identity",
+            "React",
+            "Electron"
+          ],
           "text": "# Antimicrobial resistance and outbreak information within minutes\nI was Lead Product Designer in a cross-disciplinary team of 16 on a project spanning 7 years, helping to drive and influence product decisions and strategy.\n",
           "links": [
             {
@@ -659,7 +665,7 @@
     },
     {
       "path": "/case-studies/sps",
-      "title": "Case Studies",
+      "title": "NHS England Case Study",
       "components": [
         {
           "type": "prose",
