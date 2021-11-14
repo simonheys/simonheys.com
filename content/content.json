@@ -830,17 +830,6 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "portfolio/sps/sps-col-6-system.jpg"
-            },
-            {
-              "src": "portfolio/sps/sps-col-6-screens.jpg"
-            }
-          ]
-        },
-        {
-          "type": "work-row",
-          "columns": [
-            {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
               "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
@@ -855,8 +844,21 @@
           ]
         },
         {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/sps/sps-col-6-system.jpg"
+            },
+            {
+              "src": "portfolio/sps/sps-col-6-screens.jpg"
+            }
+          ],
+          "caption": "Content-heavy site has a clear hierarchy with deliberate areas of space to provide breathing room and prevent it becoming overwhelming"
+        },
+        {
           "type": "prose",
           "title": "Summary",
+          "ruled": true,
           "text": "##### COVID-19\nThe updated blocks-based system gave the site authors increased confidence and freedom. We are able to work with them during the pandemic to adjust and create better tooling around creating and navigating article series and collections. This allowed the team to create a central national repository of COVID-19 content with a full audit trail and change history. This played a crucial role in disseminating information on the handling of vaccines and enabling the set up of the national vaccination program.\n"
         },
         {
