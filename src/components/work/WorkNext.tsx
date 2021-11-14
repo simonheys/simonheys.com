@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 
-import { getNextWorkPageForPath } from "../../modules/content";
+import { getNextPortfolioPageForPath } from "../../modules/content";
 import AppearWhenInView from "../ui/AppearWhenInView";
 import WorkGridCell from "./grid/WorkGridCell";
 
@@ -9,7 +9,7 @@ import styles from "./WorkNext.module.scss";
 
 const WorkNext: React.FC = () => {
   const router = useRouter();
-  const nextPage = getNextWorkPageForPath(router.asPath);
+  const nextPage = getNextPortfolioPageForPath(router.asPath);
   if (!nextPage) {
     return null;
   }

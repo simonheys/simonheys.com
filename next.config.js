@@ -1,26 +1,20 @@
+/** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
   swcMinify: true,
+  images: {
+    formats: ["image/avif", "image/webp"],
+  },
   redirects: async () => {
     return [
       {
         source: "/wordclock",
-        destination: "/work/wordclock",
-        permanent: true,
-      },
-      {
-        source: "/portfolio/wordclock",
-        destination: "/work/wordclock",
+        destination: "/portfolio/wordclock",
         permanent: true,
       },
       {
         source: "/minimalfolio/:slug*",
-        destination: "/work/minimalfolio",
-        permanent: true,
-      },
-      {
-        source: "/portfolio",
-        destination: "/work",
+        destination: "/portfolio/minimalfolio",
         permanent: true,
       },
       {

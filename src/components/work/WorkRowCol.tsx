@@ -18,6 +18,7 @@ export interface WorkRowColProps {
   vimeoId?: string;
   color?: string;
   title?: string;
+  aspect?: string;
 }
 
 const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
@@ -33,7 +34,16 @@ const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
     );
   }
 
-  const { text, links, src, youTubeId, vimeoId, color, title = "" } = rest;
+  const {
+    text,
+    links,
+    src,
+    youTubeId,
+    vimeoId,
+    color,
+    title = "",
+    aspect,
+  } = rest;
 
   if (text) {
     return (
@@ -75,6 +85,7 @@ const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
             vimeoId={vimeoId}
             color={color}
             title={title}
+            aspect={aspect}
           />
         </div>
       </div>

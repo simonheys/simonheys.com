@@ -5,11 +5,11 @@
 
 import {
   getMeta,
-  getWorkPagePaths,
+  getPortfolioPagePaths,
   getPagePaths,
   normalisePath,
   getPageForPath,
-  getNextWorkPageForPath,
+  getNextPortfolioPageForPath,
   getComponentsForPath,
 } from "../../src/modules/content";
 
@@ -52,8 +52,8 @@ describe("Unit test content functions", () => {
     it("should return meta data", () => {
       const meta = getMeta();
       expect(meta).to.have.property("titles");
-      expect(meta).to.have.property("work");
-      expect(meta).to.have.nested.property("work.pages");
+      expect(meta).to.have.property("portfolio");
+      expect(meta).to.have.nested.property("portfolio.pages");
     });
   });
 
@@ -82,31 +82,33 @@ describe("Unit test content functions", () => {
     });
   });
 
-  describe("getNextWorkPageForPath", () => {
+  describe("getNextPortfolioPageForPath", () => {
     describe("when valid", () => {
-      const workPagePaths = getWorkPagePaths();
-      describe("when given the first work page", () => {
-        it("should return the next work page", () => {
-          const nextWorkPageForPath = getNextWorkPageForPath(workPagePaths[0]);
-          expect(nextWorkPageForPath)
+      const portfolioPagePaths = getPortfolioPagePaths();
+      describe("when given the first portfolio page", () => {
+        it("should return the next portfolio page", () => {
+          const nextPortfolioPageForPath = getNextPortfolioPageForPath(
+            portfolioPagePaths[0]
+          );
+          expect(nextPortfolioPageForPath)
             .to.have.property("path")
-            .that.equals(workPagePaths[1]);
+            .that.equals(portfolioPagePaths[1]);
         });
       });
-      describe("when given the last work page", () => {
-        it("should return the first work page", () => {
-          const nextWorkPageForPath = getNextWorkPageForPath(
-            workPagePaths[workPagePaths.length - 1]
+      describe("when given the last portfolio page", () => {
+        it("should return the first portfolio page", () => {
+          const nextPortfolioPageForPath = getNextPortfolioPageForPath(
+            portfolioPagePaths[portfolioPagePaths.length - 1]
           );
-          expect(nextWorkPageForPath)
+          expect(nextPortfolioPageForPath)
             .to.have.property("path")
-            .that.equals(workPagePaths[0]);
+            .that.equals(portfolioPagePaths[0]);
         });
       });
     });
     describe("when invalid", () => {
       it("should return undefined", () => {
-        const page = getNextWorkPageForPath("/foo/bar/123");
+        const page = getNextPortfolioPageForPath("/foo/bar/123");
         expect(page).to.be.undefined;
       });
     });

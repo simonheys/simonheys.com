@@ -16,8 +16,13 @@ const LinkA: React.FC<LinkAProps> = ({
   shallow,
   prefetch,
   locale,
+  target: targetProp,
+  rel: relProp,
   ...rest
 }) => {
+  const isInternal = typeof href === "string" && href.startsWith("/");
+  const target = targetProp || isInternal ? null : "_blank";
+  const rel = relProp || isInternal ? null : "noreferrer";
   return (
     <Link
       href={href}
@@ -29,9 +34,11 @@ const LinkA: React.FC<LinkAProps> = ({
       prefetch={prefetch}
       locale={locale}
     >
-      <Tag href={href} {...rest} />
+      <Tag href={href} target={target} rel={rel} {...rest} />
     </Link>
   );
 };
+
+LinkA.displayName = "LinkA";
 
 export default LinkA;

@@ -77,6 +77,16 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
     return { top: visibleWhileScrolled ? 0 : -boundingClientRect?.height };
   }, [boundingClientRect.height, fixed, visibleWhileScrolled]);
 
+  const activePath = React.useMemo(() => {
+    for (const path of links) {
+      const active =
+        router.asPath === path || router.asPath.startsWith(`${path}/`);
+      if (active) {
+        return path;
+      }
+    }
+  }, [links, router.asPath]);
+
   return (
     <React.Fragment>
       <div className={styles.sizeContainer} style={style}></div>
@@ -94,22 +104,23 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
               </h1>
             </div>
             <div className={"col-6"} data-tid={"navigation"}>
-              {links.map((path, index) => {
-                const page = getPageForPath(path);
-                const { title } = page;
-                const active =
-                  router.asPath === path ||
-                  router.asPath.startsWith(`${path}/`);
-                return (
-                  <LinkA
-                    key={index}
-                    href={path}
-                    className={active ? styles.linkActive : styles.link}
-                  >
-                    {title}
-                  </LinkA>
-                );
-              })}
+              <div className={styles.linksContainer}>
+                {links.map((path, index) => {
+                  const page = getPageForPath(path);
+                  const { title } = page;
+                  const active =
+                    activePath === undefined || activePath === path;
+                  return (
+                    <LinkA
+                      key={index}
+                      href={path}
+                      className={active ? styles.linkActive : styles.link}
+                    >
+                      {title}
+                    </LinkA>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>

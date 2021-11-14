@@ -3,14 +3,17 @@ import dynamic from "next/dynamic";
 
 // fundamental page structure is static
 // this allows DOM to build, size and scroll as expected
-import Header from "./Header";
+import CaseStudiesGrid from "./case-studies/grid/CaseStudiesGrid";
+import CaseStudiesNext from "./case-studies/CaseStudiesNext";
 import Footer from "./Footer";
-import WorkGrid from "./work/grid/WorkGrid";
-import WorkHeader from "./work/WorkHeader";
-import WorkRow from "./work/WorkRow";
+import Header from "./Header";
+import Prose from "./ui/Prose";
 import ScrollingBrowser from "./ui/ScrollingBrowser";
 import ScrollingBrowserCell from "./ui/ScrollingBrowserCell";
+import WorkGrid from "./work/grid/WorkGrid";
+import WorkHeader from "./work/WorkHeader";
 import WorkNext from "./work/WorkNext";
+import WorkRow from "./work/WorkRow";
 
 // // unique components are dynamic
 const MykrobeAnimation = dynamic(
@@ -25,20 +28,23 @@ const WordClockCell = dynamic(() => import("./word-clock/WordClockCell"));
 const WordClockFill = dynamic(() => import("./word-clock/WordClockFill"));
 
 const MapTypeToComponent = {
+  "case-studies-grid": CaseStudiesGrid,
+  "case-studies-next": CaseStudiesNext,
   "mykrobe-animation": MykrobeAnimation,
   "mykrobe-cluster": MykrobeCluster,
   "scrolling-browser-cell": ScrollingBrowserCell,
   "scrolling-browser": ScrollingBrowser,
   "sps-collection": SPSCollection,
+  "word-clock-cell": WordClockCell,
   "word-clock-editable": WordClockEditable,
   "word-clock-fill": WordClockFill,
-  "word-clock-cell": WordClockCell,
   "work-grid": WorkGrid,
   "work-header": WorkHeader,
   "work-next": WorkNext,
   "work-row": WorkRow,
   footer: Footer,
   header: Header,
+  prose: Prose,
 };
 
 export const MappedComponent = ({ type, ...rest }) => {

@@ -1,19 +1,26 @@
 @import "~/src/styles/use-bootstrap";
 
 .title {
-  composes: global(h2);
+  composes: global(h1);
   composes: global(mb-2);
   composes: global(mb-sm-0);
   font-weight: bold;
 }
 
 .subtitle {
-  composes: global(h3);
+  composes: global(h4);
   margin-bottom: -$paragraph-margin-bottom;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: bold;
+  }
 }
 
 .links {
-  composes: global(h3);
+  composes: global(h4);
   composes: global(mb-0);
   margin-top: 1.5 * $paragraph-margin-bottom;
 }
