@@ -385,6 +385,9 @@
           "title": "Outcome",
           "ruled": true,
           "text": "The product was successfully acquired by Google DeepMind.\n"
+        },
+        {
+          "type": "case-studies-next"
         }
       ]
     },
@@ -689,6 +692,9 @@
               "url": "https://github.com/Mykrobe-tools/mykrobe/releases"
             }
           ]
+        },
+        {
+          "type": "case-studies-next"
         }
       ]
     },
@@ -913,6 +919,9 @@
               "url": "https://www.sps.nhs.uk/"
             }
           ]
+        },
+        {
+          "type": "case-studies-next"
         }
       ]
     },

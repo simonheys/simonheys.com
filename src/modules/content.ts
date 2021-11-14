@@ -130,6 +130,21 @@ export const getNextPortfolioPageForPath = (
   return getPageForPath(nextPath, content);
 };
 
+export const getNextCaseStudiesPageForPath = (
+  path: string | string[],
+  content: Content = defaultContent
+): Page => {
+  const normalisedPath = normalisePath(path);
+  const caseStudiesPagePaths = getCaseStudiesPagePaths(content);
+  const currentIndex = caseStudiesPagePaths.indexOf(normalisedPath);
+  if (currentIndex === -1) {
+    return;
+  }
+  const nextIndex = (currentIndex + 1) % caseStudiesPagePaths.length;
+  const nextPath = caseStudiesPagePaths[nextIndex];
+  return getPageForPath(nextPath, content);
+};
+
 export const getComponentsForPath = (
   path: string | string[],
   content: Content = defaultContent

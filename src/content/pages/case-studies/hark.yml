@@ -197,3 +197,4 @@ components:
     ruled: true
     text: |
       The product was successfully acquired by Google DeepMind.
+  - type: case-studies-next

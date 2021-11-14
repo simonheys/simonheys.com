@@ -246,3 +246,4 @@ components:
         url: https://www.mykrobe.com/
       - text: Download
         url: https://github.com/Mykrobe-tools/mykrobe/releases
+  - type: case-studies-next
