@@ -21,6 +21,9 @@
     padding: 0.8rem;
     background-color: var(--gray-150);
     border-radius: 0.2rem;
+    @media (prefers-color-scheme: dark) {
+      color: var(--gray-500);
+    }
   }
   code {
     font-size: $font-size-sm;
@@ -28,6 +31,9 @@
     background-color: var(--gray-150);
     border-radius: 0.2rem;
     padding: 0.2rem;
+    @media (prefers-color-scheme: dark) {
+      color: var(--gray-500);
+    }
   }
 }
 
