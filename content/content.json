@@ -798,7 +798,7 @@
           "type": "prose",
           "title": "Solution",
           "ruled": true,
-          "text": "##### First iteration of the service\nThe job of the first iteration of the service was to gather the existing material together into one place, making sure it was easily findable with a structure and hierarchy that would be able to evolve over time as the service evolves. We used a customised open-source CMS with a user-friendly admin interface. The documents and other resources were safe in one single place, but as a first version we did not know if the resulting service would be popular, or how it would be used.\n\n##### Second iteration\nAfter an initial bedding in period and following the workshop outlined above we uncovered several key insights. The service was well used, but users found it very difficult to find content or in fact really discovery what content was on offer by SPS. By now they were starting to publish more web-native HTML article content and starting to see the down-sides of their legacy Word and PDF documents. These legacy documents were hampering search and discoverability, as well as undermining user confidence in finding the most up-to-date material.\n\n##### Searching and finding\nBased on user research and observation, we changed the way that users were able to search and ‘drill down’ to find the specific content or themes they were interested in. This was achieved with a mixture of topic-based filtering and integrating search within site content and themes. This optimised the path for users who would first find a broad topic area they were looking for, then being able to search more specifically and easily within.\n\n##### Discoverability, serendipity\nWe also addressed a long-standing problem of users not knowing or realising what content was on offer, e.g. with dentists or GPs frequently thinking SPS was for more of a pharmacy-specific setting and not for them. Now that content was starting to be written using our HTML authoring tools we knew we would be more able to create themed collections of content as well as related articles.\n\nWe were able to rework the main index pages using themed blocks of content with an editorial hierarchy which is automated by default but completely customisable by authors. This created a powerful system which renders pages where it is easy to find themes and specific articles, and discover a wider range of what SPS has to offer.\n"
+          "text": "##### First iteration of the service\nThe job of the first iteration of the service was to gather the existing material together into one place, making sure it was easily findable with a structure and hierarchy that would be able to evolve over time as the service evolves. We used a customised open-source CMS with a user-friendly admin interface. The documents and other resources were safe in one single place, but as a first version we did not know if the resulting service would be popular, or how it would be used.\n\n##### Second iteration\nAfter an initial bedding in period and following the workshop outlined above we uncovered several key insights. The service was well used, but users found it very difficult to find content or in fact really discovery what content was on offer by SPS. By now they were starting to publish more web-native HTML article content and starting to see the down-sides of their legacy Word and PDF documents. These legacy documents were hampering search and discoverability, as well as undermining user confidence in finding the most up-to-date material.\n\n##### Searching and finding\nBased on user research and observation, we changed the way that users were able to search and ‘drill down’ to find the specific content or themes they were interested in. This was achieved with a mixture of topic-based filtering and integrating search within site content and themes. This optimised the path for users who would first find a broad topic area they were looking for, then being able to search more specifically and easily within.\n"
         },
         {
           "type": "sps-collection",
@@ -806,21 +806,64 @@
         },
         {
           "type": "prose",
+          "ruled": true,
+          "text": "##### Discoverability, serendipity\nWe also addressed a long-standing problem of users not knowing or realising what content was on offer, e.g. with dentists or GPs frequently thinking SPS was for more of a pharmacy-specific setting and not for them. Now that content was starting to be written using our HTML authoring tools we knew we would be more able to create themed collections of content as well as related articles.\n\nWe were able to rework the main index pages using themed blocks of content with an editorial hierarchy which is automated by default but completely customisable by authors. This created a powerful system which renders pages where it is easy to find themes and specific articles, and discover a wider range of what SPS has to offer.\n"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 581720984,
+          "color": "#009639",
+          "caption": "The final identity uses a symbol which felt like it had discovered rather than designed"
+        },
+        {
+          "type": "prose",
           "title": "Final Design",
           "ruled": true,
-          "text": "Awaiting copy\n"
+          "text": "##### Identity\nThe final identity uses a symbol which felt like it had discovered rather than designed, with a timeless simplicity that looks like it has existed for decades. This symbol brings together the attributes of medicines, caregiver and expert.\n\n![](case-studies/sps/sps-elements.jpg)\n\n##### Typography, space and hierarchy\nThe web design focuses on content and text first, with sparing use of iconography and absolutely zero illustration or imagery. This has meant careful use of grid system, spacing, tones, type sizes and sparing use of colour to ensure that the content-heavy site has a clear hierarchy with deliberate areas of space to provide breathing room and prevent it becoming overwhelming.\n"
+        },
+        {
+          "type": "scrolling-browser",
+          "maskSrc": "portfolio/sps/browser-mask.svg",
+          "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/sps/sps-col-6-system.jpg"
+            },
+            {
+              "src": "portfolio/sps/sps-col-6-screens.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
+            }
+          ]
         },
         {
           "type": "prose",
           "title": "Summary",
-          "ruled": true,
-          "text": "Awaiting copy\n"
+          "text": "##### COVID-19\nThe updated blocks-based system gave the site authors increased confidence and freedom. We are able to work with them during the pandemic to adjust and create better tooling around creating and navigating article series and collections. This allowed the team to create a central national repository of COVID-19 content with a full audit trail and change history. This played a crucial role in disseminating information on the handling of vaccines and enabling the set up of the national vaccination program.\n"
         },
         {
           "type": "prose",
           "title": "Outcome",
           "ruled": true,
-          "text": "Awaiting copy\n",
+          "text": "The service is increasingly popular with more than half a million monthly active users in England. \n",
           "links": [
             {
               "text": "Visit www.sps.nhs.uk",
