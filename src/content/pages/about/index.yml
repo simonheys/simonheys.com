@@ -1,8 +1,8 @@
 title: About
 components:
-  - type: work-row
+  - type: work-header
     title: About
-    text: |
+    subtitle: |
       I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. 
 
       I am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).

@@ -93,9 +93,9 @@
       "title": "About",
       "components": [
         {
-          "type": "work-row",
+          "type": "work-header",
           "title": "About",
-          "text": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nI am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).\n\nMost recently I co-founded a digital agency where I was part of [many cross-disciplinary teams](/case-studies) that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by [Google DeepMind](https://deepmind.com/). \n\nPrior to that I worked in-house as a Product Designer at [The Guardian](https://www.theguardian.com/), [The Times](https://www.thetimes.co.uk/), and [UBS Investment Bank](https://www.ubs.com/).\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from [Kingston University London](https://www.kingston.ac.uk/).\n",
+          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nI am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).\n\nMost recently I co-founded a digital agency where I was part of [many cross-disciplinary teams](/case-studies) that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by [Google DeepMind](https://deepmind.com/). \n\nPrior to that I worked in-house as a Product Designer at [The Guardian](https://www.theguardian.com/), [The Times](https://www.thetimes.co.uk/), and [UBS Investment Bank](https://www.ubs.com/).\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from [Kingston University London](https://www.kingston.ac.uk/).\n",
           "links": [
             {
               "text": "Contact",
@@ -109,6 +109,7 @@
       "path": "/case-studies/hark",
       "title": "Hark Case Study",
       "meta": {
+        "icon": "case-studies/hark/hark-icon.svg",
         "title": "Hark",
         "subtitle": "Transformative clinical task management",
         "text": "Improving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm"
@@ -404,6 +405,7 @@
       "path": "/case-studies/mykrobe",
       "title": "Mykrobe Case Study",
       "meta": {
+        "icon": "case-studies/mykrobe/mykrobe-icon.svg",
         "title": "Mykrobe",
         "subtitle": "Antimicrobial resistance and outbreak information within minutes",
         "text": "Creating an identity and user-friendly interface for a family of digital diagnostic tools"
@@ -694,6 +696,7 @@
       "path": "/case-studies/sps",
       "title": "NHS England Case Study",
       "meta": {
+        "icon": "case-studies/sps/sps-icon.svg",
         "title": "NHS England",
         "subtitle": "The first stop for professional medicines advice",
         "text": "Transforming four distinct entities into a single new digital public service while thinking like a tax payer"
@@ -918,9 +921,9 @@
       "title": "Contact",
       "components": [
         {
-          "type": "work-row",
+          "type": "work-header",
           "title": "Contact",
-          "text": "Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK.\n",
+          "subtitle": "If you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK.\n",
           "links": [
             {
               "text": "Email",

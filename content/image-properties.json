@@ -48,6 +48,13 @@
     "type": "jpg",
     "color": "#4cb0fa"
   },
+  "case-studies/hark/hark-icon.svg": {
+    "hash": "8b298d3ef0462ef6a6095dfe439ce2f6",
+    "height": 720,
+    "width": 720,
+    "type": "svg",
+    "color": "#000000"
+  },
   "case-studies/hark/hark-news.jpg": {
     "hash": "2532c2f461d03fd5c8d5856d7d9e15a8",
     "height": 1080,
@@ -335,6 +342,13 @@
     "type": "jpg",
     "color": "#a68d85"
   },
+  "case-studies/mykrobe/mykrobe-icon.svg": {
+    "hash": "d33ab53734fff0cd7e77107e7e05d8ed",
+    "height": 1024,
+    "width": 1024,
+    "type": "svg",
+    "color": "#000000"
+  },
   "case-studies/mykrobe/mykrobe-lab.jpg": {
     "hash": "23e7dc49da685c75801d0fb7225c9ec4",
     "height": 1080,
@@ -467,6 +481,13 @@
     "width": 1024,
     "type": "jpg",
     "color": "#f4f4f4"
+  },
+  "case-studies/sps/sps-icon.svg": {
+    "hash": "4ff9e178e2141a98c920cac118bff046",
+    "height": 1024,
+    "width": 1024,
+    "type": "svg",
+    "color": "#000000"
   },
   "case-studies/sps/sps-postits-1.jpg": {
     "hash": "8d077f734172c0350af259cba4a978bc",
