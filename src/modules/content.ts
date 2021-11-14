@@ -29,6 +29,7 @@ export type Page = {
     title?: string;
     subtitle?: string;
     text?: string;
+    icon?: string;
   };
 };
 
