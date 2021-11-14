@@ -62,7 +62,9 @@
       {
         "exclude": [
           "/about",
-          "/contact"
+          "/contact",
+          "/portfolio",
+          "/case-studies"
         ],
         "type": "work-header",
         "title": "About",
@@ -106,6 +108,11 @@
     {
       "path": "/case-studies/hark",
       "title": "Hark Case Study",
+      "meta": {
+        "title": "Hark",
+        "subtitle": "Transformative clinical task management",
+        "text": "Improving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm"
+      },
       "components": [
         {
           "type": "prose",
@@ -154,7 +161,7 @@
           "type": "prose",
           "title": "Research",
           "ruled": true,
-          "text": "##### Walking the walk\nTeaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.\n\n##### A complex ecosystem\nThe direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment. \n"
+          "text": "##### Walking the walk\nTeaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.\n\n##### A complex ecosystem\nThe direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment.\n"
         },
         {
           "type": "work-row",
@@ -235,7 +242,7 @@
         {
           "type": "prose",
           "ruled": true,
-          "text": "##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. \n"
+          "text": "##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard.\n"
         },
         {
           "type": "work-row",
@@ -370,7 +377,7 @@
           "type": "prose",
           "title": "Summary",
           "ruled": true,
-          "text": "##### Results\nPilot studies showed that Hark improved information transfer within clinical teams in 22 out of 24 key areas with response times 37% quicker than a pager.\n\n##### Reflection\nWhat started out as a relatively small project eventually scaled into a multi-year multi-platform product. The product was received with genuine interest and enthusiasm wherever it was shown. \n\nThis was a result of embedding user research and testing into the product, and having a brilliant Academic Surgeon and Product Owner on the team with a deep understanding and first-hand experience of the pain points we were solving.\n\nAlongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unexpected events (see Outcome below) we never had the satisfaction of seeing the pilot through. \n"
+          "text": "##### Results\nPilot studies showed that Hark improved information transfer within clinical teams in 22 out of 24 key areas with response times 37% quicker than a pager.\n\n##### Reflection\nWhat started out as a relatively small project eventually scaled into a multi-year multi-platform product. The product was received with genuine interest and enthusiasm wherever it was shown. \n\nThis was a result of embedding user research and testing into the product, and having a brilliant Academic Surgeon and Product Owner on the team with a deep understanding and first-hand experience of the pain points we were solving.\n\nAlongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unexpected events (see Outcome below) we never had the satisfaction of seeing the pilot through.\n"
         },
         {
           "type": "prose",
@@ -386,14 +393,21 @@
       "components": [
         {
           "type": "work-header",
-          "title": "Case Studies",
-          "subtitle": "# [Antimicrobial resistance and outbreak information within minutes](case-studies/mykrobe)\nCreating an identity and user-friendly interface for a family of digital diagnostic tools\n\n# [The first stop for professional medicines advice](/case-studies/sps)\nTransforming four distinct services into a new single entity, delivering a single digital platform\n\n# [Transformative clinical task management](/case-studies/hark)\nImproving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm\n"
+          "title": "Case Studies"
+        },
+        {
+          "type": "case-studies-grid"
         }
       ]
     },
     {
       "path": "/case-studies/mykrobe",
       "title": "Mykrobe Case Study",
+      "meta": {
+        "title": "Mykrobe",
+        "subtitle": "Antimicrobial resistance and outbreak information within minutes",
+        "text": "Creating an identity and user-friendly interface for a family of digital diagnostic tools"
+      },
       "components": [
         {
           "type": "prose",
@@ -465,7 +479,7 @@
           "type": "prose",
           "title": "Solution",
           "ruled": true,
-          "text": "##### Start at the beginning\nI started with a lightweight identity design exercise where we arrived at a solution that satisfied the requirements for charm and animation by using simple forms in a bold and colourful way. The visual language was derived from images of lab samples. \n\n![](case-studies/mykrobe/mykrobe-logo-sketches.jpg)\n\n##### Planning the initial solution\nThe next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set. \n"
+          "text": "##### Start at the beginning\nI started with a lightweight identity design exercise where we arrived at a solution that satisfied the requirements for charm and animation by using simple forms in a bold and colourful way. The visual language was derived from images of lab samples. \n\n![](case-studies/mykrobe/mykrobe-logo-sketches.jpg)\n\n##### Planning the initial solution\nThe next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set.\n"
         },
         {
           "type": "work-row",
@@ -679,6 +693,11 @@
     {
       "path": "/case-studies/sps",
       "title": "NHS England Case Study",
+      "meta": {
+        "title": "NHS England",
+        "subtitle": "The first stop for professional medicines advice",
+        "text": "Transforming four distinct entities into a single new digital public service while thinking like a tax payer"
+      },
       "components": [
         {
           "type": "prose",
@@ -884,7 +903,7 @@
           "type": "prose",
           "title": "Outcome",
           "ruled": true,
-          "text": "The service is increasingly popular with more than half a million monthly active users in England. \n",
+          "text": "The service is increasingly popular with more than half a million monthly active users in England.\n",
           "links": [
             {
               "text": "Visit www.sps.nhs.uk",
@@ -901,7 +920,7 @@
         {
           "type": "work-row",
           "title": "Contact",
-          "text": "Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK. \n",
+          "text": "Please get in touch if you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK.\n",
           "links": [
             {
               "text": "Email",
@@ -933,7 +952,20 @@
       },
       "components": [
         {
+          "type": "work-header",
+          "ruled": true,
+          "title": "Portfolio"
+        },
+        {
           "type": "work-grid"
+        },
+        {
+          "type": "work-header",
+          "ruled": true,
+          "title": "Case Studies"
+        },
+        {
+          "type": "case-studies-grid"
         }
       ]
     },
@@ -1228,6 +1260,10 @@
       "path": "/portfolio",
       "title": "Portfolio",
       "components": [
+        {
+          "type": "work-header",
+          "title": "Portfolio"
+        },
         {
           "type": "work-grid"
         }

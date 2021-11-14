@@ -1,8 +1,12 @@
 title: Mykrobe Case Study
+meta:
+  title: Mykrobe
+  subtitle: Antimicrobial resistance and outbreak information within minutes
+  text: Creating an identity and user-friendly interface for a family of digital diagnostic tools
 components:
   - type: prose
     title: Mykrobe
-    services: ['Product Design', 'Identity', 'React', 'Electron']
+    services: ["Product Design", "Identity", "React", "Electron"]
     text: |
       # Antimicrobial resistance and outbreak information within minutes
       I was Lead Product Designer in a cross-disciplinary team of 16 on a project spanning 7 years, helping to drive and influence product decisions and strategy.
@@ -21,7 +25,7 @@ components:
     text: |
       ##### A product with charm
       I was initially approached by a Computational Biologist at Oxford University to create an identity and user interface for a family of digital diagnostic tools which are able to identify Tuberculosis (TB) species and antibiotic resistance. 
-      
+
       The goal was to take the [existing command-line products](https://github.com/Mykrobe-tools/mykrobe)…
 
       ```
@@ -52,8 +56,8 @@ components:
         aspect: 1.7777
       - vimeoId: 643919488
         aspect: 1.7777
-      - src: case-studies/mykrobe/mykrobe-mumbai-n95.jpg    
-    caption: Footage from our research trip to Mumbai – I am pictured pre-pandemic wearing a mandatory N95 mask while observing users in a mobile TB lab 
+      - src: case-studies/mykrobe/mykrobe-mumbai-n95.jpg
+    caption: Footage from our research trip to Mumbai – I am pictured pre-pandemic wearing a mandatory N95 mask while observing users in a mobile TB lab
   - type: prose
     title: Research
     ruled: true
@@ -63,7 +67,7 @@ components:
 
       ##### …are not representative of all users
       However it became clear that these UK-based users were only representative of a particularly expert subset of the target user base. The project started to generate interest in India and I was part of a sub-team that undertook a field trip to TB-prevalent areas of Mumbai.
-      
+
       ![](case-studies/mykrobe/mykrobe-lab.jpg)
 
       We were able to visit a range of sites and talk to a range of potential users working in every situation, from dedicated hospitals to temporary mobile labs.
@@ -80,7 +84,7 @@ components:
       ![](case-studies/mykrobe/mykrobe-logo-sketches.jpg)
 
       ##### Planning the initial solution
-      The next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set. 
+      The next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set.
   - type: work-row
     columns:
       - src: case-studies/mykrobe/mykrobe-wireframes-1.png
@@ -111,12 +115,12 @@ components:
     text: |
       ##### Identifying the right technology
       The requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. 
-      
+
       Since the interface was predominantly text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop a cross-platform application with web technologies (HTML/CSS/JS) which also works offline.
 
       ##### Proving the technology
       I created an initial prototype with the goal of having the minimum set of features required to prove Electron as a solution. The developer of the tool worked with me to adjust the input and output of the tool. Passing `--format json` causes standard output to be in JSON which is more easily consumed by software. 
-      
+
       ```
       $ mykrobe_atlas predict\
           --sample MDR_1\
@@ -203,12 +207,12 @@ components:
     text: |
       ##### Component library leads the way for design system
       I worked with other front-end engineers to build the user interface using [React](https://reactjs.org/), [Redux](https://redux.js.org/) and [Redux Saga](https://redux-saga.js.org/) with the component library documented live in [Storybook](https://storybook.js.org/). This is fully tokenised and will form a solid starting point for a full design system when the appropriate time arises in future. 
-      
+
       I refactored the Electron app to use the component library, giving a consistent appearance and reducing the effort required for ongoing maintenance. 
-      
+
       ##### Babel plugin allows shared code base
       I wrote a simple [Babel](https://babeljs.io/) plugin which automatically modifies `import` and `require` to resolve sources with a with an `.electron` suffix when bundling for Electron, e.g. `index.electron.js` or `styles.electron.scss`. This allows the Electron and web-based apps to share the same code base, diverging when needed for specific functionality.
-      
+
       ##### Bridging the gap
       I worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
   - type: work-row
@@ -229,7 +233,7 @@ components:
 
       ##### Reflection
       What started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world. I am a named author on the research paper published in [Nature Communications](https://www.nature.com/articles/ncomms10063) as an acknowledgment of my overall contribution.
-      
+
       It is still hard to believe that you can put a swab sample in a fancy USB stick then see a complete DNA analysis on your laptop screen within a couple of minutes. It was an honour and privilege to work with people who make such breakthroughs possible.
   - type: prose
     title: Outcome

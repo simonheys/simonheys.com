@@ -12,7 +12,7 @@ components:
         color: "#404040"
       - col: 6
         vimeoId: 587071119
-        color: "#404040" 
+        color: "#404040"
   - type: work-row
     columns:
       - text: Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping.
@@ -58,5 +58,5 @@ components:
       - src: portfolio/fathm/fathm-col-6-share-1.png
   - type: work-row
     columns:
-      - text: Fathm was featured in App Store Essentials alongside Clear, Evernote and Things on the front page of the App Store. 
+      - text: Fathm was featured in App Store Essentials alongside Clear, Evernote and Things on the front page of the App Store.
   - type: work-next

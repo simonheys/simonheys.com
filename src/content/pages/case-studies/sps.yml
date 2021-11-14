@@ -1,4 +1,8 @@
 title: NHS England Case Study
+meta:
+  title: NHS England
+  subtitle: The first stop for professional medicines advice
+  text: Transforming four distinct entities into a single new digital public service while thinking like a tax payer
 components:
   - type: prose
     title: NHS England
@@ -62,12 +66,12 @@ components:
     text: |
       ##### Regular user research
       After allowing the initial site to grow its audience we began to establish a regular working pattern of user testing to understand pain points and validate solutions. This was conducted both in-person and remotely via screen sharing. 
-      
+
       ##### Where is your stuff?
       One key insight was that the first version of the site did not match many expert users mental model of the service. This group still thought of SPS as a document filing repository (one user even referred to navigation as ‘subfolders’). 
-      
+
       Users from a wider group such as GPs and dentists had a pre-existing idea of what content was on the site and thought it would not meet their needs, in spite of it actually having a lot of relevant expert advice specifically tailored for them. 
-      
+
       Following this research we were able to compile evidence, recommendations and planning for solutions across four key areas: Navigating, Finding, Discovering and Content.
   - type: work-row
     columns:
@@ -85,7 +89,7 @@ components:
     text: |
       ##### Where are we going?
       A second workshop was provided an opportunity to bring a range of stakeholder and users together from all levels of the service to share experiences and understand whether their aspirations had changed since launch. We conducted a range of exercises to find out.       
-      
+
       ##### How will we get there?
       The outputs of the workshops were combined with the results of the most recent user research to form a short, medium and long-term roadmap for the service.
   - type: work-row
@@ -101,7 +105,7 @@ components:
     text: |
       ##### First iteration of the service
       The job of the first iteration of the service was to gather the existing material together into one place, making sure it was easily findable with a structure and hierarchy that would be able to evolve over time as the service evolves. We used a customised open-source CMS with a user-friendly admin interface. The documents and other resources were safe in one single place, but as a first version we did not know if the resulting service would be popular, or how it would be used.
-      
+
       ##### Second iteration
       After an initial bedding in period and following the workshop outlined above we uncovered several key insights. The service was well used, but users found it very difficult to find content or in fact really discovery what content was on offer by SPS. By now they were starting to publish more web-native HTML article content and starting to see the down-sides of their legacy Word and PDF documents. These legacy documents were hampering search and discoverability, as well as undermining user confidence in finding the most up-to-date material.
 
@@ -159,8 +163,7 @@ components:
     title: Outcome
     ruled: true
     text: |
-      The service is increasingly popular with more than half a million monthly active users in England. 
+      The service is increasingly popular with more than half a million monthly active users in England.
     links:
       - text: Visit www.sps.nhs.uk
         url: https://www.sps.nhs.uk/
-

@@ -28,16 +28,16 @@ all:
       - "/contact"
   before: []
   after:
-    - exclude: ["/about", "/contact"]
+    - exclude: ["/about", "/contact", "/portfolio", "/case-studies"]
       type: work-header
       title: About
       ruled: true
       subtitle: |
         I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-      - text: About
-        url: /about
-      - text: Contact
-        url: /contact
+        - text: About
+          url: /about
+        - text: Contact
+          url: /contact
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

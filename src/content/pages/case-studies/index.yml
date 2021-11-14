@@ -2,12 +2,4 @@ title: Case Studies
 components:
   - type: work-header
     title: Case Studies
-    subtitle: |
-      # [Antimicrobial resistance and outbreak information within minutes](case-studies/mykrobe)
-      Creating an identity and user-friendly interface for a family of digital diagnostic tools
-
-      # [The first stop for professional medicines advice](/case-studies/sps)
-      Transforming four distinct services into a new single entity, delivering a single digital platform
-
-      # [Transformative clinical task management](/case-studies/hark)
-      Improving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm
+  - type: case-studies-grid

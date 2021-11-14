@@ -4,7 +4,7 @@ thumbnails:
   - src: portfolio/minimalfolio/minimalfolio-thumbnail-logo.jpg
 components:
   - type: work-header
-    subtitle: The easiest way to present your portfolio of images, video and PDF on your iPad or iPhone. The app is unbranded so your folio does the talking. 
+    subtitle: The easiest way to present your portfolio of images, video and PDF on your iPad or iPhone. The app is unbranded so your folio does the talking.
     links:
       - text: Download
         url: https://apple.co/3oLaYwu
@@ -25,7 +25,7 @@ components:
     color: "#363636"
   - type: work-row
     columns:
-      - text: Non-linear navigation is made possible by a simple portfolio arrangement with columns of increasingly detailed slides. 
+      - text: Non-linear navigation is made possible by a simple portfolio arrangement with columns of increasingly detailed slides.
   - type: work-row
     columns:
       - src: portfolio/minimalfolio/minimalfolio-col-6-ipad.jpg

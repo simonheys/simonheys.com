@@ -1,4 +1,8 @@
 title: Hark Case Study
+meta:
+  title: Hark
+  subtitle: Transformative clinical task management
+  text: Improving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm
 components:
   - type: prose
     title: Hark
@@ -12,7 +16,7 @@ components:
     text: |
       ##### Improve handover, reduce potential harm
       I was initially approached by an Academic Surgeon at Imperial College London to become part of a project looking to use digital technology to improve Clinical Handover between hospital shifts, typically at 8am and 8pm each day.
-      
+
       The goal was to measurably improve the effectiveness of Clinical Handover, thereby reducing potential harm to patients.
 
       Note that all screenshots contain only fake data and all photos are heavily obfuscated where necessary.
@@ -45,7 +49,7 @@ components:
       Teaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.
 
       ##### A complex ecosystem
-      The direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment. 
+      The direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment.
   - type: work-row
     columns:
       - src: case-studies/hark/hark-process-maps-01.jpg
@@ -84,7 +88,7 @@ components:
     ruled: true
     text: |
       ##### Building the first product
-      I worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard. 
+      I worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard.
   - type: work-row
     columns:
       - src: portfolio/hark/hark-col-6-task-entry.jpg
@@ -94,7 +98,7 @@ components:
     caption: Left - custom 2D ‘Select’ input was found to be a great improvement over the default 3D ‘spinner’. Right - thanks to custom controls the user is able to fill the form purely with the keyboard
   - type: prose
     ruled: true
-    text: |    
+    text: |
       ##### Custom controls and libraries for better UX
       Throughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.
 
@@ -108,7 +112,7 @@ components:
     caption: Working visualisations of NEWS score over time using a mixture of fake data, either random noise or sine waves to test the extremities
   - type: prose
     ruled: true
-    text: |    
+    text: |
       ##### Early Warning
       Our users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.
 
@@ -116,7 +120,7 @@ components:
 
       ##### Next!
       The app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. 
-      
+
       This was a subtle challenge and eventually required creating a few custom keyboard inputs, including a custom and more legible 2D ‘Select’ input which was found to be a great improvement over the default 3D ‘spinner’. The resulting forms can be read and filled in as quickly and efficiently as we thought possible.
   - type: work-row
     columns:
@@ -125,10 +129,10 @@ components:
     caption: Testing the universal app running on several iPhones with an iPad coordinating the tasks
   - type: prose
     ruled: true
-    text: |    
+    text: |
       ##### Simulation test
       The initial MVP was a huge success. The Academic Surgeon and their team and undertook a series of simulation tests which proved significant gains in accuracy and time savings over pen, paper and bleeps. 
-      
+
       As a result the team was successful in securing further funding and continued to improve and test features in a series of isolated sprints.
 
       ##### From product to platform
@@ -158,7 +162,7 @@ components:
     caption: Screen captures of the final app using fake data
   - type: prose
     ruled: true
-    text: |    
+    text: |
       ##### Native interface gives confidence
       The app interface is deliberately faithful to the native look of iOS, using native navigation and controls where possible. This makes the app instantly familiar to users and makes them confident that they already know how to use it.
 
@@ -183,10 +187,10 @@ components:
 
       ##### Reflection
       What started out as a relatively small project eventually scaled into a multi-year multi-platform product. The product was received with genuine interest and enthusiasm wherever it was shown. 
-      
+
       This was a result of embedding user research and testing into the product, and having a brilliant Academic Surgeon and Product Owner on the team with a deep understanding and first-hand experience of the pain points we were solving.
 
-      Alongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unexpected events (see Outcome below) we never had the satisfaction of seeing the pilot through. 
+      Alongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unexpected events (see Outcome below) we never had the satisfaction of seeing the pilot through.
   - type: prose
     title: Outcome
     ruled: true

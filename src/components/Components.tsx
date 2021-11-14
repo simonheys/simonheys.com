@@ -12,6 +12,7 @@ import ScrollingBrowser from "./ui/ScrollingBrowser";
 import ScrollingBrowserCell from "./ui/ScrollingBrowserCell";
 import WorkNext from "./work/WorkNext";
 import Prose from "./ui/Prose";
+import CaseStudiesGrid from "./case-studies/grid/CaseStudiesGrid";
 
 // // unique components are dynamic
 const MykrobeAnimation = dynamic(
@@ -41,6 +42,7 @@ const MapTypeToComponent = {
   footer: Footer,
   header: Header,
   prose: Prose,
+  "case-studies-grid": CaseStudiesGrid,
 };
 
 export const MappedComponent = ({ type, ...rest }) => {

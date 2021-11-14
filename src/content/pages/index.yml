@@ -1,8 +1,14 @@
-title: 
+title:
 description: Freelance Product Designer based in London, UK. Available to design and develop apps or websites.
 fill:
   type: word-clock-fill
   title: true
 components:
+  - type: work-header
+    ruled: true
+    title: Portfolio
   - type: work-grid
-  
+  - type: work-header
+    ruled: true
+    title: Case Studies
+  - type: case-studies-grid

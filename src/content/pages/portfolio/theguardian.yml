@@ -15,7 +15,7 @@ components:
         color: "#edede7"
   - type: work-row
     columns:
-      - text: The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle. 
+      - text: The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle.
   - type: work-row
     columns:
       - type: scrolling-browser-cell
@@ -51,5 +51,5 @@ components:
         color: "#edede7"
   - type: work-row
     columns:
-      - text: Using prototypes and user testing as a foundation gave the design team confidence to take a specific direction with the subsequent full redesign project. 
+      - text: Using prototypes and user testing as a foundation gave the design team confidence to take a specific direction with the subsequent full redesign project.
   - type: work-next

@@ -13,7 +13,7 @@
     "generate:icon-components": "node ./src/scripts/generate-icon-components",
     "generate:image-properties": "node ./src/scripts/generate-image-properties",
     "generate:watch": "concurrently -k -r \"yarn generate:content --watch\" \"yarn generate:icon-components --watch\" \"yarn generate:image-properties --watch\"",
-    "prettier": "prettier --write \"./**/*.{js,json,css,scss}\"",
+    "prettier": "prettier --write \"./**/*.{js,json,css,scss,yml}\"",
     "test": "start-server-and-test dev http://localhost:3000 cypress",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",

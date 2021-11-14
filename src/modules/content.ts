@@ -25,6 +25,11 @@ export type Page = {
   fill?: any;
   thumbnails?: Thumbnail[];
   components?: Component[];
+  meta?: {
+    title?: string;
+    subtitle?: string;
+    text?: string;
+  };
 };
 
 export type ImageProperties = {

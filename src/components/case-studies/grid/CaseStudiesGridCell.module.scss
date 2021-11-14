@@ -1,0 +1,45 @@
+@import "~/src/styles/use-bootstrap";
+
+.container {
+  composes: global(p-5);
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  border-radius: 0.2rem;
+  background-color: var(--gray-100);
+  &:hover {
+    color: var(--body-color);
+    background-color: var(--gray-150);
+    .link {
+      color: var(--link-hover-color);
+    }
+  }
+  color: var(--body-color);
+}
+
+.title {
+  composes: global(h5);
+  font-weight: bold;
+}
+
+.subtitle {
+  composes: global(h3);
+  font-weight: bold;
+}
+
+.text {
+  composes: global(h5);
+}
+
+.link {
+  composes: global(h5);
+  composes: global(m-0);
+  color: var(--primary);
+  transition: color 0.1s;
+}
+
+@media (hover: none) {
+  .container {
+    background-color: var(--gray-100);
+  }
+}
