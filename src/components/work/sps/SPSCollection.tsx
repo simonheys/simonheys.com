@@ -1,9 +1,10 @@
 import * as React from "react";
 import { useInView } from "react-intersection-observer";
 
+import preventWindowScroll from "../../../utils/preventWindowScroll";
 import AppearWhenInView from "../../ui/AppearWhenInView";
 import SegmentedControl from "../../ui/SegmentedControl";
-import preventWindowScroll from "../../../utils/preventWindowScroll";
+import Caption from "../../ui/Caption";
 
 import CardsCollectionBlock, {
   mapLayoutPropToLayout,
@@ -24,7 +25,11 @@ const options = orderedValues.map((value) => {
   };
 });
 
-const SPSCollection: React.FC = () => {
+export interface SPSCollectionProps {
+  caption?: string;
+}
+
+const SPSCollection: React.FC<SPSCollectionProps> = ({ caption }) => {
   const [layout, setLayout] = React.useState(orderedValues[0]);
   const [autoAnimate, setAutoAnimate] = React.useState(true);
   const { ref, inView } = useInView();
@@ -83,6 +88,11 @@ const SPSCollection: React.FC = () => {
           </div>
         </div>
       </div>
+      {caption && (
+        <div className={"container-fluid"}>
+          <Caption caption={caption} />
+        </div>
+      )}
     </AppearWhenInView>
   );
 };

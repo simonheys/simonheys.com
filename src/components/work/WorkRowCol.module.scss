@@ -31,7 +31,7 @@
 }
 
 .links {
-  composes: global(h3);
+  composes: global(h4);
   composes: global(mb-0);
   margin-top: 1.5 * $paragraph-margin-bottom;
 }
