@@ -27,9 +27,9 @@ export interface PageProps {
 
 const Page: React.FC<PageProps> = ({ page }) => {
   const { path, title, description, subtitle, header, fill, components } = page;
-  const pageTitle = [title, subtitle, ...meta.titles]
-    .filter(Boolean)
-    .join(" – ");
+  const pageTitle = React.useMemo(() => {
+    return [title, subtitle, ...meta.titles].filter(Boolean).join(" – ");
+  }, [subtitle, title]);
 
   return (
     <React.Fragment>

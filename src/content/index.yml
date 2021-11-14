@@ -1,34 +1,43 @@
 meta:
   titles:
     - Simon Heys
-    - Freelance Designer and Developer
+    - Freelance Product Designer and Software Engineer
     - London, UK
-  work:
+  portfolio:
     pages:
-      - path: "/work/hark"
-      - path: "/work/mykrobe"
-      - path: "/work/sps"
-      - path: "/work/fathm"
-      - path: "/work/theguardian"
-      - path: "/work/visioncoach"
-      - path: "/work/minimalfolio"
-      - path: "/work/wordclock"
+      - path: "/portfolio/mykrobe"
+      - path: "/portfolio/theguardian"
+      - path: "/portfolio/wordclock"
+      - path: "/portfolio/hark"
+      - path: "/portfolio/fathm"
+      - path: "/portfolio/sps"
+      - path: "/portfolio/visioncoach"
+      - path: "/portfolio/minimalfolio"
+  case-studies:
+    pages:
+      - path: "/case-studies/mykrobe"
+      - path: "/case-studies/sps"
+      - path: "/case-studies/hark"
 all:
   header:
     type: header
     links:
-      - "/work"
+      - "/portfolio"
+      - "/case-studies"
       - "/about"
+      - "/contact"
   before: []
   after:
-    - exclude: ["/about"]
+    - exclude: ["/about", "/contact", "/portfolio", "/case-studies"]
       type: work-header
       title: About
       ruled: true
       subtitle: |
-        I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
+        I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-      - text: Read more
-        url: /about
+        - text: About
+          url: /about
+        - text: Contact
+          url: /contact
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

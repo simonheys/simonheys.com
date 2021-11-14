@@ -1,0 +1,71 @@
+title: NHS England
+subtitle: Specialist Pharmacy Service
+thumbnails:
+  - src: portfolio/sps/sps-thumbnail-logo.jpg
+components:
+  - type: work-header
+    subtitle: Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.
+    links:
+      - text: Read full case study
+        url: /case-studies/sps
+  - type: work-row
+    vimeoId: 581720984
+    color: "#009639"
+  - type: scrolling-browser
+    maskSrc: portfolio/sps/browser-mask.svg
+    src: portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png
+  - type: work-row
+    columns:
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        src: portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        src: portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png
+  - type: work-row
+    columns:
+      - text: The service was actively developed with a regular cycle of interactive prototyping and observed user testing to validate problems and solutions. We modernised the publishing workflow and developed a range of self-service tools.
+  - type: sps-collection
+  - type: work-row
+    columns:
+      - text: I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device.
+  - type: work-row
+    columns:
+      - src: portfolio/sps/sps-col-6-system.jpg
+      - src: portfolio/sps/sps-col-6-screens.jpg
+  - type: work-row
+    columns:
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        system:
+          - portfolio/sps/sps-design-system-whole_01.png
+          - portfolio/sps/sps-design-system-whole_02.png
+          - portfolio/sps/sps-design-system-whole_03.png
+          - portfolio/sps/sps-design-system-whole_04.png
+      - type: scrolling-browser-cell
+        mask: col-6
+        maskSrc: portfolio/sps/col-6-browser-mask.svg
+        system:
+          - portfolio/sps/sps-design-system-whole_05.png
+          - portfolio/sps/sps-design-system-whole_06.png
+          - portfolio/sps/sps-design-system-whole_02.png
+  - type: work-row
+    columns:
+      - src: portfolio/sps/sps-col-6-icon-construction.svg
+      - src: portfolio/sps/sps-col-6-icons.svg
+  - type: work-row
+    columns:
+      - src: portfolio/sps/sps-col-6-leaflet-1.png
+      - src: portfolio/sps/sps-col-6-leaflet-2.png
+  - type: work-row
+    src: portfolio/sps/sps-logo-construction.svg
+  - type: work-row
+    columns:
+      - text: The service is increasingly popular with more than half a million monthly active users in England.
+        links:
+          - text: Read full case study
+            url: /case-studies/sps
+  - type: work-next

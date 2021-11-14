@@ -1,0 +1,12 @@
+@import "~/src/styles/use-bootstrap";
+
+.caption {
+  composes: global(col);
+  composes: global(mb-4);
+  composes: global(h6);
+  font-weight: bold;
+  color: var(--gray-600);
+  @media (prefers-color-scheme: dark) {
+    color: inherit;
+  }
+}

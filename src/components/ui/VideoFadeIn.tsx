@@ -12,6 +12,7 @@ export interface VideoFadeInProps {
   col: string | number;
   color: string;
   title: string;
+  aspect?: string | number;
 }
 
 const VideoFadeIn: React.FC<VideoFadeInProps> = ({
@@ -20,6 +21,7 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
   col,
   color,
   title,
+  aspect: aspectProp,
 }) => {
   const ref = React.useRef(null);
   const controls = useAnimation();
@@ -53,13 +55,19 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
   );
 
   const containerStyle = React.useMemo(() => {
-    const aspect = col === 6 ? 1080 / 942 : 1080 / 1920;
+    const aspect = aspectProp
+      ? typeof aspectProp === "string"
+        ? parseFloat(aspectProp)
+        : aspectProp
+      : col === 6
+      ? 1080 / 942
+      : 1080 / 1920;
     const style = {
       paddingBottom: `${100 * aspect}%`,
       backgroundColor: color,
     };
     return style;
-  }, [col, color]);
+  }, [aspectProp, col, color]);
 
   const overlayStyle = React.useMemo(() => {
     const style = {

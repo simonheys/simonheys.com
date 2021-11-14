@@ -7,9 +7,15 @@ import * as contentModule from "../../modules/content";
 interface ImageFadeInProps {
   src: string;
   alt: string;
+  backgroundColor?: string;
 }
 
-const ImageFadeIn: React.FC<ImageFadeInProps> = ({ src, alt, ...rest }) => {
+const ImageFadeIn: React.FC<ImageFadeInProps> = ({
+  src,
+  alt,
+  backgroundColor,
+  ...rest
+}) => {
   const controls = useAnimation();
   const onLoadingComplete = React.useCallback(() => {
     controls.start("visible");
@@ -20,7 +26,7 @@ const ImageFadeIn: React.FC<ImageFadeInProps> = ({ src, alt, ...rest }) => {
   }, [src]);
 
   return (
-    <div style={{ backgroundColor: color }}>
+    <div style={{ backgroundColor: backgroundColor || color }}>
       <motion.div
         animate={controls}
         initial="hidden"

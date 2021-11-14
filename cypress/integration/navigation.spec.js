@@ -7,6 +7,6 @@ describe("Navigation", () => {
       timeout: 10000,
     }).click();
     cy.url().should("include", "/about");
-    cy.get("p").contains("designer");
+    cy.get("p").contains("designer", { matchCase: false });
   });
 });

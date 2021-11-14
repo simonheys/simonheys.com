@@ -2,34 +2,47 @@
   "meta": {
     "titles": [
       "Simon Heys",
-      "Freelance Designer and Developer",
+      "Freelance Product Designer and Software Engineer",
       "London, UK"
     ],
-    "work": {
+    "portfolio": {
       "pages": [
         {
-          "path": "/work/hark"
+          "path": "/portfolio/mykrobe"
         },
         {
-          "path": "/work/mykrobe"
+          "path": "/portfolio/theguardian"
         },
         {
-          "path": "/work/sps"
+          "path": "/portfolio/wordclock"
         },
         {
-          "path": "/work/fathm"
+          "path": "/portfolio/hark"
         },
         {
-          "path": "/work/theguardian"
+          "path": "/portfolio/fathm"
         },
         {
-          "path": "/work/visioncoach"
+          "path": "/portfolio/sps"
         },
         {
-          "path": "/work/minimalfolio"
+          "path": "/portfolio/visioncoach"
         },
         {
-          "path": "/work/wordclock"
+          "path": "/portfolio/minimalfolio"
+        }
+      ]
+    },
+    "case-studies": {
+      "pages": [
+        {
+          "path": "/case-studies/mykrobe"
+        },
+        {
+          "path": "/case-studies/sps"
+        },
+        {
+          "path": "/case-studies/hark"
         }
       ]
     }
@@ -38,24 +51,33 @@
     "header": {
       "type": "header",
       "links": [
-        "/work",
-        "/about"
+        "/portfolio",
+        "/case-studies",
+        "/about",
+        "/contact"
       ]
     },
     "before": [],
     "after": [
       {
         "exclude": [
-          "/about"
+          "/about",
+          "/contact",
+          "/portfolio",
+          "/case-studies"
         ],
         "type": "work-header",
         "title": "About",
         "ruled": true,
-        "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
+        "subtitle": "I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
         "links": [
           {
-            "text": "Read more",
+            "text": "About",
             "url": "/about"
+          },
+          {
+            "text": "Contact",
+            "url": "/contact"
           }
         ]
       },
@@ -72,8 +94,845 @@
       "components": [
         {
           "type": "work-header",
-          "title": null,
-          "subtitle": "I am an experienced freelance designer and developer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nMost recently I was co-founder of a digital agency which designed and developed a range of apps, tools and services for organisations and startups in healthcare. Prior to that I worked in-house as a designer and developer at The Guardian, The Times, UBS Investment Bank and more. \n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from Kingston University London.\n\nI am available to design and develop apps or websites and always interested in talking about new projects or roles — please get in touch.\n",
+          "title": "About",
+          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nI am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).\n\nMost recently I co-founded a digital agency where I was part of [many cross-disciplinary teams](/case-studies) that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by [Google DeepMind](https://deepmind.com/). \n\nPrior to that I worked in-house as a Product Designer at [The Guardian](https://www.theguardian.com/), [The Times](https://www.thetimes.co.uk/), and [UBS Investment Bank](https://www.ubs.com/).\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from [Kingston University London](https://www.kingston.ac.uk/).\n",
+          "links": [
+            {
+              "text": "Contact",
+              "url": "/contact"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/hark",
+      "title": "Hark Case Study",
+      "meta": {
+        "icon": "case-studies/hark/hark-icon.svg",
+        "title": "Hark",
+        "subtitle": "Transformative clinical task management",
+        "text": "Improving the effectiveness of Clinical Handover with a product that was successfully acquired by a global technology firm"
+      },
+      "components": [
+        {
+          "type": "prose",
+          "title": "Hark",
+          "text": "# Transformative clinical task management\nI was Lead Product Designer in a cross-disciplinary team on a project spanning almost 3 years. The resulting product was successfully acquired by a global AI technology firm.\n"
+        },
+        {
+          "type": "work-row",
+          "src": "case-studies/hark/hark-devices.jpg"
+        },
+        {
+          "type": "prose",
+          "title": "Overview",
+          "text": "##### Improve handover, reduce potential harm\nI was initially approached by an Academic Surgeon at Imperial College London to become part of a project looking to use digital technology to improve Clinical Handover between hospital shifts, typically at 8am and 8pm each day.\n\nThe goal was to measurably improve the effectiveness of Clinical Handover, thereby reducing potential harm to patients.\n\nNote that all screenshots contain only fake data and all photos are heavily obfuscated where necessary.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Challenge",
+          "ruled": true,
+          "text": "##### Paper, handwriting and car parks\nInformation about patients on a ward is printed and then kept up to date with hand-written notes over the course of a shift. This can result in incomplete information handover and a loss of accountability. Examples of these confidential records are often found littered accidentally on the ground of the hospital car park.\n\n##### Bleeps and landlines\nThe existing system for managing and delegating tasks was via pagers (‘bleeps’) and landline phones. Receiving a bleep and then following up only later by landline is incredibly inefficient and leads to tasks not being actioned in a timely manner. There is no way to prioritise or delegate tasks and this could potentially lead to a dangerous situation.\n\n##### Zero to one MVP in 6 months\nThe practical challenge at the outset was to start from zero and deliver a testable MVP iPhone app within 6 months. Success in addressing the above would potentially unlock further funding to continue and extend the project further.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-photo-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-photo-2.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-photo-3.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-patient-fake.jpg"
+            }
+          ],
+          "caption": "Six direct research sessions including 30 minutes before and after Clinical Handover, morning and evening. No, that’s not a real patient - it’s a dummy used for training"
+        },
+        {
+          "type": "prose",
+          "title": "Research",
+          "ruled": true,
+          "text": "##### Walking the walk\nTeaming up with two other UX Designers we arranged six direct research sessions. These typically included 30 minutes before and after Clinical Handover, either in the morning or evening and under the guidance of multiple doctors. One of the most memorable sessions was shadowing an A&E doctor, walking what felt like miles of corridors and tackling an unending stream of cases.\n\n##### A complex ecosystem\nThe direct research sessions were only the beginning of our multi-year journey to fully understand the complex ecosystem of interactions between our potential users and their typical day-to-day work and environment.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-process-maps-01.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-02.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-03.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-04.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-process-maps-06.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-07.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-08.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-process-maps-09.jpg"
+            }
+          ],
+          "caption": "Current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution"
+        },
+        {
+          "type": "prose",
+          "title": "Solution",
+          "ruled": true,
+          "text": "##### Target process and features for MVP\nThe outputs of the research were captured as a series of current and target process maps, capturing typical problems faced by our users and indicating where intervention by an App could be a potential solution. We identified the opportunity to extend the scope of the app, adding task management and integrating it into the current vision of Clinical Handover.\n\nThe team refined the target state into a set of core features for MVP that could be feasibly built and tested within our time window.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-wireframes-01.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-02.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-03.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-04.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-wireframes-05.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-06.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-07.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-wireframes-08.jpg"
+            }
+          ],
+          "caption": "The target state was refined into a set of core features for MVP that could be feasibly built and tested within our time window, here captured in wireframes for early validation"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Building the first product\nI worked with a back-end engineer and built the initial MVP as a native Objective-C / Cocoa app for iOS. Being fully native allowed us to make proper use of push notifications and create optimised user inputs where we would need to interact with the iOS keyboard.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/hark/hark-col-6-task-entry.jpg"
+            },
+            {
+              "col": 6,
+              "vimeoId": 581240797,
+              "color": "#4baff9"
+            }
+          ],
+          "caption": "Left - custom 2D ‘Select’ input was found to be a great improvement over the default 3D ‘spinner’. Right - thanks to custom controls the user is able to fill the form purely with the keyboard"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Custom controls and libraries for better UX\nThroughout the development of the product we strove to create the best user experience, making the app as fluid and responsive as we could. This meant sometimes taking an extra step to push beyond what was available by default in our front and backend libraries.\n\nThe back-end engineer used server-side events (SSE) where we needed parts of the app to update in realtime such as the list of tasks. SSE is not supported natively in Cocoa so I wrote [an Objective-C implementation of Server-Sent Events](https://github.com/makeandship/MSServerSentEvents) which complies to the official specification and validates against the test suite in WebKit.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-app-mews-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-2.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-4.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-app-mews-5.jpg"
+            }
+          ],
+          "caption": "Working visualisations of NEWS score over time using a mixture of fake data, either random noise or sine waves to test the extremities"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Early Warning\nOur users make use of an National Early Warning Score (NEWS) which is a single number derived from the vital signs of a patient. We worked with a clinical member of the team to determine a test suite of vital signs and expected NEWS which we used to create a provably correct algorithm in the app. The NEWS score is updated in realtime, giving the user immediate feedback as the vital signs are entered.\n\n![](case-studies/hark/hark-news.jpg)  \n\n##### Next!\nThe app has three key forms for creating a task, adding patient details and creating vital signs. These were kept as compact as possible to minimise scrolling. I spent time refining the user interaction, making sure it was easy to tap 'Next' on the keyboard in each field to actually move to the next, without the cognitive overload caused by the keyboard popping in and out of view. \n\nThis was a subtle challenge and eventually required creating a few custom keyboard inputs, including a custom and more legible 2D ‘Select’ input which was found to be a great improvement over the default 3D ‘spinner’. The resulting forms can be read and filled in as quickly and efficiently as we thought possible.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-testing-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-testing-2.jpg"
+            }
+          ],
+          "caption": "Testing the universal app running on several iPhones with an iPad coordinating the tasks"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Simulation test\nThe initial MVP was a huge success. The Academic Surgeon and their team and undertook a series of simulation tests which proved significant gains in accuracy and time savings over pen, paper and bleeps. \n\nAs a result the team was successful in securing further funding and continued to improve and test features in a series of isolated sprints.\n\n##### From product to platform\nWe eventually reached far enough along our roadmap to have a universal iPhone and iPad client with realtime communication working against a secure container-based backend system.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-sketch-1.jpg"
+            },
+            {
+              "src": "case-studies/hark/hark-sketch-2.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/hark/hark-dashboard-wireframe-1.jpg"
+            },
+            {
+              "src": "portfolio/hark/hark-dashboard-cropped-2.jpg"
+            }
+          ],
+          "caption": "Insights dashboard from rough paper sketches through wireframe to visual design"
+        },
+        {
+          "type": "prose",
+          "title": "Final Design",
+          "ruled": true,
+          "text": "##### Simple identity\nI created a simple identity for the app, an icon using hands to signify handover and teamwork and forming the letter H for Hark. The app makes use of red-amber-green for status which made blue the natural choice as a primary colour.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/hark/hark-col-6-logo.jpg"
+            },
+            {
+              "src": "portfolio/hark/hark-col-6-tasks.jpg"
+            }
+          ],
+          "caption": "Left - icon using hands to signify handover and teamwork. Right - the final design realised in a fully functional native app"
+        },
+        {
+          "type": "work-row",
+          "src": "portfolio/hark/hark-screens.png",
+          "caption": "Screen captures of the final app using fake data"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Native interface gives confidence\nThe app interface is deliberately faithful to the native look of iOS, using native navigation and controls where possible. This makes the app instantly familiar to users and makes them confident that they already know how to use it.\n\n##### Turning insight into action\nWe created examples of several different real-time dashboards to show the potential power from aggregating data to give actionable insight across a ward or whole hospital.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "col": 6,
+              "vimeoId": 583890897,
+              "color": "#0072c6"
+            },
+            {
+              "col": 6,
+              "vimeoId": 583890934,
+              "color": "#4baff9"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "src": "case-studies/hark/hark-devices.jpg"
+        },
+        {
+          "type": "prose",
+          "title": "Summary",
+          "ruled": true,
+          "text": "##### Results\nPilot studies showed that Hark improved information transfer within clinical teams in 22 out of 24 key areas with response times 37% quicker than a pager.\n\n##### Reflection\nWhat started out as a relatively small project eventually scaled into a multi-year multi-platform product. The product was received with genuine interest and enthusiasm wherever it was shown. \n\nThis was a result of embedding user research and testing into the product, and having a brilliant Academic Surgeon and Product Owner on the team with a deep understanding and first-hand experience of the pain points we were solving.\n\nAlongside product development we invested significant time putting material and infrastructure in place to run a pilot study of the platform at St Mary’s Hospital in Paddington. However due to unexpected events (see Outcome below) we never had the satisfaction of seeing the pilot through.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Outcome",
+          "ruled": true,
+          "text": "The product was successfully acquired by Google DeepMind.\n"
+        },
+        {
+          "type": "case-studies-next"
+        }
+      ]
+    },
+    {
+      "path": "/case-studies",
+      "title": "Case Studies",
+      "components": [
+        {
+          "type": "work-header",
+          "title": "Case Studies"
+        },
+        {
+          "type": "case-studies-grid"
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/mykrobe",
+      "title": "Mykrobe Case Study",
+      "meta": {
+        "icon": "case-studies/mykrobe/mykrobe-icon.svg",
+        "title": "Mykrobe",
+        "subtitle": "Antimicrobial resistance and outbreak information within minutes",
+        "text": "Creating an identity and user-friendly interface for a family of digital diagnostic tools"
+      },
+      "components": [
+        {
+          "type": "prose",
+          "title": "Mykrobe",
+          "services": [
+            "Product Design",
+            "Identity",
+            "React",
+            "Electron"
+          ],
+          "text": "# Antimicrobial resistance and outbreak information within minutes\nI was Lead Product Designer in a cross-disciplinary team of 16 on a project spanning 7 years, helping to drive and influence product decisions and strategy.\n",
+          "links": [
+            {
+              "text": "Visit mykrobe.com",
+              "url": "https://www.mykrobe.com/"
+            },
+            {
+              "text": "Download",
+              "url": "https://github.com/Mykrobe-tools/mykrobe/releases"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 585698728,
+          "color": "#f6a229",
+          "caption": "Product overview showing a user browsing their sample library and viewing related samples to investigate a potential outbreak"
+        },
+        {
+          "type": "prose",
+          "title": "Overview",
+          "ruled": true,
+          "text": "##### A product with charm\nI was initially approached by a Computational Biologist at Oxford University to create an identity and user interface for a family of digital diagnostic tools which are able to identify Tuberculosis (TB) species and antibiotic resistance. \n\nThe goal was to take the [existing command-line products](https://github.com/Mykrobe-tools/mykrobe)…\n\n```\n$ mykrobe_atlas predict\\\n    --sample MDR_1\\\n    --species tb\\\n    --seq /MDR_1.fastq.gz\n```\n…and make them appealing and usable to non-specialist users. I was asked to create a product with charm.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Challenge",
+          "ruled": true,
+          "text": "##### No internet? No problem\nThe target users are non-specialist and non-technical nurses who may sometimes be working in remote areas, often using laptops and with unreliable internet connectivity. This meant the solution had to be something that could be downloaded and then subsequently used offline.\n\n##### Turning TB samples into action\nAll users would have access to digital DNA sequence files generated by lab-based sequencing machines, with some having early access to pioneering [USB-stick sized sequencer from Oxford Nanopore](https://nanoporetech.com/products/minion). \n\nGiven their sequence file, these users want to quickly know if and what strain of TB their sample contains, and if so what antibiotics it is likely susceptible to. This informs a potential course of treatment and gives an indication if there is a possible outbreak. \n\nTherefore the solution would hide away all technical complexity behind the scenes, presenting clear and actionable information to the user to inform further action.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "vimeoId": 643922017,
+              "aspect": 1.7777
+            },
+            {
+              "vimeoId": 643924166,
+              "aspect": 1.7777
+            },
+            {
+              "vimeoId": 643919488,
+              "aspect": 1.7777
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-mumbai-n95.jpg"
+            }
+          ],
+          "caption": "Footage from our research trip to Mumbai – I am pictured pre-pandemic wearing a mandatory N95 mask while observing users in a mobile TB lab"
+        },
+        {
+          "type": "prose",
+          "title": "Research",
+          "ruled": true,
+          "text": "##### UK-based users…\nI and other members of the team undertook user interviews and research initially in the UK, speaking to experts at [Oxford University](https://www.well.ox.ac.uk/), [Genomics England](https://www.genomicsengland.co.uk/) and [The European Bioinformatics Institute](https://www.ebi.ac.uk/). This was useful in informing what types of diagnostic information would be most suitable.\n\n##### …are not representative of all users\nHowever it became clear that these UK-based users were only representative of a particularly expert subset of the target user base. The project started to generate interest in India and I was part of a sub-team that undertook a field trip to TB-prevalent areas of Mumbai.\n\n![](case-studies/mykrobe/mykrobe-lab.jpg)\n\nWe were able to visit a range of sites and talk to a range of potential users working in every situation, from dedicated hospitals to temporary mobile labs.\n\n##### Adapting the product to fit\nWe were able to observe and capture existing workflows to help understand where we could adapt our product to fit seamlessly into day-to-day operations.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Solution",
+          "ruled": true,
+          "text": "##### Start at the beginning\nI started with a lightweight identity design exercise where we arrived at a solution that satisfied the requirements for charm and animation by using simple forms in a bold and colourful way. The visual language was derived from images of lab samples. \n\n![](case-studies/mykrobe/mykrobe-logo-sketches.jpg)\n\n##### Planning the initial solution\nThe next logical step was to agree on the content and screens for an initial solution. This was achieved using a mixture of screen mapping coupled with low-fidelity wireframes which contained the information derived from the command-line tool which dictated the feature-set.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-1.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-2.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-3.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-4.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-5.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-6.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-7.png"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes-8.png"
+            }
+          ],
+          "caption": "Initial low-fidelity wireframes capture the functionality and information derived from the command-line tool which dictated the feature-set"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Extending the visual language\nThe identity and visual language could then be applied to the wireframes. The team reached agreement on a solution which was visually clean and easy to read, while incorporating charm via touches of animation and iconography.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/mykrobe/mykrobe-app-1.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-app-2.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-app-3.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-app-4.jpg"
+            }
+          ],
+          "caption": "Identity and visual language applied to create the first MVP prototype ready for testing"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Identifying the right technology\nThe requirement to work offline and be cross-platform led to a discussion of possible technical solutions such as building multiple clients or using [QT](https://www.qt.io/), both of which would carry a large initial cost plus ongoing maintenance burden. \n\nSince the interface was predominantly text-based I suggested it might be a good candidate for a relatively new technology called [Electron](https://www.electronjs.org/), which provides a way to develop a cross-platform application with web technologies (HTML/CSS/JS) which also works offline.\n\n##### Proving the technology\nI created an initial prototype with the goal of having the minimum set of features required to prove Electron as a solution. The developer of the tool worked with me to adjust the input and output of the tool. Passing `--format json` causes standard output to be in JSON which is more easily consumed by software. \n\n```\n$ mykrobe_atlas predict\\\n    --sample MDR_1\\\n    --species tb\\\n    --seq /MDR_1.fastq.gz\\ \n    --format json\n```\n\nThe final prototype took the form of a fully signed app containing the command-line tool, proving that the front-end was able to communicate with the tool to analyse a sequence and then display the results to the end user. We were also able to build and run the same app on Linux and Windows, making it more attractive in terms of effort to build and maintain over the long term.\n\n##### Building the first product\nThe visual designs were next implemented in the prototype, with added animations added to the splash screen and simple transitions between screens adding to the charm. We added drag-and-drop support which means that with the final production app users can simply drag a DNA sequence file into the app and then view the results within a couple of minutes. \n\nThe product owner gave a memorable real-time demo of this in Mumbai which received many gasps with the audience wondering how this was possible.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "vimeoId": 643953988,
+              "color": "#6b6a6c"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-demo-1.jpg"
+            }
+          ],
+          "caption": "The product owner giving a memorable real-time demo in Mumbai which received many gasps with the audience wondering how this was possible"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Turning a product into a platform\nThe initial app was well received by end users and this played a small part in the overall project securing further funding. The vision was extended to create not just a standalone app, but a whole online platform that would allow users to create their own secure online library of sequence data, with potential to collaborate anonymously with others to identify similar samples and potential outbreaks.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-2.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-3.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-5.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-6.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-7.jpg"
+            },
+            {
+              "src": "case-studies/mykrobe/mykrobe-wireframes2-8.jpg"
+            }
+          ],
+          "caption": "Small snapshot of what we learned in terms of pains, workflows, users and use cases"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "We used what we had learned from users in Mumbai to map out the first iteration of the platform. Wireframes were not easily relatable to our end users, so we took the extra step to create fully realised screens before conducting user testing. This gave us much higher engagement and better feedback from our target users, allowing us to iterate and refine the target product state.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "mykrobe-cluster",
+              "col": 6,
+              "src": "mst-1"
+            },
+            {
+              "type": "mykrobe-cluster",
+              "col": 6,
+              "src": "mst-2"
+            }
+          ],
+          "caption": "Minimum-spanning tree visualisation of sample relatedness using a force-directed graph running live in React and HTML Canvas - click and drag!"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Complex visualisations\nOne of the most challenging parts of the platform from a product design perspective is visualising the relatedness of different samples. This was initially achieved using a [phylogenetic tree](https://phylocanvas.org/).\n\nOne of the scientific team members invented a better solution using a hand-drawn node graph which has a significantly lower density of data making it easier to read. To realise this idea, I created a series of prototypes using static data in various types of force-directed graph visualisations and with different layout strategies. Following a cycle of team reviews and prototype refinements we eventually landed on a satisfying visualisation generated in the browser.\n\n##### Tree data structure\nI was then able to work with one of the back-end developers to arrive on a JSON data structure which could be generated dynamically via Neo4J. The resulting visualisation replaced the phylogenetic tree.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Final Design",
+          "ruled": true,
+          "text": "##### Web and desktop platform\nThe final design works across both the offline desktop app and the web-based platform.\n"
+        },
+        {
+          "type": "mykrobe-animation",
+          "caption": "The real-time animation (HTML Canvas for Multiply composition) while the app is running analysis, contributing to the perceived charm of the product"
+        },
+        {
+          "type": "work-row",
+          "src": "portfolio/mykrobe/mykrobe-comparison.jpg",
+          "caption": "Detail showing a user comparing the similarity of samples simultaneously on a geographic map, phylogenetic tree and over time"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-front.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-patient-results.png"
+            }
+          ],
+          "caption": "Landing page showing marketing features on the left, detail view of a fictional patient on the right"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Component library leads the way for design system\nI worked with other front-end engineers to build the user interface using [React](https://reactjs.org/), [Redux](https://redux.js.org/) and [Redux Saga](https://redux-saga.js.org/) with the component library documented live in [Storybook](https://storybook.js.org/). This is fully tokenised and will form a solid starting point for a full design system when the appropriate time arises in future. \n\nI refactored the Electron app to use the component library, giving a consistent appearance and reducing the effort required for ongoing maintenance. \n\n##### Babel plugin allows shared code base\nI wrote a simple [Babel](https://babeljs.io/) plugin which automatically modifies `import` and `require` to resolve sources with a with an `.electron` suffix when bundling for Electron, e.g. `index.electron.js` or `styles.electron.scss`. This allows the Electron and web-based apps to share the same code base, diverging when needed for specific functionality.\n\n##### Bridging the gap\nI worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).\n"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 584226493,
+          "color": "#f7f6f1",
+          "caption": "Component library captured as React components in Storybook, a solid starting point for a full design system in future"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 585698728,
+          "color": "#f6a229"
+        },
+        {
+          "type": "prose",
+          "title": "Summary",
+          "ruled": true,
+          "text": "##### TB, meet COVID-19\nWhile we were focused on preparing the platform for its first real-world pilot in Argentina, something called COVID-19 stole the news agenda. Many TB labs were forced to change their focus to analysing COVID-19 during the pandemic. This made it impossible to undertake the final pilot and user testing that we had planned.\n\nOne other problem was unique to this particular project - the technology is so advanced that none of our users were able to easily grasp what it could do or specifically what they might use it for. This meant we had to push the fidelity of our testable prototypes further than expected so that users would be able to engage with them in a useful way unlocking the necessary insight.\n\n##### Reflection\nWhat started out as a small identity and UI project eventually scaled into a multi-year multi-platform product. The other team members were humble, bright and inspiring and I learned so much about pathogens and diagnostics, as well as having my eyes opened to the realities of every day existence in other parts of the world. I am a named author on the research paper published in [Nature Communications](https://www.nature.com/articles/ncomms10063) as an acknowledgment of my overall contribution.\n\nIt is still hard to believe that you can put a swab sample in a fancy USB stick then see a complete DNA analysis on your laptop screen within a couple of minutes. It was an honour and privilege to work with people who make such breakthroughs possible.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Outcome",
+          "ruled": true,
+          "text": "Post-pandemic, the platform has seen renewed interest and investment from a large global technology firm. It will be migrated onto their platform where it can be scaled to be used for COVID-19 surveillance alongside TB.\n",
+          "links": [
+            {
+              "text": "Visit mykrobe.com",
+              "url": "https://www.mykrobe.com/"
+            },
+            {
+              "text": "Download",
+              "url": "https://github.com/Mykrobe-tools/mykrobe/releases"
+            }
+          ]
+        },
+        {
+          "type": "case-studies-next"
+        }
+      ]
+    },
+    {
+      "path": "/case-studies/sps",
+      "title": "NHS England Case Study",
+      "meta": {
+        "icon": "case-studies/sps/sps-icon.svg",
+        "title": "NHS England",
+        "subtitle": "The first stop for professional medicines advice",
+        "text": "Transforming four distinct entities into a single new digital public service while thinking like a tax payer"
+      },
+      "components": [
+        {
+          "type": "prose",
+          "title": "NHS England",
+          "text": "# Creating a public sector service that draws together professional advice for pharmacists, GPs and clinicians\nI was Lead Product Designer in a cross-disciplinary team on a project spanning 7 years, helping to drive and influence product decisions and strategy while thinking like a tax payer.\n",
+          "links": [
+            {
+              "text": "Visit www.sps.nhs.uk",
+              "url": "https://www.sps.nhs.uk/"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+            }
+          ],
+          "caption": "Product overview showing a topic page with a proper editorial hierarchy, and a complex article collection with automatic subheading navigation"
+        },
+        {
+          "type": "prose",
+          "title": "Overview",
+          "ruled": true,
+          "text": "##### This service does not (yet) exist\nFollowing a successful procurement I was part of a the team tasked with transforming four distinct services into a new single entity, delivering a single digital platform for communication speaking as part of NHS England.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Challenge",
+          "ruled": true,
+          "text": "##### Where is our stuff?\nThe four distinct services had an existing repository of high quality content, unfortunately dispersed throughout 17 different protected systems. \n\n##### Evolving structures and hierarchies\nThe first practical challenge would be to gather the existing material together into one place, then make sure it is easily findable with some structure and hierarchy that would be able to evolve over time as the service evolves.\n\n##### “It mustn’t look expensive”\nDuring some of our early conversations and workshops it became clear that we must be respectful to the taxpayer, everything should be frugal and deliver maximum possible value. In terms of aesthetics this ruled out the use of any imagery, instead the challenge was to focus only on competent use of typography, space and hierarchy.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Research",
+          "ruled": true,
+          "text": "##### Who are we?\nAs a brand new service bringing together different stakeholders for the first time, it was important to join the dots and establish a shared vision. We ran a lightweight vision and values workshop during which the team established their purpose, vision, tone of voice and strap-line. We identified a range of potential users that would provide insight to shape the first version of the service.\n\n##### Zero to one\nFor the very first version of the site we commissioned an approved gov.uk UX agency to undertake the extremely time consuming task of interviewing a range of stakeholders and potential users. This gave an initial site map and structure which we used for launch.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/sps/sps-user-testing-1.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-user-testing-2.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-user-testing-3.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/sps/sps-user-testing-4.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-user-testing-5.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-user-testing-6.jpg"
+            }
+          ],
+          "caption": "A regular working pattern of user testing was established to understand pain points and validate solutions"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Regular user research\nAfter allowing the initial site to grow its audience we began to establish a regular working pattern of user testing to understand pain points and validate solutions. This was conducted both in-person and remotely via screen sharing. \n\n##### Where is your stuff?\nOne key insight was that the first version of the site did not match many expert users mental model of the service. This group still thought of SPS as a document filing repository (one user even referred to navigation as ‘subfolders’). \n\nUsers from a wider group such as GPs and dentists had a pre-existing idea of what content was on the site and thought it would not meet their needs, in spite of it actually having a lot of relevant expert advice specifically tailored for them. \n\nFollowing this research we were able to compile evidence, recommendations and planning for solutions across four key areas: Navigating, Finding, Discovering and Content.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/sps/sps-postits-4.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-postits-5.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-postits-6.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/sps/sps-postits-1.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-postits-2.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-postits-3.jpg"
+            }
+          ],
+          "caption": "Short, medium, long-term roadmap derived from the output of a workshop that uncovered pain points and insight into changing aspirations for the service"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Where are we going?\nA second workshop was provided an opportunity to bring a range of stakeholder and users together from all levels of the service to share experiences and understand whether their aspirations had changed since launch. We conducted a range of exercises to find out.       \n\n##### How will we get there?\nThe outputs of the workshops were combined with the results of the most recent user research to form a short, medium and long-term roadmap for the service.\n"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "case-studies/sps/sps-site-map-04.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-site-map-05.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-site-map-06.jpg"
+            },
+            {
+              "src": "case-studies/sps/sps-site-map-07.jpg"
+            }
+          ],
+          "caption": "An initial site map and structure which we used for launch based on research interviewing a range of stakeholders and potential users"
+        },
+        {
+          "type": "prose",
+          "title": "Solution",
+          "ruled": true,
+          "text": "##### First iteration of the service\nThe job of the first iteration of the service was to gather the existing material together into one place, making sure it was easily findable with a structure and hierarchy that would be able to evolve over time as the service evolves. We used a customised open-source CMS with a user-friendly admin interface. The documents and other resources were safe in one single place, but as a first version we did not know if the resulting service would be popular, or how it would be used.\n\n##### Second iteration\nAfter an initial bedding in period and following the workshop outlined above we uncovered several key insights. The service was well used, but users found it very difficult to find content or in fact really discovery what content was on offer by SPS. By now they were starting to publish more web-native HTML article content and starting to see the down-sides of their legacy Word and PDF documents. These legacy documents were hampering search and discoverability, as well as undermining user confidence in finding the most up-to-date material.\n\n##### Searching and finding\nBased on user research and observation, we changed the way that users were able to search and ‘drill down’ to find the specific content or themes they were interested in. This was achieved with a mixture of topic-based filtering and integrating search within site content and themes. This optimised the path for users who would first find a broad topic area they were looking for, then being able to search more specifically and easily within.\n"
+        },
+        {
+          "type": "sps-collection",
+          "caption": "Collection blocks render a proper editorial hierarchy of articles and are great for finding and discovering content. Try clicking the icons"
+        },
+        {
+          "type": "prose",
+          "ruled": true,
+          "text": "##### Discoverability, serendipity\nWe also addressed a long-standing problem of users not knowing or realising what content was on offer, e.g. with dentists or GPs frequently thinking SPS was for more of a pharmacy-specific setting and not for them. Now that content was starting to be written using our HTML authoring tools we knew we would be more able to create themed collections of content as well as related articles.\n\nWe were able to rework the main index pages using themed blocks of content with an editorial hierarchy which is automated by default but completely customisable by authors. This created a powerful system which renders pages where it is easy to find themes and specific articles, and discover a wider range of what SPS has to offer.\n"
+        },
+        {
+          "type": "work-row",
+          "vimeoId": 581720984,
+          "color": "#009639",
+          "caption": "The final identity uses a symbol which felt like it had discovered rather than designed"
+        },
+        {
+          "type": "prose",
+          "title": "Final Design",
+          "ruled": true,
+          "text": "##### Identity\nThe final identity uses a symbol which felt like it had discovered rather than designed, with a timeless simplicity that looks like it has existed for decades. This symbol brings together the attributes of medicines, caregiver and expert.\n\n![](case-studies/sps/sps-elements.jpg)\n\n##### Typography, space and hierarchy\nThe web design focuses on content and text first, with sparing use of iconography and absolutely zero illustration or imagery. This has meant careful use of grid system, spacing, tones, type sizes and sparing use of colour to ensure that the content-heavy site has a clear hierarchy with deliberate areas of space to provide breathing room and prevent it becoming overwhelming.\n"
+        },
+        {
+          "type": "scrolling-browser",
+          "maskSrc": "portfolio/sps/browser-mask.svg",
+          "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+            },
+            {
+              "type": "scrolling-browser-cell",
+              "mask": "col-6",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "src": "portfolio/sps/sps-col-6-system.jpg"
+            },
+            {
+              "src": "portfolio/sps/sps-col-6-screens.jpg"
+            }
+          ],
+          "caption": "Content-heavy site has a clear hierarchy with deliberate areas of space to provide breathing room and prevent it becoming overwhelming"
+        },
+        {
+          "type": "prose",
+          "title": "Summary",
+          "ruled": true,
+          "text": "##### COVID-19\nThe updated blocks-based system gave the site authors increased confidence and freedom. We are able to work with them during the pandemic to adjust and create better tooling around creating and navigating article series and collections. This allowed the team to create a central national repository of COVID-19 content with a full audit trail and change history. This played a crucial role in disseminating information on the handling of vaccines and enabling the set up of the national vaccination program.\n"
+        },
+        {
+          "type": "prose",
+          "title": "Outcome",
+          "ruled": true,
+          "text": "The service is increasingly popular with more than half a million monthly active users in England.\n",
+          "links": [
+            {
+              "text": "Visit www.sps.nhs.uk",
+              "url": "https://www.sps.nhs.uk/"
+            }
+          ]
+        },
+        {
+          "type": "case-studies-next"
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "title": "Contact",
+      "components": [
+        {
+          "type": "work-header",
+          "title": "Contact",
+          "subtitle": "If you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK.\n",
           "links": [
             {
               "text": "Email",
@@ -98,24 +957,37 @@
     {
       "path": "/",
       "title": null,
-      "description": "Freelance designer and developer based in London, UK. Available to design and develop apps or websites.",
+      "description": "Freelance Product Designer based in London, UK. Available to design and develop apps or websites.",
       "fill": {
         "type": "word-clock-fill",
         "title": true
       },
       "components": [
         {
+          "type": "work-header",
+          "ruled": true,
+          "title": "Portfolio"
+        },
+        {
           "type": "work-grid"
+        },
+        {
+          "type": "work-header",
+          "ruled": true,
+          "title": "Case Studies"
+        },
+        {
+          "type": "case-studies-grid"
         }
       ]
     },
     {
-      "path": "/work/fathm",
+      "path": "/portfolio/fathm",
       "title": "Fathm",
       "subtitle": "Time tracking app",
       "thumbnails": [
         {
-          "src": "work/fathm/fathm-thumbnail-donut.jpg"
+          "src": "portfolio/fathm/fathm-thumbnail-donut.jpg"
         }
       ],
       "components": [
@@ -150,10 +1022,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/fathm/fathm-col-6-exploded-1.png"
+              "src": "portfolio/fathm/fathm-col-6-exploded-1.png"
             },
             {
-              "src": "work/fathm/fathm-col-6-exploded-2.png"
+              "src": "portfolio/fathm/fathm-col-6-exploded-2.png"
             }
           ]
         },
@@ -170,7 +1042,7 @@
           "columns": [
             {
               "col": 6,
-              "src": "work/fathm/fathm-col-6-fragmented.jpg"
+              "src": "portfolio/fathm/fathm-col-6-fragmented.jpg"
             },
             {
               "col": 6,
@@ -192,11 +1064,11 @@
           "columns": [
             {
               "col": 6,
-              "src": "work/fathm/fathm-col-6-icons.png"
+              "src": "portfolio/fathm/fathm-col-6-icons.png"
             },
             {
               "col": 6,
-              "src": "work/fathm/fathm-icon-construction.svg"
+              "src": "portfolio/fathm/fathm-icon-construction.svg"
             }
           ]
         },
@@ -234,10 +1106,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/fathm/fathm-col-6-share-2.png"
+              "src": "portfolio/fathm/fathm-col-6-share-2.png"
             },
             {
-              "src": "work/fathm/fathm-col-6-share-1.png"
+              "src": "portfolio/fathm/fathm-col-6-share-1.png"
             }
           ]
         },
@@ -255,26 +1127,31 @@
       ]
     },
     {
-      "path": "/work/hark",
+      "path": "/portfolio/hark",
       "title": "Hark",
       "subtitle": "Clinical task management platform",
       "thumbnails": [
         {
-          "src": "work/hark/hark-thumbnail-logo.jpg"
+          "src": "portfolio/hark/hark-thumbnail-logo.jpg"
         },
         {
-          "src": "work/hark/hark-thumbnail-tasks.jpg"
+          "src": "portfolio/hark/hark-thumbnail-tasks.jpg"
         }
       ],
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover."
+          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover.",
+          "links": [
+            {
+              "text": "Read full case study",
+              "url": "/case-studies/hark"
+            }
+          ]
         },
         {
           "type": "work-row",
-          "vimeoId": 583718922,
-          "color": "#0072c6"
+          "src": "case-studies/hark/hark-devices.jpg"
         },
         {
           "type": "work-row",
@@ -303,10 +1180,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/hark/hark-col-6-tasks.jpg"
+              "src": "portfolio/hark/hark-col-6-tasks.jpg"
             },
             {
-              "src": "work/hark/hark-col-6-task-entry.jpg"
+              "src": "portfolio/hark/hark-col-6-task-entry.jpg"
             }
           ]
         },
@@ -320,11 +1197,11 @@
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-dashboard-cropped-2.jpg"
+          "src": "portfolio/hark/hark-dashboard-cropped-2.jpg"
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-screens.png"
+          "src": "portfolio/hark/hark-screens.png"
         },
         {
           "type": "work-row",
@@ -338,16 +1215,16 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/hark/hark-col-6-logo.jpg"
+              "src": "portfolio/hark/hark-col-6-logo.jpg"
             },
             {
-              "src": "work/hark/hark-col-6-ipad.jpg"
+              "src": "portfolio/hark/hark-col-6-ipad.jpg"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/hark/hark-logo-construction.svg"
+          "src": "portfolio/hark/hark-logo-construction.svg"
         },
         {
           "type": "work-row",
@@ -376,7 +1253,13 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Hark was acquired by Google DeepMind."
+              "text": "Hark was acquired by Google DeepMind.",
+              "links": [
+                {
+                  "text": "Read full case study",
+                  "url": "/case-studies/hark"
+                }
+              ]
             }
           ]
         },
@@ -386,21 +1269,25 @@
       ]
     },
     {
-      "path": "/work",
-      "title": "Work",
+      "path": "/portfolio",
+      "title": "Portfolio",
       "components": [
+        {
+          "type": "work-header",
+          "title": "Portfolio"
+        },
         {
           "type": "work-grid"
         }
       ]
     },
     {
-      "path": "/work/minimalfolio",
+      "path": "/portfolio/minimalfolio",
       "title": "Minimal Folio",
       "subtitle": "Personal portfolio app",
       "thumbnails": [
         {
-          "src": "work/minimalfolio/minimalfolio-thumbnail-logo.jpg"
+          "src": "portfolio/minimalfolio/minimalfolio-thumbnail-logo.jpg"
         }
       ],
       "components": [
@@ -431,7 +1318,7 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-thumbnails.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-thumbnails.jpg"
             }
           ]
         },
@@ -460,10 +1347,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-ipad.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-ipad.jpg"
             },
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-ipad-selection.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-ipad-selection.jpg"
             }
           ]
         },
@@ -479,10 +1366,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-tutorial.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-tutorial.jpg"
             },
             {
-              "src": "work/minimalfolio/minimalfolio-col-6-exploded.jpg"
+              "src": "portfolio/minimalfolio/minimalfolio-col-6-exploded.jpg"
             }
           ]
         },
@@ -506,18 +1393,24 @@
       ]
     },
     {
-      "path": "/work/mykrobe",
+      "path": "/portfolio/mykrobe",
       "title": "Mykrobe",
       "subtitle": "TB resistance and outbreak platform",
       "thumbnails": [
         {
-          "src": "work/mykrobe/mykrobe-thumbnail-logo.jpg"
+          "src": "portfolio/mykrobe/mykrobe-thumbnail-logo.jpg"
         }
       ],
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform."
+          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.",
+          "links": [
+            {
+              "text": "Read full case study",
+              "url": "/case-studies/mykrobe"
+            }
+          ]
         },
         {
           "type": "mykrobe-animation"
@@ -537,7 +1430,7 @@
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-comparison.jpg"
+          "src": "portfolio/mykrobe/mykrobe-comparison.jpg"
         },
         {
           "type": "work-row",
@@ -553,14 +1446,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
-              "src": "work/mykrobe/mykrobe-front.png"
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-front.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/mykrobe/col-6-browser-mask.svg",
-              "src": "work/mykrobe/mykrobe-patient-results.png"
+              "maskSrc": "portfolio/mykrobe/col-6-browser-mask.svg",
+              "src": "portfolio/mykrobe/mykrobe-patient-results.png"
             }
           ]
         },
@@ -610,28 +1503,34 @@
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-logo-construction.svg"
+          "src": "portfolio/mykrobe/mykrobe-logo-construction.svg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "src": "work/mykrobe/mykrobe-6-col-icon-construction.svg"
+              "src": "portfolio/mykrobe/mykrobe-6-col-icon-construction.svg"
             },
             {
-              "src": "work/mykrobe/mykrobe-6-col-icon.svg"
+              "src": "portfolio/mykrobe/mykrobe-6-col-icon.svg"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/mykrobe/mykrobe-cropped.jpg"
+          "src": "portfolio/mykrobe/mykrobe-cropped.jpg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "text": "The platform is being expanded to become part of global COVID-19 surveillance."
+              "text": "The platform is being expanded to become part of global COVID-19 surveillance.",
+              "links": [
+                {
+                  "text": "Read full case study",
+                  "url": "/case-studies/mykrobe"
+                }
+              ]
             }
           ]
         },
@@ -641,18 +1540,24 @@
       ]
     },
     {
-      "path": "/work/sps",
+      "path": "/portfolio/sps",
       "title": "NHS England",
       "subtitle": "Specialist Pharmacy Service",
       "thumbnails": [
         {
-          "src": "work/sps/sps-thumbnail-logo.jpg"
+          "src": "portfolio/sps/sps-thumbnail-logo.jpg"
         }
       ],
       "components": [
         {
           "type": "work-header",
-          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians."
+          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.",
+          "links": [
+            {
+              "text": "Read full case study",
+              "url": "/case-studies/sps"
+            }
+          ]
         },
         {
           "type": "work-row",
@@ -661,8 +1566,8 @@
         },
         {
           "type": "scrolling-browser",
-          "maskSrc": "work/sps/browser-mask.svg",
-          "src": "work/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
+          "maskSrc": "portfolio/sps/browser-mask.svg",
+          "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png"
         },
         {
           "type": "work-row",
@@ -670,14 +1575,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
-              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-complex-article-1-as-expected-1-snap.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
-              "src": "work/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
+              "src": "portfolio/sps/blocks-test-js-blocks-when-logged-out-complex-pages-and-articles-renders-search-template-as-expected-1-snap.png"
             }
           ]
         },
@@ -704,10 +1609,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-system.jpg"
+              "src": "portfolio/sps/sps-col-6-system.jpg"
             },
             {
-              "src": "work/sps/sps-col-6-screens.jpg"
+              "src": "portfolio/sps/sps-col-6-screens.jpg"
             }
           ]
         },
@@ -717,22 +1622,22 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
               "system": [
-                "work/sps/sps-design-system-whole_01.png",
-                "work/sps/sps-design-system-whole_02.png",
-                "work/sps/sps-design-system-whole_03.png",
-                "work/sps/sps-design-system-whole_04.png"
+                "portfolio/sps/sps-design-system-whole_01.png",
+                "portfolio/sps/sps-design-system-whole_02.png",
+                "portfolio/sps/sps-design-system-whole_03.png",
+                "portfolio/sps/sps-design-system-whole_04.png"
               ]
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/sps/col-6-browser-mask.svg",
+              "maskSrc": "portfolio/sps/col-6-browser-mask.svg",
               "system": [
-                "work/sps/sps-design-system-whole_05.png",
-                "work/sps/sps-design-system-whole_06.png",
-                "work/sps/sps-design-system-whole_02.png"
+                "portfolio/sps/sps-design-system-whole_05.png",
+                "portfolio/sps/sps-design-system-whole_06.png",
+                "portfolio/sps/sps-design-system-whole_02.png"
               ]
             }
           ]
@@ -741,10 +1646,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-icon-construction.svg"
+              "src": "portfolio/sps/sps-col-6-icon-construction.svg"
             },
             {
-              "src": "work/sps/sps-col-6-icons.svg"
+              "src": "portfolio/sps/sps-col-6-icons.svg"
             }
           ]
         },
@@ -752,22 +1657,28 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/sps/sps-col-6-leaflet-1.png"
+              "src": "portfolio/sps/sps-col-6-leaflet-1.png"
             },
             {
-              "src": "work/sps/sps-col-6-leaflet-2.png"
+              "src": "portfolio/sps/sps-col-6-leaflet-2.png"
             }
           ]
         },
         {
           "type": "work-row",
-          "src": "work/sps/sps-logo-construction.svg"
+          "src": "portfolio/sps/sps-logo-construction.svg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "text": "The service is increasingly popular with more than half a million monthly active users in England."
+              "text": "The service is increasingly popular with more than half a million monthly active users in England.",
+              "links": [
+                {
+                  "text": "Read full case study",
+                  "url": "/case-studies/sps"
+                }
+              ]
             }
           ]
         },
@@ -777,12 +1688,12 @@
       ]
     },
     {
-      "path": "/work/theguardian",
+      "path": "/portfolio/theguardian",
       "title": "The Guardian",
       "subtitle": "Next gen app prototypes",
       "thumbnails": [
         {
-          "src": "work/theguardian/theguardian-thumbnail-gp1.jpg"
+          "src": "portfolio/theguardian/theguardian-thumbnail-gp1.jpg"
         }
       ],
       "components": [
@@ -819,8 +1730,8 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6-phone",
-              "maskSrc": "work/theguardian/theguardian-col-6-phone-mask.png",
-              "src": "work/theguardian/timeline.png"
+              "maskSrc": "portfolio/theguardian/theguardian-col-6-phone-mask.png",
+              "src": "portfolio/theguardian/timeline.png"
             },
             {
               "col": 6,
@@ -841,10 +1752,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/theguardian/theguardian-col-6-exploded-1.png"
+              "src": "portfolio/theguardian/theguardian-col-6-exploded-1.png"
             },
             {
-              "src": "work/theguardian/theguardian-col-6-exploded-2.png"
+              "src": "portfolio/theguardian/theguardian-col-6-exploded-2.png"
             }
           ]
         },
@@ -860,7 +1771,7 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/theguardian/theguardian-col-6-elements.jpg"
+              "src": "portfolio/theguardian/theguardian-col-6-elements.jpg"
             },
             {
               "col": 6,
@@ -898,12 +1809,12 @@
       ]
     },
     {
-      "path": "/work/visioncoach",
+      "path": "/portfolio/visioncoach",
       "title": "Vision Coach",
       "subtitle": "Eye care platform",
       "thumbnails": [
         {
-          "src": "work/visioncoach/vision-coach-thumbnail-logo.jpg"
+          "src": "portfolio/visioncoach/vision-coach-thumbnail-logo.jpg"
         }
       ],
       "components": [
@@ -928,10 +1839,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/visioncoach/vision-coach-col-6-splash.jpg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-splash.jpg"
             },
             {
-              "src": "work/visioncoach/vision-coach-col-6-dash.jpg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-dash.jpg"
             }
           ]
         },
@@ -945,8 +1856,8 @@
         },
         {
           "type": "scrolling-browser",
-          "maskSrc": "work/visioncoach/browser-mask.svg",
-          "src": "work/visioncoach/LMR-6_Page_01.png"
+          "maskSrc": "portfolio/visioncoach/browser-mask.svg",
+          "src": "portfolio/visioncoach/LMR-6_Page_01.png"
         },
         {
           "type": "work-row",
@@ -954,14 +1865,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/LMR-6_Page_10.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/LMR-6_Page_10.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/LMR-6_Page_11.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/LMR-6_Page_11.png"
             }
           ]
         },
@@ -979,14 +1890,14 @@
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/vision-coach-clinician-dashboard.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/vision-coach-clinician-dashboard.png"
             },
             {
               "type": "scrolling-browser-cell",
               "mask": "col-6",
-              "maskSrc": "work/visioncoach/col-6-browser-mask.svg",
-              "src": "work/visioncoach/vision-coach-clinician-detail.png"
+              "maskSrc": "portfolio/visioncoach/col-6-browser-mask.svg",
+              "src": "portfolio/visioncoach/vision-coach-clinician-detail.png"
             }
           ]
         },
@@ -1000,20 +1911,20 @@
         },
         {
           "type": "work-row",
-          "src": "work/visioncoach/vision-coach-patient-screens.png"
+          "src": "portfolio/visioncoach/vision-coach-patient-screens.png"
         },
         {
           "type": "work-row",
-          "src": "work/visioncoach/vision-coach-logo-construction.svg"
+          "src": "portfolio/visioncoach/vision-coach-logo-construction.svg"
         },
         {
           "type": "work-row",
           "columns": [
             {
-              "src": "work/visioncoach/vision-coach-col-6-icons.svg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-icons.svg"
             },
             {
-              "src": "work/visioncoach/vision-coach-col-6-icon-construction.svg"
+              "src": "portfolio/visioncoach/vision-coach-col-6-icon-construction.svg"
             }
           ]
         },
@@ -1023,12 +1934,12 @@
       ]
     },
     {
-      "path": "/work/wordclock",
+      "path": "/portfolio/wordclock",
       "title": "Word Clock",
       "subtitle": "Open source digital art work",
       "thumbnails": [
         {
-          "src": "work/wordclock/wordclock-thumbnail.jpg"
+          "src": "portfolio/wordclock/wordclock-thumbnail.jpg"
         }
       ],
       "components": [
@@ -1071,10 +1982,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/wordclock/wordclock-col-6-preferences.png"
+              "src": "portfolio/wordclock/wordclock-col-6-preferences.png"
             },
             {
-              "src": "work/wordclock/wordclock-col-6-preferences-exploded.png"
+              "src": "portfolio/wordclock/wordclock-col-6-preferences-exploded.png"
             }
           ]
         },
@@ -1109,10 +2020,10 @@
           "type": "work-row",
           "columns": [
             {
-              "src": "work/wordclock/wordclock-col-6-book-1.jpg"
+              "src": "portfolio/wordclock/wordclock-col-6-book-1.jpg"
             },
             {
-              "src": "work/wordclock/wordclock-col-6-book-2.jpg"
+              "src": "portfolio/wordclock/wordclock-col-6-book-2.jpg"
             }
           ]
         },

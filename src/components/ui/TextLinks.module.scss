@@ -9,8 +9,8 @@
 
 .link {
   composes: global(me-sm-3);
-  composes: global(mb-sm-0);
-  composes: global(mb-2);
+  composes: global(mb-0);
+  // composes: global(mb-2);
   display: flex;
   .linkIcon {
     margin-left: 0.25em;

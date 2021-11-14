@@ -1,0 +1,5 @@
+title: Case Studies
+components:
+  - type: work-header
+    title: Case Studies
+  - type: case-studies-grid
