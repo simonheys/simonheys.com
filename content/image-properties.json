@@ -49,9 +49,9 @@
     "color": "#4cb0fa"
   },
   "case-studies/hark/hark-icon.svg": {
-    "hash": "761f98b67824f1e05caabe417627d612",
-    "height": 720,
-    "width": 720,
+    "hash": "2e3be57d3c743f50894843cda7a3d18a",
+    "height": 1024,
+    "width": 1024,
     "type": "svg",
     "color": "#000000"
   },
@@ -343,7 +343,7 @@
     "color": "#a68d85"
   },
   "case-studies/mykrobe/mykrobe-icon.svg": {
-    "hash": "d33ab53734fff0cd7e77107e7e05d8ed",
+    "hash": "88695335b24d91605e5451bf10fe964d",
     "height": 1024,
     "width": 1024,
     "type": "svg",
@@ -483,7 +483,7 @@
     "color": "#f4f4f4"
   },
   "case-studies/sps/sps-icon.svg": {
-    "hash": "4ff9e178e2141a98c920cac118bff046",
+    "hash": "37d34110dcc4e336047a0c840a3d69a5",
     "height": 1024,
     "width": 1024,
     "type": "svg",
