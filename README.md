@@ -23,7 +23,7 @@ I designed and built the site entirely in browser, aiming for a lightweight desi
 
 Pages and their components are described in [`/src/content`](/src/content) as YAML and Markdown for legibility and ease of editing. For compatibility with Next.js the YAML is converted to monolithic JSON at build time.
 
-One single page source [`/src/pages/[[...slug]].js`](/src/pages/[[...slug]].js) renders each page according to the slug and the components described in the YAML. The component mappings are in [`/src/components/Components.js`](/src/components/Components.js)
+One single page source [`/src/pages/[[...slug]].tsx`](/src/pages/[[...slug]].tsx) renders each page according to the slug and the components described in the YAML. The component mappings are in [`/src/components/Components.tsx`](/src/components/Components.tsx)
 
 A simple API can be found in [`/src/pages/api/words`](/src/pages/api/words) which provides an index and serves the json configuration files for Word Clock.
 
