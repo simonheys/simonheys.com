@@ -1,5 +1,3 @@
 title: Portfolio
 components:
-  - type: work-header
-    title: Portfolio
   - type: work-grid
