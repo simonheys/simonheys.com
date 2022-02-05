@@ -151,7 +151,7 @@ export const getComponentsForPath = (
 ): Component[] => {
   const normalisedPath = normalisePath(path);
   const page = getPageForPath(normalisedPath, content);
-  const pageComponents = page ? page.components : [];
+  const pageComponents = page ? page.components || [] : [];
   const components = [
     ...content.all.before,
     ...pageComponents,

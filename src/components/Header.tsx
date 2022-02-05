@@ -97,7 +97,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         style={navigationContainerStyle}
       >
         <div ref={ref} className={"container-fluid"}>
-          <div className={"row py-2 pb-md-3"}>
+          <div className={"row py-4 py-md-5"}>
             <div className={"col-6"}>
               <h1 data-tid={"title"} className={styles.title}>
                 <LinkA href="/">Simon Heys</LinkA>
@@ -108,8 +108,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
                 {links.map((path, index) => {
                   const page = getPageForPath(path);
                   const { title } = page;
-                  const active =
-                    activePath === undefined || activePath === path;
+                  const active = activePath === path;
                   return (
                     <LinkA
                       key={index}
