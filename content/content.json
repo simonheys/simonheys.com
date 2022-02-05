@@ -2,7 +2,7 @@
   "meta": {
     "titles": [
       "Simon Heys",
-      "Freelance Product Designer and Software Engineer",
+      "Product Designer and Software Engineer",
       "London, UK"
     ],
     "portfolio": {
@@ -52,9 +52,7 @@
       "type": "header",
       "links": [
         "/portfolio",
-        "/case-studies",
-        "/about",
-        "/contact"
+        "/about"
       ]
     },
     "before": [],
@@ -69,15 +67,11 @@
         "type": "work-header",
         "title": "About",
         "ruled": true,
-        "subtitle": "I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
+        "subtitle": "I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n",
         "links": [
           {
             "text": "About",
             "url": "/about"
-          },
-          {
-            "text": "Contact",
-            "url": "/contact"
           }
         ]
       },
@@ -95,11 +89,23 @@
         {
           "type": "work-header",
           "title": "About",
-          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. \n\nI am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).\n\nMost recently I co-founded a digital agency where I was part of [many cross-disciplinary teams](/case-studies) that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by [Google DeepMind](https://deepmind.com/). \n\nPrior to that I worked in-house as a Product Designer at [The Guardian](https://www.theguardian.com/), [The Times](https://www.thetimes.co.uk/), and [UBS Investment Bank](https://www.ubs.com/).\n\nI hold a BA (Hons) in Communication Design (First with Commendation for Typography) from [Kingston University London](https://www.kingston.ac.uk/).\n",
+          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nI have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.\n\nHire me to design and build your app, software or website. \n",
           "links": [
             {
-              "text": "Contact",
-              "url": "/contact"
+              "text": "Email",
+              "url": "mailto:si@simonheys.com"
+            },
+            {
+              "text": "LinkedIn",
+              "url": "https://linkedin.com/in/simonheys"
+            },
+            {
+              "text": "Twitter",
+              "url": "https://twitter.com/simonheys"
+            },
+            {
+              "text": "GitHub",
+              "url": "https://github.com/simonheys/"
             }
           ]
         }
@@ -957,29 +963,11 @@
     {
       "path": "/",
       "title": null,
-      "description": "Freelance Product Designer based in London, UK. Available to design and develop apps or websites.",
+      "description": "Product Designer and Software Engineer",
       "fill": {
         "type": "word-clock-fill",
         "title": true
-      },
-      "components": [
-        {
-          "type": "work-header",
-          "ruled": true,
-          "title": "Portfolio"
-        },
-        {
-          "type": "work-grid"
-        },
-        {
-          "type": "work-header",
-          "ruled": true,
-          "title": "Case Studies"
-        },
-        {
-          "type": "case-studies-grid"
-        }
-      ]
+      }
     },
     {
       "path": "/portfolio/fathm",
@@ -1141,13 +1129,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover.",
-          "links": [
-            {
-              "text": "Read full case study",
-              "url": "/case-studies/hark"
-            }
-          ]
+          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover."
         },
         {
           "type": "work-row",
@@ -1253,13 +1235,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Hark was acquired by Google DeepMind.",
-              "links": [
-                {
-                  "text": "Read full case study",
-                  "url": "/case-studies/hark"
-                }
-              ]
+              "text": "Hark was acquired by Google DeepMind."
             }
           ]
         },
@@ -1272,10 +1248,6 @@
       "path": "/portfolio",
       "title": "Portfolio",
       "components": [
-        {
-          "type": "work-header",
-          "title": "Portfolio"
-        },
         {
           "type": "work-grid"
         }
@@ -1404,13 +1376,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.",
-          "links": [
-            {
-              "text": "Read full case study",
-              "url": "/case-studies/mykrobe"
-            }
-          ]
+          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform."
         },
         {
           "type": "mykrobe-animation"
@@ -1524,13 +1490,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The platform is being expanded to become part of global COVID-19 surveillance.",
-              "links": [
-                {
-                  "text": "Read full case study",
-                  "url": "/case-studies/mykrobe"
-                }
-              ]
+              "text": "The platform is being expanded to become part of global COVID-19 surveillance."
             }
           ]
         },
@@ -1551,13 +1511,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.",
-          "links": [
-            {
-              "text": "Read full case study",
-              "url": "/case-studies/sps"
-            }
-          ]
+          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians."
         },
         {
           "type": "work-row",
@@ -1672,13 +1626,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The service is increasingly popular with more than half a million monthly active users in England.",
-              "links": [
-                {
-                  "text": "Read full case study",
-                  "url": "/case-studies/sps"
-                }
-              ]
+              "text": "The service is increasingly popular with more than half a million monthly active users in England."
             }
           ]
         },
