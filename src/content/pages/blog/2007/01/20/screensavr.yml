@@ -1,0 +1,12 @@
+title: Screensavr
+components:
+  - type: blog
+    content: >-
+      ![screensavr.jpg](http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2007/01/screensavr.jpg)
+
+
+      Hah! See what I did there? It’s a flickr-based screensaver. This is some
+      old slideshow code I had lying around, a nice way to view a stream of
+      images as they scroll by. In these new days of the internet it seemed
+      appropriate for it to read a flickr photostream. It will be available on
+      this site when I figure out a nice way to allow people to configr it.

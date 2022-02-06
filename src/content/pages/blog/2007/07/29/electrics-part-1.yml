@@ -1,0 +1,20 @@
+title: "Electrics: Part 1"
+components:
+  - type: blog
+    content: >-
+      I am working on building a physical version of [Word
+      Clock](http://telemachus.local/simonheys/website/wordclock/), from
+      scratch, with electronics components. Here’s the first working circuit:
+
+
+      I’ve been learning electronics from various books and all over the web.
+      One of the best resources I’ve found is [Bowden’s Hobby
+      Circuits](http://ourworld.compuserve.com/homepages/Bill%5FBowden/homepage.htm)
+      which includes some lovely clock examples and circuits. This circuit is
+      partially based on the 72-LED clock, but I’m using a very accurate crystal
+      oscillator for the seconds pulse and a different approach to the startup
+      sequence.
+
+
+      Next stage is to build up the seconds, hours and minutes LEDs and add time
+      setting functions.

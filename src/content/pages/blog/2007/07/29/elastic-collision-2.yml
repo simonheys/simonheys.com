@@ -1,0 +1,89 @@
+title: Elastic Collision
+components:
+  - type: blog
+    content: >-
+      [![](http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision.gif)](http://telemachus.local/simonheys/website/2007/07/29/elastic-collision-2/)
+
+
+      A small tutorial on how to create bouncing balls with ActionScript source
+      code. A couple of years back I was creating some interactive sites using
+      bouncing balls as navigation. These needed to behave in a believable
+      manner so I spent some time looking at rigid body dynamics code.
+
+
+      #### Rigid Body Dynamics
+
+
+      There are many approaches to solids-based simulation on a computer. The
+      most realistic involve running a simulation in relatively large slices of
+      time (say 1/60 second) until a collision occurs, and then ‘rewinding’ the
+      simulation in smaller slices of time until the exact moment of impact.
+      This ensures that no objects are ever seen to overlap, and the simulation
+      then continues from the exact moment at which they touch. This is
+      computationally intensive and a little overkill for what I wanted.
+
+
+      The second method is a little more ‘relaxed’ and doesn’t strive for
+      perfection. You can get a reasonable result using springs to resolve
+      collisions.
+
+
+      #### Elastic Collision
+
+
+      I already had some spring code so I hooked up a system as follows;
+
+
+      ![collision.gif](http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision.gif) 
+
+
+      Figure 1 is a system with balls bouncing around under gravity. The system
+      checks whether two balls overlap. Figure 2 shows what happens when two
+      balls overlap. All we have to do is measure the overlap. We temporarily
+      create a spring which is attached to the centre of each ball between a and
+      b. 
+
+
+      ![collision-2.gif](http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision-2.gif)
+
+
+      The spring’s resting length is then set such that, when fully relaxed, it
+      would allow the balls to touch exactly. This means that the spring is
+      under compression; it tries its best to get back to its resting length and
+      in doing so forces the balls apart as shown in Figure 3.
+
+
+      #### Nervous Energy
+
+
+      This worked really well for what I needed as the balls bounce around
+      nicely and it’s a lot of fun. However the lack of precision shows when you
+      try and contain the balls too tightly. The system becomes a little
+      unstable as the balls try to break free from each other but are
+      constrained by the walls.
+
+
+      However the same code is used the in [Magnetic
+      example](http://telemachus.local/simonheys/website/work/flash-9-magnetic/)
+      which is able to resolve itself as there is plenty of space for the balls
+      to move into.
+
+
+      #### Download
+
+
+      [\[ZIP\] Download Elastic Collision source
+      code](http://telemachus.local/simonheys/website/files/elastic-collision.zip)
+
+
+      #### Example
+
+
+      Click and drag to move the balls around
+
+
+      <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+      id="fm\_springs\_76817265" class="flashmovie" width="440" height="440"> 
+      <object type="application/x-shockwave-flash"
+      data="http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/springs.swf"
+      name="fm\_springs\_76817265" width="440" height="440">

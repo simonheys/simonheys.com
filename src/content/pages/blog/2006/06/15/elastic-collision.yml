@@ -1,0 +1,6 @@
+title: Elastic Collision
+components:
+  - type: blog
+    content: >-
+      [![springs.jpg](http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2006/11/springs.jpg)](http://telemachus.local/simonheys/website/wordpress/work/elastic-collision/)Very
+      basic elastic collision-based rigid body dynamics.

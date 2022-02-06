@@ -44,6 +44,9 @@ const generateBlog = async () => {
     });
 
     console.log(filePath, fileContents);
+
+    fs.ensureDirSync(path.dirname(filePath));
+    fs.writeFileSync(filePath, fileContents, "utf8");
   }
 };
 

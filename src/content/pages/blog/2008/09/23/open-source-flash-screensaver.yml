@@ -1,0 +1,17 @@
+title: Open source Flash screensaver
+components:
+  - type: blog
+    content: >-
+      As promised ages ago, I have posted the source code I am using to wrap the
+      Mac Flash screensaver version of Word Clock. It’s extremely basic right
+      now and you’ll need XCode, Flash and programming knowledge to use it.
+      Please contribute by fixing bugs and generally making it better…
+
+
+      Update: moved onto github
+
+
+      <http://github.com/simonheys/macflashscreensavermaker/>
+
+
+      [Instructions](http://wiki.github.com/simonheys/macflashscreensavermaker/)

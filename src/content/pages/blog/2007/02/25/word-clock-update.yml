@@ -1,0 +1,16 @@
+title: "Word Clock: update"
+components:
+  - type: blog
+    content: >-
+      [![](http://telemachus.local/simonheys/website/wp-content/uploads/2007/02/img_1776.jpg)](http://telemachus.local/simonheys/website/2007/02/25/word-clock-update/)
+
+
+      New version, Mac native code this time. Thanks to
+      [Andy](http://www.multiadaptor.com/) and [Jay](http://www.jayglow.com/)
+      for suggestions: now you can choose your own colours and font. Not that
+      there was anything wrong with my choices. Planning to add finer
+      typographic control in future, but for now… enjoy playing with the
+      leading.
+
+
+      [Visit Word Clock’s permanent home](/wordclock/)

@@ -1,0 +1,30 @@
+title: Sizer
+components:
+  - type: blog
+    content: >-
+      If you’re a print designer who regularly receives batches of digital
+      artwork from various sources then this might save you a bit of time.
+
+
+      This AppleScript batch processes folders of images (can also contain
+      nested folders) and creates a report of image dimensions, resolution and
+      colour, including what size each image would be at 300dpi. Here’s some
+      example output:
+
+
+      ![sizer](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/sizer1.gif
+      "sizer")
+
+
+      You can see that it also highlights where images are lower than 300dpi.
+
+
+      Originally written for [jaypeg](http://thingstolookat.blogspot.com/) as a
+      useful tool to help ascertain problems (e.g. images in the wrong colour
+      space, or too low resolution) and also help determine which images might
+      be suitable for printing at larger sizes.
+
+
+      [\[ZIP\] Download Sizer droplet for Mac OS
+      X](http://telemachus.local/simonheys/website/files/sizer.zip) (includes
+      source code)
