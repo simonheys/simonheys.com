@@ -99,7 +99,6 @@ export const getBlogPagePaths = (
 
 export const getBlogDateFromPath = (path: string): Date => {
   const components = path.split("/").filter(Boolean).slice(1, 4);
-  console.log(components);
   return new Date(components.join("/"));
 };
 
