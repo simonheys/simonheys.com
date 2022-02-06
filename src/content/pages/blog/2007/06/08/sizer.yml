@@ -1,4 +1,7 @@
 title: Sizer
+excerpt: >-
+  If you’re a print designer who regularly receives batches of digital artwork
+  from various sources then this might save you a bit of time.
 components:
   - type: blog
     content: >-
@@ -28,3 +31,4 @@ components:
       [\[ZIP\] Download Sizer droplet for Mac OS
       X](http://telemachus.local/simonheys/website/files/sizer.zip) (includes
       source code)
+  - type: blog-next

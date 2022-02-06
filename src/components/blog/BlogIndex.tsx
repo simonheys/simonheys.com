@@ -1,6 +1,10 @@
 import * as React from "react";
 
-import { getBlogPagePaths, getPageForPath } from "../../modules/content";
+import {
+  getBlogDateFromPath,
+  getBlogPagePaths,
+  getPageForPath,
+} from "../../modules/content";
 
 import AppearWhenInView from "../ui/AppearWhenInView";
 import LinkA from "../ui/LinkA";
@@ -14,13 +18,20 @@ const BlogIndex: React.FC = () => {
         if (!page) {
           return null;
         }
+        const date = getBlogDateFromPath(path);
         return (
           <AppearWhenInView
             key={`case-studies-grid-${path}-${index}`}
             className={"col-md mb-3 mb-md-4 d-flex flex-column"}
           >
             <LinkA href={path}>
-              <div className={"row"}>{JSON.stringify(page, null, 2)}</div>
+              <div className={"row"}>
+                {" "}
+                <h2>
+                  {page.title} {date.toLocaleDateString()}
+                </h2>
+                <p>{page.excerpt}</p>
+              </div>
             </LinkA>
           </AppearWhenInView>
         );

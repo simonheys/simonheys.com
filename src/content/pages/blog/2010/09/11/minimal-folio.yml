@@ -1,4 +1,9 @@
 title: Minimal Folio
+excerpt: >-
+  When I first got my iPad I thought it would be brilliant for showing my
+  portfolio or presenting work to clients. I couldn’t find any apps that were
+  simple enough or worked the way I wanted, so I made one myself. It’s called
+  Minimal Folio.
 components:
   - type: blog
     content: >-
@@ -11,3 +16,4 @@ components:
       were simple enough or worked the way I wanted, so I made one myself. It’s
       called [Minimal
       Folio](http://telemachus.local/simonheys/website/minimalfolio/).
+  - type: blog-next

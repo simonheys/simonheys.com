@@ -1,18 +1,11 @@
 import fs from "fs-extra";
 import path from "path";
 import yaml from "js-yaml";
-import chokidar from "chokidar";
-import { NodeHtmlMarkdown, NodeHtmlMarkdownOptions } from "node-html-markdown";
-
-import getFiles from "../utils/getFiles";
+import { NodeHtmlMarkdown } from "node-html-markdown";
 
 import blogArchive from "../../content/blog-archive.json";
 
-const nhm = new NodeHtmlMarkdown(
-  /* options (optional) */ {},
-  /* customTransformers (optional) */ undefined,
-  /* customCodeBlockTranslators (optional) */ undefined
-);
+const nhm = new NodeHtmlMarkdown();
 
 const PREFIX = "http://telemachus.local/simonheys/website";
 
@@ -35,10 +28,14 @@ const generateBlog = async () => {
 
     const fileContents = yaml.dump({
       title: blogEntry.title.rendered,
+      excerpt: nhm.translate(blogEntry.excerpt.rendered),
       components: [
         {
           type: "blog",
           content: nhm.translate(blogEntry.content.rendered),
+        },
+        {
+          type: "blog-next",
         },
       ],
     });

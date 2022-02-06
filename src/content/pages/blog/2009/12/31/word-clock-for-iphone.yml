@@ -1,4 +1,10 @@
 title: Word Clock for iPhone
+excerpt: >-
+  So I’ve spent my spare moments over the past year-and-a-bit working on Word
+  Clock for iPhone (link opens iTunes). This uses the same languages as the
+  screensaver and features linear and rotary versions with full typographic
+  control. You can pinch and zoom and animate between the two versions. I’ve
+  also set up a simple dedicated \[…\]
 components:
   - type: blog
     content: >-
@@ -21,3 +27,4 @@ components:
 
 
       [www.wordclock.co.uk](http://www.wordclock.co.uk/)
+  - type: blog-next

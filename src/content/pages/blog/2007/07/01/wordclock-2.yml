@@ -1,4 +1,5 @@
 title: Word Clock
+excerpt: Word Clock has moved. Go to the new page where you can download and read more.
 components:
   - type: blog
     content: >-
@@ -12,3 +13,4 @@ components:
       Word Clock has moved. [Go to the new
       page](http://telemachus.local/simonheys/website/wordclock/) where you can
       download and read more.
+  - type: blog-next

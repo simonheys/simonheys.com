@@ -1,4 +1,10 @@
 title: UrlKit
+excerpt: >-
+  This is impressive work. “An open-source Flex library for browser URL control
+  via deep linking which I have developed in collaboration with Todd Rein of
+  Adobe.” I’ve recently written something similar for Flash 8 (we’re yet to have
+  clients that are ready for Flash 9 / Flex). I discovered this afterwards: it
+  produces automatically generated \[…\]
 components:
   - type: blog
     content: >-
@@ -10,3 +16,4 @@ components:
       automatically generated human-readable URLs and caters for multiple state
       views; the same goals I was aiming for. This is, uh, slightly better
       written than my version though…grr.
+  - type: blog-next

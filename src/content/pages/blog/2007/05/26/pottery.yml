@@ -1,4 +1,9 @@
 title: Pottery
+excerpt: >-
+  \[ZIP\] Download Pottery with source code To use: draw a simple ‘S’ shape on
+  the left-hand panel. Then experiment. Note that it’s fairly crude and only
+  renders convex surfaces properly. This was a quick mockup I made at the end of
+  last year to try out an idea for a Christmas Card. It was originally \[…\]
 components:
   - type: blog
     content: >-
@@ -23,3 +28,4 @@ components:
 
       I like simple interactive toys like this, where you can understand what to
       do straight away and there’s an immediate reward and a sense of play.
+  - type: blog-next

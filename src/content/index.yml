@@ -23,10 +23,11 @@ all:
     type: header
     links:
       - "/portfolio"
+      - "/blog"
       - "/about"
   before: []
   after:
-    - exclude: ["/about", "/contact", "/portfolio", "/case-studies"]
+    - exclude: ["/about", "/contact", "/case-studies"]
       type: work-header
       title: About
       ruled: true

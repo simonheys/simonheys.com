@@ -1,4 +1,9 @@
 title: Elastic Collision
+excerpt: >-
+  A small tutorial on how to create bouncing balls with ActionScript source
+  code. A couple of years back I was creating some interactive sites using
+  bouncing balls as navigation. These needed to behave in a believable manner so
+  I spent some time looking at rigid body dynamics code.
 components:
   - type: blog
     content: >-
@@ -86,4 +91,5 @@ components:
       id="fm\_springs\_76817265" class="flashmovie" width="440" height="440"> 
       <object type="application/x-shockwave-flash"
       data="http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/springs.swf"
-      name="fm\_springs\_76817265" width="440" height="440">
+      name="fm\_springs\_76817265" width="440" height="440"> 
+  - type: blog-next

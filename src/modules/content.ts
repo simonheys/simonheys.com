@@ -21,6 +21,7 @@ export type Page = {
   path: string;
   title?: string;
   subtitle?: string;
+  excerpt?: string;
   description?: string;
   fill?: any;
   thumbnails?: Thumbnail[];
@@ -90,8 +91,16 @@ export const getBlogPagePaths = (
   content: Content = defaultContent
 ): string[] => {
   const pagePaths = getPagePaths(content);
-  const blogPagePaths = pagePaths.filter((path) => path.startsWith("/blog/"));
+  const blogPagePaths = pagePaths
+    .filter((path) => path.startsWith("/blog/"))
+    .reverse();
   return blogPagePaths;
+};
+
+export const getBlogDateFromPath = (path: string): Date => {
+  const components = path.split("/").filter(Boolean).slice(1, 4);
+  console.log(components);
+  return new Date(components.join("/"));
 };
 
 export const normalisePath = (path: string | string[]): string => {

@@ -1,4 +1,10 @@
-title: "Flash 9: Magnetic"
+title: 'Flash 9: Magnetic'
+excerpt: >-
+  At tonic I was recently working on a project for a client where we wanted to
+  get across the idea of different teams working on individual projects. I came
+  up with the idea of magnetic navigation, which attracts a different group of
+  people appropriate to the selected project. There were a few ways of achieving
+  \[…\]
 components:
   - type: blog
     content: >-
@@ -16,3 +22,4 @@ components:
       Yields a massive speed increase! Requires [Adobe Flash 9
       plug-in](http://www.adobe.com/products/flashplayer/). The site itself is
       Flash 8 and will be live early 2007.
+  - type: blog-next

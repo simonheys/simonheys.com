@@ -1,4 +1,9 @@
 title: Screensavr
+excerpt: >-
+  Two big improvements in this new alpha version: first it’s much less
+  processor-intensive (now uses OpenGL), and second it stores the screen between
+  sessions so it doesn’t have to start with an empty screen each time. Go to the
+  new page to download. Please let me know by email if you have any problems.
 components:
   - type: blog
     content: >-
@@ -11,3 +16,4 @@ components:
       [Go to the new page to
       download](http://telemachus.local/simonheys/website/screensavr). Please
       let me know by email if you have any problems.
+  - type: blog-next

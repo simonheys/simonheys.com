@@ -1,4 +1,8 @@
 title: Vector Field
+excerpt: >-
+  Vector field proof of concept in Flash 8\. Uses displacement map as a ‘cheap’
+  vector field – providing you’re not expecting miracles it works quite well.
+  The colours mix together naturally which is a nice side effect of the filter.
 components:
   - type: blog
     content: >-
@@ -8,3 +12,4 @@ components:
       Uses displacement map as a ‘cheap’ vector field – providing you’re not
       expecting miracles it works quite well. The colours mix together naturally
       which is a nice side effect of the filter.
+  - type: blog-next

@@ -1,4 +1,8 @@
 title: Word Clock
+excerpt: >-
+  Typographic clock using words rather than digits. First appeared on Tonic
+  homepage, subsequently shown on BD4D and at the Science Museum. Physical
+  version is in progress…
 components:
   - type: blog
     content: >-
@@ -8,3 +12,4 @@ components:
       [BD4D](http://www.bd4d.co.uk/) and at the [Science
       Museum](http://www.sciencemuseum.org.uk/). Physical version is in
       progress…
+  - type: blog-next

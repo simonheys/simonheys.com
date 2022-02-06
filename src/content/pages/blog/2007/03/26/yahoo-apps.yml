@@ -1,7 +1,11 @@
 title: Yahoo Apps
+excerpt: >-
+  Screensavr has been Approved by the Authorities and is available on Yahoo
+  Apps. Does this mean I’m now a fully qualified geek?
 components:
   - type: blog
     content: >-
       Screensavr has been Approved by the Authorities and is available on [Yahoo
       Apps](http://gallery.yahoo.com/apps/7484/locale/en "Screensavr on Yahoo
       Apps"). Does this mean I’m now a fully qualified geek?
+  - type: blog-next

@@ -1,4 +1,9 @@
 title: Shared SharedObject in Flash
+excerpt: >-
+  One of the problems I had when writing Flash Screensavr was sharing
+  preferences between two separate and different SWF files – the Preferences
+  panel and the Screensaver itself. Obviously a job for SharedObject. However
+  there is a trick to creating a SharedObject that behaves how you’d expect.
 components:
   - type: blog
     content: >-
@@ -71,3 +76,4 @@ components:
 
       Where `Constants.SHARED_OBJECT_ID` is something like
       `com.simonheys.preferences.screensavr`.
+  - type: blog-next

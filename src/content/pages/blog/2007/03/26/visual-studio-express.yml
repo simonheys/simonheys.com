@@ -1,4 +1,10 @@
 title: Visual Studio Express
+excerpt: >-
+  Having recently parted with my aging G4 PowerBook and upgraded to an
+  entry-level MacBook, I couldn’t resist the temptation to install Windows XP
+  (spit!). Well, it’s good for games at least. I was also excited to discover a
+  free version of Visual Studio called Visual Studio Express. Have only played
+  with the tutorials but have \[…\]
 components:
   - type: blog
     content: >-
@@ -16,3 +22,4 @@ components:
 
       Plus one of the tutorials is… a screensaver! So, Windows screensavers
       coming soon(ish)…
+  - type: blog-next

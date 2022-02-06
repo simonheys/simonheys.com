@@ -1,4 +1,8 @@
 title: Word Clock auf Deutsch
+excerpt: >-
+  Heart-felt thanks to the heroic Ole Zorn who volunteered to translate the
+  clock into German, not realising that he was about to experience a grueling
+  3-day schedule of testing and round-the-clock correspondence. Thanks Ole!
 components:
   - type: blog
     content: >-
@@ -29,3 +33,4 @@ components:
 
 
       \*hopefully
+  - type: blog-next

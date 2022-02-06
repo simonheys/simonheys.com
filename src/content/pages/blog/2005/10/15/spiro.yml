@@ -1,4 +1,7 @@
 title: Spiro
+excerpt: >-
+  Flash 6 Spirograph. An old spirograph drawing thing, based on some of the
+  machines in the Science Museum. A Flash 8/9 version would be much faster.
 components:
   - type: blog
     content: >-
@@ -7,3 +10,4 @@ components:
       Spirograph](http://telemachus.local/simonheys/website/work/spiro-example/).
       An old spirograph drawing thing, based on some of the machines in the
       Science Museum. A Flash 8/9 version would be much faster.
+  - type: blog-next
