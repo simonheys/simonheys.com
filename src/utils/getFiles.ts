@@ -1,5 +1,5 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
 
 const visibleFileName = (fileName) => !fileName.startsWith(".");
 const filePathIsDirectory = (filePath) => fs.statSync(filePath).isDirectory();
@@ -19,4 +19,4 @@ const getFiles = (dirPath, baseDir = "./", filesArray = []) => {
   return filesArray;
 };
 
-module.exports = getFiles;
+export default getFiles;

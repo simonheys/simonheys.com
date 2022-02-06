@@ -1,13 +1,14 @@
-const fs = require("fs");
-const path = require("path");
-const sizeOf = require("image-size");
-const cliProgress = require("cli-progress");
-const chokidar = require("chokidar");
-const argv = require("minimist")(process.argv.slice(2));
+import fs from "fs";
+import path from "path";
+import sizeOf from "image-size";
+import cliProgress from "cli-progress";
+import chokidar from "chokidar";
 
-const getFiles = require("../utils/getFiles");
-const getImageColor = require("../utils/getImageColor");
-const getImageHash = require("../utils/getImageHash");
+import getFiles from "../utils/getFiles";
+import getImageColor from "../utils/getImageColor";
+import getImageHash from "../utils/getImageHash";
+
+const argv = require("minimist")(process.argv.slice(2));
 
 const useProgressBar = !argv.watch;
 

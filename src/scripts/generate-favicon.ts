@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const favicons = require("favicons");
+import fs from "fs";
+import path from "path";
+import favicons from "favicons";
 
 const publicSystemPath = path.join(__dirname, "../../public/favicon");
 

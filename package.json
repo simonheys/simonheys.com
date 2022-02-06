@@ -8,10 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "generate": "yarn generate:content && yarn generate:image-properties && yarn generate:icon-components",
-    "generate:content": "node ./src/scripts/generate-content",
-    "generate:favicon": "node ./src/scripts/generate-favicon",
-    "generate:icon-components": "node ./src/scripts/generate-icon-components",
-    "generate:image-properties": "node ./src/scripts/generate-image-properties",
+    "generate:content": "ts-node ./src/scripts/generate-content",
+    "generate:favicon": "ts-node ./src/scripts/generate-favicon",
+    "generate:icon-components": "ts-node ./src/scripts/generate-icon-components",
+    "generate:image-properties": "ts-node ./src/scripts/generate-image-properties",
     "generate:watch": "concurrently -k -r \"yarn generate:content --watch\" \"yarn generate:icon-components --watch\" \"yarn generate:image-properties --watch\"",
     "prettier": "prettier --write \"./**/*.{js,json,css,scss,yml}\"",
     "test": "start-server-and-test dev http://localhost:3000 cypress",
@@ -47,7 +47,10 @@
     "@svgr/plugin-jsx": "^5.5.0",
     "@svgr/plugin-prettier": "^5.5.0",
     "@svgr/plugin-svgo": "^5.5.0",
+    "@types/favicons": "^6.2.2",
+    "@types/get-pixels": "^3.3.2",
     "@types/gtag.js": "^0.0.8",
+    "@types/js-yaml": "^4.0.5",
     "@types/node": "^16.11.6",
     "@types/react": "^17.0.34",
     "@types/resize-observer-browser": "^0.1.6",
@@ -79,6 +82,7 @@
     "rimraf": "^3.0.2",
     "sharp": "^0.29.2",
     "start-server-and-test": "^1.14.0",
+    "ts-node": "^10.4.0",
     "typescript": "^4.4.4"
   }
 }

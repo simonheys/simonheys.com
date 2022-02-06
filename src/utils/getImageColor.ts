@@ -1,10 +1,11 @@
-const Color = require("color");
-const sharp = require("sharp");
+import Color from "color";
+import sharp from "sharp";
+import { NdArray } from "ndarray";
 
-const getImagePixels = require("./getImagePixels");
+import getImagePixels from "./getImagePixels";
 
-const getImageColor = async (filePath, type) => {
-  let pixels;
+const getImageColor = async (filePath: string, type: string) => {
+  let pixels: NdArray<Uint8Array>;
   if (type === "svg") {
     const imageBuffer = await sharp(filePath).toFormat("png").toBuffer();
     pixels = await getImagePixels(imageBuffer, "image/png");
@@ -16,4 +17,4 @@ const getImageColor = async (filePath, type) => {
   return color.hex().toLowerCase();
 };
 
-module.exports = getImageColor;
+export default getImageColor;

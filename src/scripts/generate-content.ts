@@ -1,10 +1,11 @@
-const fs = require("fs");
-const path = require("path");
-const yaml = require("js-yaml");
-const chokidar = require("chokidar");
-const argv = require("minimist")(process.argv.slice(2));
+import fs from "fs";
+import path from "path";
+import yaml from "js-yaml";
+import chokidar from "chokidar";
 
-const getFiles = require("../utils/getFiles");
+import getFiles from "../utils/getFiles";
+
+const argv = require("minimist")(process.argv.slice(2));
 
 const contentSystemPath = path.join(__dirname, "../content");
 const pagesSystemPath = path.join(contentSystemPath, "pages");
@@ -15,8 +16,8 @@ const contentJsonSystemPath = path.join(
 
 const filePaths = getFiles("/", pagesSystemPath);
 
-const getYml = (filePath) => {
-  const doc = yaml.load(fs.readFileSync(filePath, "utf8"));
+const getYml = (filePath: string): any => {
+  const doc = yaml.load(fs.readFileSync(filePath, "utf8")) as any;
   return doc;
 };
 

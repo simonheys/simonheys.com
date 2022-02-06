@@ -1,5 +1,5 @@
-const preventWindowScroll = (callback) => {
-  let scrollX, scrollY;
+const preventWindowScroll = (callback: () => void) => {
+  let scrollX: number, scrollY: number;
   if (typeof window !== "undefined") {
     scrollX = window.scrollX;
     scrollY = window.scrollY;

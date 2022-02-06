@@ -1,11 +1,12 @@
-const fs = require("fs");
-const path = require("path");
-const cliProgress = require("cli-progress");
-const svgr = require("@svgr/core").default;
-const chokidar = require("chokidar");
-const argv = require("minimist")(process.argv.slice(2));
+import fs from "fs";
+import path from "path";
+import cliProgress from "cli-progress";
+import chokidar from "chokidar";
 
-const getFiles = require("../utils/getFiles");
+import getFiles from "../utils/getFiles";
+
+const svgr = require("@svgr/core").default;
+const argv = require("minimist")(process.argv.slice(2));
 
 const iconsSystemPath = path.join(__dirname, "../components/ui/icons");
 const iconsSvgSystemPath = path.join(iconsSystemPath, "./svg");
