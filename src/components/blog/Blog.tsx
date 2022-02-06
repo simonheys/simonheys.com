@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
 
 import AppearWhenInView from "../ui/AppearWhenInView";
 import LinkA from "../ui/LinkA";
@@ -42,7 +43,12 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
           <div className={"col-md-6"}>
             {content && (
               <div className={styles.text}>
-                <ReactMarkdown components={components}>{content}</ReactMarkdown>
+                <ReactMarkdown
+                  rehypePlugins={[rehypeRaw]}
+                  components={components}
+                >
+                  {content}
+                </ReactMarkdown>
               </div>
             )}
           </div>
