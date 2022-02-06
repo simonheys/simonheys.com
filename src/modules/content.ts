@@ -86,6 +86,14 @@ export const getCaseStudiesPagePaths = (
   return content.meta["case-studies"].pages.map((page) => page.path);
 };
 
+export const getBlogPagePaths = (
+  content: Content = defaultContent
+): string[] => {
+  const pagePaths = getPagePaths(content);
+  const blogPagePaths = pagePaths.filter((path) => path.startsWith("/blog/"));
+  return blogPagePaths;
+};
+
 export const normalisePath = (path: string | string[]): string => {
   // allow array
   if (Array.isArray(path)) {

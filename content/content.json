@@ -462,6 +462,15 @@
       ]
     },
     {
+      "path": "/blog",
+      "title": "Blog",
+      "components": [
+        {
+          "type": "blog-index"
+        }
+      ]
+    },
+    {
       "path": "/case-studies/hark",
       "title": "Hark Case Study",
       "meta": {

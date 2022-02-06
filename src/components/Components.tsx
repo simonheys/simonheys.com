@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 
 // fundamental page structure is static
 // this allows DOM to build, size and scroll as expected
+import BlogIndex from "./blog/BlogIndex";
 import CaseStudiesGrid from "./case-studies/grid/CaseStudiesGrid";
 import CaseStudiesNext from "./case-studies/CaseStudiesNext";
 import Footer from "./Footer";
@@ -28,6 +29,7 @@ const WordClockCell = dynamic(() => import("./word-clock/WordClockCell"));
 const WordClockFill = dynamic(() => import("./word-clock/WordClockFill"));
 
 const MapTypeToComponent = {
+  "blog-index": BlogIndex,
   "case-studies-grid": CaseStudiesGrid,
   "case-studies-next": CaseStudiesNext,
   "mykrobe-animation": MykrobeAnimation,
