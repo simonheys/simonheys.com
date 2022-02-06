@@ -1,5 +1,5 @@
 title: Word Clock for iPhone
-excerpt: >-
+excerpt: |
   So I’ve spent my spare moments over the past year-and-a-bit working on Word
   Clock for iPhone (link opens iTunes). This uses the same languages as the
   screensaver and features linear and rotary versions with full typographic
@@ -7,14 +7,10 @@ excerpt: >-
   also set up a simple dedicated \[…\]
 components:
   - type: blog
-    content: >-
-      [![](http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/app_store_badge_en.gif
-      "app_store_badge_en")](http://itunes.apple.com/app/word-clock/id338480180?mt=8)
-
-
-      So I’ve spent my spare moments over the past year-and-a-bit working on
+    content: |
+      I’ve spent my spare moments over the past year-and-a-bit working on
       [Word Clock for
-      iPhone](http://itunes.apple.com/app/word-clock/id338480180?mt=8) (link
+      iPhone](https://itunes.apple.com/app/word-clock/id338480180?mt=8) (link
       opens iTunes). This uses the same languages as the screensaver and
       features linear and rotary versions with full typographic control. You can
       pinch and zoom and animate between the two versions.
@@ -26,5 +22,5 @@ components:
       clock…
 
 
-      [www.wordclock.co.uk](http://www.wordclock.co.uk/)
+      [www.wordclock.co.uk](https://www.wordclock.co.uk/)
   - type: blog-next

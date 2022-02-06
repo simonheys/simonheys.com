@@ -1,12 +1,12 @@
 title: Site Update
-excerpt: >-
+excerpt: |
   Decided to redesign the site so the blog areas are on a white background. I’m
   planning to write a few tutorials over the next couple of weeks and this
   design will make them much easier to read. Portfolio and Archive will be
   receiving some attention soon too.
 components:
   - type: blog
-    content: >-
+    content: |
       Decided to redesign the site so the blog areas are on a white background.
       I’m planning to write a few tutorials over the next couple of weeks and
       this design will make them much easier to read. Portfolio and Archive will

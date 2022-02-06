@@ -1,10 +1,10 @@
 title: Sizer
-excerpt: >-
+excerpt: |
   If you’re a print designer who regularly receives batches of digital artwork
   from various sources then this might save you a bit of time.
 components:
   - type: blog
-    content: >-
+    content: |
       If you’re a print designer who regularly receives batches of digital
       artwork from various sources then this might save you a bit of time.
 
@@ -15,7 +15,7 @@ components:
       example output:
 
 
-      ![sizer](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/sizer1.gif
+      ![sizer](uploads/2007/06/sizer1.gif
       "sizer")
 
 
@@ -29,6 +29,6 @@ components:
 
 
       [\[ZIP\] Download Sizer droplet for Mac OS
-      X](http://telemachus.local/simonheys/website/files/sizer.zip) (includes
+      X](/files/sizer.zip) (includes
       source code)
   - type: blog-next

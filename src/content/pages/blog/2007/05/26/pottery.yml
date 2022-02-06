@@ -1,18 +1,18 @@
 title: Pottery
-excerpt: >-
+excerpt: |
   \[ZIP\] Download Pottery with source code To use: draw a simple ‘S’ shape on
   the left-hand panel. Then experiment. Note that it’s fairly crude and only
   renders convex surfaces properly. This was a quick mockup I made at the end of
   last year to try out an idea for a Christmas Card. It was originally \[…\]
 components:
   - type: blog
-    content: >-
-      [![picture-2.jpg](http://telemachus.local/simonheys/website/wp-content/uploads/2007/05/picture-2.jpg)](/work/pottery-example/
+    content: |
+      [![picture-2.jpg](uploads/2007/05/picture-2.jpg)](/work/pottery-example/
       "picture-2.jpg") 
 
 
       [\[ZIP\] Download Pottery with source
-      code](http://telemachus.local/simonheys/website/files/pottery.zip)
+      code](/files/pottery.zip)
 
 
       To use: draw a simple ‘S’ shape on the left-hand panel. Then experiment.

@@ -1,5 +1,5 @@
 title: Vector Field with source code
-excerpt: >-
+excerpt: |
   I’ve decided to start releasing bits and pieces of source code just for fun.
   The first one is the Vector Field demo I wrote ages ago. First, the source
   code \[ZIP\] Download Vector Field source code It’s easy to change the size,
@@ -7,35 +7,27 @@ excerpt: >-
   I \[…\]
 components:
   - type: blog
-    content: >-
-      [![swirl-white.jpg](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-white.jpg)](/2007/05/12/vector-field-with-source-code/)
-
+    content: |
+      [![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/2007/05/12/vector-field-with-source-code/)
 
       I’ve decided to start releasing bits and pieces of source code just for
       fun. The first one is the [Vector Field
-      demo](http://telemachus.local/simonheys/website/work/vector-field-example/)
+      demo](/work/vector-field-example/)
       I wrote ages ago.
-
 
       #### First, the source code
 
-
-      [\[ZIP\] Download Vector Field source
-      code](http://telemachus.local/simonheys/website/files/vectorfield.zip)
-
+      [Download Vector Field source code](/files/vectorfield.zip)
 
       It’s easy to change the size, colour and ‘splat’ graphics. This is totally
       free for non-commercial use, but I kindly ask that you contact me if you
       wish to use it for something commercial.
 
-
       Part of the reason I’m posting this is because it has a bug which I can’t
       figure out how to fix. To explain what the bug is I need to explain how
       this works. So here goes.
 
-
       #### Vector Fields and fluids
-
 
       At some point last year I wanted to create a fluid / liquid simulation and
       had been looking at [Vector
@@ -45,7 +37,7 @@ components:
       simple example:
 
 
-      ![field.gif](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/field.gif)
+      ![field.gif](uploads/2007/06/field.gif)
 
 
       Each vector in the field has two components, one for the horizontal
@@ -84,7 +76,7 @@ components:
       sound familiar:
 
 
-      ![field2.gif](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/field2.gif)
+      ![field2.gif](uploads/2007/06/field2.gif)
 
 
       Hallelujah! A DisplacementMap is effectively a huge array of vectors, and
@@ -93,9 +85,12 @@ components:
       corresponding x or y movement;
 
 
-      \[as\] dstPixel\[x, y\] = srcPixel\[ x + ((componentX(x, y) – 128) \*
-      scaleX) / 256, y + ((componentY(x, y) – 128) \* scaleY) / 256 \]; \[/as\]
-
+      ```actionscript
+      dstPixel[x, y] = srcPixel[ 
+        x + ((componentX(x, y) – 128) * scaleX) / 256, 
+        y + ((componentY(x, y) – 128) * scaleY) / 256
+      ];
+      ````
 
       I spent ages staring at this line of code, but it’s really easy. Taking
       the horizontal channel as an example: a value of 128 doesn’t move at all;
@@ -120,7 +115,7 @@ components:
       several fixes but have yet to solve it. Here’s what you see:
 
 
-      ![swirl-grr.jpg](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-grr.jpg)
+      ![swirl-grr.jpg](uploads/2007/06/swirl-grr.jpg)
 
 
       Grrr. At first I thought it would just be a case of using a threshold call

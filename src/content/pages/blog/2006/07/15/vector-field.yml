@@ -1,14 +1,14 @@
 title: Vector Field
-excerpt: >-
+excerpt: |
   Vector field proof of concept in Flash 8\. Uses displacement map as a ‘cheap’
   vector field – providing you’re not expecting miracles it works quite well.
   The colours mix together naturally which is a nice side effect of the filter.
 components:
   - type: blog
-    content: >-
-      [![swirl-white.jpg](http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-white.jpg)](http://telemachus.local/simonheys/website/wordpress/work/vector-field-example/)
+    content: |
+      [![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/wordpress/work/vector-field-example/)
       [Vector field proof of concept in Flash
-      8.](http://telemachus.local/simonheys/website/wordpress/work/vector-field-example/)
+      8.](/wordpress/work/vector-field-example/)
       Uses displacement map as a ‘cheap’ vector field – providing you’re not
       expecting miracles it works quite well. The colours mix together naturally
       which is a nice side effect of the filter.

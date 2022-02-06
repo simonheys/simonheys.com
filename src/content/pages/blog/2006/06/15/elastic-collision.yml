@@ -2,7 +2,7 @@ title: Elastic Collision
 excerpt: Very basic elastic collision-based rigid body dynamics.
 components:
   - type: blog
-    content: >-
-      [![springs.jpg](http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2006/11/springs.jpg)](http://telemachus.local/simonheys/website/wordpress/work/elastic-collision/)Very
+    content: |
+      [![springs.jpg](/wordpress/wp-content/uploads/2006/11/springs.jpg)](/wordpress/work/elastic-collision/)Very
       basic elastic collision-based rigid body dynamics.
   - type: blog-next

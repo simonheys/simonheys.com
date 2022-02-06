@@ -1,5 +1,5 @@
-title: 'Word Clock: update'
-excerpt: >-
+title: "Word Clock: update"
+excerpt: |
   New version, Mac native code this time. Thanks to Andy and Jay for
   suggestions: now you can choose your own colours and font. Not that there was
   anything wrong with my choices. Planning to add finer typographic control in
@@ -7,8 +7,8 @@ excerpt: >-
   permanent home
 components:
   - type: blog
-    content: >-
-      [![](http://telemachus.local/simonheys/website/wp-content/uploads/2007/02/img_1776.jpg)](http://telemachus.local/simonheys/website/2007/02/25/word-clock-update/)
+    content: |
+      [![](uploads/2007/02/img_1776.jpg)](/2007/02/25/word-clock-update/)
 
 
       New version, Mac native code this time. Thanks to

@@ -1,5 +1,5 @@
 title: Ruined Test Print
-excerpt: >-
+excerpt: |
   I’ve been making blue-prints / cyanotypes of various kinds for quite a while.
   The appeal has always been to make photos without using lenses or carefully
   controlled photographic processes. I’ve never been a big fan of photography;
@@ -7,7 +7,7 @@ excerpt: >-
   of photographs to appear somewhat \[…\]
 components:
   - type: blog
-    content: >-
+    content: |
       [![](http://farm1.static.flickr.com/227/495979085_7ed430cf2c_m.jpg)](http://www.flickr.com/photos/sipi/495979085/
       "photo sharing") 
 
@@ -28,7 +28,7 @@ components:
       kits](http://www.silverprint.co.uk/altproc9.html) which includes various
       bits and pieces like a measuring cup, syringe and coating rods which make
       the job that much easier. Rather than the usual contact prints with plants
-      or [other stuff](http://telemachus.local/simonheys/website/archive/22/), I
+      or [other stuff](/archive/22/), I
       thought it might be interesting to try a pinhole camera. 
 
 
