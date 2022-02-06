@@ -1,0 +1,3304 @@
+[
+  {
+    "id": 881,
+    "date": "2011-05-31T05:58:17",
+    "date_gmt": "2011-05-31T05:58:17",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/?p=881"
+    },
+    "modified": "2014-10-01T08:01:54",
+    "modified_gmt": "2014-10-01T08:01:54",
+    "slug": "all-new-word-clock",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2011/05/31/all-new-word-clock/",
+    "title": {
+      "rendered": "All new Word Clock"
+    },
+    "content": {
+      "rendered": "<a href=\"//www.simonheys.com/wordclock/\"><img loading=\"lazy\" src=\"//www.simonheys.com/wp-content/uploads/2011/05/wordclock_mac.jpg\" width=\"700\" height=\"371\" /></a>\r\n<p></p>\r\n<p>All new version of Word Clock for Mac is now available. Completely re-written from scratch with new, smoother animation. No more Flash&#8230;</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>All new version of Word Clock for Mac is now available. Completely re-written from scratch with new, smoother animation. No more Flash&#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 17, 15, 18],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/881"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=881"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 2,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/881/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 1007,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/881/revisions/1007"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=881"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=881"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=881"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 804,
+    "date": "2010-09-11T16:24:18",
+    "date_gmt": "2010-09-11T16:24:18",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/?p=804"
+    },
+    "modified": "2012-04-09T15:30:27",
+    "modified_gmt": "2012-04-09T15:30:27",
+    "slug": "minimal-folio",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2010/09/11/minimal-folio/",
+    "title": {
+      "rendered": "Minimal Folio"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/minimalfolio/\"><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2010/08/mf-website.jpg\" alt=\"\" title=\"mf-website\" width=\"700\" height=\"360\" class=\"alignnone size-full wp-image-782\" srcset=\"http://telemachus.local/simonheys/website/wp-content/uploads/2010/08/mf-website.jpg 700w, http://telemachus.local/simonheys/website/wp-content/uploads/2010/08/mf-website-300x154.jpg 300w\" sizes=\"(max-width: 700px) 100vw, 700px\" /></a></p>\r\n<p>When I first got my iPad I thought it would be brilliant for showing my portfolio or presenting work to clients. I couldn&#8217;t find any apps that were simple enough or worked the way I wanted, so I made one myself. It&#8217;s called <a href=\"http://telemachus.local/simonheys/website/minimalfolio/\">Minimal Folio</a>.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>When I first got my iPad I thought it would be brilliant for showing my portfolio or presenting work to clients. I couldn&#8217;t find any apps that were simple enough or worked the way I wanted, so I made one myself. It&#8217;s called Minimal Folio.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 15],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/804"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=804"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 1,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/804/revisions"
+        }
+      ],
+      "predecessor-version": [
+        {
+          "id": 957,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/804/revisions/957"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=804"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=804"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=804"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 752,
+    "date": "2010-06-19T12:02:27",
+    "date_gmt": "2010-06-19T12:02:27",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/?p=752"
+    },
+    "modified": "2011-12-13T08:37:01",
+    "modified_gmt": "2011-12-13T08:37:01",
+    "slug": "tracking",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2010/06/19/tracking/",
+    "title": {
+      "rendered": "Tracking"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/2010/06/19/tracking/\"><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2010/06/birds.jpg\" alt=\"\" title=\"birds\" width=\"700\" height=\"525\" class=\"alignnone size-full wp-image-753\" srcset=\"http://telemachus.local/simonheys/website/wp-content/uploads/2010/06/birds.jpg 700w, http://telemachus.local/simonheys/website/wp-content/uploads/2010/06/birds-300x225.jpg 300w\" sizes=\"(max-width: 700px) 100vw, 700px\" /></a></p><p>Automated PostScript drawing created with home brew video tracking software I&#8217;m working on. This uses footage of birds in flight, shot on an iPhone.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Automated PostScript drawing created with home brew video tracking software I&#8217;m working on. This uses footage of birds in flight, shot on an iPhone.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 16, 15],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/752"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=752"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/752/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=752"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=752"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=752"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 701,
+    "date": "2009-12-31T10:23:51",
+    "date_gmt": "2009-12-31T10:23:51",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/?p=701"
+    },
+    "modified": "2010-09-11T15:11:28",
+    "modified_gmt": "2010-09-11T15:11:28",
+    "slug": "word-clock-for-iphone",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2009/12/31/word-clock-for-iphone/",
+    "title": {
+      "rendered": "Word Clock for iPhone"
+    },
+    "content": {
+      "rendered": "<iframe loading=\"lazy\" src=\"//player.vimeo.com/video/8436997?title=0&amp;byline=0&amp;portrait=0&amp;color=797979\" width=\"700\" height=\"394\" frameborder=\"0\"></iframe>\r\n<p></p>\r\n<p><a href=\"http://itunes.apple.com/app/word-clock/id338480180?mt=8\"><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/app_store_badge_en.gif\" alt=\"\" title=\"app_store_badge_en\" width=\"119\" height=\"40\" class=\"alignnone size-full wp-image-715\" /></a></p>\r\n<p>So I&#8217;ve spent my spare moments over the past year-and-a-bit working on <a href=\"http://itunes.apple.com/app/word-clock/id338480180?mt=8\">Word Clock for iPhone</a> (link opens iTunes). This uses the same languages as the screensaver and features linear and rotary versions with full typographic control. You can pinch and zoom and animate between the two versions.</p>\r\n<p>I&#8217;ve also set up a simple dedicated website. The idea is to eventually move all the Word Clock-related information and separate it from this blog. Hopefully I will then start writing about subjects other than the clock&#8230;<p>\r\n<p><a href=\"http://www.wordclock.co.uk/\">www.wordclock.co.uk</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>So I&#8217;ve spent my spare moments over the past year-and-a-bit working on Word Clock for iPhone (link opens iTunes). This uses the same languages as the screensaver and features linear and rotary versions with full typographic control. You can pinch and zoom and animate between the two versions. I&#8217;ve also set up a simple dedicated [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 15, 18],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/701"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=701"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/701/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=701"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=701"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=701"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 210,
+    "date": "2008-09-23T18:40:58",
+    "date_gmt": "2008-09-23T18:40:58",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/?p=210"
+    },
+    "modified": "2010-01-17T15:32:50",
+    "modified_gmt": "2010-01-17T15:32:50",
+    "slug": "open-source-flash-screensaver",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2008/09/23/open-source-flash-screensaver/",
+    "title": {
+      "rendered": "Open source Flash screensaver"
+    },
+    "content": {
+      "rendered": "<p>As promised ages ago, I have posted the source code I am using to wrap the Mac Flash screensaver version of Word Clock. It&#8217;s extremely basic right now and you&#8217;ll need XCode, Flash and programming knowledge to use it. Please contribute by fixing bugs and generally making it better&#8230;</p>\r\n<p>Update: moved onto github</p>\r\n<p><a href=\"http://github.com/simonheys/macflashscreensavermaker/\">http://github.com/simonheys/macflashscreensavermaker/</a></p>\r\n<p><a href=\"http://wiki.github.com/simonheys/macflashscreensavermaker/\">Instructions</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>As promised ages ago, I have posted the source code I am using to wrap the Mac Flash screensaver version of Word Clock. It&#8217;s extremely basic right now and you&#8217;ll need XCode, Flash and programming knowledge to use it. Please contribute by fixing bugs and generally making it better&#8230; Update: moved onto github http://github.com/simonheys/macflashscreensavermaker/ Instructions</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [7, 10, 15, 8, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/210"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=210"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/210/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=210"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=210"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=210"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 148,
+    "date": "2008-01-27T10:39:00",
+    "date_gmt": "2008-01-27T10:39:00",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2008/01/27/makejpeg-droplet/"
+    },
+    "modified": "2009-08-03T14:02:10",
+    "modified_gmt": "2009-08-03T14:02:10",
+    "slug": "makejpeg-droplet",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2008/01/27/makejpeg-droplet/",
+    "title": {
+      "rendered": "Make JPEG droplet"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/makejpeg/\"><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2008/01/finderscreensnapz001.gif' alt='finderscreensnapz001.gif' /></a></p>\r\n<p>A newly tweaked version of the droplet. This one allows you to set the JPEG compression quality by changing the number in the filename &#8211; just make as many copies as you need.</p>\r\n<p><a href=\"http://telemachus.local/simonheys/website/makejpeg/\">MakeJpeg download page</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>A newly tweaked version of the droplet. This one allows you to set the JPEG compression quality by changing the number in the filename &#8211; just make as many copies as you need. MakeJpeg download page</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [14, 15, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/148"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=148"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/148/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=148"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=148"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=148"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 145,
+    "date": "2008-01-06T12:46:15",
+    "date_gmt": "2008-01-06T12:46:15",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2008/01/06/screensavr-3/"
+    },
+    "modified": "2009-08-03T08:33:56",
+    "modified_gmt": "2009-08-03T08:33:56",
+    "slug": "screensavr-3",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2008/01/06/screensavr-3/",
+    "title": {
+      "rendered": "Screensavr"
+    },
+    "content": {
+      "rendered": "<p>Two big improvements in this new alpha version: first it&#8217;s much less processor-intensive (now uses OpenGL), and second it stores the screen between sessions so it doesn&#8217;t have to start with an empty screen each time.</p>\r\n<p><a href=\"http://telemachus.local/simonheys/website/screensavr\">Go to the new page to download</a>. Please let me know by email if you have any problems.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Two big improvements in this new alpha version: first it&#8217;s much less processor-intensive (now uses OpenGL), and second it stores the screen between sessions so it doesn&#8217;t have to start with an empty screen each time. Go to the new page to download. Please let me know by email if you have any problems.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 17, 15, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/145"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=145"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/145/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=145"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=145"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=145"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 143,
+    "date": "2007-07-29T13:03:42",
+    "date_gmt": "2007-07-29T13:03:42",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/07/29/electrics-part-1/"
+    },
+    "modified": "2007-07-29T13:04:09",
+    "modified_gmt": "2007-07-29T13:04:09",
+    "slug": "electrics-part-1",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/07/29/electrics-part-1/",
+    "title": {
+      "rendered": "Electrics: Part 1"
+    },
+    "content": {
+      "rendered": "<p>I am working on building a physical version of <a href=\"http://telemachus.local/simonheys/website/wordclock/\">Word Clock</a>, from scratch, with electronics components. Here&#8217;s the first working circuit:</p>\r\n<p>\r\n<object width=\"425\" height=\"350\"><param name=\"movie\" value=\"//www.youtube.com/v/NxRoOkMprIc\"></param><embed src=\"//www.youtube.com/v/NxRoOkMprIc\" type=\"application/x-shockwave-flash\" width=\"425\" height=\"350\"></embed></object></p>\r\n<!--more-->\r\n<p><object width=\"425\" height=\"350\"> <param name=\"movie\" value=\"//www.youtube.com/v/HmqGnJlvUm0\"> </param> <embed src=\"//www.youtube.com/v/HmqGnJlvUm0\" type=\"application/x-shockwave-flash\" width=\"425\" height=\"350\"> </embed> </object></p>\r\n<p>I&#8217;ve been learning electronics from various books and all over the web. One of the best resources I&#8217;ve found is <a href=\"http://ourworld.compuserve.com/homepages/Bill_Bowden/homepage.htm\">Bowden&#8217;s Hobby Circuits</a> which includes some lovely clock examples and circuits. This circuit is partially based on the 72-LED clock, but I&#8217;m using a very accurate crystal oscillator for the seconds pulse and a different approach to the startup sequence.</p>\r\n\r\n<p>Next stage is to build up the seconds, hours and minutes LEDs and add time setting functions.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>I am working on building a physical version of Word Clock, from scratch, with electronics components. Here&#8217;s the first working circuit:</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [19, 18],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/143"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=143"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/143/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=143"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=143"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=143"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 138,
+    "date": "2007-07-29T11:48:54",
+    "date_gmt": "2007-07-29T11:48:54",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/07/29/elastic-collision-2/"
+    },
+    "modified": "2010-06-21T20:46:43",
+    "modified_gmt": "2010-06-21T20:46:43",
+    "slug": "elastic-collision-2",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/07/29/elastic-collision-2/",
+    "title": {
+      "rendered": "Elastic Collision"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/2007/07/29/elastic-collision-2/\"><img src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision.gif\" /></a></p>\r\n\r\n<p>A small tutorial on how to create bouncing balls with ActionScript source code. A couple of years back I was creating some interactive sites using bouncing balls as navigation. These needed to behave in a believable manner so I spent some time looking at rigid body dynamics code.</p>\r\n<!--more-->\r\n\r\n<h4>Rigid Body Dynamics</h4>\r\n<p>There are many approaches to solids-based simulation on a computer. The most realistic involve running a simulation in relatively large slices of time (say 1/60 second) until a collision occurs, and then &#8216;rewinding&#8217; the simulation in smaller slices of time until the exact moment of impact. This ensures that no objects are ever seen to overlap, and the simulation then continues from the exact moment at which they touch. This is computationally intensive and a little overkill for what I wanted.</p>\r\n\r\n<p>The second method is a little more &#8216;relaxed&#8217; and doesn&#8217;t strive for perfection. You can get a reasonable result using springs to resolve collisions.</p>\r\n\r\n<h4>Elastic Collision</h4>\r\n<p>I already had some spring code so I hooked up a system as follows;</p>\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision.gif' alt='collision.gif' />\r\n<p>Figure 1 is a system with balls bouncing around under gravity. The system checks whether two balls overlap. Figure 2 shows what happens when two balls overlap. All we have to do is measure the overlap. We temporarily create a spring which is attached to the centre of each ball between a and b.  </p>\r\n\r\n<div class=\"floatimgright\"><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/collision-2.gif' alt='collision-2.gif' /></div>\r\n<p>The spring&#8217;s resting length is then set such that, when fully relaxed, it would allow the balls to touch exactly. This means that the spring is under compression; it tries its best to get back to its resting length and in doing so forces the balls apart as shown in Figure 3.</p>\r\n<h4>Nervous Energy</h4>\r\n<p>This worked really well for what I needed as the balls bounce around nicely and it&#8217;s a lot of fun. However the lack of precision shows when you try and contain the balls too tightly. The system becomes a little unstable as the balls try to break free from each other but are constrained by the walls.</p>\r\n\r\n<p>However the same code is used the in <a href=\"http://telemachus.local/simonheys/website/work/flash-9-magnetic/\">Magnetic example</a> which is able to resolve itself as there is plenty of space for the balls to move into.</p>\r\n\r\n<h4>Download</h4>\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/elastic-collision.zip\">[ZIP] Download Elastic Collision source code</a></p>\r\n\r\n<h4>Example</h4>\r\n<p>Click and drag to move the balls around</p>\r\n\n<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"\n\t\t\tid=\"fm_springs_76817265\"\n\t\t\tclass=\"flashmovie\"\n\t\t\twidth=\"440\"\n\t\t\theight=\"440\">\n\t<param name=\"movie\" value=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/springs.swf\" />\n\t<!--[if !IE]>-->\n\t<object\ttype=\"application/x-shockwave-flash\"\n\t\t\tdata=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/springs.swf\"\n\t\t\tname=\"fm_springs_76817265\"\n\t\t\twidth=\"440\"\n\t\t\theight=\"440\">\n\t<!--<![endif]-->\n\t\t\n\t<!--[if !IE]>-->\n\t</object>\n\t<!--<![endif]-->\n</object>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>A small tutorial on how to create bouncing balls with ActionScript source code. A couple of years back I was creating some interactive sites using bouncing balls as navigation. These needed to behave in a believable manner so I spent some time looking at rigid body dynamics code.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 15, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/138"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=138"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/138/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=138"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=138"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=138"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 124,
+    "date": "2007-07-01T10:53:50",
+    "date_gmt": "2007-07-01T10:53:50",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/07/01/wordclock-2/"
+    },
+    "modified": "2009-07-22T06:32:34",
+    "modified_gmt": "2009-07-22T06:32:34",
+    "slug": "wordclock-2",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/07/01/wordclock-2/",
+    "title": {
+      "rendered": "Word Clock"
+    },
+    "content": {
+      "rendered": "\n<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"\n\t\t\tid=\"fm_clock_1024x768-black_557733779\"\n\t\t\tclass=\"flashmovie\"\n\t\t\twidth=\"700\"\n\t\t\theight=\"525\">\n\t<param name=\"movie\" value=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/clock_1024x768-black.swf\" />\n\t<param name=\"wmode\" value=\"opaque\" />\n\t<!--[if !IE]>-->\n\t<object\ttype=\"application/x-shockwave-flash\"\n\t\t\tdata=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/07/clock_1024x768-black.swf\"\n\t\t\tname=\"fm_clock_1024x768-black_557733779\"\n\t\t\twidth=\"700\"\n\t\t\theight=\"525\">\n\t\t<param name=\"wmode\" value=\"opaque\" />\n\t<!--<![endif]-->\n\t\t\n\t<!--[if !IE]>-->\n\t</object>\n\t<!--<![endif]-->\n</object>\r\n<p>Word Clock has moved. <a href=\"http://telemachus.local/simonheys/website/wordclock/\">Go to the new page</a> where you can download and read more.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Word Clock has moved. Go to the new page where you can download and read more.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "closed",
+    "ping_status": "closed",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 15, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/124"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=124"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/124/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=124"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=124"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=124"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 122,
+    "date": "2007-06-08T18:29:53",
+    "date_gmt": "2007-06-08T18:29:53",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/06/08/sizer/"
+    },
+    "modified": "2009-08-04T09:09:22",
+    "modified_gmt": "2009-08-04T09:09:22",
+    "slug": "sizer",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/06/08/sizer/",
+    "title": {
+      "rendered": "Sizer"
+    },
+    "content": {
+      "rendered": "<p>If you&#8217;re a print designer who regularly receives batches of digital artwork from various sources then this might save you a bit of time.</p>\r\n<!--more-->\r\n<p>This AppleScript batch processes folders of images (can also contain nested folders) and creates a report of image dimensions, resolution and colour, including what size each image would be at 300dpi. Here&#8217;s some example output:</p>\r\n<p><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/sizer1.gif\" alt=\"sizer\" title=\"sizer\" width=\"460\" height=\"200\" /></p>\r\n<p>You can see that it also highlights where images are lower than 300dpi.</p>\r\n<p>Originally written for <a href=\"http://thingstolookat.blogspot.com/\">jaypeg</a> as a useful tool to help ascertain problems (e.g. images in the wrong colour space, or too low resolution) and also help determine which images might be suitable for printing at larger sizes.</p>\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/sizer.zip\">[ZIP] Download Sizer droplet for Mac OS X</a> (includes source code)</p>\r\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>If you&#8217;re a print designer who regularly receives batches of digital artwork from various sources then this might save you a bit of time.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [14, 15, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/122"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=122"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/122/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=122"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=122"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=122"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 102,
+    "date": "2007-06-05T17:34:09",
+    "date_gmt": "2007-06-05T17:34:09",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/06/05/postscript/"
+    },
+    "modified": "2010-06-21T20:56:40",
+    "modified_gmt": "2010-06-21T20:56:40",
+    "slug": "postscript",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/06/05/postscript/",
+    "title": {
+      "rendered": "PostScript"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/2007/06/05/postscript/\"><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/gp_spiral.jpg\" alt=\"gp_spiral\" title=\"gp_spiral\" width=\"460\" height=\"460\" class=\"alignnone size-full wp-image-582\" srcset=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/gp_spiral.jpg 460w, http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/gp_spiral-150x150.jpg 150w, http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/gp_spiral-300x300.jpg 300w\" sizes=\"(max-width: 460px) 100vw, 460px\" /></a></p>\r\n<p>Most designers and programmers whose paths I&#8217;ve crossed have heard of <a href=\"http://en.wikipedia.org/wiki/PostScript\">PostScript</a> but don&#8217;t know much about it. I think it&#8217;s a hidden gem. Not only is it a fascinating <a href=\"http://en.wikipedia.org/wiki/PostScript#The_language\">programming language</a> which can be used to create generative drawings and save you hours of time through automation, but you can also use it as an intermediary format to transfer output from other languages such as Flash ActionScript or Java / Processing into Adobe Illustrator.</p>\r\n<!--more-->\r\n<h4>A simple PostScript program</h4>\r\n<p>Copy and paste this into a text editor (NotePad or TextEdit), save it as &#8216;simple.ps&#8217; and then open it in Illustrator.</p>\r\n\r\n<pre>\r\n%!PS-Adobe-3.0 \r\n\r\n0 0 moveto\r\n100 100 lineto\r\nstroke\r\n\r\nshowpage\r\n</pre>\r\n\r\n<p>This little snippet gives the following result:</p>\r\n\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/ps-line.gif' alt='ps-line.gif' />\r\n\r\n<p>A line from 0,0 to 100,100. Amazing, eh? Not really, but the point is that the code is really simple to understand and we&#8217;re only using the line drawing command. If you go slow and learn one command at a time, you can eventually do some pretty interesting and useful things.</p>\r\n\r\n<h4>Learning PostScript</h4>\r\n<p>There are <a ahref=\"http://www.google.co.uk/search?hl=en&#038;safe=off&#038;client=firefox-a&#038;rls=org.mozilla:en-US:official&#038;hs=CGD&#038;sa=X&#038;oi=spell&#038;resnum=0&#038;ct=result&#038;cd=1&#038;q=postscript+tutorial&#038;spell=1\"> lots of PostScript tutorials</a> on the web that will explain the basic concepts. One thing to note is that PostScript is <a href=\"http://en.wikipedia.org/wiki/Stack-based\">stack based</a> which means you push numbers onto the stack before operating on them. In raw code it makes it look like you&#8217;re doing things backwards and can seem off-putting. In practise it&#8217;s very simple and logical.</p>\r\n\r\n<p>The essential guide to PostScript is the PLRM or &#8216;red book&#8217;. I bought a copy of this years ago and it&#8217;s pretty big at 800 pages! But thanks to the generosity of Adobe you can now download it online;</p>\r\n\r\n<p><a href=\"http://www.adobe.com/products/postscript/pdfs/PLRM.pdf\">[PDF] PostScript Language Reference Manual, third edition</a></p>\r\n\r\n<h4>A lot, for a little</h4>\r\n<p>Once you&#8217;ve learned a few commands you&#8217;ll be able to achieve a lot with very little. Here&#8217;s something more advanced using a for-loop in conjunction with graphics transformation;</p>\r\n\r\n<pre>\r\n%!PS-Adobe-3.0 \r\n\r\n0.75 setlinewidth\r\n0.75 setgray\r\n\r\n0 3 360 {\r\n\tnewpath\r\n\tgsave\r\n\t0 0 moveto\r\n\trotate\r\n\t100 0 rlineto\r\n\tstroke\r\n\tgrestore\r\n} for\r\n\r\nshowpage\r\n</pre>\r\n\r\n</p>Produces the following result:</p>\r\n\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/picture-4.gif' alt='picture-4.gif' />\r\n\r\n<p>Which is starting to look a bit more interesting, and like something that might be tricky to create purely &#8216;by hand&#8217; in Illustrator. I&#8217;ve used techniques based on this to create images for quite a few projects over the years. The <a href=\"http://telemachus.local/simonheys/website/archive/10/\">Design Week book cover</a> was created using PostScript as were the <a href=\"http://telemachus.local/simonheys/website/archive/8/\">Kingston University posters</a>.</p>\r\n\r\n<p>I&#8217;ve put the source for these into a small download. You&#8217;ll need Illustrator or some other PostScript viewer to see them.</p>\r\n\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/ps-examples.zip\">[ZIP] Download PostScript examples</a></p>\r\n\r\n<h4>Output from Flash into PostScript</h4>\r\n<p>Probably the best use of PostScript from a modern designer/programmer&#8217;s perspective is as an intermediary format. With not much programming you can easily take output from Flash and get it into Illustrator.</p>\r\n\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/generationpress.jpg' alt='generationpress.jpg' />\r\n<p>For the <a href=\"http://telemachus.local/simonheys/website/portfolio/generation-press/\">Generation Press website</a> I created a simple toy on the homepage which lets visitors generate their own pattern. It&#8217;s a nice example of something created in Flash which would look great as a high-resolution printout.</p>\r\n\r\n<h4>Demo Application</h4>\r\n<p>Here&#8217;s the toy wrapped into a demo application.</p>\r\n\r\n\n<object classid=\"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000\"\n\t\t\tid=\"fm_application_117955304\"\n\t\t\tclass=\"flashmovie\"\n\t\t\twidth=\"440\"\n\t\t\theight=\"440\">\n\t<param name=\"movie\" value=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/application.swf\" />\n\t<!--[if !IE]>-->\n\t<object\ttype=\"application/x-shockwave-flash\"\n\t\t\tdata=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/application.swf\"\n\t\t\tname=\"fm_application_117955304\"\n\t\t\twidth=\"440\"\n\t\t\theight=\"440\">\n\t<!--<![endif]-->\n\t\t\n\t<!--[if !IE]>-->\n\t</object>\n\t<!--<![endif]-->\n</object>\r\n\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/ps-demo-app.zip\">[ZIP] Download Source Code</a></p>\r\n\r\n<p>To use, click to start drawing. Once the drawing has finished, click 'Show PostScript' to see the code. This code doesn't update live because Flash isn't fast enough, so wait until the drawing has finished before viewing it. All the application does is output the same drawing commands as PostScript-style commands into the text window;</p>\r\n\r\n[as]\r\nthis[\"output\"].lineTo(xp, yp);\r\nps(xp+\" \"+yp+\" lineto\");\t\t\r\n[/as]\r\n\r\n<p>The <code>ps()</code> function outputs the code to the text window;</p>\r\n\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/ps-code-example.jpg' alt='ps-code-example.jpg' />\r\n\r\n<p>Now you can copy and paste this code into a text editor. Save it with a '.ps' extension and then load into Illustrator:</p>\r\n\r\n<img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/ps-mockup.jpg' alt='ps-mockup.jpg' />\r\n\r\n<p>The image on the right is magnified to show that the drawing is made up of a series of small lines created by the <code>lineto</code> command in the PostScript code.</p>\r\n\r\n<h4>Conclusion</h4>\r\n<p>So that demonstrates the basic principle. PostScript is a very powerful language and you can do all kinds of other fun things with it, particularly when you start to redefine the built in <code>lineto</code> and <code>curveto</code> commands to do something else... but that's a story for another day.</p>\r\n\r\n<ul>\r\n<li><a href=\"http://www.adobe.com/products/postscript/pdfs/PLRM.pdf\">[PDF] PostScript Language Reference Manual, third edition</a></li>\r\n<li><a href=\"http://telemachus.local/simonheys/website/files/ps-examples.zip\">[ZIP] Download PostScript examples</a></li>\r\n<li><a href=\"http://telemachus.local/simonheys/website/files/ps-demo-app.zip\">[ZIP] Download Source Code</a></li>\r\n<li><a href=\"http://en.wikipedia.org/wiki/PostScript\">PostScript Wikipedia entry</a> featuring some great resources and some fairly insane applications including an HTML renderer and ray tracer...</li>\r\n</ul>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Most designers and programmers whose paths I&#8217;ve crossed have heard of PostScript but don&#8217;t know much about it. I think it&#8217;s a hidden gem. Not only is it a fascinating programming language which can be used to create generative drawings and save you hours of time through automation, but you can also use it as [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 16, 15, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/102"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=102"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/102/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=102"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=102"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=102"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 100,
+    "date": "2007-06-03T12:09:40",
+    "date_gmt": "2007-06-03T12:09:40",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/2007/06/03/site-update/"
+    },
+    "modified": "2009-08-03T08:37:45",
+    "modified_gmt": "2009-08-03T08:37:45",
+    "slug": "site-update",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/06/03/site-update/",
+    "title": {
+      "rendered": "Site Update"
+    },
+    "content": {
+      "rendered": "<p>Decided to redesign the site so the blog areas are on a white background. I&#8217;m planning to write a few tutorials over the next couple of weeks and this design will make them much easier to read. Portfolio and Archive will be receiving some attention soon too.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Decided to redesign the site so the blog areas are on a white background. I&#8217;m planning to write a few tutorials over the next couple of weeks and this design will make them much easier to read. Portfolio and Archive will be receiving some attention soon too.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [6],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/100"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=100"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/100/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=100"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=100"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=100"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 97,
+    "date": "2007-06-02T07:51:42",
+    "date_gmt": "2007-06-02T07:51:42",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/06/02/word-clock-auf-deutsch/"
+    },
+    "modified": "2009-08-03T08:42:42",
+    "modified_gmt": "2009-08-03T08:42:42",
+    "slug": "word-clock-auf-deutsch",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/06/02/word-clock-auf-deutsch/",
+    "title": {
+      "rendered": "Word Clock auf Deutsch"
+    },
+    "content": {
+      "rendered": "<a href='/2007/06/02/word-clock-auf-deutsch/' ><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/img_2167.jpg' alt='img_2167.jpg' /></a>\r\n\r\n<p>Heart-felt thanks to the heroic <a href=\"http://www.omz-software.de/en/\">Ole Zorn</a> who volunteered to translate the clock into German, not realising that he was about to experience a grueling 3-day schedule of testing and round-the-clock correspondence. Thanks Ole!</p>\r\n<!--more-->\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/wordclock.zip\">[ZIP] Download Word Clock</a></p>\r\n<p>I now have a translation-ready clock. If you, or any of your kind friends are willing to do some translation then please <a href=\"mailto:si@simonheys.com\">get in touch</a>. Now that Ole has been such a help, it&#8217;s pretty easy* to add other languages.</p>\r\n<p><span class=\"crossedout\">You can see the German version by going to System Preferences > International and making German your preferred language. Note that you must have German language support installed for this to work.</span> <a href=\"http://telemachus.local/simonheys/website/wordclock/\">Updated version now available</a></p>\r\n<p>*hopefully</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Heart-felt thanks to the heroic Ole Zorn who volunteered to translate the clock into German, not realising that he was about to experience a grueling 3-day schedule of testing and round-the-clock correspondence. Thanks Ole!</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 15, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/97"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=97"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/97/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=97"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=97"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=97"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 92,
+    "date": "2007-05-26T08:20:59",
+    "date_gmt": "2007-05-26T08:20:59",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/05/26/pottery/"
+    },
+    "modified": "2009-08-03T08:40:12",
+    "modified_gmt": "2009-08-03T08:40:12",
+    "slug": "pottery",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/05/26/pottery/",
+    "title": {
+      "rendered": "Pottery"
+    },
+    "content": {
+      "rendered": "<a href='/work/pottery-example/' title='picture-2.jpg'><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/05/picture-2.jpg' alt='picture-2.jpg' /></a>\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/pottery.zip\">[ZIP] Download Pottery with source code</a></p>\r\n<p>To use: draw a simple &#8216;S&#8217; shape on the left-hand panel. Then experiment. Note that it&#8217;s fairly crude and only renders convex surfaces properly.</p>\r\n<p>This was a quick mockup I made at the end of last year to try out an idea for a Christmas Card. It was originally going to be for making baubels, and would have the addition of automatic smoothing, concave rendering and mapping a christmassy texture onto the surface. Probably saving, galleries etc. might have followed.</p>\r\n<p>I like simple interactive toys like this, where you can understand what to do straight away and there&#8217;s an immediate reward and a sense of play.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>[ZIP] Download Pottery with source code To use: draw a simple &#8216;S&#8217; shape on the left-hand panel. Then experiment. Note that it&#8217;s fairly crude and only renders convex surfaces properly. This was a quick mockup I made at the end of last year to try out an idea for a Christmas Card. It was originally [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/92"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=92"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/92/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=92"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=92"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=92"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 90,
+    "date": "2007-05-13T12:04:00",
+    "date_gmt": "2007-05-13T12:04:00",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/05/13/runied-test-print/"
+    },
+    "modified": "2009-08-03T08:39:10",
+    "modified_gmt": "2009-08-03T08:39:10",
+    "slug": "ruined-test-print",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/05/13/ruined-test-print/",
+    "title": {
+      "rendered": "Ruined Test Print"
+    },
+    "content": {
+      "rendered": "<div style=\"float: right; margin-left: 10px; margin-bottom: 10px;\">\r\n <a href=\"http://www.flickr.com/photos/sipi/495979085/\" title=\"photo sharing\"><img src=\"http://farm1.static.flickr.com/227/495979085_7ed430cf2c_m.jpg\" alt=\"\" /></a>\r\n </div>\r\n<p>I&#8217;ve been making blue-prints / cyanotypes of various kinds for quite a while. The appeal has always been to make photos without using lenses or carefully controlled photographic processes. I&#8217;ve never been a big fan of photography; the equipment and techniques are now so honed and precise leading  the majority of photographs to appear somewhat mechanical and soul-less. I want the surprise of the accidental rather than the boredom of the deliberate. </p>\r\n<p>I originally bought the base chemicals from the excellent <a href=\"http://www.silverprint.co.uk/\">Silverprint</a> in Waterloo but used them up long ago. Inspired by the recent sunny weather I thought I&#8217;d try one of their <a href=\"http://www.silverprint.co.uk/altproc9.html\">alternative process kits</a> which includes various bits and pieces like a measuring cup, syringe and coating rods which make the job that much easier. Rather than the usual contact prints with plants or <a href=\"http://telemachus.local/simonheys/website/archive/22/\">other stuff</a>, I thought it might be interesting to try a pinhole camera. </p>\r\n<p>Of course since the kit arrived the sun has gone into hiding and consequently I&#8217;ve not been able to make much progress. This was an exposure I took yesterday. I couldn&#8217;t class it as a photograph at all, but I like the way it turned out all the same.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>I&#8217;ve been making blue-prints / cyanotypes of various kinds for quite a while. The appeal has always been to make photos without using lenses or carefully controlled photographic processes. I&#8217;ve never been a big fan of photography; the equipment and techniques are now so honed and precise leading the majority of photographs to appear somewhat [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [13, 3],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/90"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=90"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/90/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=90"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=90"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=90"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 82,
+    "date": "2007-05-12T12:45:31",
+    "date_gmt": "2007-05-12T12:45:31",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/05/12/vector-field-with-source-code/"
+    },
+    "modified": "2009-08-03T10:21:59",
+    "modified_gmt": "2009-08-03T10:21:59",
+    "slug": "vector-field-with-source-code",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/05/12/vector-field-with-source-code/",
+    "title": {
+      "rendered": "Vector Field with source code"
+    },
+    "content": {
+      "rendered": "<p><a href='/2007/05/12/vector-field-with-source-code/'><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-white.jpg' alt='swirl-white.jpg' /></a></p>\r\n<p>I&#8217;ve decided to start releasing bits and pieces of source code just for fun. The first one is the <a href=\"http://telemachus.local/simonheys/website/work/vector-field-example/\">Vector Field demo</a> I wrote ages ago.</p>\r\n<h4>First, the source code</h4>\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/vectorfield.zip\">[ZIP] Download Vector Field source code</a></p>\r\n<p>It&#8217;s easy to change the size, colour and &#8216;splat&#8217; graphics. This is totally free for non-commercial use, but I kindly ask that you contact me if you wish to use it for something commercial.</p>\r\n<p>Part of the reason I&#8217;m posting this is because it has a bug which I can&#8217;t figure out how to fix. To explain what the bug is I need to explain how this works. So here goes.</p>\r\n<!--more-->\r\n<h4>Vector Fields and fluids</h4>\r\n<p>At some point last year I wanted to create a fluid / liquid simulation and had been looking at <a href=\"http://en.wikipedia.org/wiki/Vector_field\">Vector Fields</a> and their use in fluid simulations. These work by having a huge matrix of vectors, the direction of which are controlled by the fluid algorithm. Here&#8217;s a very simple example:</p>\r\n<p><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/field.gif' alt='field.gif' /></p>\r\n<p>Each vector in the field has two components, one for the horizontal movement x, and another for the vertical movement y. A 3d field would have a third component, z.</p>\r\n\r\n<p>Particles or colour or whatever is required to turn this into a visualisation are moved around according to the vector field. If there is a particle on top of the vector shown above then it will move 0.5 units along x and 0.45 along y. If a force is applied to disturb the liquid then some of the vectors would correspondingly increase in magnitude. Scale this up to a larger system and you have the basics of a fluid simulation. </p>\r\n\r\n<p>This is an enormous amount of computation, and even for a tiny area of 100&#215;100 pixels you&#8217;d need 10,000 vectors. This seemed totally beyond the scope of Flash 8 which is still sluggish in math performance compared to Flash 9 or Java.</p>\r\n\r\n<h4>Vector Fields and DisplacementMap</h4>\r\n<p>Then I started playing around with DisplacementMaps. I&#8217;d seen various demo&#8217;s of the <a href=\"http://nodename.com/blog/2006/01/16/psyarks-displacementmapfilter-tutorial/\">3d spinning globe</a> variety and was intrigued as to how it was done, particularly as the displacement map never looked, on the surface at least, to have much bearing on what actually happens.</p>\r\n\r\n<p>Thankfully it&#8217;s all much simpler than the Flash documentation led me to believe. Displacement maps have two channels &#8211; one controlling horizontal movement and the other controlling vertical movement. This was starting to sound familiar:</p>\r\n<p><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/field2.gif' alt='field2.gif' /></p>\r\n<p>Hallelujah! A DisplacementMap is effectively a huge array of vectors, and perfect for a fluid simulation. There&#8217;s a small amount of math that converts between the component value of each colour channel and the corresponding x or y movement;</p>\r\n\r\n[as]\r\ndstPixel[x, y] = srcPixel[\r\n    x + ((componentX(x, y) &#8211; 128) * scaleX) / 256, \r\n    y + ((componentY(x, y) &#8211; 128) * scaleY) / 256\r\n];\r\n[/as]\r\n\r\n<p>I spent ages staring at this line of code, but it&#8217;s really easy. Taking the horizontal channel as an example: a value of 128 doesn&#8217;t move at all; less than 128 would move left and more than 128 would move right. You specify a scale value when creating the DisplacementMap that controls the magnitude of movement in either direction.</p>\r\n\r\n<p>I quickly wrote this demo and was very pleased with the result, especially the nice surprise of the colours mixing together. It&#8217;s really simple; there is a displacement map, and a brush like the soft brush in PhotoShop. When you drag with the mouse the code calculates the corresponding colour for that movement and paints onto the displacement map. This causes fluid-like movement:</p>\r\n<kml_flashembed movie=\"http://telemachus.local/simonheys/website/wp-content/uploads/2006/11/DisplacementTest.swf\" height=\"440\" width=\"440\" fversion=\"8\"></kml_flashembed>\r\n<h4>And now, the bug</h4>\r\n<p>When you play with the code you will notice that occasionally you get &#8216;dead pixels&#8217; in the liquid. I find this intensely annoying. I have tried several fixes but have yet to solve it. Here&#8217;s what you see:</p>\r\n<p><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-grr.jpg' alt='swirl-grr.jpg' /></p>\r\n<p>Grrr. At first I thought it would just be a case of using a threshold call to change all elements with a value of 128,128 (ie. not moving) into something else. But it doesn&#8217;t work because the real problem is when you have two pixels next to each other which are pointing in opposing directions, canceling each other out. So I also tried a Gaussian blur, but this has a weird effect where the whole movement shifts off balance and tends towards the bottom-right.</p>\r\n\r\n<p>I am out of ideas on this one and am hoping someone else can think of nice a workaround.</p>\r\n\r\n<p>All ideas welcome.</p>\r\n\r\n",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>I&#8217;ve decided to start releasing bits and pieces of source code just for fun. The first one is the Vector Field demo I wrote ages ago. First, the source code [ZIP] Download Vector Field source code It&#8217;s easy to change the size, colour and &#8216;splat&#8217; graphics. This is totally free for non-commercial use, but I [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/82"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=82"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/82/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=82"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=82"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=82"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 81,
+    "date": "2007-05-12T07:35:02",
+    "date_gmt": "2007-05-12T07:35:02",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/05/12/shared-preferences-in-flash/"
+    },
+    "modified": "2009-08-03T08:54:48",
+    "modified_gmt": "2009-08-03T08:54:48",
+    "slug": "shared-preferences-in-flash",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/05/12/shared-preferences-in-flash/",
+    "title": {
+      "rendered": "Shared SharedObject in Flash"
+    },
+    "content": {
+      "rendered": "<p>One of the problems I had when writing <a href=\"http://telemachus.local/simonheys/website/2007/02/04/screensavr-dead-end-new-beginning/\">Flash Screensavr</a> was sharing preferences between two separate and different SWF files &#8211; the Preferences panel and the Screensaver itself. Obviously a job for SharedObject.</p>\r\n\r\n<p>However there is a trick to creating a SharedObject that behaves how you&#8217;d expect.</p>\r\n<!--more-->\r\n<p>If you&#8217;re like me, you would think the correct code is;</p>\r\n\r\n[as]\r\nvar my_so:SharedObject;\r\nmy_so = SharedObject.getLocal(&#8220;com.simonheys.screensavr&#8221;);\r\n[/as]\r\n\r\n<p>But this results in a SharedObject which can only be accessed by the SWF that created it&#8230;not what I wanted. The not-very-obvious solution is to add a second parameter which is referred to simply as &#8216;localPath&#8217; in the docs;</p>\r\n\r\n[as]\r\nvar my_so:SharedObject;\r\nmy_so = SharedObject.getLocal(&#8220;com.simonheys.screensavr&#8221;,&#8221;/&#8221;);\r\n[/as]\r\n\r\n<p>That&#8217;s it! You now have a useful SharedObject which you can access from any SWF on your machine. Having spent literally hours trying to track down the solution I decided to write a nice preferences class in a similar style to the one I use in Cocoa. Applications usually have unique preferences, so this is customised for each one.</p>\r\n\r\n\r\n[as]\r\nclass com.simonheys.projects.screensavr.ScreensavrPreferences \r\n{\r\n\tpublic static var\r\n\t\tPHOTOSTREAM:Number = 0,\r\n\t\tPHOTOSET:Number = 1,\r\n\t\tGROUP:Number = 2,\r\n\t\tFAVOURITES:Number = 3;\r\n\t\t\r\n\tpublic var\r\n\t\tuseHighQuality:Boolean,\r\n\t\tusername:String,\r\n\t\tsourceType:Number,\r\n\t\tsourceId:String,\r\n\t\tspeed:Number;\r\n\t\t\r\n\tprivate var\r\n\t\t_soId:String;\r\n\t\t\r\n\tpublic function setSharedObjectId(soId:String):Void\r\n\t{\r\n\t\t_soId = soId;\r\n\t}\r\n\t\r\n\tpublic function storeInSharedObject():Void\r\n\t{\r\n\t\tvar my_so:SharedObject = SharedObject.getLocal(_soId,&#8221;/&#8221;);\r\n\t\tmy_so.data.username = username;\r\n\t\tmy_so.data.sourceType = sourceType;\r\n\t\tmy_so.data.sourceId = sourceId;\r\n\t\tmy_so.data.speed = speed;\r\n\t\tmy_so.data.useHighQuality = useHighQuality;\r\n\t\tmy_so.flush();\r\n\t}\r\n\r\n\tpublic function retreiveFromSharedObject():Void\r\n\t{\r\n\t\tvar my_so:SharedObject = SharedObject.getLocal(_soId,&#8221;/&#8221;);\r\n\t\tusername = my_so.data.username;\r\n\t\tsourceType = my_so.data.sourceType;\r\n\t\tsourceId = my_so.data.sourceId;\r\n\t\tspeed = my_so.data.speed;\t\t\r\n\t\tuseHighQuality = my_so.data.useHighQuality;\t\r\n\t}\r\n}\r\n[/as]\r\n\r\n<p>I did think about having methods called &#8216;save&#8217; and &#8216;load&#8217; but was obviously feeling verbose that day. You could of course have this as a Singleton in Flash, but I didn&#8217;t need to.</p>\r\n\r\n<p>The code for using the prefs is then as simple as this:</p>\r\n[as]\r\n_preferences = new ScreensavrPreferences();\r\n_preferences.setSharedObjectId(Constants.SHARED_OBJECT_ID);\r\n_preferences.retreiveFromSharedObject();\r\n\r\n// retrieve a value\r\nhighQualityCheckBox.selected = _preferences.useHighQuality;\r\n\r\n// store a value\r\n_preferences.sourceType = ScreensavrPreferences.PHOTOSTREAM;\r\n_preferences.storeInSharedObject();\r\n[/as]\r\n\r\n<p>Where <code>Constants.SHARED_OBJECT_ID</code> is something like <code>com.simonheys.preferences.screensavr</code>.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>One of the problems I had when writing Flash Screensavr was sharing preferences between two separate and different SWF files &#8211; the Preferences panel and the Screensaver itself. Obviously a job for SharedObject. However there is a trick to creating a SharedObject that behaves how you&#8217;d expect.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 12],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/81"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=81"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/81/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=81"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=81"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=81"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 80,
+    "date": "2007-03-26T20:03:37",
+    "date_gmt": "2007-03-26T20:03:37",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/03/26/visual-studio-express/"
+    },
+    "modified": "2009-08-03T08:41:10",
+    "modified_gmt": "2009-08-03T08:41:10",
+    "slug": "visual-studio-express",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/03/26/visual-studio-express/",
+    "title": {
+      "rendered": "Visual Studio Express"
+    },
+    "content": {
+      "rendered": "<p>Having recently parted with my aging G4 PowerBook and upgraded to an entry-level MacBook, I couldn&#8217;t resist the temptation to install Windows XP (spit!). Well, it&#8217;s good for games at least.</p>\r\n<p>I was also excited to discover a free version of Visual Studio called <a href=\"http://msdn.microsoft.com/vstudio/express/\" title=\"Visual Studio Express\">Visual Studio Express</a>. Have only played with the tutorials but have to admit that it beats XCode  so far (Tiger, haven&#8217;t tried Leopard yet); the interface is far more mature and better organised.</p>\r\n<p>Plus one of the tutorials is&#8230; a screensaver! So, Windows screensavers coming soon(ish)&#8230;</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Having recently parted with my aging G4 PowerBook and upgraded to an entry-level MacBook, I couldn&#8217;t resist the temptation to install Windows XP (spit!). Well, it&#8217;s good for games at least. I was also excited to discover a free version of Visual Studio called Visual Studio Express. Have only played with the tutorials but have [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [6, 11],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/80"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=80"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/80/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=80"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=80"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=80"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 79,
+    "date": "2007-03-26T19:51:44",
+    "date_gmt": "2007-03-26T19:51:44",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/03/26/yahoo-apps/"
+    },
+    "modified": "2009-08-03T08:44:11",
+    "modified_gmt": "2009-08-03T08:44:11",
+    "slug": "yahoo-apps",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/03/26/yahoo-apps/",
+    "title": {
+      "rendered": "Yahoo Apps"
+    },
+    "content": {
+      "rendered": "<p>Screensavr has been Approved by the Authorities and is available on <a href=\"http://gallery.yahoo.com/apps/7484/locale/en\" title=\"Screensavr on Yahoo Apps\">Yahoo Apps</a>. Does this mean I&#8217;m now a fully qualified geek?</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Screensavr has been Approved by the Authorities and is available on Yahoo Apps. Does this mean I&#8217;m now a fully qualified geek?</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 6, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/79"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=79"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/79/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=79"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=79"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=79"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 78,
+    "date": "2007-03-18T13:39:13",
+    "date_gmt": "2007-03-18T13:39:13",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/03/18/78/"
+    },
+    "modified": "2009-08-04T09:02:02",
+    "modified_gmt": "2009-08-04T09:02:02",
+    "slug": "gravity",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/03/18/gravity/",
+    "title": {
+      "rendered": "Gravity"
+    },
+    "content": {
+      "rendered": "<p><a href=\"http://telemachus.local/simonheys/website/2007/03/18/gravity/\"><img loading=\"lazy\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/03/gravity_screensaver-700.jpg\" alt=\"gravity_screensaver-700\" title=\"gravity_screensaver-700\" width=\"700\" height=\"400\" /></a></p>\r\n\r\n<p>I once did a quick experiment into creating drawings from nothing but code, but based on natural phenomena. The first thing I tried was gravity and it gave some results which I really liked. Here are the <a href=\"http://telemachus.local/simonheys/website/portfolio/gravity/\">PostScript drawings</a> it made.</p>\r\n\r\n<p>As I&#8217;m on a bit of a Cocoa Screensaver mission at the moment I spent a couple of hours creating a Gravity Screensaver. Just a bit of fun really. Here it is:</p>\r\n\r\n<p><a href=\"http://telemachus.local/simonheys/website/files/gravitysaver.zip\" title=\"gravitysaver.zip\">[ZIP] Download for Mac (Universal)</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>I once did a quick experiment into creating drawings from nothing but code, but based on natural phenomena. The first thing I tried was gravity and it gave some results which I really liked. Here are the PostScript drawings it made. As I&#8217;m on a bit of a Cocoa Screensaver mission at the moment I [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/78"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=78"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/78/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=78"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=78"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=78"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 73,
+    "date": "2007-03-04T12:20:31",
+    "date_gmt": "2007-03-04T12:20:31",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/03/04/screensavr-2/"
+    },
+    "modified": "2009-08-04T09:10:56",
+    "modified_gmt": "2009-08-04T09:10:56",
+    "slug": "screensavr-2",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/03/04/screensavr-2/",
+    "title": {
+      "rendered": "Screensavr"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/2007/03/04/screensavr-2/\"><img src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/03/img_1786.jpg\" /></a>\r\n<p>So here it is, one month on: the first Mac-native Cocoa version. Built on <a href=\"http://lukhnos.org/objectiveflickr/blog/\">ObjectiveFlickr</a>.</p>\r\n<p><a href='/files/screensavr.zip' title='screensavr.zip'>[ZIP] Download for Mac (Universal)</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>So here it is, one month on: the first Mac-native Cocoa version. Built on ObjectiveFlickr. [ZIP] Download for Mac (Universal)</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/73"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=73"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/73/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=73"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=73"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=73"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 70,
+    "date": "2007-02-25T20:31:04",
+    "date_gmt": "2007-02-25T20:31:04",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/02/25/word-clock-update/"
+    },
+    "modified": "2009-08-03T08:45:52",
+    "modified_gmt": "2009-08-03T08:45:52",
+    "slug": "word-clock-update",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/02/25/word-clock-update/",
+    "title": {
+      "rendered": "Word Clock: update"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/2007/02/25/word-clock-update/\"><img src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/02/img_1776.jpg\"></a><p>New version, Mac native code this time. Thanks to <a href=\"http://www.multiadaptor.com/\">Andy</a> and <a href=\"http://www.jayglow.com/\">Jay</a> for suggestions: now you can choose your own colours and font. Not that there was anything wrong with my choices. Planning to add finer typographic control in future, but for now&#8230; enjoy playing with the leading.</p>\r\n\r\n<p><a href='/wordclock/'>Visit Word Clock&#8217;s permanent home</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>New version, Mac native code this time. Thanks to Andy and Jay for suggestions: now you can choose your own colours and font. Not that there was anything wrong with my choices. Planning to add finer typographic control in future, but for now&#8230; enjoy playing with the leading. Visit Word Clock&#8217;s permanent home</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [10, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/70"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=70"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/70/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=70"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=70"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=70"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 67,
+    "date": "2007-02-04T20:12:49",
+    "date_gmt": "2007-02-04T20:12:49",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/02/04/screensavr-dead-end-new-beginning/"
+    },
+    "modified": "2009-08-03T08:46:33",
+    "modified_gmt": "2009-08-03T08:46:33",
+    "slug": "screensavr-dead-end-new-beginning",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/02/04/screensavr-dead-end-new-beginning/",
+    "title": {
+      "rendered": "Screensavr: dead-end, new beginning"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/2007/02/04/screensavr-dead-end-new-beginning/\" title=\"img_1720.jpg\"><img src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/02/img_1720.jpg\" alt=\"img_1720.jpg\" /></a>\r\n\r\n<p>So I have reach a dead-end in Flash. I now have a Screensavr that works perfectly, honouring all image proportions. Looks great, but runs slowly in Flash as it can&#8217;t handle so many individual images as the bitmap processing isn&#8217;t sophisticated enough; had to make it so that each row is a series of MovieClips rather than one BitmapData object. Setting cacheAsBitmap was causing too much flickering; turning it off makes it run too slow.</p>\r\n\r\n<p>Unless there&#8217;s a major brainwave, a Cocoa rewrite is on the cards. This could take some time&#8230;</p>\r\n\r\n<p><a href=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/02/screensavrinstallr-003.zip\" title=\"screensavrinstallr-003.zip\">Download for Mac</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>So I have reach a dead-end in Flash. I now have a Screensavr that works perfectly, honouring all image proportions. Looks great, but runs slowly in Flash as it can&#8217;t handle so many individual images as the bitmap processing isn&#8217;t sophisticated enough; had to make it so that each row is a series of MovieClips [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/67"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=67"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/67/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=67"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=67"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=67"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 66,
+    "date": "2007-01-31T09:42:15",
+    "date_gmt": "2007-01-31T09:42:15",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/31/urlkit/"
+    },
+    "modified": "2007-01-31T09:42:15",
+    "modified_gmt": "2007-01-31T09:42:15",
+    "slug": "urlkit",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/31/urlkit/",
+    "title": {
+      "rendered": "UrlKit"
+    },
+    "content": {
+      "rendered": "<a href=\"http://joeberkovitz.com/blog/urlkit/\">This is impressive work.</a>\r\n\r\n&#8220;An open-source Flex library for browser URL control via deep linking which I have developed in collaboration with Todd Rein of Adobe.&#8221;\r\n\r\nI&#8217;ve recently written something similar for Flash 8 (we&#8217;re yet to have clients that are ready for Flash 9  / Flex). I discovered this afterwards: it produces automatically generated  human-readable URLs and caters for multiple state views; the same goals I was aiming for.\r\n\r\nThis is, uh, slightly better written than my version though&#8230;grr.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>This is impressive work. &#8220;An open-source Flex library for browser URL control via deep linking which I have developed in collaboration with Todd Rein of Adobe.&#8221; I&#8217;ve recently written something similar for Flash 8 (we&#8217;re yet to have clients that are ready for Flash 9 / Flex). I discovered this afterwards: it produces automatically generated [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 7],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/66"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=66"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/66/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=66"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=66"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=66"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 64,
+    "date": "2007-01-29T08:02:45",
+    "date_gmt": "2007-01-29T08:02:45",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/29/update/"
+    },
+    "modified": "2007-06-20T18:58:49",
+    "modified_gmt": "2007-06-20T18:58:49",
+    "slug": "update",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/29/update/",
+    "title": {
+      "rendered": "Update"
+    },
+    "content": {
+      "rendered": "I just packed up the new version of <a href=\"http://telemachus.local/simonheys/website/2007/01/21/screensavr-alpha/\">Screensavr</a> which I hacked together yesterday. Now automatically fills the screen, does different image proportions and can also read Groups.\r\n\r\nNext stage is to get it to honour all image proportions and handle different sized images. Then it shall be complete.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>I just packed up the new version of Screensavr which I hacked together yesterday. Now automatically fills the screen, does different image proportions and can also read Groups. Next stage is to get it to honour all image proportions and handle different sized images. Then it shall be complete.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [6],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/64"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=64"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/64/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=64"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=64"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=64"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 61,
+    "date": "2007-01-27T11:09:16",
+    "date_gmt": "2007-01-27T11:09:16",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/27/word-clock-screen-saver/"
+    },
+    "modified": "2007-06-20T18:58:27",
+    "modified_gmt": "2007-06-20T18:58:27",
+    "slug": "word-clock-screen-saver",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/27/word-clock-screen-saver/",
+    "title": {
+      "rendered": "Word Clock: screen saver"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/2007/01/27/word-clock-screen-saver/\"><img src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2007/01/screengrab.jpg\" alt=\"screengrab.jpg\" /></a>\r\n<p>So while I build up the energy to sort out the flickr <a href=\"http://telemachus.local/simonheys/website/2007/01/21/screensavr-alpha/\">Screensavr</a>, I thought I&#8217;d upload the screen saver version of Word Clock. Nothing to configure here &#8211; just download and install.</p><p><a href='/wp-content/uploads/2007/01/wordclockinstaller.zip' title='wordclockinstaller.zip'>Download Word Clock installer for Mac</a></p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>So while I build up the energy to sort out the flickr Screensavr, I thought I&#8217;d upload the screen saver version of Word Clock. Nothing to configure here &#8211; just download and install.Download Word Clock installer for Mac</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/61"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=61"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/61/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=61"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=61"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=61"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 56,
+    "date": "2007-01-21T17:02:28",
+    "date_gmt": "2007-01-21T17:02:28",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/21/screensavr-alpha/"
+    },
+    "modified": "2007-06-20T18:57:01",
+    "modified_gmt": "2007-06-20T18:57:01",
+    "slug": "screensavr-alpha",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/21/screensavr-alpha/",
+    "title": {
+      "rendered": "Screensavr alpha"
+    },
+    "content": {
+      "rendered": "<a href='http://telemachus.local/simonheys/website/2007/01/21/screensavr-alpha/itworksjpg/' rel='attachment wp-att-65' title='screensavr'><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/01/itworks.jpg' alt='itworks.jpg' /></a>\r\n\r\nSo here it is. More fiddly than I was anticipating. You must first enter your flickr user-name into the control panel.\r\n\r\n<a href='/wp-content/uploads/2007/01/screensavrinstallr.zip' title='screensavrinstallr.zip'>Download Mac installer 0.0.2alpha</a>\r\n\r\nNo Windows version, I don&#8217;t have the power. Or the inclination.\r\n\r\nImage courtesy of <a href=\"http://thingstolookat.blogspot.com/\">jaypeg</a>.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>So here it is. More fiddly than I was anticipating. You must first enter your flickr user-name into the control panel. Download Mac installer 0.0.2alpha No Windows version, I don&#8217;t have the power. Or the inclination. Image courtesy of jaypeg.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/56"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=56"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/56/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=56"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=56"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=56"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 51,
+    "date": "2007-01-20T08:10:41",
+    "date_gmt": "2007-01-20T08:10:41",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/20/screensavr/"
+    },
+    "modified": "2007-01-21T17:04:07",
+    "modified_gmt": "2007-01-21T17:04:07",
+    "slug": "screensavr",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/20/screensavr/",
+    "title": {
+      "rendered": "Screensavr"
+    },
+    "content": {
+      "rendered": "<img id=\"image50\" src=\"http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2007/01/screensavr.jpg\" alt=\"screensavr.jpg\" /><p>Hah! See what I did there? It&#8217;s a flickr-based screensaver. This is some old slideshow code I had lying around, a nice way to view a stream of images as they scroll by. In these new days of the internet it seemed appropriate for it to read a flickr photostream. It will be available on this site when I figure out a nice way to allow people to configr it.</p>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Hah! See what I did there? It&#8217;s a flickr-based screensaver. This is some old slideshow code I had lying around, a nice way to view a stream of images as they scroll by. In these new days of the internet it seemed appropriate for it to read a flickr photostream. It will be available on [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 8],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/51"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=51"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/51/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=51"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=51"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=51"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 49,
+    "date": "2007-01-16T08:12:28",
+    "date_gmt": "2007-01-16T08:12:28",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2007/01/16/magnetic-site/"
+    },
+    "modified": "2007-01-16T08:13:02",
+    "modified_gmt": "2007-01-16T08:13:02",
+    "slug": "magnetic-site",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2007/01/16/magnetic-site/",
+    "title": {
+      "rendered": "Magnetic site"
+    },
+    "content": {
+      "rendered": "The site using the magnetic code is now live&#8230;at last!\r\n\r\nThe magnetic code sits at the core of a structurally complex site which was built by the rest of the <a href=\"http://www.tonic.co.uk/\">Tonic</a> Flash crew. They implemented full browser history, bookmarking and deep-linking which is a joy to use.\r\n\r\n<a href=\"http://www.thejunglegroup.com/\">www.thejunglegroup.com</a>",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>The site using the magnetic code is now live&#8230;at last! The magnetic code sits at the core of a structurally complex site which was built by the rest of the Tonic Flash crew. They implemented full browser history, bookmarking and deep-linking which is a joy to use. www.thejunglegroup.com</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 5],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/49"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=49"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/49/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=49"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=49"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=49"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 44,
+    "date": "2006-11-26T09:07:15",
+    "date_gmt": "2006-11-26T09:07:15",
+    "guid": {
+      "rendered": "http://telemachus.local/simonheys/website/wordpress/2006/11/26/flash-9-magnetic/"
+    },
+    "modified": "2007-06-20T18:55:22",
+    "modified_gmt": "2007-06-20T18:55:22",
+    "slug": "flash-9-magnetic",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2006/11/26/flash-9-magnetic/",
+    "title": {
+      "rendered": "Flash 9: Magnetic"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/work/flash-9-magnetic/\"><img alt=\"magnets.jpg\" id=\"image46\" src=\"http://telemachus.local/simonheys/website/wp-content/uploads/2006/11/magnets.jpg\" /></a>\r\n\r\nAt <a href=\"http://www.tonic.co.uk/\">tonic</a> I was recently working on a project for a client where we wanted to get across the idea of different teams working on individual projects. I came up with the idea of magnetic navigation, which attracts a different group of people appropriate to the selected project.\r\n\r\nThere were a few ways of achieving this; the best one turned out to be using the <a href=\"http://telemachus.local/simonheys/website/work/elastic-collision/\">elastic collision</a> code, but adding attractive forces. There is a fair amount of mathematical calculation going on per frame. Flash 9 Alpha came out at around the same time, so out of curiosity I rewrote the initial &#8216;sketch&#8217; concept in AS3. Yields a massive speed increase!\r\n\r\nRequires <a href=\"http://www.adobe.com/products/flashplayer/\">Adobe Flash 9 plug-in</a>.\r\n\r\nThe site itself is Flash 8 and will be live early 2007.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>At tonic I was recently working on a project for a client where we wanted to get across the idea of different teams working on individual projects. I came up with the idea of magnetic navigation, which attracts a different group of people appropriate to the selected project. There were a few ways of achieving [&hellip;]</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 7, 5],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/44"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=44"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/44/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=44"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=44"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=44"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 1,
+    "date": "2006-07-15T11:41:41",
+    "date_gmt": "2006-07-15T11:41:41",
+    "guid": {
+      "rendered": ""
+    },
+    "modified": "2007-06-20T18:48:04",
+    "modified_gmt": "2007-06-20T18:48:04",
+    "slug": "vector-field",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2006/07/15/vector-field/",
+    "title": {
+      "rendered": "Vector Field"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/wordpress/work/vector-field-example/\"><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/swirl-white.jpg' alt='swirl-white.jpg' /></a>\r\n\r\n<a href=\"http://telemachus.local/simonheys/website/wordpress/work/vector-field-example/\">Vector field proof of concept in Flash 8.</a> Uses displacement map as a &#8216;cheap&#8217; vector field &#8211; providing you&#8217;re not expecting miracles it works quite well. The colours mix together naturally which is a nice side effect of the filter.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Vector field proof of concept in Flash 8. Uses displacement map as a &#8216;cheap&#8217; vector field &#8211; providing you&#8217;re not expecting miracles it works quite well. The colours mix together naturally which is a nice side effect of the filter.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 5],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/1"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=1"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/1/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=1"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=1"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=1"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 19,
+    "date": "2006-06-15T17:48:58",
+    "date_gmt": "2006-06-15T17:48:58",
+    "guid": {
+      "rendered": "http://wordpress.simonheys.com/2006/07/15/elastic-collision/"
+    },
+    "modified": "2006-11-25T16:01:50",
+    "modified_gmt": "2006-11-25T16:01:50",
+    "slug": "elastic-collision",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2006/06/15/elastic-collision/",
+    "title": {
+      "rendered": "Elastic Collision"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/wordpress/work/elastic-collision/\"><img id=\"image36\" alt=\"springs.jpg\" src=\"http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2006/11/springs.jpg\" /></a>\r\n\r\nVery basic elastic collision-based rigid body dynamics.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Very basic elastic collision-based rigid body dynamics.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/19"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=19"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/19/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=19"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=19"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=19"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 11,
+    "date": "2005-10-15T15:34:07",
+    "date_gmt": "2005-10-15T15:34:07",
+    "guid": {
+      "rendered": "http://wordpress.simonheys.com/2006/07/15/spiro/"
+    },
+    "modified": "2007-06-20T18:52:46",
+    "modified_gmt": "2007-06-20T18:52:46",
+    "slug": "spiro",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2005/10/15/spiro/",
+    "title": {
+      "rendered": "Spiro"
+    },
+    "content": {
+      "rendered": "<a href=\"http://telemachus.local/simonheys/website/work/spiro-example/\"><img src='http://telemachus.local/simonheys/website/wp-content/uploads/2007/06/spiro-white2.gif' alt='spiro-white2.gif' /></a>\r\n\r\n<a href=\"http://telemachus.local/simonheys/website/work/spiro-example/\">Flash 6 Spirograph</a>. An old spirograph drawing thing, based on some of the machines in the Science Museum. A Flash 8/9 version would be much faster.",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Flash 6 Spirograph. An old spirograph drawing thing, based on some of the machines in the Science Museum. A Flash 8/9 version would be much faster.</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/11"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=11"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/11/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=11"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=11"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=11"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  },
+  {
+    "id": 33,
+    "date": "2003-01-05T12:07:19",
+    "date_gmt": "2003-01-05T12:07:19",
+    "guid": {
+      "rendered": "http://wordpress.simonheys.com/2006/08/05/word-clock-4/"
+    },
+    "modified": "2006-11-25T19:12:11",
+    "modified_gmt": "2006-11-25T19:12:11",
+    "slug": "wordclock",
+    "status": "publish",
+    "type": "post",
+    "link": "http://telemachus.local/simonheys/website/2003/01/05/wordclock/",
+    "title": {
+      "rendered": "Word Clock"
+    },
+    "content": {
+      "rendered": "<img alt=\"wordclock.jpg\" id=\"image41\" src=\"http://telemachus.local/simonheys/website/wordpress/wp-content/uploads/2006/11/wordclock.jpg\" />\r\n\r\nTypographic clock using words rather than digits. First appeared on <a href=\"http://www.tonic.co.uk/\">Tonic</a> homepage, subsequently shown on <a href=\"http://www.bd4d.co.uk/\">BD4D</a> and at the <a href=\"http://www.sciencemuseum.org.uk/\">Science Museum</a>. Physical version is in progress&#8230;",
+      "protected": false
+    },
+    "excerpt": {
+      "rendered": "<p>Typographic clock using words rather than digits. First appeared on Tonic homepage, subsequently shown on BD4D and at the Science Museum. Physical version is in progress&#8230;</p>\n",
+      "protected": false
+    },
+    "author": 1,
+    "featured_media": 0,
+    "comment_status": "open",
+    "ping_status": "open",
+    "sticky": false,
+    "template": "",
+    "format": "standard",
+    "meta": [],
+    "categories": [2, 5],
+    "tags": [],
+    "_links": {
+      "self": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/33"
+        }
+      ],
+      "collection": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts"
+        }
+      ],
+      "about": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/types/post"
+        }
+      ],
+      "author": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/users/1"
+        }
+      ],
+      "replies": [
+        {
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/comments?post=33"
+        }
+      ],
+      "version-history": [
+        {
+          "count": 0,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/posts/33/revisions"
+        }
+      ],
+      "wp:attachment": [
+        {
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/media?parent=33"
+        }
+      ],
+      "wp:term": [
+        {
+          "taxonomy": "category",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/categories?post=33"
+        },
+        {
+          "taxonomy": "post_tag",
+          "embeddable": true,
+          "href": "http://telemachus.local/simonheys/website/wp-json/wp/v2/tags?post=33"
+        }
+      ],
+      "curies": [
+        {
+          "name": "wp",
+          "href": "https://api.w.org/{rel}",
+          "templated": true
+        }
+      ]
+    }
+  }
+]
