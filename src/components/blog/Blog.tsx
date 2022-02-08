@@ -37,19 +37,21 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
-        {old && (
-          <div className={"col-md-12"}>
-            This content is more than 5 years old and probably doesn't work any
-            more
-          </div>
-        )}
+        <div className={"row gx-0 border-top"}></div>
+      </div>
+      <div className={"container-fluid pt-2"}>
         <div className={"row mb-5"}>
-          <div className={"col-md-6"}>
-            <h1 className={styles.title}>
-              {page.title} {date.toLocaleDateString()}
-            </h1>
+          <div className={"col-md-3"}>
+            <h1 className={styles.title}>{date.toLocaleDateString()}</h1>
           </div>
           <div className={"col-md-6"}>
+            <h1 className={styles.title}>{page.title}</h1>
+            {old && (
+              <div className={"col-md-12"}>
+                This content is more than {age - 1} years old and probably
+                doesn't work any more
+              </div>
+            )}
             {content && (
               <div className={styles.text}>
                 <ReactMarkdown

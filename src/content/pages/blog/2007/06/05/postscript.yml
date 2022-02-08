@@ -8,7 +8,7 @@ excerpt: |
 components:
   - type: blog
     content: |
-      ![gp_spiral](uploads/2007/06/gp_spiral.jpg \"gp_spiral\"
+      ![gp_spiral](uploads/2007/06/gp_spiral.jpg)
 
       Most designers and programmers whose paths I’ve crossed have heard of [PostScript](http://en.wikipedia.org/wiki/PostScript) but don’t know much about it. I think it’s a hidden gem. Not only is it a fascinating [programming language](http://en.wikipedia.org/wiki/PostScript#The%5Flanguage) which can be used to create generative drawings and save you hours of time through automation, but you can also use it as an intermediary format to transfer output from other languages such as Flash ActionScript or Java / Processing into Adobe Illustrator.
 
@@ -28,7 +28,7 @@ components:
 
       This little snippet gives the following result:
 
-      [ps-line.gif](uploads/2007/06/ps-line.gif) 
+      ![ps-line.gif](uploads/2007/06/ps-line.gif) 
 
       A line from 0,0 to 100,100. Amazing, eh? Not really, but the point is that the code is really simple to understand and we’re only using the line drawing command. If you go slow and learn one command at a time, you can eventually do some pretty interesting and useful things.
 
@@ -73,7 +73,7 @@ components:
 
       I’ve put the source for these into a small download. You’ll need Illustrator or some other PostScript viewer to see them.
 
-      Download PostScript examples](/files/ps-examples.zip)
+      [Download PostScript examples](/files/ps-examples.zip)
 
       #### Output from Flash into PostScript
 
@@ -92,7 +92,7 @@ components:
       <object type=\"application/x-shockwave-flash\" data=\"uploads/2007/06/application.swf\" name=\"fm\\_application\\_117955304\" width=\"440\" height=\"440\">
       ```
 
-      [\\[ZIP\\] Download Source Code](/files/ps-demo-app.zip)
+      [Download Source Code](/files/ps-demo-app.zip)
 
       To use, click to start drawing. Once the drawing has finished, click 'Show PostScript' to see the code. This code doesn't update live because Flash isn't fast enough, so wait until the drawing has finished before viewing it. All the application does is output the same drawing commands as PostScript-style commands into the text window;
 

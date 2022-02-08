@@ -1,0 +1,19 @@
+@import "~/src/styles/use-bootstrap";
+
+.title {
+  composes: global(h1);
+  composes: global(mb-2);
+  composes: global(mb-sm-0);
+  font-weight: bold;
+}
+
+.entryTitle {
+  composes: global(h3);
+  font-weight: bold;
+}
+
+.excerpt {
+  composes: global(h5);
+  margin-bottom: -$paragraph-margin-bottom;
+  color: var(--body-color);
+}
