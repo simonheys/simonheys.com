@@ -6,8 +6,19 @@
 
 .title {
   composes: global(h1);
+  composes: global(mb-5);
+  font-weight: bold;
+}
+
+.warning {
+  composes: global(robots-nocontent);
   composes: global(mb-2);
-  composes: global(mb-sm-0);
+  composes: global(p-2);
+  background-color: var(--gray-150);
+  border-radius: 0.2rem;
+  color: var(--gray-550);
+  font-size: $font-size-sm;
+  line-height: $line-height-sm;
   font-weight: bold;
 }
 

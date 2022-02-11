@@ -1,5 +1,4 @@
 import * as React from "react";
-import { useRouter } from "next/router";
 
 import {
   getBlogDateFromPath,
@@ -13,8 +12,6 @@ import LinkA from "../ui/LinkA";
 import styles from "./BlogIndex.module.scss";
 
 const BlogIndex: React.FC = () => {
-  const router = useRouter();
-  const page = getPageForPath(router.asPath);
   const pagePaths = getBlogPagePaths();
   const pagesPathsByYear = {};
 
@@ -34,7 +31,7 @@ const BlogIndex: React.FC = () => {
       {sortedYears.map((year) => {
         const paths = pagesPathsByYear[year];
         return (
-          <div key={year}>
+          <div key={`year-${year}`}>
             <div className={"container-fluid"}>
               <AppearWhenInView>
                 <div className={"row gx-0 border-top"}></div>
@@ -55,7 +52,7 @@ const BlogIndex: React.FC = () => {
                     }
                     return (
                       <AppearWhenInView
-                        key={`index`}
+                        key={`blog-entry-${index}`}
                         className={"col-md mb-3 mb-md-4 d-flex flex-column"}
                       >
                         <LinkA href={path}>
@@ -78,37 +75,6 @@ const BlogIndex: React.FC = () => {
           </div>
         );
       })}
-      <div className={"container-fluid pt-2 mb-5"}>
-        <div className={"row"}>
-          <div className={"col-md-6"}>
-            <h1 className={styles.title}>{page.title}</h1>
-          </div>
-          <div className={"col-md-6"}>
-            {pagePaths.map((path, index) => {
-              const page = getPageForPath(path);
-              if (!page) {
-                return null;
-              }
-              const date = getBlogDateFromPath(path);
-              return (
-                <AppearWhenInView
-                  key={`case-studies-grid-${path}-${index}`}
-                  className={"col-md mb-3 mb-md-4 d-flex flex-column"}
-                >
-                  <LinkA href={path}>
-                    <div>
-                      <h2>
-                        {page.title} {date.toLocaleDateString()}
-                      </h2>
-                      <p>{page.excerpt}</p>
-                    </div>
-                  </LinkA>
-                </AppearWhenInView>
-              );
-            })}
-          </div>
-        </div>
-      </div>
     </>
   );
 };

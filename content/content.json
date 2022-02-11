@@ -63,7 +63,7 @@
           "/about",
           "/contact",
           "/case-studies",
-          "/blog"
+          "/blog*"
         ],
         "type": "work-header",
         "title": "About",
@@ -90,7 +90,7 @@
         {
           "type": "work-header",
           "title": "About",
-          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nI have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.\n\nHire me to design and build your app, software or website.\n",
+          "subtitle": "I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.\n\nI have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.\n\nHire me to design or build your app, software or website.\n",
           "links": [
             {
               "text": "Email",
@@ -171,7 +171,7 @@
     {
       "path": "/blog/2006/11/26/flash-9-magnetic",
       "title": "Flash 9: Magnetic",
-      "excerpt": "At tonic I was recently working on a project for a client where we wanted to\nget across the idea of different teams working on individual projects. I came\nup with the idea of magnetic navigation, which attracts a different group of\npeople appropriate to the selected project. There were a few ways of achieving\n\\[…\\]\n",
+      "excerpt": "At tonic I was recently working on a project for a client where we wanted to\nget across the idea of different teams working on individual projects. I came\nup with the idea of magnetic navigation, which attracts a different group of\npeople appropriate to the selected project. There were a few ways of achieving…\n",
       "components": [
         {
           "type": "blog",
@@ -199,7 +199,7 @@
     {
       "path": "/blog/2007/01/20/screensavr",
       "title": "Screensavr",
-      "excerpt": "Hah! See what I did there? It’s a flickr-based screensaver. This is some old\nslideshow code I had lying around, a nice way to view a stream of images as\nthey scroll by. In these new days of the internet it seemed appropriate for it\nto read a flickr photostream. It will be available on \\[…\\]\n",
+      "excerpt": "Hah! See what I did there? It’s a flickr-based screensaver. This is some old\nslideshow code I had lying around, a nice way to view a stream of images as\nthey scroll by. In these new days of the internet it seemed appropriate for it\nto read a flickr photostream. It will be available on…\n",
       "components": [
         {
           "type": "blog",
@@ -255,7 +255,7 @@
     {
       "path": "/blog/2007/01/31/urlkit",
       "title": "UrlKit",
-      "excerpt": "This is impressive work. “An open-source Flex library for browser URL control\nvia deep linking which I have developed in collaboration with Todd Rein of\nAdobe.” I’ve recently written something similar for Flash 8 (we’re yet to have\nclients that are ready for Flash 9 / Flex). I discovered this afterwards: it\nproduces automatically generated \\[…\\]\n",
+      "excerpt": "This is impressive work. “An open-source Flex library for browser URL control\nvia deep linking which I have developed in collaboration with Todd Rein of\nAdobe.” I’ve recently written something similar for Flash 8 (we’re yet to have\nclients that are ready for Flash 9 / Flex). I discovered this afterwards: it\nproduces automatically generated…\n",
       "components": [
         {
           "type": "blog",
@@ -269,7 +269,7 @@
     {
       "path": "/blog/2007/02/04/screensavr-dead-end-new-beginning",
       "title": "Screensavr: dead-end, new beginning",
-      "excerpt": "So I have reach a dead-end in Flash. I now have a Screensavr that works\nperfectly, honouring all image proportions. Looks great, but runs slowly in\nFlash as it can’t handle so many individual images as the bitmap processing\nisn’t sophisticated enough; had to make it so that each row is a series of\nMovieClips \\[…\\]\n",
+      "excerpt": "So I have reach a dead-end in Flash. I now have a Screensavr that works\nperfectly, honouring all image proportions. Looks great, but runs slowly in\nFlash as it can’t handle so many individual images as the bitmap processing\nisn’t sophisticated enough; had to make it so that each row is a series of\nMovieClips …\n",
       "components": [
         {
           "type": "blog",
@@ -311,7 +311,7 @@
     {
       "path": "/blog/2007/03/18/gravity",
       "title": "Gravity",
-      "excerpt": "I once did a quick experiment into creating drawings from nothing but code,\nbut based on natural phenomena. The first thing I tried was gravity and it\ngave some results which I really liked. Here are the PostScript drawings it\nmade. As I’m on a bit of a Cocoa Screensaver mission at the moment I \\[…\\]\n",
+      "excerpt": "I once did a quick experiment into creating drawings from nothing but code,\nbut based on natural phenomena. The first thing I tried was gravity and it\ngave some results which I really liked. Here are the PostScript drawings it\nmade. As I’m on a bit of a Cocoa Screensaver mission at the moment I…\n",
       "components": [
         {
           "type": "blog",
@@ -325,7 +325,7 @@
     {
       "path": "/blog/2007/03/26/visual-studio-express",
       "title": "Visual Studio Express",
-      "excerpt": "Having recently parted with my aging G4 PowerBook and upgraded to an\nentry-level MacBook, I couldn’t resist the temptation to install Windows XP\n(spit!). Well, it’s good for games at least. I was also excited to discover a\nfree version of Visual Studio called Visual Studio Express. Have only played\nwith the tutorials but have \\[…\\]\n",
+      "excerpt": "Having recently parted with my aging G4 PowerBook and upgraded to an\nentry-level MacBook, I couldn’t resist the temptation to install Windows XP\n(spit!). Well, it’s good for games at least. I was also excited to discover a\nfree version of Visual Studio called Visual Studio Express. Have only played\nwith the tutorials but have…\n",
       "components": [
         {
           "type": "blog",
@@ -367,7 +367,7 @@
     {
       "path": "/blog/2007/05/12/vector-field-with-source-code",
       "title": "Vector Field with source code",
-      "excerpt": "I’ve decided to start releasing bits and pieces of source code just for fun.\nThe first one is the Vector Field demo I wrote ages ago. First, the source\ncode \\[ZIP\\] Download Vector Field source code It’s easy to change the size,\ncolour and ‘splat’ graphics. This is totally free for non-commercial use, but\nI \\[…\\]\n",
+      "excerpt": "I’ve decided to start releasing bits and pieces of source code just for fun.\nThe first one is the Vector Field demo I wrote ages ago. First, the source\ncode \\[ZIP\\] Download Vector Field source code It’s easy to change the size,\ncolour and ‘splat’ graphics. This is totally free for non-commercial use, but\nI …\n",
       "components": [
         {
           "type": "blog",
@@ -381,7 +381,7 @@
     {
       "path": "/blog/2007/05/13/ruined-test-print",
       "title": "Ruined Test Print",
-      "excerpt": "I’ve been making blue-prints / cyanotypes of various kinds for quite a while.\nThe appeal has always been to make photos without using lenses or carefully\ncontrolled photographic processes. I’ve never been a big fan of photography;\nthe equipment and techniques are now so honed and precise leading the majority\nof photographs to appear somewhat \\[…\\]\n",
+      "excerpt": "I’ve been making blue-prints / cyanotypes of various kinds for quite a while.\nThe appeal has always been to make photos without using lenses or carefully\ncontrolled photographic processes. I’ve never been a big fan of photography;\nthe equipment and techniques are now so honed and precise leading the majority\nof photographs to appear somewhat…\n",
       "components": [
         {
           "type": "blog",
@@ -395,7 +395,7 @@
     {
       "path": "/blog/2007/05/26/pottery",
       "title": "Pottery",
-      "excerpt": "\\[ZIP\\] Download Pottery with source code To use: draw a simple ‘S’ shape on\nthe left-hand panel. Then experiment. Note that it’s fairly crude and only\nrenders convex surfaces properly. This was a quick mockup I made at the end of\nlast year to try out an idea for a Christmas Card. It was originally \\[…\\]\n",
+      "excerpt": "\\[ZIP\\] Download Pottery with source code To use: draw a simple ‘S’ shape on\nthe left-hand panel. Then experiment. Note that it’s fairly crude and only\nrenders convex surfaces properly. This was a quick mockup I made at the end of\nlast year to try out an idea for a Christmas Card. It was originally …\n",
       "components": [
         {
           "type": "blog",
@@ -437,7 +437,7 @@
     {
       "path": "/blog/2007/06/05/postscript",
       "title": "PostScript",
-      "excerpt": "Most designers and programmers whose paths I’ve crossed have heard of\nPostScript but don’t know much about it. I think it’s a hidden gem. Not only\nis it a fascinating programming language which can be used to create\ngenerative drawings and save you hours of time through automation, but you can\nalso use it as \\[…\\]\n",
+      "excerpt": "Most designers and programmers whose paths I’ve crossed have heard of\nPostScript but don’t know much about it. I think it’s a hidden gem. Not only\nis it a fascinating programming language which can be used to create\ngenerative drawings and save you hours of time through automation, but you can\nalso use it as …\n",
       "components": [
         {
           "type": "blog",
@@ -549,7 +549,7 @@
     {
       "path": "/blog/2009/12/31/word-clock-for-iphone",
       "title": "Word Clock for iPhone",
-      "excerpt": "So I’ve spent my spare moments over the past year-and-a-bit working on Word\nClock for iPhone (link opens iTunes). This uses the same languages as the\nscreensaver and features linear and rotary versions with full typographic\ncontrol. You can pinch and zoom and animate between the two versions. I’ve\nalso set up a simple dedicated \\[…\\]\n",
+      "excerpt": "So I’ve spent my spare moments over the past year-and-a-bit working on Word\nClock for iPhone (link opens iTunes). This uses the same languages as the\nscreensaver and features linear and rotary versions with full typographic\ncontrol. You can pinch and zoom and animate between the two versions. I’ve\nalso set up a simple dedicated …\n",
       "components": [
         {
           "type": "blog",

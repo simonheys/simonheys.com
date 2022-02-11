@@ -3,7 +3,7 @@ excerpt: |
   Hah! See what I did there? It’s a flickr-based screensaver. This is some old
   slideshow code I had lying around, a nice way to view a stream of images as
   they scroll by. In these new days of the internet it seemed appropriate for it
-  to read a flickr photostream. It will be available on \[…\]
+  to read a flickr photostream. It will be available on…
 components:
   - type: blog
     content: |

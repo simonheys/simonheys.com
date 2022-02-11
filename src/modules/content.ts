@@ -179,9 +179,14 @@ export const getComponentsForPath = (
         typeof pageComponent.exclude === "string"
           ? [pageComponent.exclude]
           : pageComponent.exclude;
-      if (exclude.includes(normalisedPath)) {
-        return false;
+      for (let i = 0; i < exclude.length; i++) {
+        if (normalisedPath.match(new RegExp(exclude[i]))) {
+          return false;
+        }
       }
+      // if (exclude.includes(normalisedPath)) {
+      //   return false;
+      // }
     }
     return true;
   });

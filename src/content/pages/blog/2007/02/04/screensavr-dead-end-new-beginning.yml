@@ -4,7 +4,7 @@ excerpt: |
   perfectly, honouring all image proportions. Looks great, but runs slowly in
   Flash as it can’t handle so many individual images as the bitmap processing
   isn’t sophisticated enough; had to make it so that each row is a series of
-  MovieClips \[…\]
+  MovieClips …
 components:
   - type: blog
     content: |

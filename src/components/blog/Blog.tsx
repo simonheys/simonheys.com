@@ -9,7 +9,7 @@ import LinkA from "../ui/LinkA";
 import styles from "./Blog.module.scss";
 import ImageResponsive from "../ui/ImageResponsive";
 import { getBlogDateFromPath, getPageForPath } from "../../modules/content";
-import { Slash } from "../ui/icons";
+import { Circle, Slash } from "../ui/icons";
 
 const LinkComponent = ({ href, ...rest }: any) => {
   return <LinkA href={href} {...rest} />;
@@ -54,9 +54,8 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
           <div className={"col-md-6"}>
             <h1 className={styles.title}>{page.title}</h1>
             {old && (
-              <div className={"col-md-12"}>
-                This content is more than {age - 1} years old and probably
-                doesn't work any more
+              <div className={styles.warning}>
+                <Circle /> This content is more than {age - 1} years old
               </div>
             )}
             {content && (
