@@ -9,6 +9,7 @@ import LinkA from "../ui/LinkA";
 import styles from "./Blog.module.scss";
 import ImageResponsive from "../ui/ImageResponsive";
 import { getBlogDateFromPath, getPageForPath } from "../../modules/content";
+import { Slash } from "../ui/icons";
 
 const LinkComponent = ({ href, ...rest }: any) => {
   return <LinkA href={href} {...rest} />;
@@ -42,7 +43,13 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
       <div className={"container-fluid pt-2"}>
         <div className={"row mb-5"}>
           <div className={"col-md-3"}>
-            <h1 className={styles.title}>{date.toLocaleDateString()}</h1>
+            <h1 className={styles.date}>
+              {date.getDate()}
+              <Slash />
+              {date.getMonth() + 1}
+              <Slash />
+              {date.getFullYear()}
+            </h1>
           </div>
           <div className={"col-md-6"}>
             <h1 className={styles.title}>{page.title}</h1>

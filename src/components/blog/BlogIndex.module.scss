@@ -1,7 +1,11 @@
 @import "~/src/styles/use-bootstrap";
 
+.date {
+  composes: global(h3);
+}
+
 .title {
-  composes: global(h1);
+  composes: global(h2);
   composes: global(mb-2);
   composes: global(mb-sm-0);
   font-weight: bold;

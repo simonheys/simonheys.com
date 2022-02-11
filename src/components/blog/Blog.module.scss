@@ -1,5 +1,9 @@
 @import "~/src/styles/use-bootstrap";
 
+.date {
+  composes: global(h3);
+}
+
 .title {
   composes: global(h1);
   composes: global(mb-2);

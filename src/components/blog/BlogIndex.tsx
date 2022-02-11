@@ -44,7 +44,7 @@ const BlogIndex: React.FC = () => {
               <div className={"row"}>
                 <div className={"col-md-3"}>
                   <AppearWhenInView>
-                    <h1 className={styles.title}>{year}</h1>
+                    <div className={styles.date}>{year}</div>
                   </AppearWhenInView>
                 </div>
                 <div className={"col-md-6"}>
@@ -53,7 +53,6 @@ const BlogIndex: React.FC = () => {
                     if (!page) {
                       return null;
                     }
-                    const date = getBlogDateFromPath(path);
                     return (
                       <AppearWhenInView
                         key={`index`}

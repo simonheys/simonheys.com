@@ -27,7 +27,7 @@ all:
       - "/about"
   before: []
   after:
-    - exclude: ["/about", "/contact", "/case-studies"]
+    - exclude: ["/about", "/contact", "/case-studies", "/blog"]
       type: work-header
       title: About
       ruled: true

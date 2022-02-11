@@ -62,7 +62,8 @@
         "exclude": [
           "/about",
           "/contact",
-          "/case-studies"
+          "/case-studies",
+          "/blog"
         ],
         "type": "work-header",
         "title": "About",
