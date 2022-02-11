@@ -55,6 +55,18 @@ const Page: React.FC<PageProps> = ({ page }) => {
           href="https://player.vimeo.com"
           crossOrigin="anonymous"
         ></link>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="RSS 2.0"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/`}
+        />
+        <link
+          rel="alternate"
+          type="text/xml"
+          title="RSS .92"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/rss/`}
+        />
         <link rel="shortcut icon" href="/favicon/favicon.ico"></link>
         <link
           rel="icon"
