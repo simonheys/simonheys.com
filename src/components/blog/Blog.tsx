@@ -61,6 +61,7 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
             {content && (
               <div className={styles.text}>
                 <ReactMarkdown
+                  // @ts-expect-error - see https://github.com/rehypejs/rehype/discussions/63
                   rehypePlugins={[rehypeRaw]}
                   components={components}
                 >

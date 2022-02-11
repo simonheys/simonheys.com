@@ -119,7 +119,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "![wordclock.jpg](/wordpress/wp-content/uploads/2006/11/wordclock.jpg)\n\nTypographic clock using words rather than digits. First appeared on\n[Tonic](https://www.tonic.co.uk/) homepage, subsequently shown on\n[BD4D](https://www.bd4d.co.uk/) and at the [Science\nMuseum](https://www.sciencemuseum.org.uk/). Physical version is in\nprogress…\n"
+          "content": "![wordclock.jpg](uploads/2006/11/wordclock.jpg)\n\nTypographic clock using words rather than digits. First appeared on\n[Tonic](https://www.tonic.co.uk/) homepage, subsequently shown on\n[BD4D](https://www.bd4d.co.uk/) and at the [Science\nMuseum](https://www.sciencemuseum.org.uk/). Physical version is in\nprogress…\n"
         },
         {
           "type": "blog-next"
@@ -147,7 +147,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "[![springs.jpg](/wordpress/wp-content/uploads/2006/11/springs.jpg)](/wordpress/work/elastic-collision/)Very\nbasic elastic collision-based rigid body dynamics.\n"
+          "content": "[![springs.jpg](uploads/2006/11/springs.jpg)](/wordpress/work/elastic-collision/)Very\nbasic elastic collision-based rigid body dynamics.\n"
         },
         {
           "type": "blog-next"
@@ -157,11 +157,11 @@
     {
       "path": "/blog/2006/07/15/vector-field",
       "title": "Vector Field",
-      "excerpt": "Vector field proof of concept in Flash 8\\. Uses displacement map as a ‘cheap’\nvector field – providing you’re not expecting miracles it works quite well.\nThe colours mix together naturally which is a nice side effect of the filter.\n",
+      "excerpt": "Vector field proof of concept in Flash 8. Uses displacement map as a ‘cheap’\nvector field – providing you’re not expecting miracles it works quite well.\nThe colours mix together naturally which is a nice side effect of the filter.\n",
       "components": [
         {
           "type": "blog",
-          "content": "[![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/wordpress/work/vector-field-example/)\n[Vector field proof of concept in Flash\n8.](/wordpress/work/vector-field-example/)\nUses displacement map as a ‘cheap’ vector field – providing you’re not\nexpecting miracles it works quite well. The colours mix together naturally\nwhich is a nice side effect of the filter.\n"
+          "content": "[![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/wordpress/work/vector-field-example/)\n\n[Vector field proof of concept in Flash\n8.](/wordpress/work/vector-field-example/)\nUses displacement map as a ‘cheap’ vector field – providing you’re not\nexpecting miracles it works quite well. The colours mix together naturally\nwhich is a nice side effect of the filter.\n"
         },
         {
           "type": "blog-next"
@@ -175,7 +175,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "[![magnets.jpg](uploads/2006/11/magnets.jpg)](/work/flash-9-magnetic/)At\n[tonic](http://www.tonic.co.uk/) I was recently working on a project for a\nclient where we wanted to get across the idea of different teams working\non individual projects. I came up with the idea of magnetic navigation,\nwhich attracts a different group of people appropriate to the selected\nproject. There were a few ways of achieving this; the best one turned out\nto be using the [elastic\ncollision](/work/elastic-collision/)\ncode, but adding attractive forces. There is a fair amount of mathematical\ncalculation going on per frame. Flash 9 Alpha came out at around the same\ntime, so out of curiosity I rewrote the initial ‘sketch’ concept in AS3\\.\nYields a massive speed increase! Requires [Adobe Flash 9\nplug-in](http://www.adobe.com/products/flashplayer/). The site itself is\nFlash 8 and will be live early 2007.\n"
+          "content": "[![magnets.jpg](uploads/2006/11/magnets.jpg)](/work/flash-9-magnetic/)\n\nAt [tonic](http://www.tonic.co.uk/) I was recently working on a project for a\nclient where we wanted to get across the idea of different teams working\non individual projects. I came up with the idea of magnetic navigation,\nwhich attracts a different group of people appropriate to the selected\nproject. There were a few ways of achieving this; the best one turned out\nto be using the [elastic\ncollision](/work/elastic-collision/)\ncode, but adding attractive forces. There is a fair amount of mathematical\ncalculation going on per frame. Flash 9 Alpha came out at around the same\ntime, so out of curiosity I rewrote the initial ‘sketch’ concept in AS3\\.\nYields a massive speed increase! Requires [Adobe Flash 9\nplug-in](http://www.adobe.com/products/flashplayer/). The site itself is\nFlash 8 and will be live early 2007.\n"
         },
         {
           "type": "blog-next"
@@ -203,7 +203,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "![screensavr.jpg](/wordpress/wp-content/uploads/2007/01/screensavr.jpg)\n\n\nHah! See what I did there? It’s a flickr-based screensaver. This is some\nold slideshow code I had lying around, a nice way to view a stream of\nimages as they scroll by. In these new days of the internet it seemed\nappropriate for it to read a flickr photostream. It will be available on\nthis site when I figure out a nice way to allow people to configr it.\n"
+          "content": "![screensavr.jpg](uploads/2007/01/screensavr.jpg)\n\n\nHah! See what I did there? It’s a flickr-based screensaver. This is some\nold slideshow code I had lying around, a nice way to view a stream of\nimages as they scroll by. In these new days of the internet it seemed\nappropriate for it to read a flickr photostream. It will be available on\nthis site when I figure out a nice way to allow people to configr it.\n"
         },
         {
           "type": "blog-next"
@@ -217,7 +217,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "[![itworks.jpg](uploads/2007/01/itworks.jpg)](/2007/01/21/screensavr-alpha/itworksjpg/\n\"screensavr\")So here it is. More fiddly than I was anticipating. You must\nfirst enter your flickr user-name into the control panel.[Download Mac\ninstaller 0.0.2alpha](/wp-content/uploads/2007/01/screensavrinstallr.zip\n\"screensavrinstallr.zip\")No Windows version, I don’t have the power. Or\nthe inclination. Image courtesy of\n[jaypeg](http://thingstolookat.blogspot.com/).\n"
+          "content": "[![itworks.jpg](uploads/2007/01/itworks.jpg)](/2007/01/21/screensavr-alpha/itworksjpg/\n\"screensavr\")\n\nSo here it is. More fiddly than I was anticipating. You must\nfirst enter your flickr user-name into the control panel.\n\n[Download Mac\ninstaller 0.0.2alpha](/uploads/2007/01/screensavrinstallr.zip\n\"screensavrinstallr.zip\")\n\nNo Windows version, I don’t have the power. Or\nthe inclination. \n\nImage courtesy of\n[jaypeg](http://thingstolookat.blogspot.com/).\n"
         },
         {
           "type": "blog-next"
@@ -231,7 +231,7 @@
       "components": [
         {
           "type": "blog",
-          "content": "[![screengrab.jpg](uploads/2007/01/screengrab.jpg)](/2007/01/27/word-clock-screen-saver/) \n\n\nSo while I build up the energy to sort out the flickr\n[Screensavr](/2007/01/21/screensavr-alpha/),\nI thought I’d upload the screen saver version of Word Clock. Nothing to\nconfigure here – just download and install.\n\n\n[Download Word Clock installer for\nMac](/wp-content/uploads/2007/01/wordclockinstaller.zip\n\"wordclockinstaller.zip\")\n"
+          "content": "[![screengrab.jpg](uploads/2007/01/screengrab.jpg)](/2007/01/27/word-clock-screen-saver/) \n\n\nSo while I build up the energy to sort out the flickr\n[Screensavr](/2007/01/21/screensavr-alpha/),\nI thought I’d upload the screen saver version of Word Clock. Nothing to\nconfigure here – just download and install.\n\n\n[Download Word Clock installer for\nMac](/uploads/2007/01/wordclockinstaller.zip\n\"wordclockinstaller.zip\")\n"
         },
         {
           "type": "blog-next"
@@ -395,11 +395,11 @@
     {
       "path": "/blog/2007/05/26/pottery",
       "title": "Pottery",
-      "excerpt": "\\[ZIP\\] Download Pottery with source code To use: draw a simple ‘S’ shape on\nthe left-hand panel. Then experiment. Note that it’s fairly crude and only\nrenders convex surfaces properly. This was a quick mockup I made at the end of\nlast year to try out an idea for a Christmas Card. It was originally …\n",
+      "excerpt": "To use: draw a simple ‘S’ shape on\nthe left-hand panel. Then experiment. Note that it’s fairly crude and only\nrenders convex surfaces properly. This was a quick mockup I made at the end of\nlast year to try out an idea for a Christmas Card. It was originally …\n",
       "components": [
         {
           "type": "blog",
-          "content": "[![picture-2.jpg](uploads/2007/05/picture-2.jpg)](/work/pottery-example/\n\"picture-2.jpg\") \n\n\n[\\[ZIP\\] Download Pottery with source\ncode](/files/pottery.zip)\n\n\nTo use: draw a simple ‘S’ shape on the left-hand panel. Then experiment.\nNote that it’s fairly crude and only renders convex surfaces properly.\n\n\nThis was a quick mockup I made at the end of last year to try out an idea\nfor a Christmas Card. It was originally going to be for making baubels,\nand would have the addition of automatic smoothing, concave rendering and\nmapping a christmassy texture onto the surface. Probably saving, galleries\netc. might have followed.\n\n\nI like simple interactive toys like this, where you can understand what to\ndo straight away and there’s an immediate reward and a sense of play.\n"
+          "content": "[![picture-2.jpg](uploads/2007/05/picture-2.jpg)](/work/pottery-example/\n\"picture-2.jpg\") \n\n[Download Pottery with source code](/files/pottery.zip)\n\nTo use: draw a simple ‘S’ shape on the left-hand panel. Then experiment.\nNote that it’s fairly crude and only renders convex surfaces properly.\n\nThis was a quick mockup I made at the end of last year to try out an idea\nfor a Christmas Card. It was originally going to be for making baubels,\nand would have the addition of automatic smoothing, concave rendering and\nmapping a christmassy texture onto the surface. Probably saving, galleries\netc. might have followed.\n\nI like simple interactive toys like this, where you can understand what to\ndo straight away and there’s an immediate reward and a sense of play.\n"
         },
         {
           "type": "blog-next"

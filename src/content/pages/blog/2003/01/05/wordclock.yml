@@ -6,7 +6,7 @@ excerpt: |
 components:
   - type: blog
     content: |
-      ![wordclock.jpg](/wordpress/wp-content/uploads/2006/11/wordclock.jpg)
+      ![wordclock.jpg](uploads/2006/11/wordclock.jpg)
       
       Typographic clock using words rather than digits. First appeared on
       [Tonic](https://www.tonic.co.uk/) homepage, subsequently shown on

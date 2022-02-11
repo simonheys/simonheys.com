@@ -8,10 +8,18 @@ components:
   - type: blog
     content: |
       [![itworks.jpg](uploads/2007/01/itworks.jpg)](/2007/01/21/screensavr-alpha/itworksjpg/
-      "screensavr")So here it is. More fiddly than I was anticipating. You must
-      first enter your flickr user-name into the control panel.[Download Mac
-      installer 0.0.2alpha](/wp-content/uploads/2007/01/screensavrinstallr.zip
-      "screensavrinstallr.zip")No Windows version, I don’t have the power. Or
-      the inclination. Image courtesy of
+      "screensavr")
+      
+      So here it is. More fiddly than I was anticipating. You must
+      first enter your flickr user-name into the control panel.
+      
+      [Download Mac
+      installer 0.0.2alpha](/uploads/2007/01/screensavrinstallr.zip
+      "screensavrinstallr.zip")
+      
+      No Windows version, I don’t have the power. Or
+      the inclination. 
+      
+      Image courtesy of
       [jaypeg](http://thingstolookat.blogspot.com/).
   - type: blog-next

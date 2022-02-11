@@ -7,7 +7,7 @@ excerpt: |
 components:
   - type: blog
     content: |
-      ![screensavr.jpg](/wordpress/wp-content/uploads/2007/01/screensavr.jpg)
+      ![screensavr.jpg](uploads/2007/01/screensavr.jpg)
 
 
       Hah! See what I did there? It’s a flickr-based screensaver. This is some
