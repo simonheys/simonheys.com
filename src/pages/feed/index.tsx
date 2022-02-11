@@ -19,8 +19,6 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
     const description = page.description;
     const link = `${process.env.NEXT_PUBLIC_BASE_URL}`;
 
-    console.log(JSON.stringify({ meta, page }, null, 2));
-
     let latestPostDate: Date;
     let rssItemsXml = "";
 
