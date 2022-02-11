@@ -21,7 +21,10 @@ const configuration = {
   },
 };
 
-const faviconsAsync = (source, configuration) => {
+const faviconsAsync = (
+  source: string,
+  configuration: Partial<favicons.FaviconOptions>
+): Promise<favicons.FaviconResponse> => {
   return new Promise((resolve, reject) => {
     favicons(source, configuration, (error, response) => {
       if (error) {
