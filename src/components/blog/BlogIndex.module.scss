@@ -1,7 +1,15 @@
 @import "~/src/styles/use-bootstrap";
 
 .date {
+  composes: global(py-2);
   composes: global(h3);
+  composes: global(mb-0);
+  background-color: var(--background-panel-color);
+  backdrop-filter: blur(5px);
+  @include media-breakpoint-up(sm) {
+    background: none;
+    backdrop-filter: none;
+  }
 }
 
 .title {

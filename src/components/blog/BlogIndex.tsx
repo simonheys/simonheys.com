@@ -1,4 +1,5 @@
 import * as React from "react";
+import Sticky from "react-stickynode";
 
 import {
   getBlogDateFromPath,
@@ -28,23 +29,27 @@ const BlogIndex: React.FC = () => {
 
   return (
     <>
-      {sortedYears.map((year) => {
+      {sortedYears.map((year, index) => {
         const paths = pagesPathsByYear[year];
+        const currentId = `year${index}`;
+        const nextId = `year${index + 1}`;
         return (
           <div key={`year-${year}`}>
             <div className={"container-fluid"}>
               <AppearWhenInView>
-                <div className={"row gx-0 border-top"}></div>
+                <div id={currentId} className={"row gx-0 border-top"}></div>
               </AppearWhenInView>
             </div>
-            <div className={"container-fluid pt-2"}>
+            <div className={"container-fluid"}>
               <div className={"row"}>
                 <div className={"col-md-3"}>
-                  <AppearWhenInView>
-                    <div className={styles.date}>{year}</div>
-                  </AppearWhenInView>
+                  <Sticky bottomBoundary={`#${nextId}`}>
+                    <AppearWhenInView>
+                      <div className={styles.date}>{year}</div>
+                    </AppearWhenInView>
+                  </Sticky>
                 </div>
-                <div className={"col-md-6"}>
+                <div className={"col-md-6 pt-0 pt-sm-2"}>
                   {paths.map((path, index) => {
                     const page = getPageForPath(path);
                     if (!page) {
@@ -53,7 +58,7 @@ const BlogIndex: React.FC = () => {
                     return (
                       <AppearWhenInView
                         key={`blog-entry-${index}`}
-                        className={"col-md mb-3 mb-md-4 d-flex flex-column"}
+                        className={"mb-3 mb-md-4 d-flex flex-column"}
                       >
                         <LinkA href={path}>
                           <div>
