@@ -59,13 +59,19 @@ const Page: React.FC<PageProps> = ({ page }) => {
           rel="alternate"
           type="application/rss+xml"
           title="RSS 2.0"
-          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/`}
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/rss`}
         />
         <link
           rel="alternate"
-          type="text/xml"
-          title="RSS .92"
-          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/rss/`}
+          type="application/atom+xml"
+          title="Atom"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/atom`}
+        />
+        <link
+          rel="alternate"
+          type="application/json"
+          title="jsonfeed"
+          href={`${process.env.NEXT_PUBLIC_BASE_URL}/feed/json`}
         />
         <link rel="shortcut icon" href="/favicon/favicon.ico"></link>
         <link

@@ -28,8 +28,8 @@ module.exports = {
         permanent: true,
       },
       {
-        source: "/feed/rss",
-        destination: "/feed",
+        source: "/feed",
+        destination: "/feed/rss",
         permanent: true,
       },
     ];
