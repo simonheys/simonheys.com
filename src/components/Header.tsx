@@ -97,13 +97,17 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         style={navigationContainerStyle}
       >
         <div ref={ref} className={"container-fluid"}>
-          <div className={"row py-4 py-md-5"}>
-            <div className={"col-6"}>
+          <div
+            className={
+              "row justify-content-between justify-content-md-end py-4 py-md-5"
+            }
+          >
+            <div className={"col"}>
               <h1 data-tid={"title"} className={styles.title}>
                 <LinkA href="/">Simon Heys</LinkA>
               </h1>
             </div>
-            <div className={"col-6"} data-tid={"navigation"}>
+            <div className={"col"} data-tid={"navigation"}>
               <div className={styles.linksContainer}>
                 {links.map((path, index) => {
                   const page = getPageForPath(path);
