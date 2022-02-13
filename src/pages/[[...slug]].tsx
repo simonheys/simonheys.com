@@ -26,11 +26,19 @@ export interface PageProps {
 }
 
 const Page: React.FC<PageProps> = ({ page }) => {
-  const { path, title, description, subtitle, header, fill, components } = page;
+  const {
+    path,
+    title,
+    description,
+    excerpt,
+    subtitle,
+    header,
+    fill,
+    components,
+  } = page;
   const pageTitle = React.useMemo(() => {
     return [title, subtitle, ...meta.titles].filter(Boolean).join(" – ");
   }, [subtitle, title]);
-
   return (
     <React.Fragment>
       <Head>
@@ -41,7 +49,7 @@ const Page: React.FC<PageProps> = ({ page }) => {
         <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"
-          content={description || subtitle}
+          content={description || subtitle || excerpt}
         ></meta>
         <meta
           property="og:image"

@@ -6,7 +6,8 @@
 
 .title {
   composes: global(h1);
-  composes: global(mb-5);
+  composes: global(mb-3);
+  composes: global(mb-md-5);
   font-weight: bold;
 }
 

@@ -1,14 +1,14 @@
-title: Get the balance of any Ethereum blockchain address using ethers.js library and Infura API
+title: Get the balance of an Ethereum blockchain address using ethers.js and Infura API
 excerpt: |
-  An easy way to interact with any Ethereum blockchain using TypeScript and Node.js
+  An easy way to interact with any Ethereum-compatible blockchain using TypeScript and Node.js.
 components:
 - type: blog
   content: |
-    In this post I show an easy way to interact with any Ethereum blockchain using TypeScript and Node.js. 
+    In this post I show an easy way to interact with any Ethereum-compatible blockchain using TypeScript and Node.js. 
     
     #### Why?
 
-    I have recently been working on building an app that interacts with an Ethereum blockchain and was expecting it to be incredibly complicated. But it’s not.
+    I have recently been developing an app that interacts with an Ethereum blockchain and was expecting it to be incredibly complicated. But it’s not.
     
     Here is the surprisingly simple setup. All we need are three things:
 
@@ -101,7 +101,7 @@ components:
 
     #### That’s it
 
-    That is all there is to it, but read on for a bit more of a code breakdown and examples of using other Level 2 chains.
+    That is all there is to it, but read on for a bit more of a code breakdown and examples of using other Layer 2 chains.
 
     #### Code breakdown
 
@@ -117,7 +117,7 @@ components:
 
     Ethers has a specific Infura provider however we will use `JsonRpcProvider` as it is more generic. 
      
-    For example with one small change we can now also query a balance on the Level 2 [Polygon](https://polygon.technology/) network by changing just the RPC:
+    For example with one small change we can now also query a balance on the Layer 2 [Polygon](https://polygon.technology/) network by changing just the RPC:
 
     ```typescript
     const provider = new ethers.providers.JsonRpcProvider(
@@ -125,7 +125,7 @@ components:
     );
     ```
 
-    …or any other Level 2 chain, e.g. [Gnosis Beacon Chain](https://www.gnosischain.com/)
+    …or any other Layer 2 chain, e.g. [Gnosis Beacon Chain](https://www.gnosischain.com/)
 
     ```typescript
     const provider = new ethers.providers.JsonRpcProvider(
@@ -151,7 +151,7 @@ components:
 
     In this post we learned an easy way to interact with any Ethereum blockchain using TypeScript and Node.js. We fetched a balance from an Ethereum-compatible wallet address by using [ethers.js](https://docs.ethers.io/) (a library for interacting with Ethereum nodes) and [Infura](https://infura.io/) (a service providing access to Ethereum nodes).
 
-    We also learned how to connect to other Level 2 chains directly such as [Polygon](https://polygon.technology/) and [Gnosis Beacon Chain](https://www.gnosischain.com/) and use the same method to fetch a balance.
+    We also learned how to connect to other Layer 2 chains directly such as [Polygon](https://polygon.technology/) and [Gnosis Beacon Chain](https://www.gnosischain.com/) and use the same method to fetch a balance.
 
     Finally we learned how to convert the balance from Gwei into ETH.
 
