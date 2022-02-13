@@ -7,7 +7,7 @@
 }
 
 .spaceContainer {
-  margin-bottom: $spacer * 2;
+  // margin-bottom: $spacer * 2;
 }
 
 .navigationContainerFixed {
@@ -27,28 +27,21 @@
   @include media-breakpoint-up(md) {
     font-size: $h4-font-size;
   }
-  @include media-breakpoint-up(xl) {
-    font-size: $h3-font-size;
-  }
 }
 
 .linksContainer {
   composes: global(d-flex);
-  composes: global(flex-column);
-  composes: global(flex-lg-row);
-  flex-wrap: wrap;
+  composes: global(flex-row);
 }
 
 .link {
   composes: global(h5);
   composes: global(mb-0);
-  composes: global(me-2);
-  composes: global(me-sm-3);
+  composes: global(ms-2);
+  composes: global(ms-md-0);
+  composes: global(me-md-3);
   @include media-breakpoint-up(md) {
     font-size: $h4-font-size;
-  }
-  @include media-breakpoint-up(xl) {
-    font-size: $h3-font-size;
   }
   display: flex;
   color: var(--gray-500);

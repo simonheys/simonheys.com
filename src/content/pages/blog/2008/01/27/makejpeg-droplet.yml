@@ -1,0 +1,19 @@
+title: Make JPEG droplet
+excerpt: |
+  A newly tweaked version of the droplet. This one allows you to set the JPEG
+  compression quality by changing the number in the filename – just make as many
+  copies as you need. MakeJpeg download page
+components:
+  - type: blog
+    content: |
+      [![finderscreensnapz001.gif](uploads/2008/01/finderscreensnapz001.gif)](/makejpeg/)
+
+
+      A newly tweaked version of the droplet. This one allows you to set the
+      JPEG compression quality by changing the number in the filename – just
+      make as many copies as you need.
+
+
+      [MakeJpeg download
+      page](/makejpeg/)
+  - type: blog-next

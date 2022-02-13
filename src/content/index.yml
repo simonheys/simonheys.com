@@ -1,7 +1,7 @@
 meta:
   titles:
     - Simon Heys
-    - Freelance Product Designer and Software Engineer
+    - Product Designer and Software Engineer
     - London, UK
   portfolio:
     pages:
@@ -23,21 +23,18 @@ all:
     type: header
     links:
       - "/portfolio"
-      - "/case-studies"
+      - "/blog"
       - "/about"
-      - "/contact"
   before: []
   after:
-    - exclude: ["/about", "/contact", "/portfolio", "/case-studies"]
+    - exclude: ["/about", "/contact", "/case-studies", "/blog*"]
       type: work-header
       title: About
       ruled: true
       subtitle: |
-        I am an experienced freelance Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
+        I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-        - text: About
+        - text: Read more
           url: /about
-        - text: Contact
-          url: /contact
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

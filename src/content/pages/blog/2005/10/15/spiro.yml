@@ -1,0 +1,13 @@
+title: Spiro
+excerpt: |
+  Flash 6 Spirograph. An old spirograph drawing thing, based on some of the
+  machines in the Science Museum. A Flash 8/9 version would be much faster.
+components:
+  - type: blog
+    content: |
+      [![spiro-white2.gif](uploads/2007/06/spiro-white2.gif)](/work/spiro-example/)
+      [Flash 6
+      Spirograph](/work/spiro-example/).
+      An old spirograph drawing thing, based on some of the machines in the
+      Science Museum. A Flash 8/9 version would be much faster.
+  - type: blog-next

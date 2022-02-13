@@ -5,9 +5,6 @@ thumbnails:
 components:
   - type: work-header
     subtitle: I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.
-    links:
-      - text: Read full case study
-        url: /case-studies/mykrobe
   - type: mykrobe-animation
   - type: work-row
     vimeoId: 585698728
@@ -61,7 +58,4 @@ components:
   - type: work-row
     columns:
       - text: The platform is being expanded to become part of global COVID-19 surveillance.
-        links:
-          - text: Read full case study
-            url: /case-studies/mykrobe
   - type: work-next

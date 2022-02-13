@@ -1,0 +1,106 @@
+title: Shared SharedObject in Flash
+excerpt: |
+  One of the problems I had when writing Flash Screensavr was sharing
+  preferences between two separate and different SWF files – the Preferences
+  panel and the Screensaver itself. Obviously a job for SharedObject. However
+  there is a trick to creating a SharedObject that behaves how you’d expect.
+components:
+  - type: blog
+    content: |
+      One of the problems I had when writing [Flash
+      Screensavr](/2007/02/04/screensavr-dead-end-new-beginning/)
+      was sharing preferences between two separate and different SWF files – the
+      Preferences panel and the Screensaver itself. Obviously a job for
+      SharedObject.
+
+      However there is a trick to creating a SharedObject that behaves how you’d
+      expect.
+
+      If you’re like me, you would think the correct code is;
+
+      ```actionscript
+      var my_so:SharedObject; 
+      my_so = SharedObject.getLocal("com.simonheys.screensavr");
+      ```
+
+      But this results in a SharedObject which can only be accessed by the SWF
+      that created it…not what I wanted. The not-very-obvious solution is to add
+      a second parameter which is referred to simply as ‘localPath’ in the docs;
+
+
+      ```actionscript
+      var my_so:SharedObject; 
+      my_so = SharedObject.getLocal(“com.simonheys.screensavr”,”/”);
+      ````
+
+      That’s it! You now have a useful SharedObject which you can access from
+      any SWF on your machine. Having spent literally hours trying to track down
+      the solution I decided to write a nice preferences class in a similar
+      style to the one I use in Cocoa. Applications usually have unique
+      preferences, so this is customised for each one.
+
+      ```actionscript
+      class com.simonheys.projects.screensavr.ScreensavrPreferences {
+        public static var 
+          PHOTOSTREAM:Number = 0, 
+          PHOTOSET:Number = 1, 
+          GROUP:Number = 2, 
+          FAVOURITES:Number = 3;
+
+        public var
+          useHighQuality:Boolean,
+          username:String, 
+          sourceType:Number,
+          sourceId:String, 
+          speed:Number;
+
+        private var 
+          _soId:String;
+
+        public function setSharedObjectId(soId:String):Void { 
+          _soId = soId;
+        } 
+
+        public function storeInSharedObject():Void { 
+          var my_so:SharedObject = SharedObject.getLocal(_soId,”/”);
+          my_so.data.username = username;
+          my_so.data.sourceType = sourceType;
+          my_so.data.sourceId = sourceId;
+          my_so.data.speed = speed;
+          my_so.data.useHighQuality = useHighQuality;
+          my_so.flush();
+        } 
+
+        public function retreiveFromSharedObject():Void { 
+          var my_so:SharedObject = SharedObject.getLocal(_soId,”/”);
+          username = my_so.data.username;
+          sourceType = my_so.data.sourceType;
+          sourceId = my_so.data.sourceId;
+          speed = my_so.data.speed;
+          useHighQuality = my_so.data.useHighQuality;
+        } 
+      }
+      ````
+
+      I did think about having methods called ‘save’ and ‘load’ but was
+      obviously feeling verbose that day. You could of course have this as a
+      Singleton in Flash, but I didn’t need to.
+
+      The code for using the prefs is then as simple as this:
+
+      ```actionscript
+      _preferences = new ScreensavrPreferences();
+      _preferences.setSharedObjectId(Constants.SHARED_OBJECT_ID);
+      _preferences.retreiveFromSharedObject();
+
+      // retrieve a value
+      highQualityCheckBox.selected = _preferences.useHighQuality;
+      
+      // store a value 
+      _preferences.sourceType = ScreensavrPreferences.PHOTOSTREAM;
+      
+      _preferences.storeInSharedObject();
+      ```
+
+      Where `Constants.SHARED_OBJECT_ID` is something like `com.simonheys.preferences.screensavr`.
+  - type: blog-next

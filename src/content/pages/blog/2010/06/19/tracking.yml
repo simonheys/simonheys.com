@@ -1,0 +1,13 @@
+title: Tracking
+excerpt: |
+  Automated PostScript drawing created with home brew video tracking software
+  I’m working on. This uses footage of birds in flight, shot on an iPhone.
+components:
+  - type: blog
+    content: |
+      ![](uploads/2010/06/birds.jpg)
+
+      Automated PostScript drawing created with home brew video tracking
+      software I’m working on. This uses footage of birds in flight, shot on an
+      iPhone.
+  - type: blog-next

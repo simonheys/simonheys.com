@@ -1,0 +1,23 @@
+title: "Word Clock: update"
+excerpt: |
+  New version, Mac native code this time. Thanks to Andy and Jay for
+  suggestions: now you can choose your own colours and font. Not that there was
+  anything wrong with my choices. Planning to add finer typographic control in
+  future, but for now… enjoy playing with the leading. Visit Word Clock’s
+  permanent home
+components:
+  - type: blog
+    content: |
+      [![](uploads/2007/02/img_1776.jpg)](/2007/02/25/word-clock-update/)
+
+
+      New version, Mac native code this time. Thanks to
+      [Andy](http://www.multiadaptor.com/) and [Jay](http://www.jayglow.com/)
+      for suggestions: now you can choose your own colours and font. Not that
+      there was anything wrong with my choices. Planning to add finer
+      typographic control in future, but for now… enjoy playing with the
+      leading.
+
+
+      [Visit Word Clock’s permanent home](/wordclock/)
+  - type: blog-next

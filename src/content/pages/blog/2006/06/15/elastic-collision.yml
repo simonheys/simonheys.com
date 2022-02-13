@@ -1,0 +1,8 @@
+title: Elastic Collision
+excerpt: Very basic elastic collision-based rigid body dynamics.
+components:
+  - type: blog
+    content: |
+      [![springs.jpg](uploads/2006/11/springs.jpg)](/wordpress/work/elastic-collision/)Very
+      basic elastic collision-based rigid body dynamics.
+  - type: blog-next

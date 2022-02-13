@@ -1,0 +1,25 @@
+title: "Flash 9: Magnetic"
+excerpt: |
+  At tonic I was recently working on a project for a client where we wanted to
+  get across the idea of different teams working on individual projects. I came
+  up with the idea of magnetic navigation, which attracts a different group of
+  people appropriate to the selected project. There were a few ways of achieving…
+components:
+  - type: blog
+    content: |
+      [![magnets.jpg](uploads/2006/11/magnets.jpg)](/work/flash-9-magnetic/)
+      
+      At [tonic](http://www.tonic.co.uk/) I was recently working on a project for a
+      client where we wanted to get across the idea of different teams working
+      on individual projects. I came up with the idea of magnetic navigation,
+      which attracts a different group of people appropriate to the selected
+      project. There were a few ways of achieving this; the best one turned out
+      to be using the [elastic
+      collision](/work/elastic-collision/)
+      code, but adding attractive forces. There is a fair amount of mathematical
+      calculation going on per frame. Flash 9 Alpha came out at around the same
+      time, so out of curiosity I rewrote the initial ‘sketch’ concept in AS3\.
+      Yields a massive speed increase! Requires [Adobe Flash 9
+      plug-in](http://www.adobe.com/products/flashplayer/). The site itself is
+      Flash 8 and will be live early 2007.
+  - type: blog-next

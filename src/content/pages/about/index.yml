@@ -3,15 +3,17 @@ components:
   - type: work-header
     title: About
     subtitle: |
-      I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others. 
+      I am an experienced [Product Designer](/portfolio) and [Software Engineer](https://github.com/simonheys/) with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
 
-      I am most well known for my side projects [Word Clock](/portfolio/wordclock) (exhibited at the [Science Museum](https://www.sciencemuseum.org.uk/) in London), and [Minimal Folio](/portfolio/minimalfolio) (installed by [Apple](https://www.apple.com/) as a demo app in high street Apple Stores).
+      I have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.
 
-      Most recently I co-founded a digital agency where I was part of [many cross-disciplinary teams](/case-studies) that designed and developed apps, tools and services for organisations and startups in healthcare. One of the resulting products was acquired by [Google DeepMind](https://deepmind.com/). 
-
-      Prior to that I worked in-house as a Product Designer at [The Guardian](https://www.theguardian.com/), [The Times](https://www.thetimes.co.uk/), and [UBS Investment Bank](https://www.ubs.com/).
-
-      I hold a BA (Hons) in Communication Design (First with Commendation for Typography) from [Kingston University London](https://www.kingston.ac.uk/).
+      Hire me to design or build your app, software or website.
     links:
-      - text: Contact
-        url: /contact
+      - text: Email
+        url: mailto:si@simonheys.com
+      - text: LinkedIn
+        url: https://linkedin.com/in/simonheys
+      - text: Twitter
+        url: https://twitter.com/simonheys
+      - text: GitHub
+        url: https://github.com/simonheys/

@@ -1,0 +1,17 @@
+title: Screensavr
+excerpt: |
+  So here it is, one month on: the first Mac-native Cocoa version. Built on
+  ObjectiveFlickr. Download for Mac (Universal)
+components:
+  - type: blog
+    content: |
+      [![](uploads/2007/03/img_1786.jpg)](/2007/03/04/screensavr-2/) 
+
+
+      So here it is, one month on: the first Mac-native Cocoa version. Built on
+      [ObjectiveFlickr](http://lukhnos.org/objectiveflickr/blog/).
+
+
+      [Download for Mac (Universal)](/files/screensavr.zip
+      "screensavr.zip")
+  - type: blog-next

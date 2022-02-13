@@ -1,0 +1,31 @@
+title: "Screensavr: dead-end, new beginning"
+excerpt: |
+  So I have reach a dead-end in Flash. I now have a Screensavr that works
+  perfectly, honouring all image proportions. Looks great, but runs slowly in
+  Flash as it can’t handle so many individual images as the bitmap processing
+  isn’t sophisticated enough; had to make it so that each row is a series of
+  MovieClips …
+components:
+  - type: blog
+    content: |
+      [![img_1720.jpg](uploads/2007/02/img_1720.jpg)](/2007/02/04/screensavr-dead-end-new-beginning/
+      "img_1720.jpg") 
+
+
+      So I have reach a dead-end in Flash. I now have a Screensavr that works
+      perfectly, honouring all image proportions. Looks great, but runs slowly
+      in Flash as it can’t handle so many individual images as the bitmap
+      processing isn’t sophisticated enough; had to make it so that each row is
+      a series of MovieClips rather than one BitmapData object. Setting
+      cacheAsBitmap was causing too much flickering; turning it off makes it run
+      too slow.
+
+
+      Unless there’s a major brainwave, a Cocoa rewrite is on the cards. This
+      could take some time…
+
+
+      [Download for
+      Mac](uploads/2007/02/screensavrinstallr-003.zip
+      "screensavrinstallr-003.zip")
+  - type: blog-next

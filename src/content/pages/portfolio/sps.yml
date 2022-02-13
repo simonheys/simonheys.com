@@ -5,9 +5,6 @@ thumbnails:
 components:
   - type: work-header
     subtitle: Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.
-    links:
-      - text: Read full case study
-        url: /case-studies/sps
   - type: work-row
     vimeoId: 581720984
     color: "#009639"
@@ -65,7 +62,4 @@ components:
   - type: work-row
     columns:
       - text: The service is increasingly popular with more than half a million monthly active users in England.
-        links:
-          - text: Read full case study
-            url: /case-studies/sps
   - type: work-next

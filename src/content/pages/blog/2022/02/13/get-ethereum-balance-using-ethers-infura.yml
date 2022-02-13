@@ -1,0 +1,159 @@
+title: Get the balance of an Ethereum blockchain address using ethers.js and Infura API
+excerpt: |
+  An easy way to interact with any Ethereum-compatible blockchain using TypeScript and Node.js.
+components:
+- type: blog
+  content: |
+    In this post I show an easy way to interact with any Ethereum-compatible blockchain using TypeScript and Node.js. 
+    
+    #### Why?
+
+    I have recently been developing an app that interacts with an Ethereum blockchain and was expecting it to be incredibly complicated. But it’s not.
+    
+    Here is the surprisingly simple setup. All we need are three things:
+
+    - [ethers.js](https://docs.ethers.io/) - a library for interacting with Ethereum nodes
+    - [Infura](https://infura.io/) - a service providing access to Ethereum nodes
+    - An Ethereum-compatible wallet address (e.g. from [MetaMask](https://metamask.io/))
+
+    First we will sign up for a [free Infura account](https://infura.io/register), then create a new project from the [Infura dashboard](https://infura.io/dashboard). This gives a Project ID which we will use to access the Ethereum node API.
+
+    #### Set up the project folder
+
+    ```bash
+    $ mkdir get-balance
+    $ cd get-balance
+    ```
+
+    #### Add dependencies
+
+    We are going to use TypeScript and `ts-node` which require a little bit of extra setup but a big pay-off in helping with code correctness.
+
+    ```bash
+    $ yarn add typescript ts-node ethers @tsconfig/node16
+    ```
+
+    #### Configure TypeScript
+
+    Create a file called `tsconfig.json` with the following configuration:
+
+    ```json
+    {
+      "extends": "@tsconfig/node16/tsconfig.json",
+      "compilerOptions": {
+        "lib": ["es2015", "dom"],
+      }
+    }
+    ```
+
+    #### Create the script
+
+    Create a file called `index.ts` with the following script, replacing the Infura Project ID and wallet address where indicated:
+
+    ```typescript
+    import { ethers } from "ethers";
+
+    // Replace with a project ID from [Infura](https://infura.io/)
+    const INFURA_PROJECT_ID = "REPLACE_WITH_INFURA_PROJECT_ID";
+
+    // Replace with an Ethereum-compatible wallet address
+    const WALLET_ADDRESS = "0xREPLACE_WITH_WALLET_ADDRESS";
+
+    const fetchBalance = async () => {
+      // Create an ethers provider using Infura Mainnet
+      const provider = new ethers.providers.JsonRpcProvider(
+        `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`
+      );
+
+      // Fetch the balance, this will be in Gwei
+      const balanceInGwei = await provider.getBalance(WALLET_ADDRESS);
+
+      // Convert balance to Eth
+      const balanceInEth = ethers.utils.formatEther(balanceInGwei);
+
+      // Print a summary to the console
+      console.log(`Address: ${WALLET_ADDRESS}`);
+      console.log(`- balance in Gwei: ${balanceInGwei}`);
+      console.log(`- balance in ETH: ${balanceInEth}`);
+    };
+
+    (async () => {
+      await fetchBalance();
+    })();
+
+    ```
+
+    #### Get the balance
+
+    We can now run the script:
+
+    ```bash
+    $ yarn ts-node index.ts
+    ```
+
+    … an should expect the following output to the console:
+
+    ```bash
+    Address: 0x****************************************
+    - balance in Gwei: 214066444119271200
+    - balance in ETH: 0.2140664441192712
+    ```
+
+    #### That’s it
+
+    That is all there is to it, but read on for a bit more of a code breakdown and examples of using other Layer 2 chains.
+
+    #### Code breakdown
+
+    There are a few concepts to break down:
+
+    ```typescript
+    const provider = new ethers.providers.JsonRpcProvider(
+      `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`
+    );
+    ```
+
+    This is creating a `provider` using Infura Mainnet, the main Ethereum blockchain. There are [other test networks available](https://docs.infura.io/infura/networks/ethereum/getting-started/make-requests).
+
+    Ethers has a specific Infura provider however we will use `JsonRpcProvider` as it is more generic. 
+     
+    For example with one small change we can now also query a balance on the Layer 2 [Polygon](https://polygon.technology/) network by changing just the RPC:
+
+    ```typescript
+    const provider = new ethers.providers.JsonRpcProvider(
+      `https://polygon-rpc.com/`
+    );
+    ```
+
+    …or any other Layer 2 chain, e.g. [Gnosis Beacon Chain](https://www.gnosischain.com/)
+
+    ```typescript
+    const provider = new ethers.providers.JsonRpcProvider(
+      `https://rpc.gnosischain.com/`
+    );
+    ```
+
+    Once we have the `provider` we use it to fetch the raw balance in [Gwei](https://ethereum.org/en/developers/docs/intro-to-ether/#denominations) which is the smallest unit.
+
+    ```typescript
+    const balanceInGwei = await provider.getBalance(WALLET_ADDRESS);
+    // Gwei: 214066444119271200
+    ```
+
+    Thankfully ethers provides a convenient way to convert this to more familiar ETH:
+
+    ```typescript
+    const balanceInEth = ethers.utils.formatEther(balanceInGwei);
+    // Eth: 0.2140664441192712
+    ```
+    
+    #### Summary
+
+    In this post we learned an easy way to interact with any Ethereum blockchain using TypeScript and Node.js. We fetched a balance from an Ethereum-compatible wallet address by using [ethers.js](https://docs.ethers.io/) (a library for interacting with Ethereum nodes) and [Infura](https://infura.io/) (a service providing access to Ethereum nodes).
+
+    We also learned how to connect to other Layer 2 chains directly such as [Polygon](https://polygon.technology/) and [Gnosis Beacon Chain](https://www.gnosischain.com/) and use the same method to fetch a balance.
+
+    Finally we learned how to convert the balance from Gwei into ETH.
+
+    This gives the basic building blocks and a starting point for interacting with any Ethereum blockchain.
+- type: blog-next
