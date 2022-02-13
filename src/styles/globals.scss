@@ -32,6 +32,13 @@
   --panel-hover-color: rgba(236, 236, 236, 0.9);
 }
 
+@supports (color: color(display-p3 1 1 1)) {
+  :root {
+    --primary: color(display-p3 1 0 0);
+    --link-hover-color: color(display-p3 0.95 0 0);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --gray-900: #f9f9f9;
@@ -56,13 +63,6 @@
     --background-panel-color: rgba(0, 0, 0, 0.9);
     --panel-color: rgba(37, 37, 37, 0.95);
     --panel-hover-color: rgba(48, 48, 48, 0.9);
-  }
-}
-
-@supports (color: color(display-p3 1 1 1)) {
-  :root {
-    --primary: color(display-p3 1 0 0);
-    --link-hover-color: color(display-p3 0.95 0 0);
   }
 }
 
