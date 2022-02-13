@@ -2,6 +2,8 @@ import * as React from "react";
 import { useRouter } from "next/router";
 import ReactMarkdown from "react-markdown";
 import rehypeRaw from "rehype-raw";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dracula } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
 import AppearWhenInView from "../ui/AppearWhenInView";
 import LinkA from "../ui/LinkA";
@@ -11,30 +13,58 @@ import ImageResponsive from "../ui/ImageResponsive";
 import { getBlogDateFromPath, getPageForPath } from "../../modules/content";
 import { Circle, Slash } from "../ui/icons";
 
-const LinkComponent = ({ href, ...rest }: any) => {
+const LinkComponent: React.FC<any> = ({ href, ...rest }) => {
   return <LinkA href={href} {...rest} />;
 };
 
-const ImageComponent = ({ node, ...rest }: any) => {
+const ImageComponent: React.FC<any> = ({ node, ...rest }) => {
   return <ImageResponsive {...rest} />;
+};
+
+const CodeBlock: React.FC<any> = ({
+  node,
+  inline,
+  className,
+  children,
+  ...props
+}) => {
+  const match = /language-(\w+)/.exec(className || "");
+  return !inline && match ? (
+    <SyntaxHighlighter
+      style={dracula}
+      language={match[1]}
+      PreTag="div"
+      {...props}
+    >
+      {String(children).replace(/\n$/, "")}
+    </SyntaxHighlighter>
+  ) : (
+    <code className={className} {...props}>
+      {children}
+    </code>
+  );
 };
 
 const components = {
   a: LinkComponent,
   img: ImageComponent,
-  // code: CodeBlock,
+  code: CodeBlock,
 };
 
 export interface BlogProps {
   content: string;
 }
 
-const Prose: React.FC<BlogProps> = ({ content }) => {
+const Blog: React.FC<BlogProps> = ({ content }) => {
   const router = useRouter();
   const page = getPageForPath(router.asPath);
   const date = getBlogDateFromPath(router.asPath);
   const age = new Date().getFullYear() - date.getFullYear();
   const old = age >= 5;
+  const day = ("0" + date.getDate()).slice(-2);
+  const month = ("0" + (date.getMonth() + 1)).slice(-2);
+  const year = date.getFullYear();
+  const dateTime = `${year}-${month}-${day}`;
   return (
     <AppearWhenInView>
       <div className={"container-fluid"}>
@@ -44,11 +74,13 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
         <div className={"row mb-5"}>
           <div className={"col-md-3"}>
             <h1 className={styles.date}>
-              {date.getDate()}
-              <Slash />
-              {date.getMonth() + 1}
-              <Slash />
-              {date.getFullYear()}
+              <time itemProp="datePublished" dateTime={dateTime}>
+                {day}
+                <Slash />
+                {month}
+                <Slash />
+                {year}
+              </time>
             </h1>
           </div>
           <div className={"col-md-6"}>
@@ -76,4 +108,4 @@ const Prose: React.FC<BlogProps> = ({ content }) => {
   );
 };
 
-export default Prose;
+export default Blog;
