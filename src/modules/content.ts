@@ -21,6 +21,7 @@ export type Page = {
   path: string;
   title?: string;
   subtitle?: string;
+  excerpt?: string;
   description?: string;
   fill?: any;
   thumbnails?: Thumbnail[];
@@ -84,6 +85,21 @@ export const getCaseStudiesPagePaths = (
   content: Content = defaultContent
 ): string[] => {
   return content.meta["case-studies"].pages.map((page) => page.path);
+};
+
+export const getBlogPagePaths = (
+  content: Content = defaultContent
+): string[] => {
+  const pagePaths = getPagePaths(content);
+  const blogPagePaths = pagePaths
+    .filter((path) => path.startsWith("/blog/"))
+    .reverse();
+  return blogPagePaths;
+};
+
+export const getBlogDateFromPath = (path: string): Date => {
+  const components = path.split("/").filter(Boolean).slice(1, 4);
+  return new Date(components.join("/"));
 };
 
 export const normalisePath = (path: string | string[]): string => {
@@ -163,9 +179,14 @@ export const getComponentsForPath = (
         typeof pageComponent.exclude === "string"
           ? [pageComponent.exclude]
           : pageComponent.exclude;
-      if (exclude.includes(normalisedPath)) {
-        return false;
+      for (let i = 0; i < exclude.length; i++) {
+        if (normalisedPath.match(new RegExp(exclude[i]))) {
+          return false;
+        }
       }
+      // if (exclude.includes(normalisedPath)) {
+      //   return false;
+      // }
     }
     return true;
   });

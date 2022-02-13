@@ -1,0 +1,17 @@
+title: Update
+excerpt: |
+  I just packed up the new version of Screensavr which I hacked together
+  yesterday. Now automatically fills the screen, does different image
+  proportions and can also read Groups. Next stage is to get it to honour all
+  image proportions and handle different sized images. Then it shall be
+  complete.
+components:
+  - type: blog
+    content: |
+      I just packed up the new version of
+      [Screensavr](/2007/01/21/screensavr-alpha/)
+      which I hacked together yesterday. Now automatically fills the screen,
+      does different image proportions and can also read Groups. Next stage is
+      to get it to honour all image proportions and handle different sized
+      images. Then it shall be complete.
+  - type: blog-next
