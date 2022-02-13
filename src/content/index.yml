@@ -34,7 +34,7 @@ all:
       subtitle: |
         I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-        - text: About
+        - text: Read more
           url: /about
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

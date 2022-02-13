@@ -34,10 +34,12 @@
   }
   pre,
   code {
+    font-family: "JetBrains Mono", monospace;
     font-size: $font-size-sm;
     border-radius: 0.2rem;
   }
-  code {
+  p code {
+    font-weight: bold;
     padding: 0.2rem;
     color: var(--gray-700);
     background-color: var(--gray-150);
@@ -47,10 +49,9 @@
   }
 }
 
-.syntaxHighlighter {
-  font-size: $font-size-sm !important;
-  margin: 0 !important;
-  border-radius: 0.2rem;
+.syntaxHighlighterCode {
+  font-family: "JetBrains Mono", monospace;
+  font-size: $font-size-sm;
 }
 
 .links {
