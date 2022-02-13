@@ -74,7 +74,7 @@ components:
       // Print a summary to the console
       console.log(`Address: ${WALLET_ADDRESS}`);
       console.log(`- balance in Gwei: ${balanceInGwei}`);
-      console.log(`- balance in Eth: ${balanceInEth}`);
+      console.log(`- balance in ETH: ${balanceInEth}`);
     };
 
     (async () => {
@@ -96,7 +96,7 @@ components:
     ```bash
     Address: 0x****************************************
     - balance in Gwei: 214066444119271200
-    - balance in Eth: 0.2140664441192712
+    - balance in ETH: 0.2140664441192712
     ```
 
     #### You’re done
