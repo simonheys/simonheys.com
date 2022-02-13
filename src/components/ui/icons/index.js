@@ -2,6 +2,7 @@ export { default as ChevronDown } from "./ChevronDown";
 export { default as ChevronRight } from "./ChevronRight";
 export { default as Circle } from "./Circle";
 export { default as FullScreen } from "./FullScreen";
+export { default as Slash } from "./Slash";
 export { default as Sps2x4 } from "./Sps2x4";
 export { default as Sps3x4 } from "./Sps3x4";
 export { default as Sps4 } from "./Sps4";

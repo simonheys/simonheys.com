@@ -1,0 +1,135 @@
+title: Vector Field with source code
+excerpt: |
+  I’ve decided to start releasing bits and pieces of source code just for fun.
+  The first one is the Vector Field demo I wrote ages ago. First, the source
+  code Download Vector Field source code It’s easy to change the size,
+  colour and ‘splat’ graphics. This is totally free for non-commercial use, but
+  I …
+components:
+  - type: blog
+    content: |
+      [![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/2007/05/12/vector-field-with-source-code/)
+
+      I’ve decided to start releasing bits and pieces of source code just for
+      fun. The first one is the [Vector Field
+      demo](/work/vector-field-example/)
+      I wrote ages ago.
+
+      #### First, the source code
+
+      [Download Vector Field source code](/files/vectorfield.zip)
+
+      It’s easy to change the size, colour and ‘splat’ graphics. This is totally
+      free for non-commercial use, but I kindly ask that you contact me if you
+      wish to use it for something commercial.
+
+      Part of the reason I’m posting this is because it has a bug which I can’t
+      figure out how to fix. To explain what the bug is I need to explain how
+      this works. So here goes.
+
+      #### Vector Fields and fluids
+
+      At some point last year I wanted to create a fluid / liquid simulation and
+      had been looking at [Vector
+      Fields](http://en.wikipedia.org/wiki/Vector%5Ffield) and their use in
+      fluid simulations. These work by having a huge matrix of vectors, the
+      direction of which are controlled by the fluid algorithm. Here’s a very
+      simple example:
+
+
+      ![field.gif](uploads/2007/06/field.gif)
+
+
+      Each vector in the field has two components, one for the horizontal
+      movement x, and another for the vertical movement y. A 3d field would have
+      a third component, z.
+
+
+      Particles or colour or whatever is required to turn this into a
+      visualisation are moved around according to the vector field. If there is
+      a particle on top of the vector shown above then it will move 0.5 units
+      along x and 0.45 along y. If a force is applied to disturb the liquid then
+      some of the vectors would correspondingly increase in magnitude. Scale
+      this up to a larger system and you have the basics of a fluid simulation. 
+
+
+      This is an enormous amount of computation, and even for a tiny area of
+      100×100 pixels you’d need 10,000 vectors. This seemed totally beyond the
+      scope of Flash 8 which is still sluggish in math performance compared to
+      Flash 9 or Java.
+
+
+      #### Vector Fields and DisplacementMap
+
+
+      Then I started playing around with DisplacementMaps. I’d seen various
+      demo’s of the [3d spinning
+      globe](http://nodename.com/blog/2006/01/16/psyarks-displacementmapfilter-tutorial/)
+      variety and was intrigued as to how it was done, particularly as the
+      displacement map never looked, on the surface at least, to have much
+      bearing on what actually happens.
+
+
+      Thankfully it’s all much simpler than the Flash documentation led me to
+      believe. Displacement maps have two channels – one controlling horizontal
+      movement and the other controlling vertical movement. This was starting to
+      sound familiar:
+
+
+      ![field2.gif](uploads/2007/06/field2.gif)
+
+
+      Hallelujah! A DisplacementMap is effectively a huge array of vectors, and
+      perfect for a fluid simulation. There’s a small amount of math that
+      converts between the component value of each colour channel and the
+      corresponding x or y movement;
+
+
+      ```actionscript
+      dstPixel[x, y] = srcPixel[ 
+        x + ((componentX(x, y) – 128) * scaleX) / 256, 
+        y + ((componentY(x, y) – 128) * scaleY) / 256
+      ];
+      ````
+
+      I spent ages staring at this line of code, but it’s really easy. Taking
+      the horizontal channel as an example: a value of 128 doesn’t move at all;
+      less than 128 would move left and more than 128 would move right. You
+      specify a scale value when creating the DisplacementMap that controls the
+      magnitude of movement in either direction.
+
+
+      I quickly wrote this demo and was very pleased with the result, especially
+      the nice surprise of the colours mixing together. It’s really simple;
+      there is a displacement map, and a brush like the soft brush in PhotoShop.
+      When you drag with the mouse the code calculates the corresponding colour
+      for that movement and paints onto the displacement map. This causes
+      fluid-like movement:
+
+
+      #### And now, the bug
+
+
+      When you play with the code you will notice that occasionally you get
+      ‘dead pixels’ in the liquid. I find this intensely annoying. I have tried
+      several fixes but have yet to solve it. Here’s what you see:
+
+
+      ![swirl-grr.jpg](uploads/2007/06/swirl-grr.jpg)
+
+
+      Grrr. At first I thought it would just be a case of using a threshold call
+      to change all elements with a value of 128,128 (ie. not moving) into
+      something else. But it doesn’t work because the real problem is when you
+      have two pixels next to each other which are pointing in opposing
+      directions, canceling each other out. So I also tried a Gaussian blur, but
+      this has a weird effect where the whole movement shifts off balance and
+      tends towards the bottom-right.
+
+
+      I am out of ideas on this one and am hoping someone else can think of nice
+      a workaround.
+
+
+      All ideas welcome.
+  - type: blog-next

@@ -27,6 +27,11 @@ module.exports = {
         destination: "https://github.com/simonheys/make-jpeg-droplet",
         permanent: true,
       },
+      {
+        source: "/feed",
+        destination: "/feed/rss",
+        permanent: true,
+      },
     ];
   },
 };

@@ -23,17 +23,18 @@ all:
     type: header
     links:
       - "/portfolio"
+      - "/blog"
       - "/about"
   before: []
   after:
-    - exclude: ["/about", "/contact", "/portfolio", "/case-studies"]
+    - exclude: ["/about", "/contact", "/case-studies", "/blog*"]
       type: work-header
       title: About
       ruled: true
       subtitle: |
         I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
       links:
-        - text: About
+        - text: Read more
           url: /about
     - type: footer
       text: Copyright © Studio Heys Limited · Registered in England №07360731

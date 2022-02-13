@@ -1,0 +1,29 @@
+title: Gravity
+excerpt: |
+  I once did a quick experiment into creating drawings from nothing but code,
+  but based on natural phenomena. The first thing I tried was gravity and it
+  gave some results which I really liked. Here are the PostScript drawings it
+  made. As I’m on a bit of a Cocoa Screensaver mission at the moment I…
+components:
+  - type: blog
+    content: |
+      [![gravity_screensaver-700](uploads/2007/03/gravity_screensaver-700.jpg
+      "gravity_screensaver-700")](/2007/03/18/gravity/)
+
+
+      I once did a quick experiment into creating drawings from nothing but
+      code, but based on natural phenomena. The first thing I tried was gravity
+      and it gave some results which I really liked. Here are the [PostScript
+      drawings](/portfolio/gravity/) it
+      made.
+
+
+      As I’m on a bit of a Cocoa Screensaver mission at the moment I spent a
+      couple of hours creating a Gravity Screensaver. Just a bit of fun really.
+      Here it is:
+
+
+      [Download for Mac
+      (Universal)](/files/gravitysaver.zip
+      "gravitysaver.zip")
+  - type: blog-next
