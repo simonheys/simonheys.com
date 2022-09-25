@@ -29,9 +29,10 @@ jobs:
       if: matrix.node-version == '18.x'
       run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
     - run: yarn install --frozen-lockfile
+    - name: Build
     - run: yarn build
     - name: Reset NODE options
       if: matrix.node-version == '18.x'
       run: echo "NODE_OPTIONS=" >> $GITHUB_ENV
-    - name: Cypress run
-      uses: cypress-io/github-action@v4
+    - name: Test
+    - run: yarn test
