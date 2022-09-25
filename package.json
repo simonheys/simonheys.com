@@ -85,7 +85,7 @@
     "image-size": "^1.0.0",
     "js-yaml": "^4.1.0",
     "minimist": "^1.2.6",
-    "prettier": "^2.3.2",
+    "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "sharp": "^0.31.0",
     "start-server-and-test": "^1.14.0",
