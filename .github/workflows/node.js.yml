@@ -30,4 +30,5 @@ jobs:
       run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
     - run: yarn install --frozen-lockfile
     - run: yarn build
-    - run: yarn test
+    - name: Cypress run
+      uses: cypress-io/github-action@v4
