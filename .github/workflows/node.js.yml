@@ -20,14 +20,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Override NODE options for the most recent version
-      if: matrix.node-version == '18.x'
-      run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
+    - name: Override NODE options for the most recent version
+      if: matrix.node-version == '18.x'
+      run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
     - run: yarn install --frozen-lockfile
     - run: yarn build
     - run: yarn test
