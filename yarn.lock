@@ -3263,10 +3263,10 @@ graphology-layout-forceatlas2@^0.6.1:
   dependencies:
     graphology-utils "^2.1.0"
 
-graphology-types@^0.19.5:
-  version "0.19.5"
-  resolved "https://registry.npmjs.org/graphology-types/-/graphology-types-0.19.5.tgz"
-  integrity sha512-zXJEDILlJ2JI+oUVjHkXZIRRZfWuwBEhOJagOARnt4eWuErBJZUJmiEOJjLDA0s0DQNFxIHD4+NRwsU4B0VxWw==
+graphology-types@^0.24.4:
+  version "0.24.4"
+  resolved "https://registry.yarnpkg.com/graphology-types/-/graphology-types-0.24.4.tgz#299120fb50dcd7915204068715e7cfc9ef8b5e3c"
+  integrity sha512-CSgmycWiviCctMFO86YoUTJN1t4/PLKC5Pos2Hite+7kCUXTr+mGlDUAOgpcKG1IfFaeL9VDmTjFpzs2rTnPWw==
 
 graphology-utils@^2.1.0:
   version "2.1.1"
