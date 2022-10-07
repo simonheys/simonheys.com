@@ -2,7 +2,7 @@ import * as React from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-export interface AppearWhenInViewProps {
+export interface AppearWhenInViewProps extends React.PropsWithChildren {
   className?: string;
 }
 
