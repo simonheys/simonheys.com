@@ -2,10 +2,10 @@ import fs from "fs";
 import path from "path";
 import cliProgress from "cli-progress";
 import chokidar from "chokidar";
+import { transform } from "@svgr/core";
 
 import getFiles from "../utils/getFiles";
 
-const svgr = require("@svgr/core").default;
 const argv = require("minimist")(process.argv.slice(2));
 
 const iconsSystemPath = path.join(__dirname, "../components/ui/icons");
@@ -14,26 +14,18 @@ const indexSystemPath = path.join(iconsSystemPath, "./index.js");
 
 const useProgressBar = !argv.watch;
 
-const svgCodeToIconComponentCode = (svgCode) => {
-  return new Promise((resolve, reject) => {
-    svgr(svgCode, {
-      icon: true,
-      replaceAttrValues: { "#000": "currentColor" },
-      plugins: [
-        "@svgr/plugin-svgo",
-        "@svgr/plugin-jsx",
-        "@svgr/plugin-prettier",
-      ],
-    }).then((iconComponentCode) => {
-      resolve(iconComponentCode);
-    });
+const svgCodeToIconComponentCode = async (svgCode: string) => {
+  return transform(svgCode, {
+    icon: true,
+    replaceAttrValues: { "#000": "currentColor" },
+    plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx", "@svgr/plugin-prettier"],
   });
 };
 
 // svgr forces height="1em" and width="1em" regardess of proportions
 // this is a crude hack to parse the viewBox and replace width
 // with an expected proportional value
-const fixIconComponentCodeEmWidth = async (iconComponentCode) => {
+const fixIconComponentCodeEmWidth = async (iconComponentCode: string) => {
   const viewBoxRegEx = /viewBox="(.+)"/;
   const matches = iconComponentCode.match(viewBoxRegEx);
   const viewBox = matches[1];
@@ -66,7 +58,7 @@ const generateIconComponents = async () => {
     const ext = path.extname(filePath);
     const filePathWithoutExt = filePath.substr(0, filePath.length - ext.length);
     const destPath = path.join(iconsSystemPath, `${filePathWithoutExt}.js`);
-    const svgCode = fs.readFileSync(sourcePath);
+    const svgCode = fs.readFileSync(sourcePath).toString("utf8");
     const iconComponentCode = await svgCodeToIconComponentCode(svgCode);
     const fileContents = await fixIconComponentCodeEmWidth(iconComponentCode);
     fs.writeFileSync(destPath, fileContents, "utf8");
@@ -87,7 +79,7 @@ const generateIconComponents = async () => {
   await generateIconComponents();
   if (argv.watch) {
     console.log(`Watching for changes in ${iconsSvgSystemPath}`);
-    chokidar.watch(iconsSvgSystemPath).on("change", (event, path) => {
+    chokidar.watch(iconsSvgSystemPath).on("change", (_event, _path) => {
       console.log(`Regenerating icon components…`);
       generateIconComponents();
     });
