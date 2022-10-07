@@ -1,5 +1,5 @@
 import * as React from "react";
-import { AnimateSharedLayout } from "framer-motion";
+import { LayoutGroup } from "framer-motion";
 
 import CardItem, { CardItemPostType } from "./CardItem";
 import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from "../../ui/icons";
@@ -52,7 +52,7 @@ const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
   const layout = mapLayoutPropToLayout[layoutProp].layout;
   let currentPostIndex = 0;
   return (
-    <AnimateSharedLayout type="crossfade">
+    <LayoutGroup>
       <div className={"container-fluid"}>
         {layout.map((row: number[], rowIndex: number) => {
           const cardsInRow = row.reduce((a, b) => a + b, 0);
@@ -100,7 +100,7 @@ const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
           );
         })}
       </div>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
 

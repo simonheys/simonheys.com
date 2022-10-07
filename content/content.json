@@ -52,7 +52,6 @@
       "type": "header",
       "links": [
         "/portfolio",
-        "/blog",
         "/about"
       ]
     },
