@@ -41,7 +41,7 @@
     "rehype-raw": "^6.1.1",
     "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.55.0",
-    "swr": "^1.0.1",
+    "swr": "^1.3.0",
     "wordclock": "https://github.com/simonheys/wordclock.git#v1.1.5"
   },
   "devDependencies": {
