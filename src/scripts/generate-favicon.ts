@@ -1,42 +1,26 @@
 import fs from "fs";
 import path from "path";
-import favicons from "favicons";
+import { FaviconOptions, favicons } from "favicons";
 
 const publicSystemPath = path.join(__dirname, "../../public/favicon");
 
 const source = path.join(__dirname, "../assets/favicon.svg");
 
-const configuration = {
+const configuration: FaviconOptions = {
   background: "#ff0000",
   path: "/images/favicons",
   icons: {
     android: true,
     appleIcon: true,
     appleStartup: false,
-    coast: false,
     favicons: true,
-    firefox: false,
     windows: false,
     yandex: false,
   },
 };
 
-const faviconsAsync = (
-  source: string,
-  configuration: Partial<favicons.FaviconOptions>
-): Promise<favicons.FaviconResponse> => {
-  return new Promise((resolve, reject) => {
-    favicons(source, configuration, (error, response) => {
-      if (error) {
-        reject(error);
-      }
-      resolve(response);
-    });
-  });
-};
-
 const generateFavicons = async () => {
-  const response = await faviconsAsync(source, configuration);
+  const response = await favicons(source, configuration);
   for (const element of response.images) {
     const { name, contents } = element;
     const filePath = path.join(publicSystemPath, name);
