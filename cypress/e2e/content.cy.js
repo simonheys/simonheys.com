@@ -71,7 +71,6 @@ describe("Unit test content functions", () => {
         expect(page).to.have.property("path").that.equals("/");
         expect(page).to.have.property("title");
         expect(page).to.have.property("description");
-        expect(page).to.have.property("components").that.is.an("array");
       });
     });
     describe("when invalid", () => {

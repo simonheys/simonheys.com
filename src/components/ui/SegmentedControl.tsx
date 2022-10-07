@@ -1,5 +1,5 @@
 import * as React from "react";
-import { motion, AnimateSharedLayout } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
 
 import styles from "./SegmentedControl.module.scss";
 
@@ -19,7 +19,7 @@ const SegmentedControl: React.FC<SegmentedControlProps> = ({
 }) => {
   const selectedIndex = options.findIndex((item) => item.value === value);
   return (
-    <AnimateSharedLayout>
+    <LayoutGroup>
       <div className={styles.container}>
         {options.map((item, index) => {
           const isActive = index === selectedIndex;
@@ -46,7 +46,7 @@ const SegmentedControl: React.FC<SegmentedControlProps> = ({
           );
         })}
       </div>
-    </AnimateSharedLayout>
+    </LayoutGroup>
   );
 };
 

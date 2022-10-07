@@ -65,15 +65,15 @@ components:
         `https://mainnet.infura.io/v3/${INFURA_PROJECT_ID}`
       );
 
-      // Fetch the balance, this will be in Gwei
-      const balanceInGwei = await provider.getBalance(WALLET_ADDRESS);
+      // Fetch the balance, this will be in Wei
+      const balanceInWei = await provider.getBalance(WALLET_ADDRESS);
 
       // Convert balance to Eth
-      const balanceInEth = ethers.utils.formatEther(balanceInGwei);
+      const balanceInEth = ethers.utils.formatEther(balanceInWei);
 
       // Print a summary to the console
       console.log(`Address: ${WALLET_ADDRESS}`);
-      console.log(`- balance in Gwei: ${balanceInGwei}`);
+      console.log(`- balance in Wei: ${balanceInWei}`);
       console.log(`- balance in ETH: ${balanceInEth}`);
     };
 
@@ -95,7 +95,7 @@ components:
 
     ```bash
     Address: 0x****************************************
-    - balance in Gwei: 214066444119271200
+    - balance in Wei: 214066444119271200
     - balance in ETH: 0.2140664441192712
     ```
 
@@ -133,17 +133,17 @@ components:
     );
     ```
 
-    Once we have the `provider` we use it to fetch the raw balance in [Gwei](https://ethereum.org/en/developers/docs/intro-to-ether/#denominations) which is the smallest unit.
+    Once we have the `provider` we use it to fetch the raw balance in [Wei](https://ethereum.org/en/developers/docs/intro-to-ether/#denominations) which is the smallest unit.
 
     ```typescript
-    const balanceInGwei = await provider.getBalance(WALLET_ADDRESS);
-    // Gwei: 214066444119271200
+    const balanceInWei = await provider.getBalance(WALLET_ADDRESS);
+    // Wei: 214066444119271200
     ```
 
     Thankfully ethers provides a convenient way to convert this to more familiar ETH:
 
     ```typescript
-    const balanceInEth = ethers.utils.formatEther(balanceInGwei);
+    const balanceInEth = ethers.utils.formatEther(balanceInWei);
     // Eth: 0.2140664441192712
     ```
     
@@ -153,7 +153,7 @@ components:
 
     We also learned how to connect to other Layer 2 chains directly such as [Polygon](https://polygon.technology/) and [Gnosis Beacon Chain](https://www.gnosischain.com/) and use the same method to fetch a balance.
 
-    Finally we learned how to convert the balance from Gwei into ETH.
+    Finally we learned how to convert the balance from Wei into ETH.
 
     This gives the basic building blocks and a starting point for interacting with any Ethereum blockchain.
 - type: blog-next

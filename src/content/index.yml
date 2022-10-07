@@ -23,7 +23,6 @@ all:
     type: header
     links:
       - "/portfolio"
-      - "/blog"
       - "/about"
   before: []
   after:
