@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@vimeo/player": "^2.18.0",
-    "bootstrap": "^5.1.0",
+    "bootstrap": "^5.2.2",
     "clsx": "^1.2.1",
     "color": "^4.0.1",
     "favicons": "^7.0.1",
