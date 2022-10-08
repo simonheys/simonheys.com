@@ -12,7 +12,7 @@ const SvgComponent = (props) => (
     <path
       stroke="currentColor"
       strokeWidth={1.25}
-      d="M1 11l3-3-3-3"
+      d="m1 11 3-3-3-3"
       fill="none"
       fillRule="evenodd"
       strokeLinecap="square"
