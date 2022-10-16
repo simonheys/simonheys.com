@@ -10,14 +10,12 @@ const SvgComponent = (props) => (
     {...props}
   >
     <g fill="none" fillRule="evenodd">
-      <path stroke="currentColor" strokeWidth={1.5} d="M7 9l-6 6" />
+      <path stroke="currentColor" strokeWidth={1.5} d="m7 9-6 6" />
       <path fill="currentColor" d="M0 10h1.5v6H0z" />
       <path fill="currentColor" d="M0 14.5h6V16H0z" />
-      <g>
-        <path stroke="currentColor" strokeWidth={1.5} d="M9 7l6-6" />
-        <path fill="currentColor" d="M16 6h-1.5V0H16z" />
-        <path fill="currentColor" d="M16 1.5h-6V0h6z" />
-      </g>
+      <path stroke="currentColor" strokeWidth={1.5} d="m9 7 6-6" />
+      <path fill="currentColor" d="M16 6h-1.5V0H16z" />
+      <path fill="currentColor" d="M16 1.5h-6V0h6z" />
     </g>
   </svg>
 );
