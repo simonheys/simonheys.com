@@ -1,9 +1,9 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 
 const useAnimationFrame = () => {
-  const [elapsed, setTime] = React.useState(0);
+  const [elapsed, setTime] = useState(0);
 
-  React.useEffect(() => {
+  useEffect(() => {
     let animationFrame: number, start: number;
 
     // Function to be executed on each animation frame

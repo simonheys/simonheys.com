@@ -1,26 +1,30 @@
-import * as React from "react";
-import { useInView } from "react-intersection-observer";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from 'framer-motion';
+import { useRef, useCallback, useEffect, PropsWithChildren, FC } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-export interface AppearWhenInViewProps extends React.PropsWithChildren {
+export interface AppearWhenInViewProps extends PropsWithChildren {
   className?: string;
 }
 
-const AppearWhenInView: React.FC<AppearWhenInViewProps> = (props) => {
-  const timeoutId = React.useRef(null);
+export const AppearImmediate: FC<AppearWhenInViewProps> = (props) => {
+  return <div {...props} />;
+};
+
+export const AppearWhenInView: FC<AppearWhenInViewProps> = (props) => {
+  const timeoutId = useRef<ReturnType<typeof setTimeout> | null>(null);
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
-  const checkInView = React.useCallback(() => {
+  const checkInView = useCallback(() => {
     if (inView) {
-      controls.start("visible");
+      controls.start('visible');
     }
   }, [controls, inView]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     timeoutId.current = setTimeout(checkInView, 150);
     return () => {
-      clearTimeout(timeoutId.current);
+      timeoutId.current && clearTimeout(timeoutId.current);
     };
   }, [checkInView]);
 
@@ -29,10 +33,10 @@ const AppearWhenInView: React.FC<AppearWhenInViewProps> = (props) => {
       ref={ref}
       animate={controls}
       initial="hidden"
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.3 }}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 24 },
+        hidden: { opacity: 0, y: 0 },
       }}
       {...props}
     ></motion.div>

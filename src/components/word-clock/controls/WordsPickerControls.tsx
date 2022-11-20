@@ -1,9 +1,8 @@
-import * as React from "react";
+import { FC, Fragment, useRef, useCallback, useEffect, useMemo } from 'react';
 
-import preventWindowScroll from "../../../utils/preventWindowScroll";
-import { Circle } from "../../ui/icons";
-
-import styles from "./WordsPickerControls.module.scss";
+import preventWindowScroll from '../../../utils/preventWindowScroll';
+import { Circle } from '../../ui/icons';
+import styles from './WordsPickerControls.module.scss';
 
 export interface WordsPickerControlsProps {
   wordsCollection: {
@@ -16,38 +15,38 @@ export interface WordsPickerControlsProps {
   setFile: (file: string) => void;
 }
 
-const WordsPickerControls: React.FC<WordsPickerControlsProps> = ({
+const WordsPickerControls: FC<WordsPickerControlsProps> = ({
   wordsCollection = [],
   file: selectedFile,
   setFile,
 }) => {
-  const selectedRef = React.useRef(null);
+  const selectedRef = useRef<HTMLDivElement | null>(null);
 
-  const scrollIntoView = React.useCallback(() => {
+  const scrollIntoView = useCallback(() => {
     preventWindowScroll(() => {
       selectedRef?.current?.scrollIntoView({
-        behavior: "auto",
-        block: "center",
+        behavior: 'auto',
+        block: 'center',
       });
     });
   }, []);
 
-  const setSelectedRef = React.useCallback(
-    (ref) => {
+  const setSelectedRef = useCallback(
+    (ref: HTMLDivElement) => {
       selectedRef.current = ref;
       scrollIntoView();
     },
     [scrollIntoView]
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timeoutId = setTimeout(scrollIntoView, 0);
     return () => {
       timeoutId && clearTimeout(timeoutId);
     };
   }, [scrollIntoView]);
 
-  const wordsCollectionEntries = React.useMemo(() => {
+  const wordsCollectionEntries = useMemo(() => {
     return Object.entries(wordsCollection);
   }, [wordsCollection]);
 
@@ -58,7 +57,7 @@ const WordsPickerControls: React.FC<WordsPickerControlsProps> = ({
         <div className={styles.wordsCollectionContainer}>
           {wordsCollectionEntries.map(([language, entries], index) => {
             return (
-              <React.Fragment key={index}>
+              <Fragment key={index}>
                 <div className={styles.wordsCollectionLanguage}>{language}</div>
                 <div className={styles.wordsCollectionFileGroup}>
                   {entries.map(({ file, title }, index: number) => {
@@ -88,7 +87,7 @@ const WordsPickerControls: React.FC<WordsPickerControlsProps> = ({
                     );
                   })}
                 </div>
-              </React.Fragment>
+              </Fragment>
             );
           })}
         </div>

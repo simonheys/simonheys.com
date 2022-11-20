@@ -1,17 +1,15 @@
-import * as React from "react";
+import { useState, useCallback, useEffect } from 'react';
 
-export interface MaybeWindowSize {
-  innerWidth?: number;
-  innerHeight?: number;
-  outerWidth?: number;
-  outerHeight?: number;
-  clientWidth?: number;
-  clientHeight?: number;
-}
+export interface WindowSize
+  extends Pick<
+      Window,
+      'innerWidth' | 'innerHeight' | 'outerWidth' | 'outerHeight'
+    >,
+    Pick<HTMLElement, 'clientWidth' | 'clientHeight'> {}
 
-const getWindowSize = (): MaybeWindowSize => {
-  if (typeof window === "undefined") {
-    return {};
+const getWindowSize = (): WindowSize | null => {
+  if (typeof window === 'undefined') {
+    return null;
   }
   const { innerWidth, innerHeight, outerWidth, outerHeight } = window;
   const { clientWidth, clientHeight } = document?.documentElement ?? {};
@@ -26,18 +24,18 @@ const getWindowSize = (): MaybeWindowSize => {
 };
 
 const useWindowSize = () => {
-  const [windowSize, setWindowSize] = React.useState<MaybeWindowSize>(
+  const [windowSize, setWindowSize] = useState<WindowSize | null>(
     getWindowSize()
   );
 
-  const updateWindowSize = React.useCallback(() => {
+  const updateWindowSize = useCallback(() => {
     setWindowSize(getWindowSize());
   }, []);
 
-  React.useEffect(() => {
-    window.addEventListener("resize", updateWindowSize);
+  useEffect(() => {
+    window.addEventListener('resize', updateWindowSize);
     return () => {
-      window.removeEventListener("resize", updateWindowSize);
+      window.removeEventListener('resize', updateWindowSize);
     };
   }, [updateWindowSize]);
 

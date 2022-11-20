@@ -1,13 +1,16 @@
-import fs from "fs";
-import crypto from "crypto";
+import crypto from 'crypto';
+import fs from 'fs';
 
-const getImageHash = async (filePath: string, algorithm = "md4") => {
-  const hash = crypto.createHash(algorithm).setEncoding("hex");
+const getImageHash = async (
+  filePath: string,
+  algorithm = 'md4'
+): Promise<string> => {
+  const hash = crypto.createHash(algorithm).setEncoding('hex');
   return new Promise((resolve, reject) => {
     fs.createReadStream(filePath)
-      .once("error", reject)
+      .once('error', reject)
       .pipe(hash)
-      .once("finish", () => {
+      .once('finish', () => {
         resolve(hash.read());
       });
   });

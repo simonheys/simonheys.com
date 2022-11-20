@@ -1,7 +1,7 @@
-import * as React from "react";
-import clsx from "clsx";
+import clsx from 'clsx';
+import { FC } from 'react';
 
-import styles from "./DefaultControlsItem.module.scss";
+import styles from './DefaultControlsItem.module.scss';
 
 export interface DefaultControlsItemProps {
   className?: string;
@@ -12,9 +12,9 @@ export interface DefaultControlsItemProps {
   [x: string]: any;
 }
 
-const DefaultControlsItem: React.FC<DefaultControlsItemProps> = ({
+const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
   className,
-  Tag = "div",
+  Tag = 'div',
   active = false,
   disabled = false,
   ...rest

@@ -1,17 +1,20 @@
-import imageProperties from "../../content/image-properties.json";
+import imageProperties from '../../content/image-properties.json';
+import { ComponentKey } from '../components/Components';
+
+export type ImageSrc = keyof typeof imageProperties;
 
 export type Link = {
   text: string;
   url: string;
 };
 
-export type Component = {
-  type: string;
+export interface Component {
+  type: ComponentKey;
   title?: any;
   subtitle?: string;
   links?: Link[];
   exclude?: string[];
-};
+}
 
 export type Thumbnail = {
   src: string;
@@ -34,13 +37,13 @@ export type Page = {
   };
 };
 
-export type ImageProperties = {
+export interface ImageProperties {
   width: number;
   height: number;
   hash?: string;
   color?: string;
   type?: string;
-};
+}
 
 export type Meta = {
   titles: string[];
@@ -49,7 +52,7 @@ export type Meta = {
       path: string;
     }[];
   };
-  "case-studies": {
+  'case-studies': {
     pages: {
       path: string;
     }[];
@@ -66,7 +69,7 @@ export type Content = {
   };
 };
 
-const defaultContent: Content = require("../../content/content.json");
+const defaultContent: Content = require('../../content/content.json');
 export { defaultContent as content };
 
 export const getMeta = (content: Content = defaultContent): Meta =>
@@ -84,7 +87,7 @@ export const getPortfolioPagePaths = (
 export const getCaseStudiesPagePaths = (
   content: Content = defaultContent
 ): string[] => {
-  return content.meta["case-studies"].pages.map((page) => page.path);
+  return content.meta['case-studies'].pages.map((page) => page.path);
 };
 
 export const getBlogPagePaths = (
@@ -92,31 +95,31 @@ export const getBlogPagePaths = (
 ): string[] => {
   const pagePaths = getPagePaths(content);
   const blogPagePaths = pagePaths
-    .filter((path) => path.startsWith("/blog/"))
+    .filter((path) => path.startsWith('/blog/'))
     .reverse();
   return blogPagePaths;
 };
 
 export const getBlogDateFromPath = (path: string): Date => {
-  const components = path.split("/").filter(Boolean).slice(1, 4);
-  return new Date(components.join("/"));
+  const components = path.split('/').filter(Boolean).slice(1, 4);
+  return new Date(components.join('/'));
 };
 
 export const normalisePath = (path: string | string[]): string => {
   // allow array
   if (Array.isArray(path)) {
-    path = path.join("/");
+    path = path.join('/');
   }
-  if (typeof path !== "string") {
-    return "/";
+  if (typeof path !== 'string') {
+    return '/';
   }
   // omit query
-  const queryIndex = path.indexOf("?");
+  const queryIndex = path.indexOf('?');
   if (queryIndex !== -1) {
-    path = path.substr(0, queryIndex);
+    path = path.substring(0, queryIndex);
   }
   // convert multiple /// into single /, omit leading and trailing
-  path = path.split("/").filter(Boolean).join("/");
+  path = path.split('/').filter(Boolean).join('/');
   // re-add leading /
   path = `/${path}`;
   return path;
@@ -125,7 +128,7 @@ export const normalisePath = (path: string | string[]): string => {
 export const getPageForPath = (
   path: string | string[],
   content: Content = defaultContent
-): Page => {
+): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const page = content.pages.find((page) => page.path === normalisedPath);
   return page;
@@ -134,7 +137,7 @@ export const getPageForPath = (
 export const getNextPortfolioPageForPath = (
   path: string | string[],
   content: Content = defaultContent
-): Page => {
+): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const portfolioPagePaths = getPortfolioPagePaths(content);
   const currentIndex = portfolioPagePaths.indexOf(normalisedPath);
@@ -149,7 +152,7 @@ export const getNextPortfolioPageForPath = (
 export const getNextCaseStudiesPageForPath = (
   path: string | string[],
   content: Content = defaultContent
-): Page => {
+): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const caseStudiesPagePaths = getCaseStudiesPagePaths(content);
   const currentIndex = caseStudiesPagePaths.indexOf(normalisedPath);
@@ -176,7 +179,7 @@ export const getComponentsForPath = (
   const filteredComponents = components.filter((pageComponent) => {
     if (pageComponent.exclude) {
       const exclude =
-        typeof pageComponent.exclude === "string"
+        typeof pageComponent.exclude === 'string'
           ? [pageComponent.exclude]
           : pageComponent.exclude;
       for (let i = 0; i < exclude.length; i++) {
@@ -193,8 +196,10 @@ export const getComponentsForPath = (
   return filteredComponents;
 };
 
-export const getPropertiesForImage = (src: string): ImageProperties => {
-  const properties = imageProperties[src];
+export const getPropertiesForImage = (
+  src: ImageSrc | string
+): ImageProperties => {
+  const properties = imageProperties[src as ImageSrc];
   if (!properties) {
     console.warn(`getPropertiesForImage(${src}) - not found`, src);
     return { width: 42, height: 42 };

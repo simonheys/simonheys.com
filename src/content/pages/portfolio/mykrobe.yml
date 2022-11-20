@@ -8,7 +8,7 @@ components:
   - type: mykrobe-animation
   - type: work-row
     vimeoId: 585698728
-    color: "#f6a229"
+    color: '#f6a229'
   - type: work-row
     columns:
       - text: The platform has web and desktop apps which must meet the needs of non-specialist end-users analysing TB resistance in challenging environments.
@@ -43,7 +43,7 @@ components:
       - text: For the web and app interface I designed and developed a common system of interactive components which are available to the team in an interactive web-based catalogue.
   - type: work-row
     vimeoId: 584226493
-    color: "#f7f6f1"
+    color: '#f7f6f1'
   - type: work-row
     columns:
       - text: To make non-expert users feel comfortable and confident using the product I designed a user-friendly identity inspired by the shapes, colours and transparency seen in traditional TB stain tests.

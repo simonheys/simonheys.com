@@ -1,21 +1,21 @@
-import * as React from "react";
-import { motion, useAnimation } from "framer-motion";
-import VimeoPlayer from "@vimeo/player";
+import VimeoPlayer from '@vimeo/player';
+import { motion, useAnimation } from 'framer-motion';
+import { FC, useState, useRef, useEffect, useMemo, useCallback } from 'react';
 
-import styles from "./VideoFadeIn.module.scss";
-import isTouchDevice from "../../utils/isTouchDevice";
-import useBoundingClientRectInView from "../../hooks/useBoundingClientRectInView";
+import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
+import isTouchDevice from '../../utils/isTouchDevice';
+import styles from './VideoFadeIn.module.scss';
 
 export interface VideoFadeInProps {
-  vimeoId: string;
-  youTubeId: string;
-  col: string | number;
-  color: string;
+  vimeoId?: string;
+  youTubeId?: string;
+  col?: number | string;
+  color?: string;
   title: string;
   aspect?: string | number;
 }
 
-const VideoFadeIn: React.FC<VideoFadeInProps> = ({
+const VideoFadeIn: FC<VideoFadeInProps> = ({
   vimeoId,
   youTubeId,
   col,
@@ -23,40 +23,40 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
   title,
   aspect: aspectProp,
 }) => {
-  const ref = React.useRef(null);
+  const ref = useRef<HTMLElement | null>(null);
   const controls = useAnimation();
-  const vimeoPlayer = React.useRef(null);
+  const vimeoPlayer = useRef<VimeoPlayer | null>(null);
   const { ref: inViewRef, inView } = useBoundingClientRectInView();
 
   // flag to control video visibility until it is 'in view'
   // fires once only for compatibility with Vimeo player
-  const [visible, setVisible] = React.useState(false);
+  const [visible, setVisible] = useState(false);
 
   const uri = vimeoId
     ? `https://player.vimeo.com/video/${vimeoId}?background=1&player_id=${vimeoId}`
     : `https://www.youtube.com/embed/${youTubeId}?muted=1&loop=1&autoplay=1&autopause=0`;
 
-  const onLoadingComplete = React.useCallback(() => {
-    controls.start("visible");
+  const onLoadingComplete = useCallback(() => {
+    controls.start('visible');
   }, [controls]);
 
-  const setRef = React.useCallback(
-    (nextRef) => {
+  const setRef = useCallback(
+    (nextRef: HTMLIFrameElement) => {
       if (ref.current && vimeoPlayer.current) {
         vimeoPlayer.current.destroy();
       }
       ref.current = nextRef;
       if (ref.current) {
         vimeoPlayer.current = new VimeoPlayer(ref.current);
-        vimeoPlayer.current.on("play", onLoadingComplete);
+        vimeoPlayer.current.on('play', onLoadingComplete);
       }
     },
     [onLoadingComplete]
   );
 
-  const containerStyle = React.useMemo(() => {
+  const containerStyle = useMemo(() => {
     const aspect = aspectProp
-      ? typeof aspectProp === "string"
+      ? typeof aspectProp === 'string'
         ? parseFloat(aspectProp)
         : aspectProp
       : col === 6
@@ -69,14 +69,14 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
     return style;
   }, [aspectProp, col, color]);
 
-  const overlayStyle = React.useMemo(() => {
+  const overlayStyle = useMemo(() => {
     const style = {
       backgroundColor: color,
     };
     return style;
   }, [color]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!visible && inView) {
       setVisible(true);
     }
@@ -103,7 +103,7 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
   return (
     <div ref={inViewRef} className={styles.container} style={containerStyle}>
       {visible && (
-        <React.Fragment>
+        <>
           <iframe
             ref={setRef}
             title={title}
@@ -125,7 +125,7 @@ const VideoFadeIn: React.FC<VideoFadeInProps> = ({
           >
             <div className={styles.overlay} style={overlayStyle}></div>
           </motion.div>
-        </React.Fragment>
+        </>
       )}
     </div>
   );

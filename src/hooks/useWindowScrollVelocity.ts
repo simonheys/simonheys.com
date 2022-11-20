@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useRef, useEffect } from "react";
 
 import useAnimationFrame from "./useAnimationFrame";
 
@@ -29,13 +29,13 @@ const getWindowScroll = (): WindowScrollVelocity => {
 };
 
 const useWindowScrollVelocity = () => {
-  const [windowScroll, setWindowScroll] = React.useState<WindowScrollVelocity>(
+  const [windowScroll, setWindowScroll] = useState<WindowScrollVelocity>(
     getWindowScroll()
   );
   const elapsedMilliseconds = useAnimationFrame();
-  const previousScroll = React.useRef(getWindowScroll());
+  const previousScroll = useRef(getWindowScroll());
 
-  React.useEffect(() => {
+  useEffect(() => {
     const currentScroll = getWindowScroll();
     const deltaScrollX = currentScroll.scrollX - previousScroll.current.scrollX;
     const deltaScrollY = currentScroll.scrollY - previousScroll.current.scrollY;

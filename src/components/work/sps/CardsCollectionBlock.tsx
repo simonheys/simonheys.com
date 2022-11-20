@@ -1,27 +1,26 @@
-import * as React from "react";
-import { LayoutGroup } from "framer-motion";
+import { LayoutGroup } from 'framer-motion';
+import { FC } from 'react';
 
-import CardItem, { CardItemPostType } from "./CardItem";
-import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from "../../ui/icons";
-
-import styles from "./CardsCollectionBlock.module.scss";
+import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from '../../ui/icons';
+import CardItem, { CardItemPostType } from './CardItem';
+import styles from './CardsCollectionBlock.module.scss';
 
 export const mapLayoutPropToLayout = {
-  "3over4": {
+  '3over4': {
     title: <Sps3x4 />,
     layout: [
       [1, 1, 1],
       [1, 1, 2, 3],
     ],
   },
-  "2over4": {
+  '2over4': {
     title: <Sps2x4 />,
     layout: [
       [1, 1],
       [1, 1, 3, 3],
     ],
   },
-  "4over4": {
+  '4over4': {
     title: <Sps4x4 />,
     layout: [
       [1, 1, 1, 1],
@@ -32,7 +31,7 @@ export const mapLayoutPropToLayout = {
     title: <Sps4 />,
     layout: [[1, 1, 3, 3]],
   },
-  "4of2": {
+  '4of2': {
     title: <Sps4x2 />,
     layout: [[2, 2, 2, 2]],
   },
@@ -40,20 +39,20 @@ export const mapLayoutPropToLayout = {
 
 export interface CardsCollectionBlockProps {
   posts: CardItemPostType[];
-  layout: string;
+  layout: keyof typeof mapLayoutPropToLayout;
   animated: boolean;
 }
 
-const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
+const CardsCollectionBlock: FC<CardsCollectionBlockProps> = ({
   posts,
-  layout: layoutProp = "3over4",
+  layout: layoutProp = '3over4',
   animated = false,
 }) => {
   const layout = mapLayoutPropToLayout[layoutProp].layout;
   let currentPostIndex = 0;
   return (
     <LayoutGroup>
-      <div className={"container-fluid"}>
+      <div className={'container-fluid'}>
         {layout.map((row: number[], rowIndex: number) => {
           const cardsInRow = row.reduce((a, b) => a + b, 0);
           return (
@@ -61,12 +60,12 @@ const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
               {row.map((cardsInCell, colIndex) => {
                 const postsRemaining = posts.length - currentPostIndex;
                 if (postsRemaining > 0) {
-                  let size = "base";
+                  let size = 'base';
                   if (cardsInCell > 1 && postsRemaining > 1) {
-                    size = "sm";
+                    size = 'sm';
                   } else {
                     if (cardsInRow <= 3) {
-                      size = "lg";
+                      size = 'lg';
                     }
                   }
                   const cardPosts: CardItemPostType[] = [];
@@ -80,7 +79,7 @@ const CardsCollectionBlock: React.FC<CardsCollectionBlockProps> = ({
                   return (
                     <div
                       key={`col-${colIndex}`}
-                      className={"col d-flex flex-column gx-1 gx-sm-2"}
+                      className={'col d-flex flex-column gx-1 gx-sm-2'}
                     >
                       {cardPosts.map((post) => (
                         <CardItem

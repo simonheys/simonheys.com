@@ -1,15 +1,18 @@
-import { GetServerSideProps } from "next";
+import { GetServerSideProps } from 'next';
+import { FC } from 'react';
 
-import { getBlogFeeds } from "../../modules/feed";
+import { getBlogFeeds } from '../../modules/feed';
 
-const Rss: React.FC = () => null;
+const Rss: FC = () => null;
 
 export const getServerSideProps: GetServerSideProps = async ({ res }) => {
   if (res) {
     const feeds = await getBlogFeeds();
-    res.setHeader("Content-Type", "text/xml");
-    res.write(feeds.rss);
-    res.end();
+    if (feeds) {
+      res.setHeader('Content-Type', 'text/xml');
+      res.write(feeds.rss);
+      res.end();
+    }
   }
   return {
     props: {},

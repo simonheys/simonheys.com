@@ -1,15 +1,15 @@
-import * as React from "react";
-import ReactMarkdown from "react-markdown";
+import { ComponentProps, FC } from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import { MappedComponent } from "../Components";
-import ImageFadeIn from "../ui/ImageFadeIn";
-import VideoFadeIn from "../ui/VideoFadeIn";
-import TextLinks from "../ui/TextLinks";
+import { ComponentKey, MappedComponent } from '../Components';
+import ImageFadeIn from '../ui/ImageFadeIn';
+import TextLinks from '../ui/TextLinks';
+import VideoFadeIn from '../ui/VideoFadeIn';
+import styles from './WorkRowCol.module.scss';
 
-import styles from "./WorkRowCol.module.scss";
-
-export interface WorkRowColProps {
-  type?: string;
+export interface WorkRowColProps
+  extends Omit<ComponentProps<typeof MappedComponent>, 'type'> {
+  type?: ComponentKey;
   col?: number | string;
   text?: string;
   links?: { text: string; url: string }[];
@@ -21,7 +21,7 @@ export interface WorkRowColProps {
   aspect?: string;
 }
 
-const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
+const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
   const className = col
     ? `${styles.container} col-sm-${col}`
     : `${styles.container} col-sm`;
@@ -29,7 +29,7 @@ const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
   if (type) {
     return (
       <div className={className}>
-        <MappedComponent type={type} col={col} {...rest} />
+        <MappedComponent type={type} {...{ col }} {...rest} />
       </div>
     );
   }
@@ -41,14 +41,14 @@ const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
     youTubeId,
     vimeoId,
     color,
-    title = "",
+    title = '',
     aspect,
   } = rest;
 
   if (text) {
     return (
-      <React.Fragment>
-        <div className={"col-md-6"}></div>
+      <>
+        <div className={'col-md-6'}></div>
         <div className={`${styles.container} col-md-6`}>
           <div className={styles.textContainer}>
             <div className={styles.text}>
@@ -61,7 +61,7 @@ const WorkRowCol: React.FC<WorkRowColProps> = ({ type, col, ...rest }) => {
             )}
           </div>
         </div>
-      </React.Fragment>
+      </>
     );
   }
 

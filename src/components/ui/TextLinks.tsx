@@ -1,9 +1,8 @@
-import * as React from "react";
+import { FC } from 'react';
 
-import { ChevronRight } from "./icons";
-import LinkA from "./LinkA";
-
-import styles from "./TextLinks.module.scss";
+import Link from './Link';
+import styles from './TextLinks.module.scss';
+import { ChevronRight } from './icons';
 
 export interface TextLinksProps {
   links: {
@@ -12,7 +11,7 @@ export interface TextLinksProps {
   }[];
 }
 
-const TextLinks: React.FC<TextLinksProps> = ({ links }) => {
+const TextLinks: FC<TextLinksProps> = ({ links }) => {
   if (!links || !links.length) {
     return null;
   }
@@ -20,12 +19,12 @@ const TextLinks: React.FC<TextLinksProps> = ({ links }) => {
     <div className={styles.container}>
       {links.map(({ text, url }, index) => {
         return (
-          <LinkA key={index} className={styles.link} href={url}>
+          <Link key={index} className={styles.link} href={url}>
             {text}
             <span className={styles.linkIcon}>
               <ChevronRight />
             </span>
-          </LinkA>
+          </Link>
         );
       })}
     </div>

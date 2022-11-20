@@ -1,7 +1,7 @@
-import * as React from "react";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+import { FC } from 'react';
 
-import styles from "./CardItem.module.scss";
+import styles from './CardItem.module.scss';
 
 export type CardItemPostType = {
   title: string;
@@ -17,20 +17,20 @@ export interface CardItemProps {
   animated: boolean;
 }
 
-const CardItem: React.FC<CardItemProps> = ({
+const CardItem: FC<CardItemProps> = ({
   post,
-  size = "base",
+  size = 'base',
   animated = false,
 }) => {
   const { title, summary, category, date, id } = post;
   const inner = (
-    <React.Fragment>
+    <>
       <div className={styles.title}>{title}</div>
-      {size !== "sm" && <div className={styles.summary}>{summary}</div>}
+      {size !== 'sm' && <div className={styles.summary}>{summary}</div>}
       <div className={styles.footer}>
         <span className={styles.category}>{category}</span> &middot; {date}
       </div>
-    </React.Fragment>
+    </>
   );
   if (animated) {
     return (
@@ -41,7 +41,7 @@ const CardItem: React.FC<CardItemProps> = ({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, type: "spring" }}
+        transition={{ duration: 0.5, type: 'spring' }}
       >
         {inner}
       </motion.div>
