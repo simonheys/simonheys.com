@@ -7,7 +7,7 @@ components:
   - type: blog
     content: |
       [![swirl-white.jpg](uploads/2007/06/swirl-white.jpg)](/wordpress/work/vector-field-example/)
-      
+
       [Vector field proof of concept in Flash
       8.](/wordpress/work/vector-field-example/)
       Uses displacement map as a ‘cheap’ vector field – providing you’re not

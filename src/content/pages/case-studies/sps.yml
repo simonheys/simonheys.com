@@ -123,7 +123,7 @@ components:
       We were able to rework the main index pages using themed blocks of content with an editorial hierarchy which is automated by default but completely customisable by authors. This created a powerful system which renders pages where it is easy to find themes and specific articles, and discover a wider range of what SPS has to offer.
   - type: work-row
     vimeoId: 581720984
-    color: "#009639"
+    color: '#009639'
     caption: The final identity uses a symbol which felt like it had discovered rather than designed
   - type: prose
     title: Final Design

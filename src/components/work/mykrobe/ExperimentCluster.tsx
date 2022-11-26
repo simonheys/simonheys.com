@@ -1,23 +1,31 @@
-import * as React from "react";
-import * as Color from "color";
-import Graph from "graphology";
-import forceAtlas2 from "graphology-layout-forceatlas2";
+import { colord } from 'colord';
+import Graph from 'graphology';
+import forceAtlas2 from 'graphology-layout-forceatlas2';
+import { Attributes } from 'graphology-types';
+import {
+  FC,
+  useRef,
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  MouseEvent,
+} from 'react';
 
-import useAnimationFrame from "../../../hooks/useAnimationFrame";
-import useBoundingClientRectInView from "../../../hooks/useBoundingClientRectInView";
-
-import styles from "./ExperimentCluster.module.scss";
+import useAnimationFrame from '../../../hooks/useAnimationFrame';
+import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
+import styles from './ExperimentCluster.module.scss';
 
 const CANVAS_MARGIN = 50;
 const MIN_RADIUS = 5;
 const MAX_RADIUS = 15;
 
 const Colors = {
-  COLOR_RULE: "#ceccc6",
-  COLOR_GREY_MID: "#9a9893",
-  COLOR_HIGHLIGHT_EXPERIMENT_FIRST: "#FF3300",
-  COLOR_HIGHLIGHT_EXPERIMENT: "#0d7da0",
-  BUFF: "#f7f6f1",
+  COLOR_RULE: '#ceccc6',
+  COLOR_GREY_MID: '#9a9893',
+  COLOR_HIGHLIGHT_EXPERIMENT_FIRST: '#FF3300',
+  COLOR_HIGHLIGHT_EXPERIMENT: '#0d7da0',
+  BUFF: '#f7f6f1',
 };
 
 const FontFamily = `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`;
@@ -31,12 +39,9 @@ export interface MaybeRenderAttributes {
 }
 
 export interface MaybeDragging {
-  node?: {
-    id: number;
-    experiments: number;
-  };
-  vx?: number;
-  vy?: number;
+  node: string;
+  vx: number;
+  vy: number;
 }
 
 export type ExperimentClusterType = {
@@ -55,30 +60,30 @@ export interface ExperimentClusterProps {
   experimentCluster: ExperimentClusterType;
 }
 
-const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
+const ExperimentCluster: FC<ExperimentClusterProps> = ({
   experimentCluster,
 }) => {
   // refs
-  const canvasRef = React.useRef(null);
-  const graphRef = React.useRef(null);
+  const canvasRef = useRef<HTMLCanvasElement | null>(null);
+  const graphRef = useRef<Graph | null>(null);
 
   // states
   const [renderAttributes, setRenderAttributes] =
-    React.useState<MaybeRenderAttributes>();
-  const [dragging, setDragging] = React.useState<MaybeDragging>();
+    useState<MaybeRenderAttributes>();
+  const [dragging, setDragging] = useState<MaybeDragging | null>(null);
 
   // hooks
   const { ref, boundingClientRect, inView } = useBoundingClientRectInView();
 
   const elapsedMilliseconds = useAnimationFrame();
 
-  const getRadiusForExperiments = React.useCallback((experiments) => {
+  const getRadiusForExperiments = useCallback((experiments: number) => {
     const area = experiments;
     const radius = Math.sqrt(area / Math.PI);
     return Math.min(MAX_RADIUS, MIN_RADIUS + radius * 5);
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const { nodes, distance } = experimentCluster;
     if (!nodes) {
       return;
@@ -100,11 +105,11 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
         size: getRadiusForExperiments(node.experiments),
         ...node,
       };
-      graphRef.current.addNode(node.id, attributes);
+      graphRef.current?.addNode(node.id, attributes);
     });
 
     distance.forEach((distance) => {
-      graphRef.current.addEdge(distance.start, distance.end, {
+      graphRef.current?.addEdge(distance.start, distance.end, {
         ...distance,
         weight: 1 / distance.distance,
       });
@@ -113,8 +118,8 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
 
   // __________________________________________________________________________________________ draw to convas
 
-  const updateRenderAttributes = React.useCallback(() => {
-    if (!canvasRef.current) {
+  const updateRenderAttributes = useCallback(() => {
+    if (!canvasRef.current || !boundingClientRect || !graphRef.current) {
       return;
     }
 
@@ -161,9 +166,9 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     };
 
     setRenderAttributes(attributes);
-  }, [boundingClientRect.height, boundingClientRect.width]);
+  }, [boundingClientRect]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (!graphRef.current || !boundingClientRect) {
       return;
     }
@@ -183,18 +188,24 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     }
   }, [boundingClientRect, elapsedMilliseconds, inView, updateRenderAttributes]);
 
-  const mapGraphToCanvas = React.useCallback(
-    ({ x, y }) => {
-      if (!renderAttributes) {
-        return { x: 0, y: 0 };
-      }
+  const mapGraphToCanvas = useCallback(
+    ({ x, y }: Attributes) => {
       const {
         scaleGraphToCanvas,
         canvasWidth,
         canvasHeight,
         graphCenterX,
         graphCenterY,
-      } = renderAttributes;
+      } = renderAttributes || {};
+      if (
+        !canvasWidth ||
+        !canvasHeight ||
+        !graphCenterX ||
+        !graphCenterY ||
+        !scaleGraphToCanvas
+      ) {
+        return { x: 0, y: 0 };
+      }
       const canvasX =
         CANVAS_MARGIN +
         canvasWidth * 0.5 +
@@ -208,8 +219,8 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [renderAttributes]
   );
 
-  const mapCanvasToGraph = React.useCallback(
-    ({ x, y }) => {
+  const mapCanvasToGraph = useCallback(
+    ({ x, y }: Attributes) => {
       if (!renderAttributes) {
         return { x: 0, y: 0 };
       }
@@ -219,7 +230,16 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
         canvasHeight,
         graphCenterX,
         graphCenterY,
-      } = renderAttributes;
+      } = renderAttributes || {};
+      if (
+        !canvasWidth ||
+        !canvasHeight ||
+        !graphCenterX ||
+        !graphCenterY ||
+        !scaleGraphToCanvas
+      ) {
+        return { x: 0, y: 0 };
+      }
       const graphX =
         (x - CANVAS_MARGIN - canvasWidth * 0.5) / scaleGraphToCanvas +
         graphCenterX;
@@ -231,8 +251,11 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [renderAttributes]
   );
 
-  const findNodeForCanvasCoordinates = React.useCallback(
-    ({ x, y }) => {
+  const findNodeForCanvasCoordinates = useCallback(
+    ({ x, y }: Attributes) => {
+      if (!graphRef.current) {
+        return;
+      }
       const nodes = graphRef.current.nodes();
       for (let i = 0; i < nodes.length; i++) {
         const node = nodes[i];
@@ -249,14 +272,14 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [mapGraphToCanvas]
   );
 
-  const canvasXYForMouseEvent = React.useCallback((e) => {
+  const canvasXYForMouseEvent = useCallback((e: MouseEvent) => {
     const x = e.nativeEvent.offsetX;
     const y = e.nativeEvent.offsetY;
     return { x, y };
   }, []);
 
-  const findNodeForMouseEvent = React.useCallback(
-    (e) => {
+  const findNodeForMouseEvent = useCallback(
+    (e: MouseEvent) => {
       const { x, y } = canvasXYForMouseEvent(e);
       const result = findNodeForCanvasCoordinates({ x, y });
       return result;
@@ -264,11 +287,19 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [canvasXYForMouseEvent, findNodeForCanvasCoordinates]
   );
 
-  React.useEffect(() => {
-    if (!canvasRef.current || !renderAttributes) {
+  useEffect(() => {
+    if (
+      !canvasRef.current ||
+      !renderAttributes ||
+      !boundingClientRect ||
+      !graphRef.current
+    ) {
       return;
     }
-    const context = canvasRef.current.getContext("2d");
+    const context = canvasRef.current.getContext('2d');
+    if (!context) {
+      return;
+    }
     const scale = window?.devicePixelRatio || 1;
     context.setTransform(1, 0, 0, 1, 0, 0);
     context.scale(scale, scale);
@@ -282,10 +313,10 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
 
     graphRef.current.forEachEdge(
       (
-        edge,
+        _edge,
         attributes,
-        source,
-        target,
+        _source,
+        _target,
         sourceAttributes,
         targetAttributes
       ) => {
@@ -300,8 +331,8 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
         context.lineTo(targetXY.x, targetXY.y);
         context.stroke();
 
-        context.textAlign = "center";
-        context.textBaseline = "middle";
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
         context.font = `11px ${FontFamily}`;
 
         context.strokeStyle = Colors.BUFF;
@@ -321,7 +352,7 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
       }
     );
 
-    graphRef.current.forEachNode((node, attributes) => {
+    graphRef.current.forEachNode((_node, attributes) => {
       const { x, y } = mapGraphToCanvas(attributes);
       const r = getRadiusForExperiments(attributes.experiments);
 
@@ -333,7 +364,7 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
 
       const color = Colors.COLOR_HIGHLIGHT_EXPERIMENT;
 
-      context.fillStyle = Color(color).alpha(0.2);
+      context.fillStyle = colord(color).alpha(0.2).toRgbString();
       context.strokeStyle = color;
       context.lineWidth = 0.5;
 
@@ -348,18 +379,22 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     elapsedMilliseconds,
     renderAttributes,
     getRadiusForExperiments,
-    boundingClientRect.width,
-    boundingClientRect.height,
+    boundingClientRect?.width,
+    boundingClientRect?.height,
+    boundingClientRect,
   ]);
 
   // __________________________________________________________________________________________ mouse events
 
-  const onMouseMove = React.useCallback(
-    (e) => {
-      if (dragging) {
+  const onMouseMove = useCallback(
+    (e: MouseEvent) => {
+      if (dragging && graphRef.current) {
         const { x, y } = canvasXYForMouseEvent(e);
         const graphXY = mapCanvasToGraph({ x, y });
         const { node, vx, vy } = dragging;
+        if (vx === undefined || vy === undefined) {
+          return;
+        }
         graphRef.current.updateNode(node, (attributes) => {
           return {
             ...attributes,
@@ -373,10 +408,10 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [dragging, canvasXYForMouseEvent, mapCanvasToGraph]
   );
 
-  const onMouseDown = React.useCallback(
-    (e) => {
+  const onMouseDown = useCallback(
+    (e: MouseEvent) => {
       const result = findNodeForMouseEvent(e);
-      if (result) {
+      if (result && graphRef.current) {
         const { node, vx, vy } = result;
         graphRef.current.updateNode(node, (attributes) => {
           return {
@@ -387,12 +422,12 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
         setDragging({ node, vx, vy });
       }
     },
-    [setDragging, findNodeForMouseEvent, graphRef]
+    [findNodeForMouseEvent]
   );
 
-  const stopDragWithEvent = React.useCallback(
-    (e) => {
-      if (dragging) {
+  const stopDragWithEvent = useCallback(
+    (e: MouseEvent) => {
+      if (dragging && graphRef.current) {
         const { node } = dragging;
         graphRef.current.updateNode(node, (attributes) => {
           return {
@@ -406,15 +441,15 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
     [dragging, setDragging, graphRef]
   );
 
-  const onMouseUp = React.useCallback(
-    (e) => {
+  const onMouseUp = useCallback(
+    (e: MouseEvent) => {
       stopDragWithEvent(e);
     },
     [stopDragWithEvent]
   );
 
-  const onMouseOut = React.useCallback(
-    (e) => {
+  const onMouseOut = useCallback(
+    (e: MouseEvent) => {
       stopDragWithEvent(e);
     },
     [stopDragWithEvent]
@@ -422,8 +457,8 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
 
   // __________________________________________________________________________________________ canvas attributes
 
-  const canvasProps = React.useMemo(() => {
-    if (!boundingClientRect.width) {
+  const canvasProps = useMemo(() => {
+    if (!boundingClientRect?.width) {
       return;
     }
     const scale = window?.devicePixelRatio || 1;
@@ -436,7 +471,7 @@ const ExperimentCluster: React.FC<ExperimentClusterProps> = ({
       },
     };
     return canvasProps;
-  }, [boundingClientRect.height, boundingClientRect.width]);
+  }, [boundingClientRect?.height, boundingClientRect?.width]);
 
   // __________________________________________________________________________________________ render
 

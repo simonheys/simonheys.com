@@ -1,30 +1,35 @@
-import * as React from "react";
+import { FC } from 'react';
 
-import { Page } from "../../../modules/content";
-import { ChevronRight } from "../../ui/icons";
-import ImageFadeIn from "../../ui/ImageFadeIn";
-import LinkA from "../../ui/LinkA";
-
-import styles from "./CaseStudiesGridCell.module.scss";
+import { Page } from '../../../modules/content';
+import ImageFadeIn from '../../ui/ImageFadeIn';
+import Link from '../../ui/Link';
+import { ChevronRight } from '../../ui/icons';
+import styles from './CaseStudiesGridCell.module.scss';
 
 export interface CaseStudiesGridCellProps {
   page: Page;
 }
 
-const CaseStudiesGridCell: React.FC<CaseStudiesGridCellProps> = ({ page }) => {
+const CaseStudiesGridCell: FC<CaseStudiesGridCellProps> = ({ page }) => {
   const { path, meta } = page;
-  const { title, subtitle, text, icon } = meta;
+  const { title, subtitle, text, icon } = meta || {};
   return (
-    <LinkA href={path} className={styles.container}>
-      <div className={styles.icon}>
-        <ImageFadeIn src={icon} alt={title} backgroundColor={"transparent"} />
-      </div>
+    <Link href={path} className={styles.container}>
+      {icon && (
+        <div className={styles.icon}>
+          <ImageFadeIn
+            src={icon}
+            alt={title || ''}
+            backgroundColor={'transparent'}
+          />
+        </div>
+      )}
       <div className={styles.subtitle}>{subtitle}</div>
       <div className={styles.text}>{text}</div>
       <div className={styles.link}>
         Read more <ChevronRight />
       </div>
-    </LinkA>
+    </Link>
   );
 };
 

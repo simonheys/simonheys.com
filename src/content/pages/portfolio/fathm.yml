@@ -9,10 +9,10 @@ components:
     columns:
       - col: 6
         vimeoId: 589196732
-        color: "#404040"
+        color: '#404040'
       - col: 6
         vimeoId: 587071119
-        color: "#404040"
+        color: '#404040'
   - type: work-row
     columns:
       - text: Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping.
@@ -29,7 +29,7 @@ components:
         src: portfolio/fathm/fathm-col-6-fragmented.jpg
       - col: 6
         vimeoId: 589206157
-        color: "#404040"
+        color: '#404040'
   - type: work-row
     columns:
       - text: Users can quickly switch tasks from a list of recents or favourites.
@@ -46,7 +46,7 @@ components:
     columns:
       - col: 6
         vimeoId: 589201736
-        color: "#404040"
+        color: '#404040'
       - col: 6
         vimeoId: 589207049
   - type: work-row

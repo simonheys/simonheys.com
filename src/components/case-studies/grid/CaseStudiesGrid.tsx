@@ -1,16 +1,14 @@
-import * as React from "react";
+import { FC } from 'react';
 
-import { getMeta, getPageForPath } from "../../../modules/content";
+import { getMeta, getPageForPath } from '../../../modules/content';
+import AppearWhenInView from '../../ui/AppearWhenInView';
+import CaseStudiesGridCell from './CaseStudiesGridCell';
 
-import AppearWhenInView from "../../ui/AppearWhenInView";
-
-import CaseStudiesGridCell from "./CaseStudiesGridCell";
-
-const CaseStudiesGrid: React.FC = () => {
-  const pages = getMeta()["case-studies"].pages;
+const CaseStudiesGrid: FC = () => {
+  const pages = getMeta()['case-studies'].pages;
   return (
-    <div className={"container-fluid mb-3 mb-md-4"}>
-      <div className={"row"}>
+    <div className={'container-fluid mb-3 mb-md-4'}>
+      <div className={'row'}>
         {pages.map((entry, index) => {
           const { path } = entry;
           const page = getPageForPath(path);
@@ -20,7 +18,7 @@ const CaseStudiesGrid: React.FC = () => {
           return (
             <AppearWhenInView
               key={`case-studies-grid-${path}-${index}`}
-              className={"col-md mb-3 mb-md-4 d-flex flex-column"}
+              className={'col-md mb-3 mb-md-4 d-flex flex-column'}
             >
               <CaseStudiesGridCell page={page} />
             </AppearWhenInView>

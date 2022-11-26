@@ -1,12 +1,11 @@
-import * as React from "react";
-import ReactMarkdown from "react-markdown";
+import { FC } from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import AppearWhenInView from "./AppearWhenInView";
-import TextLinks from "./TextLinks";
-import LinkA from "./LinkA";
-
-import styles from "./Prose.module.scss";
-import ImageResponsive from "./ImageResponsive";
+import AppearWhenInView from './AppearWhenInView';
+import ImageResponsive from './ImageResponsive';
+import Link from './Link';
+import styles from './Prose.module.scss';
+import TextLinks from './TextLinks';
 
 export interface ProseProps {
   title?: string;
@@ -19,7 +18,7 @@ export interface ProseProps {
 }
 
 const LinkComponent = ({ href, ...rest }: any) => {
-  return <LinkA href={href} {...rest} />;
+  return <Link href={href} {...rest} />;
 };
 
 const ImageComponent = ({ node, ...rest }: any) => {
@@ -31,20 +30,20 @@ const components = {
   img: ImageComponent,
 };
 
-const Prose: React.FC<ProseProps> = ({ title, text, links, ruled }) => {
+const Prose: FC<ProseProps> = ({ title, text, links, ruled }) => {
   return (
     <AppearWhenInView>
       {ruled && (
-        <div className={"container-fluid"}>
-          <div className={"row gx-0 border-top"}></div>
+        <div className={'container-fluid'}>
+          <div className={'row gx-0 border-top'}></div>
         </div>
       )}
-      <div className={ruled ? "container-fluid pt-2 mb-5" : "container-fluid"}>
-        <div className={"row mb-5"}>
-          <div className={"col-md-6"}>
+      <div className={ruled ? 'container-fluid pt-2 mb-5' : 'container-fluid'}>
+        <div className={'row mb-5'}>
+          <div className={'col-md-6'}>
             {title && <h1 className={styles.title}>{title}</h1>}
           </div>
-          <div className={"col-md-6"}>
+          <div className={'col-md-6'}>
             {text && (
               <div className={styles.text}>
                 <ReactMarkdown components={components}>{text}</ReactMarkdown>

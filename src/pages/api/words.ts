@@ -1,12 +1,24 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import type { NextApiRequest, NextApiResponse } from 'next';
+import manifest from 'wordclock/packages/wordclock-words/json/Manifest.json';
 
-import manifest from "wordclock/packages/wordclock-words/json/Manifest.json";
+const words: Record<
+  string,
+  {
+    file: string;
+    title: string;
+  }[]
+> = {};
 
-const words = {};
+type LanguageKey = keyof typeof manifest.languages;
+
+interface Meta {
+  language: LanguageKey;
+  title: string;
+}
 
 manifest.files.forEach((file) => {
   const json = require(`wordclock/packages/wordclock-words/json/${file}`);
-  const { meta } = json;
+  const { meta }: { meta: Meta } = json;
   const { language, title } = meta;
   const languageTitle = manifest.languages[language];
   if (!words[languageTitle]) {
@@ -20,7 +32,7 @@ manifest.files.forEach((file) => {
 
 const wordsOrdered = Object.keys(words)
   .sort()
-  .reduce((obj, key) => {
+  .reduce((obj: typeof words, key) => {
     obj[key] = words[key];
     return obj;
   }, {});
@@ -28,11 +40,11 @@ const wordsOrdered = Object.keys(words)
 const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
   const { method } = req;
   switch (method) {
-    case "GET":
+    case 'GET':
       res.status(200).json(wordsOrdered);
       break;
     default:
-      res.setHeader("Allow", ["GET"]);
+      res.setHeader('Allow', ['GET']);
       res.status(405).end(`Method ${method} Not Allowed`);
   }
 };

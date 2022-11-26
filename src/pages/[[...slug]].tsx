@@ -1,7 +1,9 @@
-import * as React from "react";
-import Head from "next/head";
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import Head from 'next/head';
+import { FC, useMemo } from 'react';
 
+import Components, { MappedComponent } from '../components/Components';
+import Fill from '../components/ui/Fill';
 import {
   Component,
   getMeta,
@@ -10,10 +12,7 @@ import {
   getPageForPath,
   getComponentsForPath,
   content,
-} from "../modules/content";
-
-import Components, { MappedComponent } from "../components/Components";
-import Fill from "../components/ui/Fill";
+} from '../modules/content';
 
 const meta = getMeta();
 
@@ -25,7 +24,7 @@ export interface PageProps {
   page: PageProp;
 }
 
-const Page: React.FC<PageProps> = ({ page }) => {
+const Page: FC<PageProps> = ({ page }) => {
   const {
     path,
     title,
@@ -36,11 +35,11 @@ const Page: React.FC<PageProps> = ({ page }) => {
     fill,
     components,
   } = page;
-  const pageTitle = React.useMemo(() => {
-    return [title, subtitle, ...meta.titles].filter(Boolean).join(" – ");
+  const pageTitle = useMemo(() => {
+    return [title, subtitle, ...meta.titles].filter(Boolean).join(' – ');
   }, [subtitle, title]);
   return (
-    <React.Fragment>
+    <>
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={description || subtitle}></meta>
@@ -64,8 +63,8 @@ const Page: React.FC<PageProps> = ({ page }) => {
       ) : (
         <MappedComponent {...header} />
       )}
-      <Components components={components} key={path} />
-    </React.Fragment>
+      {components && <Components components={components} key={path} />}
+    </>
   );
 };
 
@@ -80,7 +79,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const { slug = [] } = params;
+  const slug = params?.slug || [];
   const page = getPageForPath(slug);
   const components = getComponentsForPath(slug);
   return {

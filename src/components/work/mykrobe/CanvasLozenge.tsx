@@ -1,5 +1,5 @@
-import { LozengeDimensions } from "./constants";
-import fillRoundedRect from "./fillRoundedRect";
+import { LozengeDimensions } from './constants';
+import fillRoundedRect from './fillRoundedRect';
 
 export type CanvasLozengeState = {
   initialised: boolean;
@@ -13,10 +13,10 @@ export type CanvasLozengeState = {
 };
 
 export type CanvasLozengeProps = {
-  containerWidth?: number;
-  containerHeight?: number;
-  containerScale?: number;
-  color?: string;
+  containerWidth: number;
+  containerHeight: number;
+  containerScale: number;
+  color: string;
 };
 
 export class CanvasLozenge {
@@ -47,7 +47,7 @@ export class CanvasLozenge {
     };
   }
 
-  setProps = (props: CanvasLozengeProps) => {
+  setProps = (props: Partial<CanvasLozengeProps>) => {
     this.props = {
       ...this.props,
       ...props,

@@ -7,7 +7,7 @@ components:
     subtitle: Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.
   - type: work-row
     vimeoId: 581720984
-    color: "#009639"
+    color: '#009639'
   - type: scrolling-browser
     maskSrc: portfolio/sps/browser-mask.svg
     src: portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png

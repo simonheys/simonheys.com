@@ -1,18 +1,20 @@
-import * as React from "react";
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps } from 'next/image';
+import { FC, useMemo } from 'react';
 
-import { getPropertiesForImage } from "../../modules/content";
+import { getPropertiesForImage } from '../../modules/content';
 
 interface ImageResponsiveProps extends ImageProps {
   src: string;
 }
 
-const ImageResponsive: React.FC<ImageResponsiveProps> = ({
+const css = { width: '100%', height: 'auto' };
+
+const ImageResponsive: FC<ImageResponsiveProps> = ({
   src,
-  alt = "",
+  alt = '',
   ...rest
 }) => {
-  const { width, height } = React.useMemo(() => {
+  const { width, height } = useMemo(() => {
     const properties = getPropertiesForImage(src);
     return properties;
   }, [src]);
@@ -23,17 +25,18 @@ const ImageResponsive: React.FC<ImageResponsiveProps> = ({
       alt={alt}
       width={width}
       height={height}
-      layout={"responsive"}
+      sizes="100vw"
+      style={css}
       {...rest}
     />
   );
 };
 
-export const ImageResponsiveColored: React.FC<ImageResponsiveProps> = ({
+export const ImageResponsiveColored: FC<ImageResponsiveProps> = ({
   src,
   ...rest
 }) => {
-  const { color } = React.useMemo(() => {
+  const { color } = useMemo(() => {
     return getPropertiesForImage(src);
   }, [src]);
 

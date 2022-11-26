@@ -1,19 +1,19 @@
-import * as React from "react";
+import { useRef, useCallback, useEffect } from 'react';
 
 const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
-  const ref = React.useRef(null);
-  const onMouseUp = React.useCallback(
+  const ref = useRef<HTMLDivElement | null>(null);
+  const onMouseUp = useCallback(
     (event: MouseEvent) => {
-      if (!ref.current?.contains(event.target)) {
+      if (!ref.current?.contains(event.target as Node)) {
         onClickOutside && onClickOutside(event);
       }
     },
     [onClickOutside]
   );
-  React.useEffect(() => {
-    document.addEventListener("mouseup", onMouseUp);
+  useEffect(() => {
+    document.addEventListener('mouseup', onMouseUp);
     return () => {
-      document.removeEventListener("mouseup", onMouseUp);
+      document.removeEventListener('mouseup', onMouseUp);
     };
   }, [onMouseUp]);
   return { ref };

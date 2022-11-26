@@ -1,7 +1,7 @@
-@import "~/src/styles/use-bootstrap";
+@import '~/src/styles/use-bootstrap';
 
 .base {
-  composes: panelBorderRadius from "~/src/styles/ui.scss";
+  composes: panelBorderRadius from '~/src/styles/ui.scss';
   composes: global(p-3);
   color: var(--gray-600);
 }
@@ -17,7 +17,7 @@
 
 .containerActive {
   composes: container;
-  composes: panelActive from "~/src/styles/ui.scss";
+  composes: panelActive from '~/src/styles/ui.scss';
   color: var(--primary);
 }
 
