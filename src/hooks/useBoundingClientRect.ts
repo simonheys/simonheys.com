@@ -1,32 +1,21 @@
-import * as React from "react";
-import ResizeObserver from "resize-observer-polyfill";
-
-export interface MaybeBoundingClientRect {
-  left?: number;
-  top?: number;
-  right?: number;
-  bottom?: number;
-  x?: number;
-  y?: number;
-  width?: number;
-  height?: number;
-}
+import { useRef, useState, useCallback, useEffect } from 'react';
+import ResizeObserver from 'resize-observer-polyfill';
 
 const useBoundingClientRect = () => {
-  const ref = React.useRef(null);
-  const resizeObserver = React.useRef(null);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const resizeObserver = useRef<ResizeObserver | null>(null);
   const [boundingClientRect, setBoundingClientRect] =
-    React.useState<MaybeBoundingClientRect>({});
+    useState<DOMRectReadOnly | null>(null);
 
-  const updateBoundingClientRect = React.useCallback(() => {
+  const updateBoundingClientRect = useCallback(() => {
     if (ref?.current) {
       const rect = ref.current.getBoundingClientRect();
       setBoundingClientRect(rect);
     }
   }, []);
 
-  const setRef = React.useCallback(
-    (nextRef) => {
+  const setRef = useCallback(
+    (nextRef: HTMLDivElement) => {
       if (ref?.current) {
         resizeObserver.current && resizeObserver.current.unobserve(ref.current);
       }
@@ -39,9 +28,9 @@ const useBoundingClientRect = () => {
     [updateBoundingClientRect]
   );
 
-  React.useEffect(() => {
-    window.addEventListener("resize", updateBoundingClientRect);
-    window.addEventListener("scroll", updateBoundingClientRect);
+  useEffect(() => {
+    window.addEventListener('resize', updateBoundingClientRect);
+    window.addEventListener('scroll', updateBoundingClientRect);
     resizeObserver.current = new ResizeObserver((entries) => {
       if (ref?.current) {
         const currentRefEntry = entries.find(
@@ -56,9 +45,9 @@ const useBoundingClientRect = () => {
       resizeObserver.current.observe(ref.current);
     }
     return () => {
-      window.removeEventListener("resize", updateBoundingClientRect);
-      window.removeEventListener("scroll", updateBoundingClientRect);
-      resizeObserver.current.disconnect();
+      window.removeEventListener('resize', updateBoundingClientRect);
+      window.removeEventListener('scroll', updateBoundingClientRect);
+      resizeObserver.current?.disconnect();
       resizeObserver.current = null;
     };
   }, [updateBoundingClientRect]);

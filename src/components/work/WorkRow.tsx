@@ -1,23 +1,22 @@
-import * as React from "react";
-import AppearWhenInView from "../ui/AppearWhenInView";
+import { FC } from 'react';
 
-import WorkRowCol, { WorkRowColProps } from "./WorkRowCol";
+import AppearWhenInView from '../ui/AppearWhenInView';
+import Caption from '../ui/Caption';
+import WorkRowCol, { WorkRowColProps } from './WorkRowCol';
 
-import Caption from "../ui/Caption";
-
-export interface WorkRowProps {
+export interface WorkRowProps extends WorkRowColProps {
   columns: WorkRowColProps[];
   caption?: string;
 }
 
-const WorkRow: React.FC<WorkRowProps> = ({ columns, caption, ...rest }) => {
+const WorkRow: FC<WorkRowProps> = ({ columns, caption, ...rest }) => {
   return (
     <AppearWhenInView>
-      <div className={"container-fluid"}>
-        <div className={"row"}>
+      <div className={'container-fluid'}>
+        <div className={'row'}>
           {columns ? (
             columns.map((column, index: number) => {
-              return <WorkRowCol key={index} {...column} />;
+              return <WorkRowCol {...column} key={index} />;
             })
           ) : (
             <WorkRowCol {...rest} />

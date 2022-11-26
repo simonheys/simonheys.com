@@ -95,10 +95,10 @@ components:
 
       // retrieve a value
       highQualityCheckBox.selected = _preferences.useHighQuality;
-      
+
       // store a value 
       _preferences.sourceType = ScreensavrPreferences.PHOTOSTREAM;
-      
+
       _preferences.storeInSharedObject();
       ```
 

@@ -1,22 +1,21 @@
-import * as React from "react";
-import { useInView } from "react-intersection-observer";
+import { FC, useState, useCallback, useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
 
-import preventWindowScroll from "../../../utils/preventWindowScroll";
-import AppearWhenInView from "../../ui/AppearWhenInView";
-import SegmentedControl from "../../ui/SegmentedControl";
-import Caption from "../../ui/Caption";
-
+import preventWindowScroll from '../../../utils/preventWindowScroll';
+import AppearWhenInView from '../../ui/AppearWhenInView';
+import Caption from '../../ui/Caption';
+import SegmentedControl from '../../ui/SegmentedControl';
+import { CardItemPostType } from './CardItem';
 import CardsCollectionBlock, {
   mapLayoutPropToLayout,
-} from "./CardsCollectionBlock";
+} from './CardsCollectionBlock';
+import styles from './SPSCollection.module.scss';
 
-import { CardItemPostType } from "./CardItem";
+const collection: CardItemPostType[] = require('./json/collection.json');
 
-import styles from "./SPSCollection.module.scss";
+type Key = keyof typeof mapLayoutPropToLayout;
 
-const collection: CardItemPostType[] = require("./json/collection.json");
-
-const orderedValues = ["4of2", "4", "4over4", "3over4", "2over4"];
+const orderedValues: Key[] = ['4of2', 4, '4over4', '3over4', '2over4'];
 
 const options = orderedValues.map((value) => {
   return {
@@ -29,12 +28,12 @@ export interface SPSCollectionProps {
   caption?: string;
 }
 
-const SPSCollection: React.FC<SPSCollectionProps> = ({ caption }) => {
-  const [layout, setLayout] = React.useState(orderedValues[0]);
-  const [autoAnimate, setAutoAnimate] = React.useState(true);
+const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
+  const [layout, setLayout] = useState<Key>(orderedValues[0]);
+  const [autoAnimate, setAutoAnimate] = useState(true);
   const { ref, inView } = useInView();
 
-  const changeLayout = React.useCallback((value) => {
+  const changeLayout = useCallback((value: Key) => {
     // FIXME: workaround for strange bug in Chrome / FireFox where
     // the scroll position bounces on layout change
     // investigated but was unable to fix with any CSS changes
@@ -43,23 +42,23 @@ const SPSCollection: React.FC<SPSCollectionProps> = ({ caption }) => {
     });
   }, []);
 
-  const onChange = React.useCallback(
-    (value) => {
+  const onChange = useCallback(
+    (value: string | number) => {
       if (autoAnimate) {
         setAutoAnimate(false);
       }
-      changeLayout(value);
+      changeLayout(value as Key);
     },
     [autoAnimate, changeLayout]
   );
 
-  const autoChangeLayout = React.useCallback(() => {
+  const autoChangeLayout = useCallback(() => {
     const selectedIndex = options.findIndex((item) => item.value === layout);
     const nextIndex = (selectedIndex + 1) % options.length;
     changeLayout(options[nextIndex].value);
   }, [changeLayout, layout]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (inView && autoAnimate) {
       const intervalId = setInterval(autoChangeLayout, 1000);
       return () => clearInterval(intervalId);
@@ -68,7 +67,7 @@ const SPSCollection: React.FC<SPSCollectionProps> = ({ caption }) => {
 
   return (
     <AppearWhenInView>
-      <div className={"container-fluid mb-3 mb-md-4"}>
+      <div className={'container-fluid mb-3 mb-md-4'}>
         <div className={styles.containerSizer}>
           <div ref={ref} className={styles.container}>
             <div className={styles.collectionContainer}>
@@ -89,7 +88,7 @@ const SPSCollection: React.FC<SPSCollectionProps> = ({ caption }) => {
         </div>
       </div>
       {caption && (
-        <div className={"container-fluid"}>
+        <div className={'container-fluid'}>
           <Caption caption={caption} />
         </div>
       )}

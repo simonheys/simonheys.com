@@ -1,26 +1,25 @@
-import * as React from "react";
-import { useRouter } from "next/router";
+import { useRouter } from 'next/router';
+import { FC, useState, useEffect, useMemo } from 'react';
 
-import { getPageForPath } from "../modules/content";
-import useWindowScrollVelocity from "../hooks/useWindowScrollVelocity";
-import useBoundingClientRect from "../hooks/useBoundingClientRect";
-import LinkA from "./ui/LinkA";
-
-import styles from "./Header.module.scss";
+import useBoundingClientRect from '../hooks/useBoundingClientRect';
+import useWindowScrollVelocity from '../hooks/useWindowScrollVelocity';
+import { getPageForPath } from '../modules/content';
+import styles from './Header.module.scss';
+import Link from './ui/Link';
 
 export interface HeaderProps {
   links: string[];
 }
 
-const Header: React.FC<HeaderProps> = ({ links }) => {
+const Header: FC<HeaderProps> = ({ links }) => {
   const router = useRouter();
   const windowScroll = useWindowScrollVelocity();
   const { ref, boundingClientRect } = useBoundingClientRect();
-  const [fixed, setFixed] = React.useState(false);
-  const [visibleWhileScrolled, setVisibleWhileScrolled] = React.useState(false);
+  const [fixed, setFixed] = useState(false);
+  const [visibleWhileScrolled, setVisibleWhileScrolled] = useState(false);
 
-  React.useEffect(() => {
-    if (!boundingClientRect.height) {
+  useEffect(() => {
+    if (!boundingClientRect?.height) {
       return;
     }
     if (!fixed) {
@@ -36,13 +35,16 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
       }
     }
   }, [
-    boundingClientRect.height,
+    boundingClientRect?.height,
     fixed,
     visibleWhileScrolled,
     windowScroll.scrollY,
   ]);
 
-  React.useEffect(() => {
+  useEffect(() => {
+    if (!windowScroll.velocityScrollY) {
+      return;
+    }
     if (!visibleWhileScrolled) {
       if (windowScroll.velocityScrollY < -0.5 && window.scrollY > 0) {
         setVisibleWhileScrolled(true);
@@ -58,26 +60,26 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
     windowScroll.velocityScrollY,
   ]);
 
-  const style = React.useMemo(() => {
-    if (!boundingClientRect.height) {
-      return null;
+  const style = useMemo(() => {
+    if (!boundingClientRect?.height) {
+      return;
     }
     if (boundingClientRect) {
       return {
-        display: fixed ? "block" : "none",
+        display: fixed ? 'block' : 'none',
         height: boundingClientRect.height,
       };
     }
   }, [boundingClientRect, fixed]);
 
-  const navigationContainerStyle = React.useMemo(() => {
-    if (!fixed || !boundingClientRect.height) {
-      return null;
+  const navigationContainerStyle = useMemo(() => {
+    if (!fixed || !boundingClientRect?.height) {
+      return;
     }
     return { top: visibleWhileScrolled ? 0 : -boundingClientRect?.height };
-  }, [boundingClientRect.height, fixed, visibleWhileScrolled]);
+  }, [boundingClientRect?.height, fixed, visibleWhileScrolled]);
 
-  const activePath = React.useMemo(() => {
+  const activePath = useMemo(() => {
     for (const path of links) {
       const active =
         router.asPath === path || router.asPath.startsWith(`${path}/`);
@@ -88,7 +90,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
   }, [links, router.asPath]);
 
   return (
-    <React.Fragment>
+    <>
       <div className={styles.sizeContainer} style={style}></div>
       <div
         className={
@@ -96,31 +98,34 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         }
         style={navigationContainerStyle}
       >
-        <div ref={ref} className={"container-fluid"}>
+        <div ref={ref} className={'container-fluid'}>
           <div
             className={
-              "row justify-content-between justify-content-md-end py-4 py-md-5"
+              'row justify-content-between justify-content-md-end py-4 py-md-5'
             }
           >
-            <div className={"col"}>
-              <h1 data-tid={"title"} className={styles.title}>
-                <LinkA href="/">Simon Heys</LinkA>
+            <div className={'col'}>
+              <h1 data-tid={'title'} className={styles.title}>
+                <Link href="/">Simon Heys</Link>
               </h1>
             </div>
-            <div className={"col"} data-tid={"navigation"}>
+            <div className={'col'} data-tid={'navigation'}>
               <div className={styles.linksContainer}>
                 {links.map((path, index) => {
                   const page = getPageForPath(path);
+                  if (!page) {
+                    return null;
+                  }
                   const { title } = page;
                   const active = activePath === path;
                   return (
-                    <LinkA
+                    <Link
                       key={index}
                       href={path}
                       className={active ? styles.linkActive : styles.link}
                     >
                       {title}
-                    </LinkA>
+                    </Link>
                   );
                 })}
               </div>
@@ -129,7 +134,7 @@ const Header: React.FC<HeaderProps> = ({ links }) => {
         </div>
       </div>
       <div className={styles.spaceContainer}></div>
-    </React.Fragment>
+    </>
   );
 };
 

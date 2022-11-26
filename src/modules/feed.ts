@@ -1,18 +1,22 @@
-import { Feed } from "feed";
+import { Feed } from 'feed';
 
 import {
   getBlogDateFromPath,
   getBlogPagePaths,
   getMeta,
   getPageForPath,
-} from "./content";
+} from './content';
 
 export const getBlogFeeds = async () => {
   const pagePaths = getBlogPagePaths();
   const meta = getMeta();
-  const page = getPageForPath("/");
+  const page = getPageForPath('/');
 
-  const title = meta.titles.join(" – ");
+  if (!page) {
+    return;
+  }
+
+  const title = meta.titles.join(' – ');
   const description = page.description;
   const link = `${process.env.NEXT_PUBLIC_BASE_URL}`;
   const image = `${process.env.NEXT_PUBLIC_BASE_URL}/og/image.png`;
@@ -21,8 +25,8 @@ export const getBlogFeeds = async () => {
   const copyright = `All rights reserved ${year} Studio Heys Limited`;
   const updated = getBlogDateFromPath(pagePaths[0]);
   const author = {
-    name: "Simon Heys",
-    email: "si@simonheys.com",
+    name: 'Simon Heys',
+    email: 'si@simonheys.com',
     link: process.env.NEXT_PUBLIC_BASE_URL,
   };
 
@@ -33,7 +37,7 @@ export const getBlogFeeds = async () => {
     description,
     id: link,
     link,
-    language: "en",
+    language: 'en',
     image,
     favicon,
     copyright,
@@ -55,7 +59,7 @@ export const getBlogFeeds = async () => {
     if (post) {
       const url = `${process.env.NEXT_PUBLIC_BASE_URL}${path}`;
       feed.addItem({
-        title: post.title,
+        title: post.title || 'Untitled',
         id: url,
         link: url,
         description: post.excerpt,

@@ -1,8 +1,8 @@
-import * as React from "react";
-import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
+import { motion, useAnimation } from 'framer-motion';
+import Image from 'next/image';
+import { FC, useMemo, useCallback } from 'react';
 
-import * as contentModule from "../../modules/content";
+import * as contentModule from '../../modules/content';
 
 interface ImageFadeInProps {
   src: string;
@@ -10,18 +10,20 @@ interface ImageFadeInProps {
   backgroundColor?: string;
 }
 
-const ImageFadeIn: React.FC<ImageFadeInProps> = ({
+const css = { width: '100%', height: 'auto' };
+
+const ImageFadeIn: FC<ImageFadeInProps> = ({
   src,
   alt,
   backgroundColor,
   ...rest
 }) => {
   const controls = useAnimation();
-  const onLoadingComplete = React.useCallback(() => {
-    controls.start("visible");
+  const onLoadingComplete = useCallback(() => {
+    controls.start('visible');
   }, [controls]);
 
-  const { width, height, color } = React.useMemo(() => {
+  const { width, height, color } = useMemo(() => {
     return contentModule.getPropertiesForImage(src);
   }, [src]);
 
@@ -42,7 +44,7 @@ const ImageFadeIn: React.FC<ImageFadeInProps> = ({
           alt={alt}
           width={width}
           height={height}
-          layout={"responsive"}
+          style={css}
           {...rest}
         />
       </motion.div>

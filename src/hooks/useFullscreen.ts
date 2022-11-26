@@ -1,14 +1,14 @@
-import * as React from "react";
+import { useRef, useState, useCallback } from 'react';
 
 const useFullscreen = () => {
-  const ref = React.useRef(null);
-  const [isFullscreen, setIsFullscreen] = React.useState(false);
+  const ref = useRef<HTMLDivElement | null>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
 
-  const onFullscreenChange = React.useCallback(() => {
+  const onFullscreenChange = useCallback(() => {
     if (
       document.fullscreenElement ||
-      document["mozFullScreenElement"] ||
-      document["webkitFullscreenElement"]
+      document['mozFullScreenElement'] ||
+      document['webkitFullscreenElement']
     ) {
       setIsFullscreen(true);
     } else {
@@ -16,25 +16,25 @@ const useFullscreen = () => {
     }
   }, []);
 
-  const setRef = React.useCallback(
-    (nextRef) => {
+  const setRef = useCallback(
+    (nextRef: HTMLDivElement) => {
       if (ref.current) {
-        ref.current.removeEventListener("fullscreenchange", onFullscreenChange);
+        ref.current.removeEventListener('fullscreenchange', onFullscreenChange);
         ref.current.removeEventListener(
-          "mozfullscreenchange",
+          'mozfullscreenchange',
           onFullscreenChange
         );
         ref.current.removeEventListener(
-          "webkitfullscreenchange",
+          'webkitfullscreenchange',
           onFullscreenChange
         );
       }
       ref.current = nextRef;
       if (ref.current) {
-        ref.current.addEventListener("fullscreenchange", onFullscreenChange);
-        ref.current.addEventListener("mozfullscreenchange", onFullscreenChange);
+        ref.current.addEventListener('fullscreenchange', onFullscreenChange);
+        ref.current.addEventListener('mozfullscreenchange', onFullscreenChange);
         ref.current.addEventListener(
-          "webkitfullscreenchange",
+          'webkitfullscreenchange',
           onFullscreenChange
         );
       }
@@ -42,12 +42,12 @@ const useFullscreen = () => {
     [onFullscreenChange]
   );
 
-  const requestFullscreen = React.useCallback(() => {
+  const requestFullscreen = useCallback(() => {
     if (ref.current) {
       if (ref.current.requestFullscreen) {
         ref.current.requestFullscreen();
-      } else if (ref.current.mozRequestFullScreen) {
-        ref.current.mozRequestFullScreen();
+      } else if (ref.current.mozRequestFullscreen) {
+        ref.current.mozRequestFullscreen();
       } else if (ref.current.webkitRequestFullscreen) {
         ref.current.webkitRequestFullscreen();
       }
