@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic';
-import { ComponentProps, ComponentPropsWithoutRef, FC } from 'react';
+import { FC } from 'react';
 
 import { Component } from '../modules/content';
 import Footer from './Footer';
