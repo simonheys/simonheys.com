@@ -28,7 +28,7 @@
     "favicons": "^7.0.1",
     "feed": "^4.2.2",
     "framer-motion": "^7.6.12",
-    "graphology": "^0.25.0",
+    "graphology": "^0.25.1",
     "graphology-layout-forceatlas2": "^0.10.1",
     "graphology-utils": "^2.5.2",
     "next": "^13.0.5",
