@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import type {
   AppProps,
   /*, AppContext */
@@ -48,6 +49,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
         }}
       />
       <Component {...pageProps} />
+      <Analytics />
     </>
   );
 };
