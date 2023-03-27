@@ -14,11 +14,11 @@
     "generate:image-properties": "ts-node ./src/scripts/generate-image-properties",
     "generate:watch": "concurrently -k -r \"yarn generate:content --watch\" \"yarn generate:icon-components --watch\" \"yarn generate:image-properties --watch\"",
     "prettier": "prettier --write \"./**/*.{js,json,css,scss,yml}\"",
-    "test": "start-server-and-test dev http://localhost:3000 cypress",
+    "test": "start-server-and-test dev http://0.0.0.0:3000 cypress",
     "cypress": "cypress open",
     "cypress:headless": "cypress run",
-    "e2e": "start-server-and-test start http://localhost:3000 cypress",
-    "e2e:headless": "start-server-and-test start http://localhost:3000 cypress:headless"
+    "e2e": "start-server-and-test start http://0.0.0.0:3000 cypress",
+    "e2e:headless": "start-server-and-test start http://0.0.0.0:3000 cypress:headless"
   },
   "dependencies": {
     "@vercel/analytics": "^0.1.6",
