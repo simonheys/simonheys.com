@@ -3,7 +3,7 @@ import fs from 'fs';
 
 const getImageHash = async (
   filePath: string,
-  algorithm = 'md4'
+  algorithm = 'md5'
 ): Promise<string> => {
   const hash = crypto.createHash(algorithm).setEncoding('hex');
   return new Promise((resolve, reject) => {
