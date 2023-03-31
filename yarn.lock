@@ -3564,10 +3564,10 @@ fault@^1.0.0:
   dependencies:
     format "^0.2.0"
 
-favicons@*, favicons@^7.0.2:
-  version "7.0.2"
-  resolved "https://registry.yarnpkg.com/favicons/-/favicons-7.0.2.tgz#a4a5b34928d61e007fb8814d2eee283aeb3c9304"
-  integrity sha512-M/qE3ERHOBu0+Op+61jx8CdvOnSKrrl2zxUPpoGgsNyfjuGqRsK80zYoA5Uwdxl8QM4egfhBWZp1j7KK3YnOMg==
+favicons@*, favicons@^7.1.1:
+  version "7.1.1"
+  resolved "https://registry.yarnpkg.com/favicons/-/favicons-7.1.1.tgz#7dc462811c73f8a1cd2d21659e949849ef21cddf"
+  integrity sha512-+BfSVBREVYFOH8swAfhzgVEMq0vHN5tXs3f1SycPjllKiXavTnA3OAN4AJcbN2c4wdrLRzjlI6PTyBGoruHV3g==
   dependencies:
     escape-html "^1.0.3"
     sharp "^0.31.1"
