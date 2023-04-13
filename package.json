@@ -42,7 +42,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "rehype-raw": "^6.1.1",
     "resize-observer-polyfill": "^1.5.1",
-    "sass": "^1.59.3",
+    "sass": "^1.62.0",
     "swr": "^2.0.2",
     "wordclock": "https://github.com/simonheys/wordclock.git#v1.1.5"
   },
