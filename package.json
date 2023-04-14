@@ -44,7 +44,7 @@
     "resize-observer-polyfill": "^1.5.1",
     "sass": "^1.62.0",
     "swr": "^2.0.2",
-    "wordclock": "https://github.com/simonheys/wordclock.git#v1.1.5"
+    "wordclock": "https://github.com/simonheys/wordclock.git"
   },
   "devDependencies": {
     "@babel/core": "^7.21.0",
