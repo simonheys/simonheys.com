@@ -21,7 +21,7 @@
     "e2e:headless": "start-server-and-test start http://0.0.0.0:3000 cypress:headless"
   },
   "dependencies": {
-    "@vercel/analytics": "^0.1.11",
+    "@vercel/analytics": "^1.0.0",
     "@vimeo/player": "^2.18.0",
     "bootstrap": "^5.2.3",
     "clsx": "^1.2.1",
