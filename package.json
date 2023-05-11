@@ -74,7 +74,7 @@
     "chokidar": "^3.5.3",
     "cli-progress": "^3.12.0",
     "concurrently": "^8.0.1",
-    "cypress": "12.8.1",
+    "cypress": "12.12.0",
     "eslint": "^8.40.0",
     "eslint-config-next": "^13.2.4",
     "eslint-config-react-app": "^7.0.1",
