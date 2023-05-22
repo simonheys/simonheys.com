@@ -1901,10 +1901,10 @@
   resolved "https://registry.npmjs.org/@types/unist/-/unist-2.0.6.tgz"
   integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
-"@types/vimeo__player@^2.16.3":
-  version "2.16.3"
-  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.16.3.tgz#66e36eb0b220ba25f21f48a3a0f03114c5b7a97c"
-  integrity sha512-hsOe6CZFTNyfjRjQUrNHBF4LDmjvjcU2yQIPWp5AglKeGxt11JYGToQhKUPM876gBXggqR6rMQ0/sNI06ec2Rg==
+"@types/vimeo__player@^2.18.0":
+  version "2.18.0"
+  resolved "https://registry.yarnpkg.com/@types/vimeo__player/-/vimeo__player-2.18.0.tgz#182498528fab1e524cfe9898646e65316f895d19"
+  integrity sha512-AcPX2xDSl2gRrZGXOjEg1LUyuabgCxpakHTnVr+H6EqlNS6e5I8zR7AqEtN2J2dgMLc5cVm1YvkuyIRpMOcnEg==
 
 "@types/yauzl@^2.9.1":
   version "2.9.2"
@@ -2089,10 +2089,10 @@
   resolved "https://registry.yarnpkg.com/@vercel/analytics/-/analytics-1.0.1.tgz#38308a626c91866cb00a249c08bf65251e9b9d81"
   integrity sha512-Ux0c9qUfkcPqng3vrR0GTrlQdqNJ2JREn/2ydrVuKwM3RtMfF2mWX31Ijqo1opSjNAq6rK76PwtANw6kl6TAow==
 
-"@vimeo/player@^2.18.0":
-  version "2.18.0"
-  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.18.0.tgz#74c2b9f21c28da768baa8e39131e0eec07d43d6e"
-  integrity sha512-AJ8LQJ0WQXoPO6GBiMRmcBpdpUMnNm12blG/H80BgKD75w/+pLw0t1vzDHCE915O2OlFau6u1Q0QVw2HS1eRvg==
+"@vimeo/player@^2.19.0":
+  version "2.19.0"
+  resolved "https://registry.yarnpkg.com/@vimeo/player/-/player-2.19.0.tgz#1d88081467ff3c7109b456cc56b1fec98ad64e61"
+  integrity sha512-kKoZOtqDMxsoWSDHO2AIqahHE3K994EpdxieMu/ey8zYcIHT+oZFl6M0JKCXbb0zxkfRQQmjMVBPRYurJCa7rQ==
   dependencies:
     native-promise-only "0.8.1"
     weakmap-polyfill "2.0.4"
