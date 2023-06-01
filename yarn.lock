@@ -6745,10 +6745,10 @@ svgo@^3.0.2:
     csso "^5.0.5"
     picocolors "^1.0.0"
 
-swr@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/swr/-/swr-2.0.2.tgz#fd34f3aac354f6b70f9134eb4218c747cc899a8d"
-  integrity sha512-iHbQW17hsduonMEliZnr6/yaxb+yvLe2r0+AH+ZfeqKzwc2bb+QRYpZm5/b/H0Lxgy7VWow4o71JeSazSun+9A==
+swr@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-2.1.5.tgz#688effa719c03f6d35c66decbb0f8e79c7190399"
+  integrity sha512-/OhfZMcEpuz77KavXST5q6XE9nrOBOVcBLWjMT+oAE/kQHyE3PASrevXCtQDZ8aamntOfFkbVJp7Il9tNBQWrw==
   dependencies:
     use-sync-external-store "^1.2.0"
 
