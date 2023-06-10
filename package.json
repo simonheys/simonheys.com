@@ -75,7 +75,7 @@
     "cli-progress": "^3.12.0",
     "concurrently": "^8.1.0",
     "cypress": "12.14.0",
-    "eslint": "^8.40.0",
+    "eslint": "^8.42.0",
     "eslint-config-next": "^13.4.4",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-cypress": "^2.13.3",
