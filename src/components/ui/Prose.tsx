@@ -17,12 +17,12 @@ export interface ProseProps {
   ruled?: boolean;
 }
 
-const LinkComponent = ({ href, ...rest }: any) => {
-  return <Link href={href} {...rest} />;
+const LinkComponent = (props: any) => {
+  return <Link {...props} />;
 };
 
-const ImageComponent = ({ node, ...rest }: any) => {
-  return <ImageResponsive {...rest} />;
+const ImageComponent = (props: any) => {
+  return <ImageResponsive {...props} />;
 };
 
 const components = {

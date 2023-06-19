@@ -3,7 +3,7 @@ import { FC, useMemo } from 'react';
 
 import { getPropertiesForImage } from '../../modules/content';
 
-interface ImageResponsiveProps extends ImageProps {
+export interface ImageResponsiveProps extends ImageProps {
   src: string;
 }
 

@@ -8,8 +8,6 @@ export interface DefaultControlsItemProps {
   Tag?: any;
   active?: boolean;
   disabled?: boolean;
-  // ...rest
-  [x: string]: any;
 }
 
 const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
@@ -30,7 +28,7 @@ const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
         className
       )}
       {...rest}
-    ></Tag>
+    />
   );
 };
 

@@ -9,8 +9,8 @@ Source for my personal portfolio site [simonheys.com](https://www.simonheys.com/
 Install dependencies and run the development server
 
 ```
-$ yarn
-$ yarn dev
+$ pnpm
+$ pnpm dev
 ```
 
 The site is available on [localhost:3000](http://localhost:3000/)
@@ -38,7 +38,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 Regenerate all derived content - icons, content and properties JSON
 
 ```
-$ yarn generate
+$ pnpm generate
 ```
 
 ## License
