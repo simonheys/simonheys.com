@@ -39,7 +39,7 @@ const fixIconComponentCodeEmWidth = (iconComponentCode: string) => {
   const widthRegEx = /width="(.+)"/;
   const fixedIconComponentCode = iconComponentCode.replace(
     widthRegEx,
-    `width="${widthEm}em"`
+    `width="${widthEm}em"`,
   );
   return fixedIconComponentCode;
 };
@@ -53,7 +53,7 @@ const generateIconComponents = async () => {
       format:
         'progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {filename}',
     },
-    cliProgress.Presets.shades_grey
+    cliProgress.Presets.shades_grey,
   );
   useProgressBar && progressBar.start(filePaths.length, 0, { filename: '' });
 
@@ -68,7 +68,7 @@ const generateIconComponents = async () => {
     const fileContents = fixIconComponentCodeEmWidth(iconComponentCode);
     fs.writeFileSync(destPath, fileContents, 'utf8');
     lines.push(
-      `export { default as ${filePathWithoutExt} } from "./${filePathWithoutExt}";`
+      `export { default as ${filePathWithoutExt} } from './${filePathWithoutExt}';`,
     );
   }
   useProgressBar &&

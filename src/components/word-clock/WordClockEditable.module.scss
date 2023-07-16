@@ -8,7 +8,9 @@
 }
 
 .wordClockContainer {
-  font-feature-settings: 'liga' 1, 'kern' 1;
+  font-feature-settings:
+    'liga' 1,
+    'kern' 1;
   background-color: var(--body-bg);
   position: absolute;
   left: 0;

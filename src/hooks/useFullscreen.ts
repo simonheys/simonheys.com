@@ -22,11 +22,11 @@ const useFullscreen = () => {
         ref.current.removeEventListener('fullscreenchange', onFullscreenChange);
         ref.current.removeEventListener(
           'mozfullscreenchange',
-          onFullscreenChange
+          onFullscreenChange,
         );
         ref.current.removeEventListener(
           'webkitfullscreenchange',
-          onFullscreenChange
+          onFullscreenChange,
         );
       }
       ref.current = nextRef;
@@ -35,11 +35,11 @@ const useFullscreen = () => {
         ref.current.addEventListener('mozfullscreenchange', onFullscreenChange);
         ref.current.addEventListener(
           'webkitfullscreenchange',
-          onFullscreenChange
+          onFullscreenChange,
         );
       }
     },
-    [onFullscreenChange]
+    [onFullscreenChange],
   );
 
   const requestFullscreen = useCallback(() => {

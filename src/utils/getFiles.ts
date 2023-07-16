@@ -8,7 +8,7 @@ const filePathIsDirectory = (filePath: string) =>
 const getFiles = (
   dirPath: string,
   baseDir = './',
-  filesArray: string[] = []
+  filesArray: string[] = [],
 ): string[] => {
   const files = fs.readdirSync(path.join(baseDir, dirPath));
   files.filter(visibleFileName).forEach((fileName) => {

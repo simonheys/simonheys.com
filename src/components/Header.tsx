@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { FC, useState, useEffect, useMemo } from 'react';
+import { FC, useEffect, useMemo, useState } from 'react';
 
 import useBoundingClientRect from '../hooks/useBoundingClientRect';
 import useWindowScrollVelocity from '../hooks/useWindowScrollVelocity';

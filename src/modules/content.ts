@@ -79,19 +79,19 @@ export const getPagePaths = (content: Content = defaultContent): string[] =>
   content.pages.map((page) => page.path).sort();
 
 export const getPortfolioPagePaths = (
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): string[] => {
   return content.meta.portfolio.pages.map((page) => page.path);
 };
 
 export const getCaseStudiesPagePaths = (
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): string[] => {
   return content.meta['case-studies'].pages.map((page) => page.path);
 };
 
 export const getBlogPagePaths = (
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): string[] => {
   const pagePaths = getPagePaths(content);
   const blogPagePaths = pagePaths
@@ -127,7 +127,7 @@ export const normalisePath = (path: string | string[]): string => {
 
 export const getPageForPath = (
   path: string | string[],
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const page = content.pages.find((page) => page.path === normalisedPath);
@@ -136,7 +136,7 @@ export const getPageForPath = (
 
 export const getNextPortfolioPageForPath = (
   path: string | string[],
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const portfolioPagePaths = getPortfolioPagePaths(content);
@@ -151,7 +151,7 @@ export const getNextPortfolioPageForPath = (
 
 export const getNextCaseStudiesPageForPath = (
   path: string | string[],
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): Page | undefined => {
   const normalisedPath = normalisePath(path);
   const caseStudiesPagePaths = getCaseStudiesPagePaths(content);
@@ -166,7 +166,7 @@ export const getNextCaseStudiesPageForPath = (
 
 export const getComponentsForPath = (
   path: string | string[],
-  content: Content = defaultContent
+  content: Content = defaultContent,
 ): Component[] => {
   const normalisedPath = normalisePath(path);
   const page = getPageForPath(normalisedPath, content);
@@ -197,7 +197,7 @@ export const getComponentsForPath = (
 };
 
 export const getPropertiesForImage = (
-  src: ImageSrc | string
+  src: ImageSrc | string,
 ): ImageProperties => {
   const properties = imageProperties[src as ImageSrc];
   if (!properties) {

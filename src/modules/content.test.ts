@@ -85,22 +85,22 @@ describe('Unit test content functions', () => {
       describe('when given the first portfolio page', () => {
         test('should return the next portfolio page', async () => {
           const nextPortfolioPageForPath = getNextPortfolioPageForPath(
-            portfolioPagePaths[0]
+            portfolioPagePaths[0],
           );
           expect(nextPortfolioPageForPath).toHaveProperty(
             'path',
-            portfolioPagePaths[1]
+            portfolioPagePaths[1],
           );
         });
       });
       describe('when given the last portfolio page', () => {
         test('should return the first portfolio page', async () => {
           const nextPortfolioPageForPath = getNextPortfolioPageForPath(
-            portfolioPagePaths[portfolioPagePaths.length - 1]
+            portfolioPagePaths[portfolioPagePaths.length - 1],
           );
           expect(nextPortfolioPageForPath).toHaveProperty(
             'path',
-            portfolioPagePaths[0]
+            portfolioPagePaths[0],
           );
         });
       });
@@ -126,7 +126,7 @@ describe('Unit test content functions', () => {
       test('should exclude before components with matching path', async () => {
         const components = getComponentsForPath(
           '/before-exclude',
-          contentFixture
+          contentFixture,
         );
         expect(components.map((component) => component.type)).toEqual([
           'first-before-exclude-fixture',
@@ -137,7 +137,7 @@ describe('Unit test content functions', () => {
       test('should exclude after components with matching path', async () => {
         const components = getComponentsForPath(
           '/after-exclude',
-          contentFixture
+          contentFixture,
         );
         expect(components.map((component) => component.type)).toEqual([
           'before-fixture',

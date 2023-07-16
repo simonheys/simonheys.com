@@ -197,7 +197,7 @@ const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
         [1, 0],
         {
           ease: easeInOut,
-        }
+        },
       );
       const value = mapper(interpolationValue);
       const ty = containerScale * 50 * value;
