@@ -1,7 +1,7 @@
 const isTouchDevice = () => {
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     return (
-      "ontouchstart" in window ||
+      'ontouchstart' in window ||
       navigator.maxTouchPoints > 0 ||
       // @ts-expect-error
       navigator.msMaxTouchPoints > 0
