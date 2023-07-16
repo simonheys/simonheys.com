@@ -4,9 +4,12 @@
 
 @import '~bootstrap/scss/functions';
 @import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/variables-dark';
 @import '~bootstrap/scss/maps';
 @import '~bootstrap/scss/vendor/rfs';
 @import '~bootstrap/scss/mixins/breakpoints';
+@import '~bootstrap/scss/mixins/color-mode';
+@import '~bootstrap/scss/mixins/color-scheme';
 @import '~bootstrap/scss/mixins/utilities';
 @import '~bootstrap/scss/mixins/lists';
 @import '~bootstrap/scss/mixins/border-radius';
