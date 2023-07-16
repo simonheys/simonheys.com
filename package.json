@@ -44,7 +44,7 @@
     "wordclock": "https://github.com/simonheys/wordclock.git"
   },
   "devDependencies": {
-    "@babel/core": "^7.22.1",
+    "@babel/core": "^7.22.9",
     "@babel/node": "^7.22.6",
     "@playwright/test": "^1.36.1",
     "@svgr/core": "^8.0.0",
