@@ -8,7 +8,7 @@ const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
         onClickOutside && onClickOutside(event);
       }
     },
-    [onClickOutside]
+    [onClickOutside],
   );
   useEffect(() => {
     document.addEventListener('mouseup', onMouseUp);

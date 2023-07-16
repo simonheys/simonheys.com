@@ -216,7 +216,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         (y - graphCenterY) * scaleGraphToCanvas;
       return { x: canvasX, y: canvasY };
     },
-    [renderAttributes]
+    [renderAttributes],
   );
 
   const mapCanvasToGraph = useCallback(
@@ -248,7 +248,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         graphCenterY;
       return { x: graphX, y: graphY };
     },
-    [renderAttributes]
+    [renderAttributes],
   );
 
   const findNodeForCanvasCoordinates = useCallback(
@@ -269,7 +269,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         }
       }
     },
-    [mapGraphToCanvas]
+    [mapGraphToCanvas],
   );
 
   const canvasXYForMouseEvent = useCallback((e: MouseEvent) => {
@@ -284,7 +284,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
       const result = findNodeForCanvasCoordinates({ x, y });
       return result;
     },
-    [canvasXYForMouseEvent, findNodeForCanvasCoordinates]
+    [canvasXYForMouseEvent, findNodeForCanvasCoordinates],
   );
 
   useEffect(() => {
@@ -308,7 +308,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
       0,
       0,
       boundingClientRect.width,
-      boundingClientRect.height
+      boundingClientRect.height,
     );
 
     graphRef.current.forEachEdge(
@@ -318,7 +318,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         _source,
         _target,
         sourceAttributes,
-        targetAttributes
+        targetAttributes,
       ) => {
         const sourceXY = mapGraphToCanvas(sourceAttributes);
         const targetXY = mapGraphToCanvas(targetAttributes);
@@ -340,16 +340,16 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         context.strokeText(
           `${attributes.distance}`,
           0.5 * (sourceXY.x + targetXY.x),
-          0.5 * (sourceXY.y + targetXY.y)
+          0.5 * (sourceXY.y + targetXY.y),
         );
 
         context.fillStyle = Colors.COLOR_GREY_MID;
         context.fillText(
           `${attributes.distance}`,
           0.5 * (sourceXY.x + targetXY.x),
-          0.5 * (sourceXY.y + targetXY.y)
+          0.5 * (sourceXY.y + targetXY.y),
         );
-      }
+      },
     );
 
     graphRef.current.forEachNode((_node, attributes) => {
@@ -405,7 +405,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         });
       }
     },
-    [dragging, canvasXYForMouseEvent, mapCanvasToGraph]
+    [dragging, canvasXYForMouseEvent, mapCanvasToGraph],
   );
 
   const onMouseDown = useCallback(
@@ -422,7 +422,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         setDragging({ node, vx, vy });
       }
     },
-    [findNodeForMouseEvent]
+    [findNodeForMouseEvent],
   );
 
   const stopDragWithEvent = useCallback(
@@ -438,21 +438,21 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         setDragging(null);
       }
     },
-    [dragging, setDragging, graphRef]
+    [dragging, setDragging, graphRef],
   );
 
   const onMouseUp = useCallback(
     (e: MouseEvent) => {
       stopDragWithEvent(e);
     },
-    [stopDragWithEvent]
+    [stopDragWithEvent],
   );
 
   const onMouseOut = useCallback(
     (e: MouseEvent) => {
       stopDragWithEvent(e);
     },
-    [stopDragWithEvent]
+    [stopDragWithEvent],
   );
 
   // __________________________________________________________________________________________ canvas attributes

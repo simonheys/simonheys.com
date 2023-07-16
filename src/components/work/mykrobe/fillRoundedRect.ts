@@ -4,7 +4,7 @@ const fillRoundedRect = (
   y: number,
   w: number,
   h: number,
-  r: number
+  r: number,
 ) => {
   r = Math.min(r, w / 2, h / 2);
   context.beginPath();

@@ -19,7 +19,7 @@ const imagePropertiesFilePath = 'content/image-properties.json';
 const imagePropertiesSystemPath = path.join(
   __dirname,
   '../../',
-  imagePropertiesFilePath
+  imagePropertiesFilePath,
 );
 
 const getImageProperties = (filePath: string) => {
@@ -52,7 +52,7 @@ const generateImageProperties = async () => {
       format:
         'progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {filename}',
     },
-    cliProgress.Presets.shades_grey
+    cliProgress.Presets.shades_grey,
   );
   useProgressBar && progressBar.start(filePaths.length, 0, { filename: '' });
 

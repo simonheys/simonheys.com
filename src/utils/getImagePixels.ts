@@ -3,7 +3,7 @@ import { NdArray } from 'ndarray';
 
 const getImagePixels = async (
   filePath: string | Buffer,
-  type?: string
+  type?: string,
 ): Promise<NdArray<Uint8Array>> => {
   return new Promise((resolve, reject) => {
     const callback = (err: Error | null, pixels: NdArray<Uint8Array>) => {

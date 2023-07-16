@@ -51,7 +51,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
         vimeoPlayer.current.on('play', onLoadingComplete);
       }
     },
-    [onLoadingComplete]
+    [onLoadingComplete],
   );
 
   const containerStyle = useMemo(() => {

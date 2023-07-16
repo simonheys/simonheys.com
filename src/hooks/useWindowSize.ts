@@ -25,7 +25,7 @@ const getWindowSize = (): WindowSize | null => {
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<WindowSize | null>(
-    getWindowSize()
+    getWindowSize(),
   );
 
   const updateWindowSize = useCallback(() => {

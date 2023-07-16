@@ -11,7 +11,7 @@ const contentSystemPath = path.join(__dirname, '../content');
 const pagesSystemPath = path.join(contentSystemPath, 'pages');
 const contentJsonSystemPath = path.join(
   __dirname,
-  '../../content/content.json'
+  '../../content/content.json',
 );
 
 const filePaths = getFiles('/', pagesSystemPath);

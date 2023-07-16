@@ -27,7 +27,7 @@ const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
           : active
           ? styles.containerActive
           : styles.container,
-        className
+        className,
       )}
       {...rest}
     ></Tag>

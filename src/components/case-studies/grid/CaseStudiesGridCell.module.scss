@@ -24,7 +24,9 @@
   composes: global(mb-4);
   overflow: hidden;
   border-radius: 500px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25), 0 4px 8px rgba(0, 0, 0, 0.15);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.25),
+    0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .title {
