@@ -99,7 +99,7 @@ export class CanvasLozenge {
       -0.5 * height,
       width,
       height,
-      0.25 * width
+      0.25 * width,
     );
     context.restore();
   };

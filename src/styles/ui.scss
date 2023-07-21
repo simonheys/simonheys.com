@@ -17,7 +17,9 @@
 .panelActive {
   color: var(--primary);
   background-color: var(--panel-hover-color);
-  transition: color 0.1s ease-in, background-color 0.1s ease-in;
+  transition:
+    color 0.1s ease-in,
+    background-color 0.1s ease-in;
 }
 
 .panelHover {
@@ -25,9 +27,13 @@
     color: var(--link-hover-color);
     background-color: var(--panel-hover-color);
   }
-  transition: color 0.1s ease-in, background-color 0.1s ease-in;
+  transition:
+    color 0.1s ease-in,
+    background-color 0.1s ease-in;
 }
 
 .panelShadow {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.05),
+    0 4px 8px rgba(0, 0, 0, 0.05);
 }

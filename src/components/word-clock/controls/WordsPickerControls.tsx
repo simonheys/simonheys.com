@@ -36,7 +36,7 @@ const WordsPickerControls: FC<WordsPickerControlsProps> = ({
       selectedRef.current = ref;
       scrollIntoView();
     },
-    [scrollIntoView]
+    [scrollIntoView],
   );
 
   useEffect(() => {

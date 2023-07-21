@@ -5,6 +5,7 @@ import { Component } from '../modules/content';
 import Footer from './Footer';
 import Header from './Header';
 import CaseStudiesNext from './case-studies/CaseStudiesNext';
+
 // fundamental page structure is static
 // this allows DOM to build, size and scroll as expected
 import CaseStudiesGrid from './case-studies/grid/CaseStudiesGrid';
@@ -18,12 +19,12 @@ import WorkGrid from './work/grid/WorkGrid';
 
 // // unique components are dynamic
 const MykrobeAnimation = dynamic(
-  () => import('./work/mykrobe/MykrobeAnimation')
+  () => import('./work/mykrobe/MykrobeAnimation'),
 );
 const MykrobeCluster = dynamic(() => import('./work/mykrobe/MykrobeCluster'));
 const SPSCollection = dynamic(() => import('./work/sps/SPSCollection'));
 const WordClockEditable = dynamic(
-  () => import('./word-clock/WordClockEditable')
+  () => import('./word-clock/WordClockEditable'),
 );
 const WordClockCell = dynamic(() => import('./word-clock/WordClockCell'));
 const WordClockFill = dynamic(() => import('./word-clock/WordClockFill'));

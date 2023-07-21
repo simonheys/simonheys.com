@@ -49,7 +49,7 @@ const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
       }
       changeLayout(value as Key);
     },
-    [autoAnimate, changeLayout]
+    [autoAnimate, changeLayout],
   );
 
   const autoChangeLayout = useCallback(() => {

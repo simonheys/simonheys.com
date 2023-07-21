@@ -82,7 +82,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       isFullscreen,
       useBoundingClientRectRef,
       wordsPickerControlsVisible,
-    ]
+    ],
   );
   const onClickOutside = useCallback(
     (event: MouseEvent) => {
@@ -95,7 +95,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
         setControlsVisible(false);
       }
     },
-    [wordsPickerControlsVisible]
+    [wordsPickerControlsVisible],
   );
   const { ref: clickRef } = useClickOutside(onClickOutside);
 
@@ -107,7 +107,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       e.stopPropagation();
       setWordsPickerControlsVisible(!wordsPickerControlsVisible);
     },
-    [wordsPickerControlsVisible]
+    [wordsPickerControlsVisible],
   );
 
   const onMouseEnter = useCallback(() => {

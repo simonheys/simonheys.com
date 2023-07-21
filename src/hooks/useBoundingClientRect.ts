@@ -25,7 +25,7 @@ const useBoundingClientRect = () => {
         resizeObserver.current && resizeObserver.current.observe(ref.current);
       }
     },
-    [updateBoundingClientRect]
+    [updateBoundingClientRect],
   );
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const useBoundingClientRect = () => {
     resizeObserver.current = new ResizeObserver((entries) => {
       if (ref?.current) {
         const currentRefEntry = entries.find(
-          ({ target }) => target === ref.current
+          ({ target }) => target === ref.current,
         );
         if (currentRefEntry) {
           updateBoundingClientRect();

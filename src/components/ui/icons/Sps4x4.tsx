@@ -1,24 +1,23 @@
-import { SVGProps } from 'react';
-
+import type { SVGProps } from 'react';
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    xmlns="http://www.w3.org/2000/svg"
     width="1.5em"
     height="1em"
     viewBox="0 0 30 20"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <g fill="currentColor" fillRule="evenodd">
-      <rect y={11} width={6} height={6} rx={1} />
-      <rect x={8} y={11} width={6} height={6} rx={1} />
-      <rect y={3} width={6} height={6} rx={1} />
-      <rect x={16} y={3} width={6} height={6} rx={1} />
-      <rect x={8} y={3} width={6} height={6} rx={1} />
-      <rect x={24} y={3} width={6} height={6} rx={1} />
-      <rect x={24} y={15} width={6} height={2} rx={1} />
-      <rect x={16} y={15} width={6} height={2} rx={1} />
-      <rect x={16} y={11} width={6} height={2} rx={1} />
-      <rect x={24} y={11} width={6} height={2} rx={1} />
+      <rect width={6} height={6} y={11} rx={1} />
+      <rect width={6} height={6} x={8} y={11} rx={1} />
+      <rect width={6} height={6} y={3} rx={1} />
+      <rect width={6} height={6} x={16} y={3} rx={1} />
+      <rect width={6} height={6} x={8} y={3} rx={1} />
+      <rect width={6} height={6} x={24} y={3} rx={1} />
+      <rect width={6} height={2} x={24} y={15} rx={1} />
+      <rect width={6} height={2} x={16} y={15} rx={1} />
+      <rect width={6} height={2} x={16} y={11} rx={1} />
+      <rect width={6} height={2} x={24} y={11} rx={1} />
     </g>
   </svg>
 );
