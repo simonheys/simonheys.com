@@ -8,8 +8,8 @@ import {
   MouseEvent as ReactMouseEvent,
 } from 'react';
 import useSWR from 'swr';
-import { WordClock } from 'wordclock/packages/wordclock-js';
-import 'wordclock/packages/wordclock-js/dist/style.css';
+import { WordClock } from '@simonheys/wordclock';
+import '@simonheys/wordclock/style.css';
 
 import useBoundingClientRect from '../../hooks/useBoundingClientRect';
 import useClickOutside from '../../hooks/useClickOutside';
@@ -21,7 +21,7 @@ import WordsPickerControls from './controls/WordsPickerControls';
 import fetcher from './utils/fetcher';
 
 const fileDefault = 'English_simple_fragmented.json';
-const wordsDefault = require(`wordclock/packages/wordclock-words/json/${fileDefault}`);
+const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
 
 export interface WordClockEditableProps {
   file: string;

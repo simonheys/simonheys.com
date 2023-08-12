@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
 
-import manifest from 'wordclock/packages/wordclock-words/json/Manifest.json';
+import manifest from '@simonheys/wordclock-words/json/Manifest.json';
 
 type FileToJson = {
   [key: string]: any;
@@ -9,7 +9,7 @@ type FileToJson = {
 const fileToJson: FileToJson = {};
 
 manifest.files.forEach((file: string) => {
-  const json = require(`wordclock/packages/wordclock-words/json/${file}`);
+  const json = require(`@simonheys/wordclock-words/json/${file}`);
   fileToJson[file] = json;
 });
 

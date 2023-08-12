@@ -1,5 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-import manifest from 'wordclock/packages/wordclock-words/json/Manifest.json';
+import manifest from '@simonheys/wordclock-words/json/Manifest.json';
 
 const words: Record<
   string,
@@ -17,7 +17,7 @@ interface Meta {
 }
 
 manifest.files.forEach((file) => {
-  const json = require(`wordclock/packages/wordclock-words/json/${file}`);
+  const json = require(`@simonheys/wordclock-words/json/${file}`);
   const { meta }: { meta: Meta } = json;
   const { language, title } = meta;
   const languageTitle = manifest.languages[language];
