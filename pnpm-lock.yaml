@@ -66,8 +66,8 @@ dependencies:
     specifier: ^2.2.0
     version: 2.2.0(react@18.2.0)
   wordclock:
-    specifier: https://github.com/simonheys/wordclock.git
-    version: github.com/simonheys/wordclock/9a0554c17aa92825e61717e511ee3558393d765b
+    specifier: https://github.com/simonheys/wordclock
+    version: github.com/simonheys/wordclock/6451202912ca40bbb0bd2313ce97e0ce942ceee1
 
 devDependencies:
   '@playwright/test':
@@ -1566,6 +1566,7 @@ packages:
 
   /@emotion/memoize@0.7.4:
     resolution: {integrity: sha512-Ja/Vfqe3HpuzRsG1oBtWTHk2PGZ7GR+2Vz5iYGelAw8dx32K0y7PjVuxK6z1nMpZOqAFsRUPCkK1YjJ56qJlgw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -8260,8 +8261,10 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  github.com/simonheys/wordclock/9a0554c17aa92825e61717e511ee3558393d765b:
-    resolution: {tarball: https://codeload.github.com/simonheys/wordclock/tar.gz/9a0554c17aa92825e61717e511ee3558393d765b}
+  github.com/simonheys/wordclock/6451202912ca40bbb0bd2313ce97e0ce942ceee1:
+    resolution: {tarball: https://codeload.github.com/simonheys/wordclock/tar.gz/6451202912ca40bbb0bd2313ce97e0ce942ceee1}
     name: wordclock
     version: 1.1.5
+    prepare: true
+    requiresBuild: true
     dev: false
