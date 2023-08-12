@@ -8,7 +8,8 @@ import {
   MouseEvent as ReactMouseEvent,
 } from 'react';
 import useSWR from 'swr';
-import { WordClock } from 'wordclock/packages/wordclock-js/dist';
+import { WordClock } from 'wordclock/packages/wordclock-js';
+import 'wordclock/packages/wordclock-js/dist/style.css';
 
 import useBoundingClientRect from '../../hooks/useBoundingClientRect';
 import useClickOutside from '../../hooks/useClickOutside';
