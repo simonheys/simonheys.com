@@ -4,8 +4,8 @@ import { FC } from 'react';
 import { getNextPortfolioPageForPath } from '../../modules/content';
 import AppearWhenInView from '../ui/AppearWhenInView';
 
-import styles from './WorkNext.module.scss';
 import WorkGridCell from './grid/WorkGridCell';
+import styles from './WorkNext.module.scss';
 
 const WorkNext: FC = () => {
   const router = useRouter();

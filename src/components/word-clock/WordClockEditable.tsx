@@ -1,3 +1,4 @@
+import { WordClock } from '@simonheys/wordclock';
 import { AnimatePresence, motion } from 'framer-motion';
 import {
   FC,
@@ -8,7 +9,6 @@ import {
   MouseEvent as ReactMouseEvent,
 } from 'react';
 import useSWR from 'swr';
-import { WordClock } from '@simonheys/wordclock';
 import '@simonheys/wordclock/style.css';
 
 import useBoundingClientRect from '../../hooks/useBoundingClientRect';
@@ -16,10 +16,10 @@ import useClickOutside from '../../hooks/useClickOutside';
 import useFullscreen from '../../hooks/useFullscreen';
 import isTouchDevice from '../../utils/isTouchDevice';
 
-import styles from './WordClockEditable.module.scss';
 import DefaultControls from './controls/DefaultControls';
 import WordsPickerControls from './controls/WordsPickerControls';
 import fetcher from './utils/fetcher';
+import styles from './WordClockEditable.module.scss';
 
 const fileDefault = 'English_simple_fragmented.json';
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);

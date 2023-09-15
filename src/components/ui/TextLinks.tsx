@@ -1,8 +1,8 @@
 import { FC } from 'react';
 
+import { ChevronRight } from './icons';
 import Link from './Link';
 import styles from './TextLinks.module.scss';
-import { ChevronRight } from './icons';
 
 export interface TextLinksProps {
   links: {

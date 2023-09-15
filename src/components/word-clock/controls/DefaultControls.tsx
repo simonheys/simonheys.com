@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import Link from '../../ui/Link';
 import { ChevronDown, FullScreen } from '../../ui/icons';
+import Link from '../../ui/Link';
 
 import styles from './DefaultControls.module.scss';
 import DefaultControlsItem from './DefaultControlsItem';

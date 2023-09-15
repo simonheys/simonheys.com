@@ -3,19 +3,20 @@ import { FC } from 'react';
 
 import { Component } from '../modules/content';
 
-import Footer from './Footer';
-import Header from './Header';
-import CaseStudiesNext from './case-studies/CaseStudiesNext';
 // fundamental page structure is static
 // this allows DOM to build, size and scroll as expected
+
+import CaseStudiesNext from './case-studies/CaseStudiesNext';
 import CaseStudiesGrid from './case-studies/grid/CaseStudiesGrid';
+import Footer from './Footer';
+import Header from './Header';
 import Prose from './ui/Prose';
 import ScrollingBrowser from './ui/ScrollingBrowser';
 import ScrollingBrowserCell from './ui/ScrollingBrowserCell';
+import WorkGrid from './work/grid/WorkGrid';
 import WorkHeader from './work/WorkHeader';
 import WorkNext from './work/WorkNext';
 import WorkRow from './work/WorkRow';
-import WorkGrid from './work/grid/WorkGrid';
 
 // // unique components are dynamic
 const MykrobeAnimation = dynamic(
