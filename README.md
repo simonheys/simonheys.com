@@ -6,11 +6,11 @@ Source for my personal site [simonheys.com](https://www.simonheys.com/)
 
 ## Getting Started
 
-Install dependencies and run the development server
+Install [bun](https://bun.sh/), then install dependencies and run the development server:
 
 ```
-$ pnpm install
-$ pnpm dev
+$ bun install
+$ bun dev
 ```
 
 The site is available on [localhost:3000](http://localhost:3000/)
