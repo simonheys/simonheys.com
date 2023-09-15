@@ -2,6 +2,7 @@ import { FC, Fragment, useRef, useCallback, useEffect, useMemo } from 'react';
 
 import preventWindowScroll from '../../../utils/preventWindowScroll';
 import { Circle } from '../../ui/icons';
+
 import styles from './WordsPickerControls.module.scss';
 
 export interface WordsPickerControlsProps {

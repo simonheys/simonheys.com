@@ -5,6 +5,7 @@ import preventWindowScroll from '../../../utils/preventWindowScroll';
 import AppearWhenInView from '../../ui/AppearWhenInView';
 import Caption from '../../ui/Caption';
 import SegmentedControl from '../../ui/SegmentedControl';
+
 import { CardItemPostType } from './CardItem';
 import CardsCollectionBlock, {
   mapLayoutPropToLayout,

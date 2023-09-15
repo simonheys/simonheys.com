@@ -2,6 +2,7 @@ import { LayoutGroup } from 'framer-motion';
 import { FC } from 'react';
 
 import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from '../../ui/icons';
+
 import CardItem, { CardItemPostType } from './CardItem';
 import styles from './CardsCollectionBlock.module.scss';
 

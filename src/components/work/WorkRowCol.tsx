@@ -5,6 +5,7 @@ import { ComponentKey, MappedComponent } from '../Components';
 import ImageFadeIn from '../ui/ImageFadeIn';
 import TextLinks from '../ui/TextLinks';
 import VideoFadeIn from '../ui/VideoFadeIn';
+
 import styles from './WorkRowCol.module.scss';
 
 export interface WorkRowColProps

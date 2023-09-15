@@ -4,6 +4,7 @@ import { FC, useEffect, useMemo, useState } from 'react';
 import useBoundingClientRect from '../hooks/useBoundingClientRect';
 import useWindowScrollVelocity from '../hooks/useWindowScrollVelocity';
 import { getPageForPath } from '../modules/content';
+
 import styles from './Header.module.scss';
 import Link from './ui/Link';
 

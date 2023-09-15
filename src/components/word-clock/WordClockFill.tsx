@@ -4,6 +4,7 @@ import useWindowScroll from '../../hooks/useWindowScroll';
 import useWindowSize from '../../hooks/useWindowSize';
 import AppearWhenInView from '../ui/AppearWhenInView';
 import { ChevronDown } from '../ui/icons';
+
 import WordClockEditable, { WordClockEditableProps } from './WordClockEditable';
 import styles from './WordClockFill.module.scss';
 

@@ -1,9 +1,10 @@
 import { FC } from 'react';
 
 import { Page } from '../../../modules/content';
+import { ChevronRight } from '../../ui/icons';
 import ImageFadeIn from '../../ui/ImageFadeIn';
 import Link from '../../ui/Link';
-import { ChevronRight } from '../../ui/icons';
+
 import styles from './CaseStudiesGridCell.module.scss';
 
 export interface CaseStudiesGridCellProps {

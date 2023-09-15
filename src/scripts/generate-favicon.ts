@@ -1,7 +1,8 @@
-import { FaviconOptions, favicons } from 'favicons';
 
 import fs from 'fs';
 import path from 'path';
+
+import { FaviconOptions, favicons } from 'favicons';
 
 const publicSystemPath = path.join(__dirname, '../../public/favicon');
 
