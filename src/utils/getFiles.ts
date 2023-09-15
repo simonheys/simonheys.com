@@ -21,7 +21,7 @@ const getFiles = (
     }
   });
 
-  return filesArray;
+  return filesArray.sort();
 };
 
 export default getFiles;
