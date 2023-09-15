@@ -4,6 +4,7 @@ import { FC, useState, useRef, useEffect, useMemo } from 'react';
 import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
 import useWindowSize from '../../hooks/useWindowSize';
 import * as contentModule from '../../modules/content';
+
 import ImageResponsive from './ImageResponsive';
 import styles from './ScrollingBrowserCell.module.scss';
 

@@ -3,6 +3,7 @@ import { FC } from 'react';
 
 import { getNextCaseStudiesPageForPath } from '../../modules/content';
 import AppearWhenInView from '../ui/AppearWhenInView';
+
 import styles from './CaseStudiesNext.module.scss';
 import CaseStudiesGridCell from './grid/CaseStudiesGridCell';
 

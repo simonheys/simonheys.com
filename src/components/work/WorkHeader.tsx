@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { getPageForPath } from '../../modules/content';
 import AppearWhenInView from '../ui/AppearWhenInView';
 import TextLinks from '../ui/TextLinks';
+
 import styles from './WorkHeader.module.scss';
 
 export interface WorkHeaderProps {

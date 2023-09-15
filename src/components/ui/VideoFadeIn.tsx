@@ -4,6 +4,7 @@ import { FC, useState, useRef, useEffect, useMemo, useCallback } from 'react';
 
 import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
 import isTouchDevice from '../../utils/isTouchDevice';
+
 import styles from './VideoFadeIn.module.scss';
 
 export interface VideoFadeInProps {

@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import { getMeta, getPageForPath } from '../../../modules/content';
 import AppearWhenInView from '../../ui/AppearWhenInView';
+
 import WorkGridCell from './WorkGridCell';
 
 const WorkGrid: FC = () => {

@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from 'next';
-
 import manifest from '@simonheys/wordclock-words/json/Manifest.json';
 
 type FileToJson = {

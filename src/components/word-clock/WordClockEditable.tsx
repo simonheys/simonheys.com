@@ -15,6 +15,7 @@ import useBoundingClientRect from '../../hooks/useBoundingClientRect';
 import useClickOutside from '../../hooks/useClickOutside';
 import useFullscreen from '../../hooks/useFullscreen';
 import isTouchDevice from '../../utils/isTouchDevice';
+
 import styles from './WordClockEditable.module.scss';
 import DefaultControls from './controls/DefaultControls';
 import WordsPickerControls from './controls/WordsPickerControls';
@@ -156,7 +157,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
 
   return (
     <div ref={clickRef} className={styles.containerSizer}>
-      <div
+      <motion.div
         ref={fullscreenRef}
         className={
           isFullscreen
@@ -166,6 +167,9 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
         onClick={onClick}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3, delay: 0.15 }}
       >
         <WordClock words={words} />
         <div className={styles.controlsContainer}>
@@ -209,7 +213,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
             )}
           </AnimatePresence>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

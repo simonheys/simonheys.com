@@ -1,8 +1,9 @@
+import fs from 'fs';
+import path from 'path';
+
 import chokidar from 'chokidar';
 import cliProgress from 'cli-progress';
-import fs from 'fs';
 import sizeOf from 'image-size';
-import path from 'path';
 
 import { ImageProperties } from '../modules/content';
 import getFiles from '../utils/getFiles';

@@ -1,6 +1,7 @@
 import { FC, PropsWithChildren, useState, useEffect } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
+
 import styles from './Fill.module.scss';
 
 const Fill: FC<PropsWithChildren> = ({ children }) => {

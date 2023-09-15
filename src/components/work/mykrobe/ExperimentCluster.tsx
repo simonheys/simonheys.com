@@ -14,6 +14,7 @@ import {
 
 import useAnimationFrame from '../../../hooks/useAnimationFrame';
 import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
+
 import styles from './ExperimentCluster.module.scss';
 
 const CANVAS_MARGIN = 50;

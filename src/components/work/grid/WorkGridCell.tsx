@@ -4,6 +4,7 @@ import { FC } from 'react';
 import { Page } from '../../../modules/content';
 import ImageFadeIn from '../../ui/ImageFadeIn';
 import Link from '../../ui/Link';
+
 import styles from './WorkGridCell.module.scss';
 
 export interface WorkGridCellProps {

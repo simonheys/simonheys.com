@@ -8,7 +8,6 @@ import {
   getPortfolioPagePaths,
   normalisePath,
 } from './content';
-
 import contentFixtureJson from './__fixtures__/content/content.json';
 
 const contentFixture = contentFixtureJson as unknown as Content;

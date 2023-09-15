@@ -2,6 +2,7 @@ import { FC } from 'react';
 
 import AppearWhenInView from '../ui/AppearWhenInView';
 import Caption from '../ui/Caption';
+
 import WorkRowCol, { WorkRowColProps } from './WorkRowCol';
 
 export interface WorkRowProps extends WorkRowColProps {

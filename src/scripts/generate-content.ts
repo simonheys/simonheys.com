@@ -1,7 +1,8 @@
-import chokidar from 'chokidar';
 import fs from 'fs';
-import yaml from 'js-yaml';
 import path from 'path';
+
+import chokidar from 'chokidar';
+import yaml from 'js-yaml';
 
 import getFiles from '../utils/getFiles';
 

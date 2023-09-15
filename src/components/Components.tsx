@@ -2,10 +2,10 @@ import dynamic from 'next/dynamic';
 import { FC } from 'react';
 
 import { Component } from '../modules/content';
+
 import Footer from './Footer';
 import Header from './Header';
 import CaseStudiesNext from './case-studies/CaseStudiesNext';
-
 // fundamental page structure is static
 // this allows DOM to build, size and scroll as expected
 import CaseStudiesGrid from './case-studies/grid/CaseStudiesGrid';

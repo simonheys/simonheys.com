@@ -3,6 +3,7 @@ import { FC } from 'react';
 import AppearWhenInView from '../../ui/AppearWhenInView';
 import Caption from '../../ui/Caption';
 import ImageResponsive from '../../ui/ImageResponsive';
+
 import AnimatedBackgroundCanvas from './AnimatedBackgroundCanvas';
 import styles from './MykrobeAnimation.module.scss';
 

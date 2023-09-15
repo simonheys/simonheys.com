@@ -4,6 +4,7 @@ import { Page } from '../../../modules/content';
 import ImageFadeIn from '../../ui/ImageFadeIn';
 import Link from '../../ui/Link';
 import { ChevronRight } from '../../ui/icons';
+
 import styles from './CaseStudiesGridCell.module.scss';
 
 export interface CaseStudiesGridCellProps {

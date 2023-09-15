@@ -2,6 +2,7 @@ import { FC, useRef, useEffect, useMemo } from 'react';
 
 import useAnimationFrame from '../../../hooks/useAnimationFrame';
 import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
+
 import styles from './AnimatedBackgroundCanvas.module.scss';
 import { CanvasLozenge } from './CanvasLozenge';
 import { LOZENGE_COLORS, LOZENGES_PER_COLOR } from './constants';
