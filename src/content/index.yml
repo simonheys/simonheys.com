@@ -31,7 +31,7 @@ all:
       title: About
       ruled: true
       subtitle: |
-        I am an experienced Product Designer and Software Engineer with a passion for making and crafting digital products, tools and services that are useful, empowering or inspiring to others.
+        As a Software Engineer with experience in Product Design, I’m driven by a passion to create software that makes a meaningful difference to people’s lives.
       links:
         - text: Read more
           url: /about
