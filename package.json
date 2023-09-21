@@ -63,7 +63,7 @@
     "@types/react": "^18.2.14",
     "@types/resize-observer-browser": "^0.1.7",
     "@types/vimeo__player": "^2.18.0",
-    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^5.60.0",
     "chokidar": "^3.5.3",
     "cli-progress": "^3.12.0",
