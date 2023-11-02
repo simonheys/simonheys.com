@@ -43,8 +43,6 @@ const Page: FC<PageProps> = ({ page }) => {
       <Head>
         <title>{pageTitle}</title>
         <meta name="description" content={description || subtitle}></meta>
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@simonheys" />
         <meta property="og:title" content={pageTitle} />
         <meta
           property="og:description"

@@ -4,16 +4,12 @@ components:
     title: About
     subtitle: |
       As a [Software Engineer](https://github.com/simonheys/) with experience in [Product Design](/portfolio), I’m driven by a passion to create software that makes a meaningful difference to people’s lives.
-
-      I have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.
-
-      Hire me to design or build your app, software or website.
     links:
-      - text: Email
-        url: mailto:si@simonheys.com
-      - text: LinkedIn
-        url: https://linkedin.com/in/simonheys
-      - text: Twitter
-        url: https://twitter.com/simonheys
+      - text: Portfolio
+        url: /portfolio
       - text: GitHub
         url: https://github.com/simonheys/
+      - text: LinkedIn
+        url: https://linkedin.com/in/simonheys
+      - text: Email
+        url: mailto:si@simonheys.com

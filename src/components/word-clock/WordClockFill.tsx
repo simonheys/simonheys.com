@@ -30,15 +30,6 @@ const WordClockFill: FC<WordClockEditableProps> = (props) => {
           <WordClockEditable {...props} />
         </div>
       </div>
-      <div className={styles.chevronContainer}>
-        <AppearWhenInView>
-          <div
-            className={chevronVisible ? styles.chevron : styles.chevronHidden}
-          >
-            <ChevronDown onClick={onChevronClick} />
-          </div>
-        </AppearWhenInView>
-      </div>
     </div>
   );
 };
