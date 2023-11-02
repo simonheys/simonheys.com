@@ -55,7 +55,7 @@
     "before": [],
     "after": [
       {
-        "exclude": ["/about", "/contact", "/case-studies", "/blog*"],
+        "exclude": ["^/$", "/about", "/case-studies", "/blog*"],
         "type": "work-header",
         "title": "About",
         "ruled": true,
@@ -69,6 +69,7 @@
       },
       {
         "type": "footer",
+        "exclude": ["^/$"],
         "text": "Copyright © Studio Heys Limited · Registered in England №07360731"
       }
     ]
@@ -81,23 +82,23 @@
         {
           "type": "work-header",
           "title": "About",
-          "subtitle": "As a [Software Engineer](https://github.com/simonheys/) with experience in [Product Design](/portfolio), I’m driven by a passion to create software that makes a meaningful difference to people’s lives.\n\nI have founded and led multiple digital agencies and start-ups in London including an innovative digital healthcare app which was acquired by Google DeepMind.\n\nHire me to design or build your app, software or website.\n",
+          "subtitle": "As a [Software Engineer](https://github.com/simonheys/) with experience in [Product Design](/portfolio), I’m driven by a passion to create software that makes a meaningful difference to people’s lives.\n",
           "links": [
             {
-              "text": "Email",
-              "url": "mailto:si@simonheys.com"
+              "text": "Portfolio",
+              "url": "/portfolio"
+            },
+            {
+              "text": "GitHub",
+              "url": "https://github.com/simonheys/"
             },
             {
               "text": "LinkedIn",
               "url": "https://linkedin.com/in/simonheys"
             },
             {
-              "text": "Twitter",
-              "url": "https://twitter.com/simonheys"
-            },
-            {
-              "text": "GitHub",
-              "url": "https://github.com/simonheys/"
+              "text": "Email",
+              "url": "mailto:si@simonheys.com"
             }
           ]
         }
@@ -1428,35 +1429,6 @@
         },
         {
           "type": "case-studies-next"
-        }
-      ]
-    },
-    {
-      "path": "/contact",
-      "title": "Contact",
-      "components": [
-        {
-          "type": "work-header",
-          "title": "Contact",
-          "subtitle": "If you have a project or role you would like to discuss, I am always happy to see how I might help. I am based in London, UK.\n",
-          "links": [
-            {
-              "text": "Email",
-              "url": "mailto:si@simonheys.com"
-            },
-            {
-              "text": "LinkedIn",
-              "url": "https://linkedin.com/in/simonheys"
-            },
-            {
-              "text": "Twitter",
-              "url": "https://twitter.com/simonheys"
-            },
-            {
-              "text": "GitHub",
-              "url": "https://github.com/simonheys/"
-            }
-          ]
         }
       ]
     },

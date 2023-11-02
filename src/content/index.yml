@@ -26,7 +26,7 @@ all:
       - '/about'
   before: []
   after:
-    - exclude: ['/about', '/contact', '/case-studies', '/blog*']
+    - exclude: ['^/$', '/about', '/case-studies', '/blog*']
       type: work-header
       title: About
       ruled: true
@@ -36,4 +36,5 @@ all:
         - text: Read more
           url: /about
     - type: footer
+      exclude: ['^/$']
       text: Copyright © Studio Heys Limited · Registered in England №07360731

@@ -31,10 +31,11 @@ const getImageProperties = (filePath: string) => {
 const getCurrentImageProperties = async (): Promise<
   Record<string, ImageProperties>
 > => {
-  return new Promise((resolve, reject) => {
-    fs.readFile(imagePropertiesSystemPath, 'utf8', (err, data) => {
+  return new Promise((resolve, _reject) => {
+    fs.readFile(imagePropertiesSystemPath, 'utf8', (_err, data = '{}') => {
       try {
-        resolve(JSON.parse(data));
+        const json = JSON.parse(data);
+        return resolve(json);
       } catch (e) {
         throw e;
       }

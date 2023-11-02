@@ -76,7 +76,7 @@ const generateIconComponents = async () => {
     progressBar.update(filePaths.length, { filename: indexSystemPath });
 
   lines.push('');
-  const fileContents = lines.join('\r\n');
+  const fileContents = lines.join('\n');
   fs.writeFileSync(indexSystemPath, fileContents, 'utf8');
 
   useProgressBar && progressBar.stop();
