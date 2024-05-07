@@ -26,7 +26,7 @@ jobs:
       - uses: oven-sh/setup-bun@v1
         name: Install bun
         with:
-          bun-version: latest
+          bun-version: 1.0.26
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v4
         with:
@@ -45,6 +45,8 @@ jobs:
       - run: bun install --frozen-lockfile
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
+      - name: Lint
+        run: bun run lint
       - name: Run tests
         run: bun run test
       - name: Build
