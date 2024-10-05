@@ -1,18 +1,18 @@
-import { GetStaticPaths, GetStaticProps } from 'next';
-import Head from 'next/head';
-import { FC, useMemo } from 'react';
+import { GetStaticPaths, GetStaticProps } from "next";
+import Head from "next/head";
+import { FC, useMemo } from "react";
 
-import Components, { MappedComponent } from '../components/Components';
-import Fill from '../components/ui/Fill';
+import Components, { MappedComponent } from "../components/Components";
+import Fill from "../components/ui/Fill";
 import {
   Component,
-  getMeta,
   Page as PageType,
-  getPagePaths,
-  getPageForPath,
-  getComponentsForPath,
   content,
-} from '../modules/content';
+  getComponentsForPath,
+  getMeta,
+  getPageForPath,
+  getPagePaths,
+} from "../modules/content";
 
 const meta = getMeta();
 
@@ -36,7 +36,7 @@ const Page: FC<PageProps> = ({ page }) => {
     components,
   } = page;
   const pageTitle = useMemo(() => {
-    return [title, subtitle, ...meta.titles].filter(Boolean).join(' – ');
+    return [title, subtitle, ...meta.titles].filter(Boolean).join(" – ");
   }, [subtitle, title]);
   return (
     <>

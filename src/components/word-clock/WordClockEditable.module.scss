@@ -1,5 +1,5 @@
-@use 'sass:math';
-@import '~/src/styles/use-bootstrap';
+@use "sass:math";
+@import "~/src/styles/use-bootstrap";
 
 .containerSizer {
   composes: global(d-flex);
@@ -9,8 +9,8 @@
 
 .wordClockContainer {
   font-feature-settings:
-    'liga' 1,
-    'kern' 1;
+    "liga" 1,
+    "kern" 1;
   background-color: var(--body-bg);
   position: absolute;
   left: 0;

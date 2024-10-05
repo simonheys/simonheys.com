@@ -7,7 +7,7 @@ meta:
 components:
   - type: prose
     title: Mykrobe
-    services: ['Product Design', 'Identity', 'React', 'Electron']
+    services: ["Product Design", "Identity", "React", "Electron"]
     text: |
       # Antimicrobial resistance and outbreak information within minutes
       I was Lead Product Designer in a cross-disciplinary team of 16 on a project spanning 7 years, helping to drive and influence product decisions and strategy.
@@ -18,7 +18,7 @@ components:
         url: https://github.com/Mykrobe-tools/mykrobe/releases
   - type: work-row
     vimeoId: 585698728
-    color: '#f6a229'
+    color: "#f6a229"
     caption: Product overview showing a user browsing their sample library and viewing related samples to investigate a potential outbreak
   - type: prose
     title: Overview
@@ -139,7 +139,7 @@ components:
   - type: work-row
     columns:
       - vimeoId: 643953988
-        color: '#6b6a6c'
+        color: "#6b6a6c"
       - src: case-studies/mykrobe/mykrobe-demo-1.jpg
     caption: The product owner giving a memorable real-time demo in Mumbai which received many gasps with the audience wondering how this was possible
   - type: prose
@@ -218,11 +218,11 @@ components:
       I worked closely with the back-end developers against an [OpenAPI](https://swagger.io/) spec, with some realtime events using [Server-sent events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events).
   - type: work-row
     vimeoId: 584226493
-    color: '#f7f6f1'
+    color: "#f7f6f1"
     caption: Component library captured as React components in Storybook, a solid starting point for a full design system in future
   - type: work-row
     vimeoId: 585698728
-    color: '#f6a229'
+    color: "#f6a229"
   - type: prose
     title: Summary
     ruled: true

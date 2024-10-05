@@ -1,8 +1,8 @@
-@import '~/src/styles/use-bootstrap';
+@import "~/src/styles/use-bootstrap";
 
 .container {
-  composes: panel from '~/src/styles/ui.scss';
-  composes: panelShadow from '~/src/styles/ui.scss';
+  composes: panel from "~/src/styles/ui.scss";
+  composes: panelShadow from "~/src/styles/ui.scss";
   composes: global(h5);
   composes: global(px-2);
   display: flex;

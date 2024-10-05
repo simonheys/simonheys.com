@@ -1,5 +1,5 @@
-import { useRef, useState, useCallback, useEffect } from 'react';
-import ResizeObserver from 'resize-observer-polyfill';
+import { useCallback, useEffect, useRef, useState } from "react";
+import ResizeObserver from "resize-observer-polyfill";
 
 const useBoundingClientRect = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -29,8 +29,8 @@ const useBoundingClientRect = () => {
   );
 
   useEffect(() => {
-    window.addEventListener('resize', updateBoundingClientRect);
-    window.addEventListener('scroll', updateBoundingClientRect);
+    window.addEventListener("resize", updateBoundingClientRect);
+    window.addEventListener("scroll", updateBoundingClientRect);
     resizeObserver.current = new ResizeObserver((entries) => {
       if (ref?.current) {
         const currentRefEntry = entries.find(
@@ -45,8 +45,8 @@ const useBoundingClientRect = () => {
       resizeObserver.current.observe(ref.current);
     }
     return () => {
-      window.removeEventListener('resize', updateBoundingClientRect);
-      window.removeEventListener('scroll', updateBoundingClientRect);
+      window.removeEventListener("resize", updateBoundingClientRect);
+      window.removeEventListener("scroll", updateBoundingClientRect);
       resizeObserver.current?.disconnect();
       resizeObserver.current = null;
     };

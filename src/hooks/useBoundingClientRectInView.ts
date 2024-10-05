@@ -1,5 +1,5 @@
-import useBoundingClientRect from './useBoundingClientRect';
-import useWindowSize from './useWindowSize';
+import useBoundingClientRect from "./useBoundingClientRect";
+import useWindowSize from "./useWindowSize";
 
 const useBoundingClientRectInView = () => {
   const { ref, boundingClientRect } = useBoundingClientRect();

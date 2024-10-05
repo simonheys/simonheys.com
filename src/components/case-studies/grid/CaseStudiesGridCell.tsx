@@ -1,11 +1,11 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import { Page } from '../../../modules/content';
-import { ChevronRight } from '../../ui/icons';
-import ImageFadeIn from '../../ui/ImageFadeIn';
-import Link from '../../ui/Link';
+import { Page } from "../../../modules/content";
+import { ChevronRight } from "../../ui/icons";
+import ImageFadeIn from "../../ui/ImageFadeIn";
+import Link from "../../ui/Link";
 
-import styles from './CaseStudiesGridCell.module.scss';
+import styles from "./CaseStudiesGridCell.module.scss";
 
 export interface CaseStudiesGridCellProps {
   page: Page;
@@ -20,8 +20,8 @@ const CaseStudiesGridCell: FC<CaseStudiesGridCellProps> = ({ page }) => {
         <div className={styles.icon}>
           <ImageFadeIn
             src={icon}
-            alt={title || ''}
-            backgroundColor={'transparent'}
+            alt={title || ""}
+            backgroundColor="transparent"
           />
         </div>
       )}

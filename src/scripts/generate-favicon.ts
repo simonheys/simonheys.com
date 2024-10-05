@@ -1,15 +1,15 @@
-import fs from 'fs';
-import path from 'path';
+import fs from "fs";
+import path from "path";
 
-import { FaviconOptions, favicons } from 'favicons';
+import { FaviconOptions, favicons } from "favicons";
 
-const publicSystemPath = path.join(__dirname, '../../public/favicon');
+const publicSystemPath = path.join(__dirname, "../../public/favicon");
 
-const source = path.join(__dirname, '../assets/favicon.svg');
+const source = path.join(__dirname, "../assets/favicon.svg");
 
 const configuration: FaviconOptions = {
-  background: '#ff0000',
-  path: '/images/favicons',
+  background: "#ff0000",
+  path: "/images/favicons",
   icons: {
     android: true,
     appleIcon: true,

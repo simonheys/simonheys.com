@@ -1,11 +1,11 @@
-import { FC, useRef, useEffect, useMemo } from 'react';
+import { FC, useEffect, useMemo, useRef } from "react";
 
-import useAnimationFrame from '../../../hooks/useAnimationFrame';
-import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
+import useAnimationFrame from "../../../hooks/useAnimationFrame";
+import useBoundingClientRectInView from "../../../hooks/useBoundingClientRectInView";
 
-import styles from './AnimatedBackgroundCanvas.module.scss';
-import { CanvasLozenge } from './CanvasLozenge';
-import { LOZENGE_COLORS, LOZENGES_PER_COLOR } from './constants';
+import styles from "./AnimatedBackgroundCanvas.module.scss";
+import { CanvasLozenge } from "./CanvasLozenge";
+import { LOZENGE_COLORS, LOZENGES_PER_COLOR } from "./constants";
 
 const AnimatedBackgroundCanvas: FC = () => {
   const lozenges = useRef<CanvasLozenge[] | null>(null);
@@ -47,17 +47,17 @@ const AnimatedBackgroundCanvas: FC = () => {
 
     const containerScale = boundingClientRect.width / containerWidth;
 
-    const context = canvasRef.current.getContext('2d', { alpha: false });
+    const context = canvasRef.current.getContext("2d", { alpha: false });
     if (!context || !containerScale) {
       return;
     }
     const scale = window?.devicePixelRatio || 1;
     context.setTransform(1, 0, 0, 1, 0, 0);
     context.scale(scale, scale);
-    context.globalCompositeOperation = 'source-over';
-    context.fillStyle = '#f7f6f1';
+    context.globalCompositeOperation = "source-over";
+    context.fillStyle = "#f7f6f1";
     context.fillRect(0, 0, boundingClientRect.width, boundingClientRect.height);
-    context.globalCompositeOperation = 'multiply';
+    context.globalCompositeOperation = "multiply";
     lozenges.current.forEach((lozenge) => {
       lozenge.setProps({
         containerScale,

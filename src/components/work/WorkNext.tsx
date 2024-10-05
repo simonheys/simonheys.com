@@ -1,11 +1,11 @@
-import { useRouter } from 'next/router';
-import { FC } from 'react';
+import { useRouter } from "next/router";
+import { FC } from "react";
 
-import { getNextPortfolioPageForPath } from '../../modules/content';
-import AppearWhenInView from '../ui/AppearWhenInView';
+import { getNextPortfolioPageForPath } from "../../modules/content";
+import AppearWhenInView from "../ui/AppearWhenInView";
 
-import WorkGridCell from './grid/WorkGridCell';
-import styles from './WorkNext.module.scss';
+import WorkGridCell from "./grid/WorkGridCell";
+import styles from "./WorkNext.module.scss";
 
 const WorkNext: FC = () => {
   const router = useRouter();
@@ -15,15 +15,15 @@ const WorkNext: FC = () => {
   }
   return (
     <AppearWhenInView>
-      <div className={'container-fluid'}>
-        <div className={'row gx-0 border-top'}></div>
+      <div className="container-fluid">
+        <div className="row gx-0 border-top"></div>
       </div>
-      <div className={'container-fluid pt-2 mb-5'}>
-        <div className={'row mb-5'}>
-          <div className={'col-sm-6'}>
+      <div className="container-fluid mb-5 pt-2">
+        <div className="row mb-5">
+          <div className="col-sm-6">
             <div className={styles.title}>Next</div>
           </div>
-          <div className={'col-sm-6'}>
+          <div className="col-sm-6">
             <WorkGridCell page={nextPage} />
           </div>
         </div>

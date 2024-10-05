@@ -1,15 +1,15 @@
-import { ComponentProps, FC } from 'react';
-import ReactMarkdown from 'react-markdown';
+import { ComponentProps, FC } from "react";
+import ReactMarkdown from "react-markdown";
 
-import { ComponentKey, MappedComponent } from '../Components';
-import ImageFadeIn from '../ui/ImageFadeIn';
-import TextLinks from '../ui/TextLinks';
-import VideoFadeIn from '../ui/VideoFadeIn';
+import { ComponentKey, MappedComponent } from "../Components";
+import ImageFadeIn from "../ui/ImageFadeIn";
+import TextLinks from "../ui/TextLinks";
+import VideoFadeIn from "../ui/VideoFadeIn";
 
-import styles from './WorkRowCol.module.scss';
+import styles from "./WorkRowCol.module.scss";
 
 export interface WorkRowColProps
-  extends Omit<ComponentProps<typeof MappedComponent>, 'type'> {
+  extends Omit<ComponentProps<typeof MappedComponent>, "type"> {
   type?: ComponentKey;
   col?: number | string;
   text?: string;
@@ -42,14 +42,14 @@ const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
     youTubeId,
     vimeoId,
     color,
-    title = '',
+    title = "",
     aspect,
   } = rest;
 
   if (text) {
     return (
       <>
-        <div className={'col-md-6'}></div>
+        <div className="col-md-6"></div>
         <div className={`${styles.container} col-md-6`}>
           <div className={styles.textContainer}>
             <div className={styles.text}>

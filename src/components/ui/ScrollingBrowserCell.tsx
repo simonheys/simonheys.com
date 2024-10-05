@@ -1,17 +1,17 @@
-import { interpolate, easeInOut, animate, PlaybackControls } from 'popmotion';
-import { FC, useState, useRef, useEffect, useMemo } from 'react';
+import { PlaybackControls, animate, easeInOut, interpolate } from "popmotion";
+import { FC, useEffect, useMemo, useRef, useState } from "react";
 
-import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
-import useWindowSize from '../../hooks/useWindowSize';
-import * as contentModule from '../../modules/content';
+import useBoundingClientRectInView from "../../hooks/useBoundingClientRectInView";
+import useWindowSize from "../../hooks/useWindowSize";
+import * as contentModule from "../../modules/content";
 
-import ImageResponsive from './ImageResponsive';
-import styles from './ScrollingBrowserCell.module.scss';
+import ImageResponsive from "./ImageResponsive";
+import styles from "./ScrollingBrowserCell.module.scss";
 
 const MASK_ATTRIBUTES = {
   default: {
     svg: {
-      src: 'ui/browser-mask.svg',
+      src: "ui/browser-mask.svg",
       width: 1600,
       height: 900,
     },
@@ -22,9 +22,9 @@ const MASK_ATTRIBUTES = {
       height: 728,
     },
   },
-  'col-6': {
+  "col-6": {
     svg: {
-      src: 'ui/col-6-browser-mask.svg',
+      src: "ui/col-6-browser-mask.svg",
       width: 942,
       height: 1080,
     },
@@ -35,9 +35,9 @@ const MASK_ATTRIBUTES = {
       height: 912 - 40,
     },
   },
-  'col-6-phone': {
+  "col-6-phone": {
     svg: {
-      src: 'ui/col-6-phone-mask.svg',
+      src: "ui/col-6-phone-mask.svg",
       width: 942,
       height: 1080,
     },
@@ -61,7 +61,7 @@ export interface ScrollingBrowserCellProps {
 const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
   src,
   system,
-  mask: maskKey = 'default',
+  mask: maskKey = "default",
   maskSrc,
   drivenByScroll = false,
 }) => {
@@ -133,7 +133,7 @@ const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
           onUpdate: setInterpolationValue,
           repeat: Infinity,
           repeatDelay: 1000,
-          repeatType: 'reverse',
+          repeatType: "reverse",
         });
       }
       if (!inView && animateRef.current) {
@@ -222,17 +222,17 @@ const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
     >
       <div className={styles.container}>
         <div className={styles.imageContainer} style={style}>
-          {src && <ImageResponsive src={src} alt={''} />}
+          {src && <ImageResponsive src={src} alt="" />}
           {system &&
             systemStyles &&
             system.map((image, index) => (
               <div key={index} style={systemStyles[index]}>
-                <ImageResponsive src={image} alt={''} priority />
+                <ImageResponsive src={image} alt="" priority />
               </div>
             ))}
         </div>
         <div className={styles.maskContainer}>
-          <ImageResponsive src={svgSrc} alt={''} priority />
+          <ImageResponsive src={svgSrc} alt="" priority />
         </div>
       </div>
     </div>

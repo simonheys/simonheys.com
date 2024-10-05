@@ -1,9 +1,9 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import AppearWhenInView from '../ui/AppearWhenInView';
-import Caption from '../ui/Caption';
+import AppearWhenInView from "../ui/AppearWhenInView";
+import Caption from "../ui/Caption";
 
-import WorkRowCol, { WorkRowColProps } from './WorkRowCol';
+import WorkRowCol, { WorkRowColProps } from "./WorkRowCol";
 
 export interface WorkRowProps extends WorkRowColProps {
   columns: WorkRowColProps[];
@@ -13,8 +13,8 @@ export interface WorkRowProps extends WorkRowColProps {
 const WorkRow: FC<WorkRowProps> = ({ columns, caption, ...rest }) => {
   return (
     <AppearWhenInView>
-      <div className={'container-fluid'}>
-        <div className={'row'}>
+      <div className="container-fluid">
+        <div className="row">
           {columns ? (
             columns.map((column, index: number) => {
               return <WorkRowCol {...column} key={index} />;

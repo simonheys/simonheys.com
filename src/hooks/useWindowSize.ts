@@ -1,14 +1,14 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useState } from "react";
 
 export interface WindowSize
   extends Pick<
       Window,
-      'innerWidth' | 'innerHeight' | 'outerWidth' | 'outerHeight'
+      "innerWidth" | "innerHeight" | "outerWidth" | "outerHeight"
     >,
-    Pick<HTMLElement, 'clientWidth' | 'clientHeight'> {}
+    Pick<HTMLElement, "clientWidth" | "clientHeight"> {}
 
 const getWindowSize = (): WindowSize | null => {
-  if (typeof window === 'undefined') {
+  if (typeof window === "undefined") {
     return null;
   }
   const { innerWidth, innerHeight, outerWidth, outerHeight } = window;
@@ -33,9 +33,9 @@ const useWindowSize = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener('resize', updateWindowSize);
+    window.addEventListener("resize", updateWindowSize);
     return () => {
-      window.removeEventListener('resize', updateWindowSize);
+      window.removeEventListener("resize", updateWindowSize);
     };
   }, [updateWindowSize]);
 

@@ -15,10 +15,10 @@ components:
     columns:
       - col: 6
         vimeoId: 581240797
-        color: '#4baff9'
+        color: "#4baff9"
       - col: 6
         vimeoId: 581266972
-        color: '#0072c6'
+        color: "#0072c6"
   - type: work-row
     columns:
       - src: portfolio/hark/hark-col-6-tasks.jpg
@@ -46,10 +46,10 @@ components:
     columns:
       - col: 6
         vimeoId: 583890897
-        color: '#0072c6'
+        color: "#0072c6"
       - col: 6
         vimeoId: 583890934
-        color: '#4baff9'
+        color: "#4baff9"
   - type: work-row
     columns:
       - text: Hark was acquired by Google DeepMind.

@@ -7,7 +7,7 @@ components:
     subtitle: I was lead product designer of a team creating an innovative global app platform to help manage and prevent deteriorating eye health.
   - type: work-row
     vimeoId: 591542408
-    color: '#d9eef6'
+    color: "#d9eef6"
   - type: work-row
     columns:
       - text: Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition.

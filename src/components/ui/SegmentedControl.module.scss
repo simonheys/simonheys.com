@@ -1,7 +1,7 @@
-@import '~/src/styles/use-bootstrap';
+@import "~/src/styles/use-bootstrap";
 
 .container {
-  composes: panel from '~/src/styles/ui.scss';
+  composes: panel from "~/src/styles/ui.scss";
   composes: global(m-0);
   composes: global(p-0);
   display: inline-flex;
@@ -47,7 +47,7 @@
 }
 
 .active {
-  composes: panelBorderRadius from '~/src/styles/ui.scss';
+  composes: panelBorderRadius from "~/src/styles/ui.scss";
   position: absolute;
   top: 0;
   right: 0;
@@ -55,5 +55,5 @@
   left: 0;
   z-index: 1;
   background-color: var(--panel-hover-color);
-  content: '';
+  content: "";
 }

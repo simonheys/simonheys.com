@@ -5,28 +5,28 @@ meta:
     - London, UK
   portfolio:
     pages:
-      - path: '/portfolio/mykrobe'
-      - path: '/portfolio/theguardian'
-      - path: '/portfolio/wordclock'
-      - path: '/portfolio/hark'
-      - path: '/portfolio/fathm'
-      - path: '/portfolio/sps'
-      - path: '/portfolio/visioncoach'
-      - path: '/portfolio/minimalfolio'
+      - path: "/portfolio/mykrobe"
+      - path: "/portfolio/theguardian"
+      - path: "/portfolio/wordclock"
+      - path: "/portfolio/hark"
+      - path: "/portfolio/fathm"
+      - path: "/portfolio/sps"
+      - path: "/portfolio/visioncoach"
+      - path: "/portfolio/minimalfolio"
   case-studies:
     pages:
-      - path: '/case-studies/mykrobe'
-      - path: '/case-studies/sps'
-      - path: '/case-studies/hark'
+      - path: "/case-studies/mykrobe"
+      - path: "/case-studies/sps"
+      - path: "/case-studies/hark"
 all:
   header:
     type: header
     links:
-      - '/portfolio'
-      - '/about'
+      - "/portfolio"
+      - "/about"
   before: []
   after:
-    - exclude: ['^/$', '/about', '/case-studies', '/blog*']
+    - exclude: ["^/$", "/about", "/case-studies", "/blog*"]
       type: work-header
       title: About
       ruled: true
@@ -36,5 +36,5 @@ all:
         - text: Read more
           url: /about
     - type: footer
-      exclude: ['^/$']
+      exclude: ["^/$"]
       text: Copyright © Studio Heys Limited · Registered in England №07360731

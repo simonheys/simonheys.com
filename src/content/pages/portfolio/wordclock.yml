@@ -12,7 +12,7 @@ components:
         url: https://github.com/simonheys/wordclock
   - type: work-row
     vimeoId: 594477120
-    color: '#000000'
+    color: "#000000"
   - type: work-row
     columns:
       - type: word-clock-cell

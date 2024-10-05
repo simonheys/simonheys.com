@@ -1,14 +1,14 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import styles from './WordClockCell.module.scss';
-import WordClockEditable, { WordClockEditableProps } from './WordClockEditable';
+import styles from "./WordClockCell.module.scss";
+import WordClockEditable, { WordClockEditableProps } from "./WordClockEditable";
 
 export interface WordClockCellProps extends WordClockEditableProps {
   col: string | number;
 }
 
 const WordClockCell: FC<WordClockCellProps> = ({
-  col = 'default',
+  col = "default",
   ...rest
 }) => {
   return (

@@ -1,7 +1,7 @@
-import { motion, LayoutGroup } from 'framer-motion';
-import { FC, ReactNode } from 'react';
+import { LayoutGroup, motion } from "framer-motion";
+import { FC, ReactNode } from "react";
 
-import styles from './SegmentedControl.module.scss';
+import styles from "./SegmentedControl.module.scss";
 
 export interface SegmentedControlProps {
   options: {
@@ -37,7 +37,7 @@ const SegmentedControl: FC<SegmentedControlProps> = ({
                   <motion.div
                     layoutId="SegmentedControlActive"
                     className={styles.active}
-                    transition={{ duration: 0.5, type: 'spring' }}
+                    transition={{ duration: 0.5, type: "spring" }}
                   />
                 )}
                 <div className={styles.label}>{item.title}</div>

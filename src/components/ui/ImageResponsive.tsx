@@ -1,17 +1,17 @@
-import Image, { ImageProps } from 'next/image';
-import { FC, useMemo } from 'react';
+import Image, { ImageProps } from "next/image";
+import { FC, useMemo } from "react";
 
-import { getPropertiesForImage } from '../../modules/content';
+import { getPropertiesForImage } from "../../modules/content";
 
-interface ImageResponsiveProps extends ImageProps {
+export interface ImageResponsiveProps extends ImageProps {
   src: string;
 }
 
-const css = { width: '100%', height: 'auto' };
+const css = { width: "100%", height: "auto" };
 
 const ImageResponsive: FC<ImageResponsiveProps> = ({
   src,
-  alt = '',
+  alt = "",
   ...rest
 }) => {
   const { width, height } = useMemo(() => {

@@ -1,15 +1,15 @@
-import { FC } from 'react';
+import { FC } from "react";
 
-import { getMeta, getPageForPath } from '../../../modules/content';
-import AppearWhenInView from '../../ui/AppearWhenInView';
+import { getMeta, getPageForPath } from "../../../modules/content";
+import AppearWhenInView from "../../ui/AppearWhenInView";
 
-import WorkGridCell from './WorkGridCell';
+import WorkGridCell from "./WorkGridCell";
 
 const WorkGrid: FC = () => {
   const pages = getMeta().portfolio.pages;
   return (
-    <div className={'container-fluid mb-3 mb-md-4'}>
-      <div className={'row'}>
+    <div className="container-fluid mb-md-4 mb-3">
+      <div className="row">
         {pages.map((entry, index) => {
           const { path } = entry;
           const page = getPageForPath(path);
@@ -19,7 +19,7 @@ const WorkGrid: FC = () => {
           return (
             <AppearWhenInView
               key={`work-grid-${path}-${index}`}
-              className={'col-md-6 mb-3 mb-md-4'}
+              className="col-md-6 mb-md-4 mb-3"
             >
               <WorkGridCell page={page} />
             </AppearWhenInView>

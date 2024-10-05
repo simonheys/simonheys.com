@@ -1,9 +1,9 @@
-import { FC, Fragment, useRef, useCallback, useEffect, useMemo } from 'react';
+import { FC, Fragment, useCallback, useEffect, useMemo, useRef } from "react";
 
-import preventWindowScroll from '../../../utils/preventWindowScroll';
-import { Circle } from '../../ui/icons';
+import preventWindowScroll from "../../../utils/preventWindowScroll";
+import { Circle } from "../../ui/icons";
 
-import styles from './WordsPickerControls.module.scss';
+import styles from "./WordsPickerControls.module.scss";
 
 export interface WordsPickerControlsProps {
   wordsCollection: {
@@ -26,8 +26,8 @@ const WordsPickerControls: FC<WordsPickerControlsProps> = ({
   const scrollIntoView = useCallback(() => {
     preventWindowScroll(() => {
       selectedRef?.current?.scrollIntoView({
-        behavior: 'auto',
-        block: 'center',
+        behavior: "auto",
+        block: "center",
       });
     });
   }, []);

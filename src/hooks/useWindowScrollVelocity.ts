@@ -1,6 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from "react";
 
-import useAnimationFrame from './useAnimationFrame';
+import useAnimationFrame from "./useAnimationFrame";
 
 export interface WindowScrollVelocity {
   timeStamp: number;
@@ -17,7 +17,7 @@ export interface WindowScrollVelocity {
 const getWindowScroll = (): WindowScrollVelocity => {
   let scrollX = 0;
   let scrollY = 0;
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     scrollX = window.scrollX;
     scrollY = window.scrollY;
   }
@@ -29,9 +29,8 @@ const getWindowScroll = (): WindowScrollVelocity => {
 };
 
 const useWindowScrollVelocity = () => {
-  const [windowScroll, setWindowScroll] = useState<WindowScrollVelocity>(
-    getWindowScroll(),
-  );
+  const [windowScroll, setWindowScroll] =
+    useState<WindowScrollVelocity>(getWindowScroll());
   const elapsedMilliseconds = useAnimationFrame();
   const previousScroll = useRef(getWindowScroll());
 

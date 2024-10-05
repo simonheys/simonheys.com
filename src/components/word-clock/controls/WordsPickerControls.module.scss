@@ -1,8 +1,8 @@
-@import '~/src/styles/use-bootstrap';
+@import "~/src/styles/use-bootstrap";
 
 .container {
-  composes: panel from '~/src/styles/ui.scss';
-  composes: panelShadow from '~/src/styles/ui.scss';
+  composes: panel from "~/src/styles/ui.scss";
+  composes: panelShadow from "~/src/styles/ui.scss";
   composes: global(p-2);
   display: flex;
   flex: 1;
@@ -38,7 +38,7 @@
   display: flex;
   flex-direction: column;
   &:after {
-    content: '';
+    content: "";
     display: flex;
     flex: 1;
     border-bottom: 1px solid var(--gray-200);
@@ -53,8 +53,8 @@
 }
 
 .wordsCollectionFile {
-  composes: panelBorderRadius from '~/src/styles/ui.scss';
-  composes: panelHover from '~/src/styles/ui.scss';
+  composes: panelBorderRadius from "~/src/styles/ui.scss";
+  composes: panelHover from "~/src/styles/ui.scss";
   composes: global(p-2);
   display: flex;
   flex: 1;

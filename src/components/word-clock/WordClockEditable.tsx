@@ -1,27 +1,28 @@
-import { WordClock } from '@simonheys/wordclock';
-import { AnimatePresence, motion } from 'framer-motion';
+import { WordClock } from "@simonheys/wordclock";
+import "@simonheys/wordclock/style.css";
+import { AnimatePresence, motion } from "framer-motion";
 import {
   FC,
-  useState,
+  MouseEvent as ReactMouseEvent,
   useCallback,
   useEffect,
   useMemo,
-  MouseEvent as ReactMouseEvent,
-} from 'react';
-import useSWR from 'swr';
-import '@simonheys/wordclock/style.css';
+  useState,
+} from "react";
+import useSWR from "swr";
 
-import useBoundingClientRect from '../../hooks/useBoundingClientRect';
-import useClickOutside from '../../hooks/useClickOutside';
-import useFullscreen from '../../hooks/useFullscreen';
-import isTouchDevice from '../../utils/isTouchDevice';
+import useBoundingClientRect from "../../hooks/useBoundingClientRect";
+import useClickOutside from "../../hooks/useClickOutside";
+import useFullscreen from "../../hooks/useFullscreen";
+import isTouchDevice from "../../utils/isTouchDevice";
 
-import DefaultControls from './controls/DefaultControls';
-import WordsPickerControls from './controls/WordsPickerControls';
-import fetcher from './utils/fetcher';
-import styles from './WordClockEditable.module.scss';
+import DefaultControls from "./controls/DefaultControls";
+import WordsPickerControls from "./controls/WordsPickerControls";
+import fetcher from "./utils/fetcher";
+import styles from "./WordClockEditable.module.scss";
 
-const fileDefault = 'English_simple_fragmented.json';
+const fileDefault = "English_simple_fragmented.json";
+// eslint-disable-next-line @typescript-eslint/no-var-requires
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
 
 export interface WordClockEditableProps {
@@ -101,11 +102,11 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
   );
   const { ref: clickRef } = useClickOutside(onClickOutside);
 
-  const { data: wordsCollection } = useSWR('/api/words', fetcher);
+  const { data: wordsCollection } = useSWR("/api/words", fetcher);
   const { data: words } = useSWR(`/api/words/${file}`, fetcher);
 
   const onToggleWordsOpen = useCallback(
-    (e: MouseEvent) => {
+    (e: ReactMouseEvent) => {
       e.stopPropagation();
       setWordsPickerControlsVisible(!wordsPickerControlsVisible);
     },
@@ -141,7 +142,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       return;
     }
     return {
-      width: boundingClientRect.width >= 320 ? boundingClientRect.width : '95%',
+      width: boundingClientRect.width >= 320 ? boundingClientRect.width : "95%",
     };
   }, [boundingClientRect?.width]);
 
@@ -176,12 +177,12 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
           <AnimatePresence>
             {wordsPickerControlsVisible && (
               <motion.div
-                key={`wordsPickerControlsContainer`}
+                key="wordsPickerControlsContainer"
                 className={styles.wordsPickerControlsContainer}
                 exit={{ opacity: 0, y: 20, scale: 0.975 }}
                 initial={{ opacity: 0, y: 20, scale: 0.975 }}
                 animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.3, type: 'spring' }}
+                transition={{ duration: 0.3, type: "spring" }}
                 style={style}
               >
                 <WordsPickerControls
@@ -193,7 +194,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
             )}
             {controlsVisible && (
               <motion.div
-                key={`defaultControlsContainer`}
+                key="defaultControlsContainer"
                 className={styles.defaultControlsContainer}
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}

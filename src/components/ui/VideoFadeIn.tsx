@@ -1,11 +1,11 @@
-import VimeoPlayer from '@vimeo/player';
-import { motion, useAnimation } from 'framer-motion';
-import { FC, useState, useRef, useEffect, useMemo, useCallback } from 'react';
+import VimeoPlayer from "@vimeo/player";
+import { motion, useAnimation } from "framer-motion";
+import { FC, useCallback, useEffect, useMemo, useRef, useState } from "react";
 
-import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
-import isTouchDevice from '../../utils/isTouchDevice';
+import useBoundingClientRectInView from "../../hooks/useBoundingClientRectInView";
+import isTouchDevice from "../../utils/isTouchDevice";
 
-import styles from './VideoFadeIn.module.scss';
+import styles from "./VideoFadeIn.module.scss";
 
 export interface VideoFadeInProps {
   vimeoId?: string;
@@ -38,7 +38,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
     : `https://www.youtube.com/embed/${youTubeId}?muted=1&loop=1&autoplay=1&autopause=0`;
 
   const onLoadingComplete = useCallback(() => {
-    controls.start('visible');
+    controls.start("visible");
   }, [controls]);
 
   const setRef = useCallback(
@@ -49,7 +49,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
       ref.current = nextRef;
       if (ref.current) {
         vimeoPlayer.current = new VimeoPlayer(ref.current);
-        vimeoPlayer.current.on('play', onLoadingComplete);
+        vimeoPlayer.current.on("play", onLoadingComplete);
       }
     },
     [onLoadingComplete],
@@ -57,12 +57,12 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
 
   const containerStyle = useMemo(() => {
     const aspect = aspectProp
-      ? typeof aspectProp === 'string'
+      ? typeof aspectProp === "string"
         ? parseFloat(aspectProp)
         : aspectProp
       : col === 6
-      ? 1080 / 942
-      : 1080 / 1920;
+        ? 1080 / 942
+        : 1080 / 1920;
     const style = {
       paddingBottom: `${100 * aspect}%`,
       backgroundColor: color,

@@ -95,7 +95,7 @@ components:
       - src: portfolio/hark/hark-col-6-task-entry.jpg
       - col: 6
         vimeoId: 581240797
-        color: '#4baff9'
+        color: "#4baff9"
     caption: Left - custom 2D ‘Select’ input was found to be a great improvement over the default 3D ‘spinner’. Right - thanks to custom controls the user is able to fill the form purely with the keyboard
   - type: prose
     ruled: true
@@ -173,10 +173,10 @@ components:
     columns:
       - col: 6
         vimeoId: 583890897
-        color: '#0072c6'
+        color: "#0072c6"
       - col: 6
         vimeoId: 583890934
-        color: '#4baff9'
+        color: "#4baff9"
   - type: work-row
     src: case-studies/hark/hark-devices.jpg
   - type: prose

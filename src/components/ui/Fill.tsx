@@ -1,8 +1,8 @@
-import { FC, PropsWithChildren, useState, useEffect } from 'react';
+import { FC, PropsWithChildren, useEffect, useState } from "react";
 
-import useWindowSize from '../../hooks/useWindowSize';
+import useWindowSize from "../../hooks/useWindowSize";
 
-import styles from './Fill.module.scss';
+import styles from "./Fill.module.scss";
 
 const Fill: FC<PropsWithChildren> = ({ children }) => {
   const windowSize = useWindowSize();

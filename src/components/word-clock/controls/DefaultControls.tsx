@@ -1,18 +1,18 @@
-import { FC } from 'react';
+import { FC, ReactEventHandler } from "react";
 
-import { ChevronDown, FullScreen } from '../../ui/icons';
-import Link from '../../ui/Link';
+import { ChevronDown, FullScreen } from "../../ui/icons";
+import Link from "../../ui/Link";
 
-import styles from './DefaultControls.module.scss';
-import DefaultControlsItem from './DefaultControlsItem';
+import styles from "./DefaultControls.module.scss";
+import DefaultControlsItem from "./DefaultControlsItem";
 
 export interface DefaultControlsProps {
   title: boolean;
   source: boolean;
   download: boolean;
   wordsOpen: boolean;
-  onToggleWordsOpen: (event: MouseEvent) => void;
-  onFullscreen: (event: MouseEvent) => void;
+  onToggleWordsOpen: ReactEventHandler;
+  onFullscreen: ReactEventHandler;
 }
 
 const DefaultControls: FC<DefaultControlsProps> = ({
@@ -26,7 +26,7 @@ const DefaultControls: FC<DefaultControlsProps> = ({
   return (
     <div className={styles.container}>
       {title && (
-        <DefaultControlsItem Tag={Link} href="/wordclock">
+        <DefaultControlsItem as={Link} href="/wordclock">
           Word Clock
         </DefaultControlsItem>
       )}
@@ -35,7 +35,7 @@ const DefaultControls: FC<DefaultControlsProps> = ({
       </DefaultControlsItem>
       {download && (
         <DefaultControlsItem
-          Tag={'a'}
+          as="a"
           href="https://github.com/simonheys/wordclock/releases"
           target="_blank"
           rel="noreferrer"
@@ -45,7 +45,7 @@ const DefaultControls: FC<DefaultControlsProps> = ({
       )}
       {source && (
         <DefaultControlsItem
-          Tag={'a'}
+          as="a"
           href="https://github.com/simonheys/wordclock"
           target="_blank"
           rel="noreferrer"

@@ -1,11 +1,11 @@
-import { motion } from 'framer-motion';
-import { FC } from 'react';
+import { motion } from "framer-motion";
+import { FC } from "react";
 
-import { Page } from '../../../modules/content';
-import ImageFadeIn from '../../ui/ImageFadeIn';
-import Link from '../../ui/Link';
+import { Page } from "../../../modules/content";
+import ImageFadeIn from "../../ui/ImageFadeIn";
+import Link from "../../ui/Link";
 
-import styles from './WorkGridCell.module.scss';
+import styles from "./WorkGridCell.module.scss";
 
 export interface WorkGridCellProps {
   page: Page;
@@ -29,11 +29,11 @@ const WorkGridCell: FC<WorkGridCellProps> = ({ page }) => {
           transition={{ duration: 0.1 }}
           className={styles.container}
         >
-          <ImageFadeIn src={src} alt={title || ''} />
+          <ImageFadeIn src={src} alt={title || ""} />
         </motion.div>
       </div>
       <div className={styles.caption}>
-        <span className={styles.title}>{title}</span>{' '}
+        <span className={styles.title}>{title}</span>{" "}
         <span className={styles.subtitle}>{subtitle}</span>
       </div>
     </Link>

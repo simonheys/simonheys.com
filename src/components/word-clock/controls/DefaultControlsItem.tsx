@@ -1,36 +1,37 @@
-import clsx from 'clsx';
-import { FC } from 'react';
+import clsx from "clsx";
+import { ComponentPropsWithoutRef, ElementType } from "react";
 
-import styles from './DefaultControlsItem.module.scss';
+import styles from "./DefaultControlsItem.module.scss";
 
-export interface DefaultControlsItemProps {
+export interface DefaultControlsItemProps<T extends ElementType = "div"> {
+  as?: T;
   className?: string;
-  Tag?: any;
   active?: boolean;
   disabled?: boolean;
-  // ...rest
-  [x: string]: any;
 }
 
-const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
+const DefaultControlsItem = <T extends ElementType = "div">({
+  as,
   className,
-  Tag = 'div',
   active = false,
   disabled = false,
   ...rest
-}) => {
+}: DefaultControlsItemProps<T> &
+  Omit<ComponentPropsWithoutRef<T>, keyof DefaultControlsItemProps<T>>) => {
+  const Component = as || "div";
+
   return (
-    <Tag
+    <Component
       className={clsx(
         disabled
           ? styles.containerDisabled
           : active
-          ? styles.containerActive
-          : styles.container,
+            ? styles.containerActive
+            : styles.container,
         className,
       )}
       {...rest}
-    ></Tag>
+    />
   );
 };
 

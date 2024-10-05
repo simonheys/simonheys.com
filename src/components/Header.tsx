@@ -1,12 +1,12 @@
-import { useRouter } from 'next/router';
-import { FC, useEffect, useMemo, useState } from 'react';
+import { useRouter } from "next/router";
+import { FC, useEffect, useMemo, useState } from "react";
 
-import useBoundingClientRect from '../hooks/useBoundingClientRect';
-import useWindowScrollVelocity from '../hooks/useWindowScrollVelocity';
-import { getPageForPath } from '../modules/content';
+import useBoundingClientRect from "../hooks/useBoundingClientRect";
+import useWindowScrollVelocity from "../hooks/useWindowScrollVelocity";
+import { getPageForPath } from "../modules/content";
 
-import styles from './Header.module.scss';
-import Link from './ui/Link';
+import styles from "./Header.module.scss";
+import Link from "./ui/Link";
 
 export interface HeaderProps {
   links: string[];
@@ -67,7 +67,7 @@ const Header: FC<HeaderProps> = ({ links }) => {
     }
     if (boundingClientRect) {
       return {
-        display: fixed ? 'block' : 'none',
+        display: fixed ? "block" : "none",
         height: boundingClientRect.height,
       };
     }
@@ -99,18 +99,14 @@ const Header: FC<HeaderProps> = ({ links }) => {
         }
         style={navigationContainerStyle}
       >
-        <div ref={ref} className={'container-fluid'}>
-          <div
-            className={
-              'row justify-content-between justify-content-md-end py-4 py-md-5'
-            }
-          >
-            <div className={'col'}>
-              <h1 data-tid={'title'} className={styles.title}>
+        <div ref={ref} className="container-fluid">
+          <div className="row justify-content-between justify-content-md-end py-md-5 py-4">
+            <div className="col">
+              <h1 data-tid="title" className={styles.title}>
                 <Link href="/">Simon Heys</Link>
               </h1>
             </div>
-            <div className={'col'} data-tid={'navigation'}>
+            <div className="col" data-tid="navigation">
               <div className={styles.linksContainer}>
                 {links.map((path, index) => {
                   const page = getPageForPath(path);

@@ -1,22 +1,23 @@
-import { FC, useState, useCallback, useEffect } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { FC, useCallback, useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
-import preventWindowScroll from '../../../utils/preventWindowScroll';
-import AppearWhenInView from '../../ui/AppearWhenInView';
-import Caption from '../../ui/Caption';
-import SegmentedControl from '../../ui/SegmentedControl';
+import preventWindowScroll from "../../../utils/preventWindowScroll";
+import AppearWhenInView from "../../ui/AppearWhenInView";
+import Caption from "../../ui/Caption";
+import SegmentedControl from "../../ui/SegmentedControl";
 
-import { CardItemPostType } from './CardItem';
+import { CardItemPostType } from "./CardItem";
 import CardsCollectionBlock, {
   mapLayoutPropToLayout,
-} from './CardsCollectionBlock';
-import styles from './SPSCollection.module.scss';
+} from "./CardsCollectionBlock";
+import styles from "./SPSCollection.module.scss";
 
-const collection: CardItemPostType[] = require('./json/collection.json');
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const collection: CardItemPostType[] = require("./json/collection.json");
 
 type Key = keyof typeof mapLayoutPropToLayout;
 
-const orderedValues: Key[] = ['4of2', 4, '4over4', '3over4', '2over4'];
+const orderedValues: Key[] = ["4of2", 4, "4over4", "3over4", "2over4"];
 
 const options = orderedValues.map((value) => {
   return {
@@ -68,7 +69,7 @@ const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
 
   return (
     <AppearWhenInView>
-      <div className={'container-fluid mb-3 mb-md-4'}>
+      <div className="container-fluid mb-md-4 mb-3">
         <div className={styles.containerSizer}>
           <div ref={ref} className={styles.container}>
             <div className={styles.collectionContainer}>
@@ -89,7 +90,7 @@ const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
         </div>
       </div>
       {caption && (
-        <div className={'container-fluid'}>
+        <div className="container-fluid">
           <Caption caption={caption} />
         </div>
       )}

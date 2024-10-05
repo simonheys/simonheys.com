@@ -1,6 +1,6 @@
-import { motion, useAnimation } from 'framer-motion';
-import { useRef, useCallback, useEffect, PropsWithChildren, FC } from 'react';
-import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from "framer-motion";
+import { FC, PropsWithChildren, useCallback, useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 
 export interface AppearWhenInViewProps extends PropsWithChildren {
   className?: string;
@@ -17,7 +17,7 @@ export const AppearWhenInView: FC<AppearWhenInViewProps> = (props) => {
 
   const checkInView = useCallback(() => {
     if (inView) {
-      controls.start('visible');
+      controls.start("visible");
     }
   }, [controls, inView]);
 

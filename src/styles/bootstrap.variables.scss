@@ -1,17 +1,17 @@
 $font-family-sans-serif:
   system-ui,
   -apple-system,
-  'Segoe UI',
+  "Segoe UI",
   Roboto,
-  'Helvetica Neue',
+  "Helvetica Neue",
   Arial,
-  'Noto Sans',
-  'Liberation Sans',
+  "Noto Sans",
+  "Liberation Sans",
   sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol',
-  'Noto Color Emoji' !default;
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji" !default;
 $paragraph-margin-bottom: 1em;
 
 $link-decoration: none;
@@ -19,4 +19,4 @@ $link-decoration: none;
 $enable-smooth-scroll: false;
 
 // remove the --bs prefix on css variables
-$variable-prefix: '';
+$variable-prefix: "";
