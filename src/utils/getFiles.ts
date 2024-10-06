@@ -1,13 +1,13 @@
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
 
-const visibleFileName = (fileName: string) => !fileName.startsWith(".");
+const visibleFileName = (fileName: string) => !fileName.startsWith('.');
 const filePathIsDirectory = (filePath: string) =>
   fs.statSync(filePath).isDirectory();
 
 const getFiles = (
   dirPath: string,
-  baseDir = "./",
+  baseDir = './',
   filesArray: string[] = [],
 ): string[] => {
   const files = fs.readdirSync(path.join(baseDir, dirPath));

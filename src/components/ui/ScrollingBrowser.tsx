@@ -1,12 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
 
 import ScrollingBrowserCell, {
   ScrollingBrowserCellProps,
-} from "./ScrollingBrowserCell";
+} from './ScrollingBrowserCell';
 
 const ScrollingBrowser: FC<ScrollingBrowserCellProps> = (props) => {
   return (
-    <div className="container-fluid mb-md-4 mb-3">
+    <div className="containerAlias mb-6">
       <ScrollingBrowserCell {...props} />
     </div>
   );

@@ -1,6 +1,9 @@
-import { WordClock } from "@simonheys/wordclock";
-import "@simonheys/wordclock/style.css";
-import { AnimatePresence, motion } from "framer-motion";
+import {
+  WordClock,
+  WordClockContent,
+  WordClockWordProps,
+} from '@simonheys/wordclock';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   FC,
   MouseEvent as ReactMouseEvent,
@@ -8,20 +11,24 @@ import {
   useEffect,
   useMemo,
   useState,
-} from "react";
-import useSWR from "swr";
+} from 'react';
+import useSWR from 'swr';
 
-import useBoundingClientRect from "../../hooks/useBoundingClientRect";
-import useClickOutside from "../../hooks/useClickOutside";
-import useFullscreen from "../../hooks/useFullscreen";
-import isTouchDevice from "../../utils/isTouchDevice";
+import useBoundingClientRect from '../../hooks/useBoundingClientRect';
+import useClickOutside from '../../hooks/useClickOutside';
+import useFullscreen from '../../hooks/useFullscreen';
+import isTouchDevice from '../../utils/isTouchDevice';
 
-import DefaultControls from "./controls/DefaultControls";
-import WordsPickerControls from "./controls/WordsPickerControls";
-import fetcher from "./utils/fetcher";
-import styles from "./WordClockEditable.module.scss";
+import DefaultControls from './controls/DefaultControls';
+import WordsPickerControls from './controls/WordsPickerControls';
+import fetcher from './utils/fetcher';
 
-const fileDefault = "English_simple_fragmented.json";
+import { cn } from '@/utils/cn';
+
+const MotionWordsPickerControls = motion.create(WordsPickerControls);
+const MotionDefaultControls = motion.create(DefaultControls);
+
+const fileDefault = 'English_simple_fragmented.json';
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
 
@@ -32,6 +39,19 @@ export interface WordClockEditableProps {
   download: boolean;
   source: boolean;
 }
+
+const WordClockWord: FC<WordClockWordProps> = ({ highlighted, children }) => {
+  return (
+    <span
+      className={cn(
+        highlighted ? 'text-primary' : 'text-gray-400',
+        'me-[0.2em] transition-colors duration-150 ease-in-out',
+      )}
+    >
+      {children}
+    </span>
+  );
+};
 
 const WordClockEditable: FC<WordClockEditableProps> = ({
   file: fileProp = fileDefault,
@@ -102,7 +122,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
   );
   const { ref: clickRef } = useClickOutside(onClickOutside);
 
-  const { data: wordsCollection } = useSWR("/api/words", fetcher);
+  const { data: wordsCollection } = useSWR('/api/words', fetcher);
   const { data: words } = useSWR(`/api/words/${file}`, fetcher);
 
   const onToggleWordsOpen = useCallback(
@@ -142,29 +162,30 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       return;
     }
     return {
-      width: boundingClientRect.width >= 320 ? boundingClientRect.width : "95%",
+      width: boundingClientRect.width >= 320 ? boundingClientRect.width : '95%',
     };
   }, [boundingClientRect?.width]);
 
   if (!editable) {
     return (
-      <div className={styles.containerSizer}>
-        <div className={styles.wordClockContainer}>
-          <WordClock words={words || wordsDefault} />
+      <div className="relative flex h-full">
+        <div className="absolute inset-0 select-none bg-background [font-feature-settings:'liga'_1,'kern'_1]">
+          <WordClock words={words || wordsDefault}>
+            <WordClockContent wordComponent={WordClockWord} />
+          </WordClock>
         </div>
       </div>
     );
   }
 
   return (
-    <div ref={clickRef} className={styles.containerSizer}>
+    <div ref={clickRef} className="relative flex h-full">
       <motion.div
         ref={fullscreenRef}
-        className={
-          isFullscreen
-            ? styles.wordClockContainerFullscreen
-            : styles.wordClockContainer
-        }
+        className={cn(
+          "absolute inset-0 select-none bg-background [font-feature-settings:'liga'_1,'kern'_1]",
+          isFullscreen && 'p-3',
+        )}
         onClick={onClick}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -172,45 +193,50 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.15 }}
       >
-        <WordClock words={words} />
-        <div className={styles.controlsContainer}>
+        <WordClock words={words} className="font-bold leading-none">
+          <WordClockContent wordComponent={WordClockWord} />
+        </WordClock>
+        <div className="absolute inset-0 hidden flex-col items-center overflow-hidden md:flex">
           <AnimatePresence>
             {wordsPickerControlsVisible && (
-              <motion.div
+              <MotionWordsPickerControls
                 key="wordsPickerControlsContainer"
-                className={styles.wordsPickerControlsContainer}
+                className="mb-2"
                 exit={{ opacity: 0, y: 20, scale: 0.975 }}
-                initial={{ opacity: 0, y: 20, scale: 0.975 }}
-                animate={{ opacity: 1, y: 0, scale: 1 }}
-                transition={{ duration: 0.3, type: "spring" }}
-                style={style}
-              >
-                <WordsPickerControls
-                  wordsCollection={wordsCollection}
-                  file={file}
-                  setFile={setFile}
-                />
-              </motion.div>
+                initial={{
+                  opacity: 0,
+                  y: 20,
+                  scale: 0.975,
+                  width: style?.width,
+                }}
+                animate={{
+                  opacity: 1,
+                  y: 0,
+                  scale: 1,
+                  width: style?.width,
+                }}
+                transition={{ duration: 0.3, type: 'spring' }}
+                wordsCollection={wordsCollection}
+                file={file}
+                setFile={setFile}
+              />
             )}
             {controlsVisible && (
-              <motion.div
+              <MotionDefaultControls
                 key="defaultControlsContainer"
-                className={styles.defaultControlsContainer}
+                className="mb-4 mt-auto"
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.2 }}
                 ref={boundingClientRectRef}
-              >
-                <DefaultControls
-                  title={title}
-                  download={download}
-                  source={source}
-                  onFullscreen={requestFullscreen}
-                  onToggleWordsOpen={onToggleWordsOpen}
-                  wordsOpen={wordsPickerControlsVisible}
-                />
-              </motion.div>
+                title={title}
+                download={download}
+                source={source}
+                onFullscreen={requestFullscreen}
+                onToggleWordsOpen={onToggleWordsOpen}
+                wordsOpen={wordsPickerControlsVisible}
+              />
             )}
           </AnimatePresence>
         </div>

@@ -1,12 +1,11 @@
-import { useRouter } from "next/router";
-import { FC } from "react";
-import ReactMarkdown from "react-markdown";
+import { useRouter } from 'next/router';
+import { FC } from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import { getPageForPath } from "../../modules/content";
-import AppearWhenInView from "../ui/AppearWhenInView";
-import TextLinks from "../ui/TextLinks";
-
-import styles from "./WorkHeader.module.scss";
+import { getPageForPath } from '../../modules/content';
+import AppearWhenInView from '../ui/AppearWhenInView';
+import { reactMarkdownComponents } from '../ui/Prose';
+import TextLinks from '../ui/TextLinks';
 
 export interface WorkHeaderProps {
   title?: string;
@@ -27,23 +26,21 @@ const WorkHeader: FC<WorkHeaderProps> = ({ title, subtitle, links, ruled }) => {
   return (
     <AppearWhenInView>
       {ruled && (
-        <div className="container-fluid">
-          <div className="row gx-0 border-top"></div>
+        <div className="containerAlias">
+          <div className="border-t"></div>
         </div>
       )}
-      <div className={ruled ? "container-fluid mb-5 pt-2" : "container-fluid"}>
-        <div className="row mb-5">
-          <div className="col-md-6">
-            <h1 className={styles.title}>
-              {title !== undefined ? title : page.title}
-            </h1>
-          </div>
-          <div className="col-md-6">
-            <div className={styles.subtitle}>
-              <ReactMarkdown>{subtitle || page.subtitle || ""}</ReactMarkdown>
-            </div>
+      <div className={ruled ? 'containerAlias pt-2' : 'containerAlias'}>
+        <div className="mb-12 sm:grid sm:grid-cols-2 sm:gap-6">
+          <h1 className="mb-2 text-4xl font-bold sm:mb-0">
+            {title !== undefined ? title : page.title}
+          </h1>
+          <div className="mb-4 text-balance text-2xl font-medium sm:mb-0">
+            <ReactMarkdown components={reactMarkdownComponents}>
+              {subtitle || page.subtitle || ''}
+            </ReactMarkdown>
             {links && (
-              <div className={styles.links}>
+              <div className="mt-2">
                 <TextLinks links={links} />
               </div>
             )}

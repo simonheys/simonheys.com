@@ -1,5 +1,5 @@
-import fs from "fs-extra";
-import prettier from "prettier";
+import fs from 'fs-extra';
+import prettier from 'prettier';
 
 export async function prettifyAndWriteFile(filepath: string, data: string) {
   const options = await prettier.resolveConfig(filepath);
@@ -7,5 +7,5 @@ export async function prettifyAndWriteFile(filepath: string, data: string) {
     ...options,
     filepath,
   });
-  await fs.writeFile(filepath, formatted, "utf8");
+  await fs.writeFile(filepath, formatted, 'utf8');
 }

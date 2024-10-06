@@ -1,9 +1,9 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from 'react';
 
 const getWindowScroll = () => {
   let scrollX = 0;
   let scrollY = 0;
-  if (typeof window !== "undefined") {
+  if (typeof window !== 'undefined') {
     scrollX = window.scrollX;
     scrollY = window.scrollY;
   }
@@ -22,9 +22,9 @@ const useWindowScroll = () => {
   }, []);
 
   useEffect(() => {
-    window.addEventListener("scroll", updateWindowScroll);
+    window.addEventListener('scroll', updateWindowScroll);
     return () => {
-      window.removeEventListener("scroll", updateWindowScroll);
+      window.removeEventListener('scroll', updateWindowScroll);
     };
   }, [updateWindowScroll]);
 

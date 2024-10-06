@@ -1,16 +1,15 @@
-import clsx from "clsx";
-import { ComponentPropsWithoutRef, ElementType } from "react";
+import { ComponentPropsWithoutRef, ElementType } from 'react';
 
-import styles from "./DefaultControlsItem.module.scss";
+import { cn } from '@/utils/cn';
 
-export interface DefaultControlsItemProps<T extends ElementType = "div"> {
+export interface DefaultControlsItemProps<T extends ElementType = 'div'> {
   as?: T;
   className?: string;
   active?: boolean;
   disabled?: boolean;
 }
 
-const DefaultControlsItem = <T extends ElementType = "div">({
+const DefaultControlsItem = <T extends ElementType = 'div'>({
   as,
   className,
   active = false,
@@ -18,16 +17,15 @@ const DefaultControlsItem = <T extends ElementType = "div">({
   ...rest
 }: DefaultControlsItemProps<T> &
   Omit<ComponentPropsWithoutRef<T>, keyof DefaultControlsItemProps<T>>) => {
-  const Component = as || "div";
+  const Component = as || 'div';
 
   return (
     <Component
-      className={clsx(
-        disabled
-          ? styles.containerDisabled
-          : active
-            ? styles.containerActive
-            : styles.container,
+      className={cn(
+        'my-1 rounded-xl px-3 py-2 text-xl font-medium text-gray-600',
+        !disabled &&
+          'cursor-pointer transition-colors duration-100 hover:text-primary',
+        active && 'border-gray-200 bg-gray-500/20 text-primary',
         className,
       )}
       {...rest}

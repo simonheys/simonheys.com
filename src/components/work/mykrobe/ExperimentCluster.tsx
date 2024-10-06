@@ -1,7 +1,7 @@
-import { colord } from "colord";
-import Graph from "graphology";
-import forceAtlas2 from "graphology-layout-forceatlas2";
-import { Attributes } from "graphology-types";
+import { colord } from 'colord';
+import Graph from 'graphology';
+import forceAtlas2 from 'graphology-layout-forceatlas2';
+import { Attributes } from 'graphology-types';
 import {
   FC,
   MouseEvent,
@@ -10,23 +10,21 @@ import {
   useMemo,
   useRef,
   useState,
-} from "react";
+} from 'react';
 
-import useAnimationFrame from "../../../hooks/useAnimationFrame";
-import useBoundingClientRectInView from "../../../hooks/useBoundingClientRectInView";
-
-import styles from "./ExperimentCluster.module.scss";
+import useAnimationFrame from '../../../hooks/useAnimationFrame';
+import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
 
 const CANVAS_MARGIN = 50;
 const MIN_RADIUS = 5;
 const MAX_RADIUS = 15;
 
 const Colors = {
-  COLOR_RULE: "#ceccc6",
-  COLOR_GREY_MID: "#9a9893",
-  COLOR_HIGHLIGHT_EXPERIMENT_FIRST: "#FF3300",
-  COLOR_HIGHLIGHT_EXPERIMENT: "#0d7da0",
-  BUFF: "#f7f6f1",
+  COLOR_RULE: '#ceccc6',
+  COLOR_GREY_MID: '#9a9893',
+  COLOR_HIGHLIGHT_EXPERIMENT_FIRST: '#FF3300',
+  COLOR_HIGHLIGHT_EXPERIMENT: '#0d7da0',
+  BUFF: '#f7f6f1',
 };
 
 const FontFamily = `system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`;
@@ -297,7 +295,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
     ) {
       return;
     }
-    const context = canvasRef.current.getContext("2d");
+    const context = canvasRef.current.getContext('2d');
     if (!context) {
       return;
     }
@@ -332,8 +330,8 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
         context.lineTo(targetXY.x, targetXY.y);
         context.stroke();
 
-        context.textAlign = "center";
-        context.textBaseline = "middle";
+        context.textAlign = 'center';
+        context.textBaseline = 'middle';
         context.font = `11px ${FontFamily}`;
 
         context.strokeStyle = Colors.BUFF;
@@ -477,7 +475,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
   // __________________________________________________________________________________________ render
 
   return (
-    <div ref={ref} className={styles.container}>
+    <div ref={ref} className="absolute inset-0 bg-[#f7f6f1]">
       <canvas
         ref={canvasRef}
         onMouseMove={onMouseMove}

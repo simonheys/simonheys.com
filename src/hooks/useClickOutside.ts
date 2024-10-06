@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from 'react';
 
 const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -11,9 +11,9 @@ const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
     [onClickOutside],
   );
   useEffect(() => {
-    document.addEventListener("mouseup", onMouseUp);
+    document.addEventListener('mouseup', onMouseUp);
     return () => {
-      document.removeEventListener("mouseup", onMouseUp);
+      document.removeEventListener('mouseup', onMouseUp);
     };
   }, [onMouseUp]);
   return { ref };

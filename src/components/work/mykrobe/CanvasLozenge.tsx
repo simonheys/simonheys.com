@@ -1,5 +1,5 @@
-import { LozengeDimensions } from "./constants";
-import fillRoundedRect from "./fillRoundedRect";
+import { LozengeDimensions } from './constants';
+import fillRoundedRect from './fillRoundedRect';
 
 export type CanvasLozengeState = {
   initialised: boolean;

@@ -1,13 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import WordClockEditable, { WordClockEditableProps } from "./WordClockEditable";
-import styles from "./WordClockFill.module.scss";
+import WordClockEditable, { WordClockEditableProps } from './WordClockEditable';
 
 const WordClockFill: FC<WordClockEditableProps> = (props) => {
   return (
-    <div className={styles.container}>
-      <div className="row h-100 mb-md-5">
-        <div className="col h-100">
+    <div className="container-fluid relative flex flex-1 overflow-hidden pb-3 md:pb-5">
+      <div className="containerAlias row h-full sm:pb-12">
+        <div className="col h-full">
           <WordClockEditable {...props} />
         </div>
       </div>

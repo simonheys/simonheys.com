@@ -1,11 +1,11 @@
-import Document, { Head, Html, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   render() {
     return (
       <Html>
         <Head>
-          <meta name="apple-mobile-web-app-capable" content="yes" />
+          <meta name="mobile-web-app-capable" content="yes" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
             rel="preconnect"
@@ -115,7 +115,7 @@ class MyDocument extends Document {
             href="/favicon/apple-touch-icon-1024x1024.png"
           ></link>
         </Head>
-        <body>
+        <body className="overflow-y-scroll bg-background text-foreground antialiased">
           <Main />
           <NextScript />
         </body>

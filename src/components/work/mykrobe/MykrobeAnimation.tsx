@@ -1,11 +1,10 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import AppearWhenInView from "../../ui/AppearWhenInView";
-import Caption from "../../ui/Caption";
-import ImageResponsive from "../../ui/ImageResponsive";
+import AppearWhenInView from '../../ui/AppearWhenInView';
+import Caption from '../../ui/Caption';
+import ImageResponsive from '../../ui/ImageResponsive';
 
-import AnimatedBackgroundCanvas from "./AnimatedBackgroundCanvas";
-import styles from "./MykrobeAnimation.module.scss";
+import AnimatedBackgroundCanvas from './AnimatedBackgroundCanvas';
 
 export interface MykrobeAnimationProps {
   caption?: string;
@@ -14,10 +13,10 @@ export interface MykrobeAnimationProps {
 const MykrobeAnimation: FC<MykrobeAnimationProps> = ({ caption }) => {
   return (
     <AppearWhenInView>
-      <div className="container-fluid mb-md-4 mb-3">
-        <div className={styles.containerSizer}>
+      <div className="containerAlias mb-6">
+        <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
           <AnimatedBackgroundCanvas />
-          <div className={styles.overlayContainer}>
+          <div className="absolute inset-0">
             <ImageResponsive
               src="portfolio/mykrobe/mykrobe-animation-overlay.svg"
               alt="Mykrobe animation"
@@ -26,7 +25,7 @@ const MykrobeAnimation: FC<MykrobeAnimationProps> = ({ caption }) => {
         </div>
       </div>
       {caption && (
-        <div className="container-fluid">
+        <div className="containerAlias">
           <Caption caption={caption} />
         </div>
       )}

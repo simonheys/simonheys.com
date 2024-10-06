@@ -1,1 +1,1 @@
-declare module "wordclock/packages/wordclock-js/dist";
+declare module 'wordclock/packages/wordclock-js/dist';

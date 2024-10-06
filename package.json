@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently -k -r \"pnpm generate:watch\" \"pnpm next\"",
+    "dev": "concurrently -k -r \"pnpm generate:watch\" \"pnpm next -H 0.0.0.0\"",
     "build": "pnpm generate && next build",
     "start": "next start",
     "lint": "eslint .",
@@ -16,15 +16,14 @@
     "prettier": "prettier --write \"./**/*.{js,json,css,scss,yml,ts,tsx}\"",
     "test": "jest",
     "test:e2e": "playwright test",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "dependencies": {
     "@resvg/resvg-js": "2.6.2",
-    "@simonheys/wordclock": "1.1.7",
-    "@simonheys/wordclock-words": "1.1.7",
+    "@simonheys/wordclock": "1.2.0",
+    "@simonheys/wordclock-words": "1.2.0",
     "@vercel/analytics": "1.3.1",
     "@vimeo/player": "2.24.0",
-    "bootstrap": "5.3.3",
     "clsx": "2.1.1",
     "colord": "2.9.3",
     "favicons": "7.2.0",
@@ -40,7 +39,6 @@
     "react-intersection-observer": "9.13.1",
     "react-markdown": "^9.0.0",
     "resize-observer-polyfill": "1.5.1",
-    "sass": "1.79.4",
     "swr": "2.2.5"
   },
   "devDependencies": {
@@ -65,14 +63,12 @@
     "@types/vimeo__player": "2.18.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
     "@typescript-eslint/parser": "7.18.0",
-    "autoprefixer": "^10.4.20",
     "chokidar": "3.6.0",
     "cli-progress": "3.12.0",
     "concurrently": "8.2.2",
     "eslint": "8.57.1",
     "eslint-config-next": "14.2.14",
     "eslint-config-react-app": "7.0.1",
-    "eslint-plugin-import": "2.31.0",
     "eslint-plugin-jest": "28.8.3",
     "eslint-plugin-jsx-a11y": "6.10.0",
     "eslint-plugin-react": "7.37.1",

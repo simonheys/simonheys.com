@@ -7,7 +7,7 @@ components:
     subtitle: Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians.
   - type: work-row
     vimeoId: 581720984
-    color: "#009639"
+    color: '#009639'
   - type: scrolling-browser
     maskSrc: portfolio/sps/browser-mask.svg
     src: portfolio/sps/blocks-test-js-blocks-when-logged-out-top-level-pages-renders-guidance-index-as-expected-1-snap.png
@@ -24,14 +24,14 @@ components:
   - type: work-row
     columns:
       - text: The service was actively developed with a regular cycle of interactive prototyping and observed user testing to validate problems and solutions. We modernised the publishing workflow and developed a range of self-service tools.
-  - type: sps-collection
-  - type: work-row
-    columns:
-      - text: I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device.
+  # - type: sps-collection
   - type: work-row
     columns:
       - src: portfolio/sps/sps-col-6-system.jpg
       - src: portfolio/sps/sps-col-6-screens.jpg
+  - type: work-row
+    columns:
+      - text: I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device.
   - type: work-row
     columns:
       - type: scrolling-browser-cell

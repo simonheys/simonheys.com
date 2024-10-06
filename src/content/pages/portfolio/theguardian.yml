@@ -9,10 +9,10 @@ components:
     columns:
       - col: 6
         vimeoId: 590221904
-        color: "#edede7"
+        color: '#edede7'
       - col: 6
         vimeoId: 590223472
-        color: "#edede7"
+        color: '#edede7'
   - type: work-row
     columns:
       - text: The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle.
@@ -24,7 +24,7 @@ components:
         src: portfolio/theguardian/timeline.png
       - col: 6
         vimeoId: 590277543
-        color: "#edede7"
+        color: '#edede7'
   - type: work-row
     columns:
       - text: I rapidly developed a set of native apps with enough fidelity to enable thorough user testing with iterations of refinement and reinvention in between.
@@ -40,15 +40,15 @@ components:
       - src: portfolio/theguardian/theguardian-col-6-elements.jpg
       - col: 6
         vimeoId: 590283638
-        color: "#edede7"
+        color: '#edede7'
   - type: work-row
     columns:
       - col: 6
         vimeoId: 590226135
-        color: "#edede7"
+        color: '#edede7'
       - col: 6
         vimeoId: 590288898
-        color: "#edede7"
+        color: '#edede7'
   - type: work-row
     columns:
       - text: Using prototypes and user testing as a foundation gave the design team confidence to take a specific direction with the subsequent full redesign project.

@@ -2021,17 +2021,6 @@
           ]
         },
         {
-          "type": "sps-collection"
-        },
-        {
-          "type": "work-row",
-          "columns": [
-            {
-              "text": "I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device."
-            }
-          ]
-        },
-        {
           "type": "work-row",
           "columns": [
             {
@@ -2039,6 +2028,14 @@
             },
             {
               "src": "portfolio/sps/sps-col-6-screens.jpg"
+            }
+          ]
+        },
+        {
+          "type": "work-row",
+          "columns": [
+            {
+              "text": "I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device."
             }
           ]
         },

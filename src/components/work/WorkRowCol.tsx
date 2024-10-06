@@ -1,15 +1,15 @@
-import { ComponentProps, FC } from "react";
-import ReactMarkdown from "react-markdown";
+import { ComponentProps, FC } from 'react';
+import ReactMarkdown from 'react-markdown';
 
-import { ComponentKey, MappedComponent } from "../Components";
-import ImageFadeIn from "../ui/ImageFadeIn";
-import TextLinks from "../ui/TextLinks";
-import VideoFadeIn from "../ui/VideoFadeIn";
+import { ComponentKey, MappedComponent } from '../Components';
+import ImageFadeIn from '../ui/ImageFadeIn';
+import TextLinks from '../ui/TextLinks';
+import VideoFadeIn from '../ui/VideoFadeIn';
 
-import styles from "./WorkRowCol.module.scss";
+import { cn } from '@/utils/cn';
 
 export interface WorkRowColProps
-  extends Omit<ComponentProps<typeof MappedComponent>, "type"> {
+  extends Omit<ComponentProps<typeof MappedComponent>, 'type'> {
   type?: ComponentKey;
   col?: number | string;
   text?: string;
@@ -23,9 +23,7 @@ export interface WorkRowColProps
 }
 
 const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
-  const className = col
-    ? `${styles.container} col-sm-${col}`
-    : `${styles.container} col-sm`;
+  const className = cn('mb-6', col ? `sm:col-span-${col}` : 'sm:col-span-6');
 
   if (type) {
     return (
@@ -42,25 +40,23 @@ const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
     youTubeId,
     vimeoId,
     color,
-    title = "",
+    title = '',
     aspect,
   } = rest;
 
   if (text) {
     return (
       <>
-        <div className="col-md-6"></div>
-        <div className={`${styles.container} col-md-6`}>
-          <div className={styles.textContainer}>
-            <div className={styles.text}>
-              <ReactMarkdown>{text}</ReactMarkdown>
-            </div>
-            {links && (
-              <div className={styles.links}>
-                <TextLinks links={links} />
-              </div>
-            )}
+        <div className="sm:col-span-6"></div>
+        <div className="my-12 flex flex-col sm:col-span-6 sm:mt-6">
+          <div className="text-balance text-2xl font-medium">
+            <ReactMarkdown>{text}</ReactMarkdown>
           </div>
+          {links && (
+            <div className="mb-0 mt-6 text-2xl">
+              <TextLinks links={links} />
+            </div>
+          )}
         </div>
       </>
     );
@@ -69,7 +65,7 @@ const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
   if (src) {
     return (
       <div className={className}>
-        <div className={styles.inner}>
+        <div className="w-full overflow-hidden rounded-[0.25em] bg-gray-100">
           <ImageFadeIn src={src} alt={title} />
         </div>
       </div>
@@ -79,7 +75,7 @@ const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
   if (youTubeId || vimeoId) {
     return (
       <div className={className}>
-        <div className={styles.inner}>
+        <div className="w-full overflow-hidden rounded-[0.25em] bg-gray-100">
           <VideoFadeIn
             col={col}
             youTubeId={youTubeId}

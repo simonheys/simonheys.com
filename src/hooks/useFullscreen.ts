@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from "react";
+import { useCallback, useRef, useState } from 'react';
 
 const useFullscreen = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -7,8 +7,8 @@ const useFullscreen = () => {
   const onFullscreenChange = useCallback(() => {
     if (
       document.fullscreenElement ||
-      document["mozFullScreenElement"] ||
-      document["webkitFullscreenElement"]
+      document['mozFullScreenElement'] ||
+      document['webkitFullscreenElement']
     ) {
       setIsFullscreen(true);
     } else {
@@ -19,22 +19,22 @@ const useFullscreen = () => {
   const setRef = useCallback(
     (nextRef: HTMLDivElement) => {
       if (ref.current) {
-        ref.current.removeEventListener("fullscreenchange", onFullscreenChange);
+        ref.current.removeEventListener('fullscreenchange', onFullscreenChange);
         ref.current.removeEventListener(
-          "mozfullscreenchange",
+          'mozfullscreenchange',
           onFullscreenChange,
         );
         ref.current.removeEventListener(
-          "webkitfullscreenchange",
+          'webkitfullscreenchange',
           onFullscreenChange,
         );
       }
       ref.current = nextRef;
       if (ref.current) {
-        ref.current.addEventListener("fullscreenchange", onFullscreenChange);
-        ref.current.addEventListener("mozfullscreenchange", onFullscreenChange);
+        ref.current.addEventListener('fullscreenchange', onFullscreenChange);
+        ref.current.addEventListener('mozfullscreenchange', onFullscreenChange);
         ref.current.addEventListener(
-          "webkitfullscreenchange",
+          'webkitfullscreenchange',
           onFullscreenChange,
         );
       }

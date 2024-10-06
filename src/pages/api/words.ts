@@ -1,5 +1,5 @@
-import manifest from "@simonheys/wordclock-words/json/Manifest.json";
-import type { NextApiRequest, NextApiResponse } from "next";
+import manifest from '@simonheys/wordclock-words/json/Manifest.json';
+import type { NextApiRequest, NextApiResponse } from 'next';
 
 const words: Record<
   string,
@@ -42,11 +42,11 @@ const wordsOrdered = Object.keys(words)
 const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
   const { method } = req;
   switch (method) {
-    case "GET":
+    case 'GET':
       res.status(200).json(wordsOrdered);
       break;
     default:
-      res.setHeader("Allow", ["GET"]);
+      res.setHeader('Allow', ['GET']);
       res.status(405).end(`Method ${method} Not Allowed`);
   }
 };

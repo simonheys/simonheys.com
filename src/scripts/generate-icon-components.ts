@@ -1,19 +1,19 @@
-import fs from "fs";
-import path from "path";
+import fs from 'fs';
+import path from 'path';
 
-import { transform } from "@svgr/core";
-import chokidar from "chokidar";
-import cliProgress from "cli-progress";
+import { transform } from '@svgr/core';
+import chokidar from 'chokidar';
+import cliProgress from 'cli-progress';
 
-import getFiles from "../utils/getFiles";
-import { prettifyAndWriteFile } from "../utils/prettifyAndWriteFile";
+import getFiles from '../utils/getFiles';
+import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const argv = require("minimist")(process.argv.slice(2));
+const argv = require('minimist')(process.argv.slice(2));
 
-const iconsSystemPath = path.join(__dirname, "../components/ui/icons");
-const iconsSvgSystemPath = path.join(iconsSystemPath, "./svg");
-const indexSystemPath = path.join(iconsSystemPath, "./index.ts");
+const iconsSystemPath = path.join(__dirname, '../components/ui/icons');
+const iconsSvgSystemPath = path.join(iconsSystemPath, './svg');
+const indexSystemPath = path.join(iconsSystemPath, './index.ts');
 
 const useProgressBar = !argv.watch;
 
@@ -21,9 +21,9 @@ const svgCodeToIconComponentCode = async (svgCode: string) => {
   return transform(svgCode, {
     typescript: true,
     icon: true,
-    jsxRuntime: "automatic",
-    replaceAttrValues: { "#000": "currentColor" },
-    plugins: ["@svgr/plugin-svgo", "@svgr/plugin-jsx"],
+    jsxRuntime: 'automatic',
+    replaceAttrValues: { '#000': 'currentColor' },
+    plugins: ['@svgr/plugin-svgo', '@svgr/plugin-jsx'],
   });
 };
 
@@ -37,7 +37,7 @@ const fixIconComponentCodeEmWidth = (iconComponentCode: string) => {
     return iconComponentCode;
   }
   const viewBox = matches[1];
-  const [, , width, height] = viewBox.split(" ").map(parseFloat);
+  const [, , width, height] = viewBox.split(' ').map(parseFloat);
   const widthEm = width / height;
   const widthRegEx = /width="([^"]+)"/;
   const fixedIconComponentCode = iconComponentCode.replace(
@@ -48,17 +48,17 @@ const fixIconComponentCodeEmWidth = (iconComponentCode: string) => {
 };
 
 const generateIconComponents = async () => {
-  const filePaths = getFiles("./", iconsSvgSystemPath);
+  const filePaths = getFiles('./', iconsSvgSystemPath);
   const lines = [];
 
   const progressBar = new cliProgress.SingleBar(
     {
       format:
-        "progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {filename}",
+        'progress [{bar}] {percentage}% | ETA: {eta}s | {value}/{total} | {filename}',
     },
     cliProgress.Presets.shades_grey,
   );
-  useProgressBar && progressBar.start(filePaths.length, 0, { filename: "" });
+  useProgressBar && progressBar.start(filePaths.length, 0, { filename: '' });
 
   for (const filePath of filePaths) {
     useProgressBar && progressBar.increment({ filename: filePath });
@@ -66,7 +66,7 @@ const generateIconComponents = async () => {
     const ext = path.extname(filePath);
     const filePathWithoutExt = filePath.substr(0, filePath.length - ext.length);
     const destPath = path.join(iconsSystemPath, `${filePathWithoutExt}.tsx`);
-    const svgCode = fs.readFileSync(sourcePath).toString("utf8");
+    const svgCode = fs.readFileSync(sourcePath).toString('utf8');
     const iconComponentCode = await svgCodeToIconComponentCode(svgCode);
     const fileContents = fixIconComponentCodeEmWidth(iconComponentCode);
     await prettifyAndWriteFile(destPath, fileContents);
@@ -77,9 +77,9 @@ const generateIconComponents = async () => {
   useProgressBar &&
     progressBar.update(filePaths.length, { filename: indexSystemPath });
 
-  lines.push("");
-  const fileContents = lines.join("\n");
-  fs.writeFileSync(indexSystemPath, fileContents, "utf8");
+  lines.push('');
+  const fileContents = lines.join('\n');
+  fs.writeFileSync(indexSystemPath, fileContents, 'utf8');
 
   useProgressBar && progressBar.stop();
 };
@@ -88,7 +88,7 @@ const generateIconComponents = async () => {
   await generateIconComponents();
   if (argv.watch) {
     console.log(`Watching for changes in ${iconsSvgSystemPath}`);
-    chokidar.watch(iconsSvgSystemPath).on("change", (_event, _path) => {
+    chokidar.watch(iconsSvgSystemPath).on('change', (_event, _path) => {
       console.log(`Regenerating icon components…`);
       generateIconComponents();
     });

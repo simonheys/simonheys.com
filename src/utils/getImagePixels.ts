@@ -1,5 +1,5 @@
-import getPixels from "get-pixels";
-import { NdArray } from "ndarray";
+import getPixels from 'get-pixels';
+import { NdArray } from 'ndarray';
 
 const getImagePixels = async (
   filePath: string | Buffer,
@@ -14,10 +14,10 @@ const getImagePixels = async (
     };
     if (type) {
       getPixels(filePath, type, callback);
-    } else if (typeof filePath === "string") {
+    } else if (typeof filePath === 'string') {
       getPixels(filePath, callback);
     } else {
-      reject("getImagePixels - invalid arguments");
+      reject('getImagePixels - invalid arguments');
     }
   });
 };

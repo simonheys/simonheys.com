@@ -1,12 +1,12 @@
-import { FC } from "react";
+import { FC } from 'react';
 
-import { getMeta, getPageForPath } from "../../../modules/content";
-import AppearWhenInView from "../../ui/AppearWhenInView";
+import { getMeta, getPageForPath } from '../../../modules/content';
+import AppearWhenInView from '../../ui/AppearWhenInView';
 
-import CaseStudiesGridCell from "./CaseStudiesGridCell";
+import CaseStudiesGridCell from './CaseStudiesGridCell';
 
 const CaseStudiesGrid: FC = () => {
-  const pages = getMeta()["case-studies"].pages;
+  const pages = getMeta()['case-studies'].pages;
   return (
     <div className="container-fluid mb-md-4 mb-3">
       <div className="row">
