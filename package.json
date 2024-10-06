@@ -60,7 +60,7 @@
     "@types/js-yaml": "4.0.9",
     "@types/ndarray": "1.0.14",
     "@types/node": "20.16.10",
-    "@types/react": "^18.3.3",
+    "@types/react": "18.3.11",
     "@types/resize-observer-browser": "0.1.11",
     "@types/vimeo__player": "2.18.3",
     "@typescript-eslint/eslint-plugin": "7.18.0",
