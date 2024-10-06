@@ -5,7 +5,6 @@ import { getNextPortfolioPageForPath } from "../../modules/content";
 import AppearWhenInView from "../ui/AppearWhenInView";
 
 import WorkGridCell from "./grid/WorkGridCell";
-import styles from "./WorkNext.module.scss";
 
 const WorkNext: FC = () => {
   const router = useRouter();
@@ -15,17 +14,15 @@ const WorkNext: FC = () => {
   }
   return (
     <AppearWhenInView>
-      <div className="container-fluid">
-        <div className="row gx-0 border-top"></div>
+      <div className="containerAlias">
+        <div className="border-t"></div>
       </div>
-      <div className="container-fluid mb-5 pt-2">
-        <div className="row mb-5">
-          <div className="col-sm-6">
-            <div className={styles.title}>Next</div>
-          </div>
-          <div className="col-sm-6">
-            <WorkGridCell page={nextPage} />
-          </div>
+      <div className="containerAlias mb-12 grid auto-cols-fr grid-flow-col gap-6 pt-2">
+        <div className="sm:col-span-6">
+          <div className="text-4xl font-bold text-accent">Next</div>
+        </div>
+        <div className="sm:col-span-6">
+          <WorkGridCell page={nextPage} />
         </div>
       </div>
     </AppearWhenInView>

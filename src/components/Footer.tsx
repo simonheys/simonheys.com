@@ -1,6 +1,5 @@
 import { FC } from "react";
 
-import styles from "./Footer.module.scss";
 import AppearWhenInView from "./ui/AppearWhenInView";
 
 export interface FooterProps {
@@ -10,14 +9,12 @@ export interface FooterProps {
 const Footer: FC<FooterProps> = ({ text }) => {
   return (
     <AppearWhenInView>
-      <div className="container-fluid">
-        <div className="row gx-0 border-top"></div>
+      <div className="containerAlias">
+        <div className="border-t"></div>
       </div>
-      <div className="container-fluid mb-5 pt-2">
-        <div className="row">
-          <div className="col">
-            <div className={styles.text}>{text}</div>
-          </div>
+      <div className="containerAlias mb-12 grid-cols-2 gap-6 pt-2">
+        <div className="text-sm leading-snug text-gray-600 dark:text-gray-400">
+          {text}
         </div>
       </div>
     </AppearWhenInView>
