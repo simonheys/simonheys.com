@@ -105,5 +105,11 @@
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
     "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "pnpm": {
+    "overrides": {
+      "@simonheys/wordclock": "file:../wordclock/packages/wordclock-js",
+      "@simonheys/wordclock-words": "file:../wordclock/packages/wordclock-words"
+    }
   }
 }

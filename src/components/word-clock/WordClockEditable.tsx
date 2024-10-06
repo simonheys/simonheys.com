@@ -1,5 +1,8 @@
-import { WordClock } from "@simonheys/wordclock";
-import "@simonheys/wordclock/style.css";
+import {
+  WordClock,
+  WordClockContent,
+  WordClockWordProps,
+} from "@simonheys/wordclock";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   FC,
@@ -21,6 +24,8 @@ import WordsPickerControls from "./controls/WordsPickerControls";
 import fetcher from "./utils/fetcher";
 import styles from "./WordClockEditable.module.scss";
 
+import { cn } from "@/utils/cn";
+
 const fileDefault = "English_simple_fragmented.json";
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
@@ -32,6 +37,19 @@ export interface WordClockEditableProps {
   download: boolean;
   source: boolean;
 }
+
+const WordClockWord: FC<WordClockWordProps> = ({ highlighted, children }) => {
+  return (
+    <span
+      className={cn(
+        highlighted ? "text-primary" : "text-gray-500 dark:text-gray-400",
+        "mr-2",
+      )}
+    >
+      {children}
+    </span>
+  );
+};
 
 const WordClockEditable: FC<WordClockEditableProps> = ({
   file: fileProp = fileDefault,
@@ -150,7 +168,9 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
     return (
       <div className={styles.containerSizer}>
         <div className={styles.wordClockContainer}>
-          <WordClock words={words || wordsDefault} />
+          <WordClock words={words || wordsDefault}>
+            <WordClockContent wordComponent={WordClockWord} />
+          </WordClock>
         </div>
       </div>
     );
@@ -172,7 +192,12 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.15 }}
       >
-        <WordClock words={words} />
+        <WordClock
+          words={words}
+          className="containerAlias font-bold leading-none"
+        >
+          <WordClockContent wordComponent={WordClockWord} />
+        </WordClock>
         <div className={styles.controlsContainer}>
           <AnimatePresence>
             {wordsPickerControlsVisible && (

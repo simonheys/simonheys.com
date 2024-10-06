@@ -1,5 +1,6 @@
+import { LinkProps } from "next/link";
 import { FC } from "react";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown, { Components } from "react-markdown";
 
 import AppearWhenInView from "./AppearWhenInView";
 import ImageResponsive from "./ImageResponsive";
@@ -17,17 +18,38 @@ export interface ProseProps {
   ruled?: boolean;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const LinkComponent = ({ href, ...rest }: any) => {
-  return <Link href={href} {...rest} />;
+const LinkComponent = ({
+  href,
+  ...rest
+}: React.AnchorHTMLAttributes<HTMLAnchorElement>) => {
+  return (
+    <Link
+      href={href as LinkProps["href"]}
+      className="text-primary transition duration-100 hover:text-primary-hover"
+      {...rest}
+    />
+  );
 };
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const ImageComponent = ({ node, ...rest }: any) => {
-  return <ImageResponsive {...rest} />;
+const ImageComponent = ({
+  src,
+  alt,
+  width,
+  height,
+  ...rest
+}: React.ImgHTMLAttributes<HTMLImageElement>) => {
+  return (
+    <ImageResponsive
+      src={src as string}
+      alt={alt as string}
+      width={width as number}
+      height={height as number}
+      {...rest}
+    />
+  );
 };
 
-const components = {
+export const reactMarkdownComponents: Partial<Components> = {
   a: LinkComponent,
   img: ImageComponent,
 };
@@ -48,7 +70,9 @@ const Prose: FC<ProseProps> = ({ title, text, links, ruled }) => {
           <div className="col-md-6">
             {text && (
               <div className={styles.text}>
-                <ReactMarkdown components={components}>{text}</ReactMarkdown>
+                <ReactMarkdown components={reactMarkdownComponents}>
+                  {text}
+                </ReactMarkdown>
               </div>
             )}
             {links && (

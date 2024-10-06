@@ -3,7 +3,7 @@
 
 .containerSizer {
   composes: global(d-flex);
-  composes: global(h-100);
+  composes: global(h-full);
   position: relative;
 }
 
