@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { FC, useEffect, useMemo, useState } from 'react';
 
 import useBoundingClientRect from '../hooks/useBoundingClientRect';
@@ -14,7 +16,7 @@ export interface HeaderProps {
 }
 
 const Header: FC<HeaderProps> = ({ links }) => {
-  const router = useRouter();
+  const pathname = usePathname();
   const windowScroll = useWindowScrollVelocity();
   const { ref, boundingClientRect } = useBoundingClientRect();
   const [fixed, setFixed] = useState(false);
@@ -83,13 +85,12 @@ const Header: FC<HeaderProps> = ({ links }) => {
 
   const activePath = useMemo(() => {
     for (const path of links) {
-      const active =
-        router.asPath === path || router.asPath.startsWith(`${path}/`);
+      const active = pathname === path || pathname?.startsWith(`${path}/`);
       if (active) {
         return path;
       }
     }
-  }, [links, router.asPath]);
+  }, [links, pathname]);
 
   return (
     <>

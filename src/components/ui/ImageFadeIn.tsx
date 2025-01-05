@@ -1,3 +1,5 @@
+'use client';
+
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import { FC, useCallback, useMemo } from 'react';

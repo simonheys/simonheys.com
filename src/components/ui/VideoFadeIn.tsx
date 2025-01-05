@@ -1,8 +1,9 @@
+'use client';
+
 import VimeoPlayer from '@vimeo/player';
 import { motion, useAnimation } from 'framer-motion';
 import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
-import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
 import isTouchDevice from '../../utils/isTouchDevice';
 
 export interface VideoFadeInProps {
@@ -25,10 +26,6 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
   const ref = useRef<HTMLElement | null>(null);
   const controls = useAnimation();
   const vimeoPlayer = useRef<VimeoPlayer | null>(null);
-  const { ref: inViewRef, inView } = useBoundingClientRectInView();
-
-  // flag to control video visibility until it is 'in view'
-  // fires once only for compatibility with Vimeo player
   const [visible, setVisible] = useState(false);
 
   const uri = vimeoId
@@ -42,7 +39,8 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
   const setRef = useCallback(
     (nextRef: HTMLIFrameElement) => {
       if (ref.current && vimeoPlayer.current) {
-        vimeoPlayer.current.destroy();
+        // vimeoPlayer.current.destroy();
+        return;
       }
       ref.current = nextRef;
       if (ref.current) {
@@ -76,18 +74,14 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
   }, [color]);
 
   useEffect(() => {
-    if (!visible && inView) {
+    if (!visible) {
       setVisible(true);
     }
-  }, [inView, visible]);
+  }, [visible]);
 
   if (isTouchDevice()) {
     return (
-      <div
-        ref={inViewRef}
-        className="relative h-0 w-full"
-        style={containerStyle}
-      >
+      <div className="relative h-0 w-full" style={containerStyle}>
         {visible && (
           <iframe
             title={title}
@@ -105,7 +99,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
   }
 
   return (
-    <div ref={inViewRef} className="relative h-0 w-full" style={containerStyle}>
+    <div className="relative h-0 w-full" style={containerStyle}>
       {visible && (
         <>
           <iframe

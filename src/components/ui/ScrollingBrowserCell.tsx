@@ -1,3 +1,5 @@
+'use client';
+
 import { PlaybackControls, animate, easeInOut, interpolate } from 'popmotion';
 import { FC, useEffect, useMemo, useRef, useState } from 'react';
 

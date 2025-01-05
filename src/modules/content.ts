@@ -129,18 +129,24 @@ export const normalisePath = (path: string | string[]): string => {
 };
 
 export const getPageForPath = (
-  path: string | string[],
+  path: string | string[] | null,
   content: Content = defaultContent,
 ): Page | undefined => {
+  if (!path) {
+    return;
+  }
   const normalisedPath = normalisePath(path);
   const page = content.pages.find((page) => page.path === normalisedPath);
   return page;
 };
 
 export const getNextPortfolioPageForPath = (
-  path: string | string[],
+  path: string | string[] | null,
   content: Content = defaultContent,
 ): Page | undefined => {
+  if (!path) {
+    return;
+  }
   const normalisedPath = normalisePath(path);
   const portfolioPagePaths = getPortfolioPagePaths(content);
   const currentIndex = portfolioPagePaths.indexOf(normalisedPath);
@@ -153,9 +159,12 @@ export const getNextPortfolioPageForPath = (
 };
 
 export const getNextCaseStudiesPageForPath = (
-  path: string | string[],
+  path: string | string[] | null,
   content: Content = defaultContent,
 ): Page | undefined => {
+  if (!path) {
+    return;
+  }
   const normalisedPath = normalisePath(path);
   const caseStudiesPagePaths = getCaseStudiesPagePaths(content);
   const currentIndex = caseStudiesPagePaths.indexOf(normalisedPath);
