@@ -1,7 +1,5 @@
-import { motion, LayoutGroup } from 'framer-motion';
+import { LayoutGroup, motion } from 'framer-motion';
 import { FC, ReactNode } from 'react';
-
-import styles from './SegmentedControl.module.scss';
 
 export interface SegmentedControlProps {
   options: {
@@ -20,27 +18,31 @@ const SegmentedControl: FC<SegmentedControlProps> = ({
   const selectedIndex = options.findIndex((item) => item.value === value);
   return (
     <LayoutGroup>
-      <div className={styles.container}>
+      <div className="panel m-0 inline-flex list-none p-0">
         {options.map((item, index) => {
           const isActive = index === selectedIndex;
           return (
             <motion.li
               key={item.value}
-              className={styles.item}
+              className="relative mb-0 leading-none"
               whileTap={isActive ? { scale: 0.95 } : { opacity: 0.6 }}
             >
               <div
                 onClick={() => onChange(item.value)}
-                className={isActive ? styles.buttonActive : styles.button}
+                className={`hover:text-link-hover relative m-0 cursor-pointer p-2 leading-none transition-colors duration-100 ease-in sm:p-3 ${
+                  isActive ? 'text-primary' : ''
+                }`}
               >
                 {isActive && (
                   <motion.div
                     layoutId="SegmentedControlActive"
-                    className={styles.active}
+                    className="panel-border-radius bg-panel-hover absolute inset-0 z-[1]"
                     transition={{ duration: 0.5, type: 'spring' }}
                   />
                 )}
-                <div className={styles.label}>{item.title}</div>
+                <div className="relative z-[2] whitespace-nowrap text-sm">
+                  {item.title}
+                </div>
               </div>
             </motion.li>
           );

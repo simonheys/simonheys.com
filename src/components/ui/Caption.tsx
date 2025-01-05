@@ -1,7 +1,5 @@
 import { FC } from 'react';
 
-import styles from './Caption.module.scss';
-
 export interface CaptionProps {
   caption?: string;
 }
@@ -11,8 +9,10 @@ const Caption: FC<CaptionProps> = ({ caption }) => {
     return null;
   }
   return (
-    <div className={'row'}>
-      <div className={styles.caption}>{caption}</div>
+    <div className="row">
+      <div className="col h6 mb-4 font-bold text-gray-600 dark:text-inherit">
+        {caption}
+      </div>
     </div>
   );
 };

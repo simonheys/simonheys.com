@@ -1,6 +1,6 @@
 import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
-import { FC, useMemo, useCallback } from 'react';
+import { FC, useCallback, useMemo } from 'react';
 
 import * as contentModule from '../../modules/content';
 
@@ -39,7 +39,7 @@ const ImageFadeIn: FC<ImageFadeInProps> = ({
         }}
       >
         <Image
-          onLoadingComplete={onLoadingComplete}
+          onLoad={onLoadingComplete}
           src={`/${src}`}
           alt={alt}
           width={width}

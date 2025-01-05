@@ -1,11 +1,9 @@
 import VimeoPlayer from '@vimeo/player';
 import { motion, useAnimation } from 'framer-motion';
-import { FC, useState, useRef, useEffect, useMemo, useCallback } from 'react';
+import { FC, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 
 import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
 import isTouchDevice from '../../utils/isTouchDevice';
-
-import styles from './VideoFadeIn.module.scss';
 
 export interface VideoFadeInProps {
   vimeoId?: string;
@@ -61,8 +59,8 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
         ? parseFloat(aspectProp)
         : aspectProp
       : col === 6
-      ? 1080 / 942
-      : 1080 / 1920;
+        ? 1080 / 942
+        : 1080 / 1920;
     const style = {
       paddingBottom: `${100 * aspect}%`,
       backgroundColor: color,
@@ -85,7 +83,11 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
 
   if (isTouchDevice()) {
     return (
-      <div ref={inViewRef} className={styles.container} style={containerStyle}>
+      <div
+        ref={inViewRef}
+        className="relative h-0 w-full"
+        style={containerStyle}
+      >
         {visible && (
           <iframe
             title={title}
@@ -95,6 +97,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
             frameBorder="0"
             allow="autoplay"
             allowFullScreen
+            className="absolute inset-0"
           />
         )}
       </div>
@@ -102,7 +105,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
   }
 
   return (
-    <div ref={inViewRef} className={styles.container} style={containerStyle}>
+    <div ref={inViewRef} className="relative h-0 w-full" style={containerStyle}>
       {visible && (
         <>
           <iframe
@@ -114,6 +117,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
             frameBorder="0"
             allow="autoplay"
             allowFullScreen
+            className="absolute inset-0"
           />
           <motion.div
             animate={controls}
@@ -124,7 +128,7 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
               hidden: { opacity: 1 },
             }}
           >
-            <div className={styles.overlay} style={overlayStyle}></div>
+            <div className="absolute inset-0" style={overlayStyle}></div>
           </motion.div>
         </>
       )}

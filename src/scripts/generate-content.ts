@@ -5,7 +5,9 @@ import chokidar from 'chokidar';
 import yaml from 'js-yaml';
 
 import getFiles from '../utils/getFiles';
+import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const contentSystemPath = path.join(__dirname, '../content');
@@ -17,8 +19,9 @@ const contentJsonSystemPath = path.join(
 
 const filePaths = getFiles('/', pagesSystemPath);
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getYml = (filePath: string): any => {
-  const doc = yaml.load(fs.readFileSync(filePath, 'utf8')) as any;
+  const doc = yaml.load(fs.readFileSync(filePath, 'utf8'));
   return doc;
 };
 
@@ -59,14 +62,14 @@ const generateContent = async () => {
   if (!fs.existsSync(dirname)) {
     fs.mkdirSync(dirname);
   }
-  fs.writeFileSync(contentJsonSystemPath, fileContents, 'utf8');
+  await prettifyAndWriteFile(contentJsonSystemPath, fileContents);
 };
 
 (async () => {
   await generateContent();
   if (argv.watch) {
     console.log(`Watching for changes in ${contentSystemPath}`);
-    chokidar.watch(contentSystemPath).on('change', (event, path) => {
+    chokidar.watch(contentSystemPath).on('change', (_event, _path) => {
       console.log(`Regenerating content…`);
       generateContent();
     });

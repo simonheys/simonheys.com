@@ -1,5 +1,5 @@
 import { motion, useAnimation } from 'framer-motion';
-import { useRef, useCallback, useEffect, PropsWithChildren, FC } from 'react';
+import { FC, PropsWithChildren, useCallback, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 export interface AppearWhenInViewProps extends PropsWithChildren {
@@ -24,7 +24,9 @@ export const AppearWhenInView: FC<AppearWhenInViewProps> = (props) => {
   useEffect(() => {
     timeoutId.current = setTimeout(checkInView, 150);
     return () => {
-      timeoutId.current && clearTimeout(timeoutId.current);
+      if (timeoutId.current) {
+        clearTimeout(timeoutId.current);
+      }
     };
   }, [checkInView]);
 

@@ -4,18 +4,16 @@ import forceAtlas2 from 'graphology-layout-forceatlas2';
 import { Attributes } from 'graphology-types';
 import {
   FC,
-  useRef,
+  MouseEvent,
   useCallback,
   useEffect,
   useMemo,
+  useRef,
   useState,
-  MouseEvent,
 } from 'react';
 
 import useAnimationFrame from '../../../hooks/useAnimationFrame';
 import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
-
-import styles from './ExperimentCluster.module.scss';
 
 const CANVAS_MARGIN = 50;
 const MIN_RADIUS = 5;
@@ -132,7 +130,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
       maxX = -Infinity,
       maxY = -Infinity;
 
-    graphRef.current.forEachNode((node, attr) => {
+    graphRef.current.forEachNode((_node, attr) => {
       const { x, y } = attr;
       minX = Math.min(x, minX);
       minY = Math.min(y, minY);
@@ -427,7 +425,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
   );
 
   const stopDragWithEvent = useCallback(
-    (e: MouseEvent) => {
+    (_e: MouseEvent) => {
       if (dragging && graphRef.current) {
         const { node } = dragging;
         graphRef.current.updateNode(node, (attributes) => {
@@ -477,7 +475,7 @@ const ExperimentCluster: FC<ExperimentClusterProps> = ({
   // __________________________________________________________________________________________ render
 
   return (
-    <div ref={ref} className={styles.container}>
+    <div ref={ref} className="absolute inset-0 bg-[#f7f6f1]">
       <canvas
         ref={canvasRef}
         onMouseMove={onMouseMove}

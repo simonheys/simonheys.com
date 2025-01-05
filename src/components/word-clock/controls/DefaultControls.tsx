@@ -1,66 +1,82 @@
-import { FC } from 'react';
+import { ReactEventHandler, forwardRef } from 'react';
 
-import { ChevronDown, FullScreen } from '../../ui/icons';
 import Link from '../../ui/Link';
+import { ChevronDown, FullScreen } from '../../ui/icons';
 
-import styles from './DefaultControls.module.scss';
 import DefaultControlsItem from './DefaultControlsItem';
 
+import { cn } from '@/utils/cn';
+
 export interface DefaultControlsProps {
+  className?: string;
   title: boolean;
   source: boolean;
   download: boolean;
   wordsOpen: boolean;
-  onToggleWordsOpen: (event: MouseEvent) => void;
-  onFullscreen: (event: MouseEvent) => void;
+  onToggleWordsOpen: ReactEventHandler;
+  onFullscreen: ReactEventHandler;
 }
 
-const DefaultControls: FC<DefaultControlsProps> = ({
-  title,
-  source,
-  download,
-  wordsOpen,
-  onToggleWordsOpen,
-  onFullscreen,
-}) => {
-  return (
-    <div className={styles.container}>
-      {title && (
-        <DefaultControlsItem Tag={Link} href="/wordclock">
-          Word Clock
-        </DefaultControlsItem>
-      )}
-      <DefaultControlsItem onClick={onToggleWordsOpen} active={wordsOpen}>
-        Words <ChevronDown />
-      </DefaultControlsItem>
-      {download && (
-        <DefaultControlsItem
-          Tag={'a'}
-          href="https://github.com/simonheys/wordclock/releases"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Download
-        </DefaultControlsItem>
-      )}
-      {source && (
-        <DefaultControlsItem
-          Tag={'a'}
-          href="https://github.com/simonheys/wordclock"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Source
-        </DefaultControlsItem>
-      )}
-      <DefaultControlsItem
-        onClick={onFullscreen}
-        className={styles.fullscreenButton}
+const DefaultControls = forwardRef<HTMLDivElement, DefaultControlsProps>(
+  (
+    {
+      className,
+      title,
+      source,
+      download,
+      wordsOpen,
+      onToggleWordsOpen,
+      onFullscreen,
+    },
+    ref,
+  ) => {
+    return (
+      <div
+        ref={ref}
+        className={cn(
+          'backdrop-saturate-15 dark:bg-gray-80 mx-auto flex flex-row rounded-xl bg-gray-50/70 px-2 shadow-md backdrop-blur-lg',
+          className,
+        )}
       >
-        <FullScreen />
-      </DefaultControlsItem>
-    </div>
-  );
-};
+        {title && (
+          <DefaultControlsItem as={Link} href="/wordclock">
+            Word Clock
+          </DefaultControlsItem>
+        )}
+        <DefaultControlsItem onClick={onToggleWordsOpen} active={wordsOpen}>
+          Words <ChevronDown className="inline" />
+        </DefaultControlsItem>
+        {download && (
+          <DefaultControlsItem
+            as="a"
+            href="https://github.com/simonheys/wordclock/releases"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download
+          </DefaultControlsItem>
+        )}
+        {source && (
+          <DefaultControlsItem
+            as="a"
+            href="https://github.com/simonheys/wordclock"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Source
+          </DefaultControlsItem>
+        )}
+        <DefaultControlsItem
+          onClick={onFullscreen}
+          className="flex items-center justify-center"
+        >
+          <FullScreen />
+        </DefaultControlsItem>
+      </div>
+    );
+  },
+);
+
+DefaultControls.displayName = 'DefaultControls';
 
 export default DefaultControls;

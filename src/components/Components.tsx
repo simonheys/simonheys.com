@@ -53,6 +53,7 @@ const MapTypeToComponent = {
 export type ComponentKey = keyof typeof MapTypeToComponent;
 
 export const MappedComponent: FC<Component> = ({ type, ...rest }) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const Component = MapTypeToComponent[type] as any;
   if (Component) {
     return <Component {...rest} />;

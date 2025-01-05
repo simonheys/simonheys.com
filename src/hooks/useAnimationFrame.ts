@@ -4,6 +4,7 @@ const useAnimationFrame = () => {
   const [elapsed, setTime] = useState(0);
 
   useEffect(() => {
+    // eslint-disable-next-line prefer-const
     let animationFrame: number, start: number;
 
     // Function to be executed on each animation frame

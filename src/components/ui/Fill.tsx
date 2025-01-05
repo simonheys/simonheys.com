@@ -1,8 +1,6 @@
-import { FC, PropsWithChildren, useState, useEffect } from 'react';
+import { FC, PropsWithChildren, useEffect, useState } from 'react';
 
 import useWindowSize from '../../hooks/useWindowSize';
-
-import styles from './Fill.module.scss';
 
 const Fill: FC<PropsWithChildren> = ({ children }) => {
   const windowSize = useWindowSize();
@@ -13,7 +11,7 @@ const Fill: FC<PropsWithChildren> = ({ children }) => {
   }, [windowSize?.clientHeight]);
 
   return (
-    <div className={styles.container} style={style}>
+    <div className="flex flex-col md:mb-0" style={style}>
       {children}
     </div>
   );

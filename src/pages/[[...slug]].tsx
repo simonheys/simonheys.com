@@ -6,12 +6,12 @@ import Components, { MappedComponent } from '../components/Components';
 import Fill from '../components/ui/Fill';
 import {
   Component,
-  getMeta,
   Page as PageType,
-  getPagePaths,
-  getPageForPath,
-  getComponentsForPath,
   content,
+  getComponentsForPath,
+  getMeta,
+  getPageForPath,
+  getPagePaths,
 } from '../modules/content';
 
 const meta = getMeta();

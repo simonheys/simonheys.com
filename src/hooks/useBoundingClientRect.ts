@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback, useEffect } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import ResizeObserver from 'resize-observer-polyfill';
 
 const useBoundingClientRect = () => {
@@ -16,13 +16,15 @@ const useBoundingClientRect = () => {
 
   const setRef = useCallback(
     (nextRef: HTMLDivElement) => {
-      if (ref?.current) {
-        resizeObserver.current && resizeObserver.current.unobserve(ref.current);
+      if (ref?.current && resizeObserver.current) {
+        resizeObserver.current.unobserve(ref.current);
       }
       ref.current = nextRef;
       if (ref?.current) {
         updateBoundingClientRect();
-        resizeObserver.current && resizeObserver.current.observe(ref.current);
+        if (resizeObserver.current) {
+          resizeObserver.current.observe(ref.current);
+        }
       }
     },
     [updateBoundingClientRect],

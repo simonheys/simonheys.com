@@ -1,6 +1,5 @@
 import { FC } from 'react';
 
-import styles from './WordClockCell.module.scss';
 import WordClockEditable, { WordClockEditableProps } from './WordClockEditable';
 
 export interface WordClockCellProps extends WordClockEditableProps {
@@ -12,8 +11,10 @@ const WordClockCell: FC<WordClockCellProps> = ({
   ...rest
 }) => {
   return (
-    <div className={styles[`containerSizer__col-${col}`]}>
-      <div className={styles.container}>
+    <div
+      className={`relative h-0 w-full ${col === 6 ? 'pb-[114.65%]' : 'pb-[56.25%]'}`}
+    >
+      <div className="absolute inset-0">
         <WordClockEditable {...rest} />
       </div>
     </div>

@@ -2,17 +2,18 @@ import manifest from '@simonheys/wordclock-words/json/Manifest.json';
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 type FileToJson = {
-  [key: string]: any;
+  [key: string]: object;
 };
 
 const fileToJson: FileToJson = {};
 
 manifest.files.forEach((file: string) => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const json = require(`@simonheys/wordclock-words/json/${file}`);
   fileToJson[file] = json;
 });
 
-const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
+const handler = (req: NextApiRequest, res: NextApiResponse<object>) => {
   const {
     query: { file },
     method,

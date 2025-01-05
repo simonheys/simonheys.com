@@ -58,7 +58,7 @@ export class CanvasLozenge {
     const { x, y, scale, rotation, vx, vr, opacity } = this.state;
     const { containerWidth, containerHeight } = this.props;
     const thisWidth = LozengeDimensions.width * scale;
-    let newState = {
+    const newState = {
       x,
       y,
       rotation,

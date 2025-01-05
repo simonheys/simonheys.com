@@ -5,8 +5,9 @@ import useBoundingClientRect from '../hooks/useBoundingClientRect';
 import useWindowScrollVelocity from '../hooks/useWindowScrollVelocity';
 import { getPageForPath } from '../modules/content';
 
-import styles from './Header.module.scss';
 import Link from './ui/Link';
+
+import { cn } from '@/utils/cn';
 
 export interface HeaderProps {
   links: string[];
@@ -92,26 +93,24 @@ const Header: FC<HeaderProps> = ({ links }) => {
 
   return (
     <>
-      <div className={styles.sizeContainer} style={style}></div>
+      <div style={style}></div>
       <div
-        className={
-          fixed ? styles.navigationContainerFixed : styles.navigationContainer
-        }
+        className={cn(
+          fixed &&
+            'backdrop-saturate-15 transition-top fixed left-0 right-0 top-0 z-10 bg-background/85 backdrop-blur-lg duration-100 ease-out',
+        )}
         style={navigationContainerStyle}
       >
-        <div ref={ref} className={'container-fluid'}>
-          <div
-            className={
-              'row justify-content-between justify-content-md-end py-4 py-md-5'
-            }
-          >
-            <div className={'col'}>
-              <h1 data-tid={'title'} className={styles.title}>
-                <Link href="/">Simon Heys</Link>
-              </h1>
-            </div>
-            <div className={'col'} data-tid={'navigation'}>
-              <div className={styles.linksContainer}>
+        <div ref={ref} className="containerAlias">
+          <div className="flex justify-between py-6 text-2xl font-medium text-primary sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12">
+            <h1
+              data-tid="title"
+              className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
+            >
+              <Link href="/">Simon Heys</Link>
+            </h1>
+            <div data-tid="navigation">
+              <nav className="flex flex-row gap-4">
                 {links.map((path, index) => {
                   const page = getPageForPath(path);
                   if (!page) {
@@ -123,18 +122,17 @@ const Header: FC<HeaderProps> = ({ links }) => {
                     <Link
                       key={index}
                       href={path}
-                      className={active ? styles.linkActive : styles.link}
+                      className={`${active ? 'text-primary hover:text-primary-hover' : 'text-gray-500 hover:text-gray-550 dark:text-gray-400 dark:hover:text-gray-500'} transition duration-100`}
                     >
                       {title}
                     </Link>
                   );
                 })}
-              </div>
+              </nav>
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.spaceContainer}></div>
     </>
   );
 };

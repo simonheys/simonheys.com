@@ -36,13 +36,17 @@ describe('Unit test content functions', () => {
     });
     describe('when invalid', () => {
       test('should return root path /', async () => {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         expect(normalisePath()).toEqual('/');
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         expect(normalisePath(null)).toEqual('/');
         expect(normalisePath([])).toEqual('/');
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         expect(normalisePath({})).toEqual('/');
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
         // @ts-expect-error
         expect(normalisePath(123)).toEqual('/');
       });

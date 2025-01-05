@@ -29,9 +29,8 @@ const getWindowScroll = (): WindowScrollVelocity => {
 };
 
 const useWindowScrollVelocity = () => {
-  const [windowScroll, setWindowScroll] = useState<WindowScrollVelocity>(
-    getWindowScroll(),
-  );
+  const [windowScroll, setWindowScroll] =
+    useState<WindowScrollVelocity>(getWindowScroll());
   const elapsedMilliseconds = useAnimationFrame();
   const previousScroll = useRef(getWindowScroll());
 

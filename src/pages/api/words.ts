@@ -17,6 +17,7 @@ interface Meta {
 }
 
 manifest.files.forEach((file) => {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const json = require(`@simonheys/wordclock-words/json/${file}`);
   const { meta }: { meta: Meta } = json;
   const { language, title } = meta;
@@ -37,6 +38,7 @@ const wordsOrdered = Object.keys(words)
     return obj;
   }, {});
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
   const { method } = req;
   switch (method) {

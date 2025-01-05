@@ -6,7 +6,7 @@ import ScrollingBrowserCell, {
 
 const ScrollingBrowser: FC<ScrollingBrowserCellProps> = (props) => {
   return (
-    <div className={'container-fluid mb-3 mb-md-4'}>
+    <div className="containerAlias mb-6">
       <ScrollingBrowserCell {...props} />
     </div>
   );

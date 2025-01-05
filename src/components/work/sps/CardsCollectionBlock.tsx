@@ -4,7 +4,6 @@ import { FC } from 'react';
 import { Sps2x4, Sps3x4, Sps4, Sps4x2, Sps4x4 } from '../../ui/icons';
 
 import CardItem, { CardItemPostType } from './CardItem';
-import styles from './CardsCollectionBlock.module.scss';
 
 export const mapLayoutPropToLayout = {
   '3over4': {
@@ -53,11 +52,11 @@ const CardsCollectionBlock: FC<CardsCollectionBlockProps> = ({
   let currentPostIndex = 0;
   return (
     <LayoutGroup>
-      <div className={'container-fluid'}>
+      <div className="containerAlias">
         {layout.map((row: number[], rowIndex: number) => {
           const cardsInRow = row.reduce((a, b) => a + b, 0);
           return (
-            <div key={`row-${rowIndex}`} className={styles.row}>
+            <div key={`row-${rowIndex}`} className="flex flex-wrap">
               {row.map((cardsInCell, colIndex) => {
                 const postsRemaining = posts.length - currentPostIndex;
                 if (postsRemaining > 0) {
@@ -80,7 +79,7 @@ const CardsCollectionBlock: FC<CardsCollectionBlockProps> = ({
                   return (
                     <div
                       key={`col-${colIndex}`}
-                      className={'col d-flex flex-column gx-1 gx-sm-2'}
+                      className="flex grow basis-0 flex-col space-y-1 px-1 sm:space-y-2 sm:px-2"
                     >
                       {cardPosts.map((post) => (
                         <CardItem

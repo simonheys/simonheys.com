@@ -1,4 +1,4 @@
-import { useRef, useState, useCallback } from 'react';
+import { useCallback, useRef, useState } from 'react';
 
 const useFullscreen = () => {
   const ref = useRef<HTMLDivElement | null>(null);

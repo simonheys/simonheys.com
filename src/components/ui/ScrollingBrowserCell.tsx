@@ -1,12 +1,11 @@
-import { interpolate, easeInOut, animate, PlaybackControls } from 'popmotion';
-import { FC, useState, useRef, useEffect, useMemo } from 'react';
+import { PlaybackControls, animate, easeInOut, interpolate } from 'popmotion';
+import { FC, useEffect, useMemo, useRef, useState } from 'react';
 
 import useBoundingClientRectInView from '../../hooks/useBoundingClientRectInView';
 import useWindowSize from '../../hooks/useWindowSize';
 import * as contentModule from '../../modules/content';
 
 import ImageResponsive from './ImageResponsive';
-import styles from './ScrollingBrowserCell.module.scss';
 
 const MASK_ATTRIBUTES = {
   default: {
@@ -215,24 +214,37 @@ const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
 
   const svgSrc = maskSrc || svg.src;
 
+  // Calculate padding bottom based on mask type
+  const paddingBottomClass = useMemo(() => {
+    switch (maskKey) {
+      case 'default':
+        return 'pb-[56.25%]'; // (9/16 * 100%)
+      case 'col-6':
+      case 'col-6-phone':
+        return 'pb-[114.65%]'; // (1080/942 * 100%)
+      default:
+        return 'pb-[56.25%]';
+    }
+  }, [maskKey]);
+
   return (
     <div
       ref={containerRef}
-      className={styles[`containerSizer__mask--${maskKey}`]}
+      className={`relative h-0 w-full overflow-hidden ${paddingBottomClass}`}
     >
-      <div className={styles.container}>
-        <div className={styles.imageContainer} style={style}>
-          {src && <ImageResponsive src={src} alt={''} />}
+      <div className="absolute inset-0 overflow-hidden rounded-[0.2rem] bg-white">
+        <div className="absolute inset-x-0 top-0" style={style}>
+          {src && <ImageResponsive src={src} alt="" />}
           {system &&
             systemStyles &&
             system.map((image, index) => (
               <div key={index} style={systemStyles[index]}>
-                <ImageResponsive src={image} alt={''} priority />
+                <ImageResponsive src={image} alt="" priority />
               </div>
             ))}
         </div>
-        <div className={styles.maskContainer}>
-          <ImageResponsive src={svgSrc} alt={''} priority />
+        <div className="absolute inset-0">
+          <ImageResponsive src={svgSrc} alt="" priority />
         </div>
       </div>
     </div>

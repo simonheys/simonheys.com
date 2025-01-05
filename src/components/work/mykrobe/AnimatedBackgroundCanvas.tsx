@@ -1,9 +1,8 @@
-import { FC, useRef, useEffect, useMemo } from 'react';
+import { FC, useEffect, useMemo, useRef } from 'react';
 
 import useAnimationFrame from '../../../hooks/useAnimationFrame';
 import useBoundingClientRectInView from '../../../hooks/useBoundingClientRectInView';
 
-import styles from './AnimatedBackgroundCanvas.module.scss';
 import { CanvasLozenge } from './CanvasLozenge';
 import { LOZENGE_COLORS, LOZENGES_PER_COLOR } from './constants';
 
@@ -89,7 +88,10 @@ const AnimatedBackgroundCanvas: FC = () => {
   }, [boundingClientRect?.height, boundingClientRect?.width]);
 
   return (
-    <div ref={ref} className={styles.container}>
+    <div
+      ref={ref}
+      className="pointer-events-none absolute inset-0 overflow-hidden"
+    >
       <canvas ref={canvasRef} {...canvasProps} />
     </div>
   );

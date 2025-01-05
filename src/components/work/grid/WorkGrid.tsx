@@ -8,24 +8,19 @@ import WorkGridCell from './WorkGridCell';
 const WorkGrid: FC = () => {
   const pages = getMeta().portfolio.pages;
   return (
-    <div className={'container-fluid mb-3 mb-md-4'}>
-      <div className={'row'}>
-        {pages.map((entry, index) => {
-          const { path } = entry;
-          const page = getPageForPath(path);
-          if (!page) {
-            return null;
-          }
-          return (
-            <AppearWhenInView
-              key={`work-grid-${path}-${index}`}
-              className={'col-md-6 mb-3 mb-md-4'}
-            >
-              <WorkGridCell page={page} />
-            </AppearWhenInView>
-          );
-        })}
-      </div>
+    <div className="containerAlias mb-3 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-6 md:mb-12">
+      {pages.map((entry, index) => {
+        const { path } = entry;
+        const page = getPageForPath(path);
+        if (!page) {
+          return null;
+        }
+        return (
+          <AppearWhenInView key={`work-grid-${path}-${index}`}>
+            <WorkGridCell page={page} />
+          </AppearWhenInView>
+        );
+      })}
     </div>
   );
 };
