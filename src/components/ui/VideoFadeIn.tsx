@@ -61,8 +61,8 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
         ? parseFloat(aspectProp)
         : aspectProp
       : col === 6
-      ? 1080 / 942
-      : 1080 / 1920;
+        ? 1080 / 942
+        : 1080 / 1920;
     const style = {
       paddingBottom: `${100 * aspect}%`,
       backgroundColor: color,

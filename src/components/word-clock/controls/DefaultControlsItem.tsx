@@ -25,8 +25,8 @@ const DefaultControlsItem: FC<DefaultControlsItemProps> = ({
         disabled
           ? styles.containerDisabled
           : active
-          ? styles.containerActive
-          : styles.container,
+            ? styles.containerActive
+            : styles.container,
         className,
       )}
       {...rest}
