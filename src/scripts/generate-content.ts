@@ -7,7 +7,7 @@ import yaml from 'js-yaml';
 import getFiles from '../utils/getFiles';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const contentSystemPath = path.join(__dirname, '../content');

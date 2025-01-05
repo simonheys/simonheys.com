@@ -50,7 +50,9 @@ const WordsPickerControls = forwardRef<
   useEffect(() => {
     const timeoutId = setTimeout(scrollIntoView, 0);
     return () => {
-      timeoutId && clearTimeout(timeoutId);
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
     };
   }, [scrollIntoView]);
 

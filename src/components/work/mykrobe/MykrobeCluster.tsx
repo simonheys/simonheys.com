@@ -2,10 +2,14 @@ import { FC } from 'react';
 
 import ExperimentCluster, { ExperimentClusterType } from './ExperimentCluster';
 
+import mst1 from './json/mst-1.json';
+import mst2 from './json/mst-2.json';
+import mst3 from './json/mst-3.json';
+
 const mst = {
-  'mst-1': require(`./json/mst-1.json`),
-  'mst-2': require(`./json/mst-2.json`),
-  'mst-3': require(`./json/mst-3.json`),
+  'mst-1': mst1,
+  'mst-2': mst2,
+  'mst-3': mst3,
 };
 
 export interface MykrobeClusterProps {

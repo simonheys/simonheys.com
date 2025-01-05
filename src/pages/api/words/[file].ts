@@ -8,7 +8,7 @@ type FileToJson = {
 const fileToJson: FileToJson = {};
 
 manifest.files.forEach((file: string) => {
-  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   const json = require(`@simonheys/wordclock-words/json/${file}`);
   fileToJson[file] = json;
 });

@@ -5,7 +5,9 @@ const useClickOutside = (onClickOutside: (event: MouseEvent) => void) => {
   const onMouseUp = useCallback(
     (event: MouseEvent) => {
       if (!ref.current?.contains(event.target as Node)) {
-        onClickOutside && onClickOutside(event);
+        if (onClickOutside) {
+          onClickOutside(event);
+        }
       }
     },
     [onClickOutside],

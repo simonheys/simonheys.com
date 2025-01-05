@@ -24,7 +24,9 @@ export const AppearWhenInView: FC<AppearWhenInViewProps> = (props) => {
   useEffect(() => {
     timeoutId.current = setTimeout(checkInView, 150);
     return () => {
-      timeoutId.current && clearTimeout(timeoutId.current);
+      if (timeoutId.current) {
+        clearTimeout(timeoutId.current);
+      }
     };
   }, [checkInView]);
 

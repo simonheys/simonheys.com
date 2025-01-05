@@ -8,7 +8,7 @@ import cliProgress from 'cli-progress';
 import getFiles from '../utils/getFiles';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const iconsSystemPath = path.join(__dirname, '../components/ui/icons');
@@ -58,10 +58,14 @@ const generateIconComponents = async () => {
     },
     cliProgress.Presets.shades_grey,
   );
-  useProgressBar && progressBar.start(filePaths.length, 0, { filename: '' });
+  if (useProgressBar) {
+    progressBar.start(filePaths.length, 0, { filename: '' });
+  }
 
   for (const filePath of filePaths) {
-    useProgressBar && progressBar.increment({ filename: filePath });
+    if (useProgressBar) {
+      progressBar.increment({ filename: filePath });
+    }
     const sourcePath = path.join(iconsSvgSystemPath, filePath);
     const ext = path.extname(filePath);
     const filePathWithoutExt = filePath.substr(0, filePath.length - ext.length);
@@ -74,14 +78,17 @@ const generateIconComponents = async () => {
       `export { default as ${filePathWithoutExt} } from './${filePathWithoutExt}';`,
     );
   }
-  useProgressBar &&
+  if (useProgressBar) {
     progressBar.update(filePaths.length, { filename: indexSystemPath });
+  }
 
   lines.push('');
   const fileContents = lines.join('\n');
   fs.writeFileSync(indexSystemPath, fileContents, 'utf8');
 
-  useProgressBar && progressBar.stop();
+  if (useProgressBar) {
+    progressBar.stop();
+  }
 };
 
 (async () => {

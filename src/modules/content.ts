@@ -71,7 +71,7 @@ export type Content = {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const defaultContent: Content = require('../../content/content.json');
 export { defaultContent as content };
 

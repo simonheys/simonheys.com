@@ -29,7 +29,8 @@ const MotionWordsPickerControls = motion.create(WordsPickerControls);
 const MotionDefaultControls = motion.create(DefaultControls);
 
 const fileDefault = 'English_simple_fragmented.json';
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
 
 export interface WordClockEditableProps {

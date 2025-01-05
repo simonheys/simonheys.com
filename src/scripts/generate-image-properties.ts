@@ -11,7 +11,7 @@ import getImageColor from '../utils/getImageColor';
 import getImageHash from '../utils/getImageHash';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const useProgressBar = !argv.watch;
@@ -58,10 +58,15 @@ const generateImageProperties = async () => {
     },
     cliProgress.Presets.shades_grey,
   );
-  useProgressBar && progressBar.start(filePaths.length, 0, { filename: '' });
+
+  if (useProgressBar) {
+    progressBar.start(filePaths.length, 0, { filename: '' });
+  }
 
   for (const filePath of filePaths) {
-    useProgressBar && progressBar.increment({ filename: filePath });
+    if (useProgressBar) {
+      progressBar.increment({ filename: filePath });
+    }
     const fileSystemPath = path.join(publicSystemPath, filePath);
     const hash = await getImageHash(fileSystemPath);
     const currentProperties = currentImageProperties[filePath];
@@ -79,8 +84,9 @@ const generateImageProperties = async () => {
     }
   }
 
-  useProgressBar &&
+  if (useProgressBar) {
     progressBar.update(filePaths.length, { filename: imagePropertiesFilePath });
+  }
 
   const fileContents = JSON.stringify(imageProperties, null, 2);
   const dirname = path.dirname(imagePropertiesSystemPath);
@@ -88,7 +94,9 @@ const generateImageProperties = async () => {
     fs.mkdirSync(dirname);
   }
   await prettifyAndWriteFile(imagePropertiesSystemPath, fileContents);
-  useProgressBar && progressBar.stop();
+  if (useProgressBar) {
+    progressBar.stop();
+  }
 };
 
 (async () => {
