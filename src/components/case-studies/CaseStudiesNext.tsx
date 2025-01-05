@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { FC } from 'react';
 
 import { getNextCaseStudiesPageForPath } from '../../modules/content';
@@ -7,8 +9,8 @@ import AppearWhenInView from '../ui/AppearWhenInView';
 import CaseStudiesGridCell from './grid/CaseStudiesGridCell';
 
 const CaseStudiesNext: FC = () => {
-  const router = useRouter();
-  const nextPage = getNextCaseStudiesPageForPath(router.asPath);
+  const pathname = usePathname();
+  const nextPage = getNextCaseStudiesPageForPath(pathname);
   if (!nextPage) {
     return null;
   }

@@ -1,4 +1,6 @@
-import { useRouter } from 'next/router';
+'use client';
+
+import { usePathname } from 'next/navigation';
 import { FC } from 'react';
 import ReactMarkdown from 'react-markdown';
 
@@ -18,8 +20,8 @@ export interface WorkHeaderProps {
 }
 
 const WorkHeader: FC<WorkHeaderProps> = ({ title, subtitle, links, ruled }) => {
-  const router = useRouter();
-  const page = getPageForPath(router.asPath);
+  const pathname = usePathname();
+  const page = getPageForPath(pathname);
   if (!page) {
     return null;
   }

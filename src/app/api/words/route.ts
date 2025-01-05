@@ -1,5 +1,5 @@
 import manifest from '@simonheys/wordclock-words/json/Manifest.json';
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextResponse } from 'next/server';
 
 const words: Record<
   string,
@@ -38,17 +38,23 @@ const wordsOrdered = Object.keys(words)
     return obj;
   }, {});
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-const handler = (req: NextApiRequest, res: NextApiResponse<any>) => {
-  const { method } = req;
-  switch (method) {
-    case 'GET':
-      res.status(200).json(wordsOrdered);
-      break;
-    default:
-      res.setHeader('Allow', ['GET']);
-      res.status(405).end(`Method ${method} Not Allowed`);
-  }
-};
+export async function GET() {
+  return NextResponse.json(wordsOrdered);
+}
 
-export default handler;
+// Handle unsupported methods
+export async function POST() {
+  return new NextResponse(null, { status: 405 });
+}
+
+export async function PUT() {
+  return new NextResponse(null, { status: 405 });
+}
+
+export async function DELETE() {
+  return new NextResponse(null, { status: 405 });
+}
+
+export async function PATCH() {
+  return new NextResponse(null, { status: 405 });
+}

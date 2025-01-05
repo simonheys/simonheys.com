@@ -1,3 +1,5 @@
+'use client';
+
 import { motion, useAnimation } from 'framer-motion';
 import { FC, PropsWithChildren, useCallback, useEffect, useRef } from 'react';
 import { useInView } from 'react-intersection-observer';

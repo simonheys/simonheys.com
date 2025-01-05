@@ -1,3 +1,5 @@
+'use client';
+
 import { colord } from 'colord';
 import Graph from 'graphology';
 import forceAtlas2 from 'graphology-layout-forceatlas2';
