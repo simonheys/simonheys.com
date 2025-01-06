@@ -1,6 +1,8 @@
 {
+  "plugins": ["eslint-plugin-react-compiler"],
   "extends": ["next/core-web-vitals", "next/typescript", "react-app/jest"],
   "rules": {
+    "react-compiler/react-compiler": "error",
     "@typescript-eslint/no-unused-vars": [
       "error",
       {
