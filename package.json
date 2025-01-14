@@ -28,7 +28,7 @@
     "colord": "2.9.3",
     "favicons": "7.2.0",
     "feed": "4.2.2",
-    "framer-motion": "11.17.0",
+    "framer-motion": "11.18.0",
     "graphology": "0.25.4",
     "graphology-layout-forceatlas2": "0.10.1",
     "graphology-utils": "2.5.2",
@@ -36,7 +36,7 @@
     "popmotion": "11.0.5",
     "react": "19.0.0",
     "react-dom": "19.0.0",
-    "react-intersection-observer": "9.14.1",
+    "react-intersection-observer": "9.15.0",
     "react-markdown": "9.0.3",
     "resize-observer-polyfill": "1.5.1",
     "swr": "2.3.0"
@@ -58,7 +58,7 @@
     "@types/js-yaml": "4.0.9",
     "@types/ndarray": "1.0.14",
     "@types/node": "22.10.6",
-    "@types/react": "19.0.6",
+    "@types/react": "19.0.7",
     "@types/resize-observer-browser": "0.1.11",
     "@types/vimeo__player": "2.18.3",
     "@typescript-eslint/eslint-plugin": "8.20.0",
@@ -84,7 +84,7 @@
     "js-yaml": "4.1.0",
     "lint-staged": "15.3.0",
     "minimist": "1.2.8",
-    "postcss": "8.5.0",
+    "postcss": "8.5.1",
     "prettier": "3.4.2",
     "prettier-plugin-organize-imports": "4.1.0",
     "prettier-plugin-tailwindcss": "0.6.9",
@@ -104,7 +104,7 @@
   },
   "pnpm": {
     "overrides": {
-      "@types/react": "19.0.6"
+      "@types/react": "19.0.7"
     }
   }
 }
