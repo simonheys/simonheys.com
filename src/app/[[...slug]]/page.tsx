@@ -43,6 +43,9 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: pageTitle,
     description: description || subtitle,
+    alternates: {
+      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${slug.join('/')}`,
+    },
     openGraph: {
       title: pageTitle,
       description: description || subtitle || excerpt,
