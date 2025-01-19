@@ -1,28 +1,22 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 const useAnimationFrame = () => {
   const [elapsed, setTime] = useState(0);
+  const startTimeRef = useRef<number>(0);
 
   useEffect(() => {
-    // eslint-disable-next-line prefer-const
-    let animationFrame: number, start: number;
+    let animationFrame: number;
 
-    // Function to be executed on each animation frame
-    const onFrame = () => {
-      setTime(Date.now() - start);
-      loop();
-    };
-
-    // Call onFrame() on next animation frame
-    const loop = () => {
+    const onFrame = (timestamp: number) => {
+      if (startTimeRef.current === 0) {
+        startTimeRef.current = timestamp;
+      }
+      setTime(timestamp - startTimeRef.current);
       animationFrame = requestAnimationFrame(onFrame);
     };
 
-    // Start the loop
-    start = Date.now();
-    loop();
+    animationFrame = requestAnimationFrame(onFrame);
 
-    // Clean things up
     return () => {
       cancelAnimationFrame(animationFrame);
     };

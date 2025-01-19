@@ -14,8 +14,8 @@ importers:
         specifier: 2.6.2
         version: 2.6.2
       '@simonheys/wordclock':
-        specifier: 1.2.0
-        version: 1.2.0(lodash-es@4.17.21)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(resize-observer-polyfill@1.5.1)
+        specifier: 1.2.0-beta.4
+        version: 1.2.0-beta.4(lodash-es@4.17.21)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(resize-observer-polyfill@1.5.1)
       '@simonheys/wordclock-words':
         specifier: 1.2.0
         version: 1.2.0
@@ -23,7 +23,7 @@ importers:
         specifier: 1.4.1
         version: 1.4.1(next@15.1.4(@babel/core@7.24.5)(@playwright/test@1.49.1)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.79.4))(react@19.0.0)
       '@vercel/speed-insights':
-        specifier: ^1.1.0
+        specifier: 1.1.0
         version: 1.1.0(next@15.1.4(@babel/core@7.24.5)(@playwright/test@1.49.1)(babel-plugin-macros@3.1.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(sass@1.79.4))(react@19.0.0)
       '@vimeo/player':
         specifier: 2.25.0
@@ -2495,10 +2495,10 @@ packages:
         integrity: sha512-s8SWCnUegVmkzE21S8GMdGyPqFbjOLzXdWU+rdOZmlEoOS1DJKjLu6M2ssbzH7WPzLbb2y69WHveYbsWJbnSkg==,
       }
 
-  '@simonheys/wordclock@1.2.0':
+  '@simonheys/wordclock@1.2.0-beta.4':
     resolution:
       {
-        integrity: sha512-njokBqAvTDsa4PG+jMl2jlyl3y65kR58DbS7wVVw4vlfLzTWng7oTUCXLROT+nh9Uy6STT+uO0gzoskEtMEc8w==,
+        integrity: sha512-nTlEHXW53RM4u7UyTgO8CgzhA3fN1WZ0yBOQdjHWMe1/6bHdvbI88gSUazH8P/+7PiKy5GPq7ZRW1NFSaecytw==,
       }
     peerDependencies:
       lodash-es: ^4.17.21
@@ -10599,7 +10599,7 @@ snapshots:
 
   '@simonheys/wordclock-words@1.2.0': {}
 
-  '@simonheys/wordclock@1.2.0(lodash-es@4.17.21)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(resize-observer-polyfill@1.5.1)':
+  '@simonheys/wordclock@1.2.0-beta.4(lodash-es@4.17.21)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(resize-observer-polyfill@1.5.1)':
     dependencies:
       '@simonheys/wordclock-words': 1.2.0
       lodash-es: 4.17.21
