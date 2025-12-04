@@ -100,23 +100,23 @@ const Header: FC<HeaderProps> = ({ links }) => {
       <div
         className={cn(
           fixed &&
-            'backdrop-saturate-15 transition-top fixed left-0 right-0 top-0 z-10 bg-background/85 backdrop-blur-lg duration-100 ease-out',
+            'transition-top bg-background/85 fixed top-0 right-0 left-0 z-10 backdrop-blur-lg backdrop-saturate-15 duration-100 ease-out',
         )}
         style={navigationContainerStyle}
       >
-        <div ref={ref} className="containerAlias">
-          <div className="flex justify-between py-6 text-2xl font-medium text-primary sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12">
+        <div ref={ref} className="container">
+          <div className="text-primary flex justify-between py-6 text-2xl font-medium sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12">
             {isHome ? (
               <h1
                 data-tid="title"
-                className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
+                className="text-primary hover:text-primary-hover inline-block transition-colors duration-100"
               >
                 <Link href="/">Simon Heys</Link>
               </h1>
             ) : (
               <div
                 data-tid="title"
-                className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
+                className="text-primary hover:text-primary-hover inline-block transition-colors duration-100"
               >
                 <Link href="/">Simon Heys</Link>
               </div>
@@ -134,7 +134,12 @@ const Header: FC<HeaderProps> = ({ links }) => {
                     <Link
                       key={index}
                       href={path}
-                      className={`${active ? 'text-primary hover:text-primary-hover' : 'text-gray-500 hover:text-gray-550 dark:text-gray-400 dark:hover:text-gray-500'} transition duration-100`}
+                      className={cn(
+                        'transition duration-100',
+                        active
+                          ? 'text-primary hover:text-primary-hover'
+                          : 'hover:text-gray-550 text-gray-500 dark:text-gray-400 dark:hover:text-gray-500',
+                      )}
                     >
                       {title}
                     </Link>

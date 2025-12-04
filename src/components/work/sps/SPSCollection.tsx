@@ -70,7 +70,7 @@ const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
 
   return (
     <AppearWhenInView>
-      <div className="containerAlias mb-md-4 mb-3">
+      <div className="mb-md-4 container mb-3">
         <div className="relative h-0 w-full pb-[75%] sm:pb-[56.25%]">
           <div
             ref={ref}
@@ -94,7 +94,7 @@ const SPSCollection: FC<SPSCollectionProps> = ({ caption }) => {
         </div>
       </div>
       {caption && (
-        <div className="containerAlias">
+        <div className="container">
           <Caption caption={caption} />
         </div>
       )}

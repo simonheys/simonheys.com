@@ -24,7 +24,7 @@ const LinkComponent = ({
   return (
     <Link
       href={href as LinkProps['href']}
-      className="text-primary transition duration-100 hover:text-primary-hover"
+      className="text-primary hover:text-primary-hover transition duration-100"
       {...rest}
     />
   );
@@ -58,7 +58,7 @@ const Prose: FC<ProseProps> = ({ title, text, links, ruled }) => {
     <AppearWhenInView>
       {ruled && (
         <div className="container-fluid">
-          <div className="row gx-0 border-top"></div>
+          <div className="border-border row gx-0 border-t"></div>
         </div>
       )}
       <div className={ruled ? 'container-fluid mb-5 pt-2' : 'container-fluid'}>
@@ -68,14 +68,14 @@ const Prose: FC<ProseProps> = ({ title, text, links, ruled }) => {
           </div>
           <div className="col-md-6">
             {text && (
-              <div className="h5 -mb-[1.5rem] [&_code]:rounded [&_code]:bg-gray-150 [&_code]:p-1 [&_code]:text-sm [&_code]:text-gray-700 [&_code]:dark:text-gray-500 [&_h1]:font-bold [&_h2]:font-bold [&_h3]:font-bold [&_h4]:font-bold [&_h5]:font-bold [&_pre]:rounded [&_pre]:bg-gray-150 [&_pre]:p-3 [&_pre]:dark:text-gray-500">
+              <div className="h5 [&_code]:bg-gray-150 [&_pre]:bg-gray-150 -mb-6 [&_code]:rounded [&_code]:p-1 [&_code]:text-sm [&_code]:text-gray-700 [&_code]:dark:text-gray-500 [&_h1]:font-bold [&_h2]:font-bold [&_h3]:font-bold [&_h4]:font-bold [&_h5]:font-bold [&_pre]:rounded [&_pre]:p-3 [&_pre]:dark:text-gray-500">
                 <ReactMarkdown components={reactMarkdownComponents}>
                   {text}
                 </ReactMarkdown>
               </div>
             )}
             {links && (
-              <div className="h5 mb-0 mt-6">
+              <div className="h5 mt-6 mb-0">
                 <TextLinks links={links} />
               </div>
             )}

@@ -1,6 +1,8 @@
 import { LayoutGroup, motion } from 'framer-motion';
 import { FC, ReactNode } from 'react';
 
+import { cn } from '@/utils/cn';
+
 export interface SegmentedControlProps {
   options: {
     title: ReactNode;
@@ -29,18 +31,19 @@ const SegmentedControl: FC<SegmentedControlProps> = ({
             >
               <div
                 onClick={() => onChange(item.value)}
-                className={`hover:text-link-hover relative m-0 cursor-pointer p-2 leading-none transition-colors duration-100 ease-in sm:p-3 ${
-                  isActive ? 'text-primary' : ''
-                }`}
+                className={cn(
+                  'hover:text-link-hover relative m-0 cursor-pointer p-2 leading-none transition-colors duration-100 ease-in sm:p-3',
+                  isActive && 'text-primary',
+                )}
               >
                 {isActive && (
                   <motion.div
                     layoutId="SegmentedControlActive"
-                    className="panel-border-radius bg-panel-hover absolute inset-0 z-[1]"
+                    className="panel-border-radius bg-panel-hover absolute inset-0 z-1"
                     transition={{ duration: 0.5, type: 'spring' }}
                   />
                 )}
-                <div className="relative z-[2] whitespace-nowrap text-sm">
+                <div className="relative z-2 text-sm whitespace-nowrap">
                   {item.title}
                 </div>
               </div>

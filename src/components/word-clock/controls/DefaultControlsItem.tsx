@@ -24,8 +24,8 @@ const DefaultControlsItem = <T extends ElementType = 'div'>({
       className={cn(
         'my-1 rounded-xl px-3 py-2 text-xl font-medium text-gray-600',
         !disabled &&
-          'cursor-pointer transition-colors duration-100 hover:text-primary',
-        active && 'border-gray-200 bg-gray-500/20 text-primary',
+          'hover:text-primary cursor-pointer transition-colors duration-100',
+        active && 'border-border text-primary bg-gray-500/20',
         className,
       )}
       {...rest}
