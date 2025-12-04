@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "concurrently -k -r \"pnpm generate:watch\" \"pnpm next dev --turbopack\"",
+    "dev": "concurrently -k -r \"pnpm generate:watch\" \"pnpm next dev\"",
     "build": "pnpm generate && next build",
     "start": "next start",
     "lint": "eslint .",
@@ -86,12 +86,13 @@
     "lint-staged": "16.2.7",
     "minimist": "1.2.8",
     "postcss": "8.5.6",
+    "@tailwindcss/postcss": "^4.0.0",
     "prettier": "3.7.4",
     "prettier-plugin-organize-imports": "4.3.0",
     "prettier-plugin-tailwindcss": "0.7.2",
     "rimraf": "6.1.2",
     "tailwind-merge": "3.4.0",
-    "tailwindcss": "3.4.18",
+    "tailwindcss": "^4.0.0",
     "tsx": "4.21.0",
     "typescript": "5.9.3"
   },
