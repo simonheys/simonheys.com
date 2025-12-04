@@ -4,7 +4,7 @@ thumbnails:
   - src: portfolio/minimalfolio/minimalfolio-thumbnail-logo.jpg
 components:
   - type: work-header
-    subtitle: The easiest way to present your portfolio of images, video and PDF on your iPad or iPhone. The app is unbranded so your folio does the talking.
+    subtitle: A simple way for designers, photographers and teams to present images, video and PDF on iPad and iPhone, with an unbranded interface so your folio does the talking.
     links:
       - text: Download
         url: https://apple.co/3oLaYwu
@@ -13,26 +13,26 @@ components:
     color: '#363636'
   - type: work-row
     columns:
-      - text: I designed and developed Minimal Folio to solve my own need for a portfolio app. I wanted the ability to adjust the breadth and depth of my portfolio in response to the flow of conversation while presenting.
+      - text: I designed and developed Minimal Folio to solve my own need for a portfolio app, with the ability to adjust the breadth and depth of my work in response to the flow of conversation while presenting.
   - type: work-row
     columns:
       - src: portfolio/minimalfolio/minimalfolio-thumbnails.jpg
   - type: work-row
     columns:
-      - text: The solution I created was non-linear navigation. Swipe vertically to increase detail, or horizontally to change project.
+      - text: The solution is non-linear navigation, where you swipe vertically to increase detail within a project and horizontally to change project, so you can easily dive deeper when a client is interested and move on when they are not.
   - type: work-row
     vimeoId: 601029020
     color: '#363636'
   - type: work-row
     columns:
-      - text: Non-linear navigation is made possible by a simple portfolio arrangement with columns of increasingly detailed slides.
+      - text: Non-linear navigation is made possible by arranging work in columns of increasingly detailed slides.
   - type: work-row
     columns:
       - src: portfolio/minimalfolio/minimalfolio-col-6-ipad.jpg
       - src: portfolio/minimalfolio/minimalfolio-col-6-ipad-selection.jpg
   - type: work-row
     columns:
-      - text: The app is unbranded and obsessively minimal. I designed and developed a completely custom dark interface which lets the content be the hero.
+      - text: The app is unbranded and obsessively minimal. Unlike many portfolio apps with heavy chrome and branding, a custom dark interface keeps controls out of the way so the content is the hero.
   - type: work-row
     columns:
       - src: portfolio/minimalfolio/minimalfolio-col-6-tutorial.jpg

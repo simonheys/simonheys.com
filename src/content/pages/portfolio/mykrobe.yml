@@ -4,7 +4,7 @@ thumbnails:
   - src: portfolio/mykrobe/mykrobe-thumbnail-logo.jpg
 components:
   - type: work-header
-    subtitle: I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform.
+    subtitle: I worked with scientists and medics as lead product designer and front-end engineer to create a user-friendly interface for a complex Tuberculosis (TB) resistance and outbreak analysis platform.
   - type: mykrobe-animation
   - type: work-row
     vimeoId: 585698728
@@ -17,7 +17,7 @@ components:
     title: Comparison view showing Mykrobe analysis across samples
   - type: work-row
     columns:
-      - text: We learned about our users from real world on-site observation including a field trip to TB-prevalent areas of Mumbai, India.
+      - text: We learned about our users from real world on-site observation, including a field trip to TB-prevalent areas of Mumbai, India, which directly informed offline workflows, result layouts and language used in the interface.
   - type: work-row
     columns:
       - type: scrolling-browser-cell
@@ -30,7 +30,7 @@ components:
         src: portfolio/mykrobe/mykrobe-patient-results.png
   - type: work-row
     columns:
-      - text: I collaborated closely with users to prototype and develop an easily readable diagnostics interface including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness.
+      - text: I collaborated closely with users to prototype and develop an easily readable diagnostics interface, including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness so users can spot potential clusters and outbreaks at a glance.
   - type: work-row
     columns:
       - type: mykrobe-cluster
@@ -41,7 +41,7 @@ components:
         src: mst-2
   - type: work-row
     columns:
-      - text: For the web and app interface I designed and developed a common system of interactive components which are available to the team in an interactive web-based catalogue.
+      - text: For the web and app interface I designed and developed a common system of interactive components, available to the team in an interactive web-based catalogue.
   - type: work-row
     vimeoId: 584226493
     color: '#f7f6f1'
@@ -58,5 +58,5 @@ components:
     src: portfolio/mykrobe/mykrobe-cropped.jpg
   - type: work-row
     columns:
-      - text: The platform is being expanded to become part of global COVID-19 surveillance.
+      - text: The platform is being expanded to become part of global COVID-19 surveillance alongside its ongoing use for TB.
   - type: work-next

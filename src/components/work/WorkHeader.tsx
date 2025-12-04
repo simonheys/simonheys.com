@@ -44,10 +44,10 @@ const WorkHeader: FC<WorkHeaderProps> = ({
       )}
       <div className={ruled ? 'containerAlias pt-2' : 'containerAlias'}>
         <div className="mb-12 sm:grid sm:grid-cols-2 sm:gap-6">
-          <HeadingTag className="mb-2 text-4xl font-bold sm:mb-0">
+          <HeadingTag className="mb-2 text-balance text-4xl font-bold sm:mb-0">
             {title !== undefined ? title : page.title}
           </HeadingTag>
-          <div className="mb-4 text-balance text-2xl font-medium sm:mb-0">
+          <div className="mb-4 text-pretty text-2xl font-medium sm:mb-0">
             <ReactMarkdown components={reactMarkdownComponents}>
               {subtitle || page.subtitle || ''}
             </ReactMarkdown>

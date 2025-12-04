@@ -1458,7 +1458,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I collaborated with a network of creative users to design and develop a visually-led time tracking app with playful features that evolved through iterative design and prototyping."
+          "subtitle": "I designed and developed a visually-led time tracking app that turns abstract hours into a colourful strip of time, making it easier to see where the day goes at a glance."
         },
         {
           "type": "work-row",
@@ -1479,7 +1479,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping."
+              "text": "Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm uses a unique colourful rolling strip of time that you slice into segments by swiping, turning tracking into a quick, visual habit."
             }
           ]
         },
@@ -1498,7 +1498,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Segments of time are tracked by quickly tapping customisable coloured categories. Colours are mixed together as categories are added."
+              "text": "Segments of time are tracked by quickly tapping customisable coloured categories, with colours mixing together as activities are added to give an instant sense of how your day is balanced."
             }
           ]
         },
@@ -1520,7 +1520,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Users can quickly switch tasks from a list of recents or favourites."
+              "text": "Users can quickly switch tasks from a list of recents or favourites, keeping friction low even when moving between many small pieces of work."
             }
           ]
         },
@@ -1606,7 +1606,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover."
+          "subtitle": "I was lead product designer and iOS engineer on a clinical task management platform that reduces information loss during shift handover and helps teams act faster on urgent tasks."
         },
         {
           "type": "work-row",
@@ -1617,7 +1617,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss."
+              "text": "Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss and delays."
             }
           ]
         },
@@ -1651,7 +1651,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Hark is a clinical task management platform which prioritises who needs to do what, where and when. This frees up nurses and doctors to focus on their job instead of waiting by a phone."
+              "text": "Hark is a clinical task management platform which prioritises who needs to do what, where and when. This frees up nurses and doctors to focus on their job instead of waiting by a phone, with studies showing quicker responses and more reliable handover than bleeps alone."
             }
           ]
         },
@@ -1667,7 +1667,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Iterative design and prototyping produced a library of controls which minimise the taps needed to capture and share tasks. Studies show that these enable users to send details to the most appropriate clinician in under 20 seconds."
+              "text": "Iterative design and prototyping produced a library of controls which minimise the taps needed to capture and share tasks, enabling users to send details to the most appropriate clinician in under 20 seconds."
             }
           ]
         },
@@ -1690,7 +1690,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "I designed and coded the native apps for iPhone or iPad, with a browser-based dashboard for desktop and full-screen monitoring. A clean and simple identity system allows important information and alerts to be most prominent."
+              "text": "I designed and coded the native apps for iPhone and iPad, with a browser-based dashboard for desktop and full-screen monitoring. A clean and simple identity system allows important information and alerts to be most prominent."
             }
           ]
         },
@@ -1744,7 +1744,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "The easiest way to present your portfolio of images, video and PDF on your iPad or iPhone. The app is unbranded so your folio does the talking.",
+          "subtitle": "A simple way for designers, photographers and teams to present images, video and PDF on iPad and iPhone, with an unbranded interface so your folio does the talking.",
           "links": [
             {
               "text": "Download",
@@ -1761,7 +1761,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "I designed and developed Minimal Folio to solve my own need for a portfolio app. I wanted the ability to adjust the breadth and depth of my portfolio in response to the flow of conversation while presenting."
+              "text": "I designed and developed Minimal Folio to solve my own need for a portfolio app, with the ability to adjust the breadth and depth of my work in response to the flow of conversation while presenting."
             }
           ]
         },
@@ -1777,7 +1777,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The solution I created was non-linear navigation. Swipe vertically to increase detail, or horizontally to change project."
+              "text": "The solution is non-linear navigation, where you swipe vertically to increase detail within a project and horizontally to change project, so you can easily dive deeper when a client is interested and move on when they are not."
             }
           ]
         },
@@ -1790,7 +1790,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Non-linear navigation is made possible by a simple portfolio arrangement with columns of increasingly detailed slides."
+              "text": "Non-linear navigation is made possible by arranging work in columns of increasingly detailed slides."
             }
           ]
         },
@@ -1809,7 +1809,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The app is unbranded and obsessively minimal. I designed and developed a completely custom dark interface which lets the content be the hero."
+              "text": "The app is unbranded and obsessively minimal. Unlike many portfolio apps with heavy chrome and branding, a custom dark interface keeps controls out of the way so the content is the hero."
             }
           ]
         },
@@ -1855,7 +1855,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked with scientists and medics to design and develop a user-friendly interface for a complex Tuberculosis (TB) analysis platform."
+          "subtitle": "I worked with scientists and medics as lead product designer and front-end engineer to create a user-friendly interface for a complex Tuberculosis (TB) resistance and outbreak analysis platform."
         },
         {
           "type": "mykrobe-animation"
@@ -1882,7 +1882,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "We learned about our users from real world on-site observation including a field trip to TB-prevalent areas of Mumbai, India."
+              "text": "We learned about our users from real world on-site observation, including a field trip to TB-prevalent areas of Mumbai, India, which directly informed offline workflows, result layouts and language used in the interface."
             }
           ]
         },
@@ -1907,7 +1907,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "I collaborated closely with users to prototype and develop an easily readable diagnostics interface including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness."
+              "text": "I collaborated closely with users to prototype and develop an easily readable diagnostics interface, including an innovative real-time minimum-spanning-tree visualisation of TB-relatedness so users can spot potential clusters and outbreaks at a glance."
             }
           ]
         },
@@ -1930,7 +1930,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "For the web and app interface I designed and developed a common system of interactive components which are available to the team in an interactive web-based catalogue."
+              "text": "For the web and app interface I designed and developed a common system of interactive components, available to the team in an interactive web-based catalogue."
             }
           ]
         },
@@ -1970,7 +1970,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The platform is being expanded to become part of global COVID-19 surveillance."
+              "text": "The platform is being expanded to become part of global COVID-19 surveillance alongside its ongoing use for TB."
             }
           ]
         },
@@ -1991,7 +1991,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians."
+          "subtitle": "Product and identity design for a brand new service bringing together professional advice for pharmacists, GPs and clinicians across England."
         },
         {
           "type": "work-row",
@@ -2024,7 +2024,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The service was actively developed with a regular cycle of interactive prototyping and observed user testing to validate problems and solutions. We modernised the publishing workflow and developed a range of self-service tools."
+              "text": "The service was actively developed with a regular cycle of interactive prototyping and observed user testing to validate problems and solutions. We modernised the publishing workflow from static Word/PDF documents to structured HTML with reusable content blocks, and developed self-service tools that gave authors more confidence and control."
             }
           ]
         },
@@ -2043,7 +2043,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "I designed and coded a rich modular design system enabling authors to improve from publishing outdated static documents to dynamic linked content suitable for any device."
+              "text": "I designed and coded a rich modular design system enabling authors to move from publishing outdated static documents to dynamic linked content suitable for any device, improving consistency and making it easier to keep guidance up to date."
             }
           ]
         },
@@ -2103,7 +2103,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The service is increasingly popular with more than half a million monthly active users in England."
+              "text": "The service is increasingly popular with more than half a million monthly active users in England, including pharmacists, GPs and dentists."
             }
           ]
         },
@@ -2124,7 +2124,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I worked in an in-house product team to design and develop a series of exploratory prototypes as inspiration for the next generation of news apps."
+          "subtitle": "I worked in an in-house product team to design and develop a series of exploratory prototypes that informed thinking about the next generation of news apps."
         },
         {
           "type": "work-row",
@@ -2145,7 +2145,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle."
+              "text": "The prototype concepts were rooted in observed real-world user behaviour. We responded to patterns in news readership, paying attention to time, place and attention over a complete weekly cycle. For example, people wanted shorter updates during commuting and more reflective reads in the evening."
             }
           ]
         },
@@ -2169,7 +2169,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "I rapidly developed a set of native apps with enough fidelity to enable thorough user testing with iterations of refinement and reinvention in between."
+              "text": "I rapidly developed a set of native apps with enough fidelity to enable thorough user testing, iterating between research and prototyping to explore different directions."
             }
           ]
         },
@@ -2188,7 +2188,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The prototypes explored various playful methods of interaction as well as varying the density and depth of articles. Through testing we learned from users how these affected their overall experience."
+              "text": "The prototypes explored playful methods of interaction such as timeline-style scrolling and gestural navigation. We also varied the density and depth of articles and used testing to understand how this changed the overall experience."
             }
           ]
         },
@@ -2245,7 +2245,7 @@
       "components": [
         {
           "type": "work-header",
-          "subtitle": "I was lead product designer of a team creating an innovative global app platform to help manage and prevent deteriorating eye health."
+          "subtitle": "I was lead product designer of a team creating an app and web platform to help manage and prevent deteriorating eye health for patients and clinicians."
         },
         {
           "type": "work-row",
@@ -2256,7 +2256,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition."
+              "text": "Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition, supporting better adherence and more informed conversations with clinicians."
             }
           ]
         },
@@ -2275,7 +2275,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "An educational website provides bite-sized easy to read material to help patients explore and understand their condition and available treatments."
+              "text": "An educational website provides bite-sized easy to read material, structured around common patient questions to help them explore and understand their condition and available treatments."
             }
           ]
         },
@@ -2305,7 +2305,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient."
+              "text": "Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient, helping them quickly spot changes and adjust care plans."
             }
           ]
         },
@@ -2330,7 +2330,7 @@
           "type": "work-row",
           "columns": [
             {
-              "text": "The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook."
+              "text": "The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook, which I helped define and maintain in collaboration with engineers and clinical stakeholders."
             }
           ]
         },

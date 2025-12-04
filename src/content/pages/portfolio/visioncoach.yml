@@ -4,20 +4,20 @@ thumbnails:
   - src: portfolio/visioncoach/vision-coach-thumbnail-logo.jpg
 components:
   - type: work-header
-    subtitle: I was lead product designer of a team creating an innovative global app platform to help manage and prevent deteriorating eye health.
+    subtitle: I was lead product designer of a team creating an app and web platform to help manage and prevent deteriorating eye health for patients and clinicians.
   - type: work-row
     vimeoId: 591542408
     color: '#d9eef6'
   - type: work-row
     columns:
-      - text: Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition.
+      - text: Patients are provided a simple user-friendly app to track treatment, appointments and lifestyle goals chosen to help manage their condition, supporting better adherence and more informed conversations with clinicians.
   - type: work-row
     columns:
       - src: portfolio/visioncoach/vision-coach-col-6-splash.jpg
       - src: portfolio/visioncoach/vision-coach-col-6-dash.jpg
   - type: work-row
     columns:
-      - text: An educational website provides bite-sized easy to read material to help patients explore and understand their condition and available treatments.
+      - text: An educational website provides bite-sized easy to read material, structured around common patient questions to help them explore and understand their condition and available treatments.
   - type: scrolling-browser
     maskSrc: portfolio/visioncoach/browser-mask.svg
     src: portfolio/visioncoach/LMR-6_Page_01.png
@@ -33,7 +33,7 @@ components:
         src: portfolio/visioncoach/LMR-6_Page_11.png
   - type: work-row
     columns:
-      - text: Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient.
+      - text: Clinicians access a secure dashboard which provides a treatment overview and trends for a particular patient, helping them quickly spot changes and adjust care plans.
   - type: work-row
     columns:
       - type: scrolling-browser-cell
@@ -46,7 +46,7 @@ components:
         src: portfolio/visioncoach/vision-coach-clinician-detail.png
   - type: work-row
     columns:
-      - text: The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook.
+      - text: The product has a comprehensive design system comprising visual mocks alongside a library of native and web components documented with Storybook, which I helped define and maintain in collaboration with engineers and clinical stakeholders.
   - type: work-row
     src: portfolio/visioncoach/vision-coach-patient-screens.png
   - type: work-row

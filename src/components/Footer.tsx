@@ -12,7 +12,7 @@ const Footer: FC<FooterProps> = ({ text }) => {
       <div className="containerAlias">
         <div className="border-t"></div>
       </div>
-      <div className="containerAlias mb-12 grid-cols-2 gap-6 text-balance pt-2">
+      <div className="containerAlias mb-12 grid-cols-2 gap-6 text-pretty pt-2">
         <div className="text-sm text-gray-600 dark:text-gray-400">{text}</div>
       </div>
     </AppearWhenInView>

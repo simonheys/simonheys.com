@@ -4,7 +4,7 @@ thumbnails:
   - src: portfolio/theguardian/theguardian-thumbnail-gp1.jpg
 components:
   - type: work-header
-    subtitle: I worked in an in-house product team to design and develop a series of exploratory prototypes as inspiration for the next generation of news apps.
+    subtitle: I worked in an in-house product team to design and develop a series of exploratory prototypes that informed thinking about the next generation of news apps.
   - type: work-row
     columns:
       - col: 6
@@ -15,7 +15,7 @@ components:
         color: '#edede7'
   - type: work-row
     columns:
-      - text: The prototype concepts were rooted in observed real-world user behaviour, responding to patterns in news readership with consideration to time, place and attention during a complete weekly cycle.
+      - text: The prototype concepts were rooted in observed real-world user behaviour. We responded to patterns in news readership, paying attention to time, place and attention over a complete weekly cycle. For example, people wanted shorter updates during commuting and more reflective reads in the evening.
   - type: work-row
     columns:
       - type: scrolling-browser-cell
@@ -27,14 +27,14 @@ components:
         color: '#edede7'
   - type: work-row
     columns:
-      - text: I rapidly developed a set of native apps with enough fidelity to enable thorough user testing with iterations of refinement and reinvention in between.
+      - text: I rapidly developed a set of native apps with enough fidelity to enable thorough user testing, iterating between research and prototyping to explore different directions.
   - type: work-row
     columns:
       - src: portfolio/theguardian/theguardian-col-6-exploded-1.png
       - src: portfolio/theguardian/theguardian-col-6-exploded-2.png
   - type: work-row
     columns:
-      - text: The prototypes explored various playful methods of interaction as well as varying the density and depth of articles. Through testing we learned from users how these affected their overall experience.
+      - text: The prototypes explored playful methods of interaction such as timeline-style scrolling and gestural navigation. We also varied the density and depth of articles and used testing to understand how this changed the overall experience.
   - type: work-row
     columns:
       - src: portfolio/theguardian/theguardian-col-6-elements.jpg
