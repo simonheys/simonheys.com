@@ -34,7 +34,7 @@ const DefaultControls = forwardRef<HTMLDivElement, DefaultControlsProps>(
       <div
         ref={ref}
         className={cn(
-          'backdrop-saturate-15 dark:bg-gray-80 mx-auto flex flex-row rounded-xl bg-gray-50/70 px-2 shadow-md backdrop-blur-lg',
+          'dark:bg-gray-80 mx-auto flex flex-row rounded-xl bg-gray-50/70 px-2 shadow-md backdrop-blur-lg backdrop-saturate-15',
           className,
         )}
       >

@@ -64,7 +64,7 @@ const WordsPickerControls = forwardRef<
     <div
       ref={ref}
       className={cn(
-        'backdrop-saturate-15 dark:bg-gray-80 mx-auto flex flex-1 flex-row rounded-xl bg-gray-50/70 p-2 leading-5 text-gray-600 shadow-md backdrop-blur-lg',
+        'dark:bg-gray-80 mx-auto flex flex-1 flex-row rounded-xl bg-gray-50/70 p-2 leading-5 text-gray-600 shadow-md backdrop-blur-lg backdrop-saturate-15',
         className,
       )}
     >
@@ -82,7 +82,7 @@ const WordsPickerControls = forwardRef<
                         <div
                           className={cn(
                             'flex cursor-pointer flex-row items-baseline rounded-lg p-2 transition-colors duration-100 hover:bg-gray-500/20',
-                            selected && 'pointer-events-none text-primary',
+                            selected && 'text-primary pointer-events-none',
                           )}
                           onClick={() => setFile(file)}
                           ref={selected ? setSelectedRef : null}

@@ -172,7 +172,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
   if (!editable) {
     return (
       <div className="relative flex h-full">
-        <div className="absolute inset-0 select-none bg-background [font-feature-settings:'liga'_1,'kern'_1]">
+        <div className="bg-background absolute inset-0 select-none [font-feature-settings:'liga'_1,'kern'_1]">
           <WordClock words={words || wordsDefault}>
             <WordClockContent wordComponent={WordClockWord} />
           </WordClock>
@@ -186,7 +186,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       <motion.div
         ref={fullscreenRef}
         className={cn(
-          "absolute inset-0 select-none bg-background [font-feature-settings:'liga'_1,'kern'_1]",
+          "bg-background absolute inset-0 select-none [font-feature-settings:'liga'_1,'kern'_1]",
           isFullscreen && 'p-3',
         )}
         onClick={onClick}
@@ -196,7 +196,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.15 }}
       >
-        <WordClock words={words} className="font-bold leading-none">
+        <WordClock words={words} className="leading-none font-bold">
           <WordClockContent wordComponent={WordClockWord} />
         </WordClock>
         <div className="absolute inset-0 hidden flex-col items-center overflow-hidden md:flex">
@@ -227,7 +227,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
             {controlsVisible && (
               <MotionDefaultControls
                 key="defaultControlsContainer"
-                className="mb-4 mt-auto"
+                className="mt-auto mb-4"
                 exit={{ opacity: 0 }}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

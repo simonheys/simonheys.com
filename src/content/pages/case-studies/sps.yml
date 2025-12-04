@@ -29,7 +29,7 @@ components:
     ruled: true
     text: |
       ##### This service does not (yet) exist
-      Following a successful procurement I was part of a the team tasked with transforming four distinct services into a new single entity, delivering a single digital platform for communication speaking as part of NHS England.
+      Following a successful procurement, I joined the team tasked with transforming four distinct services into a single new entity and delivering a digital platform that speaks with one voice as part of NHS England.
   - type: prose
     title: Challenge
     ruled: true
@@ -38,10 +38,10 @@ components:
       The four distinct services had an existing repository of high quality content, unfortunately dispersed throughout 17 different protected systems. 
 
       ##### Evolving structures and hierarchies
-      The first practical challenge would be to gather the existing material together into one place, then make sure it is easily findable with some structure and hierarchy that would be able to evolve over time as the service evolves.
+      The first practical challenge was to bring the existing material together in one place, then make sure it was easy to find with a structure and hierarchy that could evolve alongside the service.
 
       ##### “It mustn’t look expensive”
-      During some of our early conversations and workshops it became clear that we must be respectful to the taxpayer, everything should be frugal and deliver maximum possible value. In terms of aesthetics this ruled out the use of any imagery, instead the challenge was to focus only on competent use of typography, space and hierarchy.
+      During early conversations and workshops it became clear that we must be respectful to taxpayers: everything should be frugal and deliver maximum possible value. In terms of aesthetics this ruled out the use of any imagery; instead the challenge was to focus only on competent use of typography, space and hierarchy.
   - type: prose
     title: Research
     ruled: true

@@ -51,11 +51,11 @@ const WorkRowCol: FC<WorkRowColProps> = ({ type, col, ...rest }) => {
       <>
         <div className="sm:col-span-6"></div>
         <div className="my-12 flex flex-col sm:col-span-6 sm:mt-6">
-          <div className="text-balance text-2xl font-medium">
+          <div className="text-2xl font-medium text-pretty">
             <ReactMarkdown>{text}</ReactMarkdown>
           </div>
           {links && (
-            <div className="mb-0 mt-6 text-2xl">
+            <div className="mt-6 mb-0 text-2xl">
               <TextLinks links={links} />
             </div>
           )}

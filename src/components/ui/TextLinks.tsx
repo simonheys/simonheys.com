@@ -20,7 +20,7 @@ const TextLinks: FC<TextLinksProps> = ({ links }) => {
         return (
           <Link
             key={index}
-            className="group flex text-2xl font-medium text-primary transition duration-100 hover:text-primary-hover"
+            className="group text-primary hover:text-primary-hover flex text-2xl font-medium transition duration-100"
             href={url}
           >
             {text}

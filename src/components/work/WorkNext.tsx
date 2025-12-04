@@ -16,10 +16,10 @@ const WorkNext: FC = () => {
   }
   return (
     <AppearWhenInView>
-      <div className="containerAlias">
-        <div className="border-t"></div>
+      <div className="container">
+        <div className="border-border border-t"></div>
       </div>
-      <div className="containerAlias mb-12 pt-2 sm:grid sm:grid-cols-2 sm:gap-6">
+      <div className="container mb-12 pt-2 sm:grid sm:grid-cols-2 sm:gap-6">
         <div className="mb-2 text-4xl font-bold">Next</div>
         <WorkGridCell page={nextPage} />
       </div>

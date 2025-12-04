@@ -43,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={font.variable}>
-      <body className="overflow-y-scroll bg-background text-foreground antialiased">
+      <body className="bg-background text-foreground overflow-y-scroll antialiased">
         {children}
         <Analytics />
         <SpeedInsights />

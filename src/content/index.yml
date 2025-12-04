@@ -29,6 +29,7 @@ all:
     - exclude: ['^/$', '/about', '/case-studies', '/blog*']
       type: work-header
       title: About
+      level: 2
       ruled: true
       subtitle: |
         As a Software Engineer with experience in Product Design, I’m driven by a passion to create software that makes a meaningful difference to people’s lives.
