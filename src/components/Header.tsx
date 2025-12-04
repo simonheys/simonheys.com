@@ -92,6 +92,8 @@ const Header: FC<HeaderProps> = ({ links }) => {
     }
   }, [links, pathname]);
 
+  const isHome = pathname === '/';
+
   return (
     <>
       <div style={style}></div>
@@ -104,12 +106,21 @@ const Header: FC<HeaderProps> = ({ links }) => {
       >
         <div ref={ref} className="containerAlias">
           <div className="flex justify-between py-6 text-2xl font-medium text-primary sm:grid sm:grid-cols-2 sm:gap-6 sm:py-12">
-            <h1
-              data-tid="title"
-              className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
-            >
-              <Link href="/">Simon Heys</Link>
-            </h1>
+            {isHome ? (
+              <h1
+                data-tid="title"
+                className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
+              >
+                <Link href="/">Simon Heys</Link>
+              </h1>
+            ) : (
+              <div
+                data-tid="title"
+                className="inline-block text-primary transition-colors duration-100 hover:text-primary-hover"
+              >
+                <Link href="/">Simon Heys</Link>
+              </div>
+            )}
             <div data-tid="navigation">
               <nav className="flex flex-row gap-4">
                 {links.map((path, index) => {

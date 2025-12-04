@@ -14,6 +14,7 @@ components:
       - text: The platform has web and desktop apps which must meet the needs of non-specialist end-users analysing TB resistance in challenging environments.
   - type: work-row
     src: portfolio/mykrobe/mykrobe-comparison.jpg
+    title: Comparison view showing Mykrobe analysis across samples
   - type: work-row
     columns:
       - text: We learned about our users from real world on-site observation including a field trip to TB-prevalent areas of Mumbai, India.

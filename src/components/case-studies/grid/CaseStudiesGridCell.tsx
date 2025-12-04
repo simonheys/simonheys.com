@@ -12,6 +12,10 @@ export interface CaseStudiesGridCellProps {
 const CaseStudiesGridCell: FC<CaseStudiesGridCellProps> = ({ page }) => {
   const { path, meta } = page;
   const { title, subtitle, text, icon } = meta || {};
+
+  const linkLabel = subtitle
+    ? `Read the ${subtitle} case study`
+    : 'Read case study';
   return (
     <Link
       href={path}
@@ -29,7 +33,7 @@ const CaseStudiesGridCell: FC<CaseStudiesGridCellProps> = ({ page }) => {
       <div className="h3 font-bold">{subtitle}</div>
       <div className="h5">{text}</div>
       <div className="h5 group-hover:text-link-hover m-0 text-primary transition-colors duration-100">
-        Read more <ChevronRight />
+        {linkLabel} <ChevronRight />
       </div>
     </Link>
   );

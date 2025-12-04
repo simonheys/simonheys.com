@@ -64,7 +64,7 @@ const Prose: FC<ProseProps> = ({ title, text, links, ruled }) => {
       <div className={ruled ? 'container-fluid mb-5 pt-2' : 'container-fluid'}>
         <div className="row mb-5">
           <div className="col-md-6">
-            {title && <h1 className="h1 mb-2 font-bold sm:mb-0">{title}</h1>}
+            {title && <h2 className="h1 mb-2 font-bold sm:mb-0">{title}</h2>}
           </div>
           <div className="col-md-6">
             {text && (

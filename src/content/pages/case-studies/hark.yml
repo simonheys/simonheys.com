@@ -12,6 +12,7 @@ components:
       I was Lead Product Designer in a cross-disciplinary team on a project spanning almost 3 years. The resulting product was successfully acquired by a global AI technology firm.
   - type: work-row
     src: case-studies/hark/hark-devices.jpg
+    title: Hark clinical task management app running on multiple devices
   - type: prose
     title: Overview
     text: |
@@ -179,6 +180,7 @@ components:
         color: '#4baff9'
   - type: work-row
     src: case-studies/hark/hark-devices.jpg
+    title: Hark clinical task management app running on multiple devices
   - type: prose
     title: Summary
     ruled: true

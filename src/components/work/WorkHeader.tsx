@@ -17,14 +17,24 @@ export interface WorkHeaderProps {
     url: string;
   }[];
   ruled?: boolean;
+  level?: 1 | 2 | 3 | 4 | 5 | 6;
 }
 
-const WorkHeader: FC<WorkHeaderProps> = ({ title, subtitle, links, ruled }) => {
+const WorkHeader: FC<WorkHeaderProps> = ({
+  title,
+  subtitle,
+  links,
+  ruled,
+  level = 1,
+}) => {
   const pathname = usePathname();
   const page = getPageForPath(pathname);
   if (!page) {
     return null;
   }
+
+  const HeadingTag = (`h${level}` as keyof JSX.IntrinsicElements) || 'h1';
+
   return (
     <AppearWhenInView>
       {ruled && (
@@ -34,9 +44,9 @@ const WorkHeader: FC<WorkHeaderProps> = ({ title, subtitle, links, ruled }) => {
       )}
       <div className={ruled ? 'containerAlias pt-2' : 'containerAlias'}>
         <div className="mb-12 sm:grid sm:grid-cols-2 sm:gap-6">
-          <h1 className="mb-2 text-4xl font-bold sm:mb-0">
+          <HeadingTag className="mb-2 text-4xl font-bold sm:mb-0">
             {title !== undefined ? title : page.title}
-          </h1>
+          </HeadingTag>
           <div className="mb-4 text-balance text-2xl font-medium sm:mb-0">
             <ReactMarkdown components={reactMarkdownComponents}>
               {subtitle || page.subtitle || ''}
