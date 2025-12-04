@@ -20,7 +20,7 @@ jobs:
         name: Install pnpm
         id: pnpm-install
         with:
-          version: 10
+          version: 10.24.0
           run_install: false
       - name: Use Node.js LTS
         uses: actions/setup-node@v4
