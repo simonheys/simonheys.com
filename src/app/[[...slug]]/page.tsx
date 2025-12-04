@@ -44,22 +44,26 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     title: pageTitle,
     description: description || subtitle,
     alternates: {
-      canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/${slug.join('/')}`,
+      canonical: slug.length ? `/${slug.join('/')}` : '/',
     },
     openGraph: {
       title: pageTitle,
       description: description || subtitle || excerpt,
-      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/og/image.png`],
+      images: ['/og/image.png'],
     },
   };
 }
 
 export async function generateStaticParams() {
   const paths = getPagePaths();
-  return paths.map((path) => ({
-    slug:
-      (path as unknown as { params: { slug?: string[] } }).params?.slug || [],
-  }));
+  return paths.map((path) => {
+    if (path === '/') {
+      return { slug: [] };
+    }
+    return {
+      slug: path.split('/').filter(Boolean),
+    };
+  });
 }
 
 export default async function Page(props: PageProps) {

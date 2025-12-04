@@ -36,16 +36,16 @@ const useWindowScrollVelocity = () => {
 
   useEffect(() => {
     const currentScroll = getWindowScroll();
-    const deltaScrollX = currentScroll.scrollX - previousScroll.current.scrollX;
-    const deltaScrollY = currentScroll.scrollY - previousScroll.current.scrollY;
-    const deltaTimeStamp =
-      currentScroll.timeStamp - previousScroll.current.timeStamp;
+    const previous = previousScroll.current;
+    const deltaScrollX = currentScroll.scrollX - previous.scrollX;
+    const deltaScrollY = currentScroll.scrollY - previous.scrollY;
+    const deltaTimeStamp = currentScroll.timeStamp - previous.timeStamp || 1;
     const velocityScrollX = deltaScrollX / deltaTimeStamp;
     const velocityScrollY = deltaScrollY / deltaTimeStamp;
     previousScroll.current = currentScroll;
     setWindowScroll({
-      previousScrollX: previousScroll.current.scrollX,
-      previousScrollY: previousScroll.current.scrollY,
+      previousScrollX: previous.scrollX,
+      previousScrollY: previous.scrollY,
       deltaScrollX,
       deltaScrollY,
       velocityScrollX,
