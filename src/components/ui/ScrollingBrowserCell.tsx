@@ -9,6 +9,8 @@ import * as contentModule from '../../modules/content';
 
 import ImageResponsive from './ImageResponsive';
 
+import { cn } from '@/utils/cn';
+
 const MASK_ATTRIBUTES = {
   default: {
     svg: {
@@ -232,7 +234,7 @@ const ScrollingBrowserCell: FC<ScrollingBrowserCellProps> = ({
   return (
     <div
       ref={containerRef}
-      className={`relative h-0 w-full overflow-hidden ${paddingBottomClass}`}
+      className={cn('relative h-0 w-full overflow-hidden', paddingBottomClass)}
     >
       <div className="absolute inset-0 overflow-hidden rounded-[0.2rem] bg-white">
         <div className="absolute inset-x-0 top-0" style={style}>

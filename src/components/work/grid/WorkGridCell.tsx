@@ -32,7 +32,7 @@ const WorkGridCell: FC<WorkGridCellProps> = ({ page }) => {
           <ImageFadeIn src={src} alt={title || ''} />
         </motion.div>
       </div>
-      <div className="mt-1 text-balance text-2xl font-medium">
+      <div className="mt-1 text-2xl font-medium text-balance">
         <span>{title}</span>{' '}
         <span className="text-gray-500 transition-colors duration-100 group-hover:text-gray-500 sm:text-transparent dark:group-hover:text-gray-400">
           {subtitle}

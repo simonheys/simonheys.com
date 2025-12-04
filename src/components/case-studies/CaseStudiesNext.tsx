@@ -17,7 +17,7 @@ const CaseStudiesNext: FC = () => {
   return (
     <AppearWhenInView>
       <div className="container-fluid">
-        <div className="row gx-0 border-top"></div>
+        <div className="border-border row gx-0 border-t"></div>
       </div>
       <div className="container-fluid mb-5 pt-2">
         <div className="row mb-5">

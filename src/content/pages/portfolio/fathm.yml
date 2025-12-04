@@ -1,10 +1,10 @@
 title: Fathm
-subtitle: Time tracking app
+subtitle: Visual time tracking app
 thumbnails:
   - src: portfolio/fathm/fathm-thumbnail-donut.jpg
 components:
   - type: work-header
-    subtitle: I collaborated with a network of creative users to design and develop a visually-led time tracking app with playful features that evolved through iterative design and prototyping.
+    subtitle: I designed and developed a visually-led time tracking app that turns abstract hours into a colourful strip of time, making it easier to see where the day goes at a glance.
   - type: work-row
     columns:
       - col: 6
@@ -15,14 +15,14 @@ components:
         color: '#404040'
   - type: work-row
     columns:
-      - text: Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm has a unique colourful rolling strip of time which users are nudged to slice into segments by swiping.
+      - text: Most time tracking apps only use numbers and text, feel like a chore and get forgotten. Fathm uses a unique colourful rolling strip of time that you slice into segments by swiping, turning tracking into a quick, visual habit.
   - type: work-row
     columns:
       - src: portfolio/fathm/fathm-col-6-exploded-1.png
       - src: portfolio/fathm/fathm-col-6-exploded-2.png
   - type: work-row
     columns:
-      - text: Segments of time are tracked by quickly tapping customisable coloured categories. Colours are mixed together as categories are added.
+      - text: Segments of time are tracked by quickly tapping customisable coloured categories, with colours mixing together as activities are added to give an instant sense of how your day is balanced.
   - type: work-row
     columns:
       - col: 6
@@ -32,7 +32,7 @@ components:
         color: '#404040'
   - type: work-row
     columns:
-      - text: Users can quickly switch tasks from a list of recents or favourites.
+      - text: Users can quickly switch tasks from a list of recents or favourites, keeping friction low even when moving between many small pieces of work.
   - type: work-row
     columns:
       - col: 6

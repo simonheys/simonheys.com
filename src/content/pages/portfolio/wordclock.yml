@@ -1,5 +1,5 @@
 title: Word Clock
-subtitle: Open source digital art work
+subtitle: Open source digital artwork
 thumbnails:
   - src: portfolio/wordclock/wordclock-thumbnail.jpg
 components:
@@ -22,7 +22,9 @@ components:
   - type: work-row
     columns:
       - src: portfolio/wordclock/wordclock-col-6-preferences.png
+        title: Word Clock preferences panel showing customisation options
       - src: portfolio/wordclock/wordclock-col-6-preferences-exploded.png
+        title: Exploded view of Word Clock preferences controls
   - type: work-row
     columns:
       - text: I collaborated with many kind supporters from around the world to translate Word Clock into over 30 languages. This required writing a small domain-specific language to express unusual time logic in different regions.

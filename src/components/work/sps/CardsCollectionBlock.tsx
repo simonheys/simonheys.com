@@ -52,7 +52,7 @@ const CardsCollectionBlock: FC<CardsCollectionBlockProps> = ({
   let currentPostIndex = 0;
   return (
     <LayoutGroup>
-      <div className="containerAlias">
+      <div className="container">
         {layout.map((row: number[], rowIndex: number) => {
           const cardsInRow = row.reduce((a, b) => a + b, 0);
           return (

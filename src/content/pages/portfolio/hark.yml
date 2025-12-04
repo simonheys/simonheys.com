@@ -5,12 +5,13 @@ thumbnails:
   - src: portfolio/hark/hark-thumbnail-tasks.jpg
 components:
   - type: work-header
-    subtitle: I worked with and observed surgeons at St Mary’s Hospital to design and develop a product that prevents information loss during shift handover.
+    subtitle: I was lead product designer and iOS engineer on a clinical task management platform that reduces information loss during shift handover and helps teams act faster on urgent tasks.
   - type: work-row
     src: case-studies/hark/hark-devices.jpg
+    title: Hark clinical task management app running on multiple devices
   - type: work-row
     columns:
-      - text: Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss.
+      - text: Shift handover is a critical event where important patient information is passed between teams. I observed tasks captured and shared using paper and pagers, with high risk of loss and delays.
   - type: work-row
     columns:
       - col: 6
@@ -25,14 +26,14 @@ components:
       - src: portfolio/hark/hark-col-6-task-entry.jpg
   - type: work-row
     columns:
-      - text: Hark is a clinical task management platform which prioritises who needs to do what, where and when. This frees up nurses and doctors to focus on their job instead of waiting by a phone.
+      - text: Hark is a clinical task management platform which prioritises who needs to do what, where and when. This frees up nurses and doctors to focus on their job instead of waiting by a phone, with studies showing quicker responses and more reliable handover than bleeps alone.
   - type: work-row
     src: portfolio/hark/hark-dashboard-cropped-2.jpg
   - type: work-row
     src: portfolio/hark/hark-screens.png
   - type: work-row
     columns:
-      - text: Iterative design and prototyping produced a library of controls which minimise the taps needed to capture and share tasks. Studies show that these enable users to send details to the most appropriate clinician in under 20 seconds.
+      - text: Iterative design and prototyping produced a library of controls which minimise the taps needed to capture and share tasks, enabling users to send details to the most appropriate clinician in under 20 seconds.
   - type: work-row
     columns:
       - src: portfolio/hark/hark-col-6-logo.jpg
@@ -41,7 +42,7 @@ components:
     src: portfolio/hark/hark-logo-construction.svg
   - type: work-row
     columns:
-      - text: I designed and coded the native apps for iPhone or iPad, with a browser-based dashboard for desktop and full-screen monitoring. A clean and simple identity system allows important information and alerts to be most prominent.
+      - text: I designed and coded the native apps for iPhone and iPad, with a browser-based dashboard for desktop and full-screen monitoring. A clean and simple identity system allows important information and alerts to be most prominent.
   - type: work-row
     columns:
       - col: 6

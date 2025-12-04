@@ -13,7 +13,7 @@ export interface MykrobeAnimationProps {
 const MykrobeAnimation: FC<MykrobeAnimationProps> = ({ caption }) => {
   return (
     <AppearWhenInView>
-      <div className="containerAlias mb-6">
+      <div className="container mb-6">
         <div className="relative h-0 w-full overflow-hidden rounded pb-[56.25%]">
           <AnimatedBackgroundCanvas />
           <div className="absolute inset-0">
@@ -25,7 +25,7 @@ const MykrobeAnimation: FC<MykrobeAnimationProps> = ({ caption }) => {
         </div>
       </div>
       {caption && (
-        <div className="containerAlias">
+        <div className="container">
           <Caption caption={caption} />
         </div>
       )}

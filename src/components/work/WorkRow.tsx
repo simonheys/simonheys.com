@@ -13,7 +13,7 @@ export interface WorkRowProps extends WorkRowColProps {
 const WorkRow: FC<WorkRowProps> = ({ columns, caption, ...rest }) => {
   return (
     <AppearWhenInView>
-      <div className="containerAlias">
+      <div className="container">
         <div className="sm:grid sm:auto-cols-fr sm:grid-flow-col sm:gap-6">
           {columns ? (
             columns.map((column, index: number) => {

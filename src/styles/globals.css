@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@source '../**/*.{js,ts,jsx,tsx,mdx}';
 
 :root {
   --gray-0: 255 255 255;
@@ -25,17 +25,33 @@
   --gray-950: 18 18 18;
   --gray-1000: 0 0 0;
 
-  /** wrapped with color() in tailwind.config.ts */
+  /** wrapped with color() in @theme */
   --primary: srgb calc(255 / 255) 0 0;
   --primary-hover: srgb calc(210 / 255) 0 0;
 
   --background: var(--gray-0);
   --foreground: var(--gray-900);
+  --border: rgb(var(--gray-200));
+
+  /* Responsive typography backing variables */
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: calc(1rem + 0.125vw);
+  --font-size-xl: calc(1rem + 0.25vw);
+  --font-size-2xl: calc(1.2rem + 0.3vw);
+  --font-size-3xl: calc(1.4rem + 0.475vw);
+  --font-size-4xl: calc(1.6rem + 0.65vw);
+  --font-size-5xl: calc(2rem + 1vw);
+  --font-size-6xl: calc(2.5rem + 1.25vw);
+  --font-size-7xl: calc(3rem + 1.5vw);
+  --font-size-8xl: calc(4rem + 2vw);
+  --font-size-9xl: calc(5.5rem + 2.5vw);
 }
 
 @supports (color: color(display-p3 1 1 1)) {
   :root {
-    /** wrapped with color() in tailwind.config.ts */
+    /** wrapped with color() in @theme */
     --primary: display-p3 1 0 0;
     --primary-hover: display-p3 0.75 0 0;
   }
@@ -65,7 +81,7 @@
     --gray-950: 252 252 252;
     --gray-1000: 255 255 255;
 
-    /** wrapped with color() in tailwind.config.ts */
+    /** wrapped with color() in @theme */
     /** var(--gray-1000); */
     --primary: srgb calc(255 / 255) calc(255 / 255) calc(255 / 255);
     /** var(--gray-700); */
@@ -73,61 +89,93 @@
 
     --background: var(--gray-50);
     --foreground: var(--gray-400);
+    --border: rgb(var(--gray-200));
   }
 }
 
-/* Responsive Typography */
-
-@layer base {
+@media (min-width: 1280px) {
   :root {
-    /* Text sizes with responsive scaling */
-    --text-xs: 0.75rem;
-    --text-sm: 0.875rem;
-    --text-base: 1rem;
-    --text-lg: calc(1rem + 0.125vw);
-    --text-xl: calc(1rem + 0.25vw);
-    --text-2xl: calc(1.2rem + 0.3vw);
-    --text-3xl: calc(1.4rem + 0.475vw);
-    --text-4xl: calc(1.6rem + 0.65vw);
-    --text-5xl: calc(2rem + 1vw);
-    --text-6xl: calc(2.5rem + 1.25vw);
-    --text-7xl: calc(3rem + 1.5vw);
-    --text-8xl: calc(4rem + 2vw);
-    --text-9xl: calc(5.5rem + 2.5vw);
+    /* Max values for text sizes */
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    --font-size-6xl: 3.75rem;
+    --font-size-7xl: 4.5rem;
+    --font-size-8xl: 6rem;
+    --font-size-9xl: 8rem;
   }
+}
 
-  @media (min-width: 1280px) {
-    :root {
-      /* Max values for text sizes */
-      --text-lg: 1.125rem;
-      --text-xl: 1.25rem;
-      --text-2xl: 1.5rem;
-      --text-3xl: 1.875rem;
-      --text-4xl: 2.25rem;
-      --text-5xl: 3rem;
-      --text-6xl: 3.75rem;
-      --text-7xl: 4.5rem;
-      --text-8xl: 6rem;
-      --text-9xl: 8rem;
-    }
-  }
+@theme {
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  --color-primary: color(var(--primary) / 1);
+  --color-primary-hover: color(var(--primary-hover) / 1);
+  --color-border: var(--border);
+  --color-gray-0: rgb(var(--gray-0));
+  --color-gray-50: rgb(var(--gray-50));
+  --color-gray-100: rgb(var(--gray-100));
+  --color-gray-150: rgb(var(--gray-150));
+  --color-gray-200: rgb(var(--gray-200));
+  --color-gray-250: rgb(var(--gray-250));
+  --color-gray-300: rgb(var(--gray-300));
+  --color-gray-350: rgb(var(--gray-350));
+  --color-gray-400: rgb(var(--gray-400));
+  --color-gray-450: rgb(var(--gray-450));
+  --color-gray-500: rgb(var(--gray-500));
+  --color-gray-550: rgb(var(--gray-550));
+  --color-gray-600: rgb(var(--gray-600));
+  --color-gray-650: rgb(var(--gray-650));
+  --color-gray-700: rgb(var(--gray-700));
+  --color-gray-750: rgb(var(--gray-750));
+  --color-gray-800: rgb(var(--gray-800));
+  --color-gray-850: rgb(var(--gray-850));
+  --color-gray-900: rgb(var(--gray-900));
+  --color-gray-950: rgb(var(--gray-950));
+  --color-gray-1000: rgb(var(--gray-1000));
+
+  --text-xs: var(--font-size-xs);
+  --text-sm: var(--font-size-sm);
+  --text-base: var(--font-size-base);
+  --text-lg: var(--font-size-lg);
+  --text-xl: var(--font-size-xl);
+  --text-2xl: var(--font-size-2xl);
+  --text-3xl: var(--font-size-3xl);
+  --text-4xl: var(--font-size-4xl);
+  --text-5xl: var(--font-size-5xl);
+  --text-6xl: var(--font-size-6xl);
+  --text-7xl: var(--font-size-7xl);
+  --text-8xl: var(--font-size-8xl);
+  --text-9xl: var(--font-size-9xl);
+
+  /* Match pre-v4 line-height behaviour (inherit 1.25) */
+  --text-xs--line-height: 1.25;
+  --text-sm--line-height: 1.25;
+  --text-base--line-height: 1.25;
+  --text-lg--line-height: 1.25;
+  --text-xl--line-height: 1.25;
+  --text-2xl--line-height: 1.25;
+  --text-3xl--line-height: 1.25;
+  --text-4xl--line-height: 1.25;
+  --text-5xl--line-height: 1.25;
+  --text-6xl--line-height: 1.25;
+  --text-7xl--line-height: 1.25;
+  --text-8xl--line-height: 1.25;
+  --text-9xl--line-height: 1.25;
 }
 
 @layer base {
   html {
-    @apply font-normal leading-tight;
-  }
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+    @apply leading-tight font-normal;
   }
 }
 
 @layer components {
-  .containerAlias {
-    @apply container max-w-[1600px];
+  .container {
+    @apply mx-auto w-full max-w-[1600px] px-3 md:px-8 lg:px-12;
   }
 }
 
