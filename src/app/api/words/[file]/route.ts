@@ -1,6 +1,8 @@
 import manifest from '@simonheys/wordclock-words/json/Manifest.json';
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static';
+
 type FileToJson = {
   [key: string]: object;
 };
@@ -26,21 +28,4 @@ export async function GET(
   }
 
   return NextResponse.json(json);
-}
-
-// Handle unsupported methods
-export async function POST() {
-  return new NextResponse(null, { status: 405 });
-}
-
-export async function PUT() {
-  return new NextResponse(null, { status: 405 });
-}
-
-export async function DELETE() {
-  return new NextResponse(null, { status: 405 });
-}
-
-export async function PATCH() {
-  return new NextResponse(null, { status: 405 });
 }

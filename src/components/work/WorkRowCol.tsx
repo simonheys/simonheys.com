@@ -8,8 +8,10 @@ import VideoFadeIn from '../ui/VideoFadeIn';
 
 import { cn } from '@/utils/cn';
 
-export interface WorkRowColProps
-  extends Omit<ComponentProps<typeof MappedComponent>, 'type'> {
+export interface WorkRowColProps extends Omit<
+  ComponentProps<typeof MappedComponent>,
+  'type'
+> {
   type?: ComponentKey;
   col?: number | string;
   text?: string;

@@ -10,8 +10,8 @@ const Link: FC<LinkProps> = ({
   ...rest
 }) => {
   const isInternal = typeof href === 'string' && href.startsWith('/');
-  const target = targetProp || isInternal ? undefined : '_blank';
-  const rel = relProp || isInternal ? undefined : 'noreferrer';
+  const target = targetProp ?? (isInternal ? undefined : '_blank');
+  const rel = relProp ?? (isInternal ? undefined : 'noreferrer');
   return <NextLink href={href} target={target} rel={rel} {...rest} />;
 };
 

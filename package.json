@@ -13,7 +13,7 @@
     "generate:icon-components": "tsx ./src/scripts/generate-icon-components",
     "generate:image-properties": "tsx ./src/scripts/generate-image-properties",
     "generate:watch": "concurrently -k -r \"pnpm generate:content --watch\" \"pnpm generate:icon-components --watch\" \"pnpm generate:image-properties --watch\"",
-    "prettier": "prettier --write \"./**/*.{js,json,css,scss,yml,ts,tsx}\"",
+    "format": "prettier --write \"./**/*.{js,json,css,scss,yml,ts,tsx}\"",
     "test": "jest",
     "test:e2e": "playwright test",
     "prepare": "husky"
@@ -58,7 +58,7 @@
     "@types/jest": "29.5.14",
     "@types/js-yaml": "4.0.9",
     "@types/ndarray": "1.0.14",
-    "@types/node": "22.19.1",
+    "@types/node": "24.10.1",
     "@types/react": "19.2.7",
     "@types/resize-observer-browser": "0.1.11",
     "@types/vimeo__player": "2.18.3",

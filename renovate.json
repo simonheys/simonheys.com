@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:js-app"],
+  "schedule": ["on monday"],
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],
