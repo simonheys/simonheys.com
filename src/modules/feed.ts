@@ -1,5 +1,7 @@
 import { Feed } from 'feed';
 
+import { getServerSideURL } from '@/utils/getURL';
+
 import {
   getBlogDateFromPath,
   getBlogPagePaths,
@@ -16,21 +18,24 @@ export const getBlogFeeds = async () => {
     return;
   }
 
+  if (pagePaths.length === 0) {
+    return;
+  }
+
   const title = meta.titles.join(' – ');
   const description = page.description;
-  const link = `${process.env.NEXT_PUBLIC_BASE_URL}`;
-  const image = `${process.env.NEXT_PUBLIC_BASE_URL}/og/image.png`;
-  const favicon = `${process.env.NEXT_PUBLIC_BASE_URL}/favicon/favicon.ico`;
+  const baseUrl = getServerSideURL();
+  const link = baseUrl;
+  const image = `${baseUrl}/og/image.png`;
+  const favicon = `${baseUrl}/favicon/favicon.ico`;
   const year = new Date().getFullYear();
   const copyright = `All rights reserved ${year} Studio Heys Limited`;
   const updated = getBlogDateFromPath(pagePaths[0]);
   const author = {
     name: 'Simon Heys',
     email: 'si@simonheys.com',
-    link: process.env.NEXT_PUBLIC_BASE_URL,
+    link: baseUrl,
   };
-
-  let latestPostDate: Date;
 
   const feed = new Feed({
     title,
@@ -43,9 +48,9 @@ export const getBlogFeeds = async () => {
     copyright,
     updated,
     feedLinks: {
-      rss2: `${process.env.NEXT_PUBLIC_BASE_URL}/feed/rss`,
-      json: `${process.env.NEXT_PUBLIC_BASE_URL}/feed/json`,
-      atom: `${process.env.NEXT_PUBLIC_BASE_URL}/feed/atom`,
+      rss2: `${baseUrl}/feed/rss`,
+      json: `${baseUrl}/feed/json`,
+      atom: `${baseUrl}/feed/atom`,
     },
     author,
   });
@@ -53,11 +58,8 @@ export const getBlogFeeds = async () => {
   pagePaths.forEach((path) => {
     const date = getBlogDateFromPath(path);
     const post = getPageForPath(path);
-    if (!latestPostDate || date > latestPostDate) {
-      latestPostDate = date;
-    }
     if (post) {
-      const url = `${process.env.NEXT_PUBLIC_BASE_URL}${path}`;
+      const url = `${baseUrl}${path}`;
       feed.addItem({
         title: post.title || 'Untitled',
         id: url,

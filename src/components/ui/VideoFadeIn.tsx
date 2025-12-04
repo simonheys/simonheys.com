@@ -79,6 +79,16 @@ const VideoFadeIn: FC<VideoFadeInProps> = ({
     }
   }, [visible]);
 
+  useEffect(() => {
+    return () => {
+      if (vimeoPlayer.current) {
+        vimeoPlayer.current.off('play', onLoadingComplete);
+        vimeoPlayer.current.destroy();
+        vimeoPlayer.current = null;
+      }
+    };
+  }, [onLoadingComplete]);
+
   if (isTouchDevice()) {
     return (
       <div className="relative h-0 w-full" style={containerStyle}>

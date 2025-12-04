@@ -1,10 +1,8 @@
 import { useCallback, useEffect, useState } from 'react';
 
 export interface WindowSize
-  extends Pick<
-      Window,
-      'innerWidth' | 'innerHeight' | 'outerWidth' | 'outerHeight'
-    >,
+  extends
+    Pick<Window, 'innerWidth' | 'innerHeight' | 'outerWidth' | 'outerHeight'>,
     Pick<HTMLElement, 'clientWidth' | 'clientHeight'> {}
 
 const getWindowSize = (): WindowSize | null => {
