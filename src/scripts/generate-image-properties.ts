@@ -11,7 +11,6 @@ import getImageColor from '../utils/getImageColor';
 import getImageHash from '../utils/getImageHash';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const useProgressBar = !argv.watch;
