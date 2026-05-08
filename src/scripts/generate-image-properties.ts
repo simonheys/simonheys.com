@@ -26,7 +26,7 @@ const imagePropertiesSystemPath = path.join(
 );
 
 const getImageProperties = (filePath: string) => {
-  const properties = sizeOf(filePath);
+  const properties = sizeOf(fs.readFileSync(filePath));
   return properties;
 };
 
