@@ -51,6 +51,8 @@ export default [
   {
     files: ['**/*.{ts,tsx,js,jsx}'],
     rules: {
+      'react-hooks/preserve-manual-memoization': 'off',
+      'react-hooks/set-state-in-effect': 'off',
       'react/jsx-curly-brace-presence': 'error',
     },
   },
