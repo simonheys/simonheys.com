@@ -2,7 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { FlatCompat } from '@eslint/eslintrc';
-import tseslint from '@typescript-eslint/eslint-plugin';
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
 import jestPlugin from 'eslint-plugin-jest';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -20,7 +20,7 @@ export default [
   {
     ignores: ['next-env.d.ts', '**/.next/**', '**/node_modules/**'],
   },
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...nextCoreWebVitals,
   {
     files: ['eslint.config.mjs'],
     rules: {
@@ -29,9 +29,6 @@ export default [
   },
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: {
-      '@typescript-eslint': tseslint,
-    },
     rules: {
       '@typescript-eslint/no-unused-vars': [
         'error',
@@ -51,6 +48,8 @@ export default [
   {
     files: ['**/*.{ts,tsx,js,jsx}'],
     rules: {
+      'react-hooks/preserve-manual-memoization': 'off',
+      'react-hooks/set-state-in-effect': 'off',
       'react/jsx-curly-brace-presence': 'error',
     },
   },
