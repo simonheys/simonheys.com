@@ -8,7 +8,6 @@ import cliProgress from 'cli-progress';
 import getFiles from '../utils/getFiles';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const iconsSystemPath = path.join(__dirname, '../components/ui/icons');

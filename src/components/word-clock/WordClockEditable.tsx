@@ -32,7 +32,6 @@ const MotionDefaultControls = motion.create(DefaultControls);
 
 const fileDefault = 'English_simple_fragmented.json';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const wordsDefault = require(`@simonheys/wordclock-words/json/${fileDefault}`);
 
 export interface WordClockEditableProps {
@@ -172,7 +171,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
   if (!editable) {
     return (
       <div className="relative flex h-full">
-        <div className="bg-background absolute inset-0 select-none [font-feature-settings:'liga'_1,'kern'_1]">
+        <div className="bg-background absolute inset-0 [font-feature-settings:'liga'_1,'kern'_1] select-none">
           <WordClock words={words || wordsDefault}>
             <WordClockContent wordComponent={WordClockWord} />
           </WordClock>
@@ -186,7 +185,7 @@ const WordClockEditable: FC<WordClockEditableProps> = ({
       <motion.div
         ref={fullscreenRef}
         className={cn(
-          "bg-background absolute inset-0 select-none [font-feature-settings:'liga'_1,'kern'_1]",
+          "bg-background absolute inset-0 [font-feature-settings:'liga'_1,'kern'_1] select-none",
           isFullscreen && 'p-3',
         )}
         onClick={onClick}
