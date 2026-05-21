@@ -2,7 +2,7 @@
   "name": "simonheys",
   "version": "0.1.0",
   "private": true,
-  "packageManager": "pnpm@11.1.2",
+  "packageManager": "pnpm@11.2.2",
   "scripts": {
     "dev": "concurrently -k -r \"tsx ./src/scripts/generate-content --watch\" \"tsx ./src/scripts/generate-icon-components --watch\" \"tsx ./src/scripts/generate-image-properties --watch\" \"next dev\"",
     "build": "tsx ./src/scripts/generate-content && tsx ./src/scripts/generate-image-properties && tsx ./src/scripts/generate-icon-components && next build",
