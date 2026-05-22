@@ -109,8 +109,8 @@ importers:
         specifier: 14.6.1
         version: 14.6.1(@testing-library/dom@10.1.0)
       '@tsconfig/node24':
-        specifier: 24.0.0
-        version: 24.0.0
+        specifier: 24.0.4
+        version: 24.0.4
       '@types/cli-progress':
         specifier: 3.11.6
         version: 3.11.6
@@ -1590,8 +1590,8 @@ packages:
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
     engines: {node: '>=10.13.0'}
 
-  '@tsconfig/node24@24.0.0':
-    resolution: {integrity: sha512-3/6Cr4dELEAucgPIr6ufY7yBYMi4ttZFOewABADNZ+bm4DUZl4dup2VBcBeP1ejj3QblrWVWux/1XcRv/ZVikA==}
+  '@tsconfig/node24@24.0.4':
+    resolution: {integrity: sha512-2A933l5P5oCbv6qSxHs7ckKwobs8BDAe9SJ/Xr2Hy+nDlwmLE1GhFh/g/vXGRZWgxBg9nX/5piDtHR9Dkw/XuA==}
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -6524,7 +6524,7 @@ snapshots:
 
   '@trysound/sax@0.2.0': {}
 
-  '@tsconfig/node24@24.0.0': {}
+  '@tsconfig/node24@24.0.4': {}
 
   '@tybys/wasm-util@0.10.1':
     dependencies:
