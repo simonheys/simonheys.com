@@ -105,10 +105,5 @@
   "lint-staged": {
     "*": "prettier --ignore-unknown --write",
     "*.{js,jsx,ts,tsx}": "eslint --fix"
-  },
-  "pnpm": {
-    "overrides": {
-      "@types/react": "19.2.14"
-    }
   }
 }
