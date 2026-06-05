@@ -1,10 +1,8 @@
-# pnpm 11 requires an explicit workspace package list when workspace-level
-# settings are present. The root project is always included.
 packages:
   - '*'
 
 overrides:
-  '@types/react': 19.2.15
+  '@types/react': 19.2.17
 
 minimumReleaseAgeExclude:
   - framer-motion@12.40.0
