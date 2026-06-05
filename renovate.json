@@ -1,36 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:js-app"],
-  "schedule": ["on monday"],
+  "extends": ["config:js-app", "schedule:monthly", ":noUnscheduledUpdates"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "prCreation": "not-pending",
+  "rebaseWhen": "conflicted",
+  "stopUpdatingLabel": "stop-updating",
   "packageRules": [
     {
-      "description": "Keep framework and toolchain updates out of the broad app dependency batch.",
       "matchUpdateTypes": ["minor", "patch"],
-      "matchPackageNames": [
-        "*",
-        "!next",
-        "!react",
-        "!react-dom",
-        "!typescript",
-        "!eslint",
-        "!eslint-config-next",
-        "!lint-staged",
-        "!jest",
-        "!jest-environment-jsdom",
-        "!@playwright/test",
-        "!pnpm",
-        "!pnpm/action-setup",
-        "!postcss",
-        "!tailwindcss",
-        "!/^@testing-library\\//",
-        "!/^@tsconfig\\/node/",
-        "!/^@typescript-eslint\\//",
-        "!/^@tailwindcss\\//",
-        "!/^eslint-plugin-/",
-        "!/^prettier-plugin-/"
-      ],
-      "groupName": "all minor and patch app dependencies",
-      "groupSlug": "all-minor-patch-app"
+      "groupName": "all minor and patch dependencies",
+      "groupSlug": "all-minor-patch"
     }
   ]
 }
