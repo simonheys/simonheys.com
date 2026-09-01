@@ -9,7 +9,7 @@ minimumReleaseAgeExclude:
   - motion-dom@12.40.0
 
 overrides:
-  '@types/react': 19.2.15
+  '@types/react': 19.2.18
 
 allowBuilds:
   esbuild: false
