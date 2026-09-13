@@ -85,7 +85,7 @@
     "image-size": "2.0.2",
     "jest": "30.4.2",
     "jest-environment-jsdom": "30.4.1",
-    "js-yaml": "4.1.1",
+    "js-yaml": "4.3.2",
     "lint-staged": "17.0.5",
     "minimist": "1.2.8",
     "postcss": "8.5.14",
