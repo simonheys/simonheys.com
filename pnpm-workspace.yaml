@@ -7,6 +7,8 @@ minimumReleaseAge: 10080
 minimumReleaseAgeExclude:
   - framer-motion@12.40.0
   - motion-dom@12.40.0
+  # Renovate security update: postcss@8.5.23
+  - postcss@8.5.23
 
 overrides:
   '@types/react': 19.2.15
