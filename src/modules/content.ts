@@ -10,7 +10,6 @@ export type Link = {
 
 export interface Component {
   type: ComponentKey;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   title?: any;
   subtitle?: string;
   links?: Link[];
@@ -27,7 +26,6 @@ export type Page = {
   subtitle?: string;
   excerpt?: string;
   description?: string;
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   fill?: any;
   thumbnails?: Thumbnail[];
   components?: Component[];
@@ -71,7 +69,6 @@ export type Content = {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const defaultContent: Content = require('../../content/content.json');
 export { defaultContent as content };
 

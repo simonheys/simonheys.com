@@ -13,7 +13,6 @@ import CardsCollectionBlock, {
   mapLayoutPropToLayout,
 } from './CardsCollectionBlock';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const collection: CardItemPostType[] = require('./json/collection.json');
 
 type Key = keyof typeof mapLayoutPropToLayout;

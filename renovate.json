@@ -1,7 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:js-app"],
-  "schedule": ["on monday"],
+  "extends": ["config:js-app", "schedule:monthly", ":noUnscheduledUpdates"],
+  "minimumReleaseAge": "7 days",
+  "internalChecksFilter": "strict",
+  "prCreation": "not-pending",
+  "rebaseWhen": "conflicted",
+  "stopUpdatingLabel": "stop-updating",
   "packageRules": [
     {
       "matchUpdateTypes": ["minor", "patch"],

@@ -1,0 +1,19 @@
+packages:
+  - '*'
+
+pmOnFail: warn
+minimumReleaseAge: 10080
+
+minimumReleaseAgeExclude:
+  - framer-motion@12.40.0
+  - motion-dom@12.40.0
+
+overrides:
+  '@types/react': 19.2.15
+  'lodash-es@<4.17.24': 4.18.1
+  'shell-quote@<1.8.5': 1.12.0
+
+allowBuilds:
+  esbuild: false
+  sharp: false
+  unrs-resolver: false

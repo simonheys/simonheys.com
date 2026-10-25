@@ -7,7 +7,6 @@ import yaml from 'js-yaml';
 import getFiles from '../utils/getFiles';
 import { prettifyAndWriteFile } from '../utils/prettifyAndWriteFile';
 
-// eslint-disable-next-line @typescript-eslint/no-require-imports
 const argv = require('minimist')(process.argv.slice(2));
 
 const contentSystemPath = path.join(__dirname, '../content');
@@ -19,7 +18,6 @@ const contentJsonSystemPath = path.join(
 
 const filePaths = getFiles('/', pagesSystemPath);
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const getYml = (filePath: string): any => {
   const doc = yaml.load(fs.readFileSync(filePath, 'utf8'));
   return doc;

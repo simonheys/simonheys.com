@@ -18,12 +18,9 @@ The site is available on [localhost:3000](http://localhost:3000/)
 ## Developing locally with wordclock
 
 ```
-"pnpm": {
-    "overrides": {
-        "@simonheys/wordclock": "file:../wordclock/packages/wordclock-js",
-        "@simonheys/wordclock-words": "file:../wordclock/packages/wordclock-words"
-    }
-}
+overrides:
+  '@simonheys/wordclock': 'file:../wordclock/packages/wordclock-js'
+  '@simonheys/wordclock-words': 'file:../wordclock/packages/wordclock-words'
 ```
 
 ## License

@@ -2,7 +2,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 import { FlatCompat } from '@eslint/eslintrc';
-import tseslint from '@typescript-eslint/eslint-plugin';
+import nextCoreWebVitals from 'eslint-config-next/core-web-vitals';
 import jestPlugin from 'eslint-plugin-jest';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -15,12 +15,39 @@ const compat = new FlatCompat({
 });
 
 const jestGlobals = jestPlugin.environments?.globals?.globals ?? {};
+const disableUnsupportedEslint10Rules = (rules = {}) =>
+  Object.fromEntries(
+    Object.entries(rules).map(([rule, value]) => [
+      rule,
+      rule.startsWith('react/') ? 'off' : value,
+    ]),
+  );
+const nextConfig = nextCoreWebVitals.map((config) => {
+  const nextRules = disableUnsupportedEslint10Rules(config.rules);
+
+  if (
+    config.languageOptions?.parser?.meta?.name !== 'eslint-config-next/parser'
+  ) {
+    return {
+      ...config,
+      rules: nextRules,
+    };
+  }
+
+  return {
+    ...config,
+    rules: nextRules,
+    languageOptions: Object.fromEntries(
+      Object.entries(config.languageOptions).filter(([key]) => key !== 'parser'),
+    ),
+  };
+});
 
 export default [
   {
     ignores: ['next-env.d.ts', '**/.next/**', '**/node_modules/**'],
   },
-  ...compat.extends('next/core-web-vitals', 'next/typescript'),
+  ...nextConfig,
   {
     files: ['eslint.config.mjs'],
     rules: {
@@ -29,9 +56,6 @@ export default [
   },
   {
     files: ['**/*.{ts,tsx}'],
-    plugins: {
-      '@typescript-eslint': tseslint,
-    },
     rules: {
       '@typescript-eslint/no-unused-vars': [
         'error',
@@ -51,7 +75,8 @@ export default [
   {
     files: ['**/*.{ts,tsx,js,jsx}'],
     rules: {
-      'react/jsx-curly-brace-presence': 'error',
+      'react-hooks/preserve-manual-memoization': 'off',
+      'react-hooks/set-state-in-effect': 'off',
     },
   },
   ...compat
