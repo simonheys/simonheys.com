@@ -1,12 +1,10 @@
 import { Resvg } from '@resvg/resvg-js';
 import { colord } from 'colord';
 import fs from 'fs-extra';
-import { NdArray } from 'ndarray';
-
-import getImagePixels from './getImagePixels';
+import sharp from 'sharp';
 
 const getImageColor = async (filePath: string, type?: string) => {
-  let pixels: NdArray<Uint8Array>;
+  let source: string | Buffer = filePath;
   if (type === 'svg') {
     const svg = fs.readFileSync(filePath);
     const resvg = new Resvg(svg, {
@@ -18,12 +16,13 @@ const getImageColor = async (filePath: string, type?: string) => {
       },
     });
     const pngData = resvg.render();
-    const pngBuffer = pngData.asPng();
-    pixels = await getImagePixels(pngBuffer, 'image/png');
-  } else {
-    pixels = await getImagePixels(filePath);
+    source = pngData.asPng();
   }
-  const firstPixel = pixels.data.slice(0, 3);
+  const firstPixel = await sharp(source)
+    .toColourspace('srgb')
+    .removeAlpha()
+    .raw()
+    .toBuffer();
   const color = colord({
     r: firstPixel[0],
     g: firstPixel[1],
