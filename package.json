@@ -39,7 +39,7 @@
     "popmotion": "11.0.5",
     "react": "19.2.6",
     "react-dom": "19.2.6",
-    "react-intersection-observer": "10.0.3",
+    "react-intersection-observer": "11.0.1",
     "react-markdown": "10.1.0",
     "resize-observer-polyfill": "1.5.1",
     "swr": "2.4.1"
